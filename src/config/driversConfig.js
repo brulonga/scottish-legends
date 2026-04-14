@@ -18,6 +18,7 @@ export const LEGEND_DRIVERS = [
   "Luna Lethil",
   "Marty Fox",
   "Luca Maggiolo",
+  "R Guess",
 ];
 
 // 🚩 EL TRADUCTOR MÁGICO DE BANDERAS
@@ -96,7 +97,7 @@ export const DRIVER_PROFILES = {
     siglas: "TSR",
     dorsal: "995",
   },
-  "Nick [LZRT] ICE": {
+  "Nick [LZRT] Ice": {
     nacionalidad: "SE", // Suecia
     equipo: "Lizard Racing Team",
     siglas: "ICE",

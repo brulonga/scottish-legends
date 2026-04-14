@@ -9,6 +9,7 @@ import { Records } from './pages/Records';
 import { Compare } from './pages/Compare';
 import { Community } from './pages/Community';
 import { AboutUs } from './pages/AboutUs'; // 🚀 IMPORTAMOS LA NUEVA PÁGINA
+import { Results } from './pages/Results';
 
 function App() {
   const [currentPage, setCurrentPage] = useState('home');
@@ -55,6 +56,8 @@ function App() {
         return <Community onNavigate={handleNavigate} />; // 🚀 AÑADE ESTO
       case 'about-us': // 🚀 AÑADIMOS LA RUTA AL SWITCH
         return <AboutUs />;
+      case 'results':
+        return <Results onDriverClick={handleDriverClick} />;
       default:
         return <Home onNavigate={handleNavigate} />;
     }

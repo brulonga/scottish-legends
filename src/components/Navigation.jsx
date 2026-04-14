@@ -1,14 +1,15 @@
-import { Menu, X, Flag, Trophy, Medal, Users, Timer } from 'lucide-react';
+import { Menu, X, Flag, Trophy, Medal, Users, Timer, Home } from 'lucide-react';
 import { useState } from 'react';
 
 export const Navigation = ({ currentPage, onNavigate }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const navItems = [
-    { id: 'home', label: 'Home', icon: Flag },
+    { id: 'home', label: 'Home', icon: Home },
     { id: 'standings', label: 'Standings', icon: Trophy },
+    { id: 'results', label: 'Results', icon: Flag }, // 🚀 ICONO AÑADIDO
     { id: 'records', label: 'Records', icon: Timer },
-    { id: 'hall-of-fame', label: 'Hall of Fame', icon: Medal },
+    { id: 'hall-of-fame', label: 'The Grid', icon: Medal },
     { id: 'community', label: 'Community', icon: Users },
   ];
 

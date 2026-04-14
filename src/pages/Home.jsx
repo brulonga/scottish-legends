@@ -7,14 +7,14 @@ const HOME_CONFIG = {
   tutorialVideoId: "f9OuVgCZS-o", 
 
   mondayRace: {
-    track: "Suzuka",
-    dateIso: "2026-04-13T22:00:00+02:00", 
+    track: "Paul Ricard",
+    dateIso: "2026-04-20T22:00:00+02:00", 
     details: "20 Min Qualy • 1.5h Race"
   },
   
   fridayRace: {
-    track: "Brands Hatch",
-    dateIso: "2026-04-10T20:00:00+02:00",
+    track: "Nordschleife",
+    dateIso: "2026-04-17T20:00:00+02:00",
     details: "20 Min Qualy • 1h Race"
   },
 
