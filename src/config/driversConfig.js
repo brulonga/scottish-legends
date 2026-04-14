@@ -11,7 +11,7 @@ export const LEGEND_DRIVERS = [
   "Tommy Williamson",
   "Kevin Kerp",
   "Alan Mcleod",
-  "Cla Rens", 
+  "Cla Rens [SL]", 
   "KeVin peeters",
   "Micha Nieuwkoop",
   "Tanno Raayman",
@@ -72,7 +72,7 @@ export const DRIVER_PROFILES = {
     siglas: "ZIM",
     dorsal: "950",
   },
-  "Cla Rens": {
+  "Cla Rens [SL]": {
     nacionalidad: "DE",
     equipo: "Scottish Legends",
     siglas: "JCL",
@@ -212,6 +212,24 @@ export const DRIVER_PROFILES = {
     avatar:"assets/avatar/avatar_luna.png",
     siglas: "LLE",
     dorsal: "26",
+  },
+  "Batuhan Demirel": {
+    nacionalidad: "TR",
+    equipo: "DOSYAKI",
+    siglas: "DYK",
+    dorsal: "26",
+  },
+    "Andy McDonald": {
+    nacionalidad: "SCO",
+    equipo: "NWBFXR Racing",
+    siglas: "AMC",
+    dorsal: "179",
+  },
+    "R Guess": {
+    nacionalidad: "ES",
+    equipo: "MISCO",
+    siglas: "GSS",
+    dorsal: "119",
   }
 };
 
