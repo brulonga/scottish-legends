@@ -2,6 +2,7 @@ import { useState, useMemo } from 'react';
 import { Trophy, Award, ChevronUp, ChevronDown, Filter, Shield } from 'lucide-react';
 import { useLeagueData } from '../hooks/useLeagueData';
 import { isLegendDriver } from '../config/driversConfig';
+import { getDriverCategories } from '../utils/categoryEngine';
 
 export const Standings = ({ onDriverClick }) => {
   const [activeLeague, setActiveLeague] = useState('monday');
@@ -12,37 +13,7 @@ export const Standings = ({ onDriverClick }) => {
   const leagueData = getLeagueData(activeLeague);
   const rawDrivers = leagueData?.global || [];
   
-  // 🚀 MOTOR DE CATEGORÍAS Y POSICIÓN ESPERADA
-  const driverCategories = useMemo(() => {
-    const cats = {};
-    const eligible = rawDrivers.filter(d => d.races >= 2);
-    
-    const withMetric = eligible.map(d => {
-      let sum = 0, count = 0;
-      if (!isNaN(parseFloat(d.avg_pos))) { sum += parseFloat(d.avg_pos); count++; }
-      if (!isNaN(parseFloat(d.avg_pace_pos))) { sum += parseFloat(d.avg_pace_pos); count++; }
-      if (!isNaN(parseFloat(d.avg_qualy_pos))) { sum += parseFloat(d.avg_qualy_pos); count++; }
-      
-      const metric = count === 0 ? 999 : sum / count;
-      return { name: d.name, metric };
-    }).sort((a, b) => a.metric - b.metric);
-
-    withMetric.forEach((d, index) => {
-      const expectedPos = index + 1; // 🚀 Esta es la posición esperada real (Power Ranking)
-      if (index < 10) cats[d.name] = { name: 'PLATINUM', rank: 1, expectedPos, color: 'bg-emerald-500 text-white shadow-emerald-500/50' };
-      else if (index < 20) cats[d.name] = { name: 'GOLD', rank: 2, expectedPos, color: 'bg-yellow-500 text-black shadow-yellow-500/50' };
-      else if (index < 30) cats[d.name] = { name: 'SILVER', rank: 3, expectedPos, color: 'bg-gray-300 text-black shadow-gray-300/50' };
-      else if (index < 40) cats[d.name] = { name: 'BRONZE', rank: 4, expectedPos, color: 'bg-amber-700 text-white shadow-amber-700/50' };
-      else cats[d.name] = { name: 'ROOKIE', rank: 5, expectedPos, color: 'bg-red-600 text-white shadow-red-600/50' };
-    });
-
-    // A los que tienen menos de 2 carreras les ponemos un Expected Pos muy alto para que salgan al final
-    rawDrivers.forEach(d => {
-      if (!cats[d.name]) cats[d.name] = { name: 'ROOKIE', rank: 5, expectedPos: 999, color: 'bg-red-600 text-white shadow-red-600/50' };
-    });
-    
-    return cats;
-  }, [rawDrivers]);
+  const driverCategories = useMemo(() => getDriverCategories(rawDrivers), [rawDrivers]);
 
   const baseDriversList = useMemo(() => {
     return [...rawDrivers]

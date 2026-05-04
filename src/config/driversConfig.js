@@ -2,9 +2,9 @@
 
 // 🏆 LISTA DE LEYENDAS
 export const LEGEND_DRIVERS = [
-  "Bruno Longarela",
-  "Dominic [LZRT] Zimmermann",
-  "Marsi Bella [RRT]", 
+  "Bruno Longarela [SL]",
+  "Dominic Zimmermann [SL]",
+  "Marsi Bella [SL]", 
   "Raymond Crawford [SL]",
   "Czech Blackness [SL]",
   "Gael Duchêne ESP [SL]",
@@ -16,7 +16,7 @@ export const LEGEND_DRIVERS = [
   "Micha Nieuwkoop",
   "Tanno Raayman",
   "Luna Lethil",
-  "Marty Fox",
+  "Marty Fox [SL]",
   "Luca Maggiolo",
   "R Guess",
 ];
@@ -43,7 +43,7 @@ const getFlagEmoji = (countryCode) => {
 // ¡AQUÍ AHORA SOLO TIENES QUE PONER LAS 2 LETRAS!
 // 👤 INFORMACIÓN MANUAL DE LOS PILOTOS
 export const DRIVER_PROFILES = {
-  "Marsi Bella [RRT]": {
+  "Marsi Bella [SL]": {
     nacionalidad: "DE",
     equipo: "Rookie Racing Team",
     siglas: "BLA",
@@ -67,7 +67,7 @@ export const DRIVER_PROFILES = {
     siglas: "MEN",
     dorsal: "56",
   },
-  "Dominic [LZRT] Zimmermann": {
+  "Dominic Zimmermann [SL]": {
     nacionalidad: "DE",
     equipo: "Lizard Racing Team",
     siglas: "ZIM",
@@ -115,7 +115,7 @@ export const DRIVER_PROFILES = {
     siglas: "KOS",
     dorsal: "30",
   },
-  "Bruno Longarela": {
+  "Bruno Longarela [SL]": {
     nacionalidad: "ES",
     equipo: "Scottish Legends",
     siglas: "BLF",
@@ -128,7 +128,7 @@ export const DRIVER_PROFILES = {
     siglas: "RAY",
     dorsal: "52",
   },
-  "Marty Fox": {
+  "Marty Fox [SL]": {
     nacionalidad: "SCO", 
     equipo: "Velocity Race Team",
     siglas: "FOX",
@@ -189,7 +189,7 @@ export const DRIVER_PROFILES = {
     siglas: "AHU",
     dorsal: "26",
   },
-  "Kai Weber": {
+  "Kai Weber [RRT]": {
     nacionalidad: "DE",
     equipo: "Rookie Racing Team",
     siglas: "WEK",
@@ -220,17 +220,120 @@ export const DRIVER_PROFILES = {
     siglas: "DYK",
     dorsal: "26",
   },
-    "Andy McDonald": {
+  "Andy McDonald [SL]": {
     nacionalidad: "SCO",
     equipo: "NWBFXR Racing",
     siglas: "AMC",
     dorsal: "179",
+    avatar: "assets/avatar/avatar_andy.png",
   },
-    "R Guess": {
+  "R Guess": {
     nacionalidad: "ES",
     equipo: "MISCO",
     siglas: "GSS",
     dorsal: "119",
+  },
+  "Dons Don": {
+    nacionalidad: "ND",
+    equipo: "R162",
+    siglas: "DON",
+    dorsal: "162",
+  },
+  "Just Wild": {
+    nacionalidad: "ND",
+    equipo: "Liqui",
+    siglas: "JWL",
+    dorsal: "6",
+  },
+  "FA": {
+    nacionalidad: "ND",
+    equipo: "Dead Red Racing",
+    siglas: "FER",
+    dorsal: "14",
+  },
+  "Joshuah Coleman": {
+    nacionalidad: "ND",
+    equipo: "GTRR - Sassy Racing",
+    siglas: "JCC",
+    dorsal: "268",
+  },
+  "Jan Pavlík": {
+    nacionalidad: "ND",
+    equipo: "SHiP Racing Team",
+    siglas: "PAV",
+    dorsal: "13",
+  },
+  "Youssef Mohamed": {
+    nacionalidad: "ND",
+    equipo: "Garage 59",
+    siglas: "JOE",
+    dorsal: "59",
+  },
+  "Bryan Young": {
+    nacionalidad: "ND",
+    equipo: "JB Electric",
+    siglas: "BJY",
+    dorsal: "81",
+  },
+  "Marsi Bella [SL]": {
+    nacionalidad: "ND",
+    equipo: "Loch Bella",
+    siglas: "BLA",
+    dorsal: "64",
+  },
+  "Fiesta Bonanza": {
+    nacionalidad: "ND",
+    equipo: "uMirin",
+    siglas: "FIB",
+    dorsal: "19",
+  },
+  "Wolfe Toran": {
+    nacionalidad: "ND",
+    equipo: "Ares Motorsports",
+    siglas: "TOR",
+    dorsal: "41",
+  },
+  "Leonardo Rigon": {
+    nacionalidad: "ND",
+    equipo: "BRA- Braccia Rubate all'Agricoltura",
+    siglas: "RIG",
+    dorsal: "31",
+  },
+  "DAN_1988": {
+    nacionalidad: "ND",
+    equipo: "Solo Racers",
+    siglas: "DAF",
+    dorsal: "88",
+  },
+  "Martin Hrabovský": {
+    nacionalidad: "ND",
+    equipo: "Czech motorsports",
+    siglas: "MAR",
+    dorsal: "99",
+  },
+  "Kirill Shkatov": {
+    nacionalidad: "ND",
+    equipo: "Team ADR",
+    siglas: "SHK",
+    dorsal: "12",
+  },
+  "Patrick Anderson": {
+    nacionalidad: "ND",
+    equipo: "DMG",
+    siglas: "AND",
+    dorsal: "121",
+  },
+  "Davide Leone": {
+    nacionalidad: "ND",
+    equipo: "Loser",
+    siglas: "DAV",
+    dorsal: "209",
+  },
+  "Ties Meertens": {
+    nacionalidad: "ND",
+    equipo: "Clown",
+    siglas: "MEE",
+    dorsal: "19",
   }
 };
 

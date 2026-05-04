@@ -2,6 +2,7 @@ import { useState, useMemo } from 'react';
 import { ArrowLeft, Award, Clock, AlertTriangle, Car, Shield } from 'lucide-react';
 import { useLeagueData } from '../hooks/useLeagueData';
 import { getDriverProfile, isLegendDriver } from '../config/driversConfig';
+import { getDriverCategories } from '../utils/categoryEngine'; // 🚀 IMPORTAMOS EL MOTOR
 import { LineChart, Line, AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 
 const carNames = {
@@ -92,24 +93,11 @@ export const DriverProfile = ({ driverName, onBack }) => {
     rawDrivers = leagueData?.global || [];
   }
   
-  const driverCategory = useMemo(() => {
-    const eligible = rawDrivers.filter(d => d.races >= 2);
-    const withMetric = eligible.map(d => {
-      let sum = 0, count = 0;
-      if (!isNaN(parseFloat(d.avg_pos))) { sum += parseFloat(d.avg_pos); count++; }
-      if (!isNaN(parseFloat(d.avg_pace_pos))) { sum += parseFloat(d.avg_pace_pos); count++; }
-      if (!isNaN(parseFloat(d.avg_qualy_pos))) { sum += parseFloat(d.avg_qualy_pos); count++; }
-      return { name: d.name, metric: count === 0 ? 999 : sum / count };
-    }).sort((a, b) => a.metric - b.metric);
-
-    const index = withMetric.findIndex(d => d.name === driverName);
-    if (index === -1) return { name: 'ROOKIE' };
-    if (index < 10) return { name: 'PLATINUM' };
-    if (index < 20) return { name: 'GOLD' };
-    if (index < 30) return { name: 'SILVER' };
-    if (index < 40) return { name: 'BRONZE' };
-    return { name: 'ROOKIE' };
-  }, [rawDrivers, driverName]);
+  // 🚀 USAMOS EL MOTOR CENTRALIZADO
+  const categories = useMemo(() => getDriverCategories(rawDrivers), [rawDrivers]);
+  
+  // Obtenemos la categoría de ESTE piloto
+  const driverCategory = categories[driverName] || { name: 'ROOKIE', rank: 5, expectedPos: 999, color: 'bg-red-600' };
 
   const driversList = [...rawDrivers].sort((a, b) => b.points - a.points).map((d, index) => ({ ...d, driver: d.name, position: index + 1 }));
   const stats = driversList.find(d => d.driver === driverName);
