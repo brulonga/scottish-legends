@@ -1,80 +1,96 @@
-import { useState, useMemo } from 'react';
-import { Trophy, Award, ChevronUp, ChevronDown, Filter, Shield } from 'lucide-react';
-import { useLeagueData } from '../hooks/useLeagueData';
-import { isLegendDriver } from '../config/driversConfig';
-import { getDriverCategories } from '../utils/categoryEngine';
-
-export const Standings = ({ onDriverClick }) => {
-  const [activeLeague, setActiveLeague] = useState('monday');
-  const [sortConfig, setSortConfig] = useState({ key: 'points', direction: 'desc' });
-  const [categoryFilter, setCategoryFilter] = useState('ALL');
-  
-  const { getLeagueData, loading } = useLeagueData();
-  const leagueData = getLeagueData(activeLeague);
-  const rawDrivers = leagueData?.global || [];
-  
-  const driverCategories = useMemo(() => getDriverCategories(rawDrivers), [rawDrivers]);
-
-  const baseDriversList = useMemo(() => {
-    return [...rawDrivers]
-      .sort((a, b) => b.points - a.points)
-      .map((d, index) => ({
-        driver: d.name, 
-        position: index + 1, 
-        category: driverCategories[d.name],
-        expectedPos: driverCategories[d.name].expectedPos, // 🚀 Guardamos el dato para la tabla
-        points: d.points, 
-        avgPoints: d.avg_points, 
-        avgQualyPos: d.avg_qualy_pos, 
-        avgQualyGap: d.avg_qualy_gap,
-        avgRacePos: d.avg_pos, 
-        avgPaceGap: d.avg_gap, 
-        races: d.races
-      }));
-  }, [rawDrivers, driverCategories]);
-
-  const filteredDrivers = useMemo(() => {
-    if (categoryFilter === 'ALL') return baseDriversList;
-    return baseDriversList.filter(d => d.category.name === categoryFilter);
-  }, [baseDriversList, categoryFilter]);
-
-  const sortedDrivers = useMemo(() => {
-    let sortableItems = [...filteredDrivers];
-    if (sortConfig !== null) {
-      sortableItems.sort((a, b) => {
-        let aValue = a[sortConfig.key], bValue = b[sortConfig.key];
+import { useState, useMemo } from 'react'; 
+import { Trophy, Award, ChevronUp, ChevronDown, Filter, Shield } from 'lucide-react'; 
+import { useLeagueData } from '../hooks/useLeagueData'; 
+import { isLegendDriver } from '../config/driversConfig'; 
+import { getDriverCategories } from '../utils/categoryEngine'; 
+ 
+export const Standings = ({ onDriverClick }) => { 
+  const [activeLeague, setActiveLeague] = useState('monday'); 
+  const [sortConfig, setSortConfig] = useState({ key: 'points', direction: 'desc' }); 
+  const [categoryFilter, setCategoryFilter] = useState('ALL'); 
+   
+  const { getLeagueData, loading } = useLeagueData(); 
+  const leagueData = getLeagueData(activeLeague); 
+  const rawDrivers = leagueData?.global || []; 
+   
+  const driverCategories = useMemo(() => getDriverCategories(rawDrivers), [rawDrivers]); 
+ 
+  const baseDriversList = useMemo(() => { 
+    return [...rawDrivers] 
+      .sort((a, b) => b.points - a.points) 
+      .map((d, index) => {
+        // 🚀 FALLBACK: Si no tiene categoría calculada, le damos valores por defecto para que no pete
+        const cat = driverCategories[d.name] || { name: 'ROOKIE', rank: 99, expectedPos: 999, color: 'text-gray-500' };
         
-        if (sortConfig.key === 'category') { 
-          aValue = a.category.rank; 
-          bValue = b.category.rank; 
+        return { 
+          id: `${d.name}-${index}`, // ID única garantizada
+          driver: d.name,  
+          position: index + 1,  
+          category: cat, 
+          expectedPos: cat.expectedPos,
+          points: d.points,  
+          avgPoints: d.avg_points,  
+          avgQualyPos: d.avg_qualy_pos,  
+          avgQualyGap: d.avg_qualy_gap, 
+          avgRacePos: d.avg_pos,  
+          avgPaceGap: d.avg_gap,  
+          races: d.races 
+        };
+      }); 
+  }, [rawDrivers, driverCategories]); 
+ 
+  const filteredDrivers = useMemo(() => { 
+    if (categoryFilter === 'ALL') return baseDriversList; 
+    return baseDriversList.filter(d => d.category.name === categoryFilter); 
+  }, [baseDriversList, categoryFilter]); 
+ 
+  const sortedDrivers = useMemo(() => { 
+    let sortableItems = [...filteredDrivers]; 
+    if (sortConfig !== null) { 
+      sortableItems.sort((a, b) => { 
+        let aValue = a[sortConfig.key];
+        let bValue = b[sortConfig.key]; 
+         
+        if (sortConfig.key === 'category') {  
+          aValue = a.category.rank;  
+          bValue = b.category.rank;  
+        }  
+        else if (sortConfig.key === 'avgQualyGap' || sortConfig.key === 'avgPaceGap') { 
+          // 🚀 SAFEGUARD: Manejar nulls o undefineds antes de hacer toString
+          aValue = (aValue === '-' || aValue == null) ? Infinity : parseFloat(aValue.toString().replace('+', '')); 
+          bValue = (bValue === '-' || bValue == null) ? Infinity : parseFloat(bValue.toString().replace('+', '')); 
+        }  
+        else if (sortConfig.key === 'avgQualyPos' || sortConfig.key === 'avgRacePos') { 
+          aValue = (aValue === '-' || aValue == null) ? Infinity : parseFloat(aValue); 
+          bValue = (bValue === '-' || bValue == null) ? Infinity : parseFloat(bValue); 
+        }  
+        else if (typeof aValue === 'string' && typeof bValue === 'string') {  
+          return sortConfig.direction === 'asc' ? aValue.localeCompare(bValue) : bValue.localeCompare(aValue);  
         } 
-        else if (sortConfig.key === 'avgQualyGap' || sortConfig.key === 'avgPaceGap') {
-          aValue = aValue === '-' ? Infinity : parseFloat(aValue.toString().replace('+', ''));
-          bValue = bValue === '-' ? Infinity : parseFloat(bValue.toString().replace('+', ''));
-        } 
-        else if (sortConfig.key === 'avgQualyPos' || sortConfig.key === 'avgRacePos') {
-          aValue = aValue === '-' ? Infinity : parseFloat(aValue);
-          bValue = bValue === '-' ? Infinity : parseFloat(bValue);
-        } 
-        else if (typeof aValue === 'string') { 
-          return sortConfig.direction === 'asc' ? aValue.localeCompare(bValue) : bValue.localeCompare(aValue); 
-        }
-        
-        if (aValue < bValue) return sortConfig.direction === 'asc' ? -1 : 1;
-        if (aValue > bValue) return sortConfig.direction === 'asc' ? 1 : -1;
-        return 0;
-      });
-    }
-    return sortableItems;
-  }, [filteredDrivers, sortConfig]);
+         
+        // Si hay valores nulos que se hayan escapado
+        if (aValue == null) aValue = Infinity;
+        if (bValue == null) bValue = Infinity;
 
-  const requestSort = (key) => {
-    let direction = 'desc';
-    // Añadimos expectedPos a la lista de métricas donde lo menor (P1) es mejor (ascendente)
-    if (['driver', 'category', 'expectedPos', 'avgQualyGap', 'avgPaceGap', 'avgQualyPos', 'avgRacePos'].includes(key)) direction = 'asc';
-    if (sortConfig && sortConfig.key === key && sortConfig.direction === direction) direction = direction === 'asc' ? 'desc' : 'asc';
-    setSortConfig({ key, direction });
-  };
+        if (aValue < bValue) return sortConfig.direction === 'asc' ? -1 : 1; 
+        if (aValue > bValue) return sortConfig.direction === 'asc' ? 1 : -1; 
+        return 0; 
+      }); 
+    } 
+    return sortableItems; 
+  }, [filteredDrivers, sortConfig]); 
+ 
+  const requestSort = (key) => { 
+    let direction = 'desc'; 
+    if (['driver', 'category', 'expectedPos', 'avgQualyGap', 'avgPaceGap', 'avgQualyPos', 'avgRacePos'].includes(key)) direction = 'asc'; 
+    if (sortConfig && sortConfig.key === key && sortConfig.direction === direction) direction = direction === 'asc' ? 'desc' : 'asc'; 
+    setSortConfig({ key, direction }); 
+  }; 
+ 
+  // ... (Tus textos de tooltips y componentes de Header siguen igual)
+
+  // ⚠️ IMPORTANTE: En el return, asegúrate de cambiar la key del <tr> así:
+  // <tr key={driver.id} onClick={() => onDriverClick(driver.driver)} ... >
 
   const categoryTooltipText = "Category assigned based on the average of average pace position, average quali position and average final race position. Minimum 2 races.";
   const legendTooltipText = "Legends are the most dedicated members of the community: they follow the rules, race cleanly, and are very fast.";
