@@ -71,7 +71,7 @@ const msToTimeStr = (ms) => {
   return `${minutes > 0 ? minutes + ':' : ''}${seconds.toString().padStart(2, '0')}.${milis.toString().padStart(3, '0')}`;
 };
 
-// 🚀 EXTRAE GAPS DESDE TEXTO (Soluciona Monday Marathon)
+// EXTRAE GAPS DESDE TEXTO (Soluciona Monday Marathon)
 const gapStrToMs = (gapStr) => {
   if (gapStr === null || gapStr === undefined || gapStr === "-" || gapStr === "") return null;
   if (typeof gapStr === 'number') return gapStr;
@@ -97,7 +97,7 @@ const gapStrToMs = (gapStr) => {
   return parseInt(cleanStr) || null;
 };
 
-// 🚀 EXTRAE VUELTAS DESDE TEXTO
+// EXTRAE VUELTAS DESDE TEXTO
 const timeStrToMs = (timeStr) => { 
   if (!timeStr || timeStr === "-" || timeStr === "NO TIME") return Infinity;
   if (typeof timeStr === 'number') return timeStr;
@@ -162,7 +162,6 @@ export const DriverProfile = ({ driverName, onBack }) => {
     const displayTrack = `${roundPrefix}: ${trackOnly}`;
 
     let classResults = session.results || [];
-    // 🚀 MAGIA: Si no hay array de qualy (Lunes), buscamos dentro de la carrera
     let qualyClassResults = session.qualy_results || classResults; 
 
     if (activeLeague === 'multiclass') {
@@ -175,7 +174,6 @@ export const DriverProfile = ({ driverName, onBack }) => {
     const winner = classResults.find(r => r.pos === 1 || r.pos === "1" || r.class_pos === 1 || r.class_pos === "1");
 
     if (result || qResult) {
-      // 🚀 ASIGNACIÓN INTELIGENTE: Lee la variable que exista
       const pGapMs = result?.gap_pace_ms ?? gapStrToMs(result?.gap_pace);
       const bGapMs = result?.gap_best_ms ?? gapStrToMs(result?.gap_best);
       const qGapMs = qResult?.gap_pole_ms ?? qResult?.qualy_gap_ms ?? gapStrToMs(qResult?.gap_pole || qResult?.qualy_gap);
@@ -277,7 +275,6 @@ export const DriverProfile = ({ driverName, onBack }) => {
           <ArrowLeft className="w-5 h-5" /><span>Back to Standings</span>
         </button>
 
-        {/* CABECERA GIGANTE */}
         <div className={`overflow-hidden mb-6 border-2 transition-all duration-500 ${theme.border} shadow-2xl ${theme.shadow} ${bgColorClass}`}>
           <div className="h-[550px] bg-cover bg-center relative" style={{ backgroundImage: bgImage }}>
             {bgImage !== 'none' && <div className={`absolute inset-0 bg-gradient-to-t ${theme.gradient} via-black/80 to-transparent opacity-90`}></div>}
@@ -324,7 +321,6 @@ export const DriverProfile = ({ driverName, onBack }) => {
           </div>
         </div>
 
-        {/* SELECTORES DE LIGA */}
         <div className="flex space-x-2 mb-4">
           <button onClick={() => { setActiveLeague('monday'); setActiveClass('GT3'); setSelectedRaceIndex(0); }} className={`flex-1 py-3 px-6 font-['Teko'] text-2xl uppercase tracking-widest transition-all duration-200 transform -skew-x-12 border border-gray-800 ${activeLeague === 'monday' ? 'bg-yellow-500 text-black shadow-[0_0_15px_rgba(250,204,21,0.3)]' : 'bg-[#0a0a0a] text-gray-400 hover:text-white'}`}><span className="block transform skew-x-12">Monday Marathon</span></button>
           <button onClick={() => { setActiveLeague('multiclass'); setSelectedRaceIndex(0); }} className={`flex-1 py-3 px-6 font-['Teko'] text-2xl uppercase tracking-widest transition-all duration-200 transform -skew-x-12 border border-gray-800 ${activeLeague === 'multiclass' ? 'bg-yellow-500 text-black shadow-[0_0_15px_rgba(250,204,21,0.3)]' : 'bg-[#0a0a0a] text-gray-400 hover:text-white'}`}><span className="block transform skew-x-12">Multiclass Friday</span></button>
@@ -339,7 +335,6 @@ export const DriverProfile = ({ driverName, onBack }) => {
 
         {stats && participatedRaces.length > 0 ? (
           <>
-            {/* 10 ESTADÍSTICAS */}
             <div className="grid grid-cols-2 md:grid-cols-5 gap-4 mb-8">
               <StatBlock label="Points" value={stats.points} colorClass={theme.text} />
               <StatBlock label="Avg Points" value={stats.avg_points || '-'} />
@@ -353,7 +348,6 @@ export const DriverProfile = ({ driverName, onBack }) => {
               <StatBlock label="Avg Race Gap" value={stats.avg_gap || '-'} />
             </div>
 
-            {/* TABLA DE PBs */}
             <div className="bg-[#0a0a0a] border border-gray-800 shadow-xl mb-8">
               <div className="p-4 border-b border-gray-800 bg-black flex items-center space-x-3">
                 <Clock className="w-6 h-6 text-yellow-400" />
@@ -381,7 +375,6 @@ export const DriverProfile = ({ driverName, onBack }) => {
               </div>
             </div>
 
-            {/* GRÁFICOS */}
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
               <div className="bg-[#0a0a0a] p-6 border border-gray-800 relative overflow-hidden">
                 <h3 className="font-['Teko'] text-3xl font-bold text-white mb-6 uppercase tracking-wide">Position History</h3>
@@ -438,5 +431,4 @@ export const DriverProfile = ({ driverName, onBack }) => {
       </div>
     </div>
   );
-};
 };
