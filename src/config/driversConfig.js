@@ -220,7 +220,7 @@ export const DRIVER_PROFILES = {
     siglas: "DYK",
     dorsal: "26",
   },
-  "Andy McDonald [SL]": {
+  "Andy Mcdonald [SL]": {
     nacionalidad: "SCO",
     equipo: "NWBFXR Racing",
     siglas: "AMC",
