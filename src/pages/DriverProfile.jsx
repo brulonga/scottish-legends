@@ -97,7 +97,7 @@ const gapStrToMs = (gapStr) => {
   return parseInt(cleanStr) || null;
 };
 
-// 🚀 EXTRAE VUELTAS DESDE TEXTO (Soluciona Personal Bests en Monday)
+// 🚀 EXTRAE VUELTAS DESDE TEXTO
 const timeStrToMs = (timeStr) => { 
   if (!timeStr || timeStr === "-" || timeStr === "NO TIME") return Infinity;
   if (typeof timeStr === 'number') return timeStr;
@@ -162,7 +162,8 @@ export const DriverProfile = ({ driverName, onBack }) => {
     const displayTrack = `${roundPrefix}: ${trackOnly}`;
 
     let classResults = session.results || [];
-    let qualyClassResults = session.qualy_results || []; // Buscamos en Qualy también
+    // 🚀 MAGIA: Si no hay array de qualy (Lunes), buscamos dentro de la carrera
+    let qualyClassResults = session.qualy_results || classResults; 
 
     if (activeLeague === 'multiclass') {
       classResults = classResults.filter(r => getCarClass(r.car_model || r.car, r.class) === activeClass);
@@ -174,7 +175,7 @@ export const DriverProfile = ({ driverName, onBack }) => {
     const winner = classResults.find(r => r.pos === 1 || r.pos === "1" || r.class_pos === 1 || r.class_pos === "1");
 
     if (result || qResult) {
-      // 🚀 ASIGNACIÓN INTELIGENTE (Lee MS si existe, o convierte el texto si no)
+      // 🚀 ASIGNACIÓN INTELIGENTE: Lee la variable que exista
       const pGapMs = result?.gap_pace_ms ?? gapStrToMs(result?.gap_pace);
       const bGapMs = result?.gap_best_ms ?? gapStrToMs(result?.gap_best);
       const qGapMs = qResult?.gap_pole_ms ?? qResult?.qualy_gap_ms ?? gapStrToMs(qResult?.gap_pole || qResult?.qualy_gap);
@@ -186,7 +187,7 @@ export const DriverProfile = ({ driverName, onBack }) => {
         sessionName: displayTrack, 
         pos: result?.class_pos || result?.pos, 
         pacePos: result?.pace_pos, 
-        qualyPos: qResult?.class_pos || qResult?.pos || result?.qualy_pos, 
+        qualyPos: qResult?.class_pos || qResult?.qualy_pos || qResult?.pos || result?.qualy_pos, 
         laps: result?.lap_history || [], 
         avgLapMs: result?.avg_lap_ms, 
         gapPaceMs: pGapMs,
