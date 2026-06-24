@@ -275,12 +275,6 @@ export const DRIVER_PROFILES = {
     siglas: "BJY",
     dorsal: "81",
   },
-  "Marsi Bella [SL]": {
-    nacionalidad: "ND",
-    equipo: "Loch Bella",
-    siglas: "BLA",
-    dorsal: "64",
-  },
   "Fiesta Bonanza": {
     nacionalidad: "ND",
     equipo: "uMirin",

@@ -1,43 +1,92 @@
-export const getDriverCategories = (rawDrivers) => {
-  if (!rawDrivers || rawDrivers.length === 0) return {};
-  
-  const cats = {};
-  const eligible = rawDrivers.filter(d => d.races >= 2);
-  
-  const withMetric = eligible.map(d => {
-    let sum = 0, count = 0;
-    if (!isNaN(parseFloat(d.avg_pos))) { sum += parseFloat(d.avg_pos); count++; }
-    if (!isNaN(parseFloat(d.avg_pace_pos))) { sum += parseFloat(d.avg_pace_pos); count++; }
-    if (!isNaN(parseFloat(d.avg_qualy_pos))) { sum += parseFloat(d.avg_qualy_pos); count++; }
-    
-    const metric = count === 0 ? 999 : sum / count;
-    return { name: d.name, metric };
-  }).sort((a, b) => a.metric - b.metric);
+export const getDriverCategories = (drivers) => {
+  if (!drivers || drivers.length === 0) return {};
 
-  const N = withMetric.length;
-  const base = Math.floor(N / 4);
-  const rem = N % 4;
+  // 1. Separamos a los pilotos en dos grupos: habituales (>= 2 carreras) y rookies (< 2 carreras)
+  const validDrivers = drivers.filter(d => d.races >= 2);
+  const rookieDrivers = drivers.filter(d => d.races < 2 || !d.races);
 
-  const platSize = base; 
-  const goldSize = base + (rem === 3 ? 1 : 0);
-  const silverSize = base + (rem >= 2 ? 1 : 0);
+  // 2. Calcular la media de carreras SÓLO de los pilotos válidos
+  let totalRaces = 0;
+  validDrivers.forEach(d => { totalRaces += d.races; });
+  const mediaCarrerasGrid = validDrivers.length > 0 ? (totalRaces / validDrivers.length) : 3;
 
-  withMetric.forEach((d, index) => {
-    const expectedPos = index + 1;
-    if (index < platSize) {
-      cats[d.name] = { name: 'PLATINUM', rank: 1, expectedPos, color: 'bg-emerald-500 text-white shadow-emerald-500/50' };
-    } else if (index < platSize + goldSize) {
-      cats[d.name] = { name: 'GOLD', rank: 2, expectedPos, color: 'bg-yellow-500 text-black shadow-yellow-500/50' };
-    } else if (index < platSize + goldSize + silverSize) {
-      cats[d.name] = { name: 'SILVER', rank: 3, expectedPos, color: 'bg-gray-300 text-black shadow-gray-300/50' };
-    } else {
-      cats[d.name] = { name: 'BRONZE', rank: 4, expectedPos, color: 'bg-amber-700 text-white shadow-amber-700/50' };
+  // 3. Fórmula del multiplicador de constancia
+  let multiplicador = 0.325 - (0.025 * mediaCarrerasGrid);
+  multiplicador = Math.max(0.05, Math.min(0.35, multiplicador));
+
+  const categories = {};
+  const scoredValidDrivers = [];
+
+  // 4. Calcular el "Performance Score" exclusivamente para los válidos
+  validDrivers.forEach(d => {
+    const avgPos = parseFloat(d.avg_pos) || 99;
+    const avgPace = parseFloat(d.avg_pace_pos) || 99;
+    const avgQualy = parseFloat(d.avg_qualy_pos) || 99;
+
+    let baseMean = 99;
+    if (avgPos !== 99 && avgPace !== 99 && avgQualy !== 99) {
+      baseMean = (avgPos + avgPace + avgQualy) / 3;
+    } else if (avgPos !== 99) {
+      baseMean = avgPos;
     }
+
+    let internalScore = baseMean;
+    
+    // Aplicar el ajuste de constancia
+    if (baseMean !== 99) {
+      const ajuste = (mediaCarrerasGrid - d.races) * multiplicador;
+      internalScore = baseMean + ajuste;
+    }
+
+    scoredValidDrivers.push({
+      name: d.name,
+      score: internalScore
+    });
   });
 
-  rawDrivers.forEach(d => {
-    if (!cats[d.name]) cats[d.name] = { name: 'ROOKIE', rank: 5, expectedPos: 999, color: 'bg-red-600 text-white shadow-red-600/50' };
+  // 5. Ordenar a los pilotos válidos de MEJOR a PEOR
+  scoredValidDrivers.sort((a, b) => a.score - b.score);
+
+  const totalValid = scoredValidDrivers.length || 1;
+
+  // 6. Repartir licencias, posiciones esperadas enteras y COLORES
+  scoredValidDrivers.forEach((d, index) => {
+    let catName = '';
+    let colorClass = '';
+    
+    const pct = index / totalValid;
+    
+    if (pct < 0.15) {
+      catName = 'PLATINUM';
+      colorClass = 'bg-emerald-500';
+    } else if (pct < 0.40) {
+      catName = 'GOLD';
+      colorClass = 'bg-yellow-500';
+    } else if (pct < 0.75) {
+      catName = 'SILVER';
+      colorClass = 'bg-gray-300';
+    } else {
+      catName = 'BRONZE';
+      colorClass = 'bg-amber-600';
+    }
+
+    categories[d.name] = {
+      name: catName,
+      expectedPos: index + 1,
+      rank: index + 1,
+      color: colorClass
+    };
   });
-  
-  return cats;
+
+  // 7. Procesar a los Rookies (no afectan a la media ni al ranking de expectedPos)
+  rookieDrivers.forEach(d => {
+    categories[d.name] = {
+      name: 'ROOKIE',
+      expectedPos: 999,
+      rank: 999,
+      color: 'bg-red-600'
+    };
+  });
+
+  return categories;
 };

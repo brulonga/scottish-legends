@@ -5,15 +5,15 @@ import heroBg from '../assets/fondo.png';
 // ⚙️ PANEL DE CONFIGURACIÓN RÁPIDA 
 const HOME_CONFIG = { 
   mondayRace: { 
-    track: "Misano", 
-    dateIso: "2026-05-11T22:00:00+02:00",  
+    track: "Indianapolis?", 
+    dateIso: "2026-06-29T22:00:00+02:00",  
     details: "20 Min Qualy • 1.5h Race" 
   }, 
    
   fridayRace: { 
-    track: "Nordschleife", 
-    dateIso: "2026-05-08T20:00:00+02:00", 
-    details: "20 Min Qualy • 1h Race" 
+    track: "Incomming season 2...", 
+    dateIso: "", 
+    details: "" 
   }, 
  
   featuredChannels: [ 
@@ -103,6 +103,25 @@ export const Home = ({ onNavigate }) => {
           </button> 
         </div> 
       </div> 
+
+      {/* 🔴 VÍDEO SEGURO (Miniatura que abre en YouTube) */}
+      <div className="max-w-7xl mx-auto px-4 pt-16">
+        <a 
+          href="https://www.youtube.com/watch?v=rKGSvXfOu9I" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="block relative w-full max-w-5xl mx-auto aspect-video shadow-[0_0_40px_rgba(220,38,38,0.3)] hover:shadow-[0_0_60px_rgba(220,38,38,0.5)] transition-all transform -skew-x-2 overflow-hidden border border-red-900 group"
+        >
+          <img 
+            src="https://img.youtube.com/vi/rKGSvXfOu9I/maxresdefault.jpg" 
+            alt="Video Scottish Legends" 
+            className="w-full h-full object-cover transform skew-x-2 scale-110"
+          />
+          <div className="absolute inset-0 bg-black/40 flex items-center justify-center group-hover:bg-black/20 transition-all">
+            <Play className="w-20 h-20 text-white fill-current opacity-80 group-hover:scale-110 transition-transform" />
+          </div>
+        </a>
+      </div>
  
       <div className="max-w-7xl mx-auto px-4 py-16 space-y-24"> 
          
@@ -149,88 +168,6 @@ export const Home = ({ onNavigate }) => {
             </div> 
           </div> 
         </div> 
-
-        {/* 🚨 NOTICIAS / BREAKING NEWS */}
-        <div className="bg-[#0a0a0a] border border-gray-800 shadow-2xl relative overflow-hidden">
-          {/* Tira amarilla superior */}
-          <div className="w-full h-2 bg-yellow-500"></div>
-          
-          <div className="p-8 md:p-10">
-            <div className="flex items-center space-x-3 mb-8 border-b border-gray-800 pb-6">
-              <FileText className="w-8 h-8 text-yellow-400 animate-pulse" />
-              <h2 className="font-['Teko'] text-4xl md:text-5xl font-bold text-white uppercase tracking-wide">Breaking News</h2>
-            </div>
-            
-            <article className="prose prose-invert max-w-none">
-              <h3 className="text-2xl md:text-3xl font-bold text-white uppercase tracking-wider mb-6">
-                Friday's Multiclass: Season 1
-              </h3>
-              
-              <div className="text-gray-300 space-y-6 leading-relaxed">
-                <p className="text-lg text-gray-200">
-                  We've decided to make some exciting changes to how this league operates! Instead of running separate leagues for the Mini-Championships and Friday's Multiclass, we are mixing them all together to spice things up a little! :))) There will be 12 rounds in total.
-                </p>
-
-                <div className="mt-8 border-l-4 border-yellow-500 pl-6 py-2 bg-yellow-500/5">
-                  <h4 className="text-xl font-bold text-yellow-400 uppercase tracking-widest mb-4">Calendar</h4>
-                  <ul className="space-y-4">
-                    <li className="flex flex-col">
-                      <strong className="text-white">May 8th | Nordschleife Usual Multiclass</strong>
-                      <span className="text-gray-400">GT3 & GT4 | 70-minute race</span>
-                    </li>
-                    <li className="flex flex-col">
-                      <strong className="text-white">May 15th | Mini-Championship: World Tour</strong>
-                      <span className="text-gray-400">GT3 Class</span>
-                      <span className="text-gray-500 text-sm">Tracks: 1. Kyalami | 2. Mount Panorama | 3. Suzuka | 4. Red Bull Ring</span>
-                    </li>
-                    <li className="flex flex-col">
-                      <strong className="text-white">May 22nd | Nordschleife Usual Multiclass</strong>
-                      <span className="text-gray-400">GT3 & GT4 | 70-minute race</span>
-                    </li>
-                    <li className="flex flex-col">
-                      <strong className="text-white">May 29th | Mini-Championship: F1 Themed</strong>
-                      <span className="text-gray-400">GT2 Class</span>
-                      <span className="text-gray-500 text-sm">Tracks: 1. Spa | 2. Monza | 3. Barcelona | 4. Hungaroring</span>
-                    </li>
-                    <li className="flex flex-col">
-                      <strong className="text-white">June 5th | Mini-Championship: American Dream</strong>
-                      <span className="text-gray-400">GT3 Class (No one has seen anything like this!)</span>
-                      <span className="text-gray-500 text-sm">Tracks: 1. Laguna Seca | 2. Watkins Glen | 3. COTA | 4. Indianapolis</span>
-                    </li>
-                    <li className="flex flex-col">
-                      <strong className="text-white">June 12th | FINAL RACE: Nords Special</strong>
-                      <span className="text-gray-400">4 separate races, a different class for each!</span>
-                      <span className="text-gray-500 text-sm">Classes: 1. Porsche Cup Car | 2. GT3 | 3. GT4 | 4. M2 Touring Car</span>
-                    </li>
-                  </ul>
-                </div>
-
-                <div className="mt-8 border-l-4 border-blue-500 pl-6 py-2 bg-blue-500/5">
-                  <h4 className="text-xl font-bold text-blue-400 uppercase tracking-widest mb-4">Points System</h4>
-                  <ul className="space-y-4">
-                    <li><strong className="text-white">Standard Races (70 mins):</strong> Points will be awarded exactly as they have been up until now.</li>
-                    <li><strong className="text-white">Mini-Championships:</strong> Points will be awarded proportionally based on race duration. For example: if we give 180 points to P1 in a 70-minute race, we will give 50 points to P1 in a 20-minute sprint (meaning a max of 200 points across 4 races). Each position from there on scales proportionally.</li>
-                  </ul>
-                </div>
-
-                <div className="grid md:grid-cols-2 gap-6 mt-8">
-                  <div className="bg-black border border-gray-800 p-6">
-                    <h4 className="text-lg font-bold text-white uppercase tracking-widest mb-3">Community</h4>
-                    <p className="text-sm text-gray-400">We will keep the lobbies open and password-free for these events to encourage a slightly more informal racing environment. Our Monday's Marathon will remain the main, more formal competitive league.</p>
-                  </div>
-                  <div className="bg-black border border-gray-800 p-6">
-                    <h4 className="text-lg font-bold text-white uppercase tracking-widest mb-3">Splits</h4>
-                    <p className="text-sm text-gray-400">Throughout this season, we will collect data to help organize splits for future multiclass seasons. There won't be separate server instances; all splits will be racing together on track. We want to keep things simple, as the server depends on the admins' free time.</p>
-                  </div>
-                </div>
-
-                <p className="text-center font-bold text-xl text-yellow-500 mt-8 uppercase tracking-widest">
-                  Remember, this is all for FUN and FREE! See you on the track!
-                </p>
-              </div>
-            </article>
-          </div>
-        </div>
  
         {/* CANALES DE YOUTUBE */} 
         <div> 

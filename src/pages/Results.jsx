@@ -242,151 +242,159 @@ const RaceTable = ({ data = [], bestLap = Infinity, bestPace = Infinity, onDrive
   );  
 };  
 
-// --- COMPONENTE PRINCIPAL ---
-export const Results = ({ onDriverClick }) => {  
-  const [league, setLeague] = useState('monday');  
-  const [selectedRound, setSelectedRound] = useState(0);  
-  
-  const { getLeagueData, loading } = useLeagueData();  
-  const leagueData = getLeagueData(league);  
-  const sessions = leagueData?.sessions || [];  
-  
-  useEffect(() => {  
-    setSelectedRound(0);  
-  }, [league]);  
-  
-  const currentSession = sessions[selectedRound];  
-  
-  const groupedClassData = useMemo(() => {  
-    if (!currentSession) return [];  
-  
-    // 🚀 FILTER BOOLEAN PARA ELIMINAR NULOS ANTES DE MAPEAR
-    const rawQualy = (currentSession.qualy_results || []).filter(Boolean);  
-    const rawRace = (currentSession.results || []).filter(Boolean);  
- 
-    const classes = new Set([ 
-      ...rawQualy.map(r => r?.car_class || r?.class || 'GT3'), 
-      ...rawRace.map(r => r?.car_class || r?.class || 'GT3') 
-    ]); 
- 
-    return Array.from(classes).sort().map(className => { 
-      const qClassRaw = rawQualy.filter(r => (r?.car_class || r?.class || 'GT3') === className); 
-      const rClassRaw = rawRace.filter(r => (r?.car_class || r?.class || 'GT3') === className); 
- 
-      const qResults = [...qClassRaw].sort((a, b) => {  
-        const posA = parseInt(a?.class_pos || a?.pos) || 999;  
-        const posB = parseInt(b?.class_pos || b?.pos) || 999;  
-        return posA - posB;  
-      });  
-    
-      const rResults = [...rClassRaw].sort((a, b) => {  
-        const isDnfA = String(a?.pos).toUpperCase() === "DNF" || String(a?.pos).toUpperCase() === "DSQ" || String(a?.class_pos).toUpperCase() === "DNF";  
-        const isDnfB = String(b?.pos).toUpperCase() === "DNF" || String(b?.pos).toUpperCase() === "DSQ" || String(b?.class_pos).toUpperCase() === "DNF";  
-        if (isDnfA && !isDnfB) return 1;  
-        if (!isDnfA && isDnfB) return -1;  
-        if (isDnfA && isDnfB) return (parseInt(b?.laps) || 0) - (parseInt(a?.laps) || 0);  
-        return (parseInt(a?.class_pos || a?.pos) || 999) - (parseInt(b?.class_pos || b?.pos) || 999);  
-      });  
-    
-      let bestLap = Infinity;  
-      let bestPace = Infinity;  
-      let bSectors = [Infinity, Infinity, Infinity];  
-    
-      qResults.forEach(r => {  
-        const msS1 = timeStrToMs(r?.s1);  
-        const msS2 = timeStrToMs(r?.s2);  
-        const msS3 = timeStrToMs(r?.s3);  
-        if (msS1 < bSectors[0]) bSectors[0] = msS1;  
-        if (msS2 < bSectors[1]) bSectors[1] = msS2;  
-        if (msS3 < bSectors[2]) bSectors[2] = msS3;  
-      });  
-    
-      rResults.forEach(r => {  
-        if (r?.best_lap_ms && r.best_lap_ms > 0 && r.best_lap_ms < bestLap) bestLap = r.best_lap_ms;  
-        if (r?.avg_lap_ms && r.avg_lap_ms > 0 && r.avg_lap_ms < bestPace) bestPace = r.avg_lap_ms;  
-      });  
- 
-      return { 
-        className, 
-        qualyResults: qResults, 
-        raceResults: rResults, 
-        bestLap, 
-        bestPace, 
-        bestSectors: bSectors 
-      }; 
-    }); 
-  }, [currentSession]);  
-  
-  if (loading) return <div className="min-h-screen bg-black flex items-center justify-center"><div className="animate-spin rounded-full h-16 w-16 border-t-2 border-b-2 border-yellow-500"></div></div>;  
-  
-  return (  
-    <div className="min-h-screen bg-black font-['Inter'] text-gray-300 py-8">  
-      <div className="max-w-[1536px] mx-auto px-4">  
-          
-        <div className="text-center mb-12">  
-          <div className="inline-flex items-center justify-center space-x-2 border border-yellow-500/30 px-6 py-2 rounded-full mb-6 bg-yellow-500/10">  
-            <Trophy className="w-4 h-4 text-yellow-400" />  
-            <span className="text-yellow-400 text-xs font-bold uppercase tracking-widest">Race Reports</span>  
-          </div>  
-          <h1 className="font-['Teko'] text-7xl md:text-9xl font-bold text-white mb-4 uppercase tracking-wide drop-shadow-lg">  
-            Event <span className="text-yellow-400">Results</span>  
-          </h1>  
-          <p className="text-gray-400 text-lg max-w-2xl mx-auto uppercase tracking-widest font-medium">  
-            Advanced telemetry, gaps, and session highlights.  
-          </p>  
-        </div>  
-  
-        <div className="bg-[#0a0a0a] p-6 border border-gray-800 mb-10 shadow-xl flex flex-col md:flex-row gap-6">  
-          <div className="flex-1">  
-            <label className="text-[10px] text-yellow-500 uppercase font-bold tracking-widest mb-2 block">Championship</label>  
-            <select   
-              value={league}   
-              onChange={(e) => setLeague(e.target.value)}   
-              className="w-full bg-black border border-gray-700 text-white p-3 font-bold uppercase tracking-widest outline-none focus:border-yellow-500"  
-            >  
-              <option value="monday">Monday Marathon</option>  
-              <option value="multiclass">Multiclass Friday</option>  
-            </select>  
-          </div>  
-              
-          <div className="flex-1">  
-            <label className="text-[10px] text-blue-400 uppercase font-bold tracking-widest mb-2 block">Select Round</label>  
-            <select   
-              value={selectedRound}   
-              onChange={(e) => setSelectedRound(Number(e.target.value))}   
-              className="w-full bg-black border border-gray-700 text-white p-3 font-bold uppercase tracking-widest outline-none focus:border-blue-500"  
-            >  
-              {sessions.map((session, idx) => (  
-                <option key={idx} value={idx}>{session.name}</option>  
-              ))}  
-            </select>  
-          </div>  
-        </div>  
-  
-        {sessions.length > 0 && currentSession && groupedClassData.length > 0 ? (  
-          groupedClassData.map((group) => ( 
-            <div key={group.className} className="mb-16"> 
-              {groupedClassData.length > 1 && ( 
-                <div className="mb-6 flex items-center border-b border-gray-800 pb-2"> 
-                  <div className="w-1.5 h-8 bg-yellow-500 mr-4"></div> 
-                  <h2 className="font-['Teko'] text-5xl font-bold text-white uppercase tracking-wide"> 
-                    {group.className} Class 
-                  </h2> 
-                </div> 
-              )} 
- 
-              {group.qualyResults.length > 0 && <QualyTable data={group.qualyResults} bestSectors={group.bestSectors} onDriverClick={onDriverClick} />}  
-              {group.raceResults.length > 0 && <RaceTable data={group.raceResults} bestLap={group.bestLap} bestPace={group.bestPace} onDriverClick={onDriverClick} />}  
-            </div> 
-          )) 
-        ) : (  
-          <div className="text-center py-20 border border-dashed border-gray-800">  
-            <Calendar className="w-16 h-16 text-gray-700 mx-auto mb-4" />  
-            <p className="text-gray-400 text-lg font-bold uppercase tracking-widest">No session data available</p>  
-          </div>  
-        )}  
-  
-      </div>  
-    </div>  
-  );  
+// --- COMPONENTE PRINCIPAL ---// --- COMPONENTE PRINCIPAL ---
+export const Results = ({ onDriverClick }) => {
+  const [league, setLeague] = useState('monday');
+  const [selectedRound, setSelectedRound] = useState(0);
+
+  const { getLeagueData, loading } = useLeagueData();
+  const leagueData = getLeagueData(league);
+  const sessions = leagueData?.sessions || [];
+
+  useEffect(() => {
+    setSelectedRound(0);
+  }, [league]);
+
+  const currentEvent = sessions[selectedRound]; // Usamos currentEvent
+
+  const groupedClassData = useMemo(() => {
+    // 1. Si no hay evento, retornamos vacío
+    if (!currentEvent) return [];
+
+    // 2. Definimos las sesiones a procesar
+    const sessionsToProcess = Array.isArray(currentEvent.sessions)
+      ? currentEvent.sessions
+      : [currentEvent];
+
+    // 3. Procesamos todas las sesiones dentro del evento
+    return sessionsToProcess.flatMap((session, index) => {
+      // Filtramos nulos por seguridad
+      const rawQualy = Array.isArray(session?.qualy_results) ? session.qualy_results.filter(Boolean) : [];
+      const rawRace = Array.isArray(session?.results) ? session.results.filter(Boolean) : [];
+
+      // Obtenemos todas las clases presentes
+      const classes = new Set([
+        ...rawQualy.map((r) => r?.car_class || r?.class || 'GT3'),
+        ...rawRace.map((r) => r?.car_class || r?.class || 'GT3'),
+      ]);
+
+      // Mapeamos cada clase
+      return Array.from(classes).map((className) => {
+        const qResults = rawQualy.filter((r) => (r?.car_class || r?.class || 'GT3') === className);
+        const rResults = rawRace.filter((r) => (r?.car_class || r?.class || 'GT3') === className);
+
+        // Lógica de cálculo de mejores tiempos y sectores
+        let bestLap = Infinity;
+        let bestPace = Infinity;
+        let bSectors = [Infinity, Infinity, Infinity];
+
+        qResults.forEach((r) => {
+          const msS1 = timeStrToMs(r?.s1);
+          const msS2 = timeStrToMs(r?.s2);
+          const msS3 = timeStrToMs(r?.s3);
+          if (msS1 < bSectors[0]) bSectors[0] = msS1;
+          if (msS2 < bSectors[1]) bSectors[1] = msS2;
+          if (msS3 < bSectors[2]) bSectors[2] = msS3;
+        });
+
+        rResults.forEach((r) => {
+          if (r?.best_lap_ms && r.best_lap_ms > 0 && r.best_lap_ms < bestLap) bestLap = r.best_lap_ms;
+          if (r?.avg_lap_ms && r.avg_lap_ms > 0 && r.avg_lap_ms < bestPace) bestPace = r.avg_lap_ms;
+        });
+
+        return {
+          // Si no tiene nombre, le ponemos uno genérico basado en su orden para evitar que parezca la misma
+          sessionName: session?.name || `Race ${index + 1}`,
+          className,
+          qualyResults: qResults,
+          raceResults: rResults,
+          bestLap,
+          bestPace,
+          bestSectors: bSectors,
+          // Creamos un ID único para evitar errores de renderizado de React
+          uniqueId: `session-${index}-${className}`
+        };
+      });
+    });
+  }, [currentEvent]);
+
+  if (loading) return <div className="min-h-screen bg-black flex items-center justify-center"><div className="animate-spin rounded-full h-16 w-16 border-t-2 border-b-2 border-yellow-500"></div></div>;
+
+  return (
+    <div className="min-h-screen bg-black font-['Inter'] text-gray-300 py-8">
+      <div className="max-w-[1536px] mx-auto px-4">
+
+        <div className="text-center mb-12">
+          <div className="inline-flex items-center justify-center space-x-2 border border-yellow-500/30 px-6 py-2 rounded-full mb-6 bg-yellow-500/10">
+            <Trophy className="w-4 h-4 text-yellow-400" />
+            <span className="text-yellow-400 text-xs font-bold uppercase tracking-widest">Race Reports</span>
+          </div>
+          <h1 className="font-['Teko'] text-7xl md:text-9xl font-bold text-white mb-4 uppercase tracking-wide drop-shadow-lg">
+            Event <span className="text-yellow-400">Results</span>
+          </h1>
+          <p className="text-gray-400 text-lg max-w-2xl mx-auto uppercase tracking-widest font-medium">
+            Advanced telemetry, gaps, and session highlights.
+          </p>
+        </div>
+
+        <div className="bg-[#0a0a0a] p-6 border border-gray-800 mb-10 shadow-xl flex flex-col md:flex-row gap-6">
+          <div className="flex-1">
+            <label className="text-[10px] text-yellow-500 uppercase font-bold tracking-widest mb-2 block">Championship</label>
+            <select
+              value={league}
+              onChange={(e) => setLeague(e.target.value)}
+              className="w-full bg-black border border-gray-700 text-white p-3 font-bold uppercase tracking-widest outline-none focus:border-yellow-500"
+            >
+              <option value="monday">Monday Marathon</option>
+              <option value="multiclass">Multiclass Friday</option>
+            </select>
+          </div>
+
+          <div className="flex-1">
+            <label className="text-[10px] text-blue-400 uppercase font-bold tracking-widest mb-2 block">Select Round</label>
+            <select
+              value={selectedRound}
+              onChange={(e) => setSelectedRound(Number(e.target.value))}
+              className="w-full bg-black border border-gray-700 text-white p-3 font-bold uppercase tracking-widest outline-none focus:border-blue-500"
+            >
+              {sessions.map((session, idx) => (
+                <option key={idx} value={idx}>{session.name || `Round ${idx + 1}`}</option>
+              ))}
+            </select>
+          </div>
+        </div>
+
+        {/* CUIDADO AQUÍ: Ya no usamos currentSession, usamos currentEvent */}
+        {sessions.length > 0 && currentEvent && groupedClassData.length > 0 ? (
+          groupedClassData.map((group) => (
+            <div key={group.uniqueId} className="mb-16">
+
+              {/* TÍTULO DE LA SESIÓN Y CLASE */}
+              <div className="mb-6 flex flex-col border-b border-gray-800 pb-2">
+                {/* Etiqueta de la sesión (ej: "Race 1" o "Race 2") para diferenciarlas claramente */}
+                <span className="text-blue-400 text-sm font-bold uppercase tracking-widest mb-1">
+                  {group.sessionName}
+                </span>
+                <div className="flex items-center">
+                  <div className="w-1.5 h-8 bg-yellow-500 mr-4"></div>
+                  <h2 className="font-['Teko'] text-5xl font-bold text-white uppercase tracking-wide">
+                    {group.className} Class
+                  </h2>
+                </div>
+              </div>
+
+              {group.qualyResults.length > 0 && <QualyTable data={group.qualyResults} bestSectors={group.bestSectors} onDriverClick={onDriverClick} />}
+              {group.raceResults.length > 0 && <RaceTable data={group.raceResults} bestLap={group.bestLap} bestPace={group.bestPace} onDriverClick={onDriverClick} />}
+            </div>
+          ))
+        ) : (
+          <div className="text-center py-20 border border-dashed border-gray-800">
+            <Calendar className="w-16 h-16 text-gray-700 mx-auto mb-4" />
+            <p className="text-gray-400 text-lg font-bold uppercase tracking-widest">No session data available</p>
+          </div>
+        )}
+
+      </div>
+    </div>
+  );
 };

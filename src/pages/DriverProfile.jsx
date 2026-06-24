@@ -122,19 +122,47 @@ export const DriverProfile = ({ driverName, onBack }) => {
   const profile = getDriverProfile(driverName);
   const isLegend = isLegendDriver(driverName);
   const leagueData = getLeagueData(activeLeague);
+
+  const availableClasses = useMemo(() => {
+    if (activeLeague !== 'multiclass' || !leagueData?.global) return ['GT3'];
+    const classes = new Set();
+    leagueData.global.forEach(d => {
+      if (d.class_stats) {
+        Object.keys(d.class_stats).forEach(c => classes.add(c));
+      }
+    });
+    return ['OVERALL', ...Array.from(classes).sort()]; // Añadimos OVERALL aquí
+  }, [leagueData, activeLeague]);
   
-  const getCarClass = (carId, explicitClass) => {
+  const getCarClass = (carId, explicitClass, carClassField) => {
+    if (carClassField) return carClassField;
     if (explicitClass) return explicitClass;
-    return gt4CarIds.includes(Number(carId)) ? 'GT4' : 'GT3';
+    
+    const id = Number(carId);
+    if (id >= 50 && id <= 61) return 'GT4';
+    if ((id >= 80 && id <= 86) || id === 18 || id === 29 || id === 26) return 'GT2';
+    if (id === 9 || id === 28) return 'Cup';
+    if (id === 27) return 'TCX';
+    if (id >= 0 && id <= 45) return 'GT3';
+    
+    return 'GT3'; 
   };
 
-  let rawDrivers = [];
+  let rawDrivers = []; 
   if (activeLeague === 'multiclass') {
-    const classData = leagueData?.[`global_${activeClass.toLowerCase()}`];
-    if (classData) rawDrivers = classData;
-    else rawDrivers = (leagueData?.global || []).filter(d => getCarClass(d.favorite_car, d.class || d.category) === activeClass);
-  } else {
-    rawDrivers = leagueData?.global || [];
+    if (activeClass === 'OVERALL') {
+      rawDrivers = leagueData?.global || [];
+    } else {
+      rawDrivers = (leagueData?.global || [])
+        .filter(d => d.class_stats && d.class_stats[activeClass])
+        .map(d => ({
+          ...d,
+          ...d.class_stats[activeClass], 
+          name: d.name
+        }));
+    }
+  } else { 
+    rawDrivers = leagueData?.global || []; 
   }
   
   const categories = useMemo(() => getDriverCategories(rawDrivers), [rawDrivers]);
@@ -161,29 +189,43 @@ export const DriverProfile = ({ driverName, onBack }) => {
     const trackOnly = session.name.split(':').pop().trim();
     const displayTrack = `${roundPrefix}: ${trackOnly}`;
 
-    let classResults = session.results || [];
-    let qualyClassResults = session.qualy_results || classResults; 
+    let classResults = session.results || []; 
+    let qualyClassResults = session.qualy_results || classResults;  
 
-    if (activeLeague === 'multiclass') {
-      classResults = classResults.filter(r => getCarClass(r.car_model || r.car, r.class) === activeClass);
-      qualyClassResults = qualyClassResults.filter(r => getCarClass(r.car_model || r.car, r.class) === activeClass);
-    }
-    
-    const result = classResults.find(r => r.name === driverName);
-    const qResult = qualyClassResults.find(r => r.name === driverName);
-    const winner = classResults.find(r => r.pos === 1 || r.pos === "1" || r.class_pos === 1 || r.class_pos === "1");
-
-    if (result || qResult) {
-      const pGapMs = result?.gap_pace_ms ?? gapStrToMs(result?.gap_pace);
-      const bGapMs = result?.gap_best_ms ?? gapStrToMs(result?.gap_best);
-      const qGapMs = qResult?.gap_pole_ms ?? qResult?.qualy_gap_ms ?? gapStrToMs(qResult?.gap_pole || qResult?.qualy_gap);
+    // Si NO estamos en OVERALL, filtramos por la clase activa. Si estamos en OVERALL, lo cogemos todo.
+    if (activeLeague === 'multiclass' && activeClass !== 'OVERALL') { 
+      classResults = classResults.filter(r => getCarClass(r.car_model || r.car, r.class, r.car_class) === activeClass); 
+      qualyClassResults = qualyClassResults.filter(r => getCarClass(r.car_model || r.car, r.class, r.car_class) === activeClass); 
+    } 
       
-      const qTimeMs = qResult?.qualy_time_ms ?? timeStrToMs(qResult?.best_lap || qResult?.qualy_time);
-      const rTimeMs = result?.best_lap_ms ?? timeStrToMs(result?.best_lap);
+    const result = classResults.find(r => r.name === driverName); 
+    const qResult = qualyClassResults.find(r => r.name === driverName); 
+    
+    // Obtenemos qué clase corrió este piloto en esta carrera en particular
+    const resultClass = result?.car_class || getCarClass(result?.car_model || qResult?.car_model);
+    
+    // Buscamos al ganador de SU misma clase, no al general de la carrera
+    const winner = classResults.find(r => 
+       (r.car_class || getCarClass(r.car_model)) === resultClass && 
+       (r.pos === 1 || r.pos === "1" || r.class_pos === 1 || r.class_pos === "1")
+    );
 
-      raceHistory.push({
-        sessionName: displayTrack, 
-        pos: result?.class_pos || result?.pos, 
+    // Si estamos en la pestaña OVERALL, añadimos la clase al nombre del circuito (ej: "R1: Nurburgring [GT4]")
+    const finalDisplayTrack = (activeLeague === 'multiclass' && activeClass === 'OVERALL' && resultClass)
+      ? `${displayTrack} [${resultClass}]`
+      : displayTrack;
+
+    if (result || qResult) { 
+      const pGapMs = result?.gap_pace_ms ?? gapStrToMs(result?.gap_pace); 
+      const bGapMs = result?.gap_best_ms ?? gapStrToMs(result?.gap_best); 
+      const qGapMs = qResult?.gap_pole_ms ?? qResult?.qualy_gap_ms ?? gapStrToMs(qResult?.gap_pole || qResult?.qualy_gap); 
+        
+      const qTimeMs = qResult?.qualy_time_ms ?? timeStrToMs(qResult?.best_lap || qResult?.qualy_time); 
+      const rTimeMs = result?.best_lap_ms ?? timeStrToMs(result?.best_lap); 
+
+      raceHistory.push({ 
+        sessionName: finalDisplayTrack, // USAMOS EL NOMBRE NUEVO
+        pos: result?.class_pos || result?.pos,
         pacePos: result?.pace_pos, 
         qualyPos: qResult?.class_pos || qResult?.qualy_pos || qResult?.pos || result?.qualy_pos, 
         laps: result?.lap_history || [], 
@@ -326,10 +368,21 @@ export const DriverProfile = ({ driverName, onBack }) => {
           <button onClick={() => { setActiveLeague('multiclass'); setSelectedRaceIndex(0); }} className={`flex-1 py-3 px-6 font-['Teko'] text-2xl uppercase tracking-widest transition-all duration-200 transform -skew-x-12 border border-gray-800 ${activeLeague === 'multiclass' ? 'bg-yellow-500 text-black shadow-[0_0_15px_rgba(250,204,21,0.3)]' : 'bg-[#0a0a0a] text-gray-400 hover:text-white'}`}><span className="block transform skew-x-12">Multiclass Friday</span></button>
         </div>
 
-        {activeLeague === 'multiclass' && (
-          <div className="flex justify-center space-x-4 mb-6 bg-[#0a0a0a] p-3 w-full max-w-sm mx-auto border border-gray-800">
-            <button onClick={() => { setActiveClass('GT3'); setSelectedRaceIndex(0); }} className={`flex-1 py-2 px-4 font-bold text-sm uppercase tracking-widest transition-all ${activeClass === 'GT3' ? 'bg-yellow-500 text-black shadow-md' : 'bg-black border border-gray-800 text-gray-400'}`}>GT3 Class</button>
-            <button onClick={() => { setActiveClass('GT4'); setSelectedRaceIndex(0); }} className={`flex-1 py-2 px-4 font-bold text-sm uppercase tracking-widest transition-all ${activeClass === 'GT4' ? 'bg-orange-500 text-black shadow-md' : 'bg-black border border-gray-800 text-gray-400'}`}>GT4 Class</button>
+        {activeLeague === 'multiclass' && availableClasses.length > 0 && (
+          <div className="flex flex-wrap justify-center gap-2 mb-6 bg-[#0a0a0a] p-3 w-full max-w-2xl mx-auto border border-gray-800 rounded">
+            {availableClasses.map(cls => (
+              <button
+                key={cls}
+                onClick={() => { setActiveClass(cls); setSelectedRaceIndex(0); }}
+                className={`py-2 px-4 font-bold text-sm uppercase tracking-widest transition-all ${
+                  activeClass === cls 
+                    ? 'bg-yellow-500 text-black shadow-md' 
+                    : 'bg-black border border-gray-800 text-gray-400 hover:text-white'
+                }`}
+              >
+                {cls} Class
+              </button>
+            ))}
           </div>
         )}
 
