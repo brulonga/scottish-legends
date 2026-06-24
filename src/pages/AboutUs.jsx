@@ -77,7 +77,7 @@ export const AboutUs = () => {
                 <Wrench className="w-8 h-8" />
               </div>
               <div className="mt-4 flex-grow">
-                <div className="text-yellow-400 text-xs font-bold uppercase tracking-widest mb-2">Vice-President</div>
+                <div className="text-yellow-400 text-xs font-bold uppercase tracking-widest mb-2">Vice-President & Chief Steward</div>
                 
                 <div className="flex items-center space-x-3 mb-2">
                   {martyProfile?.avatar && (
@@ -99,7 +99,7 @@ export const AboutUs = () => {
                 <BarChart2 className="w-8 h-8" />
               </div>
               <div className="mt-4 flex-grow">
-                <div className="text-yellow-400 text-xs font-bold uppercase tracking-widest mb-2">The Data Guy</div>
+                <div className="text-yellow-400 text-xs font-bold uppercase tracking-widest mb-2">Chief Web Developer</div>
                 
                 <div className="flex items-center space-x-3 mb-6">
                   {brunoProfile?.avatar && (
@@ -111,6 +111,104 @@ export const AboutUs = () => {
               <div className="flex items-center space-x-3 bg-[#0a0a0a] border border-gray-800 p-3 mt-auto">
                 <MessageSquare className="w-5 h-5 text-[#5865F2]" />
                 <span className="font-mono text-gray-300 text-sm">@lilbru7157</span>
+              </div>
+            </div>
+            {/* BRUNO (DATA GUY) */}
+            <div className="bg-black border border-gray-800 p-8 shadow-2xl relative group hover:border-yellow-500/50 transition-all duration-300 transform hover:-translate-y-1 flex flex-col">
+              <div className="absolute top-4 right-4 text-blue-500 opacity-50 group-hover:opacity-100 transition-opacity">
+                <BarChart2 className="w-8 h-8" />
+              </div>
+              <div className="mt-4 flex-grow">
+                <div className="text-yellow-400 text-xs font-bold uppercase tracking-widest mb-2">Chief broadcaster</div>
+                
+                <div className="flex items-center space-x-3 mb-6">
+                  <h3 className="font-['Teko'] text-4xl font-bold text-white uppercase tracking-wide leading-none">Micha Nieuwkoop</h3>
+                </div>
+              </div>
+              <div className="flex items-center space-x-3 bg-[#0a0a0a] border border-gray-800 p-3 mt-auto">
+                <MessageSquare className="w-5 h-5 text-[#5865F2]" />
+                <span className="font-mono text-gray-300 text-sm">@pamini88</span>
+              </div>
+            </div>
+            {/* BRUNO (DATA GUY) */}
+            <div className="bg-black border border-gray-800 p-8 shadow-2xl relative group hover:border-yellow-500/50 transition-all duration-300 transform hover:-translate-y-1 flex flex-col">
+              <div className="absolute top-4 right-4 text-blue-500 opacity-50 group-hover:opacity-100 transition-opacity">
+                <BarChart2 className="w-8 h-8" />
+              </div>
+              <div className="mt-4 flex-grow">
+                <div className="text-yellow-400 text-xs font-bold uppercase tracking-widest mb-2">Livery Designer & Youtube Manager</div>
+                
+                <div className="flex items-center space-x-3 mb-6">
+                  <h3 className="font-['Teko'] text-4xl font-bold text-white uppercase tracking-wide leading-none">Andy McDonald</h3>
+                </div>
+              </div>
+              <div className="flex items-center space-x-3 bg-[#0a0a0a] border border-gray-800 p-3 mt-auto">
+                <MessageSquare className="w-5 h-5 text-[#5865F2]" />
+                <span className="font-mono text-gray-300 text-sm">@stereo8275</span>
+              </div>
+            </div>
+            <div className="bg-black border border-gray-800 p-8 shadow-2xl relative group hover:border-yellow-500/50 transition-all duration-300 transform hover:-translate-y-1 flex flex-col">
+              <div className="absolute top-4 right-4 text-blue-500 opacity-50 group-hover:opacity-100 transition-opacity">
+                <BarChart2 className="w-8 h-8" />
+              </div>
+              <div className="mt-4 flex-grow">
+                <div className="text-yellow-400 text-xs font-bold uppercase tracking-widest mb-2">Steward</div>
+                
+                <div className="flex items-center space-x-3 mb-6">
+                  <h3 className="font-['Teko'] text-4xl font-bold text-white uppercase tracking-wide leading-none">Marsi Bella</h3>
+                </div>
+              </div>
+              <div className="flex items-center space-x-3 bg-[#0a0a0a] border border-gray-800 p-3 mt-auto">
+                <MessageSquare className="w-5 h-5 text-[#5865F2]" />
+                <span className="font-mono text-gray-300 text-sm">@guard20151</span>
+              </div>
+            </div>
+            <div className="bg-black border border-gray-800 p-8 shadow-2xl relative group hover:border-yellow-500/50 transition-all duration-300 transform hover:-translate-y-1 flex flex-col">
+              <div className="absolute top-4 right-4 text-blue-500 opacity-50 group-hover:opacity-100 transition-opacity">
+                <BarChart2 className="w-8 h-8" />
+              </div>
+              <div className="mt-4 flex-grow">
+                <div className="text-yellow-400 text-xs font-bold uppercase tracking-widest mb-2">Steward & Broadcaster</div>
+                
+                <div className="flex items-center space-x-3 mb-6">
+                  <h3 className="font-['Teko'] text-4xl font-bold text-white uppercase tracking-wide leading-none">Dominic Zimmermann</h3>
+                </div>
+              </div>
+              <div className="flex items-center space-x-3 bg-[#0a0a0a] border border-gray-800 p-3 mt-auto">
+                <MessageSquare className="w-5 h-5 text-[#5865F2]" />
+                <span className="font-mono text-gray-300 text-sm">@verzauberter_boeller</span>
+              </div>
+            </div>
+            <div className="bg-black border border-gray-800 p-8 shadow-2xl relative group hover:border-yellow-500/50 transition-all duration-300 transform hover:-translate-y-1 flex flex-col">
+              <div className="absolute top-4 right-4 text-blue-500 opacity-50 group-hover:opacity-100 transition-opacity">
+                <BarChart2 className="w-8 h-8" />
+              </div>
+              <div className="mt-4 flex-grow">
+                <div className="text-yellow-400 text-xs font-bold uppercase tracking-widest mb-2">Steward & Broadcaster</div>
+                
+                <div className="flex items-center space-x-3 mb-6">
+                  <h3 className="font-['Teko'] text-4xl font-bold text-white uppercase tracking-wide leading-none">Luca Maggiolo</h3>
+                </div>
+              </div>
+              <div className="flex items-center space-x-3 bg-[#0a0a0a] border border-gray-800 p-3 mt-auto">
+                <MessageSquare className="w-5 h-5 text-[#5865F2]" />
+                <span className="font-mono text-gray-300 text-sm">@maggioac</span>
+              </div>
+            </div>
+            <div className="bg-black border border-gray-800 p-8 shadow-2xl relative group hover:border-yellow-500/50 transition-all duration-300 transform hover:-translate-y-1 flex flex-col">
+              <div className="absolute top-4 right-4 text-blue-500 opacity-50 group-hover:opacity-100 transition-opacity">
+                <BarChart2 className="w-8 h-8" />
+              </div>
+              <div className="mt-4 flex-grow">
+                <div className="text-yellow-400 text-xs font-bold uppercase tracking-widest mb-2">Broadcaster</div>
+                
+                <div className="flex items-center space-x-3 mb-6">
+                  <h3 className="font-['Teko'] text-4xl font-bold text-white uppercase tracking-wide leading-none">Florian Braun</h3>
+                </div>
+              </div>
+              <div className="flex items-center space-x-3 bg-[#0a0a0a] border border-gray-800 p-3 mt-auto">
+                <MessageSquare className="w-5 h-5 text-[#5865F2]" />
+                <span className="font-mono text-gray-300 text-sm">@browny2204</span>
               </div>
             </div>
 

@@ -19,17 +19,31 @@ const HOME_CONFIG = {
   featuredChannels: [ 
     { 
       name: "The Rookie Driver", 
-      description: "LFM Racing Content", 
+      description: "Championship HIghlights & Content", 
       url: "https://www.youtube.com/@TheRookieDriver-LFM", 
       bgImage: "/assets/yt/fondo_yt.png", 
       avatar: "/assets/yt/rookie_driver_avatar.jpg"  
     }, 
     { 
       name: "Fox Face Racing", 
-      description: "Championship Highlights", 
+      description: "Championship Live Streams", 
       url: "https://www.youtube.com/@foxfaceracing", 
       bgImage: "/assets/yt/youtube_banner_fox.jpg", 
       avatar: "/assets/yt/youtube_avatar_fox.jpg"  
+    },
+    { 
+      name: "Michanieuwkoop Racing", 
+      description: "Championship Live Streams", 
+      url: "https://www.twitch.tv/michanieuwkoopracing", 
+      bgImage: "", 
+      avatar: ""  
+    },
+    { 
+      name: "NewbFixer", 
+      description: "Liveries & Content", 
+      url: "https://www.youtube.com/@NewbFixer", 
+      bgImage: "", 
+      avatar: ""  
     } 
   ] 
 }; 

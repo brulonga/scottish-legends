@@ -73,6 +73,26 @@ export const Footer = ({ onNavigate }) => {
               </li>
               <li>
                 <a 
+                  href="https://www.twitch.tv/michanieuwkoopracing" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="text-gray-400 hover:text-red-500 transition-colors text-sm font-bold uppercase tracking-widest"
+                >
+                  Twitch - Michanieuwkoopracing
+                </a>
+              </li>
+              <li>
+                <a 
+                  href="https://www.youtube.com/@Scottish-Legends" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="text-gray-400 hover:text-red-500 transition-colors text-sm font-bold uppercase tracking-widest"
+                >
+                  YouTube - Scottish Legends
+                </a>
+              </li>
+              <li>
+                <a 
                   href="https://www.youtube.com/@foxfaceracing" 
                   target="_blank" 
                   rel="noopener noreferrer" 

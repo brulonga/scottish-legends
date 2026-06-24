@@ -99,6 +99,12 @@ export const Community = ({ onNavigate }) => {
                 <div className="bg-black border border-yellow-500/30 px-6 py-3 transform -skew-x-6 shadow-[0_0_15px_rgba(250,204,21,0.1)]">
                   <span className="font-['Teko'] text-2xl text-yellow-400 font-bold uppercase tracking-wider transform skew-x-6 block">Raymond Crawford</span>
                 </div>
+                <div className="bg-black border border-yellow-500/30 px-6 py-3 transform -skew-x-6 shadow-[0_0_15px_rgba(250,204,21,0.1)]">
+                  <span className="font-['Teko'] text-2xl text-yellow-400 font-bold uppercase tracking-wider transform skew-x-6 block">Bruno Longarela</span>
+                </div>
+                <div className="bg-black border border-yellow-500/30 px-6 py-3 transform -skew-x-6 shadow-[0_0_15px_rgba(250,204,21,0.1)]">
+                  <span className="font-['Teko'] text-2xl text-yellow-400 font-bold uppercase tracking-wider transform skew-x-6 block">Micha Nieuwkoop</span>
+                </div>
               </div>
             </div>
 
@@ -113,7 +119,7 @@ export const Community = ({ onNavigate }) => {
               <h2 className="font-['Teko'] text-4xl font-bold text-white uppercase tracking-wide mb-2">Join The Discord</h2>
               <p className="text-gray-400 text-sm font-medium mb-8">This is where the magic happens. Voice channels, race coordination, and daily banter.</p>
               <a
-                href="https://discord.gg/MEcjZPJx"
+                href="https://discord.gg/VXjtdZrG4Y"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block w-full py-4 px-6 bg-[#5865F2] hover:bg-[#4752C4] text-white font-bold uppercase tracking-widest transition-all duration-200 shadow-lg transform -skew-x-6"
