@@ -1,5 +1,5 @@
 import { useState, useMemo, useEffect } from 'react';  
-import { Trophy, Timer, Flag, Calendar } from 'lucide-react';  
+import { Trophy, Timer, Flag, Calendar, AlertCircle } from 'lucide-react';  
 import { useLeagueData } from '../hooks/useLeagueData';  
 
 // --- FORMATEADORES 100% BLINDADOS ---
@@ -49,7 +49,7 @@ const textNeonPurple = "text-purple-400 font-bold drop-shadow-[0_0_8px_rgba(168,
 const textNeonGold = "text-yellow-400 font-bold drop-shadow-[0_0_8px_rgba(250,204,21,0.8)]";  
 const textNeonRed = "text-red-500 font-bold drop-shadow-[0_0_8px_rgba(239,68,68,0.8)]";  
 
-// 🚀 EXTRAEMOS QUALYTABLE FUERA PARA EVITAR CRASHES
+// --- TABLA DE CLASIFICACIÓN (QUALY) ---
 const QualyTable = ({ data = [], bestSectors = [Infinity, Infinity, Infinity], onDriverClick }) => {  
   return (  
     <div className="bg-[#0a0a0a] border border-gray-800 shadow-2xl mb-12 overflow-hidden">  
@@ -73,7 +73,10 @@ const QualyTable = ({ data = [], bestSectors = [Infinity, Infinity, Infinity], o
           </thead>  
           <tbody className="divide-y divide-gray-800/50 text-xs">  
             {data.map((row, index) => {  
-              if (!row) return null; // Safeguard contra filas nulas
+              if (!row) return null;
+
+              // 🧹 LIMPIADOR DE NOMBRES
+              const cleanName = row.name ? row.name.replace(/\[.*?\]|\|.*/g, '').trim() : "Unknown Driver";
 
               const noTime = !row.best_lap || row.best_lap === "-" || row.best_lap === "NO TIME";  
               const isPole = !noTime && (row.gap_pole === "POLE" || row.gap_pole_ms === 0 || row.pos === 1 || row.pos === "1");  
@@ -91,9 +94,9 @@ const QualyTable = ({ data = [], bestSectors = [Infinity, Infinity, Infinity], o
                   </td>  
                     
                   <td className="px-4 py-3">  
-                    <div className="flex items-center cursor-pointer group w-fit" onClick={() => onDriverClick && onDriverClick(row.name)}>  
+                    <div className="flex items-center cursor-pointer group w-fit" onClick={() => onDriverClick && onDriverClick(cleanName)}>  
                       <span className="text-blue-400 font-bold group-hover:text-yellow-400 transition-colors">  
-                        {row.name || "Unknown Driver"}  
+                        {cleanName}  
                       </span>  
                     </div>  
                   </td>  
@@ -127,7 +130,7 @@ const QualyTable = ({ data = [], bestSectors = [Infinity, Infinity, Infinity], o
   );  
 };  
 
-// 🚀 EXTRAEMOS RACETABLE FUERA DEL COMPONENTE PRINCIPAL
+// --- TABLA DE CARRERA ---
 const RaceTable = ({ data = [], bestLap = Infinity, bestPace = Infinity, onDriverClick }) => {  
   return (  
     <div className="bg-[#0a0a0a] border border-gray-800 shadow-2xl mb-12 overflow-hidden">  
@@ -157,7 +160,10 @@ const RaceTable = ({ data = [], bestLap = Infinity, bestPace = Infinity, onDrive
           </thead>  
           <tbody className="divide-y divide-gray-800/50 text-xs">  
             {data.map((row, index) => {  
-              if (!row) return null; // Safeguard contra filas nulas
+              if (!row) return null;
+
+              // 🧹 LIMPIADOR DE NOMBRES
+              const cleanName = row.name ? row.name.replace(/\[.*?\]|\|.*/g, '').trim() : "Unknown Driver";
 
               const displayPos = row.class_pos || row.pos; 
               const isWinner = displayPos === 1 || displayPos === "1" || row.race_gap === "WINNER";  
@@ -201,9 +207,9 @@ const RaceTable = ({ data = [], bestLap = Infinity, bestPace = Infinity, onDrive
                   <td className={`px-3 py-3 text-center font-mono ${netVsQColor}`}>{netVsQStr}</td>  
                     
                   <td className="px-3 py-3">  
-                    <div className="flex items-center cursor-pointer group w-fit" onClick={() => onDriverClick && onDriverClick(row.name)}>  
+                    <div className="flex items-center cursor-pointer group w-fit" onClick={() => onDriverClick && onDriverClick(cleanName)}>  
                       <span className="text-blue-400 font-bold group-hover:text-yellow-400 transition-colors">  
-                        {row.name || "Unknown Driver"}  
+                        {cleanName}  
                       </span>  
                     </div>  
                   </td>  
@@ -242,48 +248,48 @@ const RaceTable = ({ data = [], bestLap = Infinity, bestPace = Infinity, onDrive
   );  
 };  
 
-// --- COMPONENTE PRINCIPAL ---// --- COMPONENTE PRINCIPAL ---
-export const Results = ({ onDriverClick }) => {
-  const [league, setLeague] = useState('monday');
+// --- COMPONENTE PRINCIPAL ---
+export const Results = ({ 
+  onDriverClick,
+  activeLeague: propsLeague,
+  activeSeason: propsSeason
+}) => {
+  // 🚀 ESTADO LOCAL INDEPENDIENTE (Por si App.jsx no se lo pasa)
+  const [activeLeague, setActiveLeague] = useState(propsLeague || null);
+  const [activeSeason, setActiveSeason] = useState(propsSeason || null);
   const [selectedRound, setSelectedRound] = useState(0);
 
-  const { getLeagueData, loading } = useLeagueData();
-  const leagueData = getLeagueData(league);
+  // 🚀 HOOK DINÁMICO
+  const { leagueData, loading, error } = useLeagueData(activeLeague, activeSeason);
   const sessions = leagueData?.sessions || [];
 
+  // Resetear la carrera seleccionada cuando cambiamos de liga o temporada
   useEffect(() => {
     setSelectedRound(0);
-  }, [league]);
+  }, [activeLeague, activeSeason]);
 
-  const currentEvent = sessions[selectedRound]; // Usamos currentEvent
+  const currentEvent = sessions[selectedRound]; 
 
   const groupedClassData = useMemo(() => {
-    // 1. Si no hay evento, retornamos vacío
     if (!currentEvent) return [];
 
-    // 2. Definimos las sesiones a procesar
     const sessionsToProcess = Array.isArray(currentEvent.sessions)
       ? currentEvent.sessions
       : [currentEvent];
 
-    // 3. Procesamos todas las sesiones dentro del evento
     return sessionsToProcess.flatMap((session, index) => {
-      // Filtramos nulos por seguridad
       const rawQualy = Array.isArray(session?.qualy_results) ? session.qualy_results.filter(Boolean) : [];
       const rawRace = Array.isArray(session?.results) ? session.results.filter(Boolean) : [];
 
-      // Obtenemos todas las clases presentes
       const classes = new Set([
         ...rawQualy.map((r) => r?.car_class || r?.class || 'GT3'),
         ...rawRace.map((r) => r?.car_class || r?.class || 'GT3'),
       ]);
 
-      // Mapeamos cada clase
       return Array.from(classes).map((className) => {
         const qResults = rawQualy.filter((r) => (r?.car_class || r?.class || 'GT3') === className);
         const rResults = rawRace.filter((r) => (r?.car_class || r?.class || 'GT3') === className);
 
-        // Lógica de cálculo de mejores tiempos y sectores
         let bestLap = Infinity;
         let bestPace = Infinity;
         let bSectors = [Infinity, Infinity, Infinity];
@@ -303,7 +309,6 @@ export const Results = ({ onDriverClick }) => {
         });
 
         return {
-          // Si no tiene nombre, le ponemos uno genérico basado en su orden para evitar que parezca la misma
           sessionName: session?.name || `Race ${index + 1}`,
           className,
           qualyResults: qResults,
@@ -311,89 +316,144 @@ export const Results = ({ onDriverClick }) => {
           bestLap,
           bestPace,
           bestSectors: bSectors,
-          // Creamos un ID único para evitar errores de renderizado de React
           uniqueId: `session-${index}-${className}`
         };
       });
     });
   }, [currentEvent]);
 
-  if (loading) return <div className="min-h-screen bg-black flex items-center justify-center"><div className="animate-spin rounded-full h-16 w-16 border-t-2 border-b-2 border-yellow-500"></div></div>;
-
   return (
     <div className="min-h-screen bg-black font-['Inter'] text-gray-300 py-8">
       <div className="max-w-[1536px] mx-auto px-4">
 
-        <div className="text-center mb-12">
+        <div className="text-center mb-10 border-b border-gray-800 pb-8">
           <div className="inline-flex items-center justify-center space-x-2 border border-yellow-500/30 px-6 py-2 rounded-full mb-6 bg-yellow-500/10">
             <Trophy className="w-4 h-4 text-yellow-400" />
             <span className="text-yellow-400 text-xs font-bold uppercase tracking-widest">Race Reports</span>
           </div>
-          <h1 className="font-['Teko'] text-7xl md:text-9xl font-bold text-white mb-4 uppercase tracking-wide drop-shadow-lg">
+          <h1 className="font-['Teko'] text-6xl font-bold text-white mb-6 uppercase tracking-wide">
             Event <span className="text-yellow-400">Results</span>
           </h1>
-          <p className="text-gray-400 text-lg max-w-2xl mx-auto uppercase tracking-widest font-medium">
-            Advanced telemetry, gaps, and session highlights.
-          </p>
+          
+          {/* 🚀 SELECTORES DE LIGA Y TEMPORADA */}
+          <div className="flex flex-col md:flex-row gap-6 mt-6 max-w-4xl mx-auto">
+            <div className="flex-1 space-y-2">
+              <label className="font-['Teko'] text-xl text-gray-500 uppercase tracking-widest text-left block">1. Select League</label>
+              <div className="flex space-x-2">
+                <button
+                  onClick={() => { setActiveLeague('monday_marathon'); setActiveSeason(null); }}
+                  className={`flex-1 py-2 px-4 transform -skew-x-12 transition-all duration-200 border border-gray-800 ${
+                    activeLeague === 'monday_marathon' ? 'bg-yellow-500 text-black shadow-[0_0_15px_rgba(250,204,21,0.3)]' : 'bg-[#0a0a0a] text-gray-400 hover:border-yellow-500/50 hover:text-white'
+                  }`}
+                >
+                  <span className="font-['Teko'] text-xl uppercase tracking-widest block transform skew-x-12">Monday Marathon</span>
+                </button>
+                <button
+                  onClick={() => { setActiveLeague('fun_friday'); setActiveSeason(null); }}
+                  className={`flex-1 py-2 px-4 transform -skew-x-12 transition-all duration-200 border border-gray-800 ${
+                    activeLeague === 'fun_friday' ? 'bg-yellow-500 text-black shadow-[0_0_15px_rgba(250,204,21,0.3)]' : 'bg-[#0a0a0a] text-gray-400 hover:border-yellow-500/50 hover:text-white'
+                  }`}
+                >
+                  <span className="font-['Teko'] text-xl uppercase tracking-widest block transform skew-x-12">Fun Friday</span>
+                </button>
+              </div>
+            </div>
+
+            <div className={`flex-1 space-y-2 transition-opacity duration-300 ${activeLeague ? 'opacity-100' : 'opacity-30 pointer-events-none'}`}>
+              <label className="font-['Teko'] text-xl text-gray-500 uppercase tracking-widest text-left block">2. Select Season</label>
+              <div className="flex space-x-2">
+                <button
+                  onClick={() => setActiveSeason('season_1')}
+                  className={`flex-1 py-2 px-4 transform -skew-x-12 transition-all duration-200 border border-gray-800 ${
+                    activeSeason === 'season_1' ? 'bg-white text-black shadow-[0_0_15px_rgba(255,255,255,0.3)]' : 'bg-[#0a0a0a] text-gray-400 hover:border-white/50 hover:text-white'
+                  }`}
+                >
+                  <span className="font-['Teko'] text-xl uppercase tracking-widest block transform skew-x-12">Season 1</span>
+                </button>
+                <button
+                  onClick={() => setActiveSeason('season_2')}
+                  className={`flex-1 py-2 px-4 transform -skew-x-12 transition-all duration-200 border border-gray-800 ${
+                    activeSeason === 'season_2' ? 'bg-white text-black shadow-[0_0_15px_rgba(255,255,255,0.3)]' : 'bg-[#0a0a0a] text-gray-400 hover:border-white/50 hover:text-white'
+                  }`}
+                >
+                  <span className="font-['Teko'] text-xl uppercase tracking-widest block transform skew-x-12">Season 2</span>
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
 
-        <div className="bg-[#0a0a0a] p-6 border border-gray-800 mb-10 shadow-xl flex flex-col md:flex-row gap-6">
-          <div className="flex-1">
-            <label className="text-[10px] text-yellow-500 uppercase font-bold tracking-widest mb-2 block">Championship</label>
-            <select
-              value={league}
-              onChange={(e) => setLeague(e.target.value)}
-              className="w-full bg-black border border-gray-700 text-white p-3 font-bold uppercase tracking-widest outline-none focus:border-yellow-500"
-            >
-              <option value="monday">Monday Marathon</option>
-              <option value="multiclass">Multiclass Friday</option>
-            </select>
+        {/* ESTADOS DE CARGA Y VACÍO */}
+        {!activeLeague || !activeSeason ? (
+          <div className="bg-[#0a0a0a] p-16 text-center border border-gray-800 rounded-lg">
+            <Flag className="w-20 h-20 text-gray-700 mx-auto mb-6 animate-pulse" />
+            <h2 className="font-['Teko'] text-4xl text-gray-400 uppercase tracking-widest mb-2">Welcome to the Race Control</h2>
+            <p className="text-gray-500 uppercase tracking-widest font-bold">Please select a League and a Season above to view the results.</p>
           </div>
-
-          <div className="flex-1">
-            <label className="text-[10px] text-blue-400 uppercase font-bold tracking-widest mb-2 block">Select Round</label>
-            <select
-              value={selectedRound}
-              onChange={(e) => setSelectedRound(Number(e.target.value))}
-              className="w-full bg-black border border-gray-700 text-white p-3 font-bold uppercase tracking-widest outline-none focus:border-blue-500"
-            >
-              {sessions.map((session, idx) => (
-                <option key={idx} value={idx}>{session.name || `Round ${idx + 1}`}</option>
-              ))}
-            </select>
+        ) : loading ? (
+          <div className="flex items-center justify-center py-20">
+            <div className="animate-spin rounded-full h-16 w-16 border-t-2 border-b-2 border-yellow-500"></div>
           </div>
-        </div>
-
-        {/* CUIDADO AQUÍ: Ya no usamos currentSession, usamos currentEvent */}
-        {sessions.length > 0 && currentEvent && groupedClassData.length > 0 ? (
-          groupedClassData.map((group) => (
-            <div key={group.uniqueId} className="mb-16">
-
-              {/* TÍTULO DE LA SESIÓN Y CLASE */}
-              <div className="mb-6 flex flex-col border-b border-gray-800 pb-2">
-                {/* Etiqueta de la sesión (ej: "Race 1" o "Race 2") para diferenciarlas claramente */}
-                <span className="text-blue-400 text-sm font-bold uppercase tracking-widest mb-1">
-                  {group.sessionName}
-                </span>
-                <div className="flex items-center">
-                  <div className="w-1.5 h-8 bg-yellow-500 mr-4"></div>
-                  <h2 className="font-['Teko'] text-5xl font-bold text-white uppercase tracking-wide">
-                    {group.className} Class
-                  </h2>
+        ) : error ? (
+          <div className="bg-red-900/20 p-8 text-center border border-red-500/30">
+            <p className="text-red-400 uppercase tracking-widest font-bold">{error}</p>
+          </div>
+        ) : sessions.length === 0 ? (
+          <div className="text-center py-20 border border-dashed border-gray-800 bg-[#0a0a0a] rounded-lg">
+            <Calendar className="w-16 h-16 text-gray-700 mx-auto mb-4" />
+            <p className="text-gray-400 text-lg font-bold uppercase tracking-widest">No races have been held yet in this season.</p>
+          </div>
+        ) : (
+          <>
+            {/* SELECTOR DE CARRERA (ROUND) */}
+            <div className="mb-10 max-w-xl mx-auto">
+              <label className="text-gray-500 font-['Teko'] text-xl uppercase tracking-widest mb-2 block text-center">Select Race Event</label>
+              <div className="relative">
+                <select
+                  value={selectedRound}
+                  onChange={(e) => setSelectedRound(Number(e.target.value))}
+                  className="w-full bg-[#0a0a0a] border border-gray-700 text-white p-4 font-['Teko'] text-2xl uppercase tracking-widest outline-none focus:border-yellow-500 transition-colors appearance-none cursor-pointer"
+                >
+                  {sessions.map((session, idx) => (
+                    <option key={idx} value={idx}>{session.name || `Round ${idx + 1}`}</option>
+                  ))}
+                </select>
+                <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-gray-400">
+                  <svg className="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
                 </div>
               </div>
-
-              {group.qualyResults.length > 0 && <QualyTable data={group.qualyResults} bestSectors={group.bestSectors} onDriverClick={onDriverClick} />}
-              {group.raceResults.length > 0 && <RaceTable data={group.raceResults} bestLap={group.bestLap} bestPace={group.bestPace} onDriverClick={onDriverClick} />}
             </div>
-          ))
-        ) : (
-          <div className="text-center py-20 border border-dashed border-gray-800">
-            <Calendar className="w-16 h-16 text-gray-700 mx-auto mb-4" />
-            <p className="text-gray-400 text-lg font-bold uppercase tracking-widest">No session data available</p>
-          </div>
-        )}
 
+            {/* TABLAS DE RESULTADOS POR CLASE */}
+            {currentEvent && groupedClassData.length > 0 ? (
+              groupedClassData.map((group) => (
+                <div key={group.uniqueId} className="mb-16 animate-fade-in">
+
+                  {/* TÍTULO DE LA SESIÓN Y CLASE */}
+                  <div className="mb-6 flex flex-col border-b border-gray-800 pb-2">
+                    <span className="text-blue-400 text-sm font-bold uppercase tracking-widest mb-1">
+                      {group.sessionName}
+                    </span>
+                    <div className="flex items-center">
+                      <div className="w-1.5 h-8 bg-yellow-500 mr-4"></div>
+                      <h2 className="font-['Teko'] text-5xl font-bold text-white uppercase tracking-wide">
+                        {group.className} Class
+                      </h2>
+                    </div>
+                  </div>
+
+                  {group.qualyResults.length > 0 && <QualyTable data={group.qualyResults} bestSectors={group.bestSectors} onDriverClick={onDriverClick} />}
+                  {group.raceResults.length > 0 && <RaceTable data={group.raceResults} bestLap={group.bestLap} bestPace={group.bestPace} onDriverClick={onDriverClick} />}
+                </div>
+              ))
+            ) : (
+              <div className="text-center py-20 border border-dashed border-gray-800 bg-[#0a0a0a] rounded-lg">
+                <AlertCircle className="w-16 h-16 text-gray-700 mx-auto mb-4" />
+                <p className="text-gray-400 text-lg font-bold uppercase tracking-widest">No valid results found for this event.</p>
+              </div>
+            )}
+          </>
+        )}
       </div>
     </div>
   );

@@ -71,7 +71,6 @@ const msToTimeStr = (ms) => {
   return `${minutes > 0 ? minutes + ':' : ''}${seconds.toString().padStart(2, '0')}.${milis.toString().padStart(3, '0')}`;
 };
 
-// EXTRAE GAPS DESDE TEXTO (Soluciona Monday Marathon)
 const gapStrToMs = (gapStr) => {
   if (gapStr === null || gapStr === undefined || gapStr === "-" || gapStr === "") return null;
   if (typeof gapStr === 'number') return gapStr;
@@ -97,7 +96,6 @@ const gapStrToMs = (gapStr) => {
   return parseInt(cleanStr) || null;
 };
 
-// EXTRAE VUELTAS DESDE TEXTO
 const timeStrToMs = (timeStr) => { 
   if (!timeStr || timeStr === "-" || timeStr === "NO TIME") return Infinity;
   if (typeof timeStr === 'number') return timeStr;
@@ -113,25 +111,40 @@ const timeStrToMs = (timeStr) => {
   return Infinity; 
 };
 
-export const DriverProfile = ({ driverName, onBack }) => {
-  const [activeLeague, setActiveLeague] = useState('monday');
-  const [activeClass, setActiveClass] = useState('GT3');
+export const DriverProfile = ({ 
+  driverName, 
+  onBack,
+  activeLeague: propsLeague,
+  activeSeason: propsSeason
+}) => {
+  // 1. ESTADO DE LA LIGA Y TEMPORADA
+  const [activeLeague, setActiveLeague] = useState(propsLeague || 'fun_friday');
+  const [activeSeason, setActiveSeason] = useState(propsSeason || 'season_1');
+  const [activeClass, setActiveClass] = useState('OVERALL');
   const [selectedRaceIndex, setSelectedRaceIndex] = useState(0);
-  const { getLeagueData } = useLeagueData();
+  
+  // 2. NUEVO HOOK DINÁMICO
+  const { leagueData, loading, error } = useLeagueData(activeLeague, activeSeason);
+
+  // 3. LIMPIADOR DE NOMBRES
+  const normalizeName = (name) => {
+    if (!name) return "";
+    return name.replace(/\[.*?\]|\|.*/g, '').trim().toLowerCase();
+  };
+  const targetClean = normalizeName(driverName);
 
   const profile = getDriverProfile(driverName);
   const isLegend = isLegendDriver(driverName);
-  const leagueData = getLeagueData(activeLeague);
 
   const availableClasses = useMemo(() => {
-    if (activeLeague !== 'multiclass' || !leagueData?.global) return ['GT3'];
+    if ((activeLeague !== 'multiclass' && activeLeague !== 'fun_friday') || !leagueData?.global) return ['GT3'];
     const classes = new Set();
     leagueData.global.forEach(d => {
       if (d.class_stats) {
         Object.keys(d.class_stats).forEach(c => classes.add(c));
       }
     });
-    return ['OVERALL', ...Array.from(classes).sort()]; // Añadimos OVERALL aquí
+    return ['OVERALL', ...Array.from(classes).sort()]; 
   }, [leagueData, activeLeague]);
   
   const getCarClass = (carId, explicitClass, carClassField) => {
@@ -149,7 +162,7 @@ export const DriverProfile = ({ driverName, onBack }) => {
   };
 
   let rawDrivers = []; 
-  if (activeLeague === 'multiclass') {
+  if (activeLeague === 'multiclass' || activeLeague === 'fun_friday') {
     if (activeClass === 'OVERALL') {
       rawDrivers = leagueData?.global || [];
     } else {
@@ -165,15 +178,21 @@ export const DriverProfile = ({ driverName, onBack }) => {
     rawDrivers = leagueData?.global || []; 
   }
   
-  const categories = useMemo(() => getDriverCategories(rawDrivers), [rawDrivers]);
-  const driverCategory = categories[driverName] || { name: 'ROOKIE', rank: 5, expectedPos: 999, color: 'bg-red-600' };
+  const categories = useMemo(() => getDriverCategories(leagueData?.global || []), [leagueData]);
 
+  // Mantengo tu lógica exacta de calcular la posición general
   const driversList = [...rawDrivers].sort((a, b) => b.points - a.points).map((d, index) => ({ ...d, driver: d.name, position: index + 1 }));
-  const stats = driversList.find(d => d.driver === driverName);
   
+  // APLICAMOS LA EXPRESIÓN REGULAR AQUÍ PARA ENCONTRAR AL PILOTO CORRECTO
+  const stats = driversList.find(d => normalizeName(d.driver) === targetClean);
+  
+  const driverCategory = stats && categories[stats.rawName || stats.driver] 
+    ? categories[stats.rawName || stats.driver] 
+    : { name: 'ROOKIE', rank: 5, expectedPos: 999, color: 'bg-red-600' };
+
   const favCarId = stats ? stats.favorite_car : null;
   const favCarName = stats ? (carNames[favCarId] || "Unknown Car") : "N/A";
-  const theme = stats ? categoryThemes[driverCategory.name] : categoryThemes.ROOKIE;
+  const theme = stats && categoryThemes[driverCategory.name] ? categoryThemes[driverCategory.name] : categoryThemes.ROOKIE;
   
   const bgUrl = getBrandBg(favCarId);
   const bgImage = bgUrl !== 'none' ? `url(${bgUrl})` : 'none';
@@ -192,26 +211,23 @@ export const DriverProfile = ({ driverName, onBack }) => {
     let classResults = session.results || []; 
     let qualyClassResults = session.qualy_results || classResults;  
 
-    // Si NO estamos en OVERALL, filtramos por la clase activa. Si estamos en OVERALL, lo cogemos todo.
-    if (activeLeague === 'multiclass' && activeClass !== 'OVERALL') { 
+    if ((activeLeague === 'multiclass' || activeLeague === 'fun_friday') && activeClass !== 'OVERALL') { 
       classResults = classResults.filter(r => getCarClass(r.car_model || r.car, r.class, r.car_class) === activeClass); 
       qualyClassResults = qualyClassResults.filter(r => getCarClass(r.car_model || r.car, r.class, r.car_class) === activeClass); 
     } 
       
-    const result = classResults.find(r => r.name === driverName); 
-    const qResult = qualyClassResults.find(r => r.name === driverName); 
+    // APLICAMOS LA EXPRESIÓN REGULAR PARA ENCONTRAR AL PILOTO EN LOS RESULTADOS DE CARRERA Y QUALY
+    const result = classResults.find(r => normalizeName(r.name) === targetClean); 
+    const qResult = qualyClassResults.find(r => normalizeName(r.name) === targetClean); 
     
-    // Obtenemos qué clase corrió este piloto en esta carrera en particular
     const resultClass = result?.car_class || getCarClass(result?.car_model || qResult?.car_model);
     
-    // Buscamos al ganador de SU misma clase, no al general de la carrera
     const winner = classResults.find(r => 
        (r.car_class || getCarClass(r.car_model)) === resultClass && 
        (r.pos === 1 || r.pos === "1" || r.class_pos === 1 || r.class_pos === "1")
     );
 
-    // Si estamos en la pestaña OVERALL, añadimos la clase al nombre del circuito (ej: "R1: Nurburgring [GT4]")
-    const finalDisplayTrack = (activeLeague === 'multiclass' && activeClass === 'OVERALL' && resultClass)
+    const finalDisplayTrack = ((activeLeague === 'multiclass' || activeLeague === 'fun_friday') && activeClass === 'OVERALL' && resultClass)
       ? `${displayTrack} [${resultClass}]`
       : displayTrack;
 
@@ -224,7 +240,7 @@ export const DriverProfile = ({ driverName, onBack }) => {
       const rTimeMs = result?.best_lap_ms ?? timeStrToMs(result?.best_lap); 
 
       raceHistory.push({ 
-        sessionName: finalDisplayTrack, // USAMOS EL NOMBRE NUEVO
+        sessionName: finalDisplayTrack, 
         pos: result?.class_pos || result?.pos,
         pacePos: result?.pace_pos, 
         qualyPos: qResult?.class_pos || qResult?.qualy_pos || qResult?.pos || result?.qualy_pos, 
@@ -310,12 +326,32 @@ export const DriverProfile = ({ driverName, onBack }) => {
     </div>
   );
 
+  if (loading) {
+    return (
+      <div className="min-h-screen bg-black flex items-center justify-center">
+        <div className="animate-spin rounded-full h-16 w-16 border-t-2 border-b-2 border-yellow-500"></div>
+      </div>
+    );
+  }
+
   return (
     <div className="min-h-screen bg-black font-['Inter'] text-gray-300 py-8">
       <div className="max-w-7xl mx-auto px-4">
-        <button onClick={onBack} className="flex items-center space-x-2 text-yellow-500 hover:text-yellow-400 font-bold uppercase tracking-widest mb-6 transition-colors text-sm">
-          <ArrowLeft className="w-5 h-5" /><span>Back to Standings</span>
-        </button>
+        
+        {/* BOTÓN VOLVER Y SELECTORES DE LIGA/TEMPORADA */}
+        <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-6 gap-4 border-b border-gray-800 pb-4">
+          <button onClick={onBack} className="flex items-center space-x-2 text-yellow-500 hover:text-yellow-400 font-bold uppercase tracking-widest transition-colors text-sm">
+            <ArrowLeft className="w-5 h-5" /><span>Back to Standings</span>
+          </button>
+
+          <div className="flex flex-wrap gap-2">
+            <button onClick={() => { setActiveLeague('monday_marathon'); setActiveSeason('season_1'); setSelectedRaceIndex(0); }} className={`px-4 py-1.5 font-['Teko'] text-lg uppercase tracking-widest border border-gray-800 transition-all ${activeLeague === 'monday_marathon' ? 'bg-yellow-500 text-black' : 'bg-black text-gray-400 hover:text-white'}`}>Monday</button>
+            <button onClick={() => { setActiveLeague('fun_friday'); setSelectedRaceIndex(0); }} className={`px-4 py-1.5 font-['Teko'] text-lg uppercase tracking-widest border border-gray-800 transition-all ${activeLeague === 'fun_friday' ? 'bg-yellow-500 text-black' : 'bg-black text-gray-400 hover:text-white'}`}>Friday</button>
+            <div className="w-px bg-gray-800 mx-2"></div>
+            <button onClick={() => { setActiveSeason('season_1'); setSelectedRaceIndex(0); }} className={`px-4 py-1.5 font-['Teko'] text-lg uppercase tracking-widest border border-gray-800 transition-all ${activeSeason === 'season_1' ? 'bg-white text-black' : 'bg-black text-gray-400 hover:text-white'}`}>Season 1</button>
+            <button onClick={() => { setActiveSeason('season_2'); setSelectedRaceIndex(0); }} className={`px-4 py-1.5 font-['Teko'] text-lg uppercase tracking-widest border border-gray-800 transition-all ${activeSeason === 'season_2' ? 'bg-white text-black' : 'bg-black text-gray-400 hover:text-white'}`}>Season 2</button>
+          </div>
+        </div>
 
         <div className={`overflow-hidden mb-6 border-2 transition-all duration-500 ${theme.border} shadow-2xl ${theme.shadow} ${bgColorClass}`}>
           <div className="h-[550px] bg-cover bg-center relative" style={{ backgroundImage: bgImage }}>
@@ -331,7 +367,8 @@ export const DriverProfile = ({ driverName, onBack }) => {
               <div className="relative z-10 mb-2">
                 <div className="flex flex-wrap items-center gap-3 mb-3">
                   <h1 className={`font-['Teko'] text-6xl md:text-8xl font-bold mr-2 uppercase tracking-wide drop-shadow-md ${theme.text}`}>
-                    {driverName}
+                    {/* IMPRIMIMOS EL NOMBRE LIMPIO */}
+                    {driverName.replace(/\[.*?\]|\|.*/g, '').trim()}
                   </h1>
                   {stats && (
                     <span className={`px-3 py-1 text-xs font-bold rounded shadow-lg flex items-center space-x-1 uppercase tracking-wider ${theme.bgBadge}`}>
@@ -363,12 +400,7 @@ export const DriverProfile = ({ driverName, onBack }) => {
           </div>
         </div>
 
-        <div className="flex space-x-2 mb-4">
-          <button onClick={() => { setActiveLeague('monday'); setActiveClass('GT3'); setSelectedRaceIndex(0); }} className={`flex-1 py-3 px-6 font-['Teko'] text-2xl uppercase tracking-widest transition-all duration-200 transform -skew-x-12 border border-gray-800 ${activeLeague === 'monday' ? 'bg-yellow-500 text-black shadow-[0_0_15px_rgba(250,204,21,0.3)]' : 'bg-[#0a0a0a] text-gray-400 hover:text-white'}`}><span className="block transform skew-x-12">Monday Marathon</span></button>
-          <button onClick={() => { setActiveLeague('multiclass'); setSelectedRaceIndex(0); }} className={`flex-1 py-3 px-6 font-['Teko'] text-2xl uppercase tracking-widest transition-all duration-200 transform -skew-x-12 border border-gray-800 ${activeLeague === 'multiclass' ? 'bg-yellow-500 text-black shadow-[0_0_15px_rgba(250,204,21,0.3)]' : 'bg-[#0a0a0a] text-gray-400 hover:text-white'}`}><span className="block transform skew-x-12">Multiclass Friday</span></button>
-        </div>
-
-        {activeLeague === 'multiclass' && availableClasses.length > 0 && (
+        {(activeLeague === 'fun_friday' || activeLeague === 'multiclass') && availableClasses.length > 0 && (
           <div className="flex flex-wrap justify-center gap-2 mb-6 bg-[#0a0a0a] p-3 w-full max-w-2xl mx-auto border border-gray-800 rounded">
             {availableClasses.map(cls => (
               <button
@@ -476,9 +508,9 @@ export const DriverProfile = ({ driverName, onBack }) => {
           </>
         ) : (
           <div className="bg-[#0a0a0a] p-12 text-center border border-gray-800">
-            <Shield className="w-16 h-16 text-gray-700 mx-auto mb-4" />
+            <AlertTriangle className="w-16 h-16 text-gray-700 mx-auto mb-4" />
             <h2 className="font-['Teko'] text-4xl font-bold text-white mb-2 uppercase tracking-wide">No Participation</h2>
-            <p className="text-gray-500 text-sm font-bold uppercase tracking-widest">This driver does not have any data for this category yet.</p>
+            <p className="text-gray-500 text-sm font-bold uppercase tracking-widest">This driver does not have any data for this category or season yet.</p>
           </div>
         )}
       </div>

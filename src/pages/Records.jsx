@@ -12,11 +12,10 @@ const msToTimeStr = (ms) => {
 }; 
  
 export const Records = ({ onDriverClick }) => { 
-  const { getLeagueData, loading } = useLeagueData(); 
-  const mondayData = getLeagueData('monday'); 
-  const multiclassData = getLeagueData('multiclass'); 
+  // Usamos el nuevo estado global allLeaguesData del hook
+  const { allLeaguesData, loading } = useLeagueData(); 
  
-  // 🚀 RECOPILACIÓN DINÁMICA DE RÉCORDS POR CLASE
+  // 🚀 RECOPILACIÓN DINÁMICA DE RÉCORDS POR CLASE (Analizando TODOS los JSON)
   const recordsByClass = useMemo(() => { 
     const groupedRecords = {}; 
  
@@ -24,38 +23,38 @@ export const Records = ({ onDriverClick }) => {
       const track = session.name.split(':').pop().trim(); 
        
       (session.results || []).forEach(res => { 
-        // Leemos la clase directamente del JSON. Si por algún motivo no existe, asignamos GT3 por defecto.
         const carClass = res.car_class || 'GT3'; 
         
-        // Si es la primera vez que vemos esta clase, le creamos su espacio
         if (!groupedRecords[carClass]) {
           groupedRecords[carClass] = {};
         }
          
-        // Si es la primera vez que vemos este circuito en esta clase, inicializamos los récords
         if (!groupedRecords[carClass][track]) { 
           groupedRecords[carClass][track] = { bestQualyTime: Infinity, bestRaceTime: Infinity }; 
         } 
- 
-        // Comprobamos y actualizamos el récord de Qualy
+        
+        // 🧹 LIMPIADOR DE NOMBRES
+        const cleanName = res.name ? res.name.replace(/\[.*?\]|\|.*/g, '').trim() : "Unknown";
+
         if (res.qualy_time_ms && res.qualy_time_ms < groupedRecords[carClass][track].bestQualyTime) { 
           groupedRecords[carClass][track].bestQualyTime = res.qualy_time_ms; 
-          groupedRecords[carClass][track].bestQualyDriver = res.name; 
+          groupedRecords[carClass][track].bestQualyDriver = cleanName; 
         } 
         
-        // Comprobamos y actualizamos el récord de Carrera
         if (res.best_lap_ms && res.best_lap_ms < groupedRecords[carClass][track].bestRaceTime) { 
           groupedRecords[carClass][track].bestRaceTime = res.best_lap_ms; 
-          groupedRecords[carClass][track].bestRaceDriver = res.name; 
+          groupedRecords[carClass][track].bestRaceDriver = cleanName; 
         } 
       }); 
     }; 
  
-    (mondayData?.sessions || []).forEach(s => processSession(s)); 
-    (multiclassData?.sessions || []).forEach(s => processSession(s)); 
+    // Iteramos por absolutamente todos los archivos JSON cargados
+    allLeaguesData.forEach(leagueFile => {
+      (leagueFile.sessions || []).forEach(s => processSession(s));
+    });
  
     return groupedRecords; 
-  }, [mondayData, multiclassData]); 
+  }, [allLeaguesData]); 
  
   const RecordTable = ({ title, records }) => ( 
     <div className="bg-[#0a0a0a] border border-gray-800 shadow-2xl mb-12"> 
@@ -129,7 +128,6 @@ export const Records = ({ onDriverClick }) => {
           <p className="text-gray-400 text-lg max-w-2xl mx-auto uppercase tracking-widest font-medium">The fastest laps recorded across all Scottish Legends championships.</p> 
         </div> 
         
-        {/* 🚀 GENERACIÓN DINÁMICA DE TABLAS */}
         {Object.keys(recordsByClass).sort().map(carClass => (
           <RecordTable 
             key={carClass} 
@@ -137,6 +135,13 @@ export const Records = ({ onDriverClick }) => {
             records={Object.entries(recordsByClass[carClass])} 
           />
         ))}
+
+        {Object.keys(recordsByClass).length === 0 && !loading && (
+          <div className="text-center py-20 border border-dashed border-gray-800 bg-[#0a0a0a] rounded-lg">
+            <Trophy className="w-16 h-16 text-gray-700 mx-auto mb-4" />
+            <p className="text-gray-400 text-lg font-bold uppercase tracking-widest">No records established yet.</p>
+          </div>
+        )}
 
       </div> 
     </div> 

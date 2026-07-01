@@ -2,21 +2,21 @@
 
 // 🏆 LISTA DE LEYENDAS
 export const LEGEND_DRIVERS = [
-  "Bruno Longarela [SL]",
-  "Dominic Zimmermann [SL]",
-  "Marsi Bella [SL]", 
-  "Raymond Crawford [SL]",
-  "Czech Blackness [SL]",
-  "Gael Duchêne ESP [SL]",
+  "Bruno Longarela",
+  "Dominic Zimmermann",
+  "Marsi Bella", 
+  "Raymond Crawford",
+  "Czech Blackness",
+  "Gael Duchêne ESP",
   "Tommy Williamson",
   "Kevin Kerp",
   "Alan Mcleod",
-  "Cla Rens [SL]", 
+  "Cla Rens", 
   "KeVin peeters",
   "Micha Nieuwkoop",
   "Tanno Raayman",
   "Luna Lethil",
-  "Marty Fox [SL]",
+  "Marty Fox",
   "Luca Maggiolo",
   "R Guess",
 ];
@@ -43,7 +43,7 @@ const getFlagEmoji = (countryCode) => {
 // ¡AQUÍ AHORA SOLO TIENES QUE PONER LAS 2 LETRAS!
 // 👤 INFORMACIÓN MANUAL DE LOS PILOTOS
 export const DRIVER_PROFILES = {
-  "Marsi Bella [SL]": {
+  "Marsi Bella": {
     nacionalidad: "DE",
     equipo: "Rookie Racing Team",
     siglas: "BLA",
@@ -67,13 +67,13 @@ export const DRIVER_PROFILES = {
     siglas: "MEN",
     dorsal: "56",
   },
-  "Dominic Zimmermann [SL]": {
+  "Dominic Zimmermann": {
     nacionalidad: "DE",
     equipo: "Lizard Racing Team",
     siglas: "ZIM",
     dorsal: "950",
   },
-  "Cla Rens [SL]": {
+  "Cla Rens": {
     nacionalidad: "DE",
     equipo: "Scottish Legends",
     siglas: "JCL",
@@ -109,26 +109,26 @@ export const DRIVER_PROFILES = {
     siglas: "ALE",
     dorsal: "251",
   },
-  "Czech Blackness [SL]": {
+  "Czech Blackness": {
     nacionalidad: "CZ",
     equipo: "Czech Motorsports",
     siglas: "KOS",
     dorsal: "30",
   },
-  "Bruno Longarela [SL]": {
+  "Bruno Longarela": {
     nacionalidad: "ES",
     equipo: "Scottish Legends",
     siglas: "BLF",
     dorsal: "3",
     avatar: "/assets/avatar/avatar_bruno.png",
   },
-  "Raymond Crawford [SL]": {
+  "Raymond Crawford": {
     nacionalidad: "SCO", 
     equipo: "Scottish Legends",
     siglas: "RAY",
     dorsal: "52",
   },
-  "Marty Fox [SL]": {
+  "Marty Fox": {
     nacionalidad: "SCO", 
     equipo: "Velocity Race Team",
     siglas: "FOX",
@@ -170,7 +170,7 @@ export const DRIVER_PROFILES = {
     siglas: "SFR",
     dorsal: "42",
   },
-  "Gael Duchêne ESP [SL]": {
+  "Gael Duchêne ESP": {
     nacionalidad: "ES",
     equipo: "gdgcars",
     avatar: "assets/avatar/avatar_gael.png",
@@ -189,7 +189,7 @@ export const DRIVER_PROFILES = {
     siglas: "AHU",
     dorsal: "26",
   },
-  "Kai Weber [RRT]": {
+  "Kai Weber": {
     nacionalidad: "DE",
     equipo: "Rookie Racing Team",
     siglas: "WEK",
@@ -220,7 +220,7 @@ export const DRIVER_PROFILES = {
     siglas: "DYK",
     dorsal: "26",
   },
-  "Andy Mcdonald [SL]": {
+  "Andy Mcdonald": {
     nacionalidad: "SCO",
     equipo: "NWBFXR Racing",
     siglas: "AMC",

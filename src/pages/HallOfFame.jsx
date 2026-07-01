@@ -2,87 +2,60 @@ import { useState, useMemo } from 'react';
 import { Medal, Swords, Search } from 'lucide-react'; 
 import { useLeagueData } from '../hooks/useLeagueData'; 
 import { isLegendDriver, getDriverProfile, DRIVER_PROFILES } from '../config/driversConfig'; 
-import { getDriverCategories } from '../utils/categoryEngine'; // 🚀 IMPORTAMOS EL MOTOR CENTRAL
 
 const getInitials = (name) => { 
   if (!name) return "DR"; 
-  const cleanName = name.replace(/\[.*?\]/g, '').trim(); 
+  const cleanName = name.replace(/\[.*?\]|\|.*/g, '').trim(); 
   const parts = cleanName.split(' '); 
   if (parts.length >= 2) return (parts[0][0] + parts[1][0]).toUpperCase(); 
   return cleanName.substring(0, 2).toUpperCase(); 
 }; 
 
-const catColors = { PLATINUM: 'text-emerald-400', GOLD: 'text-yellow-400', SILVER: 'text-gray-300', BRONZE: 'text-amber-600', ROOKIE: 'text-red-500' }; 
+// 🧹 LIMPIADOR DE NOMBRES
+const normalizeName = (name) => {
+  if (!name) return "";
+  return name.replace(/\[.*?\]|\|.*/g, '').trim();
+};
 
 export const HallOfFame = ({ onDriverClick, onNavigate }) => { 
-  const { getLeagueData, loading } = useLeagueData(); 
-  const mondayData = getLeagueData('monday'); 
-  const multiclassData = getLeagueData('multiclass'); 
-
-  const [filterRole, setFilterRole] = useState('ALL');  
-  const [filterMonday, setFilterMonday] = useState('ALL'); 
-  const [filterFriday, setFilterFriday] = useState('ALL'); 
+  const { allLeaguesData, loading } = useLeagueData(); 
   const [searchQuery, setSearchQuery] = useState(''); 
 
   const allDriversData = useMemo(() => { 
-    const mondayRaw = mondayData?.global || []; 
-    const fridayRaw = multiclassData?.global || []; 
-    
-    // 🚀 USAMOS EL MOTOR CENTRALIZADO
-    const mondayStats = getDriverCategories(mondayRaw); 
-    const fridayStats = getDriverCategories(fridayRaw); 
+    const driversMap = new Map();
 
-    const uniqueNames = new Set([...mondayRaw.map(d => d.name), ...fridayRaw.map(d => d.name), ...Object.keys(DRIVER_PROFILES)]); 
+    // Sumamos puntos de todos los archivos JSON cargados
+    allLeaguesData.forEach(league => {
+      (league.global || []).forEach(d => {
+        const cleanName = normalizeName(d.name);
 
-    return Array.from(uniqueNames).map(name => { 
-      const mData = mondayRaw.find(d => d.name === name); 
-      const fData = fridayRaw.find(d => d.name === name); 
-      const profile = getDriverProfile(name); 
-      
-      // Obtenemos la info del motor o un fallback si el piloto no existe en esa liga
-      const mCat = mondayStats[name] || { name: 'ROOKIE', expectedPos: '-' };
-      const fCat = fridayStats[name] || { name: 'ROOKIE', expectedPos: '-' };
-        
-      return { 
-        name, 
-        isLegend: isLegendDriver(name), 
-        profile, 
-        initials: profile.siglas || getInitials(name), 
-        totalPoints: (mData ? mData.points : 0) + (fData ? fData.points : 0), 
-        monday: mData ? { 
-          points: mData.points, 
-          expectedPos: mCat.expectedPos !== 999 ? mCat.expectedPos : '-', 
-          cat: mCat.name 
-        } : null, 
-        friday: fData ? { 
-          points: fData.points, 
-          expectedPos: fCat.expectedPos !== 999 ? fCat.expectedPos : '-', 
-          cat: fCat.name 
-        } : null, 
-      }; 
-    }).sort((a, b) => b.totalPoints - a.totalPoints); 
-  }, [mondayData, multiclassData]); 
+        if (!driversMap.has(cleanName)) {
+          driversMap.set(cleanName, {
+            name: cleanName,
+            rawName: d.name, // Para buscar el perfil
+            totalPoints: 0
+          });
+        }
+        driversMap.get(cleanName).totalPoints += (d.points || 0);
+      });
+    });
 
-  // 🚀 LÓGICA DE FILTRADO (Filtros + Buscador) 
+    // Añadimos pilotos que están en config pero no corrieron aún
+    Object.keys(DRIVER_PROFILES).forEach(name => {
+      const cleanName = normalizeName(name);
+      if (!driversMap.has(cleanName)) {
+        driversMap.set(cleanName, { name: cleanName, rawName: name, totalPoints: 0 });
+      }
+    });
+
+    return Array.from(driversMap.values())
+      .sort((a, b) => b.totalPoints - a.totalPoints); 
+  }, [allLeaguesData]); 
+
   const filteredCards = allDriversData.filter(d => { 
-    if (filterRole === 'LEGEND' && !d.isLegend) return false; 
-    if (filterRole === 'STANDARD' && d.isLegend) return false; 
-    if (filterMonday !== 'ALL' && (!d.monday || d.monday.cat !== filterMonday)) return false; 
-    if (filterFriday !== 'ALL' && (!d.friday || d.friday.cat !== filterFriday)) return false; 
-      
-    if (searchQuery) { 
-      const query = searchQuery.toLowerCase(); 
-      const matchesName = d.name.toLowerCase().includes(query); 
-      const matchesTeam = d.profile?.equipo?.toLowerCase().includes(query); 
-      const matchesDorsal = d.profile?.dorsal?.toString().includes(query); 
-      const matchesInitials = d.initials.toLowerCase().includes(query); 
-        
-      if (!matchesName && !matchesTeam && !matchesDorsal && !matchesInitials) { 
-        return false; 
-      } 
-    } 
-      
-    return true; 
+    if (!searchQuery) return true;
+    const query = searchQuery.toLowerCase(); 
+    return d.name.toLowerCase().includes(query);
   }); 
 
   if (loading) return <div className="min-h-screen bg-black flex items-center justify-center"><div className="animate-spin rounded-full h-16 w-16 border-t-2 border-b-2 border-yellow-500"></div></div>; 
@@ -99,7 +72,6 @@ export const HallOfFame = ({ onDriverClick, onNavigate }) => {
           <h1 className="font-['Teko'] text-7xl md:text-9xl font-bold text-white mb-4 uppercase tracking-wide drop-shadow-lg"> 
             The <span className="text-yellow-400">Grid</span> 
           </h1> 
-          <p className="text-gray-400 text-lg max-w-2xl mx-auto uppercase tracking-widest font-medium">The drivers who forge the history of Scottish Legends.</p> 
         </div> 
 
         <div className="mb-12 flex justify-center"> 
@@ -114,123 +86,52 @@ export const HallOfFame = ({ onDriverClick, onNavigate }) => {
           </button> 
         </div> 
 
-        <div className="bg-[#0a0a0a] p-6 border border-gray-800 mb-10 shadow-xl"> 
-            
-          <div className="relative mb-6"> 
+        <div className="max-w-2xl mx-auto mb-10"> 
+          <div className="relative"> 
             <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none"> 
               <Search className="w-8 h-8 text-yellow-500" /> 
             </div> 
             <input 
               type="text" 
-              placeholder="Search by driver name, team, number..." 
+              placeholder="Search driver..." 
               value={searchQuery} 
               onChange={(e) => setSearchQuery(e.target.value)} 
-              className="w-full bg-black border-2 border-gray-800 text-white font-['Teko'] text-3xl px-16 py-4 outline-none focus:border-yellow-500 transition-colors placeholder-gray-600 tracking-wide uppercase shadow-inner" 
+              className="w-full bg-[#0a0a0a] border-2 border-gray-800 text-white font-['Teko'] text-3xl px-16 py-4 outline-none focus:border-yellow-500 transition-colors placeholder-gray-600 tracking-wide uppercase shadow-inner" 
             /> 
-          </div> 
-
-          <div className="flex flex-wrap gap-4 border-t border-gray-800 pt-6"> 
-            <div className="flex flex-col"> 
-              <span className="text-[10px] text-gray-500 uppercase font-bold tracking-widest mb-1">Driver Role</span> 
-              <select value={filterRole} onChange={(e) => setFilterRole(e.target.value)} className="bg-black border border-gray-700 text-white text-sm py-2 px-3 outline-none focus:border-yellow-500"> 
-                <option value="ALL">All Drivers</option><option value="LEGEND">Legends Only</option><option value="STANDARD">Standard</option> 
-              </select> 
-            </div> 
-            <div className="flex flex-col"> 
-              <span className="text-[10px] text-gray-500 uppercase font-bold tracking-widest mb-1">Monday Marathon</span> 
-              <select value={filterMonday} onChange={(e) => setFilterMonday(e.target.value)} className="bg-black border border-gray-700 text-white text-sm py-2 px-3 outline-none focus:border-yellow-500"> 
-                <option value="ALL">All Categories</option><option value="PLATINUM">Platinum</option><option value="GOLD">Gold</option><option value="SILVER">Silver</option><option value="BRONZE">Bronze</option><option value="ROOKIE">Rookie</option> 
-              </select> 
-            </div> 
-            <div className="flex flex-col"> 
-              <span className="text-[10px] text-gray-500 uppercase font-bold tracking-widest mb-1">Multiclass Friday</span> 
-              <select value={filterFriday} onChange={(e) => setFilterFriday(e.target.value)} className="bg-black border border-gray-700 text-white text-sm py-2 px-3 outline-none focus:border-yellow-500"> 
-                <option value="ALL">All Categories</option><option value="PLATINUM">Platinum</option><option value="GOLD">Gold</option><option value="SILVER">Silver</option><option value="BRONZE">Bronze</option><option value="ROOKIE">Rookie</option> 
-              </select> 
-            </div> 
           </div> 
         </div> 
 
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 pb-20"> 
-          {filteredCards.length > 0 ? ( 
-            filteredCards.map((driver) => { 
-              const borderColor = driver.isLegend ? 'border-purple-500/50' : 'border-yellow-500/50'; 
-              const bgColor = driver.isLegend ? 'bg-purple-500' : 'bg-yellow-500'; 
-              const textColor = driver.isLegend ? 'text-purple-400' : 'text-yellow-400'; 
-              const hoverShadow = driver.isLegend ? 'hover:shadow-[0_0_30px_rgba(168,85,247,0.15)]' : 'hover:shadow-[0_0_30px_rgba(250,204,21,0.15)]'; 
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 pb-20"> 
+          {filteredCards.map((driver, idx) => { 
+            const profile = getDriverProfile(driver.rawName);
+            const isLegend = isLegendDriver(driver.rawName);
+            const initials = profile?.siglas || getInitials(driver.name);
+            
+            const borderColor = isLegend ? 'border-purple-500/50' : 'border-gray-800'; 
+            const bgColor = isLegend ? 'bg-purple-500' : 'bg-yellow-500'; 
 
-              return ( 
-                <div  
-                  key={driver.name}  
-                  onClick={() => onDriverClick(driver.name)} 
-                  className={`relative bg-[#0a0a0a] border ${borderColor} p-6 overflow-hidden cursor-pointer group transition-all duration-300 ${hoverShadow} transform hover:-translate-y-1`} 
-                > 
-                  <div className="absolute -bottom-6 -right-4 font-['Teko'] text-9xl font-black text-white/[0.03] select-none pointer-events-none group-hover:text-white/[0.05] transition-colors"> 
-                    #{driver.profile.dorsal} 
+            return ( 
+              <div  
+                key={driver.name}  
+                onClick={() => onDriverClick(driver.rawName)} 
+                className={`bg-[#0a0a0a] border ${borderColor} p-6 cursor-pointer group hover:border-yellow-500 transition-all duration-300 transform hover:-translate-y-1`} 
+              > 
+                <div className="flex items-center space-x-4"> 
+                  <div className={`w-12 h-12 ${bgColor} flex items-center justify-center font-['Teko'] text-2xl font-black text-black uppercase`}> 
+                    {initials} 
                   </div> 
-
-                  <div className="flex items-start space-x-4 mb-6 relative z-10"> 
-                    <div className={`w-14 h-14 ${bgColor} flex items-center justify-center shrink-0 shadow-lg`}> 
-                      <span className="font-['Teko'] text-3xl font-black text-black uppercase pt-1">{driver.initials}</span> 
-                    </div> 
-                      
-                    <div className="flex-1 min-w-0"> 
-                      <div className="flex items-center space-x-2"> 
-                        {driver.profile.avatar && <img src={driver.profile.avatar} alt="avatar" className="w-8 h-8 rounded-full object-cover border border-gray-700" />} 
-                        <h3 className="font-['Teko'] text-3xl font-bold text-white truncate tracking-wide uppercase">{driver.name}</h3> 
-                      </div> 
-                      <div className={`text-xs font-bold uppercase tracking-widest mt-1 ${textColor} truncate`}> 
-                        #{driver.profile.dorsal} • {driver.profile.equipo} 
-                      </div> 
-                    </div> 
+                  <div className="flex-1 min-w-0"> 
+                    <h3 className="font-['Teko'] text-2xl font-bold text-white truncate uppercase">{driver.name}</h3> 
                   </div> 
-
-                  <div className="grid grid-cols-2 gap-3 relative z-10"> 
-                    <div className="bg-black border border-gray-800 p-3 flex flex-col justify-between"> 
-                      <div className="text-[10px] text-gray-500 uppercase font-bold tracking-widest mb-2 border-b border-gray-800 pb-1">Monday Marathon</div> 
-                      {driver.monday ? ( 
-                        <> 
-                          <div className="flex justify-between items-end mb-1"> 
-                            <span className="text-2xl font-['Teko'] font-bold text-white">{driver.monday.points} <span className="text-sm text-gray-600">PTS</span></span> 
-                            <span className="text-xl font-['Teko'] font-bold text-blue-400">
-                              {driver.monday.expectedPos !== '-' ? `P${driver.monday.expectedPos}` : '-'}
-                            </span> 
-                          </div> 
-                          <span className={`text-[9px] uppercase font-bold ${catColors[driver.monday.cat]}`}>{driver.monday.cat}</span> 
-                        </> 
-                      ) : <div className="text-gray-600 text-xs font-mono">- No Data -</div>} 
-                    </div> 
-
-                    <div className="bg-black border border-gray-800 p-3 flex flex-col justify-between"> 
-                      <div className="text-[10px] text-gray-500 uppercase font-bold tracking-widest mb-2 border-b border-gray-800 pb-1">Multiclass Friday</div> 
-                      {driver.friday ? ( 
-                        <> 
-                          <div className="flex justify-between items-end mb-1"> 
-                            <span className="text-2xl font-['Teko'] font-bold text-white">{driver.friday.points} <span className="text-sm text-gray-600">PTS</span></span> 
-                            <span className="text-xl font-['Teko'] font-bold text-blue-400">
-                              {driver.friday.expectedPos !== '-' ? `P${driver.friday.expectedPos}` : '-'}
-                            </span> 
-                          </div> 
-                          <span className={`text-[9px] uppercase font-bold ${catColors[driver.friday.cat]}`}>{driver.friday.cat}</span> 
-                        </> 
-                      ) : <div className="text-gray-600 text-xs font-mono">- No Data -</div>} 
-                    </div> 
-                  </div> 
-                    
-                  {driver.isLegend && ( 
-                    <div className="absolute top-4 right-4 border border-purple-500/50 bg-purple-500/10 px-2 py-0.5 rounded text-[9px] font-bold text-purple-400 uppercase tracking-widest z-10"> 
-                      Legend 
-                    </div> 
-                  )} 
                 </div> 
-              ); 
-            }) 
-          ) : ( 
-            <div className="col-span-1 md:col-span-2 xl:col-span-3 text-center py-20 border border-dashed border-gray-800"> 
-              <Search className="w-16 h-16 text-gray-700 mx-auto mb-4" /> 
-              <p className="text-gray-400 text-lg font-bold uppercase tracking-widest">No drivers found matching your search</p> 
-            </div> 
-          )} 
+                
+                <div className="mt-6 flex justify-between items-end">
+                    <span className="text-gray-500 font-['Teko'] uppercase tracking-widest text-sm">Total Points</span>
+                    <span className="font-['Teko'] text-4xl font-bold text-yellow-400">{driver.totalPoints}</span>
+                </div>
+              </div> 
+            ); 
+          })} 
         </div> 
       </div> 
     </div> 

@@ -5,15 +5,15 @@ import heroBg from '../assets/fondo.png';
 // ⚙️ PANEL DE CONFIGURACIÓN RÁPIDA 
 const HOME_CONFIG = { 
   mondayRace: { 
-    track: "Indianapolis?", 
-    dateIso: "2026-06-29T22:00:00+02:00",  
+    track: "Watkins Glen", 
+    dateIso: "2026-07-06T22:00:00+02:00",  
     details: "20 Min Qualy • 1.5h Race" 
   }, 
    
   fridayRace: { 
-    track: "Incomming season 2...", 
-    dateIso: "", 
-    details: "" 
+    track: "Nordschleife", 
+    dateIso: "2026-07-03T22:00:00+02:00", 
+    details: "20 min Qualy • 70 min Race | Platinum & Gold Classes in GT4 | Silver & Bronze in GT3" 
   }, 
  
   featuredChannels: [ 
@@ -35,8 +35,8 @@ const HOME_CONFIG = {
       name: "Michanieuwkoop Racing", 
       description: "Championship Live Streams", 
       url: "https://www.twitch.tv/michanieuwkoopracing", 
-      bgImage: "", 
-      avatar: ""  
+      bgImage: "/assets/yt/micha_banner.png", 
+      avatar: "/assets/yt/micha_logo.png"  
     },
     { 
       name: "NewbFixer", 
