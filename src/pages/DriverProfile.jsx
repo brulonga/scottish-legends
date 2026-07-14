@@ -1,518 +1,389 @@
-import { useState, useMemo } from 'react';
-import { ArrowLeft, Award, Clock, AlertTriangle, Car, Shield } from 'lucide-react';
+import { useState, useMemo, useEffect } from 'react';
+import { User, ArrowLeft, AlertTriangle, Clock, Award, Flag, Timer, Activity } from 'lucide-react';
 import { useLeagueData } from '../hooks/useLeagueData';
-import { getDriverProfile, isLegendDriver } from '../config/driversConfig';
-import { getDriverCategories } from '../utils/categoryEngine';
+import { getDriverProfile } from '../config/driversConfig';
 import { LineChart, Line, AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 
-const carNames = {
-  0: "Porsche 991 GT3 R", 1: "Mercedes-AMG GT3", 2: "Ferrari 488 GT3", 3: "Audi R8 LMS",
-  4: "Lamborghini Huracan GT3", 5: "McLaren 650S GT3", 6: "Nissan GT-R Nismo GT3 '18",
-  7: "BMW M6 GT3", 8: "Bentley Continental GT3 '18", 9: "Porsche 991.2 GT3 Cup",
-  10: "Nissan GT-R Nismo GT3 '15", 11: "Bentley Continental GT3 '15", 12: "Aston Martin V12 Vantage GT3",
-  13: "Reiter Gallardo R-EX", 14: "Emil Frey Jaguar G3", 15: "Lexus RC F GT3",
-  16: "Lamborghini Huracan ST", 17: "Honda NSX GT3", 18: "Lamborghini Huracan GT3 Evo",
-  19: "Audi R8 LMS Evo", 20: "Aston Martin V8 Vantage GT3", 21: "Honda NSX GT3 Evo",
-  22: "McLaren 720S GT3", 23: "Porsche 911 GT3 R (991.2)", 24: "Ferrari 488 GT3 Evo",
-  25: "Mercedes-AMG GT3 '20", 26: "Ferrari 488 Challenge Evo", 27: "BMW M2 CS Racing",
-  28: "Porsche 911 GT3 Cup (992)", 29: "Lamborghini Huracan ST EVO2", 30: "BMW M4 GT3",
-  31: "Audi R8 LMS Evo II", 32: "Ferrari 296 GT3", 33: "Lamborghini Huracan GT3 Evo2",
-  34: "Porsche 911 GT3 R (992)", 35: "McLaren 720S GT3 Evo", 36: "Ford Mustang GT3",
-  50: "Alpine A110 GT4", 51: "Aston Martin V8 Vantage GT4", 52: "Audi R8 LMS GT4", 
-  53: "BMW M4 GT4", 54: "Chevrolet Camaro GT4.R", 55: "Ginetta G55 GT4", 
-  56: "KTM X-Bow GT4", 57: "Maserati MC GT4", 58: "McLaren 570S GT4", 
-  59: "Mercedes-AMG GT4", 60: "Porsche 718 Cayman GT4"
+// 🧹 LIMPIADOR DE NOMBRES GLOBAL
+const normalizeName = (name) => {
+  if (!name) return "";
+  return name.replace(/\[.*?\]|\|.*/g, '').trim();
 };
 
-const getBrandBg = (carId) => {
-  if (carId === null || carId === undefined) return 'none';
-  const name = carNames[carId]?.toLowerCase() || '';
-
-  if (name.includes('porsche')) return '/assets/cars/porsche.jpg';
-  if (name.includes('ferrari')) return '/assets/cars/ferrari.jpg';
-  if (name.includes('mercedes')) return '/assets/cars/mercedes.jpg';
-  if (name.includes('audi')) return '/assets/cars/audi.jpg';
-  if (name.includes('lamborghini') || name.includes('reiter')) return '/assets/cars/lamborghini.jpg';
-  if (name.includes('mclaren')) return '/assets/cars/mclaren.jpg';
-  if (name.includes('nissan')) return '/assets/cars/nissan.jpg';
-  if (name.includes('bmw')) return '/assets/cars/bmw.jpg';
-  if (name.includes('bentley')) return '/assets/cars/bentley.jpg';
-  if (name.includes('aston')) return '/assets/cars/aston-martin.jpg';
-  if (name.includes('jaguar')) return '/assets/cars/jaguar.jpg';
-  if (name.includes('lexus')) return '/assets/cars/lexus.jpg';
-  if (name.includes('honda')) return '/assets/cars/honda.jpg';
-  if (name.includes('ford')) return '/assets/cars/ford.jpg';
-  if (name.includes('alpine')) return '/assets/cars/alpine.jpg';
-  if (name.includes('chevrolet') || name.includes('camaro')) return '/assets/cars/chevrolet.jpg';
-  if (name.includes('ginetta')) return '/assets/cars/ginetta.jpg';
-  if (name.includes('ktm')) return '/assets/cars/ktm.jpg';
-  if (name.includes('maserati')) return '/assets/cars/maserati.jpg';
-
-  return 'none';
+const msToTimeStr = (ms) => { 
+  if (!ms || ms === Infinity || ms >= 2000000000) return "-"; 
+  let minutes = Math.floor(ms / 60000); 
+  let seconds = Math.floor((ms % 60000) / 1000); 
+  let milis = Math.floor(ms % 1000); 
+  return `${minutes > 0 ? minutes + ':' : ''}${seconds.toString().padStart(2, '0')}.${milis.toString().padStart(3, '0')}`; 
 };
 
-const gt4CarIds = [50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61];
+export const DriverProfile = ({ driverName: propsDriverName, onNavigate }) => {
+  // 🚀 ESTADOS DE LIGA Y TEMPORADA
+  const [activeLeague, setActiveLeague] = useState('fun_friday');
+  const [activeSeason, setActiveSeason] = useState('season_2');
+  const [selectedDriver, setSelectedDriver] = useState('');
+  const [selectedRaceIdx, setSelectedRaceIdx] = useState(0);
 
-const categoryThemes = {
-  PLATINUM: { text: 'text-emerald-400', border: 'border-emerald-500', shadow: 'shadow-emerald-500/30', gradient: 'from-emerald-900', bgBadge: 'bg-emerald-500 text-white', bgCard: 'bg-[#0a0a0a] border-emerald-500/30' },
-  GOLD: { text: 'text-yellow-400', border: 'border-yellow-500', shadow: 'shadow-yellow-500/30', gradient: 'from-yellow-900', bgBadge: 'bg-yellow-500 text-black', bgCard: 'bg-[#0a0a0a] border-yellow-500/30' },
-  SILVER: { text: 'text-gray-300', border: 'border-gray-400', shadow: 'shadow-gray-400/30', gradient: 'from-gray-700', bgBadge: 'bg-gray-300 text-black', bgCard: 'bg-[#0a0a0a] border-gray-600' },
-  BRONZE: { text: 'text-amber-600', border: 'border-amber-600', shadow: 'shadow-amber-600/30', gradient: 'from-amber-900', bgBadge: 'bg-amber-600 text-white', bgCard: 'bg-[#0a0a0a] border-amber-600/30' },
-  ROOKIE: { text: 'text-red-500', border: 'border-red-600', shadow: 'shadow-red-600/30', gradient: 'from-red-900', bgBadge: 'bg-red-600 text-white', bgCard: 'bg-[#0a0a0a] border-red-600/30' }
-};
-
-const msToTimeStr = (ms) => {
-  if (!ms || ms === Infinity || ms === 0 || ms === "0" || ms === "-") return "-";
-  let val = Number(ms);
-  if (isNaN(val)) return ms;
-  let minutes = Math.floor(val / 60000);
-  let seconds = Math.floor((val % 60000) / 1000);
-  let milis = Math.floor(val % 1000);
-  return `${minutes > 0 ? minutes + ':' : ''}${seconds.toString().padStart(2, '0')}.${milis.toString().padStart(3, '0')}`;
-};
-
-const gapStrToMs = (gapStr) => {
-  if (gapStr === null || gapStr === undefined || gapStr === "-" || gapStr === "") return null;
-  if (typeof gapStr === 'number') return gapStr;
-  const str = String(gapStr).toUpperCase().trim();
-  if (str === "POLE" || str === "WINNER" || str === "PACE REF" || str === "BEST LAP") return 0;
-  if (str === "DNF" || str === "DSQ") return null;
-
-  const cleanStr = str.replace('+', '').replace('S', '');
-  if (cleanStr.includes(':')) {
-      const parts = cleanStr.split(':');
-      const mins = parseInt(parts[0]) || 0;
-      const secsAndMs = parts[1].split('.');
-      const secs = parseInt(secsAndMs[0]) || 0;
-      const ms = parseInt((secsAndMs[1] || "0").padEnd(3, '0')) || 0;
-      return (mins * 60000) + (secs * 1000) + ms;
-  }
-  if (cleanStr.includes('.')) {
-      const parts = cleanStr.split('.');
-      const secs = parseInt(parts[0]) || 0;
-      const ms = parseInt((parts[1] || "0").padEnd(3, '0')) || 0; 
-      return (secs * 1000) + ms;
-  }
-  return parseInt(cleanStr) || null;
-};
-
-const timeStrToMs = (timeStr) => { 
-  if (!timeStr || timeStr === "-" || timeStr === "NO TIME") return Infinity;
-  if (typeof timeStr === 'number') return timeStr;
-  const str = String(timeStr).trim();
-  if (str.includes(':')) {
-      const parts = str.split(':');
-      const mins = parseInt(parts[0]) || 0;
-      const secsAndMs = parts[1].split('.');
-      const secs = parseInt(secsAndMs[0]) || 0;
-      const ms = parseInt((secsAndMs[1] || "0").padEnd(3, '0')) || 0;
-      return (mins * 60000) + (secs * 1000) + ms;
-  }
-  return Infinity; 
-};
-
-export const DriverProfile = ({ 
-  driverName, 
-  onBack,
-  activeLeague: propsLeague,
-  activeSeason: propsSeason
-}) => {
-  // 1. ESTADO DE LA LIGA Y TEMPORADA
-  const [activeLeague, setActiveLeague] = useState(propsLeague || 'fun_friday');
-  const [activeSeason, setActiveSeason] = useState(propsSeason || 'season_1');
-  const [activeClass, setActiveClass] = useState('OVERALL');
-  const [selectedRaceIndex, setSelectedRaceIndex] = useState(0);
-  
-  // 2. NUEVO HOOK DINÁMICO
   const { leagueData, loading, error } = useLeagueData(activeLeague, activeSeason);
-
-  // 3. LIMPIADOR DE NOMBRES
-  const normalizeName = (name) => {
-    if (!name) return "";
-    return name.replace(/\[.*?\]|\|.*/g, '').trim().toLowerCase();
-  };
-  const targetClean = normalizeName(driverName);
-
-  const profile = getDriverProfile(driverName);
-  const isLegend = isLegendDriver(driverName);
-
-  const availableClasses = useMemo(() => {
-    if ((activeLeague !== 'multiclass' && activeLeague !== 'fun_friday') || !leagueData?.global) return ['GT3'];
-    const classes = new Set();
-    leagueData.global.forEach(d => {
-      if (d.class_stats) {
-        Object.keys(d.class_stats).forEach(c => classes.add(c));
-      }
-    });
-    return ['OVERALL', ...Array.from(classes).sort()]; 
-  }, [leagueData, activeLeague]);
-  
-  const getCarClass = (carId, explicitClass, carClassField) => {
-    if (carClassField) return carClassField;
-    if (explicitClass) return explicitClass;
-    
-    const id = Number(carId);
-    if (id >= 50 && id <= 61) return 'GT4';
-    if ((id >= 80 && id <= 86) || id === 18 || id === 29 || id === 26) return 'GT2';
-    if (id === 9 || id === 28) return 'Cup';
-    if (id === 27) return 'TCX';
-    if (id >= 0 && id <= 45) return 'GT3';
-    
-    return 'GT3'; 
-  };
-
-  let rawDrivers = []; 
-  if (activeLeague === 'multiclass' || activeLeague === 'fun_friday') {
-    if (activeClass === 'OVERALL') {
-      rawDrivers = leagueData?.global || [];
-    } else {
-      rawDrivers = (leagueData?.global || [])
-        .filter(d => d.class_stats && d.class_stats[activeClass])
-        .map(d => ({
-          ...d,
-          ...d.class_stats[activeClass], 
-          name: d.name
-        }));
-    }
-  } else { 
-    rawDrivers = leagueData?.global || []; 
-  }
-  
-  const categories = useMemo(() => getDriverCategories(leagueData?.global || []), [leagueData]);
-
-  // Mantengo tu lógica exacta de calcular la posición general
-  const driversList = [...rawDrivers].sort((a, b) => b.points - a.points).map((d, index) => ({ ...d, driver: d.name, position: index + 1 }));
-  
-  // APLICAMOS LA EXPRESIÓN REGULAR AQUÍ PARA ENCONTRAR AL PILOTO CORRECTO
-  const stats = driversList.find(d => normalizeName(d.driver) === targetClean);
-  
-  const driverCategory = stats && categories[stats.rawName || stats.driver] 
-    ? categories[stats.rawName || stats.driver] 
-    : { name: 'ROOKIE', rank: 5, expectedPos: 999, color: 'bg-red-600' };
-
-  const favCarId = stats ? stats.favorite_car : null;
-  const favCarName = stats ? (carNames[favCarId] || "Unknown Car") : "N/A";
-  const theme = stats && categoryThemes[driverCategory.name] ? categoryThemes[driverCategory.name] : categoryThemes.ROOKIE;
-  
-  const bgUrl = getBrandBg(favCarId);
-  const bgImage = bgUrl !== 'none' ? `url(${bgUrl})` : 'none';
-  const bgColorClass = bgImage === 'none' ? 'bg-[#050505]' : ''; 
-
+  const globalData = leagueData?.global || [];
   const sessions = leagueData?.sessions || [];
-  const raceHistory = [];
-  const pbData = {};
 
-  sessions.forEach((session, index) => {
-    const roundMatch = session.name.match(/Round (\d+)/i);
-    const roundPrefix = roundMatch ? `R${roundMatch[1]}` : `R${index + 1}`;
-    const trackOnly = session.name.split(':').pop().trim();
-    const displayTrack = `${roundPrefix}: ${trackOnly}`;
+  useEffect(() => {
+    if (propsDriverName) setSelectedDriver(normalizeName(propsDriverName));
+  }, [propsDriverName, activeLeague, activeSeason]);
 
-    let classResults = session.results || []; 
-    let qualyClassResults = session.qualy_results || classResults;  
+  useEffect(() => { setSelectedRaceIdx(0); }, [selectedDriver, activeLeague, activeSeason]);
 
-    if ((activeLeague === 'multiclass' || activeLeague === 'fun_friday') && activeClass !== 'OVERALL') { 
-      classResults = classResults.filter(r => getCarClass(r.car_model || r.car, r.class, r.car_class) === activeClass); 
-      qualyClassResults = qualyClassResults.filter(r => getCarClass(r.car_model || r.car, r.class, r.car_class) === activeClass); 
-    } 
+  const uniqueCleanDrivers = useMemo(() => {
+    return Array.from(new Set(globalData.map(d => normalizeName(d.name)))).sort();
+  }, [globalData]);
+
+  const dStats = globalData.find(d => normalizeName(d.name) === selectedDriver);
+  const profile = selectedDriver ? getDriverProfile(selectedDriver) : null;
+
+  // 🚀 RECOPILACIÓN DINÁMICA DE DATOS PROFUNDOS
+  const { chartData, personalBests, telemetryData, availableRaces } = useMemo(() => {
+    if (!selectedDriver || !sessions.length) return { chartData: [], personalBests: [], telemetryData: [], availableRaces: [] };
+    
+    const cData = [];
+    const pb = {};
+    const aRaces = [];
+    
+    sessions.forEach((event) => {
+      const subSessions = Array.isArray(event.sessions) ? event.sessions : [event];
       
-    // APLICAMOS LA EXPRESIÓN REGULAR PARA ENCONTRAR AL PILOTO EN LOS RESULTADOS DE CARRERA Y QUALY
-    const result = classResults.find(r => normalizeName(r.name) === targetClean); 
-    const qResult = qualyClassResults.find(r => normalizeName(r.name) === targetClean); 
-    
-    const resultClass = result?.car_class || getCarClass(result?.car_model || qResult?.car_model);
-    
-    const winner = classResults.find(r => 
-       (r.car_class || getCarClass(r.car_model)) === resultClass && 
-       (r.pos === 1 || r.pos === "1" || r.class_pos === 1 || r.class_pos === "1")
-    );
-
-    const finalDisplayTrack = ((activeLeague === 'multiclass' || activeLeague === 'fun_friday') && activeClass === 'OVERALL' && resultClass)
-      ? `${displayTrack} [${resultClass}]`
-      : displayTrack;
-
-    if (result || qResult) { 
-      const pGapMs = result?.gap_pace_ms ?? gapStrToMs(result?.gap_pace); 
-      const bGapMs = result?.gap_best_ms ?? gapStrToMs(result?.gap_best); 
-      const qGapMs = qResult?.gap_pole_ms ?? qResult?.qualy_gap_ms ?? gapStrToMs(qResult?.gap_pole || qResult?.qualy_gap); 
+      subSessions.forEach((session) => {
+        const track = session.name || event.name;
+        const r = session.results?.find(res => normalizeName(res.name) === selectedDriver);
+        const q = session.qualy_results?.find(res => normalizeName(res.name) === selectedDriver);
+        const winner = session.results?.[0]; // El ganador de la sesión
         
-      const qTimeMs = qResult?.qualy_time_ms ?? timeStrToMs(qResult?.best_lap || qResult?.qualy_time); 
-      const rTimeMs = result?.best_lap_ms ?? timeStrToMs(result?.best_lap); 
+        // 1. MEJORES TIEMPOS PERSONALES
+        if (!pb[track]) pb[track] = { qualy: Infinity, race: Infinity, car: '-' };
+        
+        if (q && q.best_lap_ms && q.best_lap_ms < pb[track].qualy) {
+            pb[track].qualy = q.best_lap_ms;
+            pb[track].car = q.car_class || pb[track].car;
+        }
+        if (r && r.best_lap_ms && r.best_lap_ms < pb[track].race) {
+            pb[track].race = r.best_lap_ms;
+            pb[track].car = r.car_class || pb[track].car;
+        }
 
-      raceHistory.push({ 
-        sessionName: finalDisplayTrack, 
-        pos: result?.class_pos || result?.pos,
-        pacePos: result?.pace_pos, 
-        qualyPos: qResult?.class_pos || qResult?.qualy_pos || qResult?.pos || result?.qualy_pos, 
-        laps: result?.lap_history || [], 
-        avgLapMs: result?.avg_lap_ms, 
-        gapPaceMs: pGapMs,
-        gapBestMs: bGapMs, 
-        qualyGapMs: qGapMs, 
-        winnerData: winner,
-        participated: true
+        // 2. DATOS PARA GRÁFICAS (CON WINNER BASELINE)
+        if (r) {
+            const calcLost = (res) => {
+              if (!res || !res.lap_history || !res.avg_lap_ms) return 0;
+              let lost = 0;
+              res.lap_history.forEach(l => { if (l.is_incident) lost += (l.time_ms - res.avg_lap_ms); });
+              return parseFloat((lost / 1000).toFixed(1));
+            };
+
+            const parseGap = (ms) => {
+              if (ms == null || ms === "-") return null;
+              let secs = ms / 1000;
+              return track.toLowerCase().includes("nurburgring") ? parseFloat((secs / 4).toFixed(3)) : parseFloat(secs.toFixed(3));
+            };
+            
+            cData.push({
+                track: track,
+                Pos: String(r.pos).toUpperCase() !== "DNF" ? parseInt(r.class_pos || r.pos) : null,
+                QualyPos: String(r.qualy_pos) !== "-" ? parseInt(r.qualy_pos) : null,
+                PacePos: String(r.pace_pos) !== "-" ? parseInt(r.pace_pos) : null,
+                
+                IncLost: calcLost(r),
+                WinnerLost: calcLost(winner),
+                
+                PaceGap: parseGap(r.gap_pace_ms),
+                WinnerPaceGap: parseGap(winner?.gap_pace_ms) || 0
+            });
+
+            aRaces.push({
+                name: track,
+                history: r.lap_history || [],
+                winnerHistory: winner?.lap_history || []
+            });
+        }
       });
+    });
 
-      if (!pbData[trackOnly]) pbData[trackOnly] = { qualy: Infinity, race: Infinity };
-      if (qTimeMs && qTimeMs > 0 && qTimeMs !== Infinity && qTimeMs < pbData[trackOnly].qualy) pbData[trackOnly].qualy = qTimeMs;
-      if (rTimeMs && rTimeMs > 0 && rTimeMs !== Infinity && rTimeMs < pbData[trackOnly].race) pbData[trackOnly].race = rTimeMs;
-    } else {
-      raceHistory.push({
-        sessionName: displayTrack, 
-        pos: null, pacePos: null, qualyPos: null,
-        laps: [], avgLapMs: null, gapPaceMs: null, gapBestMs: null, qualyGapMs: null, winnerData: winner,
-        participated: false
-      });
+    // 3. GENERAR TELEMETRÍA DE LA CARRERA SELECCIONADA
+    const tData = [];
+    const activeRace = aRaces[selectedRaceIdx];
+    if (activeRace) {
+        const maxLaps = Math.max(activeRace.history?.length || 0, activeRace.winnerHistory?.length || 0);
+        for (let i = 0; i < maxLaps; i++) {
+            const dLap = activeRace.history[i];
+            const wLap = activeRace.winnerHistory[i];
+            
+            tData.push({
+                lap: `L${i + 1}`,
+                Time: dLap && !dLap.is_incident ? parseFloat((dLap.time_ms / 1000).toFixed(3)) : null,
+                WinnerTime: wLap && !wLap.is_incident ? parseFloat((wLap.time_ms / 1000).toFixed(3)) : null
+            });
+        }
     }
-  });
 
-  const posChartData = raceHistory.map(h => ({ 
-    track: h.sessionName, 
-    Race: (h.pos && h.pos !== "DNF") ? parseInt(h.pos) : null, 
-    Qualy: (h.qualyPos && h.qualyPos !== "-") ? parseInt(h.qualyPos) : null, 
-    Pace: (h.pacePos && h.pacePos !== "-") ? parseInt(h.pacePos) : null 
-  }));
-
-  const incidentsChartData = raceHistory.map(h => {
-    let driverLost = null, winnerLost = null;
-    if (h.participated && h.laps && h.avgLapMs) {
-      driverLost = 0;
-      h.laps.forEach(l => { if (l.is_incident) driverLost += (l.time_ms - h.avgLapMs); });
-    }
-    if (h.winnerData?.lap_history && h.winnerData?.avg_lap_ms) {
-      winnerLost = 0;
-      h.winnerData.lap_history.forEach(l => { if (l.is_incident) winnerLost += (l.time_ms - h.winnerData.avg_lap_ms); });
-    }
     return { 
-      track: h.sessionName, 
-      DriverLost: driverLost !== null ? parseFloat((driverLost / 1000).toFixed(1)) : null, 
-      WinnerLost: winnerLost !== null ? parseFloat((winnerLost / 1000).toFixed(1)) : null 
+        chartData: cData, 
+        personalBests: Object.entries(pb).map(([t, times]) => ({ track: t, ...times })),
+        telemetryData: tData,
+        availableRaces: aRaces
     };
-  });
-
-  const gapsChartData = raceHistory.map(h => {
-    const processGap = (ms, track) => { 
-      if (ms === null || ms === undefined || ms === Infinity) return null; 
-      let secs = ms / 1000; 
-      return track.toLowerCase().includes("nurburgring") ? parseFloat((secs / 4).toFixed(3)) : parseFloat(secs.toFixed(3)); 
-    };
-    return { 
-      track: h.sessionName, 
-      PaceGap: processGap(h.gapPaceMs, h.sessionName), 
-      BestLapGap: processGap(h.gapBestMs, h.sessionName), 
-      QualyGap: processGap(h.qualyGapMs, h.sessionName) 
-    };
-  });
-
-  const participatedRaces = raceHistory.filter(r => r.participated);
-  const selectedRaceData = participatedRaces[selectedRaceIndex];
-  
-  let telemetryData = [];
-  if (selectedRaceData) {
-    const maxLaps = Math.max(selectedRaceData.laps?.length || 0, selectedRaceData.winnerData?.lap_history?.length || 0);
-    for (let i = 0; i < maxLaps; i++) {
-      telemetryData.push({
-        lap: `L${i + 1}`,
-        Driver: selectedRaceData.laps?.[i] && !selectedRaceData.laps?.[i].is_incident ? parseFloat((selectedRaceData.laps?.[i].time_ms / 1000).toFixed(3)) : null,
-        Winner: selectedRaceData.winnerData?.lap_history?.[i] && !selectedRaceData.winnerData?.lap_history?.[i].is_incident ? parseFloat((selectedRaceData.winnerData?.lap_history?.[i].time_ms / 1000).toFixed(3)) : null,
-      });
-    }
-  }
-
-  const StatBlock = ({ label, value, colorClass = "text-white" }) => (
-    <div className={`p-4 border text-center flex flex-col justify-center transform skew-x-[-5deg] ${theme.bgCard}`}>
-      <div className="text-gray-500 text-[10px] uppercase font-bold mb-1 tracking-widest transform skew-x-5">{label}</div>
-      <div className={`font-['Teko'] text-4xl lg:text-5xl font-bold transform skew-x-5 ${colorClass}`}>{value}</div>
-    </div>
-  );
-
-  if (loading) {
-    return (
-      <div className="min-h-screen bg-black flex items-center justify-center">
-        <div className="animate-spin rounded-full h-16 w-16 border-t-2 border-b-2 border-yellow-500"></div>
-      </div>
-    );
-  }
+  }, [sessions, selectedDriver, selectedRaceIdx]);
 
   return (
     <div className="min-h-screen bg-black font-['Inter'] text-gray-300 py-8">
-      <div className="max-w-7xl mx-auto px-4">
+      <div className="max-w-[1200px] mx-auto px-4">
         
-        {/* BOTÓN VOLVER Y SELECTORES DE LIGA/TEMPORADA */}
-        <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-6 gap-4 border-b border-gray-800 pb-4">
-          <button onClick={onBack} className="flex items-center space-x-2 text-yellow-500 hover:text-yellow-400 font-bold uppercase tracking-widest transition-colors text-sm">
-            <ArrowLeft className="w-5 h-5" /><span>Back to Standings</span>
-          </button>
+        <button onClick={() => onNavigate('hall-of-fame')} className="flex items-center space-x-2 text-yellow-500 hover:text-yellow-400 font-bold uppercase tracking-widest mb-8 transition-colors text-sm">
+          <ArrowLeft className="w-5 h-5" /><span>Back to The Grid</span>
+        </button>
 
-          <div className="flex flex-wrap gap-2">
-            <button onClick={() => { setActiveLeague('monday_marathon'); setActiveSeason('season_1'); setSelectedRaceIndex(0); }} className={`px-4 py-1.5 font-['Teko'] text-lg uppercase tracking-widest border border-gray-800 transition-all ${activeLeague === 'monday_marathon' ? 'bg-yellow-500 text-black' : 'bg-black text-gray-400 hover:text-white'}`}>Monday</button>
-            <button onClick={() => { setActiveLeague('fun_friday'); setSelectedRaceIndex(0); }} className={`px-4 py-1.5 font-['Teko'] text-lg uppercase tracking-widest border border-gray-800 transition-all ${activeLeague === 'fun_friday' ? 'bg-yellow-500 text-black' : 'bg-black text-gray-400 hover:text-white'}`}>Friday</button>
-            <div className="w-px bg-gray-800 mx-2"></div>
-            <button onClick={() => { setActiveSeason('season_1'); setSelectedRaceIndex(0); }} className={`px-4 py-1.5 font-['Teko'] text-lg uppercase tracking-widest border border-gray-800 transition-all ${activeSeason === 'season_1' ? 'bg-white text-black' : 'bg-black text-gray-400 hover:text-white'}`}>Season 1</button>
-            <button onClick={() => { setActiveSeason('season_2'); setSelectedRaceIndex(0); }} className={`px-4 py-1.5 font-['Teko'] text-lg uppercase tracking-widest border border-gray-800 transition-all ${activeSeason === 'season_2' ? 'bg-white text-black' : 'bg-black text-gray-400 hover:text-white'}`}>Season 2</button>
-          </div>
-        </div>
-
-        <div className={`overflow-hidden mb-6 border-2 transition-all duration-500 ${theme.border} shadow-2xl ${theme.shadow} ${bgColorClass}`}>
-          <div className="h-[550px] bg-cover bg-center relative" style={{ backgroundImage: bgImage }}>
-            {bgImage !== 'none' && <div className={`absolute inset-0 bg-gradient-to-t ${theme.gradient} via-black/80 to-transparent opacity-90`}></div>}
-            
-            <div className="absolute bottom-8 left-8 flex items-end space-x-6">
-              {profile.avatar && (
-                <div className="relative z-10 hidden sm:block">
-                  <img src={profile.avatar} alt={driverName} className={`w-36 h-36 md:w-44 md:h-44 rounded-full border-4 ${theme.border} object-cover shadow-[0_0_30px_rgba(0,0,0,0.8)]`} />
-                </div>
-              )}
-
-              <div className="relative z-10 mb-2">
-                <div className="flex flex-wrap items-center gap-3 mb-3">
-                  <h1 className={`font-['Teko'] text-6xl md:text-8xl font-bold mr-2 uppercase tracking-wide drop-shadow-md ${theme.text}`}>
-                    {/* IMPRIMIMOS EL NOMBRE LIMPIO */}
-                    {driverName.replace(/\[.*?\]|\|.*/g, '').trim()}
-                  </h1>
-                  {stats && (
-                    <span className={`px-3 py-1 text-xs font-bold rounded shadow-lg flex items-center space-x-1 uppercase tracking-wider ${theme.bgBadge}`}>
-                      <Shield className="w-4 h-4" /><span>{driverCategory.name}</span>
-                    </span>
-                  )}
-                  {isLegend && (
-                    <span className="px-3 py-1 bg-purple-600 text-white text-xs font-bold rounded shadow-lg flex items-center space-x-1 tracking-wider uppercase">
-                      <Award className="w-4 h-4" /><span>LEGEND</span>
-                    </span>
-                  )}
-                </div>
-                
-                <div className="flex flex-wrap items-center gap-3 text-gray-400 font-bold mt-4 text-sm uppercase tracking-widest">
-                  <span className="text-3xl" title="Nationality">{profile.nacionalidad}</span>
-                  <span className="bg-black/80 px-5 py-2.5 border border-gray-800 shadow-md">{profile.equipo}</span>
-                  {stats && (
-                    <span className="bg-black/80 px-5 py-2.5 border border-gray-800 shadow-md flex items-center space-x-2">
-                      <Car className="w-5 h-5 text-gray-500" /><span>{favCarName}</span>
-                    </span>
-                  )}
-                </div>
+        <div className="text-center mb-12 border-b border-gray-800 pb-8">
+          <User className="w-16 h-16 text-yellow-400 mx-auto mb-4" />
+          <h1 className="font-['Teko'] text-6xl md:text-8xl font-bold text-white mb-2 uppercase tracking-wide">
+            Driver <span className="text-yellow-400">Profile</span>
+          </h1>
+          <p className="text-gray-400 text-sm uppercase tracking-widest font-bold mb-8">Performance & Telemetry Analysis</p>
+        
+          <div className="flex flex-col md:flex-row gap-6 max-w-3xl mx-auto">
+            <div className="flex-1 space-y-2">
+              <label className="font-['Teko'] text-xl text-gray-500 uppercase tracking-widest text-left block">League</label>
+              <div className="flex space-x-2">
+                <button onClick={() => { setActiveLeague('monday_marathon'); setActiveSeason(null); }} className={`flex-1 py-2 px-4 transform -skew-x-12 transition-all duration-200 border border-gray-800 ${activeLeague === 'monday_marathon' ? 'bg-yellow-500 text-black shadow-[0_0_15px_rgba(250,204,21,0.3)]' : 'bg-[#0a0a0a] text-gray-400 hover:text-white'}`}>
+                  <span className="font-['Teko'] text-xl uppercase tracking-widest block transform skew-x-12">Monday</span>
+                </button>
+                <button onClick={() => { setActiveLeague('fun_friday'); setActiveSeason(null); }} className={`flex-1 py-2 px-4 transform -skew-x-12 transition-all duration-200 border border-gray-800 ${activeLeague === 'fun_friday' ? 'bg-yellow-500 text-black shadow-[0_0_15px_rgba(250,204,21,0.3)]' : 'bg-[#0a0a0a] text-gray-400 hover:text-white'}`}>
+                  <span className="font-['Teko'] text-xl uppercase tracking-widest block transform skew-x-12">Friday</span>
+                </button>
               </div>
             </div>
-            
-            <div className="absolute top-8 right-8 z-20">
-              <span className={`font-['Teko'] text-8xl md:text-9xl font-bold drop-shadow-2xl ${theme.text}`}>#{profile.dorsal}</span>
+
+            <div className={`flex-1 space-y-2 transition-opacity duration-300 ${activeLeague ? 'opacity-100' : 'opacity-30 pointer-events-none'}`}>
+              <label className="font-['Teko'] text-xl text-gray-500 uppercase tracking-widest text-left block">Season</label>
+              <div className="flex space-x-2">
+                <button onClick={() => setActiveSeason('season_1')} className={`flex-1 py-2 px-4 transform -skew-x-12 transition-all duration-200 border border-gray-800 ${activeSeason === 'season_1' ? 'bg-white text-black shadow-[0_0_15px_rgba(255,255,255,0.3)]' : 'bg-[#0a0a0a] text-gray-400 hover:text-white'}`}>
+                  <span className="font-['Teko'] text-xl uppercase tracking-widest block transform skew-x-12">Season 1</span>
+                </button>
+                <button onClick={() => setActiveSeason('season_2')} className={`flex-1 py-2 px-4 transform -skew-x-12 transition-all duration-200 border border-gray-800 ${activeSeason === 'season_2' ? 'bg-white text-black shadow-[0_0_15px_rgba(255,255,255,0.3)]' : 'bg-[#0a0a0a] text-gray-400 hover:text-white'}`}>
+                  <span className="font-['Teko'] text-xl uppercase tracking-widest block transform skew-x-12">Season 2</span>
+                </button>
+              </div>
             </div>
           </div>
         </div>
 
-        {(activeLeague === 'fun_friday' || activeLeague === 'multiclass') && availableClasses.length > 0 && (
-          <div className="flex flex-wrap justify-center gap-2 mb-6 bg-[#0a0a0a] p-3 w-full max-w-2xl mx-auto border border-gray-800 rounded">
-            {availableClasses.map(cls => (
-              <button
-                key={cls}
-                onClick={() => { setActiveClass(cls); setSelectedRaceIndex(0); }}
-                className={`py-2 px-4 font-bold text-sm uppercase tracking-widest transition-all ${
-                  activeClass === cls 
-                    ? 'bg-yellow-500 text-black shadow-md' 
-                    : 'bg-black border border-gray-800 text-gray-400 hover:text-white'
-                }`}
-              >
-                {cls} Class
-              </button>
-            ))}
+        {!activeLeague || !activeSeason ? (
+          <div className="bg-[#0a0a0a] p-16 text-center border border-gray-800 rounded-lg">
+            <Flag className="w-20 h-20 text-gray-700 mx-auto mb-6 animate-pulse" />
+            <h2 className="font-['Teko'] text-4xl text-gray-400 uppercase tracking-widest mb-2">Awaiting Selection</h2>
+            <p className="text-gray-500 uppercase tracking-widest font-bold">Please select a League and a Season.</p>
           </div>
-        )}
-
-        {stats && participatedRaces.length > 0 ? (
-          <>
-            <div className="grid grid-cols-2 md:grid-cols-5 gap-4 mb-8">
-              <StatBlock label="Points" value={stats.points} colorClass={theme.text} />
-              <StatBlock label="Avg Points" value={stats.avg_points || '-'} />
-              <StatBlock label="Races" value={stats.races} />
-              <StatBlock label="Avg Race Pos" value={`P${stats.avg_pos || '-'}`} colorClass={theme.text} />
-              <StatBlock label="Avg Pace Pos" value={`P${stats.avg_pace_pos || '-'}`} />
-              <StatBlock label="Net vs Pace" value={`${stats.net_pos_gained > 0 ? '+' : ''}${stats.net_pos_gained || 0}`} colorClass={stats.net_pos_gained > 0 ? 'text-green-500' : stats.net_pos_gained < 0 ? 'text-red-500' : 'text-gray-400'} />
-              <StatBlock label="Avg Qualy Pos" value={`P${stats.avg_qualy_pos || '-'}`} />
-              <StatBlock label="Avg Qualy Gap" value={stats.avg_qualy_gap || '-'} />
-              <StatBlock label="Net vs Qualy" value={`${stats.net_pos_gained_qualy > 0 ? '+' : ''}${stats.net_pos_gained_qualy || 0}`} colorClass={stats.net_pos_gained_qualy > 0 ? 'text-green-500' : stats.net_pos_gained_qualy < 0 ? 'text-red-500' : 'text-gray-400'} />
-              <StatBlock label="Avg Race Gap" value={stats.avg_gap || '-'} />
-            </div>
-
-            <div className="bg-[#0a0a0a] border border-gray-800 shadow-xl mb-8">
-              <div className="p-4 border-b border-gray-800 bg-black flex items-center space-x-3">
-                <Clock className="w-6 h-6 text-yellow-400" />
-                <h3 className="font-['Teko'] text-3xl font-bold text-white uppercase tracking-wide">Personal Bests</h3>
-              </div>
-              <div className="overflow-x-auto">
-                <table className="w-full text-sm text-left">
-                  <thead className="bg-black text-gray-500 uppercase tracking-widest text-xs border-b border-gray-800">
-                    <tr>
-                      <th className="px-6 py-4 font-bold">Track</th>
-                      <th className="px-6 py-4 font-bold">Best Qualy</th>
-                      <th className="px-6 py-4 font-bold">Best Race</th>
-                    </tr>
-                  </thead>
-                  <tbody className="divide-y divide-gray-800/50">
-                    {Object.entries(pbData).map(([track, times]) => (
-                      <tr key={track} className="hover:bg-gray-800/30">
-                        <td className="px-6 py-4 font-bold text-gray-200 uppercase tracking-wide">{track}</td>
-                        <td className="px-6 py-4 font-mono text-gray-300"><span className="bg-yellow-500/20 text-yellow-500 px-2 py-1 rounded-sm text-[10px] font-bold mr-3 border border-yellow-500/30">Q</span>{msToTimeStr(times.qualy)}</td>
-                        <td className="px-6 py-4 font-mono text-gray-300"><span className="bg-emerald-500/20 text-emerald-500 px-2 py-1 rounded-sm text-[10px] font-bold mr-3 border border-emerald-500/30">R</span>{msToTimeStr(times.race)}</td>
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
-              </div>
-            </div>
-
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
-              <div className="bg-[#0a0a0a] p-6 border border-gray-800 relative overflow-hidden">
-                <h3 className="font-['Teko'] text-3xl font-bold text-white mb-6 uppercase tracking-wide">Position History</h3>
-                <div className="h-[300px]"><ResponsiveContainer width="100%" height="100%"><LineChart data={posChartData} margin={{ top: 10, right: 10, left: -20, bottom: 0 }}><CartesianGrid strokeDasharray="3 3" stroke="#1f2937" vertical={false} /><XAxis dataKey="track" stroke="#6b7280" tick={{ fontSize: 10 }} tickLine={false} axisLine={false} /><YAxis reversed={true} stroke="#6b7280" tick={{ fontSize: 12 }} tickLine={false} axisLine={false} /><Tooltip contentStyle={{ backgroundColor: '#000', borderColor: '#374151', color: '#fff' }} /><Legend /><Line connectNulls={true} type="monotone" dataKey="Race" name="Race Pos" stroke="#eab308" strokeWidth={3} dot={{ r: 4 }} activeDot={{ r: 6 }} /><Line connectNulls={true} type="monotone" dataKey="Qualy" name="Qualy Pos" stroke="#10b981" strokeWidth={2} strokeDasharray="5 5" /><Line connectNulls={true} type="monotone" dataKey="Pace" name="Pace Pos" stroke="#f97316" strokeWidth={2} strokeDasharray="3 3" /></LineChart></ResponsiveContainer></div>
-              </div>
-              <div className="bg-[#0a0a0a] p-6 border border-gray-800 relative overflow-hidden">
-                <h3 className="font-['Teko'] text-3xl font-bold text-white mb-6 uppercase tracking-wide flex items-center space-x-2"><AlertTriangle className="w-6 h-6 text-red-500" /><span>Time Lost to Incidents (Vs Leader)</span></h3>
-                <div className="h-[300px]"><ResponsiveContainer width="100%" height="100%"><AreaChart data={incidentsChartData} margin={{ top: 10, right: 10, left: -20, bottom: 0 }}><CartesianGrid strokeDasharray="3 3" stroke="#1f2937" vertical={false} /><XAxis dataKey="track" stroke="#6b7280" tick={{ fontSize: 10 }} tickLine={false} axisLine={false} /><YAxis stroke="#6b7280" tick={{ fontSize: 12 }} tickLine={false} axisLine={false} /><Tooltip contentStyle={{ backgroundColor: '#000', borderColor: '#374151', color: '#fff' }} /><Legend /><Area connectNulls={true} type="monotone" dataKey="DriverLost" name="Your Lost Time" stroke="#ef4444" fill="#ef4444" fillOpacity={0.2} strokeWidth={2} /><Area connectNulls={true} type="monotone" dataKey="WinnerLost" name="Leader Lost Time" stroke="#9ca3af" fill="transparent" strokeWidth={2} strokeDasharray="4 4" dot={false} /></AreaChart></ResponsiveContainer></div>
-              </div>
-            </div>
-            
-            <div className="bg-[#0a0a0a] p-6 border border-gray-800 mb-8">
-              <h3 className="font-['Teko'] text-3xl font-bold text-white mb-6 uppercase tracking-wide">Gaps Evolution (Seconds vs Leader)</h3>
-              <div className="h-[300px]"><ResponsiveContainer width="100%" height="100%"><LineChart data={gapsChartData} margin={{ top: 10, right: 10, left: -20, bottom: 0 }}><CartesianGrid strokeDasharray="3 3" stroke="#1f2937" vertical={false} /><XAxis dataKey="track" stroke="#6b7280" tick={{ fontSize: 10 }} tickLine={false} axisLine={false} /><YAxis stroke="#6b7280" tick={{ fontSize: 12 }} tickLine={false} axisLine={false} /><Tooltip contentStyle={{ backgroundColor: '#000', borderColor: '#374151', color: '#fff' }} /><Legend /><Line connectNulls={true} type="monotone" dataKey="PaceGap" name="Race Pace Gap" stroke="#06b6d4" strokeWidth={2} /><Line connectNulls={true} type="monotone" dataKey="BestLapGap" name="Best Lap Gap" stroke="#8b5cf6" strokeWidth={2} strokeDasharray="5 5" /><Line connectNulls={true} type="monotone" dataKey="QualyGap" name="Qualy Gap" stroke="#10b981" strokeWidth={2} strokeDasharray="3 3" /></LineChart></ResponsiveContainer></div>
-            </div>
-
-            <div className="bg-[#0a0a0a] p-6 border border-gray-800 mb-8">
-              <div className="flex flex-col md:flex-row md:items-center justify-between mb-6 space-y-4 md:space-y-0">
-                <h3 className="font-['Teko'] text-3xl font-bold text-white uppercase tracking-wide">Clean Lap Telemetry</h3>
-                <select 
-                  className="bg-black border border-gray-700 text-gray-300 font-bold uppercase tracking-widest rounded-sm px-4 py-2 outline-none focus:border-yellow-500 text-xs"
-                  value={selectedRaceIndex}
-                  onChange={(e) => setSelectedRaceIndex(Number(e.target.value))}
-                >
-                  {participatedRaces.map((race, idx) => (
-                    <option key={idx} value={idx}>{race.sessionName}</option>
-                  ))}
-                </select>
-              </div>
-              
-              <div className="h-[350px]">
-                <ResponsiveContainer width="100%" height="100%">
-                  <LineChart data={telemetryData} margin={{ top: 10, right: 10, left: 10, bottom: 0 }}>
-                    <CartesianGrid strokeDasharray="3 3" stroke="#1f2937" vertical={false} />
-                    <XAxis dataKey="lap" stroke="#6b7280" tick={{ fontSize: 10 }} tickLine={false} axisLine={false} />
-                    <YAxis domain={['auto', 'auto']} stroke="#6b7280" tick={{ fontSize: 10 }} tickLine={false} axisLine={false} 
-                           tickFormatter={(val) => msToTimeStr(val * 1000)} />
-                    <Tooltip contentStyle={{ backgroundColor: '#000', borderColor: '#374151', color: '#fff' }} />
-                    <Legend />
-                    <Line type="monotone" dataKey="Driver" name="Your Clean Laps" stroke="#10B981" strokeWidth={2} dot={{ r: 2 }} connectNulls={true} />
-                    <Line type="monotone" dataKey="Winner" name="Leader's Clean Laps" stroke="#F59E0B" strokeWidth={2} strokeDasharray="5 5" dot={false} connectNulls={true} />
-                  </LineChart>
-                </ResponsiveContainer>
-              </div>
-            </div>
-          </>
-        ) : (
-          <div className="bg-[#0a0a0a] p-12 text-center border border-gray-800">
+        ) : loading ? (
+          <div className="flex items-center justify-center py-20">
+            <div className="animate-spin rounded-full h-16 w-16 border-t-2 border-b-2 border-yellow-500"></div>
+          </div>
+        ) : error ? (
+          <div className="bg-red-900/20 p-8 text-center border border-red-500/30">
+            <p className="text-red-400 uppercase tracking-widest font-bold">{error}</p>
+          </div>
+        ) : uniqueCleanDrivers.length === 0 ? (
+          <div className="text-center py-20 border border-dashed border-gray-800 bg-[#0a0a0a] rounded-lg">
             <AlertTriangle className="w-16 h-16 text-gray-700 mx-auto mb-4" />
-            <h2 className="font-['Teko'] text-4xl font-bold text-white mb-2 uppercase tracking-wide">No Participation</h2>
-            <p className="text-gray-500 text-sm font-bold uppercase tracking-widest">This driver does not have any data for this category or season yet.</p>
+            <p className="text-gray-400 text-lg font-bold uppercase tracking-widest">No drivers found in this season.</p>
           </div>
+        ) : (
+          <>
+            <div className="bg-[#0a0a0a] border border-gray-800 p-6 md:p-8 mb-12 shadow-2xl">
+              <label className="text-[10px] text-blue-400 uppercase font-bold tracking-widest mb-2 block">Select Driver</label>
+              <select value={selectedDriver} onChange={(e) => setSelectedDriver(e.target.value)} className="w-full bg-black border border-gray-700 text-white p-4 font-bold uppercase tracking-widest outline-none focus:border-blue-500">
+                <option value="">-- Choose a Driver --</option>
+                {uniqueCleanDrivers.map(name => <option key={name} value={name}>{name}</option>)}
+              </select>
+            </div>
+
+            {dStats && (
+              <div className="bg-[#0a0a0a] border border-gray-800 p-6 md:p-8 shadow-2xl mb-12 animate-fade-in">
+                <div className="flex flex-col md:flex-row items-center md:items-start md:space-x-8 mb-8 border-b border-gray-800 pb-8">
+                  {profile?.avatar ? (
+                    <img src={profile.avatar} className="w-32 h-32 rounded-full border-4 border-yellow-500 object-cover shadow-[0_0_20px_rgba(250,204,21,0.3)] mb-4 md:mb-0" alt="Avatar" />
+                  ) : (
+                    <div className="w-32 h-32 rounded-full border-4 border-gray-700 bg-gray-900 flex items-center justify-center mb-4 md:mb-0">
+                      <User className="w-12 h-12 text-gray-600" />
+                    </div>
+                  )}
+                  <div className="text-center md:text-left flex-1">
+                    <h2 className="font-['Teko'] text-5xl md:text-7xl font-bold text-white uppercase leading-none">{dStats.name}</h2>
+                    <div className="flex flex-wrap justify-center md:justify-start gap-3 mt-3">
+                      <span className="bg-yellow-500/10 text-yellow-400 border border-yellow-500/30 px-3 py-1 text-xs font-bold uppercase tracking-widest rounded-sm">
+                        {dStats.category || 'ROOKIE'}
+                      </span>
+                      {profile?.equipo && (
+                        <span className="bg-gray-800 text-gray-300 border border-gray-700 px-3 py-1 text-xs font-bold uppercase tracking-widest rounded-sm">
+                          {profile.equipo}
+                        </span>
+                      )}
+                      {profile?.dorsal && (
+                        <span className="bg-blue-900/30 text-blue-400 border border-blue-500/30 px-3 py-1 text-xs font-bold uppercase tracking-widest rounded-sm">
+                          #{profile.dorsal}
+                        </span>
+                      )}
+                    </div>
+                  </div>
+                </div>
+
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                  {[
+                    { label: 'Total Points', value: dStats.points },
+                    { label: 'Races Run', value: dStats.races },
+                    { label: 'Avg Pos', value: `P${dStats.avg_pos || '-'}` },
+                    { label: 'Avg Qualy', value: `P${dStats.avg_qualy_pos || '-'}` },
+                    { label: 'Avg Pace Gap', value: dStats.avg_gap || '-' },
+                    { label: 'Avg Qualy Gap', value: dStats.avg_qualy_gap || '-' },
+                    { label: 'Net Pos Gained', value: dStats.net_pos_gained > 0 ? `+${dStats.net_pos_gained}` : dStats.net_pos_gained },
+                    { label: 'Favorite Car', value: dStats.favorite_car || '-' },
+                  ].map((stat, i) => (
+                    <div key={i} className="bg-black border border-gray-800 p-4 text-center hover:border-yellow-500/50 transition-colors">
+                      <div className="font-['Teko'] text-4xl text-white font-bold">{stat.value}</div>
+                      <div className="text-[10px] text-gray-500 uppercase font-bold tracking-widest">{stat.label}</div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {dStats && personalBests.length > 0 && (
+              <div className="bg-[#0a0a0a] border border-gray-800 shadow-2xl mb-12 animate-fade-in">
+                <div className="p-4 border-b border-gray-800 bg-black flex items-center space-x-3">
+                  <Timer className="w-6 h-6 text-yellow-400" />
+                  <h3 className="font-['Teko'] text-3xl font-bold text-white uppercase tracking-wide">Personal Best Times</h3>
+                </div>
+                <div className="overflow-x-auto">
+                  <table className="w-full text-sm text-left">
+                    <thead className="bg-black text-gray-500 uppercase tracking-widest text-xs border-b border-gray-800">
+                      <tr>
+                        <th className="px-6 py-4 font-bold">Track</th>
+                        <th className="px-6 py-4 font-bold">Class</th>
+                        <th className="px-6 py-4 font-bold text-purple-400">Best Qualy</th>
+                        <th className="px-6 py-4 font-bold text-blue-400">Best Race</th>
+                      </tr>
+                    </thead>
+                    <tbody className="divide-y divide-gray-800/50">
+                      {personalBests.map((pb, idx) => (
+                        <tr key={idx} className="hover:bg-gray-800/30 transition-colors">
+                          <td className="px-6 py-4 font-bold text-gray-200 uppercase tracking-wide">{pb.track}</td>
+                          <td className="px-6 py-4"><span className="bg-gray-800 text-gray-300 px-2 py-1 text-xs font-bold rounded">{pb.car}</span></td>
+                          <td className="px-6 py-4 font-mono text-purple-400 font-bold">{msToTimeStr(pb.qualy)}</td>
+                          <td className="px-6 py-4 font-mono text-blue-400 font-bold">{msToTimeStr(pb.race)}</td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            )}
+
+            {dStats && chartData.length > 0 && (
+              <div className="space-y-6 mb-12 animate-fade-in">
+                
+                {/* 🚀 POSICIÓN (CON QUALY Y PACE) */}
+                <div className="bg-[#0a0a0a] border border-gray-800 p-6 md:p-8 shadow-2xl">
+                  <h3 className="font-['Teko'] text-3xl font-bold text-white mb-6 uppercase tracking-wide flex items-center"><Award className="w-6 h-6 mr-2 text-yellow-400"/> Position History</h3>
+                  <div className="h-[300px]">
+                    <ResponsiveContainer width="100%" height="100%">
+                      <LineChart data={chartData} margin={{ top: 10, right: 10, left: -20, bottom: 0 }}>
+                        <CartesianGrid strokeDasharray="3 3" stroke="#1f2937" vertical={false} />
+                        <XAxis dataKey="track" stroke="#6b7280" tick={{ fontSize: 10 }} tickLine={false} axisLine={false} />
+                        <YAxis reversed={true} stroke="#6b7280" tick={{ fontSize: 12 }} tickLine={false} axisLine={false} />
+                        <Tooltip contentStyle={{ backgroundColor: '#000', borderColor: '#374151', color: '#fff' }} />
+                        <Legend />
+                        <Line type="monotone" dataKey="Pos" name="Finish Position" stroke="#eab308" strokeWidth={3} dot={{ r: 4, fill: '#eab308' }} connectNulls={true} />
+                        <Line type="monotone" dataKey="QualyPos" name="Qualy Position" stroke="#eab308" strokeWidth={2} strokeDasharray="5 5" dot={false} connectNulls={true} />
+                        <Line type="monotone" dataKey="PacePos" name="Pace Position" stroke="#eab308" strokeWidth={2} strokeDasharray="3 3" dot={false} connectNulls={true} />
+                      </LineChart>
+                    </ResponsiveContainer>
+                  </div>
+                </div>
+
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                  {/* 🚀 INCIDENTES PERDIDOS (CON GANADOR) */}
+                  <div className="bg-[#0a0a0a] border border-gray-800 p-6 shadow-2xl">
+                    <h3 className="font-['Teko'] text-3xl font-bold text-white mb-6 uppercase tracking-wide flex items-center"><AlertTriangle className="w-6 h-6 mr-2 text-red-500"/> Incident Time Lost (s)</h3>
+                    <div className="h-[250px]">
+                      <ResponsiveContainer width="100%" height="100%">
+                        <AreaChart data={chartData} margin={{ top: 10, right: 10, left: -20, bottom: 0 }}>
+                          <CartesianGrid strokeDasharray="3 3" stroke="#1f2937" vertical={false} />
+                          <XAxis dataKey="track" stroke="#6b7280" tick={{ fontSize: 10 }} tickLine={false} axisLine={false} />
+                          <YAxis stroke="#6b7280" tick={{ fontSize: 12 }} tickLine={false} axisLine={false} />
+                          <Tooltip contentStyle={{ backgroundColor: '#000', borderColor: '#374151', color: '#fff' }} />
+                          <Legend />
+                          <Area type="monotone" dataKey="WinnerLost" name="Winner Baseline" stroke="#eab308" fill="#eab308" fillOpacity={0.1} strokeWidth={2} />
+                          <Area type="monotone" dataKey="IncLost" name="Driver Time Lost" stroke="#ef4444" fill="#ef4444" fillOpacity={0.2} strokeWidth={2} />
+                        </AreaChart>
+                      </ResponsiveContainer>
+                    </div>
+                  </div>
+
+                  {/* 🚀 PACE GAP (CON GANADOR) */}
+                  <div className="bg-[#0a0a0a] border border-gray-800 p-6 shadow-2xl">
+                    <h3 className="font-['Teko'] text-3xl font-bold text-white mb-6 uppercase tracking-wide flex items-center"><Clock className="w-6 h-6 mr-2 text-blue-400"/> Race Pace Gap (s)</h3>
+                    <div className="h-[250px]">
+                      <ResponsiveContainer width="100%" height="100%">
+                        <LineChart data={chartData} margin={{ top: 10, right: 10, left: -20, bottom: 0 }}>
+                          <CartesianGrid strokeDasharray="3 3" stroke="#1f2937" vertical={false} />
+                          <XAxis dataKey="track" stroke="#6b7280" tick={{ fontSize: 10 }} tickLine={false} axisLine={false} />
+                          <YAxis stroke="#6b7280" tick={{ fontSize: 12 }} tickLine={false} axisLine={false} />
+                          <Tooltip contentStyle={{ backgroundColor: '#000', borderColor: '#374151', color: '#fff' }} />
+                          <Legend />
+                          <Line type="monotone" dataKey="WinnerPaceGap" name="Winner Baseline" stroke="#eab308" strokeWidth={2} strokeDasharray="3 3" connectNulls={true} />
+                          <Line type="monotone" dataKey="PaceGap" name="Driver Pace Gap" stroke="#3b82f6" strokeWidth={2} connectNulls={true} />
+                        </LineChart>
+                      </ResponsiveContainer>
+                    </div>
+                  </div>
+                </div>
+
+                {/* 🚀 TELEMETRÍA (CON LÍNEA DE GANADOR) */}
+                {availableRaces.length > 0 && (
+                  <div className="bg-[#0a0a0a] border border-gray-800 p-6 md:p-8 shadow-2xl">
+                    <div className="flex flex-col md:flex-row md:items-center justify-between mb-8 space-y-4 md:space-y-0">
+                      <h3 className="font-['Teko'] text-3xl font-bold text-white uppercase tracking-wide flex items-center">
+                        <Activity className="w-6 h-6 mr-2 text-green-400"/> Clean Lap Telemetry
+                      </h3>
+                      <select 
+                        className="bg-black border border-gray-700 text-gray-300 font-bold uppercase tracking-widest rounded-sm px-4 py-2 outline-none focus:border-yellow-500 text-xs"
+                        value={selectedRaceIdx}
+                        onChange={(e) => setSelectedRaceIdx(Number(e.target.value))}
+                      >
+                        {availableRaces.map((race, idx) => (
+                          <option key={idx} value={idx}>{race.name}</option>
+                        ))}
+                      </select>
+                    </div>
+                    
+                    <div className="h-[350px]">
+                      <ResponsiveContainer width="100%" height="100%">
+                        <LineChart data={telemetryData} margin={{ top: 10, right: 10, left: 10, bottom: 0 }}>
+                          <CartesianGrid strokeDasharray="3 3" stroke="#1f2937" vertical={false} />
+                          <XAxis dataKey="lap" stroke="#6b7280" tick={{ fontSize: 10 }} tickLine={false} axisLine={false} />
+                          <YAxis domain={['auto', 'auto']} stroke="#6b7280" tick={{ fontSize: 10 }} tickLine={false} axisLine={false} 
+                                 tickFormatter={(val) => msToTimeStr(val * 1000)} />
+                          <Tooltip contentStyle={{ backgroundColor: '#000', borderColor: '#374151', color: '#fff' }} />
+                          <Legend />
+                          <Line type="monotone" dataKey="WinnerTime" name="Race Winner" stroke="#eab308" strokeWidth={2} strokeDasharray="5 5" dot={false} connectNulls={true} />
+                          <Line type="monotone" dataKey="Time" name="Driver Lap Time" stroke="#22c55e" strokeWidth={2} dot={{ r: 2 }} connectNulls={true} />
+                        </LineChart>
+                      </ResponsiveContainer>
+                    </div>
+                  </div>
+                )}
+              </div>
+            )}
+          </>
         )}
+
       </div>
     </div>
   );

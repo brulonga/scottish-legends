@@ -3,60 +3,2224 @@
   "seasonId": "season_2",
   "leagueName": "Scottish Legends ACC",
   "seasonName": "Season 2",
-  "lastUpdated": "2026-07-01T00:00:00Z",
+  "lastUpdated": "2026-07-14T16:23:09.983775Z",
   "calendar": [
-    { "id": "R1", "name": "Season Opener", "track": "Nürburgring Nordschleife", "type": "Multi-Class" },
-    { "id": "R2", "name": "TCX Mini-Champ", "track": "Donington/Oulton/Snetterton", "type": "TCX" },
-    { "id": "R3", "name": "Endurance Showcase", "track": "Spa-Francorchamps", "type": "GT3" },
-    { "id": "R4", "name": "British Classic", "track": "Brands Hatch", "type": "GT4" },
-    { "id": "R5", "name": "Porsche Cup Mini-Champ", "track": "Paul Ricard/Kyalami/Suzuka", "type": "Porsche 992" },
-    { "id": "R6", "name": "Season Finale", "track": "Nürburgring Nordschleife", "type": "Multi-Class" }
+    {
+      "id": "R1",
+      "name": "Season Opener",
+      "track": "Nürburgring Nordschleife",
+      "type": "Multi-Class",
+      "rules": {
+        "PLATINUM": "GT4",
+        "GOLD": "GT4",
+        "SILVER": "GT3",
+        "BRONZE": "GT3",
+        "ROOKIE": "GT3"
+      }
+    },
+    {
+      "id": "R2",
+      "name": "TCX Mini-Champ",
+      "track": "Donington/Oulton/Snetterton",
+      "type": "TCX",
+      "rules": {
+        "ALL": "TCX"
+      },
+      "is_sprint": true
+    },
+    {
+      "id": "R3",
+      "name": "Endurance Showcase",
+      "track": "Spa-Francorchamps",
+      "type": "GT3",
+      "rules": {
+        "ALL": "GT3"
+      }
+    },
+    {
+      "id": "R4",
+      "name": "British Classic",
+      "track": "Brands Hatch",
+      "type": "GT4",
+      "rules": {
+        "ALL": "GT4"
+      }
+    },
+    {
+      "id": "R5",
+      "name": "Porsche Cup Mini-Champ",
+      "track": "Paul Ricard/Kyalami/Suzuka",
+      "type": "Porsche 992",
+      "rules": {
+        "ALL": "CUP"
+      },
+      "is_sprint": true
+    },
+    {
+      "id": "R6",
+      "name": "Season Finale",
+      "track": "Nürburgring Nordschleife",
+      "type": "Multi-Class",
+      "rules": {
+        "PLATINUM": "GT3",
+        "GOLD": "GT3",
+        "SILVER": "GT4",
+        "BRONZE": "GT4",
+        "ROOKIE": "GT4"
+      }
+    }
   ],
   "global": [
-    { "name": "Marsi Bella", "category": "PLATINUM", "points": 0, "avg_points": 0, "avg_qualy_pos": "-", "avg_qualy_gap": "-", "avg_pos": "-", "avg_gap": "-", "races": 0, "rounds": {} },
-    { "name": "Sebastian Franken", "category": "PLATINUM", "points": 0, "avg_points": 0, "avg_qualy_pos": "-", "avg_qualy_gap": "-", "avg_pos": "-", "avg_gap": "-", "races": 0, "rounds": {} },
-    { "name": "Vis Nalu", "category": "PLATINUM", "points": 0, "avg_points": 0, "avg_qualy_pos": "-", "avg_qualy_gap": "-", "avg_pos": "-", "avg_gap": "-", "races": 0, "rounds": {} },
-    { "name": "Mike Weber", "category": "PLATINUM", "points": 0, "avg_points": 0, "avg_qualy_pos": "-", "avg_qualy_gap": "-", "avg_pos": "-", "avg_gap": "-", "races": 0, "rounds": {} },
-    { "name": "Antoni Mencik", "category": "PLATINUM", "points": 0, "avg_points": 0, "avg_qualy_pos": "-", "avg_qualy_gap": "-", "avg_pos": "-", "avg_gap": "-", "races": 0, "rounds": {} },
-    { "name": "Dominic Zimmermann", "category": "PLATINUM", "points": 0, "avg_points": 0, "avg_qualy_pos": "-", "avg_qualy_gap": "-", "avg_pos": "-", "avg_gap": "-", "races": 0, "rounds": {} },
-    
-    { "name": "alex küch", "category": "GOLD", "points": 0, "avg_points": 0, "avg_qualy_pos": "-", "avg_qualy_gap": "-", "avg_pos": "-", "avg_gap": "-", "races": 0, "rounds": {} },
-    { "name": "Moritz Brandl", "category": "GOLD", "points": 0, "avg_points": 0, "avg_qualy_pos": "-", "avg_qualy_gap": "-", "avg_pos": "-", "avg_gap": "-", "races": 0, "rounds": {} },
-    { "name": "Cla Rens", "category": "GOLD", "points": 0, "avg_points": 0, "avg_qualy_pos": "-", "avg_qualy_gap": "-", "avg_pos": "-", "avg_gap": "-", "races": 0, "rounds": {} },
-    { "name": "Bruno Longarela", "category": "GOLD", "points": 0, "avg_points": 0, "avg_qualy_pos": "-", "avg_qualy_gap": "-", "avg_pos": "-", "avg_gap": "-", "races": 0, "rounds": {} },
-    { "name": "Isaac Melvatron", "category": "GOLD", "points": 0, "avg_points": 0, "avg_qualy_pos": "-", "avg_qualy_gap": "-", "avg_pos": "-", "avg_gap": "-", "races": 0, "rounds": {} },
-    { "name": "Lucas Nierhaus", "category": "GOLD", "points": 0, "avg_points": 0, "avg_qualy_pos": "-", "avg_qualy_gap": "-", "avg_pos": "-", "avg_gap": "-", "races": 0, "rounds": {} },
-    { "name": "He Who-noms-on-tires", "category": "GOLD", "points": 0, "avg_points": 0, "avg_qualy_pos": "-", "avg_qualy_gap": "-", "avg_pos": "-", "avg_gap": "-", "races": 0, "rounds": {} },
-    { "name": "Kai Weber", "category": "GOLD", "points": 0, "avg_points": 0, "avg_qualy_pos": "-", "avg_qualy_gap": "-", "avg_pos": "-", "avg_gap": "-", "races": 0, "rounds": {} },
-    { "name": "Elliot Heal", "category": "GOLD", "points": 0, "avg_points": 0, "avg_qualy_pos": "-", "avg_qualy_gap": "-", "avg_pos": "-", "avg_gap": "-", "races": 0, "rounds": {} },
-    { "name": "Luca Maggiolo", "category": "GOLD", "points": 0, "avg_points": 0, "avg_qualy_pos": "-", "avg_qualy_gap": "-", "avg_pos": "-", "avg_gap": "-", "races": 0, "rounds": {} },
-    { "name": "Micha Nieuwkoop", "category": "GOLD", "points": 0, "avg_points": 0, "avg_qualy_pos": "-", "avg_qualy_gap": "-", "avg_pos": "-", "avg_gap": "-", "races": 0, "rounds": {} },
-
-    { "name": "Czech Blackness", "category": "SILVER", "points": 0, "avg_points": 0, "avg_qualy_pos": "-", "avg_qualy_gap": "-", "avg_pos": "-", "avg_gap": "-", "races": 0, "rounds": {} },
-    { "name": "Bence Kamaras", "category": "SILVER", "points": 0, "avg_points": 0, "avg_qualy_pos": "-", "avg_qualy_gap": "-", "avg_pos": "-", "avg_gap": "-", "races": 0, "rounds": {} },
-    { "name": "Raymond Crawford", "category": "SILVER", "points": 0, "avg_points": 0, "avg_qualy_pos": "-", "avg_qualy_gap": "-", "avg_pos": "-", "avg_gap": "-", "races": 0, "rounds": {} },
-    { "name": "Frank John", "category": "SILVER", "points": 0, "avg_points": 0, "avg_qualy_pos": "-", "avg_qualy_gap": "-", "avg_pos": "-", "avg_gap": "-", "races": 0, "rounds": {} },
-    { "name": "Davide Leone", "category": "SILVER", "points": 0, "avg_points": 0, "avg_qualy_pos": "-", "avg_qualy_gap": "-", "avg_pos": "-", "avg_gap": "-", "races": 0, "rounds": {} },
-    { "name": "Marty Fox", "category": "SILVER", "points": 0, "avg_points": 0, "avg_qualy_pos": "-", "avg_qualy_gap": "-", "avg_pos": "-", "avg_gap": "-", "races": 0, "rounds": {} },
-    { "name": "Vexal Santos", "category": "SILVER", "points": 0, "avg_points": 0, "avg_qualy_pos": "-", "avg_qualy_gap": "-", "avg_pos": "-", "avg_gap": "-", "races": 0, "rounds": {} },
-    { "name": "keVin peeters", "category": "SILVER", "points": 0, "avg_points": 0, "avg_qualy_pos": "-", "avg_qualy_gap": "-", "avg_pos": "-", "avg_gap": "-", "races": 0, "rounds": {} },
-    { "name": "Florian Braun", "category": "SILVER", "points": 0, "avg_points": 0, "avg_qualy_pos": "-", "avg_qualy_gap": "-", "avg_pos": "-", "avg_gap": "-", "races": 0, "rounds": {} },
-    { "name": "Nick Ice", "category": "SILVER", "points": 0, "avg_points": 0, "avg_qualy_pos": "-", "avg_qualy_gap": "-", "avg_pos": "-", "avg_gap": "-", "races": 0, "rounds": {} },
-    { "name": "Fiesta Bonanza", "category": "SILVER", "points": 0, "avg_points": 0, "avg_qualy_pos": "-", "avg_qualy_gap": "-", "avg_pos": "-", "avg_gap": "-", "races": 0, "rounds": {} },
-    { "name": "Vinicius Ferreira", "category": "SILVER", "points": 0, "avg_points": 0, "avg_qualy_pos": "-", "avg_qualy_gap": "-", "avg_pos": "-", "avg_gap": "-", "races": 0, "rounds": {} },
-    { "name": "Ash Goodliffe", "category": "SILVER", "points": 0, "avg_points": 0, "avg_qualy_pos": "-", "avg_qualy_gap": "-", "avg_pos": "-", "avg_gap": "-", "races": 0, "rounds": {} },
-    { "name": "Viktor Ruga", "category": "SILVER", "points": 0, "avg_points": 0, "avg_qualy_pos": "-", "avg_qualy_gap": "-", "avg_pos": "-", "avg_gap": "-", "races": 0, "rounds": {} },
-
-    { "name": "Gael Duchêne ESP", "category": "BRONZE", "points": 0, "avg_points": 0, "avg_qualy_pos": "-", "avg_qualy_gap": "-", "avg_pos": "-", "avg_gap": "-", "races": 0, "rounds": {} },
-    { "name": "Eerik Liiva", "category": "BRONZE", "points": 0, "avg_points": 0, "avg_qualy_pos": "-", "avg_qualy_gap": "-", "avg_pos": "-", "avg_gap": "-", "races": 0, "rounds": {} },
-    { "name": "Tanno Raayman", "category": "BRONZE", "points": 0, "avg_points": 0, "avg_qualy_pos": "-", "avg_qualy_gap": "-", "avg_pos": "-", "avg_gap": "-", "races": 0, "rounds": {} },
-    { "name": "Andrew Davidenko", "category": "BRONZE", "points": 0, "avg_points": 0, "avg_qualy_pos": "-", "avg_qualy_gap": "-", "avg_pos": "-", "avg_gap": "-", "races": 0, "rounds": {} },
-    { "name": "Andy Mcdonald", "category": "BRONZE", "points": 0, "avg_points": 0, "avg_qualy_pos": "-", "avg_qualy_gap": "-", "avg_pos": "-", "avg_gap": "-", "races": 0, "rounds": {} },
-    { "name": "Joshua Buller", "category": "BRONZE", "points": 0, "avg_points": 0, "avg_qualy_pos": "-", "avg_qualy_gap": "-", "avg_pos": "-", "avg_gap": "-", "races": 0, "rounds": {} },
-    { "name": "Matt Rigby", "category": "BRONZE", "points": 0, "avg_points": 0, "avg_qualy_pos": "-", "avg_qualy_gap": "-", "avg_pos": "-", "avg_gap": "-", "races": 0, "rounds": {} },
-    { "name": "Tony Buller", "category": "BRONZE", "points": 0, "avg_points": 0, "avg_qualy_pos": "-", "avg_qualy_gap": "-", "avg_pos": "-", "avg_gap": "-", "races": 0, "rounds": {} },
-    { "name": "Danil kolbasenko", "category": "BRONZE", "points": 0, "avg_points": 0, "avg_qualy_pos": "-", "avg_qualy_gap": "-", "avg_pos": "-", "avg_gap": "-", "races": 0, "rounds": {} },
-    { "name": "Leonardo Rigon", "category": "BRONZE", "points": 0, "avg_points": 0, "avg_qualy_pos": "-", "avg_qualy_gap": "-", "avg_pos": "-", "avg_gap": "-", "races": 0, "rounds": {} }
+    {
+      "name": "Nick  Ice",
+      "category": "ROOKIE",
+      "points": 240,
+      "races": 1,
+      "rounds": {
+        "R1": {
+          "points": 240,
+          "bonusPoints": 60,
+          "carClass": "GT3",
+          "isDropped": false
+        }
+      },
+      "avg_points": 240.0,
+      "avg_pos": 1.0,
+      "avg_qualy_pos": 1.0,
+      "avg_gap": "+0.000s",
+      "avg_qualy_gap": "+0.000s",
+      "net_pos_gained": 0,
+      "favorite_car": 33
+    },
+    {
+      "name": "Jeremy Morris",
+      "category": "ROOKIE",
+      "points": 210,
+      "races": 1,
+      "rounds": {
+        "R1": {
+          "points": 210,
+          "bonusPoints": 60,
+          "carClass": "GT3",
+          "isDropped": false
+        }
+      },
+      "avg_points": 210.0,
+      "avg_pos": 2.0,
+      "avg_qualy_pos": 4.0,
+      "avg_gap": "+5.322s",
+      "avg_qualy_gap": "+0.915s",
+      "net_pos_gained": 2,
+      "favorite_car": 20
+    },
+    {
+      "name": "Raymond Crawford",
+      "category": "SILVER",
+      "points": 200,
+      "races": 1,
+      "rounds": {
+        "R1": {
+          "points": 200,
+          "bonusPoints": 20,
+          "carClass": "GT3",
+          "isDropped": false
+        }
+      },
+      "avg_points": 200.0,
+      "avg_pos": 1.0,
+      "avg_qualy_pos": 10.0,
+      "avg_gap": "+11.406s",
+      "avg_qualy_gap": "+7.472s",
+      "net_pos_gained": 7,
+      "favorite_car": 32
+    },
+    {
+      "name": "Marty Fox",
+      "category": "SILVER",
+      "points": 170,
+      "races": 1,
+      "rounds": {
+        "R1": {
+          "points": 170,
+          "bonusPoints": 20,
+          "carClass": "GT3",
+          "isDropped": false
+        }
+      },
+      "avg_points": 170.0,
+      "avg_pos": 2.0,
+      "avg_qualy_pos": 11.0,
+      "avg_gap": "+12.857s",
+      "avg_qualy_gap": "+7.632s",
+      "net_pos_gained": 7,
+      "favorite_car": 30
+    },
+    {
+      "name": "David Young",
+      "category": "ROOKIE",
+      "points": 175,
+      "races": 1,
+      "rounds": {
+        "R1": {
+          "points": 175,
+          "bonusPoints": 40,
+          "carClass": "GT3",
+          "isDropped": false
+        }
+      },
+      "avg_points": 175.0,
+      "avg_pos": 3.0,
+      "avg_qualy_pos": "-",
+      "avg_gap": "+16.990s",
+      "avg_qualy_gap": "-",
+      "net_pos_gained": 0,
+      "favorite_car": 32
+    },
+    {
+      "name": "Marc Sickinger",
+      "category": "ROOKIE",
+      "points": 162,
+      "races": 1,
+      "rounds": {
+        "R1": {
+          "points": 162,
+          "bonusPoints": 40,
+          "carClass": "GT3",
+          "isDropped": false
+        }
+      },
+      "avg_points": 162.0,
+      "avg_pos": 4.0,
+      "avg_qualy_pos": 7.0,
+      "avg_gap": "+24.644s",
+      "avg_qualy_gap": "+1.542s",
+      "net_pos_gained": 1,
+      "favorite_car": 15
+    },
+    {
+      "name": "Julian Maßner",
+      "category": "ROOKIE",
+      "points": 0,
+      "races": 1,
+      "rounds": {
+        "R1": {
+          "points": 0,
+          "bonusPoints": 0,
+          "carClass": "CUP",
+          "isDropped": false
+        }
+      },
+      "avg_points": 0.0,
+      "avg_pos": 7.0,
+      "avg_qualy_pos": "-",
+      "avg_gap": "+25.524s",
+      "avg_qualy_gap": "-",
+      "net_pos_gained": 0,
+      "favorite_car": 28
+    },
+    {
+      "name": "Wes Lee",
+      "category": "ROOKIE",
+      "points": 151,
+      "races": 1,
+      "rounds": {
+        "R1": {
+          "points": 151,
+          "bonusPoints": 40,
+          "carClass": "GT3",
+          "isDropped": false
+        }
+      },
+      "avg_points": 151.0,
+      "avg_pos": 5.0,
+      "avg_qualy_pos": 2.0,
+      "avg_gap": "+25.442s",
+      "avg_qualy_gap": "+0.467s",
+      "net_pos_gained": -6,
+      "favorite_car": 15
+    },
+    {
+      "name": "Chris Wood",
+      "category": "ROOKIE",
+      "points": 142,
+      "races": 1,
+      "rounds": {
+        "R1": {
+          "points": 142,
+          "bonusPoints": 40,
+          "carClass": "GT3",
+          "isDropped": false
+        }
+      },
+      "avg_points": 142.0,
+      "avg_pos": 6.0,
+      "avg_qualy_pos": 12.0,
+      "avg_gap": "+27.052s",
+      "avg_qualy_gap": "+8.167s",
+      "net_pos_gained": 3,
+      "favorite_car": 32
+    },
+    {
+      "name": "Cla Rens",
+      "category": "GOLD",
+      "points": 190,
+      "races": 1,
+      "rounds": {
+        "R1": {
+          "points": 190,
+          "bonusPoints": 10,
+          "carClass": "GT4",
+          "isDropped": false
+        }
+      },
+      "avg_points": 190.0,
+      "avg_pos": 1.0,
+      "avg_qualy_pos": "-",
+      "avg_gap": "+38.947s",
+      "avg_qualy_gap": "-",
+      "net_pos_gained": 0,
+      "favorite_car": 51
+    },
+    {
+      "name": "Luca Maggiolo",
+      "category": "GOLD",
+      "points": 0,
+      "races": 1,
+      "rounds": {
+        "R1": {
+          "points": 0,
+          "bonusPoints": 0,
+          "carClass": "GT3",
+          "isDropped": false
+        }
+      },
+      "avg_points": 0.0,
+      "avg_pos": 11.0,
+      "avg_qualy_pos": 8.0,
+      "avg_gap": "+66.910s",
+      "avg_qualy_gap": "+4.202s",
+      "net_pos_gained": -3,
+      "favorite_car": 32
+    },
+    {
+      "name": "Vexal Santos",
+      "category": "SILVER",
+      "points": 145,
+      "races": 1,
+      "rounds": {
+        "R1": {
+          "points": 145,
+          "bonusPoints": 10,
+          "carClass": "GT3",
+          "isDropped": false
+        }
+      },
+      "avg_points": 145.0,
+      "avg_pos": 3.0,
+      "avg_qualy_pos": "-",
+      "avg_gap": "+79.688s",
+      "avg_qualy_gap": "-",
+      "net_pos_gained": 0,
+      "favorite_car": 35
+    },
+    {
+      "name": "Alice Schupp-Müller",
+      "category": "ROOKIE",
+      "points": 114,
+      "races": 1,
+      "rounds": {
+        "R1": {
+          "points": 114,
+          "bonusPoints": 20,
+          "carClass": "GT3",
+          "isDropped": false
+        }
+      },
+      "avg_points": 114.0,
+      "avg_pos": 7.0,
+      "avg_qualy_pos": "-",
+      "avg_gap": "+87.428s",
+      "avg_qualy_gap": "-",
+      "net_pos_gained": 0,
+      "favorite_car": 20
+    },
+    {
+      "name": "He Who-noms-on-tires",
+      "category": "GOLD",
+      "points": 0,
+      "races": 1,
+      "rounds": {
+        "R1": {
+          "points": 0,
+          "bonusPoints": 0,
+          "carClass": "GT3",
+          "isDropped": false
+        }
+      },
+      "avg_points": 0.0,
+      "avg_pos": 14.0,
+      "avg_qualy_pos": 5.0,
+      "avg_gap": "+93.032s",
+      "avg_qualy_gap": "+1.167s",
+      "net_pos_gained": -9,
+      "favorite_car": 32
+    },
+    {
+      "name": "alex küch",
+      "category": "GOLD",
+      "points": 160,
+      "races": 1,
+      "rounds": {
+        "R1": {
+          "points": 160,
+          "bonusPoints": 10,
+          "carClass": "GT4",
+          "isDropped": false
+        }
+      },
+      "avg_points": 160.0,
+      "avg_pos": 2.0,
+      "avg_qualy_pos": 17.0,
+      "avg_gap": "+111.234s",
+      "avg_qualy_gap": "+47.412s",
+      "net_pos_gained": 2,
+      "favorite_car": 60
+    },
+    {
+      "name": "Teodor Florentin",
+      "category": "ROOKIE",
+      "points": 97,
+      "races": 1,
+      "rounds": {
+        "R1": {
+          "points": 97,
+          "bonusPoints": 10,
+          "carClass": "GT3",
+          "isDropped": false
+        }
+      },
+      "avg_points": 97.0,
+      "avg_pos": 8.0,
+      "avg_qualy_pos": 15.0,
+      "avg_gap": "+126.432s",
+      "avg_qualy_gap": "+16.440s",
+      "net_pos_gained": -1,
+      "favorite_car": 35
+    },
+    {
+      "name": "Dominic Zimmermann",
+      "category": "PLATINUM",
+      "points": 135,
+      "races": 1,
+      "rounds": {
+        "R1": {
+          "points": 135,
+          "bonusPoints": 0,
+          "carClass": "GT4",
+          "isDropped": false
+        }
+      },
+      "avg_points": 135.0,
+      "avg_pos": 3.0,
+      "avg_qualy_pos": 18.0,
+      "avg_gap": "+127.059s",
+      "avg_qualy_gap": "+50.142s",
+      "net_pos_gained": 1,
+      "favorite_car": 59
+    },
+    {
+      "name": "A. García Santos",
+      "category": "ROOKIE",
+      "points": 91,
+      "races": 1,
+      "rounds": {
+        "R1": {
+          "points": 91,
+          "bonusPoints": 10,
+          "carClass": "GT3",
+          "isDropped": false
+        }
+      },
+      "avg_points": 91.0,
+      "avg_pos": 9.0,
+      "avg_qualy_pos": "-",
+      "avg_gap": "+127.518s",
+      "avg_qualy_gap": "-",
+      "net_pos_gained": 0,
+      "favorite_car": 30
+    },
+    {
+      "name": "Marc Mitchmont",
+      "category": "ROOKIE",
+      "points": 0,
+      "races": 1,
+      "rounds": {
+        "R1": {
+          "points": 0,
+          "bonusPoints": 0,
+          "carClass": "GT3",
+          "isDropped": false
+        }
+      },
+      "avg_points": 0.0,
+      "avg_pos": 19.0,
+      "avg_qualy_pos": "-",
+      "avg_gap": "+198.724s",
+      "avg_qualy_gap": "-",
+      "net_pos_gained": 0,
+      "favorite_car": 31
+    },
+    {
+      "name": "Micha Nieuwkoop",
+      "category": "GOLD",
+      "points": 0,
+      "races": 1,
+      "rounds": {
+        "R1": {
+          "points": 0,
+          "bonusPoints": 0,
+          "carClass": "GT4",
+          "isDropped": false
+        }
+      },
+      "avg_points": 0.0,
+      "avg_pos": 20.0,
+      "avg_qualy_pos": 19.0,
+      "avg_gap": "+414.533s",
+      "avg_qualy_gap": "+53.170s",
+      "net_pos_gained": -1,
+      "favorite_car": 60
+    },
+    {
+      "name": "Robert Prochazka",
+      "category": "ROOKIE",
+      "points": 0,
+      "races": 1,
+      "rounds": {
+        "R1": {
+          "points": 0,
+          "bonusPoints": 0,
+          "carClass": "GT3",
+          "isDropped": false
+        }
+      },
+      "avg_points": 0.0,
+      "avg_pos": 0.0,
+      "avg_qualy_pos": "-",
+      "avg_gap": "+0.000s",
+      "avg_qualy_gap": "-",
+      "net_pos_gained": 0,
+      "favorite_car": 0
+    },
+    {
+      "name": "K Ömer",
+      "category": "ROOKIE",
+      "points": 0,
+      "races": 1,
+      "rounds": {
+        "R1": {
+          "points": 0,
+          "bonusPoints": 0,
+          "carClass": "GT3",
+          "isDropped": false
+        }
+      },
+      "avg_points": 0.0,
+      "avg_pos": 0.0,
+      "avg_qualy_pos": "-",
+      "avg_gap": "+0.000s",
+      "avg_qualy_gap": "-",
+      "net_pos_gained": 0,
+      "favorite_car": 0
+    },
+    {
+      "name": "A Kondrashov",
+      "category": "ROOKIE",
+      "points": 0,
+      "races": 1,
+      "rounds": {
+        "R1": {
+          "points": 0,
+          "bonusPoints": 0,
+          "carClass": "GT3",
+          "isDropped": false
+        }
+      },
+      "avg_points": 0.0,
+      "avg_pos": 0.0,
+      "avg_qualy_pos": 6.0,
+      "avg_gap": "+0.000s",
+      "avg_qualy_gap": "+1.262s",
+      "net_pos_gained": -17,
+      "favorite_car": 0
+    },
+    {
+      "name": "Mykhailo Yanchuk",
+      "category": "ROOKIE",
+      "points": 0,
+      "races": 1,
+      "rounds": {
+        "R1": {
+          "points": 0,
+          "bonusPoints": 0,
+          "carClass": "GT3",
+          "isDropped": false
+        }
+      },
+      "avg_points": 0.0,
+      "avg_pos": 0.0,
+      "avg_qualy_pos": 9.0,
+      "avg_gap": "+0.000s",
+      "avg_qualy_gap": "+5.400s",
+      "net_pos_gained": -15,
+      "favorite_car": 0
+    },
+    {
+      "name": "Gael Duchêne ESP",
+      "category": "BRONZE",
+      "points": 0,
+      "races": 1,
+      "rounds": {
+        "R1": {
+          "points": 0,
+          "bonusPoints": 0,
+          "carClass": "GT3",
+          "isDropped": false
+        }
+      },
+      "avg_points": 0.0,
+      "avg_pos": 0.0,
+      "avg_qualy_pos": 14.0,
+      "avg_gap": "+0.000s",
+      "avg_qualy_gap": "+10.387s",
+      "net_pos_gained": -11,
+      "favorite_car": 0
+    },
+    {
+      "name": "Hans Grubher",
+      "category": "ROOKIE",
+      "points": 0,
+      "races": 1,
+      "rounds": {
+        "R1": {
+          "points": 0,
+          "bonusPoints": 0,
+          "carClass": "GT3",
+          "isDropped": false
+        }
+      },
+      "avg_points": 0.0,
+      "avg_pos": 0.0,
+      "avg_qualy_pos": "-",
+      "avg_gap": "+0.000s",
+      "avg_qualy_gap": "-",
+      "net_pos_gained": 0,
+      "favorite_car": 0
+    }
   ],
-  "sessions": []
+  "sessions": [
+    {
+      "id": "event_0",
+      "name": "Round 1: Nürburgring Nordschleife",
+      "sessions": [
+        {
+          "name": "Season Opener",
+          "qualy_results": [
+            {
+              "name": "Nick  Ice",
+              "raw_name": "Nick [LZRT] Ice",
+              "car_class": "GT3",
+              "car_model": 33,
+              "s1": "2:49.977",
+              "s2": "2:33.112",
+              "s3": "2:48.180",
+              "best_lap_ms": 491270,
+              "best_lap": "8:11.270",
+              "gap_pole_ms": 0,
+              "gap_pole": "POLE",
+              "pos": 1
+            },
+            {
+              "name": "Wes Lee",
+              "raw_name": "Wes Lee",
+              "car_class": "GT3",
+              "car_model": 15,
+              "s1": "2:50.640",
+              "s2": "2:33.447",
+              "s3": "2:47.650",
+              "best_lap_ms": 491737,
+              "best_lap": "8:11.737",
+              "gap_pole_ms": 467,
+              "gap_pole": "+0.467s",
+              "pos": 2
+            },
+            {
+              "name": "S Alex",
+              "raw_name": "S Alex | LZRT",
+              "car_class": "GT3",
+              "car_model": 32,
+              "s1": "2:50.070",
+              "s2": "2:33.477",
+              "s3": "2:47.840",
+              "best_lap_ms": 491782,
+              "best_lap": "8:11.782",
+              "gap_pole_ms": 512,
+              "gap_pole": "+0.512s",
+              "pos": 3
+            },
+            {
+              "name": "Jeremy Morris",
+              "raw_name": "Jeremy Morris",
+              "car_class": "GT3",
+              "car_model": 20,
+              "s1": "2:50.557",
+              "s2": "2:33.327",
+              "s3": "2:47.470",
+              "best_lap_ms": 492185,
+              "best_lap": "8:12.185",
+              "gap_pole_ms": 915,
+              "gap_pole": "+0.915s",
+              "pos": 4
+            },
+            {
+              "name": "He Who-noms-on-tires",
+              "raw_name": "He Who-noms-on-tires",
+              "car_class": "GT3",
+              "car_model": 32,
+              "s1": "2:49.885",
+              "s2": "2:33.942",
+              "s3": "2:48.265",
+              "best_lap_ms": 492437,
+              "best_lap": "8:12.437",
+              "gap_pole_ms": 1167,
+              "gap_pole": "+1.167s",
+              "pos": 5
+            },
+            {
+              "name": "A Kondrashov",
+              "raw_name": "A Kondrashov",
+              "car_class": "GT3",
+              "car_model": 25,
+              "s1": "2:51.417",
+              "s2": "2:33.160",
+              "s3": "2:47.955",
+              "best_lap_ms": 492532,
+              "best_lap": "8:12.532",
+              "gap_pole_ms": 1262,
+              "gap_pole": "+1.262s",
+              "pos": 6
+            },
+            {
+              "name": "Marc Sickinger",
+              "raw_name": "Marc Sickinger",
+              "car_class": "GT3",
+              "car_model": 15,
+              "s1": "2:50.825",
+              "s2": "2:34.125",
+              "s3": "2:47.862",
+              "best_lap_ms": 492812,
+              "best_lap": "8:12.812",
+              "gap_pole_ms": 1542,
+              "gap_pole": "+1.542s",
+              "pos": 7
+            },
+            {
+              "name": "Luca Maggiolo",
+              "raw_name": "Luca Maggiolo",
+              "car_class": "GT3",
+              "car_model": 32,
+              "s1": "2:51.710",
+              "s2": "2:35.005",
+              "s3": "2:48.757",
+              "best_lap_ms": 495472,
+              "best_lap": "8:15.472",
+              "gap_pole_ms": 4202,
+              "gap_pole": "+4.202s",
+              "pos": 8
+            },
+            {
+              "name": "Mykhailo Yanchuk",
+              "raw_name": "Mykhailo Yanchuk",
+              "car_class": "GT3",
+              "car_model": 36,
+              "s1": "2:52.002",
+              "s2": "2:34.917",
+              "s3": "2:49.750",
+              "best_lap_ms": 496670,
+              "best_lap": "8:16.670",
+              "gap_pole_ms": 5400,
+              "gap_pole": "+5.400s",
+              "pos": 9
+            },
+            {
+              "name": "Raymond Crawford",
+              "raw_name": "Raymond Crawford [SL]",
+              "car_class": "GT3",
+              "car_model": 32,
+              "s1": "2:51.832",
+              "s2": "2:35.980",
+              "s3": "2:50.930",
+              "best_lap_ms": 498742,
+              "best_lap": "8:18.742",
+              "gap_pole_ms": 7472,
+              "gap_pole": "+7.472s",
+              "pos": 10
+            },
+            {
+              "name": "Marty Fox",
+              "raw_name": "Marty Fox [SL]",
+              "car_class": "GT3",
+              "car_model": 30,
+              "s1": "2:54.352",
+              "s2": "2:35.242",
+              "s3": "2:49.307",
+              "best_lap_ms": 498902,
+              "best_lap": "8:18.902",
+              "gap_pole_ms": 7632,
+              "gap_pole": "+7.632s",
+              "pos": 11
+            },
+            {
+              "name": "Chris Wood",
+              "raw_name": "Chris Wood",
+              "car_class": "GT3",
+              "car_model": 32,
+              "s1": "2:52.480",
+              "s2": "2:35.960",
+              "s3": "2:50.997",
+              "best_lap_ms": 499437,
+              "best_lap": "8:19.437",
+              "gap_pole_ms": 8167,
+              "gap_pole": "+8.167s",
+              "pos": 12
+            },
+            {
+              "name": "Bence Kamaras",
+              "raw_name": "Bence Kamaras",
+              "car_class": "GT3",
+              "car_model": 35,
+              "s1": "2:52.862",
+              "s2": "2:36.137",
+              "s3": "2:51.665",
+              "best_lap_ms": 500665,
+              "best_lap": "8:20.665",
+              "gap_pole_ms": 9395,
+              "gap_pole": "+9.395s",
+              "pos": 13
+            },
+            {
+              "name": "Gael Duchêne ESP",
+              "raw_name": "Gael DuchÃªne ESP [SL]",
+              "car_class": "GT3",
+              "car_model": 30,
+              "s1": "2:52.720",
+              "s2": "2:37.025",
+              "s3": "2:51.097",
+              "best_lap_ms": 501657,
+              "best_lap": "8:21.657",
+              "gap_pole_ms": 10387,
+              "gap_pole": "+10.387s",
+              "pos": 14
+            },
+            {
+              "name": "Teodor Florentin",
+              "raw_name": "Teodor Florentin",
+              "car_class": "GT3",
+              "car_model": 35,
+              "s1": "2:55.022",
+              "s2": "2:37.687",
+              "s3": "2:55.000",
+              "best_lap_ms": 507710,
+              "best_lap": "8:27.710",
+              "gap_pole_ms": 16440,
+              "gap_pole": "+16.440s",
+              "pos": 15
+            },
+            {
+              "name": "Marsi Bella",
+              "raw_name": "Marsi Bella [SL]",
+              "car_class": "GT4",
+              "car_model": 51,
+              "s1": "3:04.157",
+              "s2": "2:47.452",
+              "s3": "3:02.657",
+              "best_lap_ms": 534612,
+              "best_lap": "8:54.612",
+              "gap_pole_ms": 43342,
+              "gap_pole": "+43.342s",
+              "pos": 16
+            },
+            {
+              "name": "alex küch",
+              "raw_name": "alex kÃ¼ch [SL]",
+              "car_class": "GT4",
+              "car_model": 60,
+              "s1": "3:06.265",
+              "s2": "2:48.302",
+              "s3": "3:04.115",
+              "best_lap_ms": 538682,
+              "best_lap": "8:58.682",
+              "gap_pole_ms": 47412,
+              "gap_pole": "+47.412s",
+              "pos": 17
+            },
+            {
+              "name": "Dominic Zimmermann",
+              "raw_name": "Dominic Zimmermann [SL]",
+              "car_class": "GT4",
+              "car_model": 59,
+              "s1": "3:07.257",
+              "s2": "2:49.292",
+              "s3": "3:04.862",
+              "best_lap_ms": 541412,
+              "best_lap": "9:01.412",
+              "gap_pole_ms": 50142,
+              "gap_pole": "+50.142s",
+              "pos": 18
+            },
+            {
+              "name": "Micha Nieuwkoop",
+              "raw_name": "Micha Nieuwkoop",
+              "car_class": "GT4",
+              "car_model": 60,
+              "s1": "3:08.470",
+              "s2": "2:50.490",
+              "s3": "3:05.480",
+              "best_lap_ms": 544440,
+              "best_lap": "9:04.440",
+              "gap_pole_ms": 53170,
+              "gap_pole": "+53.170s",
+              "pos": 19
+            }
+          ],
+          "results": [
+            {
+              "name": "Nick  Ice",
+              "raw_name": "Nick [LZRT] Ice",
+              "car_class": "GT3",
+              "car_model": 33,
+              "laps": 9,
+              "total_time": 4649515,
+              "best_lap_ms": 499550,
+              "best_lap": "8:19.550",
+              "avg_lap_ms": 516612,
+              "avg_time": "8:36.612",
+              "incidents": 0,
+              "lap_history": [
+                {
+                  "time_ms": 501925,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 500442,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 499550,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 500285,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 530092,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 551457,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 535075,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 520805,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 507880,
+                  "is_incident": false
+                }
+              ],
+              "penalty": 0,
+              "pos": 1,
+              "class_pos": 1,
+              "points": 240,
+              "qualy_pos": 1,
+              "net_vs_q": 0,
+              "gap_best_ms": 5943,
+              "gap_pace_ms": 0,
+              "race_gap": "WINNER"
+            },
+            {
+              "name": "Jeremy Morris",
+              "raw_name": "Jeremy Morris",
+              "car_class": "GT3",
+              "car_model": 20,
+              "laps": 9,
+              "total_time": 4697406,
+              "best_lap_ms": 495127,
+              "best_lap": "8:15.127",
+              "avg_lap_ms": 521934,
+              "avg_time": "8:41.934",
+              "incidents": 5,
+              "lap_history": [
+                {
+                  "time_ms": 501460,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 495127,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 495850,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 505320,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 580702,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 524647,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 530287,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 563467,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 497845,
+                  "is_incident": true
+                }
+              ],
+              "penalty": 0,
+              "pos": 2,
+              "class_pos": 2,
+              "points": 210,
+              "qualy_pos": 4,
+              "net_vs_q": 2,
+              "gap_best_ms": 1520,
+              "gap_pace_ms": 5322,
+              "race_gap": "+47.891s"
+            },
+            {
+              "name": "Raymond Crawford",
+              "raw_name": "Raymond Crawford [SL]",
+              "car_class": "GT3",
+              "car_model": 32,
+              "laps": 9,
+              "total_time": 4752163,
+              "best_lap_ms": 503210,
+              "best_lap": "8:23.210",
+              "avg_lap_ms": 528018,
+              "avg_time": "8:48.018",
+              "incidents": 4,
+              "lap_history": [
+                {
+                  "time_ms": 511735,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 503210,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 505130,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 514747,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 604927,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 545985,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 535462,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 517952,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 509012,
+                  "is_incident": false
+                }
+              ],
+              "penalty": 0,
+              "pos": 3,
+              "class_pos": 1,
+              "points": 200,
+              "qualy_pos": 10,
+              "net_vs_q": 7,
+              "gap_best_ms": 9603,
+              "gap_pace_ms": 11406,
+              "race_gap": "+102.648s"
+            },
+            {
+              "name": "Marty Fox",
+              "raw_name": "Marty Fox [SL]",
+              "car_class": "GT3",
+              "car_model": 30,
+              "laps": 9,
+              "total_time": 4765223,
+              "best_lap_ms": 504755,
+              "best_lap": "8:24.755",
+              "avg_lap_ms": 529469,
+              "avg_time": "8:49.469",
+              "incidents": 6,
+              "lap_history": [
+                {
+                  "time_ms": 512825,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 504755,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 504802,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 503237,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 543737,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 590227,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 525857,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 527890,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 547892,
+                  "is_incident": true
+                }
+              ],
+              "penalty": 0,
+              "pos": 4,
+              "class_pos": 2,
+              "points": 170,
+              "qualy_pos": 11,
+              "net_vs_q": 7,
+              "gap_best_ms": 11148,
+              "gap_pace_ms": 12857,
+              "race_gap": "+115.708s"
+            },
+            {
+              "name": "David Young",
+              "raw_name": "David Young",
+              "car_class": "GT3",
+              "car_model": 32,
+              "laps": 9,
+              "total_time": 4802424,
+              "best_lap_ms": 498335,
+              "best_lap": "8:18.335",
+              "avg_lap_ms": 533602,
+              "avg_time": "8:53.602",
+              "incidents": 5,
+              "lap_history": [
+                {
+                  "time_ms": 1710125,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 501552,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 498335,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 499140,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 553700,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 589100,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 534527,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 567660,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 498882,
+                  "is_incident": false
+                }
+              ],
+              "penalty": 0,
+              "pos": 5,
+              "class_pos": 3,
+              "points": 175,
+              "qualy_pos": "-",
+              "net_vs_q": "-",
+              "gap_best_ms": 4728,
+              "gap_pace_ms": 16990,
+              "race_gap": "+152.909s"
+            },
+            {
+              "name": "Marc Sickinger",
+              "raw_name": "Marc Sickinger",
+              "car_class": "GT3",
+              "car_model": 15,
+              "laps": 9,
+              "total_time": 4871312,
+              "best_lap_ms": 493607,
+              "best_lap": "8:13.607",
+              "avg_lap_ms": 541256,
+              "avg_time": "9:01.256",
+              "incidents": 6,
+              "lap_history": [
+                {
+                  "time_ms": 501992,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 496557,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 493607,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 519907,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 632160,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 634397,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 523125,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 523490,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 542662,
+                  "is_incident": true
+                }
+              ],
+              "penalty": 0,
+              "pos": 6,
+              "class_pos": 4,
+              "points": 162,
+              "qualy_pos": 7,
+              "net_vs_q": 1,
+              "gap_best_ms": 0,
+              "gap_pace_ms": 24644,
+              "race_gap": "+221.797s"
+            },
+            {
+              "name": "Julian Maßner",
+              "raw_name": "Julian Maßner",
+              "car_class": "CUP",
+              "car_model": 28,
+              "laps": 9,
+              "total_time": 4879226,
+              "best_lap_ms": 514480,
+              "best_lap": "8:34.480",
+              "avg_lap_ms": 542136,
+              "avg_time": "9:02.136",
+              "incidents": 4,
+              "lap_history": [
+                {
+                  "time_ms": 524845,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 516190,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 516795,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 514480,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 568842,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 649152,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 540830,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 526082,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 514757,
+                  "is_incident": false
+                }
+              ],
+              "penalty": 0,
+              "pos": 7,
+              "class_pos": "DNF",
+              "points": 0,
+              "qualy_pos": "-",
+              "net_vs_q": "-",
+              "gap_best_ms": 20873,
+              "gap_pace_ms": 25524,
+              "race_gap": "+229.711s"
+            },
+            {
+              "name": "Wes Lee",
+              "raw_name": "Wes Lee",
+              "car_class": "GT3",
+              "car_model": 15,
+              "laps": 9,
+              "total_time": 4883488,
+              "best_lap_ms": 495437,
+              "best_lap": "8:15.437",
+              "avg_lap_ms": 542054,
+              "avg_time": "9:02.054",
+              "incidents": 7,
+              "lap_history": [
+                {
+                  "time_ms": 499875,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 495437,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 495277,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 538117,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 705555,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 544310,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 533272,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 527832,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 536770,
+                  "is_incident": true
+                }
+              ],
+              "penalty": 5,
+              "pos": 8,
+              "class_pos": 5,
+              "points": 151,
+              "qualy_pos": 2,
+              "net_vs_q": -6,
+              "gap_best_ms": 1830,
+              "gap_pace_ms": 25442,
+              "race_gap": "+233.973s"
+            },
+            {
+              "name": "Chris Wood",
+              "raw_name": "Chris Wood",
+              "car_class": "GT3",
+              "car_model": 32,
+              "laps": 9,
+              "total_time": 4892983,
+              "best_lap_ms": 512147,
+              "best_lap": "8:32.147",
+              "avg_lap_ms": 543664,
+              "avg_time": "9:03.664",
+              "incidents": 7,
+              "lap_history": [
+                {
+                  "time_ms": 512147,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 506562,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 511015,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 505020,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 570522,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 620355,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 551445,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 547152,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 564565,
+                  "is_incident": false
+                }
+              ],
+              "penalty": 0,
+              "pos": 9,
+              "class_pos": 6,
+              "points": 142,
+              "qualy_pos": 12,
+              "net_vs_q": 3,
+              "gap_best_ms": 18540,
+              "gap_pace_ms": 27052,
+              "race_gap": "+243.468s"
+            },
+            {
+              "name": "Cla Rens",
+              "raw_name": "Cla Rens [SL]",
+              "car_class": "GT4",
+              "car_model": 51,
+              "laps": 9,
+              "total_time": 5000031,
+              "best_lap_ms": 541110,
+              "best_lap": "9:01.110",
+              "avg_lap_ms": 555559,
+              "avg_time": "9:15.559",
+              "incidents": 2,
+              "lap_history": [
+                {
+                  "time_ms": 557132,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 542947,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 541110,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 542425,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 576167,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 572960,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 562622,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 553225,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 545382,
+                  "is_incident": false
+                }
+              ],
+              "penalty": 0,
+              "pos": 10,
+              "class_pos": 1,
+              "points": 190,
+              "qualy_pos": "-",
+              "net_vs_q": "-",
+              "gap_best_ms": 47503,
+              "gap_pace_ms": 38947,
+              "race_gap": "+350.516s"
+            },
+            {
+              "name": "Luca Maggiolo",
+              "raw_name": "Luca Maggiolo",
+              "car_class": "GT3",
+              "car_model": 32,
+              "laps": 8,
+              "total_time": 4668176,
+              "best_lap_ms": 2147483647,
+              "best_lap": "-",
+              "avg_lap_ms": 583522,
+              "avg_time": "9:43.522",
+              "incidents": 8,
+              "lap_history": [
+                {
+                  "time_ms": 514755,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 503470,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 510682,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 505185,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 551155,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 648692,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 538622,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 892057,
+                  "is_incident": true
+                }
+              ],
+              "penalty": 0,
+              "pos": 11,
+              "class_pos": "DNF",
+              "points": 0,
+              "qualy_pos": 8,
+              "net_vs_q": -3,
+              "gap_best_ms": 0,
+              "gap_pace_ms": 66910,
+              "race_gap": "+18.661s"
+            },
+            {
+              "name": "Vexal Santos",
+              "raw_name": "Vexal Santos",
+              "car_class": "GT3",
+              "car_model": 35,
+              "laps": 8,
+              "total_time": 4770400,
+              "best_lap_ms": 519180,
+              "best_lap": "8:39.180",
+              "avg_lap_ms": 596300,
+              "avg_time": "9:56.300",
+              "incidents": 6,
+              "lap_history": [
+                {
+                  "time_ms": 551545,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 519180,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 956077,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 544392,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 597637,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 545422,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 530167,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 516872,
+                  "is_incident": true
+                }
+              ],
+              "penalty": 0,
+              "pos": 12,
+              "class_pos": 3,
+              "points": 145,
+              "qualy_pos": "-",
+              "net_vs_q": "-",
+              "gap_best_ms": 25573,
+              "gap_pace_ms": 79688,
+              "race_gap": "+120.885s"
+            },
+            {
+              "name": "Alice Schupp-Müller",
+              "raw_name": "Alice Schupp-MÃ¼ller",
+              "car_class": "GT3",
+              "car_model": 20,
+              "laps": 8,
+              "total_time": 4832325,
+              "best_lap_ms": 525442,
+              "best_lap": "8:45.442",
+              "avg_lap_ms": 604040,
+              "avg_time": "10:04.040",
+              "incidents": 7,
+              "lap_history": [
+                {
+                  "time_ms": 2021631,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 527765,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 525442,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 541602,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 639245,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 601207,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 723575,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 628430,
+                  "is_incident": true
+                }
+              ],
+              "penalty": 0,
+              "pos": 13,
+              "class_pos": 7,
+              "points": 114,
+              "qualy_pos": "-",
+              "net_vs_q": "-",
+              "gap_best_ms": 31835,
+              "gap_pace_ms": 87428,
+              "race_gap": "+182.810s"
+            },
+            {
+              "name": "He Who-noms-on-tires",
+              "raw_name": "He Who-noms-on-tires",
+              "car_class": "GT3",
+              "car_model": 32,
+              "laps": 8,
+              "total_time": 4877153,
+              "best_lap_ms": 497152,
+              "best_lap": "8:17.152",
+              "avg_lap_ms": 609644,
+              "avg_time": "10:09.644",
+              "incidents": 5,
+              "lap_history": [
+                {
+                  "time_ms": 525542,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 498217,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 497152,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 500347,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 532130,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 1292375,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 506807,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 501202,
+                  "is_incident": true
+                }
+              ],
+              "penalty": 0,
+              "pos": 14,
+              "class_pos": "DNF",
+              "points": 0,
+              "qualy_pos": 5,
+              "net_vs_q": -9,
+              "gap_best_ms": 3545,
+              "gap_pace_ms": 93032,
+              "race_gap": "+227.638s"
+            },
+            {
+              "name": "alex küch",
+              "raw_name": "alex kÃ¼ch [SL]",
+              "car_class": "GT4",
+              "car_model": 60,
+              "laps": 8,
+              "total_time": 5022768,
+              "best_lap_ms": 546607,
+              "best_lap": "9:06.607",
+              "avg_lap_ms": 627846,
+              "avg_time": "10:27.846",
+              "incidents": 6,
+              "lap_history": [
+                {
+                  "time_ms": 1059537,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 556600,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 546607,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 580372,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 584225,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 569842,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 562977,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 556970,
+                  "is_incident": false
+                }
+              ],
+              "penalty": 0,
+              "pos": 15,
+              "class_pos": 2,
+              "points": 160,
+              "qualy_pos": 17,
+              "net_vs_q": 2,
+              "gap_best_ms": 53000,
+              "gap_pace_ms": 111234,
+              "race_gap": "+373.253s"
+            },
+            {
+              "name": "Teodor Florentin",
+              "raw_name": "Teodor Florentin",
+              "car_class": "GT3",
+              "car_model": 35,
+              "laps": 8,
+              "total_time": 5144352,
+              "best_lap_ms": 2147483647,
+              "best_lap": "-",
+              "avg_lap_ms": 643044,
+              "avg_time": "10:43.044",
+              "incidents": 8,
+              "lap_history": [
+                {
+                  "time_ms": 529770,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 630115,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 515065,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 533987,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 604962,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 547925,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 592132,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 523887,
+                  "is_incident": true
+                }
+              ],
+              "penalty": 0,
+              "pos": 16,
+              "class_pos": 8,
+              "points": 97,
+              "qualy_pos": 15,
+              "net_vs_q": -1,
+              "gap_best_ms": 0,
+              "gap_pace_ms": 126432,
+              "race_gap": "+494.837s"
+            },
+            {
+              "name": "Dominic Zimmermann",
+              "raw_name": "Dominic Zimmermann [SL]",
+              "car_class": "GT4",
+              "car_model": 59,
+              "laps": 8,
+              "total_time": 5149372,
+              "best_lap_ms": 546342,
+              "best_lap": "9:06.342",
+              "avg_lap_ms": 643671,
+              "avg_time": "10:43.671",
+              "incidents": 5,
+              "lap_history": [
+                {
+                  "time_ms": 557405,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 546342,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 546800,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 563592,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 637730,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 574987,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 583247,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 612822,
+                  "is_incident": true
+                }
+              ],
+              "penalty": 0,
+              "pos": 17,
+              "class_pos": 3,
+              "points": 135,
+              "qualy_pos": 18,
+              "net_vs_q": 1,
+              "gap_best_ms": 52735,
+              "gap_pace_ms": 127059,
+              "race_gap": "+499.857s"
+            },
+            {
+              "name": "A. García Santos",
+              "raw_name": "A. García Santos",
+              "car_class": "GT3",
+              "car_model": 30,
+              "laps": 8,
+              "total_time": 5153042,
+              "best_lap_ms": 2147483647,
+              "best_lap": "-",
+              "avg_lap_ms": 644130,
+              "avg_time": "10:44.130",
+              "incidents": 8,
+              "lap_history": [
+                {
+                  "time_ms": 545570,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 973492,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 615250,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 640085,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 676392,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 639920,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 527527,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 527492,
+                  "is_incident": true
+                }
+              ],
+              "penalty": 0,
+              "pos": 18,
+              "class_pos": 9,
+              "points": 91,
+              "qualy_pos": "-",
+              "net_vs_q": "-",
+              "gap_best_ms": 0,
+              "gap_pace_ms": 127518,
+              "race_gap": "+503.527s"
+            },
+            {
+              "name": "Marc Mitchmont",
+              "raw_name": "Marc Mitchmont",
+              "car_class": "GT3",
+              "car_model": 31,
+              "laps": 7,
+              "total_time": 5012358,
+              "best_lap_ms": 2147483647,
+              "best_lap": "-",
+              "avg_lap_ms": 715336,
+              "avg_time": "11:55.336",
+              "incidents": 7,
+              "lap_history": [
+                {
+                  "time_ms": 930580,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 541257,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 604007,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 602562,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 585165,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 583372,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 1150997,
+                  "is_incident": true
+                }
+              ],
+              "penalty": 5,
+              "pos": 19,
+              "class_pos": "DNF",
+              "points": 0,
+              "qualy_pos": "-",
+              "net_vs_q": "-",
+              "gap_best_ms": 0,
+              "gap_pace_ms": 198724,
+              "race_gap": "+362.843s"
+            },
+            {
+              "name": "Micha Nieuwkoop",
+              "raw_name": "Micha Nieuwkoop",
+              "car_class": "GT4",
+              "car_model": 60,
+              "laps": 5,
+              "total_time": 4655729,
+              "best_lap_ms": 568517,
+              "best_lap": "9:28.517",
+              "avg_lap_ms": 931145,
+              "avg_time": "15:31.145",
+              "incidents": 4,
+              "lap_history": [
+                {
+                  "time_ms": 592760,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 2235110,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 577702,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 568517,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 675692,
+                  "is_incident": true
+                }
+              ],
+              "penalty": 0,
+              "pos": 20,
+              "class_pos": "DNF",
+              "points": 0,
+              "qualy_pos": 19,
+              "net_vs_q": -1,
+              "gap_best_ms": 74910,
+              "gap_pace_ms": 414533,
+              "race_gap": "+6.214s"
+            },
+            {
+              "name": "Robert Prochazka",
+              "raw_name": "Robert Prochazka",
+              "car_class": "GT3",
+              "car_model": 32,
+              "laps": 2,
+              "total_time": 1087621,
+              "best_lap_ms": 525392,
+              "best_lap": "-",
+              "avg_lap_ms": 0,
+              "avg_time": "-",
+              "incidents": 1,
+              "lap_history": [
+                {
+                  "time_ms": 555527,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 525392,
+                  "is_incident": false
+                }
+              ],
+              "penalty": 0,
+              "pos": 21,
+              "class_pos": "DNF",
+              "points": 0,
+              "qualy_pos": "-",
+              "net_vs_q": "-",
+              "gap_best_ms": 0,
+              "gap_pace_ms": 0,
+              "race_gap": "DNF"
+            },
+            {
+              "name": "K Ömer",
+              "raw_name": "K Ömer",
+              "car_class": "GT3",
+              "car_model": 30,
+              "laps": 2,
+              "total_time": 1094439,
+              "best_lap_ms": 2147483647,
+              "best_lap": "-",
+              "avg_lap_ms": 0,
+              "avg_time": "-",
+              "incidents": 2,
+              "lap_history": [
+                {
+                  "time_ms": 546575,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 541855,
+                  "is_incident": true
+                }
+              ],
+              "penalty": 0,
+              "pos": 22,
+              "class_pos": "DNF",
+              "points": 0,
+              "qualy_pos": "-",
+              "net_vs_q": "-",
+              "gap_best_ms": 0,
+              "gap_pace_ms": 0,
+              "race_gap": "DNF"
+            },
+            {
+              "name": "A Kondrashov",
+              "raw_name": "A Kondrashov",
+              "car_class": "GT3",
+              "car_model": 25,
+              "laps": 2,
+              "total_time": 1179896,
+              "best_lap_ms": 498550,
+              "best_lap": "-",
+              "avg_lap_ms": 0,
+              "avg_time": "-",
+              "incidents": 0,
+              "lap_history": [
+                {
+                  "time_ms": 505387,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 498550,
+                  "is_incident": false
+                }
+              ],
+              "penalty": 0,
+              "pos": 23,
+              "class_pos": "DNF",
+              "points": 0,
+              "qualy_pos": 6,
+              "net_vs_q": -17,
+              "gap_best_ms": 0,
+              "gap_pace_ms": 0,
+              "race_gap": "DNF"
+            },
+            {
+              "name": "Mykhailo Yanchuk",
+              "raw_name": "Mykhailo Yanchuk",
+              "car_class": "GT3",
+              "car_model": 36,
+              "laps": 1,
+              "total_time": 512128,
+              "best_lap_ms": 2147483647,
+              "best_lap": "-",
+              "avg_lap_ms": 0,
+              "avg_time": "-",
+              "incidents": 1,
+              "lap_history": [
+                {
+                  "time_ms": 508317,
+                  "is_incident": true
+                }
+              ],
+              "penalty": 0,
+              "pos": 24,
+              "class_pos": "DNF",
+              "points": 0,
+              "qualy_pos": 9,
+              "net_vs_q": -15,
+              "gap_best_ms": 0,
+              "gap_pace_ms": 0,
+              "race_gap": "DNF"
+            },
+            {
+              "name": "Gael Duchêne ESP",
+              "raw_name": "Gael DuchÃªne ESP [SL]",
+              "car_class": "GT3",
+              "car_model": 30,
+              "laps": 1,
+              "total_time": 565400,
+              "best_lap_ms": 2147483647,
+              "best_lap": "-",
+              "avg_lap_ms": 0,
+              "avg_time": "-",
+              "incidents": 1,
+              "lap_history": [
+                {
+                  "time_ms": 560792,
+                  "is_incident": true
+                }
+              ],
+              "penalty": 0,
+              "pos": 25,
+              "class_pos": "DNF",
+              "points": 0,
+              "qualy_pos": 14,
+              "net_vs_q": -11,
+              "gap_best_ms": 0,
+              "gap_pace_ms": 0,
+              "race_gap": "DNF"
+            },
+            {
+              "name": "Hans Grubher",
+              "raw_name": "Hans Grubher",
+              "car_class": "GT3",
+              "car_model": 32,
+              "laps": 1,
+              "total_time": 697088,
+              "best_lap_ms": 2147483647,
+              "best_lap": "-",
+              "avg_lap_ms": 0,
+              "avg_time": "-",
+              "incidents": 1,
+              "lap_history": [
+                {
+                  "time_ms": 515987,
+                  "is_incident": true
+                }
+              ],
+              "penalty": 0,
+              "pos": 26,
+              "class_pos": "DNF",
+              "points": 0,
+              "qualy_pos": "-",
+              "net_vs_q": "-",
+              "gap_best_ms": 0,
+              "gap_pace_ms": 0,
+              "race_gap": "DNF"
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }
