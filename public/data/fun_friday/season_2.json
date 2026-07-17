@@ -3,7 +3,7 @@
   "seasonId": "season_2",
   "leagueName": "Scottish Legends ACC",
   "seasonName": "Season 2",
-  "lastUpdated": "2026-07-14T16:23:09.983775Z",
+  "lastUpdated": "2026-07-17T22:36:25.384823Z",
   "calendar": [
     {
       "id": "R1",
@@ -72,49 +72,7 @@
   ],
   "global": [
     {
-      "name": "Nick  Ice",
-      "category": "ROOKIE",
-      "points": 240,
-      "races": 1,
-      "rounds": {
-        "R1": {
-          "points": 240,
-          "bonusPoints": 60,
-          "carClass": "GT3",
-          "isDropped": false
-        }
-      },
-      "avg_points": 240.0,
-      "avg_pos": 1.0,
-      "avg_qualy_pos": 1.0,
-      "avg_gap": "+0.000s",
-      "avg_qualy_gap": "+0.000s",
-      "net_pos_gained": 0,
-      "favorite_car": 33
-    },
-    {
-      "name": "Jeremy Morris",
-      "category": "ROOKIE",
-      "points": 210,
-      "races": 1,
-      "rounds": {
-        "R1": {
-          "points": 210,
-          "bonusPoints": 60,
-          "carClass": "GT3",
-          "isDropped": false
-        }
-      },
-      "avg_points": 210.0,
-      "avg_pos": 2.0,
-      "avg_qualy_pos": 4.0,
-      "avg_gap": "+5.322s",
-      "avg_qualy_gap": "+0.915s",
-      "net_pos_gained": 2,
-      "favorite_car": 20
-    },
-    {
-      "name": "Raymond Crawford",
+      "name": "Nick Ice",
       "category": "SILVER",
       "points": 200,
       "races": 1,
@@ -128,48 +86,102 @@
       },
       "avg_points": 200.0,
       "avg_pos": 1.0,
-      "avg_qualy_pos": 10.0,
-      "avg_gap": "+11.406s",
-      "avg_qualy_gap": "+7.472s",
-      "net_pos_gained": 7,
-      "favorite_car": 32
+      "avg_qualy_pos": 1.0,
+      "avg_gap": "+0.000s",
+      "avg_qualy_gap": "+0.000s",
+      "net_pos_gained": 0,
+      "favorite_car": 33
     },
     {
-      "name": "Marty Fox",
-      "category": "SILVER",
-      "points": 170,
+      "name": "Jeremy Morris",
+      "category": "ROOKIE",
+      "points": 180,
       "races": 1,
+      "rounds": {
+        "R1": {
+          "points": 180,
+          "bonusPoints": 0,
+          "carClass": "GT3",
+          "isDropped": false
+        }
+      },
+      "avg_points": 180.0,
+      "avg_pos": 1.0,
+      "avg_qualy_pos": 4.0,
+      "avg_gap": "+5.322s",
+      "avg_qualy_gap": "+0.915s",
+      "net_pos_gained": 2,
+      "favorite_car": 20
+    },
+    {
+      "name": "Raymond Crawford",
+      "category": "SILVER",
+      "points": 360,
+      "races": 2,
       "rounds": {
         "R1": {
           "points": 170,
           "bonusPoints": 20,
           "carClass": "GT3",
           "isDropped": false
+        },
+        "R2": {
+          "points": 190,
+          "bonusPoints": 10,
+          "carClass": "TCX",
+          "isDropped": false
         }
       },
-      "avg_points": 170.0,
-      "avg_pos": 2.0,
-      "avg_qualy_pos": 11.0,
-      "avg_gap": "+12.857s",
-      "avg_qualy_gap": "+7.632s",
-      "net_pos_gained": 7,
-      "favorite_car": 30
+      "avg_points": 180.0,
+      "avg_pos": 5.0,
+      "avg_qualy_pos": 7.5,
+      "avg_gap": "+9.110s",
+      "avg_qualy_gap": "+2.514s",
+      "net_pos_gained": 8,
+      "favorite_car": 27
+    },
+    {
+      "name": "Marty Fox",
+      "category": "SILVER",
+      "points": 300,
+      "races": 2,
+      "rounds": {
+        "R1": {
+          "points": 155,
+          "bonusPoints": 20,
+          "carClass": "GT3",
+          "isDropped": false
+        },
+        "R2": {
+          "points": 145,
+          "bonusPoints": 10,
+          "carClass": "TCX",
+          "isDropped": false
+        }
+      },
+      "avg_points": 150.0,
+      "avg_pos": 6.0,
+      "avg_qualy_pos": 9.0,
+      "avg_gap": "+11.146s",
+      "avg_qualy_gap": "+3.236s",
+      "net_pos_gained": 10,
+      "favorite_car": 27
     },
     {
       "name": "David Young",
       "category": "ROOKIE",
-      "points": 175,
+      "points": 150,
       "races": 1,
       "rounds": {
         "R1": {
-          "points": 175,
-          "bonusPoints": 40,
+          "points": 150,
+          "bonusPoints": 0,
           "carClass": "GT3",
           "isDropped": false
         }
       },
-      "avg_points": 175.0,
-      "avg_pos": 3.0,
+      "avg_points": 150.0,
+      "avg_pos": 2.0,
       "avg_qualy_pos": "-",
       "avg_gap": "+16.990s",
       "avg_qualy_gap": "-",
@@ -179,18 +191,18 @@
     {
       "name": "Marc Sickinger",
       "category": "ROOKIE",
-      "points": 162,
+      "points": 135,
       "races": 1,
       "rounds": {
         "R1": {
-          "points": 162,
-          "bonusPoints": 40,
+          "points": 135,
+          "bonusPoints": 0,
           "carClass": "GT3",
           "isDropped": false
         }
       },
-      "avg_points": 162.0,
-      "avg_pos": 4.0,
+      "avg_points": 135.0,
+      "avg_pos": 3.0,
       "avg_qualy_pos": 7.0,
       "avg_gap": "+24.644s",
       "avg_qualy_gap": "+1.542s",
@@ -221,18 +233,18 @@
     {
       "name": "Wes Lee",
       "category": "ROOKIE",
-      "points": 151,
+      "points": 122,
       "races": 1,
       "rounds": {
         "R1": {
-          "points": 151,
-          "bonusPoints": 40,
+          "points": 122,
+          "bonusPoints": 0,
           "carClass": "GT3",
           "isDropped": false
         }
       },
-      "avg_points": 151.0,
-      "avg_pos": 5.0,
+      "avg_points": 122.0,
+      "avg_pos": 4.0,
       "avg_qualy_pos": 2.0,
       "avg_gap": "+25.442s",
       "avg_qualy_gap": "+0.467s",
@@ -242,18 +254,18 @@
     {
       "name": "Chris Wood",
       "category": "ROOKIE",
-      "points": 142,
+      "points": 111,
       "races": 1,
       "rounds": {
         "R1": {
-          "points": 142,
-          "bonusPoints": 40,
+          "points": 111,
+          "bonusPoints": 0,
           "carClass": "GT3",
           "isDropped": false
         }
       },
-      "avg_points": 142.0,
-      "avg_pos": 6.0,
+      "avg_points": 111.0,
+      "avg_pos": 5.0,
       "avg_qualy_pos": 12.0,
       "avg_gap": "+27.052s",
       "avg_qualy_gap": "+8.167s",
@@ -263,60 +275,72 @@
     {
       "name": "Cla Rens",
       "category": "GOLD",
-      "points": 190,
-      "races": 1,
+      "points": 312,
+      "races": 2,
       "rounds": {
         "R1": {
           "points": 190,
           "bonusPoints": 10,
           "carClass": "GT4",
           "isDropped": false
+        },
+        "R2": {
+          "points": 122,
+          "bonusPoints": 0,
+          "carClass": "TCX",
+          "isDropped": false
         }
       },
-      "avg_points": 190.0,
-      "avg_pos": 1.0,
-      "avg_qualy_pos": "-",
-      "avg_gap": "+38.947s",
-      "avg_qualy_gap": "-",
-      "net_pos_gained": 0,
-      "favorite_car": 51
+      "avg_points": 156.0,
+      "avg_pos": 8.0,
+      "avg_qualy_pos": 5.0,
+      "avg_gap": "+27.993s",
+      "avg_qualy_gap": "+0.660s",
+      "net_pos_gained": -7,
+      "favorite_car": 27
     },
     {
       "name": "Luca Maggiolo",
       "category": "GOLD",
-      "points": 0,
-      "races": 1,
+      "points": 135,
+      "races": 2,
       "rounds": {
         "R1": {
           "points": 0,
           "bonusPoints": 0,
           "carClass": "GT3",
           "isDropped": false
+        },
+        "R2": {
+          "points": 135,
+          "bonusPoints": 0,
+          "carClass": "TCX",
+          "isDropped": false
         }
       },
-      "avg_points": 0.0,
-      "avg_pos": 11.0,
-      "avg_qualy_pos": 8.0,
-      "avg_gap": "+66.910s",
-      "avg_qualy_gap": "+4.202s",
-      "net_pos_gained": -3,
-      "favorite_car": 32
+      "avg_points": 67.5,
+      "avg_pos": 8.0,
+      "avg_qualy_pos": 6.3,
+      "avg_gap": "+35.081s",
+      "avg_qualy_gap": "+1.900s",
+      "net_pos_gained": -1,
+      "favorite_car": 27
     },
     {
       "name": "Vexal Santos",
       "category": "SILVER",
-      "points": 145,
+      "points": 132,
       "races": 1,
       "rounds": {
         "R1": {
-          "points": 145,
+          "points": 132,
           "bonusPoints": 10,
           "carClass": "GT3",
           "isDropped": false
         }
       },
-      "avg_points": 145.0,
-      "avg_pos": 3.0,
+      "avg_points": 132.0,
+      "avg_pos": 4.0,
       "avg_qualy_pos": "-",
       "avg_gap": "+79.688s",
       "avg_qualy_gap": "-",
@@ -326,18 +350,18 @@
     {
       "name": "Alice Schupp-Müller",
       "category": "ROOKIE",
-      "points": 114,
+      "points": 102,
       "races": 1,
       "rounds": {
         "R1": {
-          "points": 114,
-          "bonusPoints": 20,
+          "points": 102,
+          "bonusPoints": 0,
           "carClass": "GT3",
           "isDropped": false
         }
       },
-      "avg_points": 114.0,
-      "avg_pos": 7.0,
+      "avg_points": 102.0,
+      "avg_pos": 6.0,
       "avg_qualy_pos": "-",
       "avg_gap": "+87.428s",
       "avg_qualy_gap": "-",
@@ -389,18 +413,18 @@
     {
       "name": "Teodor Florentin",
       "category": "ROOKIE",
-      "points": 97,
+      "points": 94,
       "races": 1,
       "rounds": {
         "R1": {
-          "points": 97,
-          "bonusPoints": 10,
+          "points": 94,
+          "bonusPoints": 0,
           "carClass": "GT3",
           "isDropped": false
         }
       },
-      "avg_points": 97.0,
-      "avg_pos": 8.0,
+      "avg_points": 94.0,
+      "avg_pos": 7.0,
       "avg_qualy_pos": 15.0,
       "avg_gap": "+126.432s",
       "avg_qualy_gap": "+16.440s",
@@ -410,39 +434,45 @@
     {
       "name": "Dominic Zimmermann",
       "category": "PLATINUM",
-      "points": 135,
-      "races": 1,
+      "points": 315,
+      "races": 2,
       "rounds": {
         "R1": {
           "points": 135,
           "bonusPoints": 0,
           "carClass": "GT4",
           "isDropped": false
+        },
+        "R2": {
+          "points": 180,
+          "bonusPoints": 0,
+          "carClass": "TCX",
+          "isDropped": false
         }
       },
-      "avg_points": 135.0,
+      "avg_points": 157.5,
       "avg_pos": 3.0,
-      "avg_qualy_pos": 18.0,
-      "avg_gap": "+127.059s",
-      "avg_qualy_gap": "+50.142s",
+      "avg_qualy_pos": 5.5,
+      "avg_gap": "+64.243s",
+      "avg_qualy_gap": "+12.648s",
       "net_pos_gained": 1,
-      "favorite_car": 59
+      "favorite_car": 27
     },
     {
       "name": "A. García Santos",
       "category": "ROOKIE",
-      "points": 91,
+      "points": 87,
       "races": 1,
       "rounds": {
         "R1": {
-          "points": 91,
-          "bonusPoints": 10,
+          "points": 87,
+          "bonusPoints": 0,
           "carClass": "GT3",
           "isDropped": false
         }
       },
-      "avg_points": 91.0,
-      "avg_pos": 9.0,
+      "avg_points": 87.0,
+      "avg_pos": 8.0,
       "avg_qualy_pos": "-",
       "avg_gap": "+127.518s",
       "avg_qualy_gap": "-",
@@ -616,6 +646,223 @@
       "avg_qualy_gap": "-",
       "net_pos_gained": 0,
       "favorite_car": 0
+    },
+    {
+      "name": "Youssef Mohamed",
+      "category": "ROOKIE",
+      "points": 180,
+      "races": 1,
+      "rounds": {
+        "R2": {
+          "points": 180,
+          "bonusPoints": 0,
+          "carClass": "TCX",
+          "isDropped": false
+        }
+      },
+      "avg_points": 180.0,
+      "avg_pos": 3.0,
+      "avg_qualy_pos": 4.0,
+      "avg_gap": "+1.852s",
+      "avg_qualy_gap": "+0.014s",
+      "net_pos_gained": 5,
+      "favorite_car": 27
+    },
+    {
+      "name": "kevin peeters",
+      "category": "SILVER",
+      "points": 151,
+      "races": 1,
+      "rounds": {
+        "R2": {
+          "points": 151,
+          "bonusPoints": 40,
+          "carClass": "TCX",
+          "isDropped": false
+        }
+      },
+      "avg_points": 151.0,
+      "avg_pos": 16.0,
+      "avg_qualy_pos": 4.0,
+      "avg_gap": "+68.060s",
+      "avg_qualy_gap": "+0.859s",
+      "net_pos_gained": -11,
+      "favorite_car": 27
+    },
+    {
+      "name": "Tanno Raayman",
+      "category": "BRONZE",
+      "points": 250,
+      "races": 1,
+      "rounds": {
+        "R2": {
+          "points": 250,
+          "bonusPoints": 100,
+          "carClass": "TCX",
+          "isDropped": false
+        }
+      },
+      "avg_points": 250.0,
+      "avg_pos": 7.0,
+      "avg_qualy_pos": 6.7,
+      "avg_gap": "+7.948s",
+      "avg_qualy_gap": "+1.476s",
+      "net_pos_gained": 3,
+      "favorite_car": 27
+    },
+    {
+      "name": "Bruno Longarela",
+      "category": "GOLD",
+      "points": 150,
+      "races": 1,
+      "rounds": {
+        "R2": {
+          "points": 150,
+          "bonusPoints": 0,
+          "carClass": "TCX",
+          "isDropped": false
+        }
+      },
+      "avg_points": 150.0,
+      "avg_pos": 9.0,
+      "avg_qualy_pos": 5.0,
+      "avg_gap": "+4.723s",
+      "avg_qualy_gap": "+0.567s",
+      "net_pos_gained": 1,
+      "favorite_car": 27
+    },
+    {
+      "name": "Casper Smit",
+      "category": "ROOKIE",
+      "points": 135,
+      "races": 1,
+      "rounds": {
+        "R2": {
+          "points": 135,
+          "bonusPoints": 0,
+          "carClass": "TCX",
+          "isDropped": false
+        }
+      },
+      "avg_points": 135.0,
+      "avg_pos": 4.0,
+      "avg_qualy_pos": 11.5,
+      "avg_gap": "+8.654s",
+      "avg_qualy_gap": "+0.635s",
+      "net_pos_gained": 5,
+      "favorite_car": 27
+    },
+    {
+      "name": "Jason Keen",
+      "category": "ROOKIE",
+      "points": 150,
+      "races": 1,
+      "rounds": {
+        "R2": {
+          "points": 150,
+          "bonusPoints": 0,
+          "carClass": "TCX",
+          "isDropped": false
+        }
+      },
+      "avg_points": 150.0,
+      "avg_pos": 9.0,
+      "avg_qualy_pos": 12.0,
+      "avg_gap": "+43.530s",
+      "avg_qualy_gap": "+5.492s",
+      "net_pos_gained": 2,
+      "favorite_car": 27
+    },
+    {
+      "name": "Purple Kelpie",
+      "category": "ROOKIE",
+      "points": 122,
+      "races": 1,
+      "rounds": {
+        "R2": {
+          "points": 122,
+          "bonusPoints": 0,
+          "carClass": "TCX",
+          "isDropped": false
+        }
+      },
+      "avg_points": 122.0,
+      "avg_pos": 8.0,
+      "avg_qualy_pos": 11.3,
+      "avg_gap": "+55.911s",
+      "avg_qualy_gap": "+8.214s",
+      "net_pos_gained": -1,
+      "favorite_car": 27
+    },
+    {
+      "name": "Leonardo Rigon",
+      "category": "BRONZE",
+      "points": 0,
+      "races": 0,
+      "rounds": {},
+      "avg_points": 0,
+      "avg_pos": "-",
+      "avg_qualy_pos": 11.0,
+      "avg_gap": "-",
+      "avg_qualy_gap": "+2.220s",
+      "net_pos_gained": -2,
+      "favorite_car": 27
+    },
+    {
+      "name": "Bence Kamaras",
+      "category": "SILVER",
+      "points": 142,
+      "races": 1,
+      "rounds": {
+        "R2": {
+          "points": 142,
+          "bonusPoints": 20,
+          "carClass": "TCX",
+          "isDropped": false
+        }
+      },
+      "avg_points": 142.0,
+      "avg_pos": 5.0,
+      "avg_qualy_pos": 4.5,
+      "avg_gap": "+6.032s",
+      "avg_qualy_gap": "+1.209s",
+      "net_pos_gained": -2,
+      "favorite_car": 27
+    },
+    {
+      "name": "Edjas Silva",
+      "category": "ROOKIE",
+      "points": 111,
+      "races": 1,
+      "rounds": {
+        "R2": {
+          "points": 111,
+          "bonusPoints": 0,
+          "carClass": "TCX",
+          "isDropped": false
+        }
+      },
+      "avg_points": 111.0,
+      "avg_pos": 2.0,
+      "avg_qualy_pos": "-",
+      "avg_gap": "+8.324s",
+      "avg_qualy_gap": "-",
+      "net_pos_gained": 0,
+      "favorite_car": 27
+    },
+    {
+      "name": "Kamil Utku",
+      "category": "ROOKIE",
+      "points": 0,
+      "races": 0,
+      "rounds": {},
+      "avg_points": 0,
+      "avg_pos": "-",
+      "avg_qualy_pos": 10.0,
+      "avg_gap": "-",
+      "avg_qualy_gap": "+0.000s",
+      "net_pos_gained": -2,
+      "favorite_car": 0
     }
   ],
   "sessions": [
@@ -627,7 +874,7 @@
           "name": "Season Opener",
           "qualy_results": [
             {
-              "name": "Nick  Ice",
+              "name": "Nick Ice",
               "raw_name": "Nick [LZRT] Ice",
               "car_class": "GT3",
               "car_model": 33,
@@ -895,7 +1142,7 @@
           ],
           "results": [
             {
-              "name": "Nick  Ice",
+              "name": "Nick Ice",
               "raw_name": "Nick [LZRT] Ice",
               "car_class": "GT3",
               "car_model": 33,
@@ -947,7 +1194,7 @@
               "penalty": 0,
               "pos": 1,
               "class_pos": 1,
-              "points": 240,
+              "points": 200,
               "qualy_pos": 1,
               "net_vs_q": 0,
               "gap_best_ms": 5943,
@@ -1006,8 +1253,8 @@
               ],
               "penalty": 0,
               "pos": 2,
-              "class_pos": 2,
-              "points": 210,
+              "class_pos": 1,
+              "points": 180,
               "qualy_pos": 4,
               "net_vs_q": 2,
               "gap_best_ms": 1520,
@@ -1066,8 +1313,8 @@
               ],
               "penalty": 0,
               "pos": 3,
-              "class_pos": 1,
-              "points": 200,
+              "class_pos": 2,
+              "points": 170,
               "qualy_pos": 10,
               "net_vs_q": 7,
               "gap_best_ms": 9603,
@@ -1126,8 +1373,8 @@
               ],
               "penalty": 0,
               "pos": 4,
-              "class_pos": 2,
-              "points": 170,
+              "class_pos": 3,
+              "points": 155,
               "qualy_pos": 11,
               "net_vs_q": 7,
               "gap_best_ms": 11148,
@@ -1186,8 +1433,8 @@
               ],
               "penalty": 0,
               "pos": 5,
-              "class_pos": 3,
-              "points": 175,
+              "class_pos": 2,
+              "points": 150,
               "qualy_pos": "-",
               "net_vs_q": "-",
               "gap_best_ms": 4728,
@@ -1246,8 +1493,8 @@
               ],
               "penalty": 0,
               "pos": 6,
-              "class_pos": 4,
-              "points": 162,
+              "class_pos": 3,
+              "points": 135,
               "qualy_pos": 7,
               "net_vs_q": 1,
               "gap_best_ms": 0,
@@ -1366,8 +1613,8 @@
               ],
               "penalty": 5,
               "pos": 8,
-              "class_pos": 5,
-              "points": 151,
+              "class_pos": 4,
+              "points": 122,
               "qualy_pos": 2,
               "net_vs_q": -6,
               "gap_best_ms": 1830,
@@ -1426,8 +1673,8 @@
               ],
               "penalty": 0,
               "pos": 9,
-              "class_pos": 6,
-              "points": 142,
+              "class_pos": 5,
+              "points": 111,
               "qualy_pos": 12,
               "net_vs_q": 3,
               "gap_best_ms": 18540,
@@ -1598,8 +1845,8 @@
               ],
               "penalty": 0,
               "pos": 12,
-              "class_pos": 3,
-              "points": 145,
+              "class_pos": 4,
+              "points": 132,
               "qualy_pos": "-",
               "net_vs_q": "-",
               "gap_best_ms": 25573,
@@ -1654,8 +1901,8 @@
               ],
               "penalty": 0,
               "pos": 13,
-              "class_pos": 7,
-              "points": 114,
+              "class_pos": 6,
+              "points": 102,
               "qualy_pos": "-",
               "net_vs_q": "-",
               "gap_best_ms": 31835,
@@ -1822,8 +2069,8 @@
               ],
               "penalty": 0,
               "pos": 16,
-              "class_pos": 8,
-              "points": 97,
+              "class_pos": 7,
+              "points": 94,
               "qualy_pos": 15,
               "net_vs_q": -1,
               "gap_best_ms": 0,
@@ -1934,8 +2181,8 @@
               ],
               "penalty": 0,
               "pos": 18,
-              "class_pos": 9,
-              "points": 91,
+              "class_pos": 8,
+              "points": 87,
               "qualy_pos": "-",
               "net_vs_q": "-",
               "gap_best_ms": 0,
@@ -2214,6 +2461,3095 @@
               "points": 0,
               "qualy_pos": "-",
               "net_vs_q": "-",
+              "gap_best_ms": 0,
+              "gap_pace_ms": 0,
+              "race_gap": "DNF"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "event_1",
+      "name": "Round 2: Donington/Oulton/Snetterton",
+      "sessions": [
+        {
+          "name": "TCX Mini-Champ - Race 1",
+          "qualy_results": [
+            {
+              "name": "Dominic Zimmermann",
+              "raw_name": "Dominic [SL-PLAT] Zimmermann",
+              "car_class": "TCX",
+              "car_model": 27,
+              "s1": "23.192",
+              "s2": "39.402",
+              "s3": "37.710",
+              "best_lap_ms": 100305,
+              "best_lap": "1:40.305",
+              "gap_pole_ms": 0,
+              "gap_pole": "POLE",
+              "pos": 1
+            },
+            {
+              "name": "Youssef Mohamed",
+              "raw_name": "Youssef Mohamed",
+              "car_class": "TCX",
+              "car_model": 27,
+              "s1": "23.272",
+              "s2": "39.382",
+              "s3": "37.627",
+              "best_lap_ms": 100347,
+              "best_lap": "1:40.347",
+              "gap_pole_ms": 42,
+              "gap_pole": "+0.042s",
+              "pos": 2
+            },
+            {
+              "name": "kevin peeters",
+              "raw_name": "kevin peeters",
+              "car_class": "TCX",
+              "car_model": 27,
+              "s1": "23.312",
+              "s2": "39.542",
+              "s3": "37.747",
+              "best_lap_ms": 100602,
+              "best_lap": "1:40.602",
+              "gap_pole_ms": 297,
+              "gap_pole": "+0.297s",
+              "pos": 3
+            },
+            {
+              "name": "Luca Maggiolo",
+              "raw_name": "Luca [SL-GOLD] Maggiolo",
+              "car_class": "TCX",
+              "car_model": 27,
+              "s1": "23.230",
+              "s2": "39.527",
+              "s3": "37.647",
+              "best_lap_ms": 100702,
+              "best_lap": "1:40.702",
+              "gap_pole_ms": 397,
+              "gap_pole": "+0.397s",
+              "pos": 4
+            },
+            {
+              "name": "Cla Rens",
+              "raw_name": "Cla [SL-GOLD] Rens",
+              "car_class": "TCX",
+              "car_model": 27,
+              "s1": "23.405",
+              "s2": "39.337",
+              "s3": "38.087",
+              "best_lap_ms": 100830,
+              "best_lap": "1:40.830",
+              "gap_pole_ms": 525,
+              "gap_pole": "+0.525s",
+              "pos": 5
+            },
+            {
+              "name": "Tanno Raayman",
+              "raw_name": "Tanno [SL-BRON] Raayman",
+              "car_class": "TCX",
+              "car_model": 27,
+              "s1": "23.290",
+              "s2": "39.587",
+              "s3": "38.025",
+              "best_lap_ms": 100977,
+              "best_lap": "1:40.977",
+              "gap_pole_ms": 672,
+              "gap_pole": "+0.672s",
+              "pos": 6
+            },
+            {
+              "name": "Bruno Longarela",
+              "raw_name": "Bruno [SL-GOLD] Longarela",
+              "car_class": "TCX",
+              "car_model": 27,
+              "s1": "23.325",
+              "s2": "39.845",
+              "s3": "37.817",
+              "best_lap_ms": 100987,
+              "best_lap": "1:40.987",
+              "gap_pole_ms": 682,
+              "gap_pole": "+0.682s",
+              "pos": 7
+            },
+            {
+              "name": "Raymond Crawford",
+              "raw_name": "Raymond [SL-SILV] Crawford",
+              "car_class": "TCX",
+              "car_model": 27,
+              "s1": "23.160",
+              "s2": "39.580",
+              "s3": "37.700",
+              "best_lap_ms": 101060,
+              "best_lap": "1:41.060",
+              "gap_pole_ms": 755,
+              "gap_pole": "+0.755s",
+              "pos": 8
+            },
+            {
+              "name": "Casper Smit",
+              "raw_name": "Casper Smit",
+              "car_class": "TCX",
+              "car_model": 27,
+              "s1": "23.405",
+              "s2": "40.017",
+              "s3": "38.147",
+              "best_lap_ms": 101575,
+              "best_lap": "1:41.575",
+              "gap_pole_ms": 1270,
+              "gap_pole": "+1.270s",
+              "pos": 9
+            },
+            {
+              "name": "Marty Fox",
+              "raw_name": "Marty [SL-SILV] Fox",
+              "car_class": "TCX",
+              "car_model": 27,
+              "s1": "23.480",
+              "s2": "39.410",
+              "s3": "38.085",
+              "best_lap_ms": 101590,
+              "best_lap": "1:41.590",
+              "gap_pole_ms": 1285,
+              "gap_pole": "+1.285s",
+              "pos": 10
+            },
+            {
+              "name": "Leonardo Rigon",
+              "raw_name": "Leonardo [SL-BRON] Rigon",
+              "car_class": "TCX",
+              "car_model": 27,
+              "s1": "24.152",
+              "s2": "40.032",
+              "s3": "38.340",
+              "best_lap_ms": 102525,
+              "best_lap": "1:42.525",
+              "gap_pole_ms": 2220,
+              "gap_pole": "+2.220s",
+              "pos": 11
+            },
+            {
+              "name": "Jason Keen",
+              "raw_name": "Jason Keen",
+              "car_class": "TCX",
+              "car_model": 27,
+              "s1": "24.290",
+              "s2": "40.727",
+              "s3": "39.097",
+              "best_lap_ms": 104115,
+              "best_lap": "1:44.115",
+              "gap_pole_ms": 3810,
+              "gap_pole": "+3.810s",
+              "pos": 12
+            },
+            {
+              "name": "Purple Kelpie",
+              "raw_name": "Purple Kelpie",
+              "car_class": "TCX",
+              "car_model": 27,
+              "s1": "-",
+              "s2": "-",
+              "s3": "-",
+              "best_lap_ms": 2147483647,
+              "best_lap": "-",
+              "gap_pole_ms": 0,
+              "gap_pole": "POLE",
+              "pos": 13
+            }
+          ],
+          "results": [
+            {
+              "name": "Dominic Zimmermann",
+              "raw_name": "Dominic [SL-PLAT] Zimmermann",
+              "car_class": "TCX",
+              "car_model": 27,
+              "laps": 12,
+              "total_time": 1214424,
+              "best_lap_ms": 100812,
+              "best_lap": "1:40.812",
+              "avg_lap_ms": 101202,
+              "avg_time": "1:41.202",
+              "incidents": 0,
+              "lap_history": [
+                {
+                  "time_ms": 106305,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 101005,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 100812,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 101282,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 101057,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 100915,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 100975,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 101145,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 101802,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 101270,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 101180,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 101175,
+                  "is_incident": false
+                }
+              ],
+              "penalty": 0,
+              "pos": 1,
+              "class_pos": 1,
+              "points": 180,
+              "sprint_internal_pts": 180,
+              "sprint_bonus": 0,
+              "qualy_pos": 1,
+              "net_vs_q": 0,
+              "gap_best_ms": 122,
+              "gap_pace_ms": 0,
+              "race_gap": "WINNER"
+            },
+            {
+              "name": "Youssef Mohamed",
+              "raw_name": "Youssef Mohamed",
+              "car_class": "TCX",
+              "car_model": 27,
+              "laps": 12,
+              "total_time": 1214833,
+              "best_lap_ms": 100857,
+              "best_lap": "1:40.857",
+              "avg_lap_ms": 101236,
+              "avg_time": "1:41.236",
+              "incidents": 1,
+              "lap_history": [
+                {
+                  "time_ms": 106487,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 100857,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 101082,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 101145,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 101237,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 100745,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 101080,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 101167,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 101200,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 101525,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 101250,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 101122,
+                  "is_incident": false
+                }
+              ],
+              "penalty": 0,
+              "pos": 2,
+              "class_pos": 1,
+              "points": 180,
+              "sprint_internal_pts": 180,
+              "sprint_bonus": 0,
+              "qualy_pos": 2,
+              "net_vs_q": 0,
+              "gap_best_ms": 167,
+              "gap_pace_ms": 34,
+              "race_gap": "+0.409s"
+            },
+            {
+              "name": "kevin peeters",
+              "raw_name": "kevin peeters",
+              "car_class": "TCX",
+              "car_model": 27,
+              "laps": 12,
+              "total_time": 1224891,
+              "best_lap_ms": 100797,
+              "best_lap": "1:40.797",
+              "avg_lap_ms": 102074,
+              "avg_time": "1:42.074",
+              "incidents": 1,
+              "lap_history": [
+                {
+                  "time_ms": 110327,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 101987,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 101965,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 102272,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 102442,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 101812,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 101557,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 101585,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 100797,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 100875,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 101710,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 101077,
+                  "is_incident": false
+                }
+              ],
+              "penalty": 0,
+              "pos": 3,
+              "class_pos": 1,
+              "points": 210,
+              "sprint_internal_pts": 180,
+              "sprint_bonus": 30,
+              "qualy_pos": 3,
+              "net_vs_q": 0,
+              "gap_best_ms": 107,
+              "gap_pace_ms": 872,
+              "race_gap": "+10.467s"
+            },
+            {
+              "name": "Cla Rens",
+              "raw_name": "Cla [SL-GOLD] Rens",
+              "car_class": "TCX",
+              "car_model": 27,
+              "laps": 12,
+              "total_time": 1227384,
+              "best_lap_ms": 101067,
+              "best_lap": "1:41.067",
+              "avg_lap_ms": 102282,
+              "avg_time": "1:42.282",
+              "incidents": 4,
+              "lap_history": [
+                {
+                  "time_ms": 110045,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 101955,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 101680,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 102467,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 102282,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 102885,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 101140,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 102635,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 101177,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 101647,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 101067,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 101092,
+                  "is_incident": false
+                }
+              ],
+              "penalty": 0,
+              "pos": 4,
+              "class_pos": 2,
+              "points": 150,
+              "sprint_internal_pts": 150,
+              "sprint_bonus": 0,
+              "qualy_pos": 5,
+              "net_vs_q": 1,
+              "gap_best_ms": 377,
+              "gap_pace_ms": 1080,
+              "race_gap": "+12.960s"
+            },
+            {
+              "name": "Tanno Raayman",
+              "raw_name": "Tanno [SL-BRON] Raayman",
+              "car_class": "TCX",
+              "car_model": 27,
+              "laps": 12,
+              "total_time": 1231318,
+              "best_lap_ms": 101157,
+              "best_lap": "1:41.157",
+              "avg_lap_ms": 102609,
+              "avg_time": "1:42.609",
+              "incidents": 0,
+              "lap_history": [
+                {
+                  "time_ms": 110637,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 104795,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 101360,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 101312,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 101977,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 102135,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 102302,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 101642,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 101157,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 101682,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 101567,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 103402,
+                  "is_incident": false
+                }
+              ],
+              "penalty": 0,
+              "pos": 5,
+              "class_pos": 2,
+              "points": 190,
+              "sprint_internal_pts": 150,
+              "sprint_bonus": 40,
+              "qualy_pos": 6,
+              "net_vs_q": 1,
+              "gap_best_ms": 467,
+              "gap_pace_ms": 1407,
+              "race_gap": "+16.894s"
+            },
+            {
+              "name": "Luca Maggiolo",
+              "raw_name": "Luca [SL-GOLD] Maggiolo",
+              "car_class": "TCX",
+              "car_model": 27,
+              "laps": 12,
+              "total_time": 1233977,
+              "best_lap_ms": 100690,
+              "best_lap": "1:40.690",
+              "avg_lap_ms": 102831,
+              "avg_time": "1:42.831",
+              "incidents": 7,
+              "lap_history": [
+                {
+                  "time_ms": 110492,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 113042,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 101520,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 100985,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 101077,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 101627,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 101270,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 102222,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 100690,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 101045,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 101922,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 101545,
+                  "is_incident": true
+                }
+              ],
+              "penalty": 0,
+              "pos": 6,
+              "class_pos": 3,
+              "points": 135,
+              "sprint_internal_pts": 135,
+              "sprint_bonus": 0,
+              "qualy_pos": 4,
+              "net_vs_q": -2,
+              "gap_best_ms": 0,
+              "gap_pace_ms": 1629,
+              "race_gap": "+19.553s"
+            },
+            {
+              "name": "Bruno Longarela",
+              "raw_name": "Bruno [SL-GOLD] Longarela",
+              "car_class": "TCX",
+              "car_model": 27,
+              "laps": 12,
+              "total_time": 1237871,
+              "best_lap_ms": 101157,
+              "best_lap": "1:41.157",
+              "avg_lap_ms": 103155,
+              "avg_time": "1:43.155",
+              "incidents": 2,
+              "lap_history": [
+                {
+                  "time_ms": 108342,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 101880,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 101975,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 102722,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 101940,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 103132,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 101157,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 102475,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 102135,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 101627,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 102240,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 110105,
+                  "is_incident": true
+                }
+              ],
+              "penalty": 0,
+              "pos": 7,
+              "class_pos": 4,
+              "points": 122,
+              "sprint_internal_pts": 122,
+              "sprint_bonus": 0,
+              "qualy_pos": 7,
+              "net_vs_q": 0,
+              "gap_best_ms": 467,
+              "gap_pace_ms": 1953,
+              "race_gap": "+23.447s"
+            },
+            {
+              "name": "Raymond Crawford",
+              "raw_name": "Raymond [SL-SILV] Crawford",
+              "car_class": "TCX",
+              "car_model": 27,
+              "laps": 12,
+              "total_time": 1245518,
+              "best_lap_ms": 101125,
+              "best_lap": "1:41.125",
+              "avg_lap_ms": 103793,
+              "avg_time": "1:43.793",
+              "incidents": 2,
+              "lap_history": [
+                {
+                  "time_ms": 109835,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 115870,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 102022,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 101832,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 101125,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 101882,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 103040,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 102862,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 102987,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 101622,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 102567,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 101745,
+                  "is_incident": false
+                }
+              ],
+              "penalty": 0,
+              "pos": 8,
+              "class_pos": 3,
+              "points": 135,
+              "sprint_internal_pts": 135,
+              "sprint_bonus": 0,
+              "qualy_pos": 8,
+              "net_vs_q": 0,
+              "gap_best_ms": 435,
+              "gap_pace_ms": 2591,
+              "race_gap": "+31.094s"
+            },
+            {
+              "name": "Casper Smit",
+              "raw_name": "Casper Smit",
+              "car_class": "TCX",
+              "car_model": 27,
+              "laps": 12,
+              "total_time": 1251315,
+              "best_lap_ms": 102595,
+              "best_lap": "1:42.595",
+              "avg_lap_ms": 104276,
+              "avg_time": "1:44.276",
+              "incidents": 4,
+              "lap_history": [
+                {
+                  "time_ms": 112535,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 102860,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 104730,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 102795,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 103177,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 105242,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 102722,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 103312,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 106502,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 102717,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 102595,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 103262,
+                  "is_incident": false
+                }
+              ],
+              "penalty": 0,
+              "pos": 9,
+              "class_pos": 2,
+              "points": 150,
+              "sprint_internal_pts": 150,
+              "sprint_bonus": 0,
+              "qualy_pos": 9,
+              "net_vs_q": 0,
+              "gap_best_ms": 1905,
+              "gap_pace_ms": 3074,
+              "race_gap": "+36.891s"
+            },
+            {
+              "name": "Marty Fox",
+              "raw_name": "Marty [SL-SILV] Fox",
+              "car_class": "TCX",
+              "car_model": 27,
+              "laps": 12,
+              "total_time": 1251832,
+              "best_lap_ms": 101752,
+              "best_lap": "1:41.752",
+              "avg_lap_ms": 104319,
+              "avg_time": "1:44.319",
+              "incidents": 3,
+              "lap_history": [
+                {
+                  "time_ms": 128917,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 102970,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 102510,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 101775,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 101922,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 102417,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 102167,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 101752,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 101817,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 102195,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 101832,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 102495,
+                  "is_incident": false
+                }
+              ],
+              "penalty": 0,
+              "pos": 10,
+              "class_pos": 4,
+              "points": 122,
+              "sprint_internal_pts": 122,
+              "sprint_bonus": 0,
+              "qualy_pos": 10,
+              "net_vs_q": 0,
+              "gap_best_ms": 1062,
+              "gap_pace_ms": 3117,
+              "race_gap": "+37.408s"
+            },
+            {
+              "name": "Jason Keen",
+              "raw_name": "Jason Keen",
+              "car_class": "TCX",
+              "car_model": 27,
+              "laps": 12,
+              "total_time": 1301521,
+              "best_lap_ms": 103520,
+              "best_lap": "1:43.520",
+              "avg_lap_ms": 108460,
+              "avg_time": "1:48.460",
+              "incidents": 6,
+              "lap_history": [
+                {
+                  "time_ms": 526902,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 104132,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 106025,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 108610,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 105272,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 104400,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 104207,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 103872,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 103520,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 113450,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 105010,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 116877,
+                  "is_incident": true
+                }
+              ],
+              "penalty": 0,
+              "pos": 11,
+              "class_pos": 3,
+              "points": 135,
+              "sprint_internal_pts": 135,
+              "sprint_bonus": 0,
+              "qualy_pos": 12,
+              "net_vs_q": 1,
+              "gap_best_ms": 2830,
+              "gap_pace_ms": 7258,
+              "race_gap": "+87.097s"
+            },
+            {
+              "name": "Purple Kelpie",
+              "raw_name": "Purple Kelpie",
+              "car_class": "TCX",
+              "car_model": 27,
+              "laps": 11,
+              "total_time": 1322649,
+              "best_lap_ms": 110692,
+              "best_lap": "1:50.692",
+              "avg_lap_ms": 120240,
+              "avg_time": "2:00.240",
+              "incidents": 10,
+              "lap_history": [
+                {
+                  "time_ms": 115075,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 110472,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 119325,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 111050,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 116222,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 129677,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 141625,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 110465,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 126287,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 110692,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 131280,
+                  "is_incident": true
+                }
+              ],
+              "penalty": 0,
+              "pos": 12,
+              "class_pos": 4,
+              "points": 122,
+              "sprint_internal_pts": 122,
+              "sprint_bonus": 0,
+              "qualy_pos": 13,
+              "net_vs_q": 1,
+              "gap_best_ms": 10002,
+              "gap_pace_ms": 19038,
+              "race_gap": "+108.225s"
+            },
+            {
+              "name": "Leonardo Rigon",
+              "raw_name": "Leonardo [SL-BRON] Rigon",
+              "car_class": "TCX",
+              "car_model": 27,
+              "laps": 9,
+              "total_time": 1002705,
+              "best_lap_ms": 102597,
+              "best_lap": "1:42.597",
+              "avg_lap_ms": 111411,
+              "avg_time": "1:51.411",
+              "incidents": 6,
+              "lap_history": [
+                {
+                  "time_ms": 135477,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 104960,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 102912,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 114852,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 106777,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 104175,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 102890,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 102597,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 103925,
+                  "is_incident": false
+                }
+              ],
+              "penalty": 0,
+              "pos": 13,
+              "class_pos": "DNF",
+              "points": 0,
+              "sprint_internal_pts": 0,
+              "sprint_bonus": 0,
+              "qualy_pos": 11,
+              "net_vs_q": -2,
+              "gap_best_ms": 1907,
+              "gap_pace_ms": 10209,
+              "race_gap": "+-211.719s"
+            }
+          ]
+        },
+        {
+          "name": "TCX Mini-Champ - Race 2",
+          "qualy_results": [
+            {
+              "name": "Youssef Mohamed",
+              "raw_name": "Youssef Mohamed",
+              "car_class": "TCX",
+              "car_model": 27,
+              "s1": "26.710",
+              "s2": "51.552",
+              "s3": "29.620",
+              "best_lap_ms": 108037,
+              "best_lap": "1:48.037",
+              "gap_pole_ms": 0,
+              "gap_pole": "POLE",
+              "pos": 1
+            },
+            {
+              "name": "Dominic Zimmermann",
+              "raw_name": "Dominic [SL-PLAT] Zimmermann",
+              "car_class": "TCX",
+              "car_model": 27,
+              "s1": "26.627",
+              "s2": "52.172",
+              "s3": "29.512",
+              "best_lap_ms": 108487,
+              "best_lap": "1:48.487",
+              "gap_pole_ms": 450,
+              "gap_pole": "+0.450s",
+              "pos": 2
+            },
+            {
+              "name": "Bence Kamaras",
+              "raw_name": "Bence [SL-SILV] Kamaras",
+              "car_class": "TCX",
+              "car_model": 27,
+              "s1": "27.217",
+              "s2": "51.800",
+              "s3": "29.647",
+              "best_lap_ms": 108665,
+              "best_lap": "1:48.665",
+              "gap_pole_ms": 628,
+              "gap_pole": "+0.628s",
+              "pos": 3
+            },
+            {
+              "name": "kevin peeters",
+              "raw_name": "kevin peeters",
+              "car_class": "TCX",
+              "car_model": 27,
+              "s1": "27.077",
+              "s2": "51.955",
+              "s3": "29.667",
+              "best_lap_ms": 108700,
+              "best_lap": "1:48.700",
+              "gap_pole_ms": 663,
+              "gap_pole": "+0.663s",
+              "pos": 4
+            },
+            {
+              "name": "Cla Rens",
+              "raw_name": "Cla [SL-GOLD] Rens",
+              "car_class": "TCX",
+              "car_model": 27,
+              "s1": "26.862",
+              "s2": "52.427",
+              "s3": "29.542",
+              "best_lap_ms": 108832,
+              "best_lap": "1:48.832",
+              "gap_pole_ms": 795,
+              "gap_pole": "+0.795s",
+              "pos": 5
+            },
+            {
+              "name": "Bruno Longarela",
+              "raw_name": "Bruno [SL-GOLD] Longarela",
+              "car_class": "TCX",
+              "car_model": 27,
+              "s1": "26.730",
+              "s2": "52.182",
+              "s3": "30.015",
+              "best_lap_ms": 108927,
+              "best_lap": "1:48.927",
+              "gap_pole_ms": 890,
+              "gap_pole": "+0.890s",
+              "pos": 6
+            },
+            {
+              "name": "Luca Maggiolo",
+              "raw_name": "Luca [SL-GOLD] Maggiolo",
+              "car_class": "TCX",
+              "car_model": 27,
+              "s1": "26.970",
+              "s2": "52.425",
+              "s3": "29.742",
+              "best_lap_ms": 109137,
+              "best_lap": "1:49.137",
+              "gap_pole_ms": 1100,
+              "gap_pole": "+1.100s",
+              "pos": 7
+            },
+            {
+              "name": "Marty Fox",
+              "raw_name": "Marty [SL-SILV] Fox",
+              "car_class": "TCX",
+              "car_model": 27,
+              "s1": "27.240",
+              "s2": "52.660",
+              "s3": "29.570",
+              "best_lap_ms": 109470,
+              "best_lap": "1:49.470",
+              "gap_pole_ms": 1433,
+              "gap_pole": "+1.433s",
+              "pos": 8
+            },
+            {
+              "name": "Raymond Crawford",
+              "raw_name": "Raymond [SL-SILV] Crawford",
+              "car_class": "TCX",
+              "car_model": 27,
+              "s1": "26.995",
+              "s2": "52.757",
+              "s3": "29.695",
+              "best_lap_ms": 109552,
+              "best_lap": "1:49.552",
+              "gap_pole_ms": 1515,
+              "gap_pole": "+1.515s",
+              "pos": 9
+            },
+            {
+              "name": "Tanno Raayman",
+              "raw_name": "Tanno [SL-BRON] Raayman",
+              "car_class": "TCX",
+              "car_model": 27,
+              "s1": "26.785",
+              "s2": "54.210",
+              "s3": "29.882",
+              "best_lap_ms": 110877,
+              "best_lap": "1:50.877",
+              "gap_pole_ms": 2840,
+              "gap_pole": "+2.840s",
+              "pos": 10
+            },
+            {
+              "name": "Chris Yang",
+              "raw_name": "Chris Yang",
+              "car_class": "TCX",
+              "car_model": 27,
+              "s1": "28.052",
+              "s2": "54.482",
+              "s3": "30.840",
+              "best_lap_ms": 113375,
+              "best_lap": "1:53.375",
+              "gap_pole_ms": 5338,
+              "gap_pole": "+5.338s",
+              "pos": 11
+            },
+            {
+              "name": "Jason Keen",
+              "raw_name": "Jason Keen",
+              "car_class": "TCX",
+              "car_model": 27,
+              "s1": "28.387",
+              "s2": "55.932",
+              "s3": "30.890",
+              "best_lap_ms": 115210,
+              "best_lap": "1:55.210",
+              "gap_pole_ms": 7173,
+              "gap_pole": "+7.173s",
+              "pos": 12
+            },
+            {
+              "name": "Purple Kelpie",
+              "raw_name": "Purple Kelpie",
+              "car_class": "TCX",
+              "car_model": 27,
+              "s1": "29.872",
+              "s2": "58.790",
+              "s3": "33.380",
+              "best_lap_ms": 122042,
+              "best_lap": "2:02.042",
+              "gap_pole_ms": 14005,
+              "gap_pole": "+14.005s",
+              "pos": 13
+            },
+            {
+              "name": "Casper Smit",
+              "raw_name": "Casper Smit",
+              "car_class": "TCX",
+              "car_model": 27,
+              "s1": "-",
+              "s2": "-",
+              "s3": "-",
+              "best_lap_ms": 2147483647,
+              "best_lap": "-",
+              "gap_pole_ms": 0,
+              "gap_pole": "POLE",
+              "pos": 14
+            }
+          ],
+          "results": [
+            {
+              "name": "Youssef Mohamed",
+              "raw_name": "Youssef Mohamed",
+              "car_class": "TCX",
+              "car_model": 27,
+              "laps": 11,
+              "total_time": 1201801,
+              "best_lap_ms": 108362,
+              "best_lap": "1:48.362",
+              "avg_lap_ms": 109254,
+              "avg_time": "1:49.254",
+              "incidents": 1,
+              "lap_history": [
+                {
+                  "time_ms": 113060,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 108362,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 108537,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 109140,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 108655,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 108927,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 108865,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 109267,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 108622,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 108965,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 109087,
+                  "is_incident": false
+                }
+              ],
+              "penalty": 0,
+              "pos": 1,
+              "class_pos": 1,
+              "points": 180,
+              "sprint_internal_pts": 180,
+              "sprint_bonus": 0,
+              "qualy_pos": 1,
+              "net_vs_q": 0,
+              "gap_best_ms": 0,
+              "gap_pace_ms": 0,
+              "race_gap": "WINNER"
+            },
+            {
+              "name": "Dominic Zimmermann",
+              "raw_name": "Dominic [SL-PLAT] Zimmermann",
+              "car_class": "TCX",
+              "car_model": 27,
+              "laps": 11,
+              "total_time": 1217501,
+              "best_lap_ms": 108840,
+              "best_lap": "1:48.840",
+              "avg_lap_ms": 110681,
+              "avg_time": "1:50.681",
+              "incidents": 4,
+              "lap_history": [
+                {
+                  "time_ms": 112080,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 116097,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 109785,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 108840,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 109110,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 110597,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 111337,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 109587,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 109982,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 109430,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 110177,
+                  "is_incident": true
+                }
+              ],
+              "penalty": 0,
+              "pos": 2,
+              "class_pos": 1,
+              "points": 180,
+              "sprint_internal_pts": 180,
+              "sprint_bonus": 0,
+              "qualy_pos": 2,
+              "net_vs_q": 0,
+              "gap_best_ms": 478,
+              "gap_pace_ms": 1427,
+              "race_gap": "+15.700s"
+            },
+            {
+              "name": "Luca Maggiolo",
+              "raw_name": "Luca [SL-GOLD] Maggiolo",
+              "car_class": "TCX",
+              "car_model": 27,
+              "laps": 11,
+              "total_time": 1219636,
+              "best_lap_ms": 108940,
+              "best_lap": "1:48.940",
+              "avg_lap_ms": 110876,
+              "avg_time": "1:50.876",
+              "incidents": 7,
+              "lap_history": [
+                {
+                  "time_ms": 114967,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 110472,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 111910,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 110072,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 109500,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 108940,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 110967,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 110637,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 110552,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 109680,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 109842,
+                  "is_incident": true
+                }
+              ],
+              "penalty": 0,
+              "pos": 3,
+              "class_pos": 2,
+              "points": 150,
+              "sprint_internal_pts": 150,
+              "sprint_bonus": 0,
+              "qualy_pos": 7,
+              "net_vs_q": 4,
+              "gap_best_ms": 578,
+              "gap_pace_ms": 1622,
+              "race_gap": "+17.835s"
+            },
+            {
+              "name": "Bence Kamaras",
+              "raw_name": "Bence [SL-SILV] Kamaras",
+              "car_class": "TCX",
+              "car_model": 27,
+              "laps": 11,
+              "total_time": 1221510,
+              "best_lap_ms": 109180,
+              "best_lap": "1:49.180",
+              "avg_lap_ms": 111046,
+              "avg_time": "1:51.046",
+              "incidents": 6,
+              "lap_history": [
+                {
+                  "time_ms": 116187,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 110902,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 112022,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 110252,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 109180,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 109745,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 110407,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 112402,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 109760,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 109382,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 110240,
+                  "is_incident": false
+                }
+              ],
+              "penalty": 0,
+              "pos": 4,
+              "class_pos": 1,
+              "points": 200,
+              "sprint_internal_pts": 180,
+              "sprint_bonus": 20,
+              "qualy_pos": 3,
+              "net_vs_q": -1,
+              "gap_best_ms": 818,
+              "gap_pace_ms": 1792,
+              "race_gap": "+19.709s"
+            },
+            {
+              "name": "Bruno Longarela",
+              "raw_name": "Bruno [SL-GOLD] Longarela",
+              "car_class": "TCX",
+              "car_model": 27,
+              "laps": 11,
+              "total_time": 1221671,
+              "best_lap_ms": 108937,
+              "best_lap": "1:48.937",
+              "avg_lap_ms": 111061,
+              "avg_time": "1:51.061",
+              "incidents": 9,
+              "lap_history": [
+                {
+                  "time_ms": 124220,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 110780,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 109102,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 111147,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 109642,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 109292,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 109190,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 108937,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 108632,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 109085,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 109842,
+                  "is_incident": true
+                }
+              ],
+              "penalty": 0,
+              "pos": 5,
+              "class_pos": 3,
+              "points": 135,
+              "sprint_internal_pts": 135,
+              "sprint_bonus": 0,
+              "qualy_pos": 6,
+              "net_vs_q": 1,
+              "gap_best_ms": 575,
+              "gap_pace_ms": 1807,
+              "race_gap": "+19.870s"
+            },
+            {
+              "name": "Marty Fox",
+              "raw_name": "Marty [SL-SILV] Fox",
+              "car_class": "TCX",
+              "car_model": 27,
+              "laps": 11,
+              "total_time": 1225057,
+              "best_lap_ms": 108855,
+              "best_lap": "1:48.855",
+              "avg_lap_ms": 111368,
+              "avg_time": "1:51.368",
+              "incidents": 3,
+              "lap_history": [
+                {
+                  "time_ms": 115435,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 112010,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 111305,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 109765,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 109280,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 108855,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 110202,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 115137,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 109422,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 110962,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 110282,
+                  "is_incident": false
+                }
+              ],
+              "penalty": 0,
+              "pos": 6,
+              "class_pos": 2,
+              "points": 160,
+              "sprint_internal_pts": 150,
+              "sprint_bonus": 10,
+              "qualy_pos": 8,
+              "net_vs_q": 2,
+              "gap_best_ms": 493,
+              "gap_pace_ms": 2114,
+              "race_gap": "+23.256s"
+            },
+            {
+              "name": "Tanno Raayman",
+              "raw_name": "Tanno [SL-BRON] Raayman",
+              "car_class": "TCX",
+              "car_model": 27,
+              "laps": 11,
+              "total_time": 1228488,
+              "best_lap_ms": 109912,
+              "best_lap": "1:49.912",
+              "avg_lap_ms": 111680,
+              "avg_time": "1:51.680",
+              "incidents": 6,
+              "lap_history": [
+                {
+                  "time_ms": 116207,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 112047,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 114035,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 111512,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 110352,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 110110,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 109990,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 110065,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 110395,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 109912,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 111082,
+                  "is_incident": true
+                }
+              ],
+              "penalty": 0,
+              "pos": 7,
+              "class_pos": 3,
+              "points": 165,
+              "sprint_internal_pts": 135,
+              "sprint_bonus": 30,
+              "qualy_pos": 10,
+              "net_vs_q": 3,
+              "gap_best_ms": 1550,
+              "gap_pace_ms": 2426,
+              "race_gap": "+26.687s"
+            },
+            {
+              "name": "Raymond Crawford",
+              "raw_name": "Raymond [SL-SILV] Crawford",
+              "car_class": "TCX",
+              "car_model": 27,
+              "laps": 11,
+              "total_time": 1232742,
+              "best_lap_ms": 108972,
+              "best_lap": "1:48.972",
+              "avg_lap_ms": 112067,
+              "avg_time": "1:52.067",
+              "incidents": 8,
+              "lap_history": [
+                {
+                  "time_ms": 124280,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 109330,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 108972,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 110197,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 109230,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 110245,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 110467,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 109905,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 109020,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 117557,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 110815,
+                  "is_incident": false
+                }
+              ],
+              "penalty": 0,
+              "pos": 8,
+              "class_pos": 4,
+              "points": 132,
+              "sprint_internal_pts": 122,
+              "sprint_bonus": 10,
+              "qualy_pos": 9,
+              "net_vs_q": 1,
+              "gap_best_ms": 610,
+              "gap_pace_ms": 2813,
+              "race_gap": "+30.941s"
+            },
+            {
+              "name": "Casper Smit",
+              "raw_name": "Casper Smit",
+              "car_class": "TCX",
+              "car_model": 27,
+              "laps": 11,
+              "total_time": 1263175,
+              "best_lap_ms": 110792,
+              "best_lap": "1:50.792",
+              "avg_lap_ms": 114834,
+              "avg_time": "1:54.834",
+              "incidents": 6,
+              "lap_history": [
+                {
+                  "time_ms": 117815,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 111370,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 111020,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 129317,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 112215,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 113140,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 111967,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 110792,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 117410,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 111877,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 112367,
+                  "is_incident": true
+                }
+              ],
+              "penalty": 0,
+              "pos": 9,
+              "class_pos": 2,
+              "points": 150,
+              "sprint_internal_pts": 150,
+              "sprint_bonus": 0,
+              "qualy_pos": 14,
+              "net_vs_q": 5,
+              "gap_best_ms": 2430,
+              "gap_pace_ms": 5580,
+              "race_gap": "+61.374s"
+            },
+            {
+              "name": "kevin peeters",
+              "raw_name": "kevin peeters",
+              "car_class": "TCX",
+              "car_model": 27,
+              "laps": 11,
+              "total_time": 1302354,
+              "best_lap_ms": 110742,
+              "best_lap": "1:50.742",
+              "avg_lap_ms": 118395,
+              "avg_time": "1:58.395",
+              "incidents": 10,
+              "lap_history": [
+                {
+                  "time_ms": 117142,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 110742,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 128900,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 171635,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 111580,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 110040,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 111582,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 109287,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 109590,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 109482,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 110877,
+                  "is_incident": true
+                }
+              ],
+              "penalty": 0,
+              "pos": 10,
+              "class_pos": 5,
+              "points": 121,
+              "sprint_internal_pts": 111,
+              "sprint_bonus": 10,
+              "qualy_pos": 4,
+              "net_vs_q": -6,
+              "gap_best_ms": 2380,
+              "gap_pace_ms": 9141,
+              "race_gap": "+100.553s"
+            },
+            {
+              "name": "Jason Keen",
+              "raw_name": "Jason Keen",
+              "car_class": "TCX",
+              "car_model": 27,
+              "laps": 10,
+              "total_time": 1315156,
+              "best_lap_ms": 121207,
+              "best_lap": "2:01.207",
+              "avg_lap_ms": 131515,
+              "avg_time": "2:11.515",
+              "incidents": 5,
+              "lap_history": [
+                {
+                  "time_ms": 124360,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 117372,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 121207,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 148362,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 135012,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 123952,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 144065,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 123520,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 131157,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 142882,
+                  "is_incident": false
+                }
+              ],
+              "penalty": 0,
+              "pos": 11,
+              "class_pos": 3,
+              "points": 135,
+              "sprint_internal_pts": 135,
+              "sprint_bonus": 0,
+              "qualy_pos": 12,
+              "net_vs_q": 1,
+              "gap_best_ms": 12845,
+              "gap_pace_ms": 22261,
+              "race_gap": "+113.355s"
+            },
+            {
+              "name": "Purple Kelpie",
+              "raw_name": "Purple Kelpie",
+              "car_class": "TCX",
+              "car_model": 27,
+              "laps": 9,
+              "total_time": 1315143,
+              "best_lap_ms": 2147483647,
+              "best_lap": "-",
+              "avg_lap_ms": 146127,
+              "avg_time": "2:26.127",
+              "incidents": 9,
+              "lap_history": [
+                {
+                  "time_ms": 124915,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 117685,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 121092,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 148892,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 132730,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 119942,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 134585,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 118482,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 143115,
+                  "is_incident": true
+                }
+              ],
+              "penalty": 0,
+              "pos": 12,
+              "class_pos": 4,
+              "points": 122,
+              "sprint_internal_pts": 122,
+              "sprint_bonus": 0,
+              "qualy_pos": 13,
+              "net_vs_q": 1,
+              "gap_best_ms": 0,
+              "gap_pace_ms": 36873,
+              "race_gap": "+113.342s"
+            },
+            {
+              "name": "Cla Rens",
+              "raw_name": "Cla [SL-GOLD] Rens",
+              "car_class": "TCX",
+              "car_model": 27,
+              "laps": 6,
+              "total_time": 751283,
+              "best_lap_ms": 108915,
+              "best_lap": "1:48.915",
+              "avg_lap_ms": 125213,
+              "avg_time": "2:05.213",
+              "incidents": 2,
+              "lap_history": [
+                {
+                  "time_ms": 112292,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 112257,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 109252,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 108915,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 109257,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 118010,
+                  "is_incident": true
+                }
+              ],
+              "penalty": 0,
+              "pos": 13,
+              "class_pos": "DNF",
+              "points": 0,
+              "sprint_internal_pts": 0,
+              "sprint_bonus": 0,
+              "qualy_pos": 5,
+              "net_vs_q": -8,
+              "gap_best_ms": 553,
+              "gap_pace_ms": 15959,
+              "race_gap": "+-450.518s"
+            }
+          ]
+        },
+        {
+          "name": "TCX Mini-Champ - Race 3",
+          "qualy_results": [
+            {
+              "name": "Dominic Zimmermann",
+              "raw_name": "Dominic [SL-PLAT] Zimmermann",
+              "car_class": "TCX",
+              "car_model": 27,
+              "s1": "39.322",
+              "s2": "44.175",
+              "s3": "40.792",
+              "best_lap_ms": 124290,
+              "best_lap": "2:04.290",
+              "gap_pole_ms": 0,
+              "gap_pole": "POLE",
+              "pos": 1
+            },
+            {
+              "name": "Bruno Longarela",
+              "raw_name": "Bruno [SL-GOLD] Longarela",
+              "car_class": "TCX",
+              "car_model": 27,
+              "s1": "39.697",
+              "s2": "44.070",
+              "s3": "40.650",
+              "best_lap_ms": 124420,
+              "best_lap": "2:04.420",
+              "gap_pole_ms": 130,
+              "gap_pole": "+0.130s",
+              "pos": 2
+            },
+            {
+              "name": "Raymond Crawford",
+              "raw_name": "Raymond [SL-SILV] Crawford",
+              "car_class": "TCX",
+              "car_model": 27,
+              "s1": "39.397",
+              "s2": "44.305",
+              "s3": "40.567",
+              "best_lap_ms": 124602,
+              "best_lap": "2:04.602",
+              "gap_pole_ms": 312,
+              "gap_pole": "+0.312s",
+              "pos": 3
+            },
+            {
+              "name": "Tanno Raayman",
+              "raw_name": "Tanno [SL-BRON] Raayman",
+              "car_class": "TCX",
+              "car_model": 27,
+              "s1": "39.620",
+              "s2": "44.287",
+              "s3": "40.930",
+              "best_lap_ms": 125205,
+              "best_lap": "2:05.205",
+              "gap_pole_ms": 915,
+              "gap_pole": "+0.915s",
+              "pos": 4
+            },
+            {
+              "name": "kevin peeters",
+              "raw_name": "kevin peeters",
+              "car_class": "TCX",
+              "car_model": 27,
+              "s1": "39.622",
+              "s2": "44.955",
+              "s3": "41.330",
+              "best_lap_ms": 125907,
+              "best_lap": "2:05.907",
+              "gap_pole_ms": 1617,
+              "gap_pole": "+1.617s",
+              "pos": 5
+            },
+            {
+              "name": "Bence Kamaras",
+              "raw_name": "Bence [SL-SILV] Kamaras",
+              "car_class": "TCX",
+              "car_model": 27,
+              "s1": "39.572",
+              "s2": "44.687",
+              "s3": "41.820",
+              "best_lap_ms": 126080,
+              "best_lap": "2:06.080",
+              "gap_pole_ms": 1790,
+              "gap_pole": "+1.790s",
+              "pos": 6
+            },
+            {
+              "name": "Marty Fox",
+              "raw_name": "Marty [SL-SILV] Fox",
+              "car_class": "TCX",
+              "car_model": 27,
+              "s1": "40.457",
+              "s2": "44.965",
+              "s3": "41.462",
+              "best_lap_ms": 126885,
+              "best_lap": "2:06.885",
+              "gap_pole_ms": 2595,
+              "gap_pole": "+2.595s",
+              "pos": 7
+            },
+            {
+              "name": "Purple Kelpie",
+              "raw_name": "Purple Kelpie",
+              "car_class": "TCX",
+              "car_model": 27,
+              "s1": "42.905",
+              "s2": "48.517",
+              "s3": "43.505",
+              "best_lap_ms": 134927,
+              "best_lap": "2:14.927",
+              "gap_pole_ms": 10637,
+              "gap_pole": "+10.637s",
+              "pos": 8
+            },
+            {
+              "name": "Youssef Mohamed",
+              "raw_name": "Youssef Mohamed",
+              "car_class": "TCX",
+              "car_model": 27,
+              "s1": "-",
+              "s2": "-",
+              "s3": "-",
+              "best_lap_ms": 2147483647,
+              "best_lap": "-",
+              "gap_pole_ms": 0,
+              "gap_pole": "POLE",
+              "pos": 9
+            },
+            {
+              "name": "Kamil Utku",
+              "raw_name": "Kamil Utku",
+              "car_class": "TCX",
+              "car_model": 27,
+              "s1": "-",
+              "s2": "-",
+              "s3": "-",
+              "best_lap_ms": 2147483647,
+              "best_lap": "-",
+              "gap_pole_ms": 0,
+              "gap_pole": "POLE",
+              "pos": 10
+            }
+          ],
+          "results": [
+            {
+              "name": "Dominic Zimmermann",
+              "raw_name": "Dominic [SL-PLAT] Zimmermann",
+              "car_class": "TCX",
+              "car_model": 27,
+              "laps": 10,
+              "total_time": 1251196,
+              "best_lap_ms": 123772,
+              "best_lap": "2:03.772",
+              "avg_lap_ms": 125119,
+              "avg_time": "2:05.119",
+              "incidents": 0,
+              "lap_history": [
+                {
+                  "time_ms": 129480,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 124705,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 123772,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 124247,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 125062,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 125650,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 124717,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 124677,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 124547,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 124840,
+                  "is_incident": false
+                }
+              ],
+              "penalty": 0,
+              "pos": 1,
+              "class_pos": 1,
+              "points": 180,
+              "sprint_internal_pts": 180,
+              "sprint_bonus": 0,
+              "qualy_pos": 1,
+              "net_vs_q": 0,
+              "gap_best_ms": 0,
+              "gap_pace_ms": 0,
+              "race_gap": "WINNER"
+            },
+            {
+              "name": "Bruno Longarela",
+              "raw_name": "Bruno [SL-GOLD] Longarela",
+              "car_class": "TCX",
+              "car_model": 27,
+              "laps": 10,
+              "total_time": 1260823,
+              "best_lap_ms": 124110,
+              "best_lap": "2:04.110",
+              "avg_lap_ms": 126082,
+              "avg_time": "2:06.082",
+              "incidents": 5,
+              "lap_history": [
+                {
+                  "time_ms": 129865,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 124365,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 124095,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 123905,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 124757,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 127317,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 124245,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 124110,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 124445,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 134127,
+                  "is_incident": true
+                }
+              ],
+              "penalty": 0,
+              "pos": 2,
+              "class_pos": 2,
+              "points": 150,
+              "sprint_internal_pts": 150,
+              "sprint_bonus": 0,
+              "qualy_pos": 2,
+              "net_vs_q": 0,
+              "gap_best_ms": 338,
+              "gap_pace_ms": 963,
+              "race_gap": "+9.627s"
+            },
+            {
+              "name": "Raymond Crawford",
+              "raw_name": "Raymond [SL-SILV] Crawford",
+              "car_class": "TCX",
+              "car_model": 27,
+              "laps": 10,
+              "total_time": 1265293,
+              "best_lap_ms": 124092,
+              "best_lap": "2:04.092",
+              "avg_lap_ms": 126529,
+              "avg_time": "2:06.529",
+              "incidents": 2,
+              "lap_history": [
+                {
+                  "time_ms": 140140,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 125175,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 124460,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 124692,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 124092,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 124200,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 126472,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 124892,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 126025,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 124907,
+                  "is_incident": false
+                }
+              ],
+              "penalty": 0,
+              "pos": 3,
+              "class_pos": 1,
+              "points": 180,
+              "sprint_internal_pts": 180,
+              "sprint_bonus": 0,
+              "qualy_pos": 3,
+              "net_vs_q": 0,
+              "gap_best_ms": 320,
+              "gap_pace_ms": 1410,
+              "race_gap": "+14.097s"
+            },
+            {
+              "name": "Youssef Mohamed",
+              "raw_name": "Youssef Mohamed",
+              "car_class": "TCX",
+              "car_model": 27,
+              "laps": 10,
+              "total_time": 1269373,
+              "best_lap_ms": 124685,
+              "best_lap": "2:04.685",
+              "avg_lap_ms": 126937,
+              "avg_time": "2:06.937",
+              "incidents": 8,
+              "lap_history": [
+                {
+                  "time_ms": 131822,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 125725,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 126867,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 125032,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 124685,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 125660,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 127272,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 127957,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 126005,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 126100,
+                  "is_incident": true
+                }
+              ],
+              "penalty": 0,
+              "pos": 4,
+              "class_pos": 1,
+              "points": 180,
+              "sprint_internal_pts": 180,
+              "sprint_bonus": 0,
+              "qualy_pos": 9,
+              "net_vs_q": 5,
+              "gap_best_ms": 913,
+              "gap_pace_ms": 1818,
+              "race_gap": "+18.177s"
+            },
+            {
+              "name": "Tanno Raayman",
+              "raw_name": "Tanno [SL-BRON] Raayman",
+              "car_class": "TCX",
+              "car_model": 27,
+              "laps": 10,
+              "total_time": 1292345,
+              "best_lap_ms": 124192,
+              "best_lap": "2:04.192",
+              "avg_lap_ms": 129234,
+              "avg_time": "2:09.234",
+              "incidents": 6,
+              "lap_history": [
+                {
+                  "time_ms": 131802,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 129352,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 126537,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 124192,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 125565,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 137370,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 125812,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 126310,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 127247,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 137535,
+                  "is_incident": true
+                }
+              ],
+              "penalty": 0,
+              "pos": 5,
+              "class_pos": 2,
+              "points": 180,
+              "sprint_internal_pts": 150,
+              "sprint_bonus": 30,
+              "qualy_pos": 4,
+              "net_vs_q": -1,
+              "gap_best_ms": 420,
+              "gap_pace_ms": 4115,
+              "race_gap": "+41.149s"
+            },
+            {
+              "name": "Marty Fox",
+              "raw_name": "Marty [SL-SILV] Fox",
+              "car_class": "TCX",
+              "car_model": 27,
+              "laps": 10,
+              "total_time": 1293230,
+              "best_lap_ms": 125057,
+              "best_lap": "2:05.057",
+              "avg_lap_ms": 129323,
+              "avg_time": "2:09.323",
+              "incidents": 3,
+              "lap_history": [
+                {
+                  "time_ms": 131400,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 126265,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 125572,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 125195,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 125300,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 127300,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 125852,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 125057,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 141812,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 137620,
+                  "is_incident": true
+                }
+              ],
+              "penalty": 0,
+              "pos": 6,
+              "class_pos": 3,
+              "points": 135,
+              "sprint_internal_pts": 135,
+              "sprint_bonus": 0,
+              "qualy_pos": 7,
+              "net_vs_q": 1,
+              "gap_best_ms": 1285,
+              "gap_pace_ms": 4204,
+              "race_gap": "+42.034s"
+            },
+            {
+              "name": "Bence Kamaras",
+              "raw_name": "Bence [SL-SILV] Kamaras",
+              "car_class": "TCX",
+              "car_model": 27,
+              "laps": 10,
+              "total_time": 1293593,
+              "best_lap_ms": 124845,
+              "best_lap": "2:04.845",
+              "avg_lap_ms": 129359,
+              "avg_time": "2:09.359",
+              "incidents": 8,
+              "lap_history": [
+                {
+                  "time_ms": 145192,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 125795,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 125195,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 134160,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 128265,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 125592,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 124845,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 126135,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 131645,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 125835,
+                  "is_incident": true
+                }
+              ],
+              "penalty": 0,
+              "pos": 7,
+              "class_pos": 4,
+              "points": 122,
+              "sprint_internal_pts": 122,
+              "sprint_bonus": 0,
+              "qualy_pos": 6,
+              "net_vs_q": -1,
+              "gap_best_ms": 1073,
+              "gap_pace_ms": 4240,
+              "race_gap": "+42.397s"
+            },
+            {
+              "name": "Edjas Silva",
+              "raw_name": "Edjas Silva",
+              "car_class": "TCX",
+              "car_model": 27,
+              "laps": 10,
+              "total_time": 1334439,
+              "best_lap_ms": 129582,
+              "best_lap": "2:09.582",
+              "avg_lap_ms": 133443,
+              "avg_time": "2:13.443",
+              "incidents": 1,
+              "lap_history": [
+                {
+                  "time_ms": 148460,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 136262,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 132810,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 131042,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 131625,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 130250,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 130352,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 130560,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 129925,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 129582,
+                  "is_incident": false
+                }
+              ],
+              "penalty": 0,
+              "pos": 8,
+              "class_pos": 2,
+              "points": 150,
+              "sprint_internal_pts": 150,
+              "sprint_bonus": 0,
+              "qualy_pos": "-",
+              "net_vs_q": "-",
+              "gap_best_ms": 5810,
+              "gap_pace_ms": 8324,
+              "race_gap": "+83.243s"
+            },
+            {
+              "name": "Jason Keen",
+              "raw_name": "Jason Keen",
+              "car_class": "TCX",
+              "car_model": 27,
+              "laps": 9,
+              "total_time": 1252170,
+              "best_lap_ms": 131055,
+              "best_lap": "2:11.055",
+              "avg_lap_ms": 139130,
+              "avg_time": "2:19.130",
+              "incidents": 7,
+              "lap_history": [
+                {
+                  "time_ms": 147935,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 134367,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 131055,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 134115,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 132332,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 135287,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 151552,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 137067,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 146132,
+                  "is_incident": true
+                }
+              ],
+              "penalty": 0,
+              "pos": 9,
+              "class_pos": 3,
+              "points": 135,
+              "sprint_internal_pts": 135,
+              "sprint_bonus": 0,
+              "qualy_pos": "-",
+              "net_vs_q": "-",
+              "gap_best_ms": 7283,
+              "gap_pace_ms": 14011,
+              "race_gap": "+0.974s"
+            },
+            {
+              "name": "kevin peeters",
+              "raw_name": "kevin peeters",
+              "car_class": "TCX",
+              "car_model": 27,
+              "laps": 7,
+              "total_time": 1282168,
+              "best_lap_ms": 124837,
+              "best_lap": "2:04.837",
+              "avg_lap_ms": 183166,
+              "avg_time": "3:03.166",
+              "incidents": 6,
+              "lap_history": [
+                {
+                  "time_ms": 142745,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 126062,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 124837,
+                  "is_incident": false
+                },
+                {
+                  "time_ms": 135207,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 123867,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 141960,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 125975,
+                  "is_incident": true
+                }
+              ],
+              "penalty": 0,
+              "pos": 10,
+              "class_pos": "DNF",
+              "points": 0,
+              "sprint_internal_pts": 0,
+              "sprint_bonus": 0,
+              "qualy_pos": 5,
+              "net_vs_q": -5,
+              "gap_best_ms": 1065,
+              "gap_pace_ms": 58047,
+              "race_gap": "+30.972s"
+            },
+            {
+              "name": "Purple Kelpie",
+              "raw_name": "Purple Kelpie",
+              "car_class": "TCX",
+              "car_model": 27,
+              "laps": 4,
+              "total_time": 1355548,
+              "best_lap_ms": 2147483647,
+              "best_lap": "-",
+              "avg_lap_ms": 0,
+              "avg_time": "-",
+              "incidents": 4,
+              "lap_history": [
+                {
+                  "time_ms": 142900,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 136750,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 131822,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 144732,
+                  "is_incident": true
+                }
+              ],
+              "penalty": 0,
+              "pos": 11,
+              "class_pos": "DNF",
+              "points": 0,
+              "sprint_internal_pts": 0,
+              "sprint_bonus": 0,
+              "qualy_pos": 8,
+              "net_vs_q": -3,
+              "gap_best_ms": 0,
+              "gap_pace_ms": 0,
+              "race_gap": "DNF"
+            },
+            {
+              "name": "Kamil Utku",
+              "raw_name": "Kamil Utku",
+              "car_class": "TCX",
+              "car_model": 27,
+              "laps": 2,
+              "total_time": 354976,
+              "best_lap_ms": 2147483647,
+              "best_lap": "-",
+              "avg_lap_ms": 0,
+              "avg_time": "-",
+              "incidents": 2,
+              "lap_history": [
+                {
+                  "time_ms": 135940,
+                  "is_incident": true
+                },
+                {
+                  "time_ms": 129812,
+                  "is_incident": true
+                }
+              ],
+              "penalty": 0,
+              "pos": 12,
+              "class_pos": "DNF",
+              "points": 0,
+              "sprint_internal_pts": 0,
+              "sprint_bonus": 0,
+              "qualy_pos": 10,
+              "net_vs_q": -2,
               "gap_best_ms": 0,
               "gap_pace_ms": 0,
               "race_gap": "DNF"

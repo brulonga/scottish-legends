@@ -5,15 +5,15 @@ import heroBg from '../assets/fondo.png';
 // ⚙️ PANEL DE CONFIGURACIÓN RÁPIDA 
 const HOME_CONFIG = { 
   mondayRace: { 
-    track: "Watkins Glen", 
-    dateIso: "2026-07-06T22:00:00+02:00",  
+    track: "Monza", 
+    dateIso: "2026-07-20T22:00:00+02:00",  
     details: "20 Min Qualy • 1.5h Race" 
   }, 
    
   fridayRace: { 
-    track: "Nordschleife", 
-    dateIso: "2026-07-03T22:00:00+02:00", 
-    details: "20 min Qualy • 70 min Race | Platinum & Gold Classes in GT4 | Silver & Bronze in GT3" 
+    track: "Endurance Showcase GT3 Spa-Francochamps", 
+    dateIso: "2026-07-24T22:00:00+02:00", 
+    details: "20 min Qualy • 70 min Race" 
   }, 
  
   featuredChannels: [ 
