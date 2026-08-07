@@ -11,7 +11,7 @@ export const getDriverCategories = (drivers) => {
   const mediaCarrerasGrid = validDrivers.length > 0 ? (totalRaces / validDrivers.length) : 3;
 
   // 3. Fórmula del multiplicador de constancia
-  let multiplicador = 0.325 - (0.025 * mediaCarrerasGrid);
+  let multiplicador = 0.325 - (0.015 * mediaCarrerasGrid);
   multiplicador = Math.max(0.05, Math.min(0.35, multiplicador));
 
   const categories = {};
