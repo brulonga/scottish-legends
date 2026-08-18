@@ -21,7 +21,7 @@ export const Community = ({ onNavigate }) => {
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           
-          {/* 📜 COLUMNA IZQUIERDA: REGLAS Y ADMINS */}
+          {/* 📜 COLUMNA IZQUIERDA: REGLAS, ADMINS Y BROADCASTERS */}
           <div className="lg:col-span-2 space-y-8">
             
             {/* REGLAS */}
@@ -92,18 +92,34 @@ export const Community = ({ onNavigate }) => {
                 <h3 className="font-['Teko'] text-3xl font-bold text-white uppercase tracking-wide mb-1">League Administrators</h3>
                 <p className="text-gray-500 text-xs uppercase tracking-widest font-bold">Contact them for any official league issues.</p>
               </div>
-              <div className="flex space-x-4 mt-6 md:mt-0">
-                <div className="bg-black border border-yellow-500/30 px-6 py-3 transform -skew-x-6 shadow-[0_0_15px_rgba(250,204,21,0.1)]">
+              <div className="flex space-x-4 mt-6 md:mt-0 overflow-x-auto pb-2 md:pb-0">
+                <div className="bg-black border border-yellow-500/30 px-6 py-3 transform -skew-x-6 shadow-[0_0_15px_rgba(250,204,21,0.1)] whitespace-nowrap">
                   <span className="font-['Teko'] text-2xl text-yellow-400 font-bold uppercase tracking-wider transform skew-x-6 block">Marty Fox</span>
                 </div>
-                <div className="bg-black border border-yellow-500/30 px-6 py-3 transform -skew-x-6 shadow-[0_0_15px_rgba(250,204,21,0.1)]">
+                <div className="bg-black border border-yellow-500/30 px-6 py-3 transform -skew-x-6 shadow-[0_0_15px_rgba(250,204,21,0.1)] whitespace-nowrap">
                   <span className="font-['Teko'] text-2xl text-yellow-400 font-bold uppercase tracking-wider transform skew-x-6 block">Raymond Crawford</span>
                 </div>
-                <div className="bg-black border border-yellow-500/30 px-6 py-3 transform -skew-x-6 shadow-[0_0_15px_rgba(250,204,21,0.1)]">
+                <div className="bg-black border border-yellow-500/30 px-6 py-3 transform -skew-x-6 shadow-[0_0_15px_rgba(250,204,21,0.1)] whitespace-nowrap">
                   <span className="font-['Teko'] text-2xl text-yellow-400 font-bold uppercase tracking-wider transform skew-x-6 block">Bruno Longarela</span>
                 </div>
-                <div className="bg-black border border-yellow-500/30 px-6 py-3 transform -skew-x-6 shadow-[0_0_15px_rgba(250,204,21,0.1)]">
+                <div className="bg-black border border-yellow-500/30 px-6 py-3 transform -skew-x-6 shadow-[0_0_15px_rgba(250,204,21,0.1)] whitespace-nowrap">
                   <span className="font-['Teko'] text-2xl text-yellow-400 font-bold uppercase tracking-wider transform skew-x-6 block">Micha Nieuwkoop</span>
+                </div>
+              </div>
+            </div>
+
+            {/* 🚀 NUEVO: BROADCASTERS */}
+            <div className="bg-[#0a0a0a] border border-gray-800 p-8 shadow-2xl flex flex-col md:flex-row items-center justify-between">
+              <div>
+                <h3 className="font-['Teko'] text-3xl font-bold text-white uppercase tracking-wide mb-1">League Broadcasters</h3>
+                <p className="text-gray-500 text-xs uppercase tracking-widest font-bold">The official voices of our league.</p>
+              </div>
+              <div className="flex space-x-4 mt-6 md:mt-0">
+                <div className="bg-black border border-yellow-500/30 px-6 py-3 transform -skew-x-6 shadow-[0_0_15px_rgba(250,204,21,0.1)] whitespace-nowrap">
+                  <span className="font-['Teko'] text-2xl text-yellow-400 font-bold uppercase tracking-wider transform skew-x-6 block">Andy Mcdonald</span>
+                </div>
+                <div className="bg-black border border-yellow-500/30 px-6 py-3 transform -skew-x-6 shadow-[0_0_15px_rgba(250,204,21,0.1)] whitespace-nowrap">
+                  <span className="font-['Teko'] text-2xl text-yellow-400 font-bold uppercase tracking-wider transform skew-x-6 block">Florian Braun</span>
                 </div>
               </div>
             </div>
@@ -143,7 +159,7 @@ export const Community = ({ onNavigate }) => {
               </ul>
             </div>
 
-            {/* 🚀 NUEVO: GET IN TOUCH */}
+            {/* GET IN TOUCH */}
             <div className="bg-[#0a0a0a] border border-gray-800 p-8 shadow-2xl text-center group hover:border-yellow-500/30 transition-colors">
               <Mail className="w-12 h-12 text-yellow-400 mx-auto mb-4" />
               <h3 className="font-['Teko'] text-3xl font-bold text-white uppercase tracking-wide mb-2">Get In Touch!</h3>

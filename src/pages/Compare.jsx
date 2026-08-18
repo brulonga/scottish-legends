@@ -3,6 +3,7 @@ import { Swords, ArrowLeft, AlertTriangle, Clock, Award, Flag, Activity } from '
 import { useLeagueData } from '../hooks/useLeagueData';
 import { getDriverProfile } from '../config/driversConfig';
 import { LineChart, Line, AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
+import { LeagueSelector } from './LeagueSelector'; // 🚀 IMPORTAMOS EL NUEVO COMPONENTE
 
 const msToTimeStr = (ms) => {
   if (!ms || ms === Infinity) return "-";
@@ -151,30 +152,14 @@ export const Compare = ({ onNavigate }) => {
           </h1>
           <p className="text-gray-400 text-sm uppercase tracking-widest font-bold mb-8">Comprehensive Telemetry & Stats Comparison</p>
         
-          <div className="flex flex-col md:flex-row gap-6 max-w-3xl mx-auto">
-            <div className="flex-1 space-y-2">
-              <label className="font-['Teko'] text-xl text-gray-500 uppercase tracking-widest text-left block">League</label>
-              <div className="flex space-x-2">
-                <button onClick={() => { setActiveLeague('monday_marathon'); setActiveSeason(null); }} className={`flex-1 py-2 px-4 transform -skew-x-12 transition-all duration-200 border border-gray-800 ${activeLeague === 'monday_marathon' ? 'bg-yellow-500 text-black shadow-[0_0_15px_rgba(250,204,21,0.3)]' : 'bg-[#0a0a0a] text-gray-400 hover:text-white'}`}>
-                  <span className="font-['Teko'] text-xl uppercase tracking-widest block transform skew-x-12">Monday</span>
-                </button>
-                <button onClick={() => { setActiveLeague('fun_friday'); setActiveSeason(null); }} className={`flex-1 py-2 px-4 transform -skew-x-12 transition-all duration-200 border border-gray-800 ${activeLeague === 'fun_friday' ? 'bg-yellow-500 text-black shadow-[0_0_15px_rgba(250,204,21,0.3)]' : 'bg-[#0a0a0a] text-gray-400 hover:text-white'}`}>
-                  <span className="font-['Teko'] text-xl uppercase tracking-widest block transform skew-x-12">Friday</span>
-                </button>
-              </div>
-            </div>
-
-            <div className={`flex-1 space-y-2 transition-opacity duration-300 ${activeLeague ? 'opacity-100' : 'opacity-30 pointer-events-none'}`}>
-              <label className="font-['Teko'] text-xl text-gray-500 uppercase tracking-widest text-left block">Season</label>
-              <div className="flex space-x-2">
-                <button onClick={() => setActiveSeason('season_1')} className={`flex-1 py-2 px-4 transform -skew-x-12 transition-all duration-200 border border-gray-800 ${activeSeason === 'season_1' ? 'bg-white text-black shadow-[0_0_15px_rgba(255,255,255,0.3)]' : 'bg-[#0a0a0a] text-gray-400 hover:text-white'}`}>
-                  <span className="font-['Teko'] text-xl uppercase tracking-widest block transform skew-x-12">Season 1</span>
-                </button>
-                <button onClick={() => setActiveSeason('season_2')} className={`flex-1 py-2 px-4 transform -skew-x-12 transition-all duration-200 border border-gray-800 ${activeSeason === 'season_2' ? 'bg-white text-black shadow-[0_0_15px_rgba(255,255,255,0.3)]' : 'bg-[#0a0a0a] text-gray-400 hover:text-white'}`}>
-                  <span className="font-['Teko'] text-xl uppercase tracking-widest block transform skew-x-12">Season 2</span>
-                </button>
-              </div>
-            </div>
+          {/* 🚀 SELECTOR DE LIGAS Y TEMPORADAS UNIFICADO */}
+          <div className="max-w-3xl mx-auto">
+            <LeagueSelector 
+              activeLeague={activeLeague} 
+              setActiveLeague={setActiveLeague} 
+              activeSeason={activeSeason} 
+              setActiveSeason={setActiveSeason} 
+            />
           </div>
         </div>
 

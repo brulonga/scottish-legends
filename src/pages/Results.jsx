@@ -1,6 +1,7 @@
 import { useState, useMemo, useEffect } from 'react';  
 import { Trophy, Timer, Flag, Calendar, AlertCircle } from 'lucide-react';  
 import { useLeagueData } from '../hooks/useLeagueData';  
+import { LeagueSelector } from './LeagueSelector'; // 🚀 IMPORTAMOS EL NUEVO COMPONENTE
 
 // --- FORMATEADORES 100% BLINDADOS ---
 const msToTimeStr = (ms) => {  
@@ -322,139 +323,102 @@ export const Results = ({
     });
   }, [currentEvent]);
 
-  return (
-    <div className="min-h-screen bg-black font-['Inter'] text-gray-300 py-8">
-      <div className="max-w-[1536px] mx-auto px-4">
+  return (  
+    <div className="min-h-screen bg-black font-['Inter'] text-gray-300 py-8">  
+      <div className="max-w-[1536px] mx-auto px-4">  
 
-        <div className="text-center mb-10 border-b border-gray-800 pb-8">
-          <div className="inline-flex items-center justify-center space-x-2 border border-yellow-500/30 px-6 py-2 rounded-full mb-6 bg-yellow-500/10">
-            <Trophy className="w-4 h-4 text-yellow-400" />
-            <span className="text-yellow-400 text-xs font-bold uppercase tracking-widest">Race Reports</span>
+        <div className="text-center mb-10 border-b border-gray-800 pb-8">  
+          <div className="inline-flex items-center justify-center space-x-2 border border-yellow-500/30 px-6 py-2 rounded-full mb-6 bg-yellow-500/10">  
+            <Trophy className="w-4 h-4 text-yellow-400" />  
+            <span className="text-yellow-400 text-xs font-bold uppercase tracking-widest">Race Reports</span>  
+          </div>  
+          <h1 className="font-['Teko'] text-6xl font-bold text-white mb-6 uppercase tracking-wide">  
+            Event <span className="text-yellow-400">Results</span>  
+          </h1>  
+           
+          {/* 🚀 SELECTORES DE LIGA Y TEMPORADA */}  
+          <div className="mt-6 max-w-4xl mx-auto">
+            <LeagueSelector 
+              activeLeague={activeLeague} 
+              setActiveLeague={setActiveLeague} 
+              activeSeason={activeSeason} 
+              setActiveSeason={setActiveSeason} 
+            />
           </div>
-          <h1 className="font-['Teko'] text-6xl font-bold text-white mb-6 uppercase tracking-wide">
-            Event <span className="text-yellow-400">Results</span>
-          </h1>
-          
-          {/* 🚀 SELECTORES DE LIGA Y TEMPORADA */}
-          <div className="flex flex-col md:flex-row gap-6 mt-6 max-w-4xl mx-auto">
-            <div className="flex-1 space-y-2">
-              <label className="font-['Teko'] text-xl text-gray-500 uppercase tracking-widest text-left block">1. Select League</label>
-              <div className="flex space-x-2">
-                <button
-                  onClick={() => { setActiveLeague('monday_marathon'); setActiveSeason(null); }}
-                  className={`flex-1 py-2 px-4 transform -skew-x-12 transition-all duration-200 border border-gray-800 ${
-                    activeLeague === 'monday_marathon' ? 'bg-yellow-500 text-black shadow-[0_0_15px_rgba(250,204,21,0.3)]' : 'bg-[#0a0a0a] text-gray-400 hover:border-yellow-500/50 hover:text-white'
-                  }`}
-                >
-                  <span className="font-['Teko'] text-xl uppercase tracking-widest block transform skew-x-12">Monday Marathon</span>
-                </button>
-                <button
-                  onClick={() => { setActiveLeague('fun_friday'); setActiveSeason(null); }}
-                  className={`flex-1 py-2 px-4 transform -skew-x-12 transition-all duration-200 border border-gray-800 ${
-                    activeLeague === 'fun_friday' ? 'bg-yellow-500 text-black shadow-[0_0_15px_rgba(250,204,21,0.3)]' : 'bg-[#0a0a0a] text-gray-400 hover:border-yellow-500/50 hover:text-white'
-                  }`}
-                >
-                  <span className="font-['Teko'] text-xl uppercase tracking-widest block transform skew-x-12">Fun Friday</span>
-                </button>
-              </div>
-            </div>
+        </div>  
 
-            <div className={`flex-1 space-y-2 transition-opacity duration-300 ${activeLeague ? 'opacity-100' : 'opacity-30 pointer-events-none'}`}>
-              <label className="font-['Teko'] text-xl text-gray-500 uppercase tracking-widest text-left block">2. Select Season</label>
-              <div className="flex space-x-2">
-                <button
-                  onClick={() => setActiveSeason('season_1')}
-                  className={`flex-1 py-2 px-4 transform -skew-x-12 transition-all duration-200 border border-gray-800 ${
-                    activeSeason === 'season_1' ? 'bg-white text-black shadow-[0_0_15px_rgba(255,255,255,0.3)]' : 'bg-[#0a0a0a] text-gray-400 hover:border-white/50 hover:text-white'
-                  }`}
-                >
-                  <span className="font-['Teko'] text-xl uppercase tracking-widest block transform skew-x-12">Season 1</span>
-                </button>
-                <button
-                  onClick={() => setActiveSeason('season_2')}
-                  className={`flex-1 py-2 px-4 transform -skew-x-12 transition-all duration-200 border border-gray-800 ${
-                    activeSeason === 'season_2' ? 'bg-white text-black shadow-[0_0_15px_rgba(255,255,255,0.3)]' : 'bg-[#0a0a0a] text-gray-400 hover:border-white/50 hover:text-white'
-                  }`}
-                >
-                  <span className="font-['Teko'] text-xl uppercase tracking-widest block transform skew-x-12">Season 2</span>
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
+        {/* ESTADOS DE CARGA Y VACÍO */}  
+        {!activeLeague || !activeSeason ? (  
+          <div className="bg-[#0a0a0a] p-16 text-center border border-gray-800 rounded-lg">  
+            <Flag className="w-20 h-20 text-gray-700 mx-auto mb-6 animate-pulse" />  
+            <h2 className="font-['Teko'] text-4xl text-gray-400 uppercase tracking-widest mb-2">Welcome to the Race Control</h2>  
+            <p className="text-gray-500 uppercase tracking-widest font-bold">Please select a League and a Season above to view the results.</p>  
+          </div>  
+        ) : loading ? (  
+          <div className="flex items-center justify-center py-20">  
+            <div className="animate-spin rounded-full h-16 w-16 border-t-2 border-b-2 border-yellow-500"></div>  
+          </div>  
+        ) : error ? (  
+          <div className="bg-red-900/20 p-8 text-center border border-red-500/30">  
+            <p className="text-red-400 uppercase tracking-widest font-bold">{error}</p>  
+          </div>  
+        ) : sessions.length === 0 ? (  
+          <div className="text-center py-20 border border-dashed border-gray-800 bg-[#0a0a0a] rounded-lg">  
+            <Calendar className="w-16 h-16 text-gray-700 mx-auto mb-4" />  
+            <p className="text-gray-400 text-lg font-bold uppercase tracking-widest">No races have been held yet in this season.</p>  
+          </div>  
+        ) : (  
+          <>  
+            {/* SELECTOR DE CARRERA (ROUND) */}  
+            <div className="mb-10 max-w-xl mx-auto">  
+              <label className="text-gray-500 font-['Teko'] text-xl uppercase tracking-widest mb-2 block text-center">Select Race Event</label>  
+              <div className="relative">  
+                <select  
+                  value={selectedRound}  
+                  onChange={(e) => setSelectedRound(Number(e.target.value))}  
+                  className="w-full bg-[#0a0a0a] border border-gray-700 text-white p-4 font-['Teko'] text-2xl uppercase tracking-widest outline-none focus:border-yellow-500 transition-colors appearance-none cursor-pointer"  
+                >  
+                  {sessions.map((session, idx) => (  
+                    <option key={idx} value={idx}>{session.name || `Round ${idx + 1}`}</option>  
+                  ))}  
+                </select>  
+                <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-gray-400">  
+                  <svg className="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>  
+                </div>  
+              </div>  
+            </div>  
 
-        {/* ESTADOS DE CARGA Y VACÍO */}
-        {!activeLeague || !activeSeason ? (
-          <div className="bg-[#0a0a0a] p-16 text-center border border-gray-800 rounded-lg">
-            <Flag className="w-20 h-20 text-gray-700 mx-auto mb-6 animate-pulse" />
-            <h2 className="font-['Teko'] text-4xl text-gray-400 uppercase tracking-widest mb-2">Welcome to the Race Control</h2>
-            <p className="text-gray-500 uppercase tracking-widest font-bold">Please select a League and a Season above to view the results.</p>
-          </div>
-        ) : loading ? (
-          <div className="flex items-center justify-center py-20">
-            <div className="animate-spin rounded-full h-16 w-16 border-t-2 border-b-2 border-yellow-500"></div>
-          </div>
-        ) : error ? (
-          <div className="bg-red-900/20 p-8 text-center border border-red-500/30">
-            <p className="text-red-400 uppercase tracking-widest font-bold">{error}</p>
-          </div>
-        ) : sessions.length === 0 ? (
-          <div className="text-center py-20 border border-dashed border-gray-800 bg-[#0a0a0a] rounded-lg">
-            <Calendar className="w-16 h-16 text-gray-700 mx-auto mb-4" />
-            <p className="text-gray-400 text-lg font-bold uppercase tracking-widest">No races have been held yet in this season.</p>
-          </div>
-        ) : (
-          <>
-            {/* SELECTOR DE CARRERA (ROUND) */}
-            <div className="mb-10 max-w-xl mx-auto">
-              <label className="text-gray-500 font-['Teko'] text-xl uppercase tracking-widest mb-2 block text-center">Select Race Event</label>
-              <div className="relative">
-                <select
-                  value={selectedRound}
-                  onChange={(e) => setSelectedRound(Number(e.target.value))}
-                  className="w-full bg-[#0a0a0a] border border-gray-700 text-white p-4 font-['Teko'] text-2xl uppercase tracking-widest outline-none focus:border-yellow-500 transition-colors appearance-none cursor-pointer"
-                >
-                  {sessions.map((session, idx) => (
-                    <option key={idx} value={idx}>{session.name || `Round ${idx + 1}`}</option>
-                  ))}
-                </select>
-                <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-gray-400">
-                  <svg className="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
-                </div>
-              </div>
-            </div>
+            {/* TABLAS DE RESULTADOS POR CLASE */}  
+            {currentEvent && groupedClassData.length > 0 ? (  
+              groupedClassData.map((group) => (  
+                <div key={group.uniqueId} className="mb-16 animate-fade-in">  
 
-            {/* TABLAS DE RESULTADOS POR CLASE */}
-            {currentEvent && groupedClassData.length > 0 ? (
-              groupedClassData.map((group) => (
-                <div key={group.uniqueId} className="mb-16 animate-fade-in">
+                  {/* TÍTULO DE LA SESIÓN Y CLASE */}  
+                  <div className="mb-6 flex flex-col border-b border-gray-800 pb-2">  
+                    <span className="text-blue-400 text-sm font-bold uppercase tracking-widest mb-1">  
+                      {group.sessionName}  
+                    </span>  
+                    <div className="flex items-center">  
+                      <div className="w-1.5 h-8 bg-yellow-500 mr-4"></div>  
+                      <h2 className="font-['Teko'] text-5xl font-bold text-white uppercase tracking-wide">  
+                        {group.className} Class  
+                      </h2>  
+                    </div>  
+                  </div>  
 
-                  {/* TÍTULO DE LA SESIÓN Y CLASE */}
-                  <div className="mb-6 flex flex-col border-b border-gray-800 pb-2">
-                    <span className="text-blue-400 text-sm font-bold uppercase tracking-widest mb-1">
-                      {group.sessionName}
-                    </span>
-                    <div className="flex items-center">
-                      <div className="w-1.5 h-8 bg-yellow-500 mr-4"></div>
-                      <h2 className="font-['Teko'] text-5xl font-bold text-white uppercase tracking-wide">
-                        {group.className} Class
-                      </h2>
-                    </div>
-                  </div>
-
-                  {group.qualyResults.length > 0 && <QualyTable data={group.qualyResults} bestSectors={group.bestSectors} onDriverClick={onDriverClick} />}
-                  {group.raceResults.length > 0 && <RaceTable data={group.raceResults} bestLap={group.bestLap} bestPace={group.bestPace} onDriverClick={onDriverClick} />}
-                </div>
-              ))
-            ) : (
-              <div className="text-center py-20 border border-dashed border-gray-800 bg-[#0a0a0a] rounded-lg">
-                <AlertCircle className="w-16 h-16 text-gray-700 mx-auto mb-4" />
-                <p className="text-gray-400 text-lg font-bold uppercase tracking-widest">No valid results found for this event.</p>
-              </div>
-            )}
-          </>
-        )}
-      </div>
-    </div>
-  );
+                  {group.qualyResults.length > 0 && <QualyTable data={group.qualyResults} bestSectors={group.bestSectors} onDriverClick={onDriverClick} />}  
+                  {group.raceResults.length > 0 && <RaceTable data={group.raceResults} bestLap={group.bestLap} bestPace={group.bestPace} onDriverClick={onDriverClick} />}  
+                </div>  
+              ))  
+            ) : (  
+              <div className="text-center py-20 border border-dashed border-gray-800 bg-[#0a0a0a] rounded-lg">  
+                <AlertCircle className="w-16 h-16 text-gray-700 mx-auto mb-4" />  
+                <p className="text-gray-400 text-lg font-bold uppercase tracking-widest">No valid results found for this event.</p>  
+              </div>  
+            )}  
+          </>  
+        )}  
+      </div>  
+    </div>  
+  );  
 };

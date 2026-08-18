@@ -42,7 +42,7 @@ const HOME_CONFIG = {
       name: "NewbFixer", 
       description: "Liveries & Content", 
       url: "https://www.youtube.com/@NewbFixer", 
-      bgImage: "", 
+      bgImage: "/assets/yt/nwbfixer_fondo.png", 
       avatar: ""  
     } 
   ] 

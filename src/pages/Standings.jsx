@@ -3,7 +3,8 @@ import { Trophy, ChevronUp, ChevronDown, Filter, Flag, CalendarDays } from 'luci
 import { useLeagueData } from '../hooks/useLeagueData'; 
 import { isLegendDriver } from '../config/driversConfig'; 
 import { getDriverCategories } from '../utils/categoryEngine'; 
- 
+import { LeagueSelector } from './LeagueSelector'; // 🚀 IMPORTAMOS EL NUEVO COMPONENTE
+
 export const Standings = ({ onDriverClick }) => { 
   const [activeLeague, setActiveLeague] = useState(null); 
   const [activeSeason, setActiveSeason] = useState(null); 
@@ -15,6 +16,9 @@ export const Standings = ({ onDriverClick }) => {
   
   const rawDrivers = leagueData?.global || []; 
   const driverCategories = useMemo(() => getDriverCategories(rawDrivers), [rawDrivers]); 
+  
+  // 💡 LÓGICA INTELIGENTE: Si el JSON trae calendario, mostramos la tabla detallada
+  const hasCalendar = leagueData?.calendar && leagueData.calendar.length > 0;
 
   const getCategoryDisplay = (driver) => {
     if (typeof driver.category === 'string') {
@@ -48,10 +52,7 @@ export const Standings = ({ onDriverClick }) => {
           position: index + 1,  
           category: cat, 
           points: d.points || 0,  
-          
-          // 🚀 RECUPERAMOS EL EXPECTED POS DE LA CATEGORÍA O DEL JSON
           expectedPos: cat.expectedPos || d.expectedPos || 999,
-          
           avgPoints: d.avg_points,  
           avgQualyPos: d.avg_qualy_pos,  
           avgQualyGap: d.avg_qualy_gap, 
@@ -79,7 +80,6 @@ export const Standings = ({ onDriverClick }) => {
         return 0;
       }
 
-      // Safeguard numérico igual al que tenías originalmente
       let valA = a[sortConfig.key];
       let valB = b[sortConfig.key];
 
@@ -102,10 +102,9 @@ export const Standings = ({ onDriverClick }) => {
     return result;
   }, [baseDriversList, categoryFilter, sortConfig]); 
 
-  // 🚀 RECUPERAMOS TU LÓGICA DE ORDENACIÓN ORIGINAL (Menor a mayor por defecto en posiciones/gaps)
   const requestSort = (key) => { 
     let direction = 'desc'; 
-    if (['driver', 'category', 'expectedPos', 'avgQualyGap', 'avgPaceGap', 'avgQualyPos', 'avgRacePos'].includes(key)) {
+    if (['driver', 'category', 'expectedPos', 'avgQualyGap', 'avgPaceGap', 'avgQualyPos', 'avgRacePos', 'races'].includes(key)) {
       direction = 'asc'; 
     }
     if (sortConfig && sortConfig.key === key && sortConfig.direction === direction) {
@@ -116,9 +115,12 @@ export const Standings = ({ onDriverClick }) => {
 
   const SortableHeader = ({ title, sortKey, align = 'center' }) => {
     const isActive = sortConfig?.key === sortKey;
+    // 💡 Fix para Tailwind
+    const alignClasses = { left: 'text-left', center: 'text-center', right: 'text-right' };
+    
     return (
       <th 
-        className={`px-2 py-3 text-${align} font-['Teko'] text-lg font-bold text-gray-400 uppercase tracking-widest cursor-pointer hover:bg-gray-800 hover:text-white transition-colors group select-none`}
+        className={`px-2 py-3 ${alignClasses[align]} font-['Teko'] text-lg font-bold text-gray-400 uppercase tracking-widest cursor-pointer hover:bg-gray-800 hover:text-white transition-colors group select-none`}
         onClick={() => requestSort(sortKey)}
       >
         <div className={`flex items-center space-x-1 ${align === 'center' ? 'justify-center' : align === 'right' ? 'justify-end' : 'justify-start'}`}>
@@ -166,51 +168,13 @@ export const Standings = ({ onDriverClick }) => {
         <div className="mb-10 text-center md:text-left border-b border-gray-800 pb-8">
           <h1 className="font-['Teko'] text-6xl font-bold text-white mb-6 uppercase tracking-wide">Championship Standings</h1>
           
-          <div className="flex flex-col md:flex-row gap-6">
-            <div className="flex-1 space-y-2">
-              <label className="font-['Teko'] text-xl text-gray-500 uppercase tracking-widest">1. Select League</label>
-              <div className="flex space-x-2">
-                <button
-                  onClick={() => { setActiveLeague('monday_marathon'); setActiveSeason(null); }}
-                  className={`flex-1 py-3 px-4 transform -skew-x-12 transition-all duration-200 border border-gray-800 ${
-                    activeLeague === 'monday_marathon' ? 'bg-yellow-500 text-black shadow-[0_0_15px_rgba(250,204,21,0.3)]' : 'bg-[#0a0a0a] text-gray-400 hover:border-yellow-500/50 hover:text-white'
-                  }`}
-                >
-                  <span className="font-['Teko'] text-2xl uppercase tracking-widest block transform skew-x-12">Monday Marathon</span>
-                </button>
-                <button
-                  onClick={() => { setActiveLeague('fun_friday'); setActiveSeason(null); }}
-                  className={`flex-1 py-3 px-4 transform -skew-x-12 transition-all duration-200 border border-gray-800 ${
-                    activeLeague === 'fun_friday' ? 'bg-yellow-500 text-black shadow-[0_0_15px_rgba(250,204,21,0.3)]' : 'bg-[#0a0a0a] text-gray-400 hover:border-yellow-500/50 hover:text-white'
-                  }`}
-                >
-                  <span className="font-['Teko'] text-2xl uppercase tracking-widest block transform skew-x-12">Fun Friday</span>
-                </button>
-              </div>
-            </div>
-
-            <div className={`flex-1 space-y-2 transition-opacity duration-300 ${activeLeague ? 'opacity-100' : 'opacity-30 pointer-events-none'}`}>
-              <label className="font-['Teko'] text-xl text-gray-500 uppercase tracking-widest">2. Select Season</label>
-              <div className="flex space-x-2">
-                <button
-                  onClick={() => setActiveSeason('season_1')}
-                  className={`flex-1 py-3 px-4 transform -skew-x-12 transition-all duration-200 border border-gray-800 ${
-                    activeSeason === 'season_1' ? 'bg-white text-black shadow-[0_0_15px_rgba(255,255,255,0.3)]' : 'bg-[#0a0a0a] text-gray-400 hover:border-white/50 hover:text-white'
-                  }`}
-                >
-                  <span className="font-['Teko'] text-2xl uppercase tracking-widest block transform skew-x-12">Season 1</span>
-                </button>
-                <button
-                  onClick={() => setActiveSeason('season_2')}
-                  className={`flex-1 py-3 px-4 transform -skew-x-12 transition-all duration-200 border border-gray-800 ${
-                    activeSeason === 'season_2' ? 'bg-white text-black shadow-[0_0_15px_rgba(255,255,255,0.3)]' : 'bg-[#0a0a0a] text-gray-400 hover:border-white/50 hover:text-white'
-                  }`}
-                >
-                  <span className="font-['Teko'] text-2xl uppercase tracking-widest block transform skew-x-12">Season 2 (Tournament)</span>
-                </button>
-              </div>
-            </div>
-          </div>
+          {/* 🚀 SELECTOR DE LIGAS Y TEMPORADAS UNIFICADO */}
+          <LeagueSelector 
+            activeLeague={activeLeague} 
+            setActiveLeague={setActiveLeague} 
+            activeSeason={activeSeason} 
+            setActiveSeason={setActiveSeason} 
+          />
         </div>
 
         {!activeLeague || !activeSeason ? (
@@ -249,10 +213,10 @@ export const Standings = ({ onDriverClick }) => {
               ))}
             </div>
 
-            {activeSeason === 'season_2' && leagueData?.calendar ? (
+            {hasCalendar ? (
               <div className="space-y-12">
                 
-                {/* TABLA 1: MARCADOR GENERAL Y ESTADÍSTICAS (Con Exp Pos) */}
+                {/* TABLA 1: MARCADOR GENERAL Y ESTADÍSTICAS */}
                 <div>
                   <h3 className="font-['Teko'] text-3xl text-yellow-500 uppercase tracking-widest mb-4 flex items-center">
                     <Trophy className="w-6 h-6 mr-2" /> Overall & Category Standings
@@ -264,7 +228,6 @@ export const Standings = ({ onDriverClick }) => {
                           <SortableHeader title="Pos" sortKey="position" align="left" />
                           <SortableHeader title="Driver" sortKey="driver" align="left" />
                           <SortableHeader title="Cat" sortKey="category" />
-                          {/* 🚀 VUELVE EL EXPECTED POS */}
                           <SortableHeader title="Exp Pos" sortKey="expectedPos" />
                           <SortableHeader title="Total Pts" sortKey="points" />
                           <SortableHeader title="Avg Pts" sortKey="avgPoints" />
@@ -285,7 +248,6 @@ export const Standings = ({ onDriverClick }) => {
                                 {driver.category.name}
                               </span>
                             </td>
-                            {/* 🚀 DIBUJAMOS EL EXPECTED POS CON TU ESTILO */}
                             <td className="px-2 py-3 text-center font-['Teko'] text-3xl font-bold text-blue-400 drop-shadow-[0_0_5px_rgba(96,165,250,0.3)]">
                               {driver.expectedPos !== 999 ? `P${driver.expectedPos}` : '-'}
                             </td>
@@ -352,7 +314,7 @@ export const Standings = ({ onDriverClick }) => {
               </div>
             ) : (
               
-              /* VISTA TEMPORADA 1 (Clásica) */
+              /* VISTA BÁSICA (Sin Calendario) */
               <div className="bg-[#0a0a0a] border border-gray-800 shadow-2xl overflow-x-auto">
                 <table className="w-full whitespace-nowrap">
                   <thead className="bg-black border-b border-gray-800">
@@ -360,12 +322,12 @@ export const Standings = ({ onDriverClick }) => {
                       <SortableHeader title="Pos" sortKey="position" align="left" />
                       <SortableHeader title="Driver" sortKey="driver" align="left" />
                       <SortableHeader title="Cat" sortKey="category" />
-                      {/* 🚀 VUELVE EL EXPECTED POS */}
                       <SortableHeader title="Exp Pos" sortKey="expectedPos" />
                       <SortableHeader title="Pts" sortKey="points" />
                       <SortableHeader title="Avg Pts" sortKey="avgPoints" />
                       <SortableHeader title="Avg Q Pos" sortKey="avgQualyPos" />
                       <SortableHeader title="Avg R Pos" sortKey="avgRacePos" />
+                      <SortableHeader title="Races" sortKey="races" />
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-gray-800/50">
@@ -378,7 +340,6 @@ export const Standings = ({ onDriverClick }) => {
                             {driver.category.name.substring(0, 4)}
                           </span>
                         </td>
-                        {/* 🚀 DIBUJAMOS EL EXPECTED POS */}
                         <td className="px-2 py-3 text-center font-['Teko'] text-3xl font-bold text-blue-400 drop-shadow-[0_0_5px_rgba(96,165,250,0.3)]">
                           {driver.expectedPos !== 999 ? `P${driver.expectedPos}` : '-'}
                         </td>
@@ -386,6 +347,7 @@ export const Standings = ({ onDriverClick }) => {
                         <td className="px-2 py-3 text-center font-bold text-gray-400 text-sm">{driver.avgPoints || '-'}</td>
                         <td className="px-2 py-3 text-center text-gray-300 font-bold text-sm">{driver.avgQualyPos ? `P${driver.avgQualyPos}` : '-'}</td>
                         <td className="px-2 py-3 text-center text-gray-300 font-bold text-sm">{driver.avgRacePos ? `P${driver.avgRacePos}` : '-'}</td>
+                        <td className="px-2 py-3 text-center text-gray-500 font-bold text-sm">{driver.races}</td>
                       </tr>
                     ))}
                   </tbody>
