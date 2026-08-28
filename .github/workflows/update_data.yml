@@ -1,0 +1,36 @@
+name: Actualizar Ligas y Estadísticas
+on:
+  workflow_dispatch: # Te permite ejecutarlo manualmente desde GitHub cuando quieras
+  # push: # (Descomenta 'push' si quieres que también se ejecute cada vez que hagas cambios en el código)
+  #   branches: [ main ]
+
+jobs:
+  run-python-script:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Descargar código del repositorio
+        uses: actions/checkout@v3
+
+      - name: Configurar Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Instalar librerías de Google
+        run: |
+          python -m pip install --upgrade pip
+          pip install google-auth google-auth-oauthlib google-auth-httplib2 google-api-python-client
+
+      - name: Ejecutar script de procesamiento
+        env:
+          GDRIVE_CREDENTIALS: ${{ secrets.GDRIVE_CREDENTIALS }}
+          FOLDER_ID: ${{ secrets.FOLDER_ID }}
+        run: |
+          python scripts/process_data.py
+
+      - name: Subir cambios automáticamente a la web
+        run: |
+          git config --local user.email "bot@scottishlegends.com"
+          git config --local user.name "Auto-Stats Bot"
+          git add .
+          git diff --quiet && git diff --staged --quiet || (git commit -m "🤖 Actualización automática de datos y ELO desde Google Drive" && git push)
