@@ -20,7 +20,7 @@ ORDEN_PISTAS = [
 # --- SISTEMA DE SANCIONES ---
 PENALTIES = {
     "monza": {
-        "Leonardo Cocco"
+        "Leonardo Cocco": 5,
     }
 }
 
