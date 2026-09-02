@@ -27,6 +27,9 @@ jobs:
           FOLDER_ID: ${{ secrets.FOLDER_ID }}
         run: |
           python scripts/process_data.py
+          python scripts/FF_season_3.py
+          python scripts/MM_season_2.py
+
 
       - name: Subir cambios automáticamente a la web
         run: |
