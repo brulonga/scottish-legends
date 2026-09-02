@@ -36,4 +36,4 @@ jobs:
           git config --local user.email "bot@scottishlegends.com"
           git config --local user.name "Auto-Stats Bot"
           git add .
-          git diff --quiet && git diff --staged --quiet || (git commit -m "🤖 Actualización automática de datos y ELO desde Google Drive" && git push)
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Update from Google Drive" && git push)
