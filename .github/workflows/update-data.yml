@@ -26,7 +26,15 @@ jobs:
           GDRIVE_CREDENTIALS: ${{ secrets.GDRIVE_CREDENTIALS }}
           FOLDER_ID: ${{ secrets.FOLDER_ID }}
         run: |
+          # 1. Descargamos de Drive
           python scripts/process_data.py
+          
+          # 2. EL CHIVATO: Imprimir en pantalla todo lo que se ha descargado
+          echo "🔍 --- MAPA DE CARPETAS DE DRIVE --- 🔍"
+          find public/data/gdrive_sync -type f || echo "La carpeta está vacía o no existe"
+          echo "---------------------------------------"
+          
+          # 3. Procesar
           python scripts/FF_season_3.py
           python scripts/MM_season_2.py
 
