@@ -58,8 +58,21 @@ def custom_sort_leaderboard(line):
     ttime = line['timing']['totalTime']
     return (-laps, ttime)
 
-def get_car_class(car_group):
-    """Detector automático de clases para Fun Friday"""
+def get_car_class(car_model, car_group=""):
+    """Detector infalible basado en el ID oficial de ACC y con fallback a texto"""
+    try:
+        model = int(car_model)
+    except (TypeError, ValueError):
+        model = 0
+        
+    # Rangos oficiales de modelos en ACC
+    if 50 <= model <= 61: return "GT4"
+    if model in [80, 82, 83, 84, 85, 86, 18, 29, 26]: return "GT2" # O ajustes de copa/challenge según tu configuración
+    if model in [9, 28, 26]: return "CUP" # Incluimos modelos de Porsche Cup / Challange comunes
+    if model == 27: return "TCX"
+    if 0 <= model <= 45: return "GT3"
+    
+    # Si el ID no encaja, tiramos del texto del servidor como respaldo
     grp = str(car_group).upper()
     if "GT4" in grp: return "GT4"
     if "TCX" in grp: return "TCX"
@@ -143,7 +156,7 @@ def load_and_process():
             car_id_to_class = {}
             for line in race_leaderboard:
                 cid = line['car']['carId']
-                car_id_to_class[cid] = get_car_class(line['car']['carGroup'])
+                car_id_to_class[cid] = get_car_class(line['car'].get('carModel', 0), line['car'].get('carGroup', ''))
 
             qualy_dict = {}
             qualy_pole_ms = defaultdict(lambda: 2000000000)
