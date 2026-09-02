@@ -527,7 +527,7 @@ def load_and_process():
             "favorite_car": max(data["cars"], key=data["cars"].get) if data["cars"] else 0,
             "points": data["total_points"], "avg_points": round(avg_points, 2),
             "avg_pos": avg_pos_str, "avg_pace_pos": avg_pace_pos_str, "net_pos_gained": data["pos_gained_vs_pace"],
-            "avg_qualy_pos": avg_q_pos_str, "avg_qualy_gap": avg_q_gap_str, "net_pos_gained_qualy": data["net_pos_gained_qualy"],
+            "avg_qualy_pos": avg_q_pos_str, "avg_qualy_gap": avg_q_gap_str, "net_pos_gained_vs_qualy": data["net_pos_gained_vs_qualy"],
             "avg_gap": avg_gap_str, "races": data["races"] 
         })
     
