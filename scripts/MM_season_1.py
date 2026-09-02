@@ -6,7 +6,7 @@ import re
 # --- CONFIGURATION ---
 MIN_LAPS_STATS = 0.50        # 50%: Mínimo para extraer telemetría y ritmo (pero no suma carrera ni puntos)
 MIN_LAPS_CLASSIFIED = 0.90   # 90%: Mínimo para recibir puntos, contar como carrera terminada y afectar a la media
-OUTPUT_FILE = "dashboard_data.json"
+OUTPUT_FILE = "public/data/monday_marathon/season_1.json"
 
 # --- CALENDARIO DEL CAMPEONATO (Orden estricto de Rondas) ---
 # --- CALENDARIO DEL CAMPEONATO (Orden temporal) ---
