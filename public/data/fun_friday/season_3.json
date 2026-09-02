@@ -2,37 +2,37 @@
   "global": [
     {
       "name": "Marsi Bella [SL]",
-      "car_class": "GT3",
+      "car_class": "CUP",
       "favorite_car": 26,
-      "points": 360,
+      "points": 180,
       "avg_points": 180.0,
       "avg_pos": 1.0,
       "avg_pace_pos": 1.0,
       "net_pos_gained": 0,
-      "avg_qualy_pos": 1.2,
-      "avg_qualy_gap": "+0.079",
-      "net_pos_gained_qualy": 0,
+      "avg_qualy_pos": 1.0,
+      "avg_qualy_gap": "+0.000",
+      "net_pos_gained_vs_qualy": 0,
       "avg_gap": "+0.000",
-      "races": 2
+      "races": 1
     },
     {
-      "name": "Raymond Crawford [SL]",
-      "car_class": "GT3",
-      "favorite_car": 26,
-      "points": 174,
-      "avg_points": 87.0,
-      "avg_pos": 6.5,
-      "avg_pace_pos": 9.5,
+      "name": "Marsi Bella [SL]",
+      "car_class": "TCX",
+      "favorite_car": 27,
+      "points": 180,
+      "avg_points": 180.0,
+      "avg_pos": 1.0,
+      "avg_pace_pos": 1.0,
       "net_pos_gained": 0,
-      "avg_qualy_pos": 7.8,
-      "avg_qualy_gap": "+1.400",
-      "net_pos_gained_qualy": 0,
-      "avg_gap": "+5.345",
-      "races": 2
+      "avg_qualy_pos": 1.5,
+      "avg_qualy_gap": "+0.158",
+      "net_pos_gained_vs_qualy": 0,
+      "avg_gap": "+0.000",
+      "races": 1
     },
     {
       "name": "Julian Ma\u00dfner",
-      "car_class": "GT3",
+      "car_class": "TCX",
       "favorite_car": 27,
       "points": 150,
       "avg_points": 150.0,
@@ -41,88 +41,58 @@
       "net_pos_gained": 0,
       "avg_qualy_pos": 2.0,
       "avg_qualy_gap": "+0.311",
-      "net_pos_gained_qualy": 0,
+      "net_pos_gained_vs_qualy": 0,
       "avg_gap": "+0.830",
       "races": 1
     },
     {
       "name": "Bence Kamaras",
-      "car_class": "GT3",
+      "car_class": "CUP",
       "favorite_car": 26,
       "points": 150,
       "avg_points": 150.0,
       "avg_pos": 2.0,
-      "avg_pace_pos": 3.0,
+      "avg_pace_pos": 4.5,
       "net_pos_gained": 0,
       "avg_qualy_pos": 3.5,
       "avg_qualy_gap": "+0.802",
-      "net_pos_gained_qualy": 0,
-      "avg_gap": "+1.273",
+      "net_pos_gained_vs_qualy": 0,
+      "avg_gap": "+1.328",
       "races": 1
     },
     {
       "name": "Micha Nieuwkoop",
-      "car_class": "GT3",
+      "car_class": "CUP",
       "favorite_car": 26,
       "points": 120,
       "avg_points": 120.0,
       "avg_pos": 3.0,
-      "avg_pace_pos": 5.5,
+      "avg_pace_pos": 6.5,
       "net_pos_gained": 0,
       "avg_qualy_pos": 6.5,
       "avg_qualy_gap": "+1.042",
-      "net_pos_gained_qualy": 0,
-      "avg_gap": "+1.730",
+      "net_pos_gained_vs_qualy": 0,
+      "avg_gap": "+1.781",
       "races": 1
     },
     {
       "name": "Stuart Woolley",
-      "car_class": "GT3",
+      "car_class": "TCX",
       "favorite_car": 27,
       "points": 120,
       "avg_points": 120.0,
       "avg_pos": 3.0,
-      "avg_pace_pos": 5.5,
+      "avg_pace_pos": 6.5,
       "net_pos_gained": 0,
       "avg_qualy_pos": 7.5,
       "avg_qualy_gap": "+1.740",
-      "net_pos_gained_qualy": 0,
+      "net_pos_gained_vs_qualy": 0,
       "avg_gap": "+2.221",
       "races": 1
     },
     {
-      "name": ".. miru..momo..",
-      "car_class": "GT3",
-      "favorite_car": 26,
-      "points": 120,
-      "avg_points": 60.0,
-      "avg_pos": 11.0,
-      "avg_pace_pos": 11.0,
-      "net_pos_gained": 0,
-      "avg_qualy_pos": 14.0,
-      "avg_qualy_gap": "+1.847",
-      "net_pos_gained_qualy": 0,
-      "avg_gap": "+3.457",
-      "races": 2
-    },
-    {
-      "name": "Alex Grandi",
-      "car_class": "GT3",
-      "favorite_car": 26,
-      "points": 105,
-      "avg_points": 105.0,
-      "avg_pos": 4.0,
-      "avg_pace_pos": 5.5,
-      "net_pos_gained": 0,
-      "avg_qualy_pos": 8.5,
-      "avg_qualy_gap": "+1.259",
-      "net_pos_gained_qualy": 0,
-      "avg_gap": "+1.891",
-      "races": 1
-    },
-    {
       "name": "Pauli Keski-Filppula",
-      "car_class": "GT3",
+      "car_class": "TCX",
       "favorite_car": 27,
       "points": 105,
       "avg_points": 105.0,
@@ -131,133 +101,148 @@
       "net_pos_gained": 0,
       "avg_qualy_pos": 3.5,
       "avg_qualy_gap": "+0.894",
-      "net_pos_gained_qualy": 0,
-      "avg_gap": "+2.295",
+      "net_pos_gained_vs_qualy": 0,
+      "avg_gap": "+1.939",
+      "races": 1
+    },
+    {
+      "name": "Alex Grandi",
+      "car_class": "CUP",
+      "favorite_car": 26,
+      "points": 105,
+      "avg_points": 105.0,
+      "avg_pos": 4.0,
+      "avg_pace_pos": 6.5,
+      "net_pos_gained": 0,
+      "avg_qualy_pos": 8.5,
+      "avg_qualy_gap": "+1.259",
+      "net_pos_gained_vs_qualy": 0,
+      "avg_gap": "+1.952",
       "races": 1
     },
     {
       "name": "Marty Fox [SL]",
-      "car_class": "GT3",
+      "car_class": "CUP",
       "favorite_car": 26,
+      "points": 96,
+      "avg_points": 96.0,
+      "avg_pos": 5.0,
+      "avg_pace_pos": 6.5,
+      "net_pos_gained": 0,
+      "avg_qualy_pos": 9.5,
+      "avg_qualy_gap": "+1.540",
+      "net_pos_gained_vs_qualy": 0,
+      "avg_gap": "+1.950",
+      "races": 1
+    },
+    {
+      "name": "Youssef Mohamed",
+      "car_class": "TCX",
+      "favorite_car": 27,
       "points": 96,
       "avg_points": 96.0,
       "avg_pos": 5.0,
       "avg_pace_pos": 8.0,
       "net_pos_gained": 0,
-      "avg_qualy_pos": 9.5,
-      "avg_qualy_gap": "+1.540",
-      "net_pos_gained_qualy": 0,
-      "avg_gap": "+2.190",
-      "races": 1
-    },
-    {
-      "name": "Youssef Mohamed",
-      "car_class": "GT3",
-      "favorite_car": 27,
-      "points": 96,
-      "avg_points": 96.0,
-      "avg_pos": 5.0,
-      "avg_pace_pos": 7.5,
-      "net_pos_gained": 0,
       "avg_qualy_pos": 6.5,
       "avg_qualy_gap": "+1.114",
-      "net_pos_gained_qualy": 0,
-      "avg_gap": "+2.798",
+      "net_pos_gained_vs_qualy": 0,
+      "avg_gap": "+2.188",
       "races": 1
     },
     {
       "name": "Ulrich BigU",
-      "car_class": "GT3",
+      "car_class": "TCX",
       "favorite_car": 27,
       "points": 90,
       "avg_points": 90.0,
       "avg_pos": 6.0,
-      "avg_pace_pos": 6.0,
+      "avg_pace_pos": 7.5,
       "net_pos_gained": 0,
       "avg_qualy_pos": 13.0,
       "avg_qualy_gap": "+3.578",
-      "net_pos_gained_qualy": 0,
-      "avg_gap": "+2.557",
+      "net_pos_gained_vs_qualy": 0,
+      "avg_gap": "+2.218",
+      "races": 1
+    },
+    {
+      "name": "Raymond Crawford [SL]",
+      "car_class": "CUP",
+      "favorite_car": 26,
+      "points": 90,
+      "avg_points": 90.0,
+      "avg_pos": 6.0,
+      "avg_pace_pos": 9.0,
+      "net_pos_gained": 0,
+      "avg_qualy_pos": 10.0,
+      "avg_qualy_gap": "+1.524",
+      "net_pos_gained_vs_qualy": 0,
+      "avg_gap": "+2.225",
+      "races": 1
+    },
+    {
+      "name": "Raymond Crawford [SL]",
+      "car_class": "TCX",
+      "favorite_car": 27,
+      "points": 84,
+      "avg_points": 84.0,
+      "avg_pos": 7.0,
+      "avg_pace_pos": 6.5,
+      "net_pos_gained": 0,
+      "avg_qualy_pos": 5.5,
+      "avg_qualy_gap": "+1.276",
+      "net_pos_gained_vs_qualy": 0,
+      "avg_gap": "+2.096",
       "races": 1
     },
     {
       "name": "Casper Smit",
-      "car_class": "GT3",
+      "car_class": "CUP",
       "favorite_car": 26,
       "points": 84,
       "avg_points": 84.0,
       "avg_pos": 7.0,
-      "avg_pace_pos": 11.0,
+      "avg_pace_pos": 12.0,
       "net_pos_gained": 0,
       "avg_qualy_pos": "-",
       "avg_qualy_gap": "-",
-      "net_pos_gained_qualy": 0,
-      "avg_gap": "+2.680",
+      "net_pos_gained_vs_qualy": 0,
+      "avg_gap": "+2.615",
       "races": 1
     },
     {
-      "name": "Antoni Mencik",
-      "car_class": "GT3",
-      "favorite_car": 26,
-      "points": 81,
-      "avg_points": 40.5,
-      "avg_pos": 17.5,
-      "avg_pace_pos": 6.0,
-      "net_pos_gained": 0,
-      "avg_qualy_pos": 9.5,
-      "avg_qualy_gap": "+1.835",
-      "net_pos_gained_qualy": 0,
-      "avg_gap": "+1.728",
-      "races": 2
-    },
-    {
-      "name": "Leonardo Cocco",
-      "car_class": "GT3",
-      "favorite_car": 26,
-      "points": 81,
-      "avg_points": 40.5,
-      "avg_pos": 17.5,
-      "avg_pace_pos": 6.7,
-      "net_pos_gained": 0,
-      "avg_qualy_pos": 3.0,
-      "avg_qualy_gap": "+0.618",
-      "net_pos_gained_qualy": 0,
-      "avg_gap": "+2.733",
-      "races": 2
-    },
-    {
       "name": "Shayan Kamalian",
-      "car_class": "GT3",
+      "car_class": "CUP",
       "favorite_car": 26,
       "points": 78,
       "avg_points": 78.0,
       "avg_pos": 8.0,
-      "avg_pace_pos": 5.0,
+      "avg_pace_pos": 4.0,
       "net_pos_gained": 0,
       "avg_qualy_pos": 4.0,
       "avg_qualy_gap": "+0.900",
-      "net_pos_gained_qualy": 0,
-      "avg_gap": "+1.647",
+      "net_pos_gained_vs_qualy": 0,
+      "avg_gap": "+1.400",
       "races": 1
     },
     {
       "name": "Doctor Bones",
-      "car_class": "GT3",
+      "car_class": "TCX",
       "favorite_car": 27,
       "points": 78,
       "avg_points": 78.0,
       "avg_pos": 8.0,
-      "avg_pace_pos": 13.0,
+      "avg_pace_pos": 9.5,
       "net_pos_gained": 0,
       "avg_qualy_pos": 14.0,
       "avg_qualy_gap": "+3.093",
-      "net_pos_gained_qualy": 0,
-      "avg_gap": "+13.357",
+      "net_pos_gained_vs_qualy": 0,
+      "avg_gap": "+3.966",
       "races": 1
     },
     {
       "name": "John Eraser",
-      "car_class": "GT3",
+      "car_class": "TCX",
       "favorite_car": 27,
       "points": 72,
       "avg_points": 72.0,
@@ -266,58 +251,73 @@
       "net_pos_gained": 0,
       "avg_qualy_pos": 7.0,
       "avg_qualy_gap": "+1.385",
-      "net_pos_gained_qualy": 0,
+      "net_pos_gained_vs_qualy": 0,
       "avg_gap": "+0.616",
       "races": 1
     },
     {
-      "name": "Fiesta Bonanza",
-      "car_class": "GT3",
-      "favorite_car": 27,
-      "points": 69,
-      "avg_points": 34.5,
-      "avg_pos": 19.5,
-      "avg_pace_pos": 11.7,
-      "net_pos_gained": 0,
-      "avg_qualy_pos": 13.3,
-      "avg_qualy_gap": "+4.048",
-      "net_pos_gained_qualy": 0,
-      "avg_gap": "+19.403",
-      "races": 2
-    },
-    {
       "name": "Lev Slepuzjnikov",
-      "car_class": "GT3",
+      "car_class": "TCX",
       "favorite_car": 27,
       "points": 66,
       "avg_points": 66.0,
       "avg_pos": 10.0,
-      "avg_pace_pos": 6.0,
+      "avg_pace_pos": 4.0,
       "net_pos_gained": 0,
       "avg_qualy_pos": 13.0,
       "avg_qualy_gap": "+2.633",
-      "net_pos_gained_qualy": 0,
-      "avg_gap": "+1.705",
+      "net_pos_gained_vs_qualy": 0,
+      "avg_gap": "+1.046",
       "races": 1
     },
     {
       "name": "S Julius",
-      "car_class": "GT3",
+      "car_class": "CUP",
       "favorite_car": 26,
       "points": 66,
       "avg_points": 66.0,
       "avg_pos": 10.0,
-      "avg_pace_pos": 11.0,
+      "avg_pace_pos": 12.0,
       "net_pos_gained": 0,
       "avg_qualy_pos": 16.0,
       "avg_qualy_gap": "+2.617",
-      "net_pos_gained_qualy": 0,
+      "net_pos_gained_vs_qualy": 0,
       "avg_gap": "+2.320",
       "races": 1
     },
     {
+      "name": ".. miru..momo..",
+      "car_class": "CUP",
+      "favorite_car": 26,
+      "points": 60,
+      "avg_points": 60.0,
+      "avg_pos": 11.0,
+      "avg_pace_pos": 14.0,
+      "net_pos_gained": 0,
+      "avg_qualy_pos": 14.0,
+      "avg_qualy_gap": "+1.847",
+      "net_pos_gained_vs_qualy": 0,
+      "avg_gap": "+2.559",
+      "races": 1
+    },
+    {
+      "name": ".. miru..momo..",
+      "car_class": "TCX",
+      "favorite_car": 27,
+      "points": 60,
+      "avg_points": 60.0,
+      "avg_pos": 11.0,
+      "avg_pace_pos": 13.0,
+      "net_pos_gained": 0,
+      "avg_qualy_pos": "-",
+      "avg_qualy_gap": "-",
+      "net_pos_gained_vs_qualy": 0,
+      "avg_gap": "+3.203",
+      "races": 1
+    },
+    {
       "name": "Jake Deshong",
-      "car_class": "GT3",
+      "car_class": "CUP",
       "favorite_car": 26,
       "points": 57,
       "avg_points": 57.0,
@@ -326,88 +326,88 @@
       "net_pos_gained": 0,
       "avg_qualy_pos": 13.0,
       "avg_qualy_gap": "+1.790",
-      "net_pos_gained_qualy": 0,
-      "avg_gap": "+2.825",
+      "net_pos_gained_vs_qualy": 0,
+      "avg_gap": "+2.450",
       "races": 1
     },
     {
       "name": "Javier Lai",
-      "car_class": "GT3",
+      "car_class": "TCX",
       "favorite_car": 27,
       "points": 57,
       "avg_points": 57.0,
       "avg_pos": 12.0,
-      "avg_pace_pos": 11.0,
+      "avg_pace_pos": 15.0,
       "net_pos_gained": 0,
       "avg_qualy_pos": "-",
       "avg_qualy_gap": "-",
-      "net_pos_gained_qualy": 0,
-      "avg_gap": "+4.274",
+      "net_pos_gained_vs_qualy": 0,
+      "avg_gap": "+3.548",
       "races": 1
     },
     {
       "name": "Cam Waters",
-      "car_class": "GT3",
+      "car_class": "CUP",
       "favorite_car": 26,
       "points": 54,
       "avg_points": 54.0,
       "avg_pos": 13.0,
-      "avg_pace_pos": 15.0,
+      "avg_pace_pos": 10.0,
       "net_pos_gained": 0,
       "avg_qualy_pos": 12.0,
       "avg_qualy_gap": "+1.777",
-      "net_pos_gained_qualy": 0,
-      "avg_gap": "+3.116",
+      "net_pos_gained_vs_qualy": 0,
+      "avg_gap": "+2.038",
       "races": 1
     },
     {
       "name": "Tiago Dresch",
-      "car_class": "GT3",
+      "car_class": "TCX",
       "favorite_car": 27,
       "points": 54,
       "avg_points": 54.0,
       "avg_pos": 13.0,
-      "avg_pace_pos": 16.0,
+      "avg_pace_pos": 17.0,
       "net_pos_gained": 0,
       "avg_qualy_pos": "-",
       "avg_qualy_gap": "-",
-      "net_pos_gained_qualy": 0,
-      "avg_gap": "+6.518",
+      "net_pos_gained_vs_qualy": 0,
+      "avg_gap": "+4.455",
       "races": 1
     },
     {
       "name": "Nathan Fox",
-      "car_class": "GT3",
+      "car_class": "CUP",
       "favorite_car": 26,
       "points": 51,
       "avg_points": 51.0,
       "avg_pos": 14.0,
-      "avg_pace_pos": 16.0,
+      "avg_pace_pos": 15.0,
       "net_pos_gained": 0,
       "avg_qualy_pos": "-",
       "avg_qualy_gap": "-",
-      "net_pos_gained_qualy": 0,
-      "avg_gap": "+3.589",
+      "net_pos_gained_vs_qualy": 0,
+      "avg_gap": "+2.650",
       "races": 1
     },
     {
       "name": "Alonzo Allons-y",
-      "car_class": "GT3",
-      "favorite_car": 26,
+      "car_class": "TCX",
+      "favorite_car": 27,
       "points": 51,
       "avg_points": 51.0,
       "avg_pos": 14.0,
-      "avg_pace_pos": 18.5,
+      "avg_pace_pos": 19.0,
       "net_pos_gained": 0,
       "avg_qualy_pos": 17.0,
       "avg_qualy_gap": "+4.128",
-      "net_pos_gained_qualy": 0,
-      "avg_gap": "+8.920",
+      "net_pos_gained_vs_qualy": 0,
+      "avg_gap": "+4.962",
       "races": 1
     },
     {
       "name": "Risasa Takodachi",
-      "car_class": "GT3",
+      "car_class": "CUP",
       "favorite_car": 26,
       "points": 48,
       "avg_points": 48.0,
@@ -416,58 +416,103 @@
       "net_pos_gained": 0,
       "avg_qualy_pos": "-",
       "avg_qualy_gap": "-",
-      "net_pos_gained_qualy": 0,
-      "avg_gap": "+4.776",
+      "net_pos_gained_vs_qualy": 0,
+      "avg_gap": "+4.132",
       "races": 1
     },
     {
       "name": "Alice Schupp-M\u00c3\u00bcller",
-      "car_class": "GT3",
+      "car_class": "TCX",
       "favorite_car": 27,
       "points": 48,
       "avg_points": 48.0,
       "avg_pos": 15.0,
-      "avg_pace_pos": 19.0,
+      "avg_pace_pos": 20.0,
       "net_pos_gained": 0,
       "avg_qualy_pos": 18.0,
       "avg_qualy_gap": "+4.838",
-      "net_pos_gained_qualy": 0,
-      "avg_gap": "+9.792",
+      "net_pos_gained_vs_qualy": 0,
+      "avg_gap": "+5.093",
+      "races": 1
+    },
+    {
+      "name": "Leonardo Cocco",
+      "car_class": "CUP",
+      "favorite_car": 26,
+      "points": 45,
+      "avg_points": 45.0,
+      "avg_pos": 16.0,
+      "avg_pace_pos": 2.5,
+      "net_pos_gained": 0,
+      "avg_qualy_pos": 2.5,
+      "avg_qualy_gap": "+0.301",
+      "net_pos_gained_vs_qualy": 0,
+      "avg_gap": "+0.773",
       "races": 1
     },
     {
       "name": "Dominik Ladra",
-      "car_class": "GT3",
+      "car_class": "TCX",
       "favorite_car": 27,
       "points": 45,
       "avg_points": 45.0,
       "avg_pos": 16.0,
-      "avg_pace_pos": 22.0,
+      "avg_pace_pos": "-",
       "net_pos_gained": 0,
       "avg_qualy_pos": "-",
       "avg_qualy_gap": "-",
-      "net_pos_gained_qualy": 0,
-      "avg_gap": "+14.953",
+      "net_pos_gained_vs_qualy": 0,
+      "avg_gap": "-",
       "races": 1
     },
     {
       "name": "Andrea Genovese",
-      "car_class": "GT3",
+      "car_class": "CUP",
       "favorite_car": 26,
       "points": 42,
       "avg_points": 42.0,
       "avg_pos": 17.0,
-      "avg_pace_pos": 4.5,
+      "avg_pace_pos": 2.5,
       "net_pos_gained": 0,
       "avg_qualy_pos": 3.5,
       "avg_qualy_gap": "+0.720",
-      "net_pos_gained_qualy": 0,
-      "avg_gap": "+1.595",
+      "net_pos_gained_vs_qualy": 0,
+      "avg_gap": "+0.826",
+      "races": 1
+    },
+    {
+      "name": "Antoni Mencik",
+      "car_class": "TCX",
+      "favorite_car": 27,
+      "points": 42,
+      "avg_points": 42.0,
+      "avg_pos": 17.0,
+      "avg_pace_pos": 5.0,
+      "net_pos_gained": 0,
+      "avg_qualy_pos": 12.0,
+      "avg_qualy_gap": "+2.393",
+      "net_pos_gained_vs_qualy": 0,
+      "avg_gap": "+1.385",
+      "races": 1
+    },
+    {
+      "name": "Antoni Mencik",
+      "car_class": "CUP",
+      "favorite_car": 26,
+      "points": 39,
+      "avg_points": 39.0,
+      "avg_pos": 18.0,
+      "avg_pace_pos": 11.0,
+      "net_pos_gained": 0,
+      "avg_qualy_pos": 7.0,
+      "avg_qualy_gap": "+1.277",
+      "net_pos_gained_vs_qualy": 0,
+      "avg_gap": "+2.070",
       "races": 1
     },
     {
       "name": "Gael Duch\u00c3\u00aane ESP [SL]",
-      "car_class": "GT3",
+      "car_class": "TCX",
       "favorite_car": 27,
       "points": 39,
       "avg_points": 39.0,
@@ -476,58 +521,103 @@
       "net_pos_gained": 0,
       "avg_qualy_pos": 10.0,
       "avg_qualy_gap": "+1.648",
-      "net_pos_gained_qualy": 0,
-      "avg_gap": "+2.668",
+      "net_pos_gained_vs_qualy": 0,
+      "avg_gap": "+2.167",
+      "races": 1
+    },
+    {
+      "name": "Leonardo Cocco",
+      "car_class": "TCX",
+      "favorite_car": 27,
+      "points": 36,
+      "avg_points": 36.0,
+      "avg_pos": 19.0,
+      "avg_pace_pos": 12.0,
+      "net_pos_gained": 0,
+      "avg_qualy_pos": 4.0,
+      "avg_qualy_gap": "+1.250",
+      "net_pos_gained_vs_qualy": 0,
+      "avg_gap": "+2.797",
+      "races": 1
+    },
+    {
+      "name": "Fiesta Bonanza",
+      "car_class": "CUP",
+      "favorite_car": 26,
+      "points": 36,
+      "avg_points": 36.0,
+      "avg_pos": 19.0,
+      "avg_pace_pos": 10.0,
+      "net_pos_gained": 0,
+      "avg_qualy_pos": 12.0,
+      "avg_qualy_gap": "+2.645",
+      "net_pos_gained_vs_qualy": 0,
+      "avg_gap": "+3.069",
+      "races": 1
+    },
+    {
+      "name": "Fiesta Bonanza",
+      "car_class": "TCX",
+      "favorite_car": 27,
+      "points": 33,
+      "avg_points": 33.0,
+      "avg_pos": 20.0,
+      "avg_pace_pos": 14.0,
+      "net_pos_gained": 0,
+      "avg_qualy_pos": 14.0,
+      "avg_qualy_gap": "+4.749",
+      "net_pos_gained_vs_qualy": 0,
+      "avg_gap": "+5.654",
       "races": 1
     },
     {
       "name": "Danil kolbasenko",
-      "car_class": "GT3",
+      "car_class": "TCX",
       "favorite_car": 27,
       "points": 30,
       "avg_points": 30.0,
       "avg_pos": 21.0,
-      "avg_pace_pos": 15.0,
+      "avg_pace_pos": 16.5,
       "net_pos_gained": 0,
       "avg_qualy_pos": 17.0,
       "avg_qualy_gap": "+7.019",
-      "net_pos_gained_qualy": 0,
-      "avg_gap": "+23.356",
+      "net_pos_gained_vs_qualy": 0,
+      "avg_gap": "+6.907",
       "races": 1
     },
     {
       "name": "Roland Kolb",
-      "car_class": "GT3",
+      "car_class": "TCX",
       "favorite_car": 27,
       "points": 27,
       "avg_points": 27.0,
       "avg_pos": 22.0,
-      "avg_pace_pos": 21.0,
+      "avg_pace_pos": 16.0,
       "net_pos_gained": 0,
       "avg_qualy_pos": 19.0,
       "avg_qualy_gap": "+5.645",
-      "net_pos_gained_qualy": 0,
-      "avg_gap": "+13.255",
+      "net_pos_gained_vs_qualy": 0,
+      "avg_gap": "+3.620",
       "races": 1
     },
     {
       "name": "Eugen Naza",
-      "car_class": "GT3",
+      "car_class": "TCX",
       "favorite_car": 27,
       "points": 24,
       "avg_points": 24.0,
       "avg_pos": 23.0,
-      "avg_pace_pos": 16.5,
+      "avg_pace_pos": 9.0,
       "net_pos_gained": 0,
       "avg_qualy_pos": 19.0,
       "avg_qualy_gap": "+10.104",
-      "net_pos_gained_qualy": 0,
-      "avg_gap": "+23.570",
+      "net_pos_gained_vs_qualy": 0,
+      "avg_gap": "+6.367",
       "races": 1
     },
     {
       "name": "Toma Alex | ARF",
-      "car_class": "GT3",
+      "car_class": "CUP",
       "favorite_car": 26,
       "points": 0,
       "avg_points": 0,
@@ -536,23 +626,53 @@
       "net_pos_gained": 0,
       "avg_qualy_pos": "-",
       "avg_qualy_gap": "-",
-      "net_pos_gained_qualy": 0,
-      "avg_gap": "+3.967",
+      "net_pos_gained_vs_qualy": 0,
+      "avg_gap": "+2.849",
       "races": 0
     },
     {
       "name": "Tharos Zyvelionn",
-      "car_class": "GT3",
+      "car_class": "CUP",
       "favorite_car": 26,
+      "points": 0,
+      "avg_points": 0,
+      "avg_pos": "-",
+      "avg_pace_pos": 19.0,
+      "net_pos_gained": 0,
+      "avg_qualy_pos": 18.0,
+      "avg_qualy_gap": "+4.535",
+      "net_pos_gained_vs_qualy": 0,
+      "avg_gap": "+4.191",
+      "races": 0
+    },
+    {
+      "name": "Alonzo Allons-y",
+      "car_class": "CUP",
+      "favorite_car": 26,
+      "points": 0,
+      "avg_points": 0,
+      "avg_pos": "-",
+      "avg_pace_pos": 20.0,
+      "net_pos_gained": 0,
+      "avg_qualy_pos": "-",
+      "avg_qualy_gap": "-",
+      "net_pos_gained_vs_qualy": 0,
+      "avg_gap": "+4.774",
+      "races": 0
+    },
+    {
+      "name": "Tharos Zyvelionn",
+      "car_class": "TCX",
+      "favorite_car": 27,
       "points": 0,
       "avg_points": 0,
       "avg_pos": "-",
       "avg_pace_pos": 21.0,
       "net_pos_gained": 0,
-      "avg_qualy_pos": 18.0,
-      "avg_qualy_gap": "+4.535",
-      "net_pos_gained_qualy": 0,
-      "avg_gap": "+10.669",
+      "avg_qualy_pos": "-",
+      "avg_qualy_gap": "-",
+      "net_pos_gained_vs_qualy": 0,
+      "avg_gap": "+6.800",
       "races": 0
     }
   ],
@@ -565,7 +685,7 @@
           "name": "Race 1: Misano",
           "results": [
             {
-              "car_class": "GT3",
+              "car_class": "CUP",
               "pos": 1,
               "qualy_pos": 1,
               "qualy_time": "1:36.530",
@@ -672,7 +792,7 @@
               "points": 180
             },
             {
-              "car_class": "GT3",
+              "car_class": "CUP",
               "pos": 2,
               "qualy_pos": 2,
               "qualy_time": "1:36.580",
@@ -779,7 +899,7 @@
               "points": 45
             },
             {
-              "car_class": "GT3",
+              "car_class": "CUP",
               "pos": 3,
               "qualy_pos": 3,
               "qualy_time": "1:37.287",
@@ -886,7 +1006,7 @@
               "points": 42
             },
             {
-              "car_class": "GT3",
+              "car_class": "CUP",
               "pos": 4,
               "qualy_pos": 5,
               "qualy_time": "1:37.625",
@@ -989,11 +1109,11 @@
               "gap_best": "+1.142",
               "penalty": 0,
               "race_gap": "+27.913s",
-              "pace_pos": 4,
+              "pace_pos": 5,
               "points": 150
             },
             {
-              "car_class": "GT3",
+              "car_class": "CUP",
               "pos": 5,
               "qualy_pos": 4,
               "qualy_time": "1:37.430",
@@ -1007,9 +1127,9 @@
               "name": "Shayan Kamalian",
               "car_model": 26,
               "laps": 19,
-              "incidents": 0,
-              "avg_time": "1:38.847",
-              "avg_lap_ms": 98847.31578947368,
+              "incidents": 1,
+              "avg_time": "1:38.600",
+              "avg_lap_ms": 98600.94444444444,
               "lap_history": [
                 {
                   "time_ms": 101830,
@@ -1017,7 +1137,7 @@
                 },
                 {
                   "time_ms": 103282,
-                  "is_incident": false
+                  "is_incident": true
                 },
                 {
                   "time_ms": 98530,
@@ -1088,19 +1208,19 @@
                   "is_incident": false
                 }
               ],
-              "gap_pace_ms": 1646.6842105263058,
+              "gap_pace_ms": 1400.3128654970642,
               "gap_best_ms": 880,
-              "gap_pace": "+1.647",
+              "gap_pace": "+1.400",
               "best_lap": "1:37.355",
               "best_lap_ms": 97355,
               "gap_best": "+0.880",
               "penalty": 0,
               "race_gap": "+31.912s",
-              "pace_pos": 5,
+              "pace_pos": 4,
               "points": 78
             },
             {
-              "car_class": "GT3",
+              "car_class": "CUP",
               "pos": 6,
               "qualy_pos": 8,
               "qualy_time": "1:37.817",
@@ -1203,11 +1323,11 @@
               "gap_best": "+0.957",
               "penalty": 0,
               "race_gap": "+38.768s",
-              "pace_pos": 7,
+              "pace_pos": 8,
               "points": 120
             },
             {
-              "car_class": "GT3",
+              "car_class": "CUP",
               "pos": 7,
               "qualy_pos": 10,
               "qualy_time": "1:37.960",
@@ -1310,11 +1430,11 @@
               "gap_best": "+1.517",
               "penalty": 0,
               "race_gap": "+39.162s",
-              "pace_pos": 6,
+              "pace_pos": 7,
               "points": 105
             },
             {
-              "car_class": "GT3",
+              "car_class": "CUP",
               "pos": 8,
               "qualy_pos": 7,
               "qualy_time": "1:37.807",
@@ -1417,11 +1537,11 @@
               "gap_best": "+1.512",
               "penalty": 0,
               "race_gap": "+40.553s",
-              "pace_pos": 8,
+              "pace_pos": 11,
               "points": 39
             },
             {
-              "car_class": "GT3",
+              "car_class": "CUP",
               "pos": 9,
               "qualy_pos": 9,
               "qualy_time": "1:37.945",
@@ -1435,17 +1555,17 @@
               "name": "Marty Fox [SL]",
               "car_model": 26,
               "laps": 19,
-              "incidents": 0,
-              "avg_time": "1:39.456",
-              "avg_lap_ms": 99456.21052631579,
+              "incidents": 2,
+              "avg_time": "1:38.939",
+              "avg_lap_ms": 98939.58823529411,
               "lap_history": [
                 {
                   "time_ms": 104295,
-                  "is_incident": false
+                  "is_incident": true
                 },
                 {
                   "time_ms": 103400,
-                  "is_incident": false
+                  "is_incident": true
                 },
                 {
                   "time_ms": 99582,
@@ -1516,19 +1636,19 @@
                   "is_incident": false
                 }
               ],
-              "gap_pace_ms": 2255.5789473684126,
+              "gap_pace_ms": 1738.9566563467379,
               "gap_best_ms": 1672,
-              "gap_pace": "+2.256",
+              "gap_pace": "+1.739",
               "best_lap": "1:38.147",
               "best_lap_ms": 98147,
               "gap_best": "+1.672",
               "penalty": 0,
               "race_gap": "+44.409s",
-              "pace_pos": 9,
+              "pace_pos": 6,
               "points": 96
             },
             {
-              "car_class": "GT3",
+              "car_class": "CUP",
               "pos": 10,
               "qualy_pos": 16,
               "qualy_time": "1:39.147",
@@ -1631,11 +1751,11 @@
               "gap_best": "+1.637",
               "penalty": 0,
               "race_gap": "+46.776s",
-              "pace_pos": 11,
+              "pace_pos": 12,
               "points": 66
             },
             {
-              "car_class": "GT3",
+              "car_class": "CUP",
               "pos": 11,
               "qualy_pos": 11,
               "qualy_time": "1:37.990",
@@ -1649,13 +1769,13 @@
               "name": "Raymond Crawford [SL]",
               "car_model": 26,
               "laps": 19,
-              "incidents": 0,
-              "avg_time": "1:39.500",
-              "avg_lap_ms": 99500.94736842105,
+              "incidents": 1,
+              "avg_time": "1:39.229",
+              "avg_lap_ms": 99229.61111111111,
               "lap_history": [
                 {
                   "time_ms": 104385,
-                  "is_incident": false
+                  "is_incident": true
                 },
                 {
                   "time_ms": 100057,
@@ -1730,19 +1850,19 @@
                   "is_incident": false
                 }
               ],
-              "gap_pace_ms": 2300.3157894736796,
+              "gap_pace_ms": 2028.9795321637357,
               "gap_best_ms": 1680,
-              "gap_pace": "+2.300",
+              "gap_pace": "+2.029",
               "best_lap": "1:38.155",
               "best_lap_ms": 98155,
               "gap_best": "+1.680",
               "penalty": 0,
               "race_gap": "+50.483s",
-              "pace_pos": 10,
+              "pace_pos": 9,
               "points": 90
             },
             {
-              "car_class": "GT3",
+              "car_class": "CUP",
               "pos": 12,
               "qualy_pos": 14,
               "qualy_time": "1:38.377",
@@ -1756,13 +1876,13 @@
               "name": ".. miru..momo..",
               "car_model": 26,
               "laps": 19,
-              "incidents": 0,
-              "avg_time": "1:40.023",
-              "avg_lap_ms": 100023.68421052632,
+              "incidents": 1,
+              "avg_time": "1:39.759",
+              "avg_lap_ms": 99759.88888888889,
               "lap_history": [
                 {
                   "time_ms": 104772,
-                  "is_incident": false
+                  "is_incident": true
                 },
                 {
                   "time_ms": 101790,
@@ -1837,19 +1957,19 @@
                   "is_incident": false
                 }
               ],
-              "gap_pace_ms": 2823.0526315789466,
+              "gap_pace_ms": 2559.2573099415167,
               "gap_best_ms": 2125,
-              "gap_pace": "+2.823",
+              "gap_pace": "+2.559",
               "best_lap": "1:38.600",
               "best_lap_ms": 98600,
               "gap_best": "+2.125",
               "penalty": 0,
               "race_gap": "+57.292s",
-              "pace_pos": 12,
+              "pace_pos": 14,
               "points": 60
             },
             {
-              "car_class": "GT3",
+              "car_class": "CUP",
               "pos": 13,
               "qualy_pos": 13,
               "qualy_time": "1:38.320",
@@ -1863,13 +1983,13 @@
               "name": "Jake Deshong",
               "car_model": 26,
               "laps": 19,
-              "incidents": 0,
-              "avg_time": "1:40.026",
-              "avg_lap_ms": 100026.05263157895,
+              "incidents": 1,
+              "avg_time": "1:39.650",
+              "avg_lap_ms": 99650.44444444444,
               "lap_history": [
                 {
                   "time_ms": 106787,
-                  "is_incident": false
+                  "is_incident": true
                 },
                 {
                   "time_ms": 100472,
@@ -1944,9 +2064,9 @@
                   "is_incident": false
                 }
               ],
-              "gap_pace_ms": 2825.421052631573,
+              "gap_pace_ms": 2449.812865497064,
               "gap_best_ms": 2175,
-              "gap_pace": "+2.825",
+              "gap_pace": "+2.450",
               "best_lap": "1:38.650",
               "best_lap_ms": 98650,
               "gap_best": "+2.175",
@@ -1956,7 +2076,7 @@
               "points": 57
             },
             {
-              "car_class": "GT3",
+              "car_class": "CUP",
               "pos": 14,
               "qualy_pos": "-",
               "qualy_time": "-",
@@ -1970,13 +2090,13 @@
               "name": "Casper Smit",
               "car_model": 26,
               "laps": 19,
-              "incidents": 0,
-              "avg_time": "1:40.216",
-              "avg_lap_ms": 100216.26315789473,
+              "incidents": 1,
+              "avg_time": "1:40.020",
+              "avg_lap_ms": 100020.22222222222,
               "lap_history": [
                 {
                   "time_ms": 103745,
-                  "is_incident": false
+                  "is_incident": true
                 },
                 {
                   "time_ms": 103165,
@@ -2051,19 +2171,19 @@
                   "is_incident": false
                 }
               ],
-              "gap_pace_ms": 3015.6315789473592,
+              "gap_pace_ms": 2819.590643274845,
               "gap_best_ms": 2402,
-              "gap_pace": "+3.016",
+              "gap_pace": "+2.820",
               "best_lap": "1:38.877",
               "best_lap_ms": 98877,
               "gap_best": "+2.402",
               "penalty": 0,
               "race_gap": "+60.367s",
-              "pace_pos": 14,
+              "pace_pos": 16,
               "points": 84
             },
             {
-              "car_class": "GT3",
+              "car_class": "CUP",
               "pos": 15,
               "qualy_pos": 12,
               "qualy_time": "1:38.307",
@@ -2077,13 +2197,13 @@
               "name": "Cam Waters",
               "car_model": 26,
               "laps": 19,
-              "incidents": 0,
-              "avg_time": "1:40.316",
-              "avg_lap_ms": 100316.42105263157,
+              "incidents": 4,
+              "avg_time": "1:39.238",
+              "avg_lap_ms": 99238.53333333334,
               "lap_history": [
                 {
                   "time_ms": 103847,
-                  "is_incident": false
+                  "is_incident": true
                 },
                 {
                   "time_ms": 102362,
@@ -2091,7 +2211,7 @@
                 },
                 {
                   "time_ms": 104250,
-                  "is_incident": false
+                  "is_incident": true
                 },
                 {
                   "time_ms": 100432,
@@ -2099,7 +2219,7 @@
                 },
                 {
                   "time_ms": 105875,
-                  "is_incident": false
+                  "is_incident": true
                 },
                 {
                   "time_ms": 98320,
@@ -2151,26 +2271,26 @@
                 },
                 {
                   "time_ms": 103462,
-                  "is_incident": false
+                  "is_incident": true
                 },
                 {
                   "time_ms": 99487,
                   "is_incident": false
                 }
               ],
-              "gap_pace_ms": 3115.789473684199,
+              "gap_pace_ms": 2037.9017543859663,
               "gap_best_ms": 1747,
-              "gap_pace": "+3.116",
+              "gap_pace": "+2.038",
               "best_lap": "1:38.222",
               "best_lap_ms": 98222,
               "gap_best": "+1.747",
               "penalty": 0,
               "race_gap": "+62.564s",
-              "pace_pos": 15,
+              "pace_pos": 10,
               "points": 54
             },
             {
-              "car_class": "GT3",
+              "car_class": "CUP",
               "pos": 16,
               "qualy_pos": "-",
               "qualy_time": "-",
@@ -2184,13 +2304,13 @@
               "name": "Nathan Fox",
               "car_model": 26,
               "laps": 19,
-              "incidents": 0,
-              "avg_time": "1:40.789",
-              "avg_lap_ms": 100789.94736842105,
+              "incidents": 2,
+              "avg_time": "1:39.851",
+              "avg_lap_ms": 99851.0,
               "lap_history": [
                 {
                   "time_ms": 111542,
-                  "is_incident": false
+                  "is_incident": true
                 },
                 {
                   "time_ms": 99985,
@@ -2210,7 +2330,7 @@
                 },
                 {
                   "time_ms": 106000,
-                  "is_incident": false
+                  "is_incident": true
                 },
                 {
                   "time_ms": 99902,
@@ -2265,19 +2385,19 @@
                   "is_incident": false
                 }
               ],
-              "gap_pace_ms": 3589.3157894736796,
+              "gap_pace_ms": 2650.368421052626,
               "gap_best_ms": 2485,
-              "gap_pace": "+3.589",
+              "gap_pace": "+2.650",
               "best_lap": "1:38.960",
               "best_lap_ms": 98960,
               "gap_best": "+2.485",
               "penalty": 0,
               "race_gap": "+72.311s",
-              "pace_pos": 16,
+              "pace_pos": 15,
               "points": 51
             },
             {
-              "car_class": "GT3",
+              "car_class": "CUP",
               "pos": 17,
               "qualy_pos": "-",
               "qualy_time": "-",
@@ -2291,13 +2411,13 @@
               "name": "Risasa Takodachi",
               "car_model": 26,
               "laps": 19,
-              "incidents": 0,
-              "avg_time": "1:41.976",
-              "avg_lap_ms": 101976.36842105263,
+              "incidents": 3,
+              "avg_time": "1:41.332",
+              "avg_lap_ms": 101332.25,
               "lap_history": [
                 {
                   "time_ms": 109380,
-                  "is_incident": false
+                  "is_incident": true
                 },
                 {
                   "time_ms": 101280,
@@ -2313,7 +2433,7 @@
                 },
                 {
                   "time_ms": 103625,
-                  "is_incident": false
+                  "is_incident": true
                 },
                 {
                   "time_ms": 100902,
@@ -2349,7 +2469,7 @@
                 },
                 {
                   "time_ms": 103230,
-                  "is_incident": false
+                  "is_incident": true
                 },
                 {
                   "time_ms": 101125,
@@ -2372,9 +2492,9 @@
                   "is_incident": false
                 }
               ],
-              "gap_pace_ms": 4775.736842105252,
+              "gap_pace_ms": 4131.618421052626,
               "gap_best_ms": 4282,
-              "gap_pace": "+4.776",
+              "gap_pace": "+4.132",
               "best_lap": "1:40.757",
               "best_lap_ms": 100757,
               "gap_best": "+4.282",
@@ -2384,7 +2504,7 @@
               "points": 48
             },
             {
-              "car_class": "GT3",
+              "car_class": "CUP",
               "pos": "DNF",
               "qualy_pos": "-",
               "qualy_time": "-",
@@ -2398,45 +2518,45 @@
               "name": "Alonzo Allons-y",
               "car_model": 26,
               "laps": 17,
-              "incidents": 0,
-              "avg_time": "1:47.677",
-              "avg_lap_ms": 107677.94117647059,
+              "incidents": 14,
+              "avg_time": "1:41.974",
+              "avg_lap_ms": 101974.66666666667,
               "lap_history": [
                 {
                   "time_ms": 126630,
-                  "is_incident": false
+                  "is_incident": true
                 },
                 {
                   "time_ms": 105732,
-                  "is_incident": false
+                  "is_incident": true
                 },
                 {
                   "time_ms": 106332,
-                  "is_incident": false
+                  "is_incident": true
                 },
                 {
                   "time_ms": 104152,
-                  "is_incident": false
+                  "is_incident": true
                 },
                 {
                   "time_ms": 107050,
-                  "is_incident": false
+                  "is_incident": true
                 },
                 {
                   "time_ms": 104507,
-                  "is_incident": false
+                  "is_incident": true
                 },
                 {
                   "time_ms": 133750,
-                  "is_incident": false
+                  "is_incident": true
                 },
                 {
                   "time_ms": 106932,
-                  "is_incident": false
+                  "is_incident": true
                 },
                 {
                   "time_ms": 112110,
-                  "is_incident": false
+                  "is_incident": true
                 },
                 {
                   "time_ms": 102162,
@@ -2444,15 +2564,15 @@
                 },
                 {
                   "time_ms": 103355,
-                  "is_incident": false
+                  "is_incident": true
                 },
                 {
                   "time_ms": 103242,
-                  "is_incident": false
+                  "is_incident": true
                 },
                 {
                   "time_ms": 103777,
-                  "is_incident": false
+                  "is_incident": true
                 },
                 {
                   "time_ms": 102272,
@@ -2460,20 +2580,20 @@
                 },
                 {
                   "time_ms": 103665,
-                  "is_incident": false
+                  "is_incident": true
                 },
                 {
                   "time_ms": 103367,
-                  "is_incident": false
+                  "is_incident": true
                 },
                 {
                   "time_ms": 101490,
                   "is_incident": false
                 }
               ],
-              "gap_pace_ms": 10477.309597523214,
+              "gap_pace_ms": 4774.035087719298,
               "gap_best_ms": 5015,
-              "gap_pace": "+10.477",
+              "gap_pace": "+4.774",
               "best_lap": "1:41.490",
               "best_lap_ms": 101490,
               "gap_best": "+5.015",
@@ -2483,7 +2603,7 @@
               "points": 0
             },
             {
-              "car_class": "GT3",
+              "car_class": "CUP",
               "pos": "DNF",
               "qualy_pos": 18,
               "qualy_time": "1:41.065",
@@ -2497,13 +2617,13 @@
               "name": "Tharos Zyvelionn",
               "car_model": 26,
               "laps": 15,
-              "incidents": 0,
-              "avg_time": "1:42.035",
-              "avg_lap_ms": 102035.13333333333,
+              "incidents": 3,
+              "avg_time": "1:41.391",
+              "avg_lap_ms": 101391.66666666667,
               "lap_history": [
                 {
                   "time_ms": 104540,
-                  "is_incident": false
+                  "is_incident": true
                 },
                 {
                   "time_ms": 102837,
@@ -2515,7 +2635,7 @@
                 },
                 {
                   "time_ms": 104555,
-                  "is_incident": false
+                  "is_incident": true
                 },
                 {
                   "time_ms": 101707,
@@ -2559,12 +2679,12 @@
                 },
                 {
                   "time_ms": 104732,
-                  "is_incident": false
+                  "is_incident": true
                 }
               ],
-              "gap_pace_ms": 4834.501754385958,
+              "gap_pace_ms": 4191.035087719298,
               "gap_best_ms": 4357,
-              "gap_pace": "+4.835",
+              "gap_pace": "+4.191",
               "best_lap": "1:40.832",
               "best_lap_ms": 100832,
               "gap_best": "+4.357",
@@ -2574,7 +2694,7 @@
               "points": 0
             },
             {
-              "car_class": "GT3",
+              "car_class": "CUP",
               "pos": "DNF",
               "qualy_pos": "-",
               "qualy_time": "-",
@@ -2588,13 +2708,13 @@
               "name": "Toma Alex | ARF",
               "car_model": 26,
               "laps": 15,
-              "incidents": 0,
-              "avg_time": "1:41.167",
-              "avg_lap_ms": 101167.13333333333,
+              "incidents": 3,
+              "avg_time": "1:40.049",
+              "avg_lap_ms": 100049.16666666667,
               "lap_history": [
                 {
                   "time_ms": 108202,
-                  "is_incident": false
+                  "is_incident": true
                 },
                 {
                   "time_ms": 99870,
@@ -2610,11 +2730,11 @@
                 },
                 {
                   "time_ms": 105260,
-                  "is_incident": false
+                  "is_incident": true
                 },
                 {
                   "time_ms": 103455,
-                  "is_incident": false
+                  "is_incident": true
                 },
                 {
                   "time_ms": 100512,
@@ -2653,9 +2773,9 @@
                   "is_incident": false
                 }
               ],
-              "gap_pace_ms": 3966.5017543859576,
+              "gap_pace_ms": 2848.5350877192977,
               "gap_best_ms": 2392,
-              "gap_pace": "+3.967",
+              "gap_pace": "+2.849",
               "best_lap": "1:38.867",
               "best_lap_ms": 98867,
               "gap_best": "+2.392",
@@ -2669,7 +2789,7 @@
             {
               "pos": 1,
               "name": "Marsi Bella [SL]",
-              "car_class": "GT3",
+              "car_class": "CUP",
               "car_model": 26,
               "s1": "0:24.550",
               "s2": "0:37.835",
@@ -2681,7 +2801,7 @@
             {
               "pos": 2,
               "name": "Leonardo Cocco",
-              "car_class": "GT3",
+              "car_class": "CUP",
               "car_model": 26,
               "s1": "0:24.722",
               "s2": "0:37.772",
@@ -2693,7 +2813,7 @@
             {
               "pos": 3,
               "name": "Andrea Genovese",
-              "car_class": "GT3",
+              "car_class": "CUP",
               "car_model": 26,
               "s1": "0:24.707",
               "s2": "0:37.902",
@@ -2705,7 +2825,7 @@
             {
               "pos": 4,
               "name": "Shayan Kamalian",
-              "car_class": "GT3",
+              "car_class": "CUP",
               "car_model": 26,
               "s1": "0:25.010",
               "s2": "0:38.055",
@@ -2717,7 +2837,7 @@
             {
               "pos": 5,
               "name": "Bence Kamaras",
-              "car_class": "GT3",
+              "car_class": "CUP",
               "car_model": 26,
               "s1": "0:23.210",
               "s2": "0:38.345",
@@ -2729,7 +2849,7 @@
             {
               "pos": 6,
               "name": "Cla Rens [SL]",
-              "car_class": "GT3",
+              "car_class": "CUP",
               "car_model": 26,
               "s1": "0:24.967",
               "s2": "0:38.092",
@@ -2741,7 +2861,7 @@
             {
               "pos": 7,
               "name": "Antoni Mencik",
-              "car_class": "GT3",
+              "car_class": "CUP",
               "car_model": 26,
               "s1": "0:25.145",
               "s2": "0:38.182",
@@ -2753,7 +2873,7 @@
             {
               "pos": 8,
               "name": "Micha Nieuwkoop",
-              "car_class": "GT3",
+              "car_class": "CUP",
               "car_model": 26,
               "s1": "0:25.357",
               "s2": "0:37.865",
@@ -2765,7 +2885,7 @@
             {
               "pos": 9,
               "name": "Marty Fox [SL]",
-              "car_class": "GT3",
+              "car_class": "CUP",
               "car_model": 26,
               "s1": "0:24.980",
               "s2": "0:38.075",
@@ -2777,7 +2897,7 @@
             {
               "pos": 10,
               "name": "Alex Grandi",
-              "car_class": "GT3",
+              "car_class": "CUP",
               "car_model": 26,
               "s1": "0:25.202",
               "s2": "0:38.017",
@@ -2789,7 +2909,7 @@
             {
               "pos": 11,
               "name": "Raymond Crawford [SL]",
-              "car_class": "GT3",
+              "car_class": "CUP",
               "car_model": 26,
               "s1": "0:24.810",
               "s2": "0:38.427",
@@ -2801,7 +2921,7 @@
             {
               "pos": 12,
               "name": "Cam Waters",
-              "car_class": "GT3",
+              "car_class": "CUP",
               "car_model": 26,
               "s1": "0:25.215",
               "s2": "0:38.205",
@@ -2813,7 +2933,7 @@
             {
               "pos": 13,
               "name": "Jake Deshong",
-              "car_class": "GT3",
+              "car_class": "CUP",
               "car_model": 26,
               "s1": "0:25.170",
               "s2": "0:38.235",
@@ -2825,7 +2945,7 @@
             {
               "pos": 14,
               "name": ".. miru..momo..",
-              "car_class": "GT3",
+              "car_class": "CUP",
               "car_model": 26,
               "s1": "0:25.285",
               "s2": "0:38.535",
@@ -2837,7 +2957,7 @@
             {
               "pos": 15,
               "name": "keVin peeters [SL]",
-              "car_class": "GT3",
+              "car_class": "CUP",
               "car_model": 26,
               "s1": "0:24.817",
               "s2": "0:38.255",
@@ -2849,7 +2969,7 @@
             {
               "pos": 16,
               "name": "S Julius",
-              "car_class": "GT3",
+              "car_class": "CUP",
               "car_model": 26,
               "s1": "0:25.617",
               "s2": "0:39.055",
@@ -2861,7 +2981,7 @@
             {
               "pos": 17,
               "name": "Fiesta Bonanza",
-              "car_class": "GT3",
+              "car_class": "CUP",
               "car_model": 26,
               "s1": "0:25.280",
               "s2": "0:39.007",
@@ -2873,7 +2993,7 @@
             {
               "pos": 18,
               "name": "Tharos Zyvelionn",
-              "car_class": "GT3",
+              "car_class": "CUP",
               "car_model": 26,
               "s1": "0:25.772",
               "s2": "0:39.892",
@@ -2885,7 +3005,7 @@
             {
               "pos": "-",
               "name": "Casper Smit",
-              "car_class": "GT3",
+              "car_class": "CUP",
               "car_model": 26,
               "s1": "0:25.220",
               "s2": "0:38.965",
@@ -2897,7 +3017,7 @@
             {
               "pos": "-",
               "name": "Alonzo Allons-y",
-              "car_class": "GT3",
+              "car_class": "CUP",
               "car_model": 28,
               "s1": "-",
               "s2": "-",
@@ -2909,7 +3029,7 @@
             {
               "pos": "-",
               "name": "Martin Plevko",
-              "car_class": "GT3",
+              "car_class": "CUP",
               "car_model": 18,
               "s1": "-",
               "s2": "-",
@@ -2920,20 +3040,8 @@
             },
             {
               "pos": "-",
-              "name": "Toma Alex | ARF",
-              "car_class": "GT3",
-              "car_model": 29,
-              "s1": "-",
-              "s2": "-",
-              "s3": "-",
-              "best_lap": "NO TIME",
-              "gap_pole": "-",
-              "gap_pole_ms": null
-            },
-            {
-              "pos": "-",
               "name": "Splif Splifmeister | SLR",
-              "car_class": "GT3",
+              "car_class": "CUP",
               "car_model": 18,
               "s1": "-",
               "s2": "-",
@@ -2945,7 +3053,7 @@
             {
               "pos": "-",
               "name": "Risasa Takodachi",
-              "car_class": "GT3",
+              "car_class": "CUP",
               "car_model": 26,
               "s1": "-",
               "s2": "-",
@@ -2957,7 +3065,7 @@
             {
               "pos": "-",
               "name": "Zithelo Mhlanga",
-              "car_class": "GT3",
+              "car_class": "CUP",
               "car_model": 28,
               "s1": "-",
               "s2": "-",
@@ -2968,8 +3076,20 @@
             },
             {
               "pos": "-",
+              "name": "Toma Alex | ARF",
+              "car_class": "CUP",
+              "car_model": 26,
+              "s1": "-",
+              "s2": "-",
+              "s3": "-",
+              "best_lap": "NO TIME",
+              "gap_pole": "-",
+              "gap_pole_ms": null
+            },
+            {
+              "pos": "-",
               "name": "Fabian E",
-              "car_class": "GT3",
+              "car_class": "CUP",
               "car_model": 9,
               "s1": "-",
               "s2": "-",
@@ -2981,7 +3101,7 @@
             {
               "pos": "-",
               "name": "Nathan Fox",
-              "car_class": "GT3",
+              "car_class": "CUP",
               "car_model": 26,
               "s1": "-",
               "s2": "-",
@@ -2993,7 +3113,7 @@
             {
               "pos": "-",
               "name": "Fred M\u00f6ller",
-              "car_class": "GT3",
+              "car_class": "CUP",
               "car_model": 28,
               "s1": "-",
               "s2": "-",
@@ -3005,8 +3125,32 @@
             {
               "pos": "-",
               "name": "Dominic Zimmermann [SL]",
-              "car_class": "GT3",
+              "car_class": "CUP",
               "car_model": 28,
+              "s1": "-",
+              "s2": "-",
+              "s3": "-",
+              "best_lap": "NO TIME",
+              "gap_pole": "-",
+              "gap_pole_ms": null
+            },
+            {
+              "pos": "-",
+              "name": "S Julius",
+              "car_class": "GT2",
+              "car_model": 29,
+              "s1": "-",
+              "s2": "-",
+              "s3": "-",
+              "best_lap": "NO TIME",
+              "gap_pole": "-",
+              "gap_pole_ms": null
+            },
+            {
+              "pos": "-",
+              "name": "Toma Alex | ARF",
+              "car_class": "GT2",
+              "car_model": 29,
               "s1": "-",
               "s2": "-",
               "s3": "-",
@@ -3020,7 +3164,7 @@
           "name": "Race 2: Imola",
           "results": [
             {
-              "car_class": "GT3",
+              "car_class": "CUP",
               "pos": 1,
               "qualy_pos": 1,
               "qualy_time": "1:42.967",
@@ -3034,13 +3178,13 @@
               "name": "Marsi Bella [SL]",
               "car_model": 26,
               "laps": 18,
-              "incidents": 0,
-              "avg_time": "1:44.045",
-              "avg_lap_ms": 104045.55555555556,
+              "incidents": 1,
+              "avg_time": "1:43.363",
+              "avg_lap_ms": 103363.41176470589,
               "lap_history": [
                 {
                   "time_ms": 115642,
-                  "is_incident": false
+                  "is_incident": true
                 },
                 {
                   "time_ms": 104225,
@@ -3123,7 +3267,7 @@
               "points": 0
             },
             {
-              "car_class": "GT3",
+              "car_class": "CUP",
               "pos": 2,
               "qualy_pos": 2,
               "qualy_time": "1:43.477",
@@ -3137,13 +3281,13 @@
               "name": "Bence Kamaras",
               "car_model": 26,
               "laps": 18,
-              "incidents": 0,
-              "avg_time": "1:45.166",
-              "avg_lap_ms": 105166.11111111111,
+              "incidents": 1,
+              "avg_time": "1:44.594",
+              "avg_lap_ms": 104594.88235294117,
               "lap_history": [
                 {
                   "time_ms": 114877,
-                  "is_incident": false
+                  "is_incident": true
                 },
                 {
                   "time_ms": 106305,
@@ -3214,19 +3358,19 @@
                   "is_incident": false
                 }
               ],
-              "gap_pace_ms": 1120.5555555555475,
+              "gap_pace_ms": 1231.4705882352864,
               "gap_best_ms": 0,
-              "gap_pace": "+1.121",
+              "gap_pace": "+1.231",
               "best_lap": "1:42.885",
               "best_lap_ms": 102885,
               "gap_best": "BEST LAP",
               "penalty": 0,
               "race_gap": "+20.587s",
-              "pace_pos": 2,
+              "pace_pos": 4,
               "points": 0
             },
             {
-              "car_class": "GT3",
+              "car_class": "CUP",
               "pos": 3,
               "qualy_pos": 5,
               "qualy_time": "1:43.765",
@@ -3240,13 +3384,13 @@
               "name": "Micha Nieuwkoop",
               "car_model": 26,
               "laps": 18,
-              "incidents": 0,
-              "avg_time": "1:45.530",
-              "avg_lap_ms": 105530.5,
+              "incidents": 1,
+              "avg_time": "1:44.948",
+              "avg_lap_ms": 104948.94117647059,
               "lap_history": [
                 {
                   "time_ms": 115417,
-                  "is_incident": false
+                  "is_incident": true
                 },
                 {
                   "time_ms": 105952,
@@ -3317,19 +3461,19 @@
                   "is_incident": false
                 }
               ],
-              "gap_pace_ms": 1484.944444444438,
+              "gap_pace_ms": 1585.529411764699,
               "gap_best_ms": 1362,
-              "gap_pace": "+1.485",
+              "gap_pace": "+1.586",
               "best_lap": "1:44.247",
               "best_lap_ms": 104247,
               "gap_best": "+1.362",
               "penalty": 0,
               "race_gap": "+28.392s",
-              "pace_pos": 4,
+              "pace_pos": 5,
               "points": 0
             },
             {
-              "car_class": "GT3",
+              "car_class": "CUP",
               "pos": 4,
               "qualy_pos": 7,
               "qualy_time": "1:44.055",
@@ -3343,13 +3487,13 @@
               "name": "Alex Grandi",
               "car_model": 26,
               "laps": 18,
-              "incidents": 0,
-              "avg_time": "1:45.855",
-              "avg_lap_ms": 105855.72222222222,
+              "incidents": 1,
+              "avg_time": "1:45.296",
+              "avg_lap_ms": 105296.35294117648,
               "lap_history": [
                 {
                   "time_ms": 115365,
-                  "is_incident": false
+                  "is_incident": true
                 },
                 {
                   "time_ms": 105967,
@@ -3420,19 +3564,19 @@
                   "is_incident": false
                 }
               ],
-              "gap_pace_ms": 1810.166666666657,
+              "gap_pace_ms": 1932.9411764705874,
               "gap_best_ms": 1362,
-              "gap_pace": "+1.810",
+              "gap_pace": "+1.933",
               "best_lap": "1:44.247",
               "best_lap_ms": 104247,
               "gap_best": "+1.362",
               "penalty": 0,
               "race_gap": "+34.827s",
-              "pace_pos": 5,
+              "pace_pos": 6,
               "points": 0
             },
             {
-              "car_class": "GT3",
+              "car_class": "CUP",
               "pos": 5,
               "qualy_pos": 10,
               "qualy_time": "1:44.632",
@@ -3446,13 +3590,13 @@
               "name": "Marty Fox [SL]",
               "car_model": 26,
               "laps": 18,
-              "incidents": 0,
-              "avg_time": "1:46.169",
-              "avg_lap_ms": 106169.61111111111,
+              "incidents": 1,
+              "avg_time": "1:45.524",
+              "avg_lap_ms": 105524.88235294117,
               "lap_history": [
                 {
                   "time_ms": 117130,
-                  "is_incident": false
+                  "is_incident": true
                 },
                 {
                   "time_ms": 106895,
@@ -3523,9 +3667,9 @@
                   "is_incident": false
                 }
               ],
-              "gap_pace_ms": 2124.0555555555475,
+              "gap_pace_ms": 2161.4705882352864,
               "gap_best_ms": 1172,
-              "gap_pace": "+2.124",
+              "gap_pace": "+2.161",
               "best_lap": "1:44.057",
               "best_lap_ms": 104057,
               "gap_best": "+1.172",
@@ -3535,7 +3679,7 @@
               "points": 0
             },
             {
-              "car_class": "GT3",
+              "car_class": "CUP",
               "pos": 6,
               "qualy_pos": "-",
               "qualy_time": "-",
@@ -3549,13 +3693,13 @@
               "name": "Casper Smit",
               "car_model": 26,
               "laps": 18,
-              "incidents": 0,
-              "avg_time": "1:46.390",
-              "avg_lap_ms": 106390.44444444444,
+              "incidents": 1,
+              "avg_time": "1:45.773",
+              "avg_lap_ms": 105773.41176470589,
               "lap_history": [
                 {
                   "time_ms": 116880,
-                  "is_incident": false
+                  "is_incident": true
                 },
                 {
                   "time_ms": 106307,
@@ -3626,9 +3770,9 @@
                   "is_incident": false
                 }
               ],
-              "gap_pace_ms": 2344.888888888876,
+              "gap_pace_ms": 2410.0,
               "gap_best_ms": 2127,
-              "gap_pace": "+2.345",
+              "gap_pace": "+2.410",
               "best_lap": "1:45.012",
               "best_lap_ms": 105012,
               "gap_best": "+2.127",
@@ -3638,7 +3782,7 @@
               "points": 0
             },
             {
-              "car_class": "GT3",
+              "car_class": "CUP",
               "pos": 7,
               "qualy_pos": 9,
               "qualy_time": "1:44.555",
@@ -3652,13 +3796,13 @@
               "name": "Raymond Crawford [SL]",
               "car_model": 26,
               "laps": 18,
-              "incidents": 0,
-              "avg_time": "1:46.705",
-              "avg_lap_ms": 106705.22222222222,
+              "incidents": 2,
+              "avg_time": "1:45.784",
+              "avg_lap_ms": 105784.3125,
               "lap_history": [
                 {
                   "time_ms": 117730,
-                  "is_incident": false
+                  "is_incident": true
                 },
                 {
                   "time_ms": 105972,
@@ -3678,7 +3822,7 @@
                 },
                 {
                   "time_ms": 110415,
-                  "is_incident": false
+                  "is_incident": true
                 },
                 {
                   "time_ms": 105385,
@@ -3729,9 +3873,9 @@
                   "is_incident": false
                 }
               ],
-              "gap_pace_ms": 2659.666666666657,
+              "gap_pace_ms": 2420.9007352941117,
               "gap_best_ms": 1432,
-              "gap_pace": "+2.660",
+              "gap_pace": "+2.421",
               "best_lap": "1:44.317",
               "best_lap_ms": 104317,
               "gap_best": "+1.432",
@@ -3741,7 +3885,7 @@
               "points": 0
             },
             {
-              "car_class": "GT3",
+              "car_class": "CUP",
               "pos": 8,
               "qualy_pos": 12,
               "qualy_time": "1:45.612",
@@ -3755,13 +3899,13 @@
               "name": "Fiesta Bonanza",
               "car_model": 26,
               "laps": 18,
-              "incidents": 0,
-              "avg_time": "1:47.383",
-              "avg_lap_ms": 107383.66666666667,
+              "incidents": 1,
+              "avg_time": "1:46.432",
+              "avg_lap_ms": 106432.58823529411,
               "lap_history": [
                 {
                   "time_ms": 123552,
-                  "is_incident": false
+                  "is_incident": true
                 },
                 {
                   "time_ms": 106362,
@@ -3832,9 +3976,9 @@
                   "is_incident": false
                 }
               ],
-              "gap_pace_ms": 3338.1111111111095,
+              "gap_pace_ms": 3069.1764705882233,
               "gap_best_ms": 2315,
-              "gap_pace": "+3.338",
+              "gap_pace": "+3.069",
               "best_lap": "1:45.200",
               "best_lap_ms": 105200,
               "gap_best": "+2.315",
@@ -3844,7 +3988,7 @@
               "points": 0
             },
             {
-              "car_class": "GT3",
+              "car_class": "CUP",
               "pos": 9,
               "qualy_pos": 11,
               "qualy_time": "1:44.902",
@@ -3858,13 +4002,13 @@
               "name": "mr. genius",
               "car_model": 26,
               "laps": 18,
-              "incidents": 0,
-              "avg_time": "1:47.536",
-              "avg_lap_ms": 107536.38888888889,
+              "incidents": 1,
+              "avg_time": "1:46.667",
+              "avg_lap_ms": 106667.82352941176,
               "lap_history": [
                 {
                   "time_ms": 122302,
-                  "is_incident": false
+                  "is_incident": true
                 },
                 {
                   "time_ms": 106782,
@@ -3935,9 +4079,9 @@
                   "is_incident": false
                 }
               ],
-              "gap_pace_ms": 3490.8333333333285,
+              "gap_pace_ms": 3304.411764705874,
               "gap_best_ms": 2470,
-              "gap_pace": "+3.491",
+              "gap_pace": "+3.304",
               "best_lap": "1:45.355",
               "best_lap_ms": 105355,
               "gap_best": "+2.470",
@@ -3947,7 +4091,7 @@
               "points": 0
             },
             {
-              "car_class": "GT3",
+              "car_class": "CUP",
               "pos": "DNF",
               "qualy_pos": 3,
               "qualy_time": "1:43.520",
@@ -3961,13 +4105,13 @@
               "name": "Leonardo Cocco",
               "car_model": 26,
               "laps": 12,
-              "incidents": 0,
-              "avg_time": "1:45.365",
-              "avg_lap_ms": 105365.83333333333,
+              "incidents": 1,
+              "avg_time": "1:44.062",
+              "avg_lap_ms": 104062.09090909091,
               "lap_history": [
                 {
                   "time_ms": 119707,
-                  "is_incident": false
+                  "is_incident": true
                 },
                 {
                   "time_ms": 103987,
@@ -4014,9 +4158,9 @@
                   "is_incident": false
                 }
               ],
-              "gap_pace_ms": 1320.2777777777665,
+              "gap_pace_ms": 698.6791443850234,
               "gap_best_ms": 757,
-              "gap_pace": "+1.320",
+              "gap_pace": "+0.699",
               "best_lap": "1:43.642",
               "best_lap_ms": 103642,
               "gap_best": "+0.757",
@@ -4026,7 +4170,7 @@
               "points": 0
             },
             {
-              "car_class": "GT3",
+              "car_class": "CUP",
               "pos": "DNF",
               "qualy_pos": 4,
               "qualy_time": "1:43.650",
@@ -4040,13 +4184,13 @@
               "name": "Andrea Genovese",
               "car_model": 26,
               "laps": 9,
-              "incidents": 0,
-              "avg_time": "1:46.110",
-              "avg_lap_ms": 106110.33333333333,
+              "incidents": 2,
+              "avg_time": "1:43.891",
+              "avg_lap_ms": 103891.57142857143,
               "lap_history": [
                 {
                   "time_ms": 115587,
-                  "is_incident": false
+                  "is_incident": true
                 },
                 {
                   "time_ms": 105375,
@@ -4078,18 +4222,18 @@
                 },
                 {
                   "time_ms": 112165,
-                  "is_incident": false
+                  "is_incident": true
                 }
               ],
-              "gap_pace_ms": 2064.7777777777665,
+              "gap_pace_ms": 528.1596638655465,
               "gap_best_ms": 612,
-              "gap_pace": "+2.065",
+              "gap_pace": "+0.528",
               "best_lap": "1:43.497",
               "best_lap_ms": 103497,
               "gap_best": "+0.612",
               "penalty": 0,
               "race_gap": "DNF",
-              "pace_pos": 6,
+              "pace_pos": 2,
               "points": 0
             }
           ],
@@ -4097,7 +4241,7 @@
             {
               "pos": 1,
               "name": "Marsi Bella [SL]",
-              "car_class": "GT3",
+              "car_class": "CUP",
               "car_model": 26,
               "s1": "0:22.002",
               "s2": "0:33.287",
@@ -4109,7 +4253,7 @@
             {
               "pos": 2,
               "name": "Bence Kamaras",
-              "car_class": "GT3",
+              "car_class": "CUP",
               "car_model": 26,
               "s1": "0:21.975",
               "s2": "0:33.582",
@@ -4121,7 +4265,7 @@
             {
               "pos": 3,
               "name": "Leonardo Cocco",
-              "car_class": "GT3",
+              "car_class": "CUP",
               "car_model": 26,
               "s1": "0:21.967",
               "s2": "0:33.352",
@@ -4133,7 +4277,7 @@
             {
               "pos": 4,
               "name": "Andrea Genovese",
-              "car_class": "GT3",
+              "car_class": "CUP",
               "car_model": 26,
               "s1": "0:22.315",
               "s2": "0:33.632",
@@ -4145,7 +4289,7 @@
             {
               "pos": 5,
               "name": "Micha Nieuwkoop",
-              "car_class": "GT3",
+              "car_class": "CUP",
               "car_model": 26,
               "s1": "0:22.052",
               "s2": "0:33.577",
@@ -4157,7 +4301,7 @@
             {
               "pos": 6,
               "name": "Youssef Mohamed",
-              "car_class": "GT3",
+              "car_class": "CUP",
               "car_model": 26,
               "s1": "0:22.327",
               "s2": "0:33.637",
@@ -4169,7 +4313,7 @@
             {
               "pos": 7,
               "name": "Alex Grandi",
-              "car_class": "GT3",
+              "car_class": "CUP",
               "car_model": 26,
               "s1": "0:22.370",
               "s2": "0:33.520",
@@ -4181,7 +4325,7 @@
             {
               "pos": 8,
               "name": "Antoni Mencik",
-              "car_class": "GT3",
+              "car_class": "CUP",
               "car_model": 26,
               "s1": "0:22.360",
               "s2": "0:33.682",
@@ -4193,7 +4337,7 @@
             {
               "pos": 9,
               "name": "Raymond Crawford [SL]",
-              "car_class": "GT3",
+              "car_class": "CUP",
               "car_model": 26,
               "s1": "0:22.107",
               "s2": "0:33.860",
@@ -4205,7 +4349,7 @@
             {
               "pos": 10,
               "name": "Marty Fox [SL]",
-              "car_class": "GT3",
+              "car_class": "CUP",
               "car_model": 26,
               "s1": "0:22.240",
               "s2": "0:33.867",
@@ -4217,7 +4361,7 @@
             {
               "pos": 11,
               "name": "mr. genius",
-              "car_class": "GT3",
+              "car_class": "CUP",
               "car_model": 26,
               "s1": "0:22.327",
               "s2": "0:34.132",
@@ -4229,7 +4373,7 @@
             {
               "pos": 12,
               "name": "Fiesta Bonanza",
-              "car_class": "GT3",
+              "car_class": "CUP",
               "car_model": 26,
               "s1": "0:22.487",
               "s2": "0:34.130",
@@ -4241,7 +4385,7 @@
             {
               "pos": "-",
               "name": "Casper Smit",
-              "car_class": "GT3",
+              "car_class": "CUP",
               "car_model": 26,
               "s1": "-",
               "s2": "-",
@@ -4253,7 +4397,7 @@
             {
               "pos": "-",
               "name": "Eric Crey",
-              "car_class": "GT3",
+              "car_class": "CUP",
               "car_model": 28,
               "s1": "-",
               "s2": "-",
@@ -4265,7 +4409,7 @@
             {
               "pos": "-",
               "name": "Dominic Zimmermann [SL]",
-              "car_class": "GT3",
+              "car_class": "CUP",
               "car_model": 26,
               "s1": "-",
               "s2": "-",
@@ -4288,7 +4432,7 @@
           "name": "Race 1: Silverstone",
           "results": [
             {
-              "car_class": "GT3",
+              "car_class": "TCX",
               "pos": 1,
               "qualy_pos": 2,
               "qualy_time": "2:16.637",
@@ -4371,7 +4515,7 @@
               "points": 180
             },
             {
-              "car_class": "GT3",
+              "car_class": "TCX",
               "pos": 2,
               "qualy_pos": 1,
               "qualy_time": "2:16.322",
@@ -4454,7 +4598,7 @@
               "points": 150
             },
             {
-              "car_class": "GT3",
+              "car_class": "TCX",
               "pos": 3,
               "qualy_pos": 7,
               "qualy_time": "2:17.707",
@@ -4537,7 +4681,7 @@
               "points": 72
             },
             {
-              "car_class": "GT3",
+              "car_class": "TCX",
               "pos": 4,
               "qualy_pos": 12,
               "qualy_time": "2:18.715",
@@ -4616,11 +4760,11 @@
               "gap_best": "+1.793",
               "penalty": 0,
               "race_gap": "+22.360s",
-              "pace_pos": 4,
+              "pace_pos": 5,
               "points": 42
             },
             {
-              "car_class": "GT3",
+              "car_class": "TCX",
               "pos": 5,
               "qualy_pos": 9,
               "qualy_time": "2:17.920",
@@ -4699,11 +4843,11 @@
               "gap_best": "+1.950",
               "penalty": 0,
               "race_gap": "+24.774s",
-              "pace_pos": 5,
+              "pace_pos": 6,
               "points": 120
             },
             {
-              "car_class": "GT3",
+              "car_class": "TCX",
               "pos": 6,
               "qualy_pos": 13,
               "qualy_time": "2:18.955",
@@ -4717,13 +4861,13 @@
               "name": "Lev Slepuzjnikov",
               "car_model": 27,
               "laps": 13,
-              "incidents": 0,
-              "avg_time": "2:26.638",
-              "avg_lap_ms": 146638.38461538462,
+              "incidents": 1,
+              "avg_time": "2:25.978",
+              "avg_lap_ms": 145978.91666666666,
               "lap_history": [
                 {
                   "time_ms": 154552,
-                  "is_incident": false
+                  "is_incident": true
                 },
                 {
                   "time_ms": 146375,
@@ -4774,19 +4918,19 @@
                   "is_incident": false
                 }
               ],
-              "gap_pace_ms": 1705.0769230769365,
+              "gap_pace_ms": 1045.6089743589691,
               "gap_best_ms": 1608,
-              "gap_pace": "+1.705",
+              "gap_pace": "+1.046",
               "best_lap": "2:24.845",
               "best_lap_ms": 144845,
               "gap_best": "+1.608",
               "penalty": 0,
               "race_gap": "+26.885s",
-              "pace_pos": 6,
+              "pace_pos": 4,
               "points": 66
             },
             {
-              "car_class": "GT3",
+              "car_class": "TCX",
               "pos": 7,
               "qualy_pos": 10,
               "qualy_time": "2:17.970",
@@ -4800,13 +4944,13 @@
               "name": "Gael Duch\u00c3\u00aane ESP [SL]",
               "car_model": 27,
               "laps": 13,
-              "incidents": 0,
-              "avg_time": "2:27.601",
-              "avg_lap_ms": 147601.6923076923,
+              "incidents": 1,
+              "avg_time": "2:27.100",
+              "avg_lap_ms": 147100.41666666666,
               "lap_history": [
                 {
                   "time_ms": 153617,
-                  "is_incident": false
+                  "is_incident": true
                 },
                 {
                   "time_ms": 147045,
@@ -4857,9 +5001,9 @@
                   "is_incident": false
                 }
               ],
-              "gap_pace_ms": 2668.3846153846243,
+              "gap_pace_ms": 2167.108974358969,
               "gap_best_ms": 2108,
-              "gap_pace": "+2.668",
+              "gap_pace": "+2.167",
               "best_lap": "2:25.345",
               "best_lap_ms": 145345,
               "gap_best": "+2.108",
@@ -4869,7 +5013,7 @@
               "points": 39
             },
             {
-              "car_class": "GT3",
+              "car_class": "TCX",
               "pos": 8,
               "qualy_pos": 3,
               "qualy_time": "2:17.055",
@@ -4883,13 +5027,13 @@
               "name": "Pauli Keski-Filppula",
               "car_model": 27,
               "laps": 13,
-              "incidents": 0,
-              "avg_time": "2:28.103",
-              "avg_lap_ms": 148103.46153846153,
+              "incidents": 1,
+              "avg_time": "2:27.390",
+              "avg_lap_ms": 147390.0,
               "lap_history": [
                 {
                   "time_ms": 156665,
-                  "is_incident": false
+                  "is_incident": true
                 },
                 {
                   "time_ms": 147015,
@@ -4940,9 +5084,9 @@
                   "is_incident": false
                 }
               ],
-              "gap_pace_ms": 3170.153846153844,
+              "gap_pace_ms": 2456.692307692312,
               "gap_best_ms": 2208,
-              "gap_pace": "+3.170",
+              "gap_pace": "+2.457",
               "best_lap": "2:25.445",
               "best_lap_ms": 145445,
               "gap_best": "+2.208",
@@ -4952,7 +5096,7 @@
               "points": 105
             },
             {
-              "car_class": "GT3",
+              "car_class": "TCX",
               "pos": 9,
               "qualy_pos": 15,
               "qualy_time": "2:19.532",
@@ -5031,11 +5175,11 @@
               "gap_best": "+2.058",
               "penalty": 0,
               "race_gap": "+42.716s",
-              "pace_pos": 7,
+              "pace_pos": 10,
               "points": 90
             },
             {
-              "car_class": "GT3",
+              "car_class": "TCX",
               "pos": 10,
               "qualy_pos": 6,
               "qualy_time": "2:17.682",
@@ -5049,9 +5193,9 @@
               "name": "Raymond Crawford [SL]",
               "car_model": 27,
               "laps": 13,
-              "incidents": 0,
-              "avg_time": "2:29.346",
-              "avg_lap_ms": 149346.0,
+              "incidents": 2,
+              "avg_time": "2:26.881",
+              "avg_lap_ms": 146881.72727272726,
               "lap_history": [
                 {
                   "time_ms": 151622,
@@ -5095,30 +5239,30 @@
                 },
                 {
                   "time_ms": 159202,
-                  "is_incident": false
+                  "is_incident": true
                 },
                 {
                   "time_ms": 166597,
-                  "is_incident": false
+                  "is_incident": true
                 },
                 {
                   "time_ms": 146500,
                   "is_incident": false
                 }
               ],
-              "gap_pace_ms": 4412.692307692312,
+              "gap_pace_ms": 1948.419580419577,
               "gap_best_ms": 1775,
-              "gap_pace": "+4.413",
+              "gap_pace": "+1.948",
               "best_lap": "2:25.012",
               "best_lap_ms": 145012,
               "gap_best": "+1.775",
               "penalty": 0,
               "race_gap": "+59.340s",
-              "pace_pos": 12,
+              "pace_pos": 7,
               "points": 84
             },
             {
-              "car_class": "GT3",
+              "car_class": "TCX",
               "pos": 11,
               "qualy_pos": "-",
               "qualy_time": "-",
@@ -5132,13 +5276,13 @@
               "name": ".. miru..momo..",
               "car_model": 27,
               "laps": 13,
-              "incidents": 0,
-              "avg_time": "2:29.024",
-              "avg_lap_ms": 149024.92307692306,
+              "incidents": 1,
+              "avg_time": "2:28.136",
+              "avg_lap_ms": 148136.16666666666,
               "lap_history": [
                 {
                   "time_ms": 159690,
-                  "is_incident": false
+                  "is_incident": true
                 },
                 {
                   "time_ms": 151465,
@@ -5189,19 +5333,19 @@
                   "is_incident": false
                 }
               ],
-              "gap_pace_ms": 4091.6153846153757,
+              "gap_pace_ms": 3202.858974358969,
               "gap_best_ms": 2970,
-              "gap_pace": "+4.092",
+              "gap_pace": "+3.203",
               "best_lap": "2:26.207",
               "best_lap_ms": 146207,
               "gap_best": "+2.970",
               "penalty": 0,
               "race_gap": "+63.662s",
-              "pace_pos": 10,
+              "pace_pos": 13,
               "points": 60
             },
             {
-              "car_class": "GT3",
+              "car_class": "TCX",
               "pos": 12,
               "qualy_pos": "-",
               "qualy_time": "-",
@@ -5215,13 +5359,13 @@
               "name": "Javier Lai",
               "car_model": 27,
               "laps": 13,
-              "incidents": 0,
-              "avg_time": "2:29.207",
-              "avg_lap_ms": 149207.53846153847,
+              "incidents": 1,
+              "avg_time": "2:28.481",
+              "avg_lap_ms": 148481.08333333334,
               "lap_history": [
                 {
                   "time_ms": 157925,
-                  "is_incident": false
+                  "is_incident": true
                 },
                 {
                   "time_ms": 150687,
@@ -5272,19 +5416,19 @@
                   "is_incident": false
                 }
               ],
-              "gap_pace_ms": 4274.23076923078,
+              "gap_pace_ms": 3547.775641025655,
               "gap_best_ms": 3898,
-              "gap_pace": "+4.274",
+              "gap_pace": "+3.548",
               "best_lap": "2:27.135",
               "best_lap_ms": 147135,
               "gap_best": "+3.898",
               "penalty": 0,
               "race_gap": "+64.157s",
-              "pace_pos": 11,
+              "pace_pos": 15,
               "points": 57
             },
             {
-              "car_class": "GT3",
+              "car_class": "TCX",
               "pos": 13,
               "qualy_pos": 11,
               "qualy_time": "2:18.020",
@@ -5298,13 +5442,13 @@
               "name": "Youssef Mohamed",
               "car_model": 27,
               "laps": 13,
-              "incidents": 0,
-              "avg_time": "2:29.596",
-              "avg_lap_ms": 149596.23076923078,
+              "incidents": 1,
+              "avg_time": "2:28.377",
+              "avg_lap_ms": 148377.83333333334,
               "lap_history": [
                 {
                   "time_ms": 164217,
-                  "is_incident": false
+                  "is_incident": true
                 },
                 {
                   "time_ms": 151202,
@@ -5355,19 +5499,19 @@
                   "is_incident": false
                 }
               ],
-              "gap_pace_ms": 4662.923076923093,
+              "gap_pace_ms": 3444.525641025655,
               "gap_best_ms": 3243,
-              "gap_pace": "+4.663",
+              "gap_pace": "+3.445",
               "best_lap": "2:26.480",
               "best_lap_ms": 146480,
               "gap_best": "+3.243",
               "penalty": 0,
               "race_gap": "+64.634s",
-              "pace_pos": 13,
+              "pace_pos": 14,
               "points": 96
             },
             {
-              "car_class": "GT3",
+              "car_class": "TCX",
               "pos": 14,
               "qualy_pos": 4,
               "qualy_time": "2:17.572",
@@ -5381,9 +5525,9 @@
               "name": "Leonardo Cocco",
               "car_model": 27,
               "laps": 13,
-              "incidents": 0,
-              "avg_time": "2:30.965",
-              "avg_lap_ms": 150965.23076923078,
+              "incidents": 2,
+              "avg_time": "2:27.730",
+              "avg_lap_ms": 147730.0909090909,
               "lap_history": [
                 {
                   "time_ms": 152050,
@@ -5403,7 +5547,7 @@
                 },
                 {
                   "time_ms": 161797,
-                  "is_incident": false
+                  "is_incident": true
                 },
                 {
                   "time_ms": 145967,
@@ -5431,26 +5575,26 @@
                 },
                 {
                   "time_ms": 175720,
-                  "is_incident": false
+                  "is_incident": true
                 },
                 {
                   "time_ms": 149730,
                   "is_incident": false
                 }
               ],
-              "gap_pace_ms": 6031.923076923093,
+              "gap_pace_ms": 2796.783216783224,
               "gap_best_ms": 2768,
-              "gap_pace": "+6.032",
+              "gap_pace": "+2.797",
               "best_lap": "2:26.005",
               "best_lap_ms": 146005,
               "gap_best": "+2.768",
               "penalty": 0,
               "race_gap": "+79.709s",
-              "pace_pos": 15,
+              "pace_pos": 12,
               "points": 36
             },
             {
-              "car_class": "GT3",
+              "car_class": "TCX",
               "pos": 15,
               "qualy_pos": 16,
               "qualy_time": "2:20.187",
@@ -5464,13 +5608,13 @@
               "name": "Fiesta Bonanza",
               "car_model": 27,
               "laps": 13,
-              "incidents": 0,
-              "avg_time": "2:30.651",
-              "avg_lap_ms": 150651.6923076923,
+              "incidents": 2,
+              "avg_time": "2:29.840",
+              "avg_lap_ms": 149840.9090909091,
               "lap_history": [
                 {
                   "time_ms": 156450,
-                  "is_incident": false
+                  "is_incident": true
                 },
                 {
                   "time_ms": 151287,
@@ -5482,7 +5626,7 @@
                 },
                 {
                   "time_ms": 153772,
-                  "is_incident": false
+                  "is_incident": true
                 },
                 {
                   "time_ms": 150602,
@@ -5521,19 +5665,19 @@
                   "is_incident": false
                 }
               ],
-              "gap_pace_ms": 5718.384615384624,
+              "gap_pace_ms": 4907.6013986014,
               "gap_best_ms": 6103,
-              "gap_pace": "+5.718",
+              "gap_pace": "+4.908",
               "best_lap": "2:29.340",
               "best_lap_ms": 149340,
               "gap_best": "+6.103",
               "penalty": 0,
               "race_gap": "+80.329s",
-              "pace_pos": 14,
+              "pace_pos": 18,
               "points": 33
             },
             {
-              "car_class": "GT3",
+              "car_class": "TCX",
               "pos": 16,
               "qualy_pos": "-",
               "qualy_time": "-",
@@ -5547,17 +5691,17 @@
               "name": "Tiago Dresch",
               "car_model": 27,
               "laps": 13,
-              "incidents": 0,
-              "avg_time": "2:31.451",
-              "avg_lap_ms": 151451.38461538462,
+              "incidents": 2,
+              "avg_time": "2:29.388",
+              "avg_lap_ms": 149388.72727272726,
               "lap_history": [
                 {
                   "time_ms": 162845,
-                  "is_incident": false
+                  "is_incident": true
                 },
                 {
                   "time_ms": 162747,
-                  "is_incident": false
+                  "is_incident": true
                 },
                 {
                   "time_ms": 149340,
@@ -5604,19 +5748,19 @@
                   "is_incident": false
                 }
               ],
-              "gap_pace_ms": 6518.0769230769365,
+              "gap_pace_ms": 4455.419580419577,
               "gap_best_ms": 4858,
-              "gap_pace": "+6.518",
+              "gap_pace": "+4.455",
               "best_lap": "2:28.095",
               "best_lap_ms": 148095,
               "gap_best": "+4.858",
               "penalty": 0,
               "race_gap": "+99.024s",
-              "pace_pos": 16,
+              "pace_pos": 17,
               "points": 54
             },
             {
-              "car_class": "GT3",
+              "car_class": "TCX",
               "pos": 17,
               "qualy_pos": 17,
               "qualy_time": "2:20.450",
@@ -5630,17 +5774,17 @@
               "name": "Alonzo Allons-y",
               "car_model": 27,
               "laps": 13,
-              "incidents": 0,
-              "avg_time": "2:32.295",
-              "avg_lap_ms": 152295.38461538462,
+              "incidents": 3,
+              "avg_time": "2:29.895",
+              "avg_lap_ms": 149895.6,
               "lap_history": [
                 {
                   "time_ms": 165432,
-                  "is_incident": false
+                  "is_incident": true
                 },
                 {
                   "time_ms": 157237,
-                  "is_incident": false
+                  "is_incident": true
                 },
                 {
                   "time_ms": 149660,
@@ -5656,7 +5800,7 @@
                 },
                 {
                   "time_ms": 158215,
-                  "is_incident": false
+                  "is_incident": true
                 },
                 {
                   "time_ms": 150117,
@@ -5687,19 +5831,19 @@
                   "is_incident": false
                 }
               ],
-              "gap_pace_ms": 7362.0769230769365,
+              "gap_pace_ms": 4962.292307692318,
               "gap_best_ms": 5218,
-              "gap_pace": "+7.362",
+              "gap_pace": "+4.962",
               "best_lap": "2:28.455",
               "best_lap_ms": 148455,
               "gap_best": "+5.218",
               "penalty": 0,
               "race_gap": "+107.274s",
-              "pace_pos": 17,
+              "pace_pos": 19,
               "points": 51
             },
             {
-              "car_class": "GT3",
+              "car_class": "TCX",
               "pos": 18,
               "qualy_pos": 14,
               "qualy_time": "2:19.415",
@@ -5713,13 +5857,13 @@
               "name": "Doctor Bones",
               "car_model": 27,
               "laps": 13,
-              "incidents": 0,
-              "avg_time": "2:34.344",
-              "avg_lap_ms": 154344.53846153847,
+              "incidents": 6,
+              "avg_time": "2:27.667",
+              "avg_lap_ms": 147667.57142857142,
               "lap_history": [
                 {
                   "time_ms": 153385,
-                  "is_incident": false
+                  "is_incident": true
                 },
                 {
                   "time_ms": 148112,
@@ -5735,7 +5879,7 @@
                 },
                 {
                   "time_ms": 169045,
-                  "is_incident": false
+                  "is_incident": true
                 },
                 {
                   "time_ms": 146927,
@@ -5747,11 +5891,11 @@
                 },
                 {
                   "time_ms": 161637,
-                  "is_incident": false
+                  "is_incident": true
                 },
                 {
                   "time_ms": 162242,
-                  "is_incident": false
+                  "is_incident": true
                 },
                 {
                   "time_ms": 149930,
@@ -5759,30 +5903,30 @@
                 },
                 {
                   "time_ms": 160217,
-                  "is_incident": false
+                  "is_incident": true
                 },
                 {
                   "time_ms": 166280,
-                  "is_incident": false
+                  "is_incident": true
                 },
                 {
                   "time_ms": 149777,
                   "is_incident": false
                 }
               ],
-              "gap_pace_ms": 9411.23076923078,
+              "gap_pace_ms": 2734.2637362637324,
               "gap_best_ms": 2705,
-              "gap_pace": "+9.411",
+              "gap_pace": "+2.734",
               "best_lap": "2:25.942",
               "best_lap_ms": 145942,
               "gap_best": "+2.705",
               "penalty": 0,
               "race_gap": "+127.292s",
-              "pace_pos": 18,
+              "pace_pos": 11,
               "points": 78
             },
             {
-              "car_class": "GT3",
+              "car_class": "TCX",
               "pos": 19,
               "qualy_pos": 18,
               "qualy_time": "2:21.160",
@@ -5796,25 +5940,25 @@
               "name": "Alice Schupp-M\u00c3\u00bcller",
               "car_model": 27,
               "laps": 13,
-              "incidents": 0,
-              "avg_time": "2:34.725",
-              "avg_lap_ms": 154725.3076923077,
+              "incidents": 5,
+              "avg_time": "2:30.026",
+              "avg_lap_ms": 150026.625,
               "lap_history": [
                 {
                   "time_ms": 159355,
-                  "is_incident": false
+                  "is_incident": true
                 },
                 {
                   "time_ms": 157285,
-                  "is_incident": false
+                  "is_incident": true
                 },
                 {
                   "time_ms": 158477,
-                  "is_incident": false
+                  "is_incident": true
                 },
                 {
                   "time_ms": 158297,
-                  "is_incident": false
+                  "is_incident": true
                 },
                 {
                   "time_ms": 151287,
@@ -5846,26 +5990,26 @@
                 },
                 {
                   "time_ms": 177802,
-                  "is_incident": false
+                  "is_incident": true
                 },
                 {
                   "time_ms": 151110,
                   "is_incident": false
                 }
               ],
-              "gap_pace_ms": 9792.0,
+              "gap_pace_ms": 5093.317307692312,
               "gap_best_ms": 5000,
-              "gap_pace": "+9.792",
+              "gap_pace": "+5.093",
               "best_lap": "2:28.237",
               "best_lap_ms": 148237,
               "gap_best": "+5.000",
               "penalty": 0,
               "race_gap": "+134.560s",
-              "pace_pos": 19,
+              "pace_pos": 20,
               "points": 48
             },
             {
-              "car_class": "GT3",
+              "car_class": "TCX",
               "pos": 20,
               "qualy_pos": 21,
               "qualy_time": "2:22.480",
@@ -5879,25 +6023,25 @@
               "name": "Danil kolbasenko",
               "car_model": 27,
               "laps": 12,
-              "incidents": 0,
-              "avg_time": "2:36.434",
-              "avg_lap_ms": 156434.75,
+              "incidents": 8,
+              "avg_time": "2:32.184",
+              "avg_lap_ms": 152184.75,
               "lap_history": [
                 {
                   "time_ms": 183537,
-                  "is_incident": false
+                  "is_incident": true
                 },
                 {
                   "time_ms": 159360,
-                  "is_incident": false
+                  "is_incident": true
                 },
                 {
                   "time_ms": 153810,
-                  "is_incident": false
+                  "is_incident": true
                 },
                 {
                   "time_ms": 156352,
-                  "is_incident": false
+                  "is_incident": true
                 },
                 {
                   "time_ms": 153097,
@@ -5909,11 +6053,11 @@
                 },
                 {
                   "time_ms": 153440,
-                  "is_incident": false
+                  "is_incident": true
                 },
                 {
                   "time_ms": 153425,
-                  "is_incident": false
+                  "is_incident": true
                 },
                 {
                   "time_ms": 152835,
@@ -5921,7 +6065,7 @@
                 },
                 {
                   "time_ms": 153422,
-                  "is_incident": false
+                  "is_incident": true
                 },
                 {
                   "time_ms": 151155,
@@ -5929,22 +6073,22 @@
                 },
                 {
                   "time_ms": 155132,
-                  "is_incident": false
+                  "is_incident": true
                 }
               ],
-              "gap_pace_ms": 11501.442307692312,
+              "gap_pace_ms": 7251.442307692312,
               "gap_best_ms": 7918,
-              "gap_pace": "+11.501",
+              "gap_pace": "+7.251",
               "best_lap": "2:31.155",
               "best_lap_ms": 151155,
               "gap_best": "+7.918",
               "penalty": 0,
               "race_gap": "+1 Lap(s)",
-              "pace_pos": 20,
+              "pace_pos": 22,
               "points": 30
             },
             {
-              "car_class": "GT3",
+              "car_class": "TCX",
               "pos": 21,
               "qualy_pos": 19,
               "qualy_time": "2:21.967",
@@ -5958,13 +6102,13 @@
               "name": "Roland Kolb",
               "car_model": 27,
               "laps": 12,
-              "incidents": 0,
-              "avg_time": "2:38.188",
-              "avg_lap_ms": 158188.5,
+              "incidents": 3,
+              "avg_time": "2:28.553",
+              "avg_lap_ms": 148553.66666666666,
               "lap_history": [
                 {
                   "time_ms": 153360,
-                  "is_incident": false
+                  "is_incident": true
                 },
                 {
                   "time_ms": 147985,
@@ -5984,11 +6128,11 @@
                 },
                 {
                   "time_ms": 206637,
-                  "is_incident": false
+                  "is_incident": true
                 },
                 {
                   "time_ms": 201282,
-                  "is_incident": false
+                  "is_incident": true
                 },
                 {
                   "time_ms": 147055,
@@ -6011,19 +6155,19 @@
                   "is_incident": false
                 }
               ],
-              "gap_pace_ms": 13255.192307692312,
+              "gap_pace_ms": 3620.358974358969,
               "gap_best_ms": 5395,
-              "gap_pace": "+13.255",
+              "gap_pace": "+3.620",
               "best_lap": "2:28.632",
               "best_lap_ms": 148632,
               "gap_best": "+5.395",
               "penalty": 0,
               "race_gap": "+1 Lap(s)",
-              "pace_pos": 21,
+              "pace_pos": 16,
               "points": 27
             },
             {
-              "car_class": "GT3",
+              "car_class": "TCX",
               "pos": 22,
               "qualy_pos": "-",
               "qualy_time": "-",
@@ -6037,72 +6181,72 @@
               "name": "Dominik Ladra",
               "car_model": 27,
               "laps": 12,
-              "incidents": 0,
-              "avg_time": "2:39.886",
-              "avg_lap_ms": 159886.58333333334,
+              "incidents": 12,
+              "avg_time": "-",
+              "avg_lap_ms": null,
               "lap_history": [
                 {
                   "time_ms": 162620,
-                  "is_incident": false
+                  "is_incident": true
                 },
                 {
                   "time_ms": 166522,
-                  "is_incident": false
+                  "is_incident": true
                 },
                 {
                   "time_ms": 155395,
-                  "is_incident": false
+                  "is_incident": true
                 },
                 {
                   "time_ms": 155697,
-                  "is_incident": false
+                  "is_incident": true
                 },
                 {
                   "time_ms": 158172,
-                  "is_incident": false
+                  "is_incident": true
                 },
                 {
                   "time_ms": 155070,
-                  "is_incident": false
+                  "is_incident": true
                 },
                 {
                   "time_ms": 161907,
-                  "is_incident": false
+                  "is_incident": true
                 },
                 {
                   "time_ms": 157752,
-                  "is_incident": false
+                  "is_incident": true
                 },
                 {
                   "time_ms": 162817,
-                  "is_incident": false
+                  "is_incident": true
                 },
                 {
                   "time_ms": 156345,
-                  "is_incident": false
+                  "is_incident": true
                 },
                 {
                   "time_ms": 165307,
-                  "is_incident": false
+                  "is_incident": true
                 },
                 {
                   "time_ms": 161035,
-                  "is_incident": false
+                  "is_incident": true
                 }
               ],
-              "gap_pace_ms": 14953.275641025655,
+              "gap_pace_ms": 0,
               "gap_best_ms": 13108,
-              "gap_pace": "+14.953",
+              "gap_pace": "-",
               "best_lap": "2:36.345",
               "best_lap_ms": 156345,
               "gap_best": "+13.108",
               "penalty": 0,
               "race_gap": "+1 Lap(s)",
-              "pace_pos": 22,
+              "pace_pos": "-",
               "points": 45
             },
             {
-              "car_class": "GT3",
+              "car_class": "TCX",
               "pos": 23,
               "qualy_pos": 24,
               "qualy_time": "2:26.095",
@@ -6116,72 +6260,72 @@
               "name": "Eugen Naza",
               "car_model": 27,
               "laps": 12,
-              "incidents": 0,
-              "avg_time": "2:42.492",
-              "avg_lap_ms": 162492.33333333334,
+              "incidents": 12,
+              "avg_time": "-",
+              "avg_lap_ms": null,
               "lap_history": [
                 {
                   "time_ms": 166907,
-                  "is_incident": false
+                  "is_incident": true
                 },
                 {
                   "time_ms": 160762,
-                  "is_incident": false
+                  "is_incident": true
                 },
                 {
                   "time_ms": 161620,
-                  "is_incident": false
+                  "is_incident": true
                 },
                 {
                   "time_ms": 164397,
-                  "is_incident": false
+                  "is_incident": true
                 },
                 {
                   "time_ms": 161222,
-                  "is_incident": false
+                  "is_incident": true
                 },
                 {
                   "time_ms": 161995,
-                  "is_incident": false
+                  "is_incident": true
                 },
                 {
                   "time_ms": 161612,
-                  "is_incident": false
+                  "is_incident": true
                 },
                 {
                   "time_ms": 159835,
-                  "is_incident": false
+                  "is_incident": true
                 },
                 {
                   "time_ms": 164762,
-                  "is_incident": false
+                  "is_incident": true
                 },
                 {
                   "time_ms": 162192,
-                  "is_incident": false
+                  "is_incident": true
                 },
                 {
                   "time_ms": 163167,
-                  "is_incident": false
+                  "is_incident": true
                 },
                 {
                   "time_ms": 161437,
-                  "is_incident": false
+                  "is_incident": true
                 }
               ],
-              "gap_pace_ms": 17559.025641025655,
+              "gap_pace_ms": 0,
               "gap_best_ms": 16598,
-              "gap_pace": "+17.559",
+              "gap_pace": "-",
               "best_lap": "2:39.835",
               "best_lap_ms": 159835,
               "gap_best": "+16.598",
               "penalty": 0,
               "race_gap": "+1 Lap(s)",
-              "pace_pos": 24,
+              "pace_pos": "-",
               "points": 24
             },
             {
-              "car_class": "GT3",
+              "car_class": "TCX",
               "pos": "DNF",
               "qualy_pos": "-",
               "qualy_time": "-",
@@ -6195,13 +6339,13 @@
               "name": "Tharos Zyvelionn",
               "car_model": 27,
               "laps": 10,
-              "incidents": 0,
-              "avg_time": "2:41.435",
-              "avg_lap_ms": 161435.9,
+              "incidents": 8,
+              "avg_time": "2:31.733",
+              "avg_lap_ms": 151733.5,
               "lap_history": [
                 {
                   "time_ms": 165197,
-                  "is_incident": false
+                  "is_incident": true
                 },
                 {
                   "time_ms": 151682,
@@ -6209,23 +6353,23 @@
                 },
                 {
                   "time_ms": 156577,
-                  "is_incident": false
+                  "is_incident": true
                 },
                 {
                   "time_ms": 154222,
-                  "is_incident": false
+                  "is_incident": true
                 },
                 {
                   "time_ms": 156397,
-                  "is_incident": false
+                  "is_incident": true
                 },
                 {
                   "time_ms": 174127,
-                  "is_incident": false
+                  "is_incident": true
                 },
                 {
                   "time_ms": 154360,
-                  "is_incident": false
+                  "is_incident": true
                 },
                 {
                   "time_ms": 151785,
@@ -6233,22 +6377,22 @@
                 },
                 {
                   "time_ms": 157515,
-                  "is_incident": false
+                  "is_incident": true
                 },
                 {
                   "time_ms": 192497,
-                  "is_incident": false
+                  "is_incident": true
                 }
               ],
-              "gap_pace_ms": 16502.592307692306,
+              "gap_pace_ms": 6800.192307692312,
               "gap_best_ms": 0,
-              "gap_pace": "+16.503",
+              "gap_pace": "+6.800",
               "best_lap": "-",
               "best_lap_ms": null,
               "gap_best": "-",
               "penalty": 0,
               "race_gap": "DNF",
-              "pace_pos": 23,
+              "pace_pos": 21,
               "points": 0
             }
           ],
@@ -6256,7 +6400,7 @@
             {
               "pos": 1,
               "name": "Julian Ma\u00dfner",
-              "car_class": "GT3",
+              "car_class": "TCX",
               "car_model": 27,
               "s1": "0:40.660",
               "s2": "0:57.040",
@@ -6268,7 +6412,7 @@
             {
               "pos": 2,
               "name": "Marsi Bella [SL]",
-              "car_class": "GT3",
+              "car_class": "TCX",
               "car_model": 27,
               "s1": "0:41.100",
               "s2": "0:56.985",
@@ -6280,7 +6424,7 @@
             {
               "pos": 3,
               "name": "Pauli Keski-Filppula",
-              "car_class": "GT3",
+              "car_class": "TCX",
               "car_model": 27,
               "s1": "0:41.090",
               "s2": "0:57.295",
@@ -6292,7 +6436,7 @@
             {
               "pos": 4,
               "name": "Leonardo Cocco",
-              "car_class": "GT3",
+              "car_class": "TCX",
               "car_model": 27,
               "s1": "0:41.067",
               "s2": "0:57.790",
@@ -6304,7 +6448,7 @@
             {
               "pos": 5,
               "name": "Cla Rens [SL]",
-              "car_class": "GT3",
+              "car_class": "TCX",
               "car_model": 27,
               "s1": "0:40.935",
               "s2": "0:57.667",
@@ -6316,7 +6460,7 @@
             {
               "pos": 6,
               "name": "Raymond Crawford [SL]",
-              "car_class": "GT3",
+              "car_class": "TCX",
               "car_model": 27,
               "s1": "0:40.800",
               "s2": "0:58.292",
@@ -6328,7 +6472,7 @@
             {
               "pos": 7,
               "name": "John Eraser",
-              "car_class": "GT3",
+              "car_class": "TCX",
               "car_model": 27,
               "s1": "0:41.117",
               "s2": "0:57.915",
@@ -6340,7 +6484,7 @@
             {
               "pos": 8,
               "name": "Alex Grandi",
-              "car_class": "GT3",
+              "car_class": "TCX",
               "car_model": 27,
               "s1": "0:40.992",
               "s2": "0:57.897",
@@ -6352,7 +6496,7 @@
             {
               "pos": 9,
               "name": "Stuart Woolley",
-              "car_class": "GT3",
+              "car_class": "TCX",
               "car_model": 27,
               "s1": "0:41.165",
               "s2": "0:57.812",
@@ -6364,7 +6508,7 @@
             {
               "pos": 10,
               "name": "Gael Duch\u00c3\u00aane ESP [SL]",
-              "car_class": "GT3",
+              "car_class": "TCX",
               "car_model": 27,
               "s1": "0:40.875",
               "s2": "0:58.210",
@@ -6376,7 +6520,7 @@
             {
               "pos": 11,
               "name": "Youssef Mohamed",
-              "car_class": "GT3",
+              "car_class": "TCX",
               "car_model": 27,
               "s1": "0:41.025",
               "s2": "0:58.107",
@@ -6388,7 +6532,7 @@
             {
               "pos": 12,
               "name": "Antoni Mencik",
-              "car_class": "GT3",
+              "car_class": "TCX",
               "car_model": 27,
               "s1": "0:41.365",
               "s2": "0:58.242",
@@ -6400,7 +6544,7 @@
             {
               "pos": 13,
               "name": "Lev Slepuzjnikov",
-              "car_class": "GT3",
+              "car_class": "TCX",
               "car_model": 27,
               "s1": "0:41.957",
               "s2": "0:57.747",
@@ -6412,7 +6556,7 @@
             {
               "pos": 14,
               "name": "Doctor Bones",
-              "car_class": "GT3",
+              "car_class": "TCX",
               "car_model": 27,
               "s1": "0:41.667",
               "s2": "0:58.942",
@@ -6424,7 +6568,7 @@
             {
               "pos": 15,
               "name": "Ulrich BigU",
-              "car_class": "GT3",
+              "car_class": "TCX",
               "car_model": 27,
               "s1": "0:41.782",
               "s2": "0:58.512",
@@ -6436,7 +6580,7 @@
             {
               "pos": 16,
               "name": "Fiesta Bonanza",
-              "car_class": "GT3",
+              "car_class": "TCX",
               "car_model": 27,
               "s1": "0:41.770",
               "s2": "0:59.115",
@@ -6448,7 +6592,7 @@
             {
               "pos": 17,
               "name": "Alonzo Allons-y",
-              "car_class": "GT3",
+              "car_class": "TCX",
               "car_model": 27,
               "s1": "0:42.170",
               "s2": "0:58.920",
@@ -6460,7 +6604,7 @@
             {
               "pos": 18,
               "name": "Alice Schupp-M\u00c3\u00bcller",
-              "car_class": "GT3",
+              "car_class": "TCX",
               "car_model": 27,
               "s1": "0:42.307",
               "s2": "0:59.097",
@@ -6472,7 +6616,7 @@
             {
               "pos": 19,
               "name": "Roland Kolb",
-              "car_class": "GT3",
+              "car_class": "TCX",
               "car_model": 27,
               "s1": "0:42.167",
               "s2": "0:59.547",
@@ -6484,7 +6628,7 @@
             {
               "pos": 20,
               "name": "Purple Kelpie",
-              "car_class": "GT3",
+              "car_class": "TCX",
               "car_model": 27,
               "s1": "0:42.615",
               "s2": "1:00.002",
@@ -6496,7 +6640,7 @@
             {
               "pos": 21,
               "name": "Danil kolbasenko",
-              "car_class": "GT3",
+              "car_class": "TCX",
               "car_model": 27,
               "s1": "0:42.805",
               "s2": "0:59.835",
@@ -6508,7 +6652,7 @@
             {
               "pos": 22,
               "name": "Kenny Colbers",
-              "car_class": "GT3",
+              "car_class": "TCX",
               "car_model": 27,
               "s1": "0:42.770",
               "s2": "0:59.800",
@@ -6520,7 +6664,7 @@
             {
               "pos": 23,
               "name": "Andr\u00e9 Luiz666",
-              "car_class": "GT3",
+              "car_class": "TCX",
               "car_model": 27,
               "s1": "0:42.725",
               "s2": "1:01.730",
@@ -6532,7 +6676,7 @@
             {
               "pos": 24,
               "name": "Eugen Naza",
-              "car_class": "GT3",
+              "car_class": "TCX",
               "car_model": 27,
               "s1": "0:43.722",
               "s2": "1:01.837",
@@ -6544,7 +6688,7 @@
             {
               "pos": "-",
               "name": "Tharos Zyvelionn",
-              "car_class": "GT3",
+              "car_class": "TCX",
               "car_model": 27,
               "s1": "0:43.855",
               "s2": "1:00.720",
@@ -6556,7 +6700,7 @@
             {
               "pos": "-",
               "name": "To Slow",
-              "car_class": "GT3",
+              "car_class": "TCX",
               "car_model": 27,
               "s1": "0:44.837",
               "s2": "1:03.437",
@@ -6568,7 +6712,7 @@
             {
               "pos": "-",
               "name": "Javier Lai",
-              "car_class": "GT3",
+              "car_class": "TCX",
               "car_model": 27,
               "s1": "0:41.507",
               "s2": "0:58.207",
@@ -6580,7 +6724,7 @@
             {
               "pos": "-",
               "name": "Dominik Ladra",
-              "car_class": "GT3",
+              "car_class": "TCX",
               "car_model": 27,
               "s1": "0:43.342",
               "s2": "1:01.685",
@@ -6592,7 +6736,7 @@
             {
               "pos": "-",
               "name": "Tiago Dresch",
-              "car_class": "GT3",
+              "car_class": "TCX",
               "car_model": 27,
               "s1": "-",
               "s2": "-",
@@ -6604,7 +6748,7 @@
             {
               "pos": "-",
               "name": ".. miru..momo..",
-              "car_class": "GT3",
+              "car_class": "TCX",
               "car_model": 27,
               "s1": "-",
               "s2": "-",
@@ -6616,7 +6760,7 @@
             {
               "pos": "-",
               "name": "K Magomed [ASG]",
-              "car_class": "GT3",
+              "car_class": "TCX",
               "car_model": 27,
               "s1": "-",
               "s2": "-",
@@ -6628,7 +6772,7 @@
             {
               "pos": "-",
               "name": "Dominic Zimmermann [SL]",
-              "car_class": "GT3",
+              "car_class": "TCX",
               "car_model": 27,
               "s1": "-",
               "s2": "-",
@@ -6643,7 +6787,7 @@
           "name": "Race 2: Mount Panorama",
           "results": [
             {
-              "car_class": "GT3",
+              "car_class": "TCX",
               "pos": 1,
               "qualy_pos": 1,
               "qualy_time": "2:19.742",
@@ -6726,7 +6870,7 @@
               "points": 0
             },
             {
-              "car_class": "GT3",
+              "car_class": "TCX",
               "pos": 2,
               "qualy_pos": 2,
               "qualy_time": "2:20.272",
@@ -6809,7 +6953,7 @@
               "points": 0
             },
             {
-              "car_class": "GT3",
+              "car_class": "TCX",
               "pos": 3,
               "qualy_pos": 3,
               "qualy_time": "2:20.365",
@@ -6892,7 +7036,7 @@
               "points": 0
             },
             {
-              "car_class": "GT3",
+              "car_class": "TCX",
               "pos": 4,
               "qualy_pos": 4,
               "qualy_time": "2:20.797",
@@ -6975,7 +7119,7 @@
               "points": 0
             },
             {
-              "car_class": "GT3",
+              "car_class": "TCX",
               "pos": 5,
               "qualy_pos": 6,
               "qualy_time": "2:21.625",
@@ -7054,11 +7198,11 @@
               "gap_best": "+1.833",
               "penalty": 0,
               "race_gap": "+38.120s",
-              "pace_pos": 6,
+              "pace_pos": 7,
               "points": 0
             },
             {
-              "car_class": "GT3",
+              "car_class": "TCX",
               "pos": 6,
               "qualy_pos": 11,
               "qualy_time": "2:23.687",
@@ -7072,13 +7216,13 @@
               "name": "Ulrich BigU",
               "car_model": 27,
               "laps": 13,
-              "incidents": 0,
-              "avg_time": "2:23.144",
-              "avg_lap_ms": 143144.0,
+              "incidents": 1,
+              "avg_time": "2:22.466",
+              "avg_lap_ms": 142466.83333333334,
               "lap_history": [
                 {
                   "time_ms": 151270,
-                  "is_incident": false
+                  "is_incident": true
                 },
                 {
                   "time_ms": 142567,
@@ -7129,9 +7273,9 @@
                   "is_incident": false
                 }
               ],
-              "gap_pace_ms": 2636.5384615384683,
+              "gap_pace_ms": 1959.3717948718113,
               "gap_best_ms": 2260,
-              "gap_pace": "+2.637",
+              "gap_pace": "+1.959",
               "best_lap": "2:21.807",
               "best_lap_ms": 141807,
               "gap_best": "+2.260",
@@ -7141,7 +7285,7 @@
               "points": 0
             },
             {
-              "car_class": "GT3",
+              "car_class": "TCX",
               "pos": 7,
               "qualy_pos": 5,
               "qualy_time": "2:20.935",
@@ -7155,9 +7299,9 @@
               "name": "Raymond Crawford [SL]",
               "car_model": 27,
               "laps": 12,
-              "incidents": 0,
-              "avg_time": "2:32.513",
-              "avg_lap_ms": 152513.58333333334,
+              "incidents": 3,
+              "avg_time": "2:22.751",
+              "avg_lap_ms": 142751.55555555556,
               "lap_history": [
                 {
                   "time_ms": 148002,
@@ -7181,11 +7325,11 @@
                 },
                 {
                   "time_ms": 157797,
-                  "is_incident": false
+                  "is_incident": true
                 },
                 {
                   "time_ms": 236510,
-                  "is_incident": false
+                  "is_incident": true
                 },
                 {
                   "time_ms": 142310,
@@ -7205,22 +7349,22 @@
                 },
                 {
                   "time_ms": 151092,
-                  "is_incident": false
+                  "is_incident": true
                 }
               ],
-              "gap_pace_ms": 12006.121794871811,
+              "gap_pace_ms": 2244.0940170940303,
               "gap_best_ms": 2083,
-              "gap_pace": "+12.006",
+              "gap_pace": "+2.244",
               "best_lap": "2:21.630",
               "best_lap_ms": 141630,
               "gap_best": "+2.083",
               "penalty": 0,
               "race_gap": "+1 Lap(s)",
-              "pace_pos": 7,
+              "pace_pos": 6,
               "points": 0
             },
             {
-              "car_class": "GT3",
+              "car_class": "TCX",
               "pos": 8,
               "qualy_pos": "-",
               "qualy_time": "-",
@@ -7234,13 +7378,13 @@
               "name": "Doctor Bones",
               "car_model": 27,
               "laps": 12,
-              "incidents": 0,
-              "avg_time": "2:37.810",
-              "avg_lap_ms": 157810.91666666666,
+              "incidents": 3,
+              "avg_time": "2:25.706",
+              "avg_lap_ms": 145706.0,
               "lap_history": [
                 {
                   "time_ms": 154500,
-                  "is_incident": false
+                  "is_incident": true
                 },
                 {
                   "time_ms": 147307,
@@ -7272,11 +7416,11 @@
                 },
                 {
                   "time_ms": 193690,
-                  "is_incident": false
+                  "is_incident": true
                 },
                 {
                   "time_ms": 234187,
-                  "is_incident": false
+                  "is_incident": true
                 },
                 {
                   "time_ms": 145712,
@@ -7287,9 +7431,9 @@
                   "is_incident": false
                 }
               ],
-              "gap_pace_ms": 17303.455128205125,
+              "gap_pace_ms": 5198.538461538468,
               "gap_best_ms": 5385,
-              "gap_pace": "+17.303",
+              "gap_pace": "+5.199",
               "best_lap": "2:24.932",
               "best_lap_ms": 144932,
               "gap_best": "+5.385",
@@ -7299,7 +7443,7 @@
               "points": 0
             },
             {
-              "car_class": "GT3",
+              "car_class": "TCX",
               "pos": "DNF",
               "qualy_pos": 14,
               "qualy_time": "2:30.177",
@@ -7313,13 +7457,13 @@
               "name": "Eugen Naza",
               "car_model": 27,
               "laps": 11,
-              "incidents": 0,
-              "avg_time": "2:50.088",
-              "avg_lap_ms": 170088.36363636365,
+              "incidents": 6,
+              "avg_time": "2:26.874",
+              "avg_lap_ms": 146874.2,
               "lap_history": [
                 {
                   "time_ms": 168907,
-                  "is_incident": false
+                  "is_incident": true
                 },
                 {
                   "time_ms": 147102,
@@ -7335,23 +7479,23 @@
                 },
                 {
                   "time_ms": 161237,
-                  "is_incident": false
+                  "is_incident": true
                 },
                 {
                   "time_ms": 153750,
-                  "is_incident": false
+                  "is_incident": true
                 },
                 {
                   "time_ms": 205690,
-                  "is_incident": false
+                  "is_incident": true
                 },
                 {
                   "time_ms": 295005,
-                  "is_incident": false
+                  "is_incident": true
                 },
                 {
                   "time_ms": 152012,
-                  "is_incident": false
+                  "is_incident": true
                 },
                 {
                   "time_ms": 147565,
@@ -7362,9 +7506,9 @@
                   "is_incident": false
                 }
               ],
-              "gap_pace_ms": 29580.902097902115,
+              "gap_pace_ms": 6366.73846153848,
               "gap_best_ms": 7040,
-              "gap_pace": "+29.581",
+              "gap_pace": "+6.367",
               "best_lap": "2:26.587",
               "best_lap_ms": 146587,
               "gap_best": "+7.040",
@@ -7374,7 +7518,7 @@
               "points": 0
             },
             {
-              "car_class": "GT3",
+              "car_class": "TCX",
               "pos": "DNF",
               "qualy_pos": 13,
               "qualy_time": "2:27.622",
@@ -7388,13 +7532,13 @@
               "name": "Danil kolbasenko",
               "car_model": 27,
               "laps": 11,
-              "incidents": 0,
-              "avg_time": "2:55.717",
-              "avg_lap_ms": 175717.45454545456,
+              "incidents": 2,
+              "avg_time": "2:27.070",
+              "avg_lap_ms": 147070.77777777778,
               "lap_history": [
                 {
                   "time_ms": 154895,
-                  "is_incident": false
+                  "is_incident": true
                 },
                 {
                   "time_ms": 146652,
@@ -7426,7 +7570,7 @@
                 },
                 {
                   "time_ms": 454360,
-                  "is_incident": false
+                  "is_incident": true
                 },
                 {
                   "time_ms": 145887,
@@ -7437,19 +7581,19 @@
                   "is_incident": false
                 }
               ],
-              "gap_pace_ms": 35209.99300699303,
+              "gap_pace_ms": 6563.316239316249,
               "gap_best_ms": 6340,
-              "gap_pace": "+35.210",
+              "gap_pace": "+6.563",
               "best_lap": "2:25.887",
               "best_lap_ms": 145887,
               "gap_best": "+6.340",
               "penalty": 0,
               "race_gap": "DNF",
-              "pace_pos": 10,
+              "pace_pos": 11,
               "points": 0
             },
             {
-              "car_class": "GT3",
+              "car_class": "TCX",
               "pos": "DNF",
               "qualy_pos": 12,
               "qualy_time": "2:25.375",
@@ -7463,13 +7607,13 @@
               "name": "Fiesta Bonanza",
               "car_model": 27,
               "laps": 10,
-              "incidents": 0,
-              "avg_time": "3:09.658",
-              "avg_lap_ms": 189658.9,
+              "incidents": 4,
+              "avg_time": "2:26.908",
+              "avg_lap_ms": 146908.83333333334,
               "lap_history": [
                 {
                   "time_ms": 165352,
-                  "is_incident": false
+                  "is_incident": true
                 },
                 {
                   "time_ms": 149042,
@@ -7489,7 +7633,7 @@
                 },
                 {
                   "time_ms": 150082,
-                  "is_incident": false
+                  "is_incident": true
                 },
                 {
                   "time_ms": 145497,
@@ -7497,26 +7641,26 @@
                 },
                 {
                   "time_ms": 171947,
-                  "is_incident": false
+                  "is_incident": true
                 },
                 {
                   "time_ms": 527755,
-                  "is_incident": false
+                  "is_incident": true
                 },
                 {
                   "time_ms": 149162,
                   "is_incident": false
                 }
               ],
-              "gap_pace_ms": 49151.43846153846,
+              "gap_pace_ms": 6401.371794871811,
               "gap_best_ms": 5528,
-              "gap_pace": "+49.151",
+              "gap_pace": "+6.401",
               "best_lap": "2:25.075",
               "best_lap_ms": 145075,
               "gap_best": "+5.528",
               "penalty": 0,
               "race_gap": "DNF",
-              "pace_pos": 11,
+              "pace_pos": 10,
               "points": 0
             }
           ],
@@ -7524,7 +7668,7 @@
             {
               "pos": 1,
               "name": "Marsi Bella [SL]",
-              "car_class": "GT3",
+              "car_class": "TCX",
               "car_model": 27,
               "s1": "0:45.002",
               "s2": "1:04.242",
@@ -7536,7 +7680,7 @@
             {
               "pos": 2,
               "name": "Youssef Mohamed",
-              "car_class": "GT3",
+              "car_class": "TCX",
               "car_model": 27,
               "s1": "0:45.075",
               "s2": "1:04.355",
@@ -7548,7 +7692,7 @@
             {
               "pos": 3,
               "name": "Julian Ma\u00dfner",
-              "car_class": "GT3",
+              "car_class": "TCX",
               "car_model": 27,
               "s1": "0:44.897",
               "s2": "1:04.625",
@@ -7560,7 +7704,7 @@
             {
               "pos": 4,
               "name": "Pauli Keski-Filppula",
-              "car_class": "GT3",
+              "car_class": "TCX",
               "car_model": 27,
               "s1": "0:45.157",
               "s2": "1:04.797",
@@ -7572,7 +7716,7 @@
             {
               "pos": 5,
               "name": "Raymond Crawford [SL]",
-              "car_class": "GT3",
+              "car_class": "TCX",
               "car_model": 27,
               "s1": "0:45.197",
               "s2": "1:05.010",
@@ -7584,7 +7728,7 @@
             {
               "pos": 6,
               "name": "Stuart Woolley",
-              "car_class": "GT3",
+              "car_class": "TCX",
               "car_model": 27,
               "s1": "0:45.097",
               "s2": "1:05.225",
@@ -7596,7 +7740,7 @@
             {
               "pos": 7,
               "name": "Leonardo Cocco",
-              "car_class": "GT3",
+              "car_class": "TCX",
               "car_model": 27,
               "s1": "0:45.290",
               "s2": "1:05.610",
@@ -7608,7 +7752,7 @@
             {
               "pos": 8,
               "name": "Antoni Mencik",
-              "car_class": "GT3",
+              "car_class": "TCX",
               "car_model": 27,
               "s1": "0:45.497",
               "s2": "1:05.415",
@@ -7620,7 +7764,7 @@
             {
               "pos": 9,
               "name": "Roland Kolb",
-              "car_class": "GT3",
+              "car_class": "TCX",
               "car_model": 27,
               "s1": "0:46.050",
               "s2": "1:05.265",
@@ -7632,7 +7776,7 @@
             {
               "pos": 10,
               "name": "Gael Duch\u00c3\u00aane ESP [SL]",
-              "car_class": "GT3",
+              "car_class": "TCX",
               "car_model": 27,
               "s1": "0:45.255",
               "s2": "1:06.122",
@@ -7644,7 +7788,7 @@
             {
               "pos": 11,
               "name": "Ulrich BigU",
-              "car_class": "GT3",
+              "car_class": "TCX",
               "car_model": 27,
               "s1": "0:46.462",
               "s2": "1:06.245",
@@ -7656,7 +7800,7 @@
             {
               "pos": 12,
               "name": "Fiesta Bonanza",
-              "car_class": "GT3",
+              "car_class": "TCX",
               "car_model": 27,
               "s1": "0:46.405",
               "s2": "1:07.330",
@@ -7668,7 +7812,7 @@
             {
               "pos": 13,
               "name": "Danil kolbasenko",
-              "car_class": "GT3",
+              "car_class": "TCX",
               "car_model": 27,
               "s1": "0:47.380",
               "s2": "1:08.477",
@@ -7680,7 +7824,7 @@
             {
               "pos": 14,
               "name": "Eugen Naza",
-              "car_class": "GT3",
+              "car_class": "TCX",
               "car_model": 27,
               "s1": "0:46.795",
               "s2": "1:08.420",
@@ -7692,7 +7836,7 @@
             {
               "pos": "-",
               "name": "Doctor Bones",
-              "car_class": "GT3",
+              "car_class": "TCX",
               "car_model": 27,
               "s1": "0:47.697",
               "s2": "1:09.467",
@@ -7713,15 +7857,15 @@
       "name": "Misano",
       "GT3": {
         "qualy": {
-          "time_ms": 96530,
-          "driver": "Marsi Bella [SL]",
-          "car": 26,
+          "time_ms": null,
+          "driver": "-",
+          "car": 0,
           "wet": 0
         },
         "race": {
-          "time_ms": 96475,
-          "driver": "Marsi Bella [SL]",
-          "car": 26,
+          "time_ms": null,
+          "driver": "-",
+          "car": 0,
           "wet": 0
         }
       },
@@ -7754,6 +7898,20 @@
         }
       },
       "CUP": {
+        "qualy": {
+          "time_ms": 96530,
+          "driver": "Marsi Bella [SL]",
+          "car": 26,
+          "wet": 0
+        },
+        "race": {
+          "time_ms": 96475,
+          "driver": "Marsi Bella [SL]",
+          "car": 26,
+          "wet": 0
+        }
+      },
+      "GT2": {
         "qualy": {
           "time_ms": null,
           "driver": "-",
@@ -7772,15 +7930,15 @@
       "name": "Imola",
       "GT3": {
         "qualy": {
-          "time_ms": 102967,
-          "driver": "Marsi Bella [SL]",
-          "car": 26,
+          "time_ms": null,
+          "driver": "-",
+          "car": 0,
           "wet": 0
         },
         "race": {
-          "time_ms": 102885,
-          "driver": "Bence Kamaras",
-          "car": 26,
+          "time_ms": null,
+          "driver": "-",
+          "car": 0,
           "wet": 0
         }
       },
@@ -7813,6 +7971,20 @@
         }
       },
       "CUP": {
+        "qualy": {
+          "time_ms": 102967,
+          "driver": "Marsi Bella [SL]",
+          "car": 26,
+          "wet": 0
+        },
+        "race": {
+          "time_ms": 102885,
+          "driver": "Bence Kamaras",
+          "car": 26,
+          "wet": 0
+        }
+      },
+      "GT2": {
         "qualy": {
           "time_ms": null,
           "driver": "-",
@@ -7831,16 +8003,16 @@
       "name": "Silverstone",
       "GT3": {
         "qualy": {
-          "time_ms": 136322,
-          "driver": "Julian Ma\u00dfner",
-          "car": 27,
+          "time_ms": null,
+          "driver": "-",
+          "car": 0,
           "wet": 0
         },
         "race": {
-          "time_ms": 143237,
-          "driver": "Marsi Bella [SL]",
-          "car": 27,
-          "wet": 1
+          "time_ms": null,
+          "driver": "-",
+          "car": 0,
+          "wet": 0
         }
       },
       "GT4": {
@@ -7859,6 +8031,20 @@
       },
       "TCX": {
         "qualy": {
+          "time_ms": 136322,
+          "driver": "Julian Ma\u00dfner",
+          "car": 27,
+          "wet": 0
+        },
+        "race": {
+          "time_ms": 143237,
+          "driver": "Marsi Bella [SL]",
+          "car": 27,
+          "wet": 1
+        }
+      },
+      "CUP": {
+        "qualy": {
           "time_ms": null,
           "driver": "-",
           "car": 0,
@@ -7871,7 +8057,7 @@
           "wet": 0
         }
       },
-      "CUP": {
+      "GT2": {
         "qualy": {
           "time_ms": null,
           "driver": "-",
@@ -7890,15 +8076,15 @@
       "name": "Mount Panorama",
       "GT3": {
         "qualy": {
-          "time_ms": 139742,
-          "driver": "Marsi Bella [SL]",
-          "car": 27,
+          "time_ms": null,
+          "driver": "-",
+          "car": 0,
           "wet": 0
         },
         "race": {
-          "time_ms": 139547,
-          "driver": "Marsi Bella [SL]",
-          "car": 27,
+          "time_ms": null,
+          "driver": "-",
+          "car": 0,
           "wet": 0
         }
       },
@@ -7918,6 +8104,20 @@
       },
       "TCX": {
         "qualy": {
+          "time_ms": 139742,
+          "driver": "Marsi Bella [SL]",
+          "car": 27,
+          "wet": 0
+        },
+        "race": {
+          "time_ms": 139547,
+          "driver": "Marsi Bella [SL]",
+          "car": 27,
+          "wet": 0
+        }
+      },
+      "CUP": {
+        "qualy": {
           "time_ms": null,
           "driver": "-",
           "car": 0,
@@ -7930,7 +8130,7 @@
           "wet": 0
         }
       },
-      "CUP": {
+      "GT2": {
         "qualy": {
           "time_ms": null,
           "driver": "-",
