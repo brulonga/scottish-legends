@@ -6,25 +6,136 @@ import re
 # --- CONFIGURATION ---
 MIN_LAPS_STATS = 0.50        # 50%: Mínimo para extraer telemetría y ritmo (pero no suma carrera ni puntos)
 MIN_LAPS_CLASSIFIED = 0.90   # 90%: Mínimo para recibir puntos, contar como carrera terminada y afectar a la media
-OUTPUT_FILE = "public/data/monday_marathon/season_2.json"
+OUTPUT_FILE = "dashboard_data.json"
 
 # --- CALENDARIO DEL CAMPEONATO (Orden estricto de Rondas) ---
+# --- CALENDARIO DEL CAMPEONATO (Orden temporal) ---
 ORDEN_PISTAS = [
-    "monza",
-    "kyalami",
+    "nurburgring_24h",
+    "mount_panorama",
+    "hungaroring",
+    "valencia",
+    "imola",
+    "zandvoort",
+    "zolder",
+    "spa",
+    "suzuka",
+    "paul_ricard",
+    "cota",
+    "red_bull_ring",
     "misano",
-    "Mount Panorama",
-    "Suzuka",
-    "Silverstone"
+    "nurburgring",
+    "laguna_seca",
+    "silverstone",
+    "oulton_park",
+    "watkins_glen",
+    "kyalami",
+    "monza",
+    "brands_hatch",
+    "donnington_park",
+    "snetterton",
+    "barcelona"
 ]
 
 # --- SISTEMA DE SANCIONES ---
 PENALTIES = {
-    "monza": {
+    "nurburgring_24h": {
+    },
+    "mount_panorama": {
+    },
+    "hungaroring": {
+    },
+    "valencia": {
+    },
+    "imola": {
+        "Berat Budak": 30,
+        "Just Wild": 5,
+    },
+    "zandvoort": {
+        "Berat Budak": 15,
+        "Cla Rens [SL]": 5,
+        "Luca Maggiolo": 20,
+        "Bruno Longarela [SL]": 5,
+        "anthony gaben": 15,
+        "Tom Scheidema": 20,
+        "Valentin Loose": 800,
+    },
+    "zolder": {
+    },
+    "spa": {
+    },
+    "suzuka": {
+    },
+    "paul_ricard": {
+    },
+    "cota": {
+    },
+    "red_bull_ring": {
+    },
+    "misano": {
+    },
+    "nurburgring": {
+        "Bruno Longarela [SL]": 5,
+        "Fiesta Bonanza": 10,
+        "Bence Kamaras": 10,
+    },
+    "laguna_seca": {
+    },
+    "silverstone": {
+    },
+    "oulton_park": {
+        "Luca Maggiolo": 5,
+        "Leonardo Rigon": 10,
+        "Guillermo Sanchez": 5,
+        "keVin peeters [SL]": 5,
+        "Atte Kivinen": 10,
+    },
+    "brands_hatch": {
+        "Tommi Pommi": 5,
+        "Alasdair Parky": 5,
+        "Florian Braun": 5,
+        "Bence Kamaras": 5,
+        "Leonardo Rigon": 5,
+    },
+    "kyalami": {
+        "Jochen Mauch": 20,
+        "Viktor Ruga": 10,
+        "Chris Wood": 5,
+        "Micha Nieuwkoop": 5,
+        "Rainer Wengert": 5,
+        "william julien": 5,
+        "Rico Suave": 10,
+    },
+    "barcelona": {
+        "Tommi Pommi": 5,
+        "Micha Nieuwkoop": 5,
+        "Eerik Liiva": 10,
+        "Bence Kamaras": 5,
+        "Fiesta Bonanza": 15,
+        "Rainer Wengert": 10,
         "Leonardo Cocco": 5,
-    }
+        "Luca Maggiolo": 10,
+    },
+    "monza": {
+        "zz z": 5,
+        "Marcel Wilhelm": 5,
+        "Bret Riverboat": 20,
+    },
+    "watkins_glen": {
+    },
+    "indianapolis": {
+    },
+    "snetterton": {
+        "Alasdair Parky": 5,
+        "Micha Nieuwkoop": 5,
+        "Antoni Mencik": 10,
+        "Yves Akei": 5,
+    },
+    "donington": {
+        "Luca Maggiolo": 5,
+        "Tommi Pommi": 5,
+    },
 }
-
 POINTS_SYSTEM = {
     1: 180, 2: 150, 3: 120, 4: 105, 5: 96,
     6: 90, 7: 84, 8: 78, 9: 72, 10: 66,
@@ -82,7 +193,7 @@ def load_and_process():
     hall_of_fame = {}
 
     # 🚀 1. APUNTAMOS A LA CARPETA DONDE DESCARGA GOOGLE DRIVE
-    base_sync_folder = "public/data/gdrive_sync/MM/season_2"
+    base_sync_folder = "public/data/gdrive_sync/MM/season_1"
     raw_files = []
 
     # 🚀 2. RECORREMOS TODAS LAS SUBCARPETAS AUTOMÁTICAMENTE
@@ -107,6 +218,7 @@ def load_and_process():
         if not data or 'sessionResult' not in data: 
             continue
         archivos_parseados.append((f, data))
+
 
     # 2. Función para buscar la posición de la pista en nuestro calendario (ignorando mayus/minus)
     def obtener_orden_pista(item):

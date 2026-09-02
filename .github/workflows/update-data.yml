@@ -35,8 +35,12 @@ jobs:
           echo "---------------------------------------"
           
           # 3. Procesar
+          python scripts/FF_season_1.py
+          python scripts/FF_season_2.py
           python scripts/FF_season_3.py
+          python scripts/MM_season_1.py
           python scripts/MM_season_2.py
+          python scripts/calcular_elo.py
 
 
       - name: Subir cambios automáticamente a la web
