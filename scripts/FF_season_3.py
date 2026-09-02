@@ -247,7 +247,7 @@ def load_and_process():
                 c_class = car_id_to_class.get(cid, "GT3")
                 
                 if ltime < 2000000000:
-                    is_incident = threshold_107[c_class] > 0 and ltime > threshold_107[c_class]
+                    is_incident = threshold_107.get(c_class, 0) > 0 and ltime > threshold_107.get(c_class, 0)
                     if not is_incident: car_laps_data[cid]['valid_laps'].append(ltime)
                     else: car_laps_data[cid]['incidents'] += 1
                     car_laps_data[cid]['all_laps'].append({'time_ms': ltime, 'is_incident': is_incident})
