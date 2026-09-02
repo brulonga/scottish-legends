@@ -1,0 +1,8220 @@
+[
+  {
+    "name": "Marsi Bella",
+    "current_elo": 1840,
+    "races_completed": 20,
+    "history": [
+      {
+        "date": "2026-04-03 21:09",
+        "timestamp": 1775250551.0,
+        "race_name": "Round 1: Nurburgring 24H",
+        "elo_change": 60.0,
+        "new_elo": 1560
+      },
+      {
+        "date": "2026-04-10 20:37",
+        "timestamp": 1775853464.0,
+        "race_name": "Round 2: Brands Hatch",
+        "elo_change": 40.7,
+        "new_elo": 1601
+      },
+      {
+        "date": "2026-04-17 20:51",
+        "timestamp": 1776459084.0,
+        "race_name": "Round 3: Nurburgring 24H",
+        "elo_change": 39.6,
+        "new_elo": 1640
+      },
+      {
+        "date": "2026-05-08 21:02",
+        "timestamp": 1778274129.0,
+        "race_name": "Round 7: Nurburgring 24H",
+        "elo_change": -23.0,
+        "new_elo": 1617
+      },
+      {
+        "date": "2026-05-19 09:12",
+        "timestamp": 1779181920.0,
+        "race_name": "Round 8: Kyalami",
+        "elo_change": 42.2,
+        "new_elo": 1660
+      },
+      {
+        "date": "2026-05-19 09:12",
+        "timestamp": 1779181926.0,
+        "race_name": "Round 9: Mount Panorama",
+        "elo_change": 21.7,
+        "new_elo": 1681
+      },
+      {
+        "date": "2026-05-19 09:12",
+        "timestamp": 1779181931.0,
+        "race_name": "Round 10: Suzuka",
+        "elo_change": 25.0,
+        "new_elo": 1706
+      },
+      {
+        "date": "2026-05-19 09:12",
+        "timestamp": 1779181937.0,
+        "race_name": "Round 11: Red Bull Ring",
+        "elo_change": 26.0,
+        "new_elo": 1732
+      },
+      {
+        "date": "2026-05-22 20:59",
+        "timestamp": 1779483574.0,
+        "race_name": "Round 12: Nurburgring 24H",
+        "elo_change": 38.8,
+        "new_elo": 1771
+      },
+      {
+        "date": "2026-06-02 09:14",
+        "timestamp": 1780391666.0,
+        "race_name": "Round 13: Spa",
+        "elo_change": 10.1,
+        "new_elo": 1781
+      },
+      {
+        "date": "2026-06-02 09:14",
+        "timestamp": 1780391666.0,
+        "race_name": "Round 14: Hungaroring",
+        "elo_change": -25.0,
+        "new_elo": 1756
+      },
+      {
+        "date": "2026-06-02 09:14",
+        "timestamp": 1780391666.0,
+        "race_name": "Round 15: Barcelona",
+        "elo_change": 10.2,
+        "new_elo": 1766
+      },
+      {
+        "date": "2026-06-02 09:14",
+        "timestamp": 1780391666.0,
+        "race_name": "Round 16: Monza",
+        "elo_change": 5.9,
+        "new_elo": 1772
+      },
+      {
+        "date": "2026-06-24 14:40",
+        "timestamp": 1782312007.0,
+        "race_name": "Round 21: Nurburgring 24H",
+        "elo_change": 7.3,
+        "new_elo": 1780
+      },
+      {
+        "date": "2026-06-24 14:40",
+        "timestamp": 1782312007.0,
+        "race_name": "Round 22: Nurburgring 24H",
+        "elo_change": 6.8,
+        "new_elo": 1787
+      },
+      {
+        "date": "2026-07-24 20:39",
+        "timestamp": 1784925556.0,
+        "race_name": "Endurance Showcase",
+        "elo_change": 17.2,
+        "new_elo": 1804
+      },
+      {
+        "date": "2026-07-31 20:46",
+        "timestamp": 1785530770.0,
+        "race_name": "British Classic",
+        "elo_change": 11.3,
+        "new_elo": 1815
+      },
+      {
+        "date": "2026-08-07 19:38",
+        "timestamp": 1786131481.0,
+        "race_name": "Porsche Cup Mini-Champ - Race 1",
+        "elo_change": 11.7,
+        "new_elo": 1827
+      },
+      {
+        "date": "2026-08-07 20:22",
+        "timestamp": 1786134132.0,
+        "race_name": "Porsche Cup Mini-Champ - Race 2",
+        "elo_change": 5.6,
+        "new_elo": 1832
+      },
+      {
+        "date": "2026-08-07 21:07",
+        "timestamp": 1786136844.0,
+        "race_name": "Porsche Cup Mini-Champ - Race 3",
+        "elo_change": 7.8,
+        "new_elo": 1840
+      }
+    ]
+  },
+  {
+    "name": "Sebastian Franken",
+    "current_elo": 1755,
+    "races_completed": 12,
+    "history": [
+      {
+        "date": "2026-05-01 19:39",
+        "timestamp": 1777664372.0,
+        "race_name": "Round 4: Brands Hatch",
+        "elo_change": 48.9,
+        "new_elo": 1549
+      },
+      {
+        "date": "2026-05-01 20:34",
+        "timestamp": 1777667696.0,
+        "race_name": "Round 5: Donington",
+        "elo_change": 27.6,
+        "new_elo": 1576
+      },
+      {
+        "date": "2026-05-01 21:33",
+        "timestamp": 1777671187.0,
+        "race_name": "Round 6: Snetterton",
+        "elo_change": 31.8,
+        "new_elo": 1608
+      },
+      {
+        "date": "2026-05-08 21:02",
+        "timestamp": 1778274129.0,
+        "race_name": "Round 7: Nurburgring 24H",
+        "elo_change": 40.5,
+        "new_elo": 1649
+      },
+      {
+        "date": "2026-05-19 09:12",
+        "timestamp": 1779181920.0,
+        "race_name": "Round 8: Kyalami",
+        "elo_change": 25.4,
+        "new_elo": 1674
+      },
+      {
+        "date": "2026-05-19 09:12",
+        "timestamp": 1779181926.0,
+        "race_name": "Round 9: Mount Panorama",
+        "elo_change": 23.2,
+        "new_elo": 1697
+      },
+      {
+        "date": "2026-05-19 09:12",
+        "timestamp": 1779181931.0,
+        "race_name": "Round 10: Suzuka",
+        "elo_change": 20.4,
+        "new_elo": 1718
+      },
+      {
+        "date": "2026-05-19 09:12",
+        "timestamp": 1779181937.0,
+        "race_name": "Round 11: Red Bull Ring",
+        "elo_change": -11.2,
+        "new_elo": 1707
+      },
+      {
+        "date": "2026-06-02 09:14",
+        "timestamp": 1780391666.0,
+        "race_name": "Round 13: Spa",
+        "elo_change": 17.5,
+        "new_elo": 1724
+      },
+      {
+        "date": "2026-06-02 09:14",
+        "timestamp": 1780391666.0,
+        "race_name": "Round 14: Hungaroring",
+        "elo_change": 13.5,
+        "new_elo": 1738
+      },
+      {
+        "date": "2026-06-02 09:14",
+        "timestamp": 1780391666.0,
+        "race_name": "Round 15: Barcelona",
+        "elo_change": 8.1,
+        "new_elo": 1746
+      },
+      {
+        "date": "2026-06-02 09:14",
+        "timestamp": 1780391666.0,
+        "race_name": "Round 16: Monza",
+        "elo_change": 9.8,
+        "new_elo": 1755
+      }
+    ]
+  },
+  {
+    "name": "Dominic Zimmermann",
+    "current_elo": 1729,
+    "races_completed": 24,
+    "history": [
+      {
+        "date": "2026-04-03 21:09",
+        "timestamp": 1775250551.0,
+        "race_name": "Round 1: Nurburgring 24H",
+        "elo_change": 51.0,
+        "new_elo": 1551
+      },
+      {
+        "date": "2026-04-17 20:51",
+        "timestamp": 1776459084.0,
+        "race_name": "Round 3: Nurburgring 24H",
+        "elo_change": 57.9,
+        "new_elo": 1609
+      },
+      {
+        "date": "2026-05-01 19:39",
+        "timestamp": 1777664372.0,
+        "race_name": "Round 4: Brands Hatch",
+        "elo_change": 9.3,
+        "new_elo": 1618
+      },
+      {
+        "date": "2026-05-01 20:34",
+        "timestamp": 1777667696.0,
+        "race_name": "Round 5: Donington",
+        "elo_change": 15.1,
+        "new_elo": 1633
+      },
+      {
+        "date": "2026-05-01 21:33",
+        "timestamp": 1777671187.0,
+        "race_name": "Round 6: Snetterton",
+        "elo_change": 13.2,
+        "new_elo": 1646
+      },
+      {
+        "date": "2026-05-08 21:02",
+        "timestamp": 1778274129.0,
+        "race_name": "Round 7: Nurburgring 24H",
+        "elo_change": 42.1,
+        "new_elo": 1689
+      },
+      {
+        "date": "2026-05-19 09:12",
+        "timestamp": 1779181920.0,
+        "race_name": "Round 8: Kyalami",
+        "elo_change": 25.8,
+        "new_elo": 1714
+      },
+      {
+        "date": "2026-05-19 09:12",
+        "timestamp": 1779181926.0,
+        "race_name": "Round 9: Mount Panorama",
+        "elo_change": -1.8,
+        "new_elo": 1712
+      },
+      {
+        "date": "2026-05-19 09:12",
+        "timestamp": 1779181931.0,
+        "race_name": "Round 10: Suzuka",
+        "elo_change": 1.0,
+        "new_elo": 1713
+      },
+      {
+        "date": "2026-05-19 09:12",
+        "timestamp": 1779181937.0,
+        "race_name": "Round 11: Red Bull Ring",
+        "elo_change": 4.3,
+        "new_elo": 1718
+      },
+      {
+        "date": "2026-05-22 20:59",
+        "timestamp": 1779483574.0,
+        "race_name": "Round 12: Nurburgring 24H",
+        "elo_change": 32.6,
+        "new_elo": 1750
+      },
+      {
+        "date": "2026-06-02 09:14",
+        "timestamp": 1780391666.0,
+        "race_name": "Round 13: Spa",
+        "elo_change": 5.5,
+        "new_elo": 1756
+      },
+      {
+        "date": "2026-06-02 09:14",
+        "timestamp": 1780391666.0,
+        "race_name": "Round 14: Hungaroring",
+        "elo_change": -6.2,
+        "new_elo": 1750
+      },
+      {
+        "date": "2026-06-02 09:14",
+        "timestamp": 1780391666.0,
+        "race_name": "Round 15: Barcelona",
+        "elo_change": 4.5,
+        "new_elo": 1754
+      },
+      {
+        "date": "2026-06-02 09:14",
+        "timestamp": 1780391666.0,
+        "race_name": "Round 16: Monza",
+        "elo_change": 3.4,
+        "new_elo": 1758
+      },
+      {
+        "date": "2026-06-09 19:39",
+        "timestamp": 1781033974.0,
+        "race_name": "Round 18: Laguna Seca",
+        "elo_change": -36.1,
+        "new_elo": 1721
+      },
+      {
+        "date": "2026-07-10 21:01",
+        "timestamp": 1783717269.0,
+        "race_name": "Season Opener",
+        "elo_change": -29.6,
+        "new_elo": 1692
+      },
+      {
+        "date": "2026-07-17 19:38",
+        "timestamp": 1784317121.0,
+        "race_name": "TCX Mini-Champ - Race 1",
+        "elo_change": 10.5,
+        "new_elo": 1702
+      },
+      {
+        "date": "2026-07-17 20:22",
+        "timestamp": 1784319723.0,
+        "race_name": "TCX Mini-Champ - Race 2",
+        "elo_change": 7.6,
+        "new_elo": 1710
+      },
+      {
+        "date": "2026-07-17 21:07",
+        "timestamp": 1784322448.0,
+        "race_name": "TCX Mini-Champ - Race 3",
+        "elo_change": 9.0,
+        "new_elo": 1719
+      },
+      {
+        "date": "2026-07-24 20:39",
+        "timestamp": 1784925556.0,
+        "race_name": "Endurance Showcase",
+        "elo_change": 2.5,
+        "new_elo": 1722
+      },
+      {
+        "date": "2026-08-07 19:38",
+        "timestamp": 1786131481.0,
+        "race_name": "Porsche Cup Mini-Champ - Race 1",
+        "elo_change": 6.2,
+        "new_elo": 1728
+      },
+      {
+        "date": "2026-08-07 21:07",
+        "timestamp": 1786136844.0,
+        "race_name": "Porsche Cup Mini-Champ - Race 3",
+        "elo_change": -17.3,
+        "new_elo": 1710
+      },
+      {
+        "date": "2026-08-14 20:59",
+        "timestamp": 1786741159.0,
+        "race_name": "Season Finale",
+        "elo_change": 18.5,
+        "new_elo": 1729
+      }
+    ]
+  },
+  {
+    "name": "Moritz Brandl",
+    "current_elo": 1673,
+    "races_completed": 4,
+    "history": [
+      {
+        "date": "2026-05-22 20:59",
+        "timestamp": 1779483574.0,
+        "race_name": "Round 12: Nurburgring 24H",
+        "elo_change": 82.6,
+        "new_elo": 1583
+      },
+      {
+        "date": "2026-05-22 20:59",
+        "timestamp": 1779483574.0,
+        "race_name": "Round 12: Nurburgring 24H",
+        "elo_change": 82.6,
+        "new_elo": 1665
+      },
+      {
+        "date": "2026-06-24 14:40",
+        "timestamp": 1782312007.0,
+        "race_name": "Round 21: Nurburgring 24H",
+        "elo_change": 8.7,
+        "new_elo": 1674
+      },
+      {
+        "date": "2026-06-24 14:40",
+        "timestamp": 1782312007.0,
+        "race_name": "Round 22: Nurburgring 24H",
+        "elo_change": -1.0,
+        "new_elo": 1673
+      }
+    ]
+  },
+  {
+    "name": "Bruno Longarela",
+    "current_elo": 1661,
+    "races_completed": 20,
+    "history": [
+      {
+        "date": "2026-04-03 21:09",
+        "timestamp": 1775250551.0,
+        "race_name": "Round 1: Nurburgring 24H",
+        "elo_change": 48.0,
+        "new_elo": 1548
+      },
+      {
+        "date": "2026-04-10 20:37",
+        "timestamp": 1775853464.0,
+        "race_name": "Round 2: Brands Hatch",
+        "elo_change": 24.5,
+        "new_elo": 1573
+      },
+      {
+        "date": "2026-04-17 20:51",
+        "timestamp": 1776459084.0,
+        "race_name": "Round 3: Nurburgring 24H",
+        "elo_change": -25.7,
+        "new_elo": 1547
+      },
+      {
+        "date": "2026-05-08 21:02",
+        "timestamp": 1778274129.0,
+        "race_name": "Round 7: Nurburgring 24H",
+        "elo_change": 41.2,
+        "new_elo": 1588
+      },
+      {
+        "date": "2026-05-19 09:12",
+        "timestamp": 1779181920.0,
+        "race_name": "Round 8: Kyalami",
+        "elo_change": 31.9,
+        "new_elo": 1620
+      },
+      {
+        "date": "2026-05-19 09:12",
+        "timestamp": 1779181926.0,
+        "race_name": "Round 9: Mount Panorama",
+        "elo_change": -22.6,
+        "new_elo": 1597
+      },
+      {
+        "date": "2026-05-19 09:12",
+        "timestamp": 1779181931.0,
+        "race_name": "Round 10: Suzuka",
+        "elo_change": -34.1,
+        "new_elo": 1563
+      },
+      {
+        "date": "2026-05-19 09:12",
+        "timestamp": 1779181937.0,
+        "race_name": "Round 11: Red Bull Ring",
+        "elo_change": -30.4,
+        "new_elo": 1533
+      },
+      {
+        "date": "2026-06-02 09:14",
+        "timestamp": 1780391666.0,
+        "race_name": "Round 13: Spa",
+        "elo_change": 20.1,
+        "new_elo": 1553
+      },
+      {
+        "date": "2026-06-02 09:14",
+        "timestamp": 1780391666.0,
+        "race_name": "Round 14: Hungaroring",
+        "elo_change": 21.5,
+        "new_elo": 1574
+      },
+      {
+        "date": "2026-06-02 09:14",
+        "timestamp": 1780391666.0,
+        "race_name": "Round 15: Barcelona",
+        "elo_change": 10.7,
+        "new_elo": 1585
+      },
+      {
+        "date": "2026-06-02 09:14",
+        "timestamp": 1780391666.0,
+        "race_name": "Round 16: Monza",
+        "elo_change": -15.9,
+        "new_elo": 1569
+      },
+      {
+        "date": "2026-06-09 19:39",
+        "timestamp": 1781033974.0,
+        "race_name": "Round 17: Watkins Glen",
+        "elo_change": 11.1,
+        "new_elo": 1580
+      },
+      {
+        "date": "2026-06-09 19:39",
+        "timestamp": 1781033974.0,
+        "race_name": "Round 18: Laguna Seca",
+        "elo_change": 37.0,
+        "new_elo": 1617
+      },
+      {
+        "date": "2026-06-09 19:39",
+        "timestamp": 1781033974.0,
+        "race_name": "Round 19: Cota",
+        "elo_change": 12.4,
+        "new_elo": 1630
+      },
+      {
+        "date": "2026-06-09 19:39",
+        "timestamp": 1781033974.0,
+        "race_name": "Round 20: Indianapolis",
+        "elo_change": 3.6,
+        "new_elo": 1633
+      },
+      {
+        "date": "2026-07-17 19:38",
+        "timestamp": 1784317121.0,
+        "race_name": "TCX Mini-Champ - Race 1",
+        "elo_change": -4.7,
+        "new_elo": 1629
+      },
+      {
+        "date": "2026-07-17 20:22",
+        "timestamp": 1784319723.0,
+        "race_name": "TCX Mini-Champ - Race 2",
+        "elo_change": 2.3,
+        "new_elo": 1631
+      },
+      {
+        "date": "2026-07-17 21:07",
+        "timestamp": 1784322448.0,
+        "race_name": "TCX Mini-Champ - Race 3",
+        "elo_change": 9.6,
+        "new_elo": 1640
+      },
+      {
+        "date": "2026-07-31 20:46",
+        "timestamp": 1785530770.0,
+        "race_name": "British Classic",
+        "elo_change": 20.5,
+        "new_elo": 1661
+      }
+    ]
+  },
+  {
+    "name": "Kai Weber [RRT]",
+    "current_elo": 1656,
+    "races_completed": 8,
+    "history": [
+      {
+        "date": "2026-05-01 19:39",
+        "timestamp": 1777664372.0,
+        "race_name": "Round 4: Brands Hatch",
+        "elo_change": 0.9,
+        "new_elo": 1501
+      },
+      {
+        "date": "2026-05-01 20:34",
+        "timestamp": 1777667696.0,
+        "race_name": "Round 5: Donington",
+        "elo_change": 20.3,
+        "new_elo": 1521
+      },
+      {
+        "date": "2026-05-01 21:33",
+        "timestamp": 1777671187.0,
+        "race_name": "Round 6: Snetterton",
+        "elo_change": 17.5,
+        "new_elo": 1539
+      },
+      {
+        "date": "2026-05-08 21:02",
+        "timestamp": 1778274129.0,
+        "race_name": "Round 7: Nurburgring 24H",
+        "elo_change": 69.9,
+        "new_elo": 1609
+      },
+      {
+        "date": "2026-05-19 09:12",
+        "timestamp": 1779181920.0,
+        "race_name": "Round 8: Kyalami",
+        "elo_change": 22.6,
+        "new_elo": 1631
+      },
+      {
+        "date": "2026-05-19 09:12",
+        "timestamp": 1779181926.0,
+        "race_name": "Round 9: Mount Panorama",
+        "elo_change": 30.8,
+        "new_elo": 1662
+      },
+      {
+        "date": "2026-05-19 09:12",
+        "timestamp": 1779181931.0,
+        "race_name": "Round 10: Suzuka",
+        "elo_change": -39.2,
+        "new_elo": 1623
+      },
+      {
+        "date": "2026-05-19 09:12",
+        "timestamp": 1779181937.0,
+        "race_name": "Round 11: Red Bull Ring",
+        "elo_change": 32.9,
+        "new_elo": 1656
+      }
+    ]
+  },
+  {
+    "name": "Antoni Mencik",
+    "current_elo": 1638,
+    "races_completed": 7,
+    "history": [
+      {
+        "date": "2026-04-03 21:09",
+        "timestamp": 1775250551.0,
+        "race_name": "Round 1: Nurburgring 24H",
+        "elo_change": 54.0,
+        "new_elo": 1554
+      },
+      {
+        "date": "2026-04-17 20:51",
+        "timestamp": 1776459084.0,
+        "race_name": "Round 3: Nurburgring 24H",
+        "elo_change": 54.3,
+        "new_elo": 1608
+      },
+      {
+        "date": "2026-05-22 20:59",
+        "timestamp": 1779483574.0,
+        "race_name": "Round 12: Nurburgring 24H",
+        "elo_change": -7.9,
+        "new_elo": 1600
+      },
+      {
+        "date": "2026-06-24 14:40",
+        "timestamp": 1782312007.0,
+        "race_name": "Round 21: Nurburgring 24H",
+        "elo_change": 2.8,
+        "new_elo": 1603
+      },
+      {
+        "date": "2026-06-24 14:40",
+        "timestamp": 1782312007.0,
+        "race_name": "Round 22: Nurburgring 24H",
+        "elo_change": 11.3,
+        "new_elo": 1614
+      },
+      {
+        "date": "2026-07-24 20:39",
+        "timestamp": 1784925556.0,
+        "race_name": "Endurance Showcase",
+        "elo_change": 5.6,
+        "new_elo": 1620
+      },
+      {
+        "date": "2026-08-14 20:59",
+        "timestamp": 1786741159.0,
+        "race_name": "Season Finale",
+        "elo_change": 17.8,
+        "new_elo": 1638
+      }
+    ]
+  },
+  {
+    "name": "Cla Rens",
+    "current_elo": 1630,
+    "races_completed": 21,
+    "history": [
+      {
+        "date": "2026-04-03 21:09",
+        "timestamp": 1775250551.0,
+        "race_name": "Round 1: Nurburgring 24H",
+        "elo_change": 30.0,
+        "new_elo": 1530
+      },
+      {
+        "date": "2026-04-10 20:37",
+        "timestamp": 1775853464.0,
+        "race_name": "Round 2: Brands Hatch",
+        "elo_change": 39.3,
+        "new_elo": 1569
+      },
+      {
+        "date": "2026-04-17 20:51",
+        "timestamp": 1776459084.0,
+        "race_name": "Round 3: Nurburgring 24H",
+        "elo_change": 39.4,
+        "new_elo": 1609
+      },
+      {
+        "date": "2026-05-01 19:39",
+        "timestamp": 1777664372.0,
+        "race_name": "Round 4: Brands Hatch",
+        "elo_change": 27.3,
+        "new_elo": 1636
+      },
+      {
+        "date": "2026-05-01 20:34",
+        "timestamp": 1777667696.0,
+        "race_name": "Round 5: Donington",
+        "elo_change": 10.5,
+        "new_elo": 1647
+      },
+      {
+        "date": "2026-05-01 21:33",
+        "timestamp": 1777671187.0,
+        "race_name": "Round 6: Snetterton",
+        "elo_change": 5.8,
+        "new_elo": 1652
+      },
+      {
+        "date": "2026-05-08 21:02",
+        "timestamp": 1778274129.0,
+        "race_name": "Round 7: Nurburgring 24H",
+        "elo_change": -23.5,
+        "new_elo": 1629
+      },
+      {
+        "date": "2026-05-19 09:12",
+        "timestamp": 1779181920.0,
+        "race_name": "Round 8: Kyalami",
+        "elo_change": -4.6,
+        "new_elo": 1624
+      },
+      {
+        "date": "2026-05-19 09:12",
+        "timestamp": 1779181926.0,
+        "race_name": "Round 9: Mount Panorama",
+        "elo_change": 16.6,
+        "new_elo": 1641
+      },
+      {
+        "date": "2026-05-19 09:12",
+        "timestamp": 1779181931.0,
+        "race_name": "Round 10: Suzuka",
+        "elo_change": 20.2,
+        "new_elo": 1661
+      },
+      {
+        "date": "2026-05-19 09:12",
+        "timestamp": 1779181937.0,
+        "race_name": "Round 11: Red Bull Ring",
+        "elo_change": 4.2,
+        "new_elo": 1665
+      },
+      {
+        "date": "2026-05-22 20:59",
+        "timestamp": 1779483574.0,
+        "race_name": "Round 12: Nurburgring 24H",
+        "elo_change": -9.0,
+        "new_elo": 1656
+      },
+      {
+        "date": "2026-06-09 19:39",
+        "timestamp": 1781033974.0,
+        "race_name": "Round 17: Watkins Glen",
+        "elo_change": 3.2,
+        "new_elo": 1659
+      },
+      {
+        "date": "2026-06-09 19:39",
+        "timestamp": 1781033974.0,
+        "race_name": "Round 18: Laguna Seca",
+        "elo_change": -31.4,
+        "new_elo": 1628
+      },
+      {
+        "date": "2026-06-09 19:39",
+        "timestamp": 1781033974.0,
+        "race_name": "Round 19: Cota",
+        "elo_change": -18.3,
+        "new_elo": 1610
+      },
+      {
+        "date": "2026-06-09 19:39",
+        "timestamp": 1781033974.0,
+        "race_name": "Round 20: Indianapolis",
+        "elo_change": 10.4,
+        "new_elo": 1620
+      },
+      {
+        "date": "2026-06-24 14:40",
+        "timestamp": 1782312007.0,
+        "race_name": "Round 21: Nurburgring 24H",
+        "elo_change": 4.8,
+        "new_elo": 1625
+      },
+      {
+        "date": "2026-07-10 21:01",
+        "timestamp": 1783717269.0,
+        "race_name": "Season Opener",
+        "elo_change": 0.5,
+        "new_elo": 1625
+      },
+      {
+        "date": "2026-07-17 19:38",
+        "timestamp": 1784317121.0,
+        "race_name": "TCX Mini-Champ - Race 1",
+        "elo_change": 4.7,
+        "new_elo": 1630
+      },
+      {
+        "date": "2026-07-17 20:22",
+        "timestamp": 1784319723.0,
+        "race_name": "TCX Mini-Champ - Race 2",
+        "elo_change": -21.8,
+        "new_elo": 1608
+      },
+      {
+        "date": "2026-08-14 20:59",
+        "timestamp": 1786741159.0,
+        "race_name": "Season Finale",
+        "elo_change": 21.9,
+        "new_elo": 1630
+      }
+    ]
+  },
+  {
+    "name": "Luca Maggiolo",
+    "current_elo": 1616,
+    "races_completed": 14,
+    "history": [
+      {
+        "date": "2026-04-10 20:37",
+        "timestamp": 1775853464.0,
+        "race_name": "Round 2: Brands Hatch",
+        "elo_change": 40.9,
+        "new_elo": 1541
+      },
+      {
+        "date": "2026-05-08 21:02",
+        "timestamp": 1778274129.0,
+        "race_name": "Round 7: Nurburgring 24H",
+        "elo_change": -18.1,
+        "new_elo": 1523
+      },
+      {
+        "date": "2026-05-19 09:12",
+        "timestamp": 1779181920.0,
+        "race_name": "Round 8: Kyalami",
+        "elo_change": 48.7,
+        "new_elo": 1572
+      },
+      {
+        "date": "2026-05-19 09:12",
+        "timestamp": 1779181926.0,
+        "race_name": "Round 9: Mount Panorama",
+        "elo_change": -20.1,
+        "new_elo": 1551
+      },
+      {
+        "date": "2026-05-19 09:12",
+        "timestamp": 1779181931.0,
+        "race_name": "Round 10: Suzuka",
+        "elo_change": -14.7,
+        "new_elo": 1537
+      },
+      {
+        "date": "2026-06-09 19:39",
+        "timestamp": 1781033974.0,
+        "race_name": "Round 18: Laguna Seca",
+        "elo_change": -24.0,
+        "new_elo": 1513
+      },
+      {
+        "date": "2026-06-09 19:39",
+        "timestamp": 1781033974.0,
+        "race_name": "Round 19: Cota",
+        "elo_change": 21.5,
+        "new_elo": 1534
+      },
+      {
+        "date": "2026-07-10 21:01",
+        "timestamp": 1783717269.0,
+        "race_name": "Season Opener",
+        "elo_change": 7.2,
+        "new_elo": 1541
+      },
+      {
+        "date": "2026-07-17 19:38",
+        "timestamp": 1784317121.0,
+        "race_name": "TCX Mini-Champ - Race 1",
+        "elo_change": 3.2,
+        "new_elo": 1545
+      },
+      {
+        "date": "2026-07-17 20:22",
+        "timestamp": 1784319723.0,
+        "race_name": "TCX Mini-Champ - Race 2",
+        "elo_change": 12.8,
+        "new_elo": 1557
+      },
+      {
+        "date": "2026-07-24 20:39",
+        "timestamp": 1784925556.0,
+        "race_name": "Endurance Showcase",
+        "elo_change": 40.0,
+        "new_elo": 1597
+      },
+      {
+        "date": "2026-08-07 19:38",
+        "timestamp": 1786131481.0,
+        "race_name": "Porsche Cup Mini-Champ - Race 1",
+        "elo_change": 23.2,
+        "new_elo": 1621
+      },
+      {
+        "date": "2026-08-07 20:22",
+        "timestamp": 1786134132.0,
+        "race_name": "Porsche Cup Mini-Champ - Race 2",
+        "elo_change": -19.1,
+        "new_elo": 1602
+      },
+      {
+        "date": "2026-08-07 21:07",
+        "timestamp": 1786136844.0,
+        "race_name": "Porsche Cup Mini-Champ - Race 3",
+        "elo_change": 14.4,
+        "new_elo": 1616
+      }
+    ]
+  },
+  {
+    "name": "Mike Weber [RRT]",
+    "current_elo": 1615,
+    "races_completed": 7,
+    "history": [
+      {
+        "date": "2026-05-01 19:39",
+        "timestamp": 1777664372.0,
+        "race_name": "Round 4: Brands Hatch",
+        "elo_change": 51.9,
+        "new_elo": 1552
+      },
+      {
+        "date": "2026-05-01 20:34",
+        "timestamp": 1777667696.0,
+        "race_name": "Round 5: Donington",
+        "elo_change": 30.4,
+        "new_elo": 1582
+      },
+      {
+        "date": "2026-05-08 21:02",
+        "timestamp": 1778274129.0,
+        "race_name": "Round 7: Nurburgring 24H",
+        "elo_change": -20.1,
+        "new_elo": 1562
+      },
+      {
+        "date": "2026-06-02 09:14",
+        "timestamp": 1780391666.0,
+        "race_name": "Round 13: Spa",
+        "elo_change": 23.5,
+        "new_elo": 1586
+      },
+      {
+        "date": "2026-06-02 09:14",
+        "timestamp": 1780391666.0,
+        "race_name": "Round 14: Hungaroring",
+        "elo_change": 16.3,
+        "new_elo": 1602
+      },
+      {
+        "date": "2026-06-02 09:14",
+        "timestamp": 1780391666.0,
+        "race_name": "Round 15: Barcelona",
+        "elo_change": 6.2,
+        "new_elo": 1608
+      },
+      {
+        "date": "2026-06-02 09:14",
+        "timestamp": 1780391666.0,
+        "race_name": "Round 16: Monza",
+        "elo_change": 7.0,
+        "new_elo": 1615
+      }
+    ]
+  },
+  {
+    "name": "Vis Nalu",
+    "current_elo": 1612,
+    "races_completed": 2,
+    "history": [
+      {
+        "date": "2026-04-10 20:37",
+        "timestamp": 1775853464.0,
+        "race_name": "Round 2: Brands Hatch",
+        "elo_change": 46.9,
+        "new_elo": 1547
+      },
+      {
+        "date": "2026-05-08 21:02",
+        "timestamp": 1778274129.0,
+        "race_name": "Round 7: Nurburgring 24H",
+        "elo_change": 65.2,
+        "new_elo": 1612
+      }
+    ]
+  },
+  {
+    "name": "Lucas Nierhaus",
+    "current_elo": 1600,
+    "races_completed": 5,
+    "history": [
+      {
+        "date": "2026-04-03 21:09",
+        "timestamp": 1775250551.0,
+        "race_name": "Round 1: Nurburgring 24H",
+        "elo_change": 63.0,
+        "new_elo": 1563
+      },
+      {
+        "date": "2026-05-01 19:39",
+        "timestamp": 1777664372.0,
+        "race_name": "Round 4: Brands Hatch",
+        "elo_change": 27.7,
+        "new_elo": 1591
+      },
+      {
+        "date": "2026-05-01 20:34",
+        "timestamp": 1777667696.0,
+        "race_name": "Round 5: Donington",
+        "elo_change": 8.6,
+        "new_elo": 1599
+      },
+      {
+        "date": "2026-05-01 21:33",
+        "timestamp": 1777671187.0,
+        "race_name": "Round 6: Snetterton",
+        "elo_change": 23.1,
+        "new_elo": 1622
+      },
+      {
+        "date": "2026-05-08 21:02",
+        "timestamp": 1778274129.0,
+        "race_name": "Round 7: Nurburgring 24H",
+        "elo_change": -22.1,
+        "new_elo": 1600
+      }
+    ]
+  },
+  {
+    "name": "Nicolò Robecchi[OM]",
+    "current_elo": 1597,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-05-22 20:59",
+        "timestamp": 1779483574.0,
+        "race_name": "Round 12: Nurburgring 24H",
+        "elo_change": 97.5,
+        "new_elo": 1597
+      }
+    ]
+  },
+  {
+    "name": "He Who-noms-on-tires",
+    "current_elo": 1593,
+    "races_completed": 9,
+    "history": [
+      {
+        "date": "2026-05-19 09:12",
+        "timestamp": 1779181920.0,
+        "race_name": "Round 8: Kyalami",
+        "elo_change": -34.3,
+        "new_elo": 1466
+      },
+      {
+        "date": "2026-05-19 09:12",
+        "timestamp": 1779181926.0,
+        "race_name": "Round 9: Mount Panorama",
+        "elo_change": 41.4,
+        "new_elo": 1507
+      },
+      {
+        "date": "2026-05-19 09:12",
+        "timestamp": 1779181931.0,
+        "race_name": "Round 10: Suzuka",
+        "elo_change": -3.6,
+        "new_elo": 1504
+      },
+      {
+        "date": "2026-05-19 09:12",
+        "timestamp": 1779181937.0,
+        "race_name": "Round 11: Red Bull Ring",
+        "elo_change": 27.5,
+        "new_elo": 1531
+      },
+      {
+        "date": "2026-06-09 19:39",
+        "timestamp": 1781033974.0,
+        "race_name": "Round 17: Watkins Glen",
+        "elo_change": 16.3,
+        "new_elo": 1547
+      },
+      {
+        "date": "2026-06-09 19:39",
+        "timestamp": 1781033974.0,
+        "race_name": "Round 18: Laguna Seca",
+        "elo_change": 47.9,
+        "new_elo": 1595
+      },
+      {
+        "date": "2026-06-09 19:39",
+        "timestamp": 1781033974.0,
+        "race_name": "Round 19: Cota",
+        "elo_change": 4.6,
+        "new_elo": 1600
+      },
+      {
+        "date": "2026-06-09 19:39",
+        "timestamp": 1781033974.0,
+        "race_name": "Round 20: Indianapolis",
+        "elo_change": 1.7,
+        "new_elo": 1602
+      },
+      {
+        "date": "2026-07-10 21:01",
+        "timestamp": 1783717269.0,
+        "race_name": "Season Opener",
+        "elo_change": -9.1,
+        "new_elo": 1593
+      }
+    ]
+  },
+  {
+    "name": "Nick Ice",
+    "current_elo": 1585,
+    "races_completed": 7,
+    "history": [
+      {
+        "date": "2026-04-03 21:09",
+        "timestamp": 1775250551.0,
+        "race_name": "Round 1: Nurburgring 24H",
+        "elo_change": -25.5,
+        "new_elo": 1474
+      },
+      {
+        "date": "2026-05-08 21:02",
+        "timestamp": 1778274129.0,
+        "race_name": "Round 7: Nurburgring 24H",
+        "elo_change": 50.5,
+        "new_elo": 1525
+      },
+      {
+        "date": "2026-05-19 09:12",
+        "timestamp": 1779181920.0,
+        "race_name": "Round 8: Kyalami",
+        "elo_change": 27.3,
+        "new_elo": 1552
+      },
+      {
+        "date": "2026-05-19 09:12",
+        "timestamp": 1779181926.0,
+        "race_name": "Round 9: Mount Panorama",
+        "elo_change": -19.1,
+        "new_elo": 1533
+      },
+      {
+        "date": "2026-05-19 09:12",
+        "timestamp": 1779181931.0,
+        "race_name": "Round 10: Suzuka",
+        "elo_change": 23.4,
+        "new_elo": 1557
+      },
+      {
+        "date": "2026-05-22 20:59",
+        "timestamp": 1779483574.0,
+        "race_name": "Round 12: Nurburgring 24H",
+        "elo_change": -6.9,
+        "new_elo": 1550
+      },
+      {
+        "date": "2026-07-10 21:01",
+        "timestamp": 1783717269.0,
+        "race_name": "Season Opener",
+        "elo_change": 35.5,
+        "new_elo": 1585
+      }
+    ]
+  },
+  {
+    "name": "Julian Maßner",
+    "current_elo": 1583,
+    "races_completed": 4,
+    "history": [
+      {
+        "date": "2026-07-10 21:01",
+        "timestamp": 1783717269.0,
+        "race_name": "Season Opener",
+        "elo_change": 22.9,
+        "new_elo": 1523
+      },
+      {
+        "date": "2026-07-31 20:46",
+        "timestamp": 1785530770.0,
+        "race_name": "British Classic",
+        "elo_change": 7.8,
+        "new_elo": 1531
+      },
+      {
+        "date": "2026-08-07 19:38",
+        "timestamp": 1786131481.0,
+        "race_name": "Porsche Cup Mini-Champ - Race 1",
+        "elo_change": 32.8,
+        "new_elo": 1563
+      },
+      {
+        "date": "2026-08-07 21:07",
+        "timestamp": 1786136844.0,
+        "race_name": "Porsche Cup Mini-Champ - Race 3",
+        "elo_change": 19.8,
+        "new_elo": 1583
+      }
+    ]
+  },
+  {
+    "name": "alex küch",
+    "current_elo": 1582,
+    "races_completed": 10,
+    "history": [
+      {
+        "date": "2026-05-08 21:02",
+        "timestamp": 1778274129.0,
+        "race_name": "Round 7: Nurburgring 24H",
+        "elo_change": -16.0,
+        "new_elo": 1484
+      },
+      {
+        "date": "2026-05-22 20:59",
+        "timestamp": 1779483574.0,
+        "race_name": "Round 12: Nurburgring 24H",
+        "elo_change": 95.7,
+        "new_elo": 1580
+      },
+      {
+        "date": "2026-06-24 14:40",
+        "timestamp": 1782312007.0,
+        "race_name": "Round 21: Nurburgring 24H",
+        "elo_change": -6.3,
+        "new_elo": 1573
+      },
+      {
+        "date": "2026-06-24 14:40",
+        "timestamp": 1782312007.0,
+        "race_name": "Round 22: Nurburgring 24H",
+        "elo_change": 9.8,
+        "new_elo": 1583
+      },
+      {
+        "date": "2026-07-10 21:01",
+        "timestamp": 1783717269.0,
+        "race_name": "Season Opener",
+        "elo_change": -10.2,
+        "new_elo": 1573
+      },
+      {
+        "date": "2026-07-24 20:39",
+        "timestamp": 1784925556.0,
+        "race_name": "Endurance Showcase",
+        "elo_change": 1.9,
+        "new_elo": 1575
+      },
+      {
+        "date": "2026-08-07 19:38",
+        "timestamp": 1786131481.0,
+        "race_name": "Porsche Cup Mini-Champ - Race 1",
+        "elo_change": 16.4,
+        "new_elo": 1591
+      },
+      {
+        "date": "2026-08-07 20:22",
+        "timestamp": 1786134132.0,
+        "race_name": "Porsche Cup Mini-Champ - Race 2",
+        "elo_change": -5.6,
+        "new_elo": 1586
+      },
+      {
+        "date": "2026-08-07 21:07",
+        "timestamp": 1786136844.0,
+        "race_name": "Porsche Cup Mini-Champ - Race 3",
+        "elo_change": 12.4,
+        "new_elo": 1598
+      },
+      {
+        "date": "2026-08-14 20:59",
+        "timestamp": 1786741159.0,
+        "race_name": "Season Finale",
+        "elo_change": -16.0,
+        "new_elo": 1582
+      }
+    ]
+  },
+  {
+    "name": "Elliot Heal",
+    "current_elo": 1580,
+    "races_completed": 2,
+    "history": [
+      {
+        "date": "2026-05-19 09:12",
+        "timestamp": 1779181931.0,
+        "race_name": "Round 10: Suzuka",
+        "elo_change": 39.2,
+        "new_elo": 1539
+      },
+      {
+        "date": "2026-05-19 09:12",
+        "timestamp": 1779181937.0,
+        "race_name": "Round 11: Red Bull Ring",
+        "elo_change": 40.8,
+        "new_elo": 1580
+      }
+    ]
+  },
+  {
+    "name": "Leonardo Cocco",
+    "current_elo": 1579,
+    "races_completed": 5,
+    "history": [
+      {
+        "date": "2026-06-02 09:14",
+        "timestamp": 1780391666.0,
+        "race_name": "Round 14: Hungaroring",
+        "elo_change": 19.1,
+        "new_elo": 1519
+      },
+      {
+        "date": "2026-08-07 19:38",
+        "timestamp": 1786131481.0,
+        "race_name": "Porsche Cup Mini-Champ - Race 1",
+        "elo_change": 9.9,
+        "new_elo": 1529
+      },
+      {
+        "date": "2026-08-07 20:22",
+        "timestamp": 1786134132.0,
+        "race_name": "Porsche Cup Mini-Champ - Race 2",
+        "elo_change": 12.4,
+        "new_elo": 1541
+      },
+      {
+        "date": "2026-08-07 21:07",
+        "timestamp": 1786136844.0,
+        "race_name": "Porsche Cup Mini-Champ - Race 3",
+        "elo_change": 6.3,
+        "new_elo": 1548
+      },
+      {
+        "date": "2026-08-14 20:59",
+        "timestamp": 1786741159.0,
+        "race_name": "Season Finale",
+        "elo_change": 31.2,
+        "new_elo": 1579
+      }
+    ]
+  },
+  {
+    "name": "Rainer Wengert",
+    "current_elo": 1578,
+    "races_completed": 4,
+    "history": [
+      {
+        "date": "2026-05-08 21:02",
+        "timestamp": 1778274129.0,
+        "race_name": "Round 7: Nurburgring 24H",
+        "elo_change": 54.1,
+        "new_elo": 1554
+      },
+      {
+        "date": "2026-08-07 19:38",
+        "timestamp": 1786131481.0,
+        "race_name": "Porsche Cup Mini-Champ - Race 1",
+        "elo_change": 24.4,
+        "new_elo": 1579
+      },
+      {
+        "date": "2026-08-07 20:22",
+        "timestamp": 1786134132.0,
+        "race_name": "Porsche Cup Mini-Champ - Race 2",
+        "elo_change": -11.0,
+        "new_elo": 1568
+      },
+      {
+        "date": "2026-08-07 21:07",
+        "timestamp": 1786136844.0,
+        "race_name": "Porsche Cup Mini-Champ - Race 3",
+        "elo_change": 10.6,
+        "new_elo": 1578
+      }
+    ]
+  },
+  {
+    "name": "Isaac Melvatron",
+    "current_elo": 1574,
+    "races_completed": 3,
+    "history": [
+      {
+        "date": "2026-06-09 19:39",
+        "timestamp": 1781033974.0,
+        "race_name": "Round 17: Watkins Glen",
+        "elo_change": 21.2,
+        "new_elo": 1521
+      },
+      {
+        "date": "2026-06-09 19:39",
+        "timestamp": 1781033974.0,
+        "race_name": "Round 18: Laguna Seca",
+        "elo_change": 42.9,
+        "new_elo": 1564
+      },
+      {
+        "date": "2026-06-09 19:39",
+        "timestamp": 1781033974.0,
+        "race_name": "Round 19: Cota",
+        "elo_change": 9.5,
+        "new_elo": 1574
+      }
+    ]
+  },
+  {
+    "name": "Pauli Keski-Filppula",
+    "current_elo": 1571,
+    "races_completed": 3,
+    "history": [
+      {
+        "date": "2026-07-24 20:39",
+        "timestamp": 1784925556.0,
+        "race_name": "Endurance Showcase",
+        "elo_change": 41.7,
+        "new_elo": 1542
+      },
+      {
+        "date": "2026-07-31 20:46",
+        "timestamp": 1785530770.0,
+        "race_name": "British Classic",
+        "elo_change": 20.9,
+        "new_elo": 1563
+      },
+      {
+        "date": "2026-08-07 19:38",
+        "timestamp": 1786131481.0,
+        "race_name": "Porsche Cup Mini-Champ - Race 1",
+        "elo_change": 8.6,
+        "new_elo": 1571
+      }
+    ]
+  },
+  {
+    "name": "Marty Fox",
+    "current_elo": 1568,
+    "races_completed": 26,
+    "history": [
+      {
+        "date": "2026-04-10 20:37",
+        "timestamp": 1775853464.0,
+        "race_name": "Round 2: Brands Hatch",
+        "elo_change": 37.9,
+        "new_elo": 1538
+      },
+      {
+        "date": "2026-04-17 20:51",
+        "timestamp": 1776459084.0,
+        "race_name": "Round 3: Nurburgring 24H",
+        "elo_change": 33.4,
+        "new_elo": 1571
+      },
+      {
+        "date": "2026-05-01 19:39",
+        "timestamp": 1777664372.0,
+        "race_name": "Round 4: Brands Hatch",
+        "elo_change": -34.5,
+        "new_elo": 1537
+      },
+      {
+        "date": "2026-05-01 20:34",
+        "timestamp": 1777667696.0,
+        "race_name": "Round 5: Donington",
+        "elo_change": 7.8,
+        "new_elo": 1545
+      },
+      {
+        "date": "2026-05-01 21:33",
+        "timestamp": 1777671187.0,
+        "race_name": "Round 6: Snetterton",
+        "elo_change": 11.7,
+        "new_elo": 1556
+      },
+      {
+        "date": "2026-05-08 21:02",
+        "timestamp": 1778274129.0,
+        "race_name": "Round 7: Nurburgring 24H",
+        "elo_change": 57.2,
+        "new_elo": 1613
+      },
+      {
+        "date": "2026-05-19 09:12",
+        "timestamp": 1779181937.0,
+        "race_name": "Round 11: Red Bull Ring",
+        "elo_change": -7.9,
+        "new_elo": 1606
+      },
+      {
+        "date": "2026-05-22 20:59",
+        "timestamp": 1779483574.0,
+        "race_name": "Round 12: Nurburgring 24H",
+        "elo_change": -7.9,
+        "new_elo": 1598
+      },
+      {
+        "date": "2026-06-02 09:14",
+        "timestamp": 1780391666.0,
+        "race_name": "Round 13: Spa",
+        "elo_change": -21.0,
+        "new_elo": 1577
+      },
+      {
+        "date": "2026-06-02 09:14",
+        "timestamp": 1780391666.0,
+        "race_name": "Round 14: Hungaroring",
+        "elo_change": 7.9,
+        "new_elo": 1585
+      },
+      {
+        "date": "2026-06-02 09:14",
+        "timestamp": 1780391666.0,
+        "race_name": "Round 15: Barcelona",
+        "elo_change": 4.1,
+        "new_elo": 1589
+      },
+      {
+        "date": "2026-06-02 09:14",
+        "timestamp": 1780391666.0,
+        "race_name": "Round 16: Monza",
+        "elo_change": -7.1,
+        "new_elo": 1582
+      },
+      {
+        "date": "2026-06-09 19:39",
+        "timestamp": 1781033974.0,
+        "race_name": "Round 17: Watkins Glen",
+        "elo_change": -18.8,
+        "new_elo": 1563
+      },
+      {
+        "date": "2026-06-09 19:39",
+        "timestamp": 1781033974.0,
+        "race_name": "Round 18: Laguna Seca",
+        "elo_change": -25.7,
+        "new_elo": 1537
+      },
+      {
+        "date": "2026-06-09 19:39",
+        "timestamp": 1781033974.0,
+        "race_name": "Round 19: Cota",
+        "elo_change": -14.5,
+        "new_elo": 1523
+      },
+      {
+        "date": "2026-06-09 19:39",
+        "timestamp": 1781033974.0,
+        "race_name": "Round 20: Indianapolis",
+        "elo_change": -7.3,
+        "new_elo": 1515
+      },
+      {
+        "date": "2026-07-10 21:01",
+        "timestamp": 1783717269.0,
+        "race_name": "Season Opener",
+        "elo_change": 30.3,
+        "new_elo": 1546
+      },
+      {
+        "date": "2026-07-17 19:38",
+        "timestamp": 1784317121.0,
+        "race_name": "TCX Mini-Champ - Race 1",
+        "elo_change": -9.0,
+        "new_elo": 1537
+      },
+      {
+        "date": "2026-07-17 20:22",
+        "timestamp": 1784319723.0,
+        "race_name": "TCX Mini-Champ - Race 2",
+        "elo_change": 4.2,
+        "new_elo": 1541
+      },
+      {
+        "date": "2026-07-17 21:07",
+        "timestamp": 1784322448.0,
+        "race_name": "TCX Mini-Champ - Race 3",
+        "elo_change": 2.0,
+        "new_elo": 1543
+      },
+      {
+        "date": "2026-07-24 20:39",
+        "timestamp": 1784925556.0,
+        "race_name": "Endurance Showcase",
+        "elo_change": 30.0,
+        "new_elo": 1573
+      },
+      {
+        "date": "2026-07-31 20:46",
+        "timestamp": 1785530770.0,
+        "race_name": "British Classic",
+        "elo_change": 14.9,
+        "new_elo": 1588
+      },
+      {
+        "date": "2026-08-07 19:38",
+        "timestamp": 1786131481.0,
+        "race_name": "Porsche Cup Mini-Champ - Race 1",
+        "elo_change": -32.9,
+        "new_elo": 1555
+      },
+      {
+        "date": "2026-08-07 20:22",
+        "timestamp": 1786134132.0,
+        "race_name": "Porsche Cup Mini-Champ - Race 2",
+        "elo_change": 2.2,
+        "new_elo": 1557
+      },
+      {
+        "date": "2026-08-07 21:07",
+        "timestamp": 1786136844.0,
+        "race_name": "Porsche Cup Mini-Champ - Race 3",
+        "elo_change": -0.7,
+        "new_elo": 1556
+      },
+      {
+        "date": "2026-08-14 20:59",
+        "timestamp": 1786741159.0,
+        "race_name": "Season Finale",
+        "elo_change": 12.3,
+        "new_elo": 1568
+      }
+    ]
+  },
+  {
+    "name": "Kian Robbo",
+    "current_elo": 1566,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-05-08 21:02",
+        "timestamp": 1778274129.0,
+        "race_name": "Round 7: Nurburgring 24H",
+        "elo_change": 66.1,
+        "new_elo": 1566
+      }
+    ]
+  },
+  {
+    "name": "Bence Kamaras",
+    "current_elo": 1560,
+    "races_completed": 29,
+    "history": [
+      {
+        "date": "2026-04-03 21:09",
+        "timestamp": 1775250551.0,
+        "race_name": "Round 1: Nurburgring 24H",
+        "elo_change": 33.0,
+        "new_elo": 1533
+      },
+      {
+        "date": "2026-04-17 20:51",
+        "timestamp": 1776459084.0,
+        "race_name": "Round 3: Nurburgring 24H",
+        "elo_change": -23.2,
+        "new_elo": 1510
+      },
+      {
+        "date": "2026-05-01 19:39",
+        "timestamp": 1777664372.0,
+        "race_name": "Round 4: Brands Hatch",
+        "elo_change": -29.3,
+        "new_elo": 1481
+      },
+      {
+        "date": "2026-05-01 20:34",
+        "timestamp": 1777667696.0,
+        "race_name": "Round 5: Donington",
+        "elo_change": 10.3,
+        "new_elo": 1491
+      },
+      {
+        "date": "2026-05-01 21:33",
+        "timestamp": 1777671187.0,
+        "race_name": "Round 6: Snetterton",
+        "elo_change": 12.3,
+        "new_elo": 1503
+      },
+      {
+        "date": "2026-05-08 21:02",
+        "timestamp": 1778274129.0,
+        "race_name": "Round 7: Nurburgring 24H",
+        "elo_change": -16.1,
+        "new_elo": 1487
+      },
+      {
+        "date": "2026-05-19 09:12",
+        "timestamp": 1779181920.0,
+        "race_name": "Round 8: Kyalami",
+        "elo_change": 36.8,
+        "new_elo": 1524
+      },
+      {
+        "date": "2026-05-19 09:12",
+        "timestamp": 1779181926.0,
+        "race_name": "Round 9: Mount Panorama",
+        "elo_change": -17.6,
+        "new_elo": 1506
+      },
+      {
+        "date": "2026-05-19 09:12",
+        "timestamp": 1779181931.0,
+        "race_name": "Round 10: Suzuka",
+        "elo_change": 8.5,
+        "new_elo": 1515
+      },
+      {
+        "date": "2026-05-19 09:12",
+        "timestamp": 1779181937.0,
+        "race_name": "Round 11: Red Bull Ring",
+        "elo_change": 8.0,
+        "new_elo": 1523
+      },
+      {
+        "date": "2026-05-22 20:59",
+        "timestamp": 1779483574.0,
+        "race_name": "Round 12: Nurburgring 24H",
+        "elo_change": -6.3,
+        "new_elo": 1516
+      },
+      {
+        "date": "2026-06-02 09:14",
+        "timestamp": 1780391666.0,
+        "race_name": "Round 13: Spa",
+        "elo_change": 15.6,
+        "new_elo": 1532
+      },
+      {
+        "date": "2026-06-02 09:14",
+        "timestamp": 1780391666.0,
+        "race_name": "Round 14: Hungaroring",
+        "elo_change": 4.9,
+        "new_elo": 1537
+      },
+      {
+        "date": "2026-06-02 09:14",
+        "timestamp": 1780391666.0,
+        "race_name": "Round 15: Barcelona",
+        "elo_change": 3.8,
+        "new_elo": 1541
+      },
+      {
+        "date": "2026-06-02 09:14",
+        "timestamp": 1780391666.0,
+        "race_name": "Round 16: Monza",
+        "elo_change": -10.8,
+        "new_elo": 1530
+      },
+      {
+        "date": "2026-06-09 19:39",
+        "timestamp": 1781033974.0,
+        "race_name": "Round 17: Watkins Glen",
+        "elo_change": -1.6,
+        "new_elo": 1528
+      },
+      {
+        "date": "2026-06-09 19:39",
+        "timestamp": 1781033974.0,
+        "race_name": "Round 18: Laguna Seca",
+        "elo_change": 47.8,
+        "new_elo": 1576
+      },
+      {
+        "date": "2026-06-09 19:39",
+        "timestamp": 1781033974.0,
+        "race_name": "Round 19: Cota",
+        "elo_change": 2.8,
+        "new_elo": 1579
+      },
+      {
+        "date": "2026-06-09 19:39",
+        "timestamp": 1781033974.0,
+        "race_name": "Round 20: Indianapolis",
+        "elo_change": 8.5,
+        "new_elo": 1587
+      },
+      {
+        "date": "2026-06-24 14:40",
+        "timestamp": 1782312007.0,
+        "race_name": "Round 21: Nurburgring 24H",
+        "elo_change": -6.4,
+        "new_elo": 1581
+      },
+      {
+        "date": "2026-06-24 14:40",
+        "timestamp": 1782312007.0,
+        "race_name": "Round 22: Nurburgring 24H",
+        "elo_change": 6.4,
+        "new_elo": 1587
+      },
+      {
+        "date": "2026-07-17 20:22",
+        "timestamp": 1784319723.0,
+        "race_name": "TCX Mini-Champ - Race 2",
+        "elo_change": 7.5,
+        "new_elo": 1595
+      },
+      {
+        "date": "2026-07-17 21:07",
+        "timestamp": 1784322448.0,
+        "race_name": "TCX Mini-Champ - Race 3",
+        "elo_change": -3.7,
+        "new_elo": 1591
+      },
+      {
+        "date": "2026-07-24 20:39",
+        "timestamp": 1784925556.0,
+        "race_name": "Endurance Showcase",
+        "elo_change": 11.6,
+        "new_elo": 1603
+      },
+      {
+        "date": "2026-07-31 20:46",
+        "timestamp": 1785530770.0,
+        "race_name": "British Classic",
+        "elo_change": -12.0,
+        "new_elo": 1591
+      },
+      {
+        "date": "2026-08-07 19:38",
+        "timestamp": 1786131481.0,
+        "race_name": "Porsche Cup Mini-Champ - Race 1",
+        "elo_change": -0.2,
+        "new_elo": 1591
+      },
+      {
+        "date": "2026-08-07 20:22",
+        "timestamp": 1786134132.0,
+        "race_name": "Porsche Cup Mini-Champ - Race 2",
+        "elo_change": -14.6,
+        "new_elo": 1576
+      },
+      {
+        "date": "2026-08-07 21:07",
+        "timestamp": 1786136844.0,
+        "race_name": "Porsche Cup Mini-Champ - Race 3",
+        "elo_change": -23.0,
+        "new_elo": 1553
+      },
+      {
+        "date": "2026-08-14 20:59",
+        "timestamp": 1786741159.0,
+        "race_name": "Season Finale",
+        "elo_change": 6.6,
+        "new_elo": 1560
+      }
+    ]
+  },
+  {
+    "name": "Florian Braun",
+    "current_elo": 1560,
+    "races_completed": 10,
+    "history": [
+      {
+        "date": "2026-05-01 19:39",
+        "timestamp": 1777664372.0,
+        "race_name": "Round 4: Brands Hatch",
+        "elo_change": 18.9,
+        "new_elo": 1519
+      },
+      {
+        "date": "2026-05-01 20:34",
+        "timestamp": 1777667696.0,
+        "race_name": "Round 5: Donington",
+        "elo_change": 3.6,
+        "new_elo": 1522
+      },
+      {
+        "date": "2026-05-01 21:33",
+        "timestamp": 1777671187.0,
+        "race_name": "Round 6: Snetterton",
+        "elo_change": 2.4,
+        "new_elo": 1525
+      },
+      {
+        "date": "2026-05-19 09:12",
+        "timestamp": 1779181920.0,
+        "race_name": "Round 8: Kyalami",
+        "elo_change": 39.4,
+        "new_elo": 1564
+      },
+      {
+        "date": "2026-05-19 09:12",
+        "timestamp": 1779181926.0,
+        "race_name": "Round 9: Mount Panorama",
+        "elo_change": 8.7,
+        "new_elo": 1573
+      },
+      {
+        "date": "2026-05-19 09:12",
+        "timestamp": 1779181931.0,
+        "race_name": "Round 10: Suzuka",
+        "elo_change": 3.8,
+        "new_elo": 1577
+      },
+      {
+        "date": "2026-05-19 09:12",
+        "timestamp": 1779181937.0,
+        "race_name": "Round 11: Red Bull Ring",
+        "elo_change": -31.5,
+        "new_elo": 1545
+      },
+      {
+        "date": "2026-06-24 14:40",
+        "timestamp": 1782312007.0,
+        "race_name": "Round 21: Nurburgring 24H",
+        "elo_change": 11.5,
+        "new_elo": 1557
+      },
+      {
+        "date": "2026-06-24 14:40",
+        "timestamp": 1782312007.0,
+        "race_name": "Round 22: Nurburgring 24H",
+        "elo_change": -7.4,
+        "new_elo": 1549
+      },
+      {
+        "date": "2026-07-24 20:39",
+        "timestamp": 1784925556.0,
+        "race_name": "Endurance Showcase",
+        "elo_change": 11.1,
+        "new_elo": 1560
+      }
+    ]
+  },
+  {
+    "name": "j. pancakes",
+    "current_elo": 1560,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-05-08 21:02",
+        "timestamp": 1778274129.0,
+        "race_name": "Round 7: Nurburgring 24H",
+        "elo_change": 60.1,
+        "new_elo": 1560
+      }
+    ]
+  },
+  {
+    "name": "Nicklas Göbel",
+    "current_elo": 1559,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-05-19 09:12",
+        "timestamp": 1779181920.0,
+        "race_name": "Round 8: Kyalami",
+        "elo_change": 58.6,
+        "new_elo": 1559
+      }
+    ]
+  },
+  {
+    "name": "Robert [LZRT]Olsson",
+    "current_elo": 1557,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-04-03 21:09",
+        "timestamp": 1775250551.0,
+        "race_name": "Round 1: Nurburgring 24H",
+        "elo_change": 57.0,
+        "new_elo": 1557
+      }
+    ]
+  },
+  {
+    "name": "S Alex",
+    "current_elo": 1556,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-04-17 20:51",
+        "timestamp": 1776459084.0,
+        "race_name": "Round 3: Nurburgring 24H",
+        "elo_change": 55.7,
+        "new_elo": 1556
+      }
+    ]
+  },
+  {
+    "name": "Max Haupt",
+    "current_elo": 1553,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-04-10 20:37",
+        "timestamp": 1775853464.0,
+        "race_name": "Round 2: Brands Hatch",
+        "elo_change": 52.9,
+        "new_elo": 1553
+      }
+    ]
+  },
+  {
+    "name": "R 162",
+    "current_elo": 1550,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-04-17 20:51",
+        "timestamp": 1776459084.0,
+        "race_name": "Round 3: Nurburgring 24H",
+        "elo_change": 49.7,
+        "new_elo": 1550
+      }
+    ]
+  },
+  {
+    "name": "Tanno Raayman",
+    "current_elo": 1549,
+    "races_completed": 10,
+    "history": [
+      {
+        "date": "2026-04-10 20:37",
+        "timestamp": 1775853464.0,
+        "race_name": "Round 2: Brands Hatch",
+        "elo_change": -18.9,
+        "new_elo": 1481
+      },
+      {
+        "date": "2026-04-17 20:51",
+        "timestamp": 1776459084.0,
+        "race_name": "Round 3: Nurburgring 24H",
+        "elo_change": -19.9,
+        "new_elo": 1461
+      },
+      {
+        "date": "2026-05-19 09:12",
+        "timestamp": 1779181920.0,
+        "race_name": "Round 8: Kyalami",
+        "elo_change": 32.0,
+        "new_elo": 1493
+      },
+      {
+        "date": "2026-05-19 09:12",
+        "timestamp": 1779181926.0,
+        "race_name": "Round 9: Mount Panorama",
+        "elo_change": 20.2,
+        "new_elo": 1513
+      },
+      {
+        "date": "2026-05-19 09:12",
+        "timestamp": 1779181931.0,
+        "race_name": "Round 10: Suzuka",
+        "elo_change": 31.7,
+        "new_elo": 1545
+      },
+      {
+        "date": "2026-05-19 09:12",
+        "timestamp": 1779181937.0,
+        "race_name": "Round 11: Red Bull Ring",
+        "elo_change": -28.9,
+        "new_elo": 1516
+      },
+      {
+        "date": "2026-07-17 19:38",
+        "timestamp": 1784317121.0,
+        "race_name": "TCX Mini-Champ - Race 1",
+        "elo_change": 7.5,
+        "new_elo": 1524
+      },
+      {
+        "date": "2026-07-17 20:22",
+        "timestamp": 1784319723.0,
+        "race_name": "TCX Mini-Champ - Race 2",
+        "elo_change": 1.9,
+        "new_elo": 1526
+      },
+      {
+        "date": "2026-07-17 21:07",
+        "timestamp": 1784322448.0,
+        "race_name": "TCX Mini-Champ - Race 3",
+        "elo_change": 5.7,
+        "new_elo": 1531
+      },
+      {
+        "date": "2026-08-14 20:59",
+        "timestamp": 1786741159.0,
+        "race_name": "Season Finale",
+        "elo_change": 17.9,
+        "new_elo": 1549
+      }
+    ]
+  },
+  {
+    "name": "Fabian E",
+    "current_elo": 1546,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-05-01 19:39",
+        "timestamp": 1777664372.0,
+        "race_name": "Round 4: Brands Hatch",
+        "elo_change": 45.9,
+        "new_elo": 1546
+      }
+    ]
+  },
+  {
+    "name": "Stuart Wooley",
+    "current_elo": 1546,
+    "races_completed": 3,
+    "history": [
+      {
+        "date": "2026-08-07 19:38",
+        "timestamp": 1786131481.0,
+        "race_name": "Porsche Cup Mini-Champ - Race 1",
+        "elo_change": 20.8,
+        "new_elo": 1521
+      },
+      {
+        "date": "2026-08-07 20:22",
+        "timestamp": 1786134132.0,
+        "race_name": "Porsche Cup Mini-Champ - Race 2",
+        "elo_change": 15.8,
+        "new_elo": 1537
+      },
+      {
+        "date": "2026-08-07 21:07",
+        "timestamp": 1786136844.0,
+        "race_name": "Porsche Cup Mini-Champ - Race 3",
+        "elo_change": 9.6,
+        "new_elo": 1546
+      }
+    ]
+  },
+  {
+    "name": "Emre JZ",
+    "current_elo": 1544,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-05-01 21:33",
+        "timestamp": 1777671187.0,
+        "race_name": "Round 6: Snetterton",
+        "elo_change": 44.2,
+        "new_elo": 1544
+      }
+    ]
+  },
+  {
+    "name": "Alealeo Brigliadori",
+    "current_elo": 1543,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-05-19 09:12",
+        "timestamp": 1779181937.0,
+        "race_name": "Round 11: Red Bull Ring",
+        "elo_change": 43.0,
+        "new_elo": 1543
+      }
+    ]
+  },
+  {
+    "name": "ANTONIO MANZOTM",
+    "current_elo": 1543,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-06-09 19:39",
+        "timestamp": 1781033974.0,
+        "race_name": "Round 18: Laguna Seca",
+        "elo_change": 43.1,
+        "new_elo": 1543
+      }
+    ]
+  },
+  {
+    "name": "Micha Nieuwkoop",
+    "current_elo": 1542,
+    "races_completed": 3,
+    "history": [
+      {
+        "date": "2026-04-03 21:09",
+        "timestamp": 1775250551.0,
+        "race_name": "Round 1: Nurburgring 24H",
+        "elo_change": 36.0,
+        "new_elo": 1536
+      },
+      {
+        "date": "2026-07-10 21:01",
+        "timestamp": 1783717269.0,
+        "race_name": "Season Opener",
+        "elo_change": -20.0,
+        "new_elo": 1516
+      },
+      {
+        "date": "2026-07-31 20:46",
+        "timestamp": 1785530770.0,
+        "race_name": "British Classic",
+        "elo_change": 26.5,
+        "new_elo": 1542
+      }
+    ]
+  },
+  {
+    "name": "Frank John",
+    "current_elo": 1542,
+    "races_completed": 2,
+    "history": [
+      {
+        "date": "2026-06-09 19:39",
+        "timestamp": 1781033974.0,
+        "race_name": "Round 17: Watkins Glen",
+        "elo_change": 9.2,
+        "new_elo": 1509
+      },
+      {
+        "date": "2026-06-09 19:39",
+        "timestamp": 1781033974.0,
+        "race_name": "Round 18: Laguna Seca",
+        "elo_change": 32.7,
+        "new_elo": 1542
+      }
+    ]
+  },
+  {
+    "name": "Ruben Cops",
+    "current_elo": 1541,
+    "races_completed": 2,
+    "history": [
+      {
+        "date": "2026-04-03 21:09",
+        "timestamp": 1775250551.0,
+        "race_name": "Round 1: Nurburgring 24H",
+        "elo_change": -25.5,
+        "new_elo": 1474
+      },
+      {
+        "date": "2026-04-17 20:51",
+        "timestamp": 1776459084.0,
+        "race_name": "Round 3: Nurburgring 24H",
+        "elo_change": 66.6,
+        "new_elo": 1541
+      }
+    ]
+  },
+  {
+    "name": "Jaco Strydom",
+    "current_elo": 1540,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-05-01 19:39",
+        "timestamp": 1777664372.0,
+        "race_name": "Round 4: Brands Hatch",
+        "elo_change": 39.9,
+        "new_elo": 1540
+      }
+    ]
+  },
+  {
+    "name": "Krisztian Kovari",
+    "current_elo": 1540,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-05-19 09:12",
+        "timestamp": 1779181937.0,
+        "race_name": "Round 11: Red Bull Ring",
+        "elo_change": 40.0,
+        "new_elo": 1540
+      }
+    ]
+  },
+  {
+    "name": "s z",
+    "current_elo": 1539,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-04-03 21:09",
+        "timestamp": 1775250551.0,
+        "race_name": "Round 1: Nurburgring 24H",
+        "elo_change": 39.0,
+        "new_elo": 1539
+      }
+    ]
+  },
+  {
+    "name": "O G",
+    "current_elo": 1539,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-07-24 20:39",
+        "timestamp": 1784925556.0,
+        "race_name": "Endurance Showcase",
+        "elo_change": 38.7,
+        "new_elo": 1539
+      }
+    ]
+  },
+  {
+    "name": "Lucas Stranghetti",
+    "current_elo": 1538,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-05-01 21:33",
+        "timestamp": 1777671187.0,
+        "race_name": "Round 6: Snetterton",
+        "elo_change": 38.2,
+        "new_elo": 1538
+      }
+    ]
+  },
+  {
+    "name": "Ties Meertens",
+    "current_elo": 1538,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-05-19 09:12",
+        "timestamp": 1779181920.0,
+        "race_name": "Round 8: Kyalami",
+        "elo_change": 37.6,
+        "new_elo": 1538
+      }
+    ]
+  },
+  {
+    "name": "Jeremy Morris",
+    "current_elo": 1538,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-07-10 21:01",
+        "timestamp": 1783717269.0,
+        "race_name": "Season Opener",
+        "elo_change": 37.9,
+        "new_elo": 1538
+      }
+    ]
+  },
+  {
+    "name": "Sebastien De Smet",
+    "current_elo": 1537,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-05-19 09:12",
+        "timestamp": 1779181937.0,
+        "race_name": "Round 11: Red Bull Ring",
+        "elo_change": 37.0,
+        "new_elo": 1537
+      }
+    ]
+  },
+  {
+    "name": "Cam Waters",
+    "current_elo": 1535,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-04-10 20:37",
+        "timestamp": 1775853464.0,
+        "race_name": "Round 2: Brands Hatch",
+        "elo_change": 34.9,
+        "new_elo": 1535
+      }
+    ]
+  },
+  {
+    "name": "Kain Albert",
+    "current_elo": 1535,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-04-17 20:51",
+        "timestamp": 1776459084.0,
+        "race_name": "Round 3: Nurburgring 24H",
+        "elo_change": 34.7,
+        "new_elo": 1535
+      }
+    ]
+  },
+  {
+    "name": "Xandy Nora",
+    "current_elo": 1534,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-05-01 19:39",
+        "timestamp": 1777664372.0,
+        "race_name": "Round 4: Brands Hatch",
+        "elo_change": 33.9,
+        "new_elo": 1534
+      }
+    ]
+  },
+  {
+    "name": "Illes Csongor",
+    "current_elo": 1533,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-07-24 20:39",
+        "timestamp": 1784925556.0,
+        "race_name": "Endurance Showcase",
+        "elo_change": 32.7,
+        "new_elo": 1533
+      }
+    ]
+  },
+  {
+    "name": "Banditen Wakwaw",
+    "current_elo": 1532,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-04-17 20:51",
+        "timestamp": 1776459084.0,
+        "race_name": "Round 3: Nurburgring 24H",
+        "elo_change": 31.7,
+        "new_elo": 1532
+      }
+    ]
+  },
+  {
+    "name": "Burak Arslan",
+    "current_elo": 1531,
+    "races_completed": 2,
+    "history": [
+      {
+        "date": "2026-04-17 20:51",
+        "timestamp": 1776459084.0,
+        "race_name": "Round 3: Nurburgring 24H",
+        "elo_change": 37.7,
+        "new_elo": 1538
+      },
+      {
+        "date": "2026-05-22 20:59",
+        "timestamp": 1779483574.0,
+        "race_name": "Round 12: Nurburgring 24H",
+        "elo_change": -6.6,
+        "new_elo": 1531
+      }
+    ]
+  },
+  {
+    "name": "Marc Mitchmont",
+    "current_elo": 1530,
+    "races_completed": 2,
+    "history": [
+      {
+        "date": "2026-05-08 21:02",
+        "timestamp": 1778274129.0,
+        "race_name": "Round 7: Nurburgring 24H",
+        "elo_change": 48.1,
+        "new_elo": 1548
+      },
+      {
+        "date": "2026-07-10 21:01",
+        "timestamp": 1783717269.0,
+        "race_name": "Season Opener",
+        "elo_change": -18.4,
+        "new_elo": 1530
+      }
+    ]
+  },
+  {
+    "name": "Shawn Blank|ARF",
+    "current_elo": 1529,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-04-10 20:37",
+        "timestamp": 1775853464.0,
+        "race_name": "Round 2: Brands Hatch",
+        "elo_change": 28.9,
+        "new_elo": 1529
+      }
+    ]
+  },
+  {
+    "name": "Eggzy Eames",
+    "current_elo": 1529,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-05-01 20:34",
+        "timestamp": 1777667696.0,
+        "race_name": "Round 5: Donington",
+        "elo_change": 29.4,
+        "new_elo": 1529
+      }
+    ]
+  },
+  {
+    "name": "Joshua Buller",
+    "current_elo": 1529,
+    "races_completed": 6,
+    "history": [
+      {
+        "date": "2026-05-01 21:33",
+        "timestamp": 1777671187.0,
+        "race_name": "Round 6: Snetterton",
+        "elo_change": 2.2,
+        "new_elo": 1502
+      },
+      {
+        "date": "2026-05-19 09:12",
+        "timestamp": 1779181920.0,
+        "race_name": "Round 8: Kyalami",
+        "elo_change": 10.2,
+        "new_elo": 1512
+      },
+      {
+        "date": "2026-05-19 09:12",
+        "timestamp": 1779181926.0,
+        "race_name": "Round 9: Mount Panorama",
+        "elo_change": 23.9,
+        "new_elo": 1536
+      },
+      {
+        "date": "2026-05-19 09:12",
+        "timestamp": 1779181931.0,
+        "race_name": "Round 10: Suzuka",
+        "elo_change": 11.0,
+        "new_elo": 1547
+      },
+      {
+        "date": "2026-05-19 09:12",
+        "timestamp": 1779181937.0,
+        "race_name": "Round 11: Red Bull Ring",
+        "elo_change": -11.3,
+        "new_elo": 1536
+      },
+      {
+        "date": "2026-05-22 20:59",
+        "timestamp": 1779483574.0,
+        "race_name": "Round 12: Nurburgring 24H",
+        "elo_change": -6.5,
+        "new_elo": 1529
+      }
+    ]
+  },
+  {
+    "name": "Eloy Dongil",
+    "current_elo": 1529,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-05-19 09:12",
+        "timestamp": 1779181920.0,
+        "race_name": "Round 8: Kyalami",
+        "elo_change": 28.6,
+        "new_elo": 1529
+      }
+    ]
+  },
+  {
+    "name": "Eerik Liiva",
+    "current_elo": 1529,
+    "races_completed": 6,
+    "history": [
+      {
+        "date": "2026-06-02 09:14",
+        "timestamp": 1780391666.0,
+        "race_name": "Round 13: Spa",
+        "elo_change": 2.0,
+        "new_elo": 1502
+      },
+      {
+        "date": "2026-06-02 09:14",
+        "timestamp": 1780391666.0,
+        "race_name": "Round 14: Hungaroring",
+        "elo_change": -2.0,
+        "new_elo": 1500
+      },
+      {
+        "date": "2026-06-02 09:14",
+        "timestamp": 1780391666.0,
+        "race_name": "Round 15: Barcelona",
+        "elo_change": -9.2,
+        "new_elo": 1491
+      },
+      {
+        "date": "2026-06-02 09:14",
+        "timestamp": 1780391666.0,
+        "race_name": "Round 16: Monza",
+        "elo_change": 6.5,
+        "new_elo": 1497
+      },
+      {
+        "date": "2026-07-24 20:39",
+        "timestamp": 1784925556.0,
+        "race_name": "Endurance Showcase",
+        "elo_change": 45.0,
+        "new_elo": 1542
+      },
+      {
+        "date": "2026-08-14 20:59",
+        "timestamp": 1786741159.0,
+        "race_name": "Season Finale",
+        "elo_change": -13.3,
+        "new_elo": 1529
+      }
+    ]
+  },
+  {
+    "name": "Rostislav Zavialow",
+    "current_elo": 1528,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-05-19 09:12",
+        "timestamp": 1779181926.0,
+        "race_name": "Round 9: Mount Panorama",
+        "elo_change": 28.4,
+        "new_elo": 1528
+      }
+    ]
+  },
+  {
+    "name": "Kiss Benedek",
+    "current_elo": 1527,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-07-24 20:39",
+        "timestamp": 1784925556.0,
+        "race_name": "Endurance Showcase",
+        "elo_change": 26.7,
+        "new_elo": 1527
+      }
+    ]
+  },
+  {
+    "name": "Andrea Indy",
+    "current_elo": 1526,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-05-01 21:33",
+        "timestamp": 1777671187.0,
+        "race_name": "Round 6: Snetterton",
+        "elo_change": 26.2,
+        "new_elo": 1526
+      }
+    ]
+  },
+  {
+    "name": "Marc Sickinger",
+    "current_elo": 1526,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-07-10 21:01",
+        "timestamp": 1783717269.0,
+        "race_name": "Season Opener",
+        "elo_change": 25.9,
+        "new_elo": 1526
+      }
+    ]
+  },
+  {
+    "name": "Antonio Otero",
+    "current_elo": 1525,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-06-09 19:39",
+        "timestamp": 1781033974.0,
+        "race_name": "Round 18: Laguna Seca",
+        "elo_change": 25.1,
+        "new_elo": 1525
+      }
+    ]
+  },
+  {
+    "name": "David Young",
+    "current_elo": 1524,
+    "races_completed": 2,
+    "history": [
+      {
+        "date": "2026-05-22 20:59",
+        "timestamp": 1779483574.0,
+        "race_name": "Round 12: Nurburgring 24H",
+        "elo_change": -5.9,
+        "new_elo": 1494
+      },
+      {
+        "date": "2026-07-10 21:01",
+        "timestamp": 1783717269.0,
+        "race_name": "Season Opener",
+        "elo_change": 29.6,
+        "new_elo": 1524
+      }
+    ]
+  },
+  {
+    "name": "Sam Zawisza",
+    "current_elo": 1524,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-08-14 20:59",
+        "timestamp": 1786741159.0,
+        "race_name": "Season Finale",
+        "elo_change": 24.2,
+        "new_elo": 1524
+      }
+    ]
+  },
+  {
+    "name": "Ash Goodliffe",
+    "current_elo": 1523,
+    "races_completed": 2,
+    "history": [
+      {
+        "date": "2026-06-09 19:39",
+        "timestamp": 1781033974.0,
+        "race_name": "Round 17: Watkins Glen",
+        "elo_change": -5.8,
+        "new_elo": 1494
+      },
+      {
+        "date": "2026-06-09 19:39",
+        "timestamp": 1781033974.0,
+        "race_name": "Round 18: Laguna Seca",
+        "elo_change": 29.0,
+        "new_elo": 1523
+      }
+    ]
+  },
+  {
+    "name": "Rene Automatix",
+    "current_elo": 1522,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-05-01 19:39",
+        "timestamp": 1777664372.0,
+        "race_name": "Round 4: Brands Hatch",
+        "elo_change": 21.9,
+        "new_elo": 1522
+      }
+    ]
+  },
+  {
+    "name": "Leonidovich Simferopol",
+    "current_elo": 1522,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-05-19 09:12",
+        "timestamp": 1779181937.0,
+        "race_name": "Round 11: Red Bull Ring",
+        "elo_change": 22.0,
+        "new_elo": 1522
+      }
+    ]
+  },
+  {
+    "name": "Allain Hachey",
+    "current_elo": 1521,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-04-03 21:09",
+        "timestamp": 1775250551.0,
+        "race_name": "Round 1: Nurburgring 24H",
+        "elo_change": 21.0,
+        "new_elo": 1521
+      }
+    ]
+  },
+  {
+    "name": "Crem Anexity",
+    "current_elo": 1520,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-05-19 09:12",
+        "timestamp": 1779181920.0,
+        "race_name": "Round 8: Kyalami",
+        "elo_change": 19.6,
+        "new_elo": 1520
+      }
+    ]
+  },
+  {
+    "name": "Wes Lee",
+    "current_elo": 1520,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-07-10 21:01",
+        "timestamp": 1783717269.0,
+        "race_name": "Season Opener",
+        "elo_change": 19.9,
+        "new_elo": 1520
+      }
+    ]
+  },
+  {
+    "name": "Chris Wood",
+    "current_elo": 1520,
+    "races_completed": 2,
+    "history": [
+      {
+        "date": "2026-07-10 21:01",
+        "timestamp": 1783717269.0,
+        "race_name": "Season Opener",
+        "elo_change": 16.9,
+        "new_elo": 1517
+      },
+      {
+        "date": "2026-07-24 20:39",
+        "timestamp": 1784925556.0,
+        "race_name": "Endurance Showcase",
+        "elo_change": 3.4,
+        "new_elo": 1520
+      }
+    ]
+  },
+  {
+    "name": "Saban Keskin",
+    "current_elo": 1519,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-05-19 09:12",
+        "timestamp": 1779181937.0,
+        "race_name": "Round 11: Red Bull Ring",
+        "elo_change": 19.0,
+        "new_elo": 1519
+      }
+    ]
+  },
+  {
+    "name": "Frederic Renier",
+    "current_elo": 1519,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-06-09 19:39",
+        "timestamp": 1781033974.0,
+        "race_name": "Round 18: Laguna Seca",
+        "elo_change": 19.1,
+        "new_elo": 1519
+      }
+    ]
+  },
+  {
+    "name": "Raymond Crawford",
+    "current_elo": 1518,
+    "races_completed": 30,
+    "history": [
+      {
+        "date": "2026-04-03 21:09",
+        "timestamp": 1775250551.0,
+        "race_name": "Round 1: Nurburgring 24H",
+        "elo_change": 24.0,
+        "new_elo": 1524
+      },
+      {
+        "date": "2026-04-10 20:37",
+        "timestamp": 1775853464.0,
+        "race_name": "Round 2: Brands Hatch",
+        "elo_change": -1.0,
+        "new_elo": 1523
+      },
+      {
+        "date": "2026-04-10 20:37",
+        "timestamp": 1775853464.0,
+        "race_name": "Round 2: Brands Hatch",
+        "elo_change": -1.0,
+        "new_elo": 1522
+      },
+      {
+        "date": "2026-04-17 20:51",
+        "timestamp": 1776459084.0,
+        "race_name": "Round 3: Nurburgring 24H",
+        "elo_change": 20.0,
+        "new_elo": 1542
+      },
+      {
+        "date": "2026-04-17 20:51",
+        "timestamp": 1776459084.0,
+        "race_name": "Round 3: Nurburgring 24H",
+        "elo_change": 20.0,
+        "new_elo": 1562
+      },
+      {
+        "date": "2026-05-08 21:02",
+        "timestamp": 1778274129.0,
+        "race_name": "Round 7: Nurburgring 24H",
+        "elo_change": 44.0,
+        "new_elo": 1606
+      },
+      {
+        "date": "2026-05-19 09:12",
+        "timestamp": 1779181920.0,
+        "race_name": "Round 8: Kyalami",
+        "elo_change": 5.0,
+        "new_elo": 1611
+      },
+      {
+        "date": "2026-05-19 09:12",
+        "timestamp": 1779181926.0,
+        "race_name": "Round 9: Mount Panorama",
+        "elo_change": -22.2,
+        "new_elo": 1589
+      },
+      {
+        "date": "2026-05-19 09:12",
+        "timestamp": 1779181931.0,
+        "race_name": "Round 10: Suzuka",
+        "elo_change": 20.0,
+        "new_elo": 1609
+      },
+      {
+        "date": "2026-05-19 09:12",
+        "timestamp": 1779181937.0,
+        "race_name": "Round 11: Red Bull Ring",
+        "elo_change": 19.7,
+        "new_elo": 1628
+      },
+      {
+        "date": "2026-05-22 20:59",
+        "timestamp": 1779483574.0,
+        "race_name": "Round 12: Nurburgring 24H",
+        "elo_change": -16.7,
+        "new_elo": 1612
+      },
+      {
+        "date": "2026-05-22 20:59",
+        "timestamp": 1779483574.0,
+        "race_name": "Round 12: Nurburgring 24H",
+        "elo_change": -16.7,
+        "new_elo": 1595
+      },
+      {
+        "date": "2026-06-02 09:14",
+        "timestamp": 1780391666.0,
+        "race_name": "Round 13: Spa",
+        "elo_change": 11.5,
+        "new_elo": 1607
+      },
+      {
+        "date": "2026-06-02 09:14",
+        "timestamp": 1780391666.0,
+        "race_name": "Round 14: Hungaroring",
+        "elo_change": 8.9,
+        "new_elo": 1615
+      },
+      {
+        "date": "2026-06-02 09:14",
+        "timestamp": 1780391666.0,
+        "race_name": "Round 15: Barcelona",
+        "elo_change": -9.6,
+        "new_elo": 1606
+      },
+      {
+        "date": "2026-06-02 09:14",
+        "timestamp": 1780391666.0,
+        "race_name": "Round 16: Monza",
+        "elo_change": -10.9,
+        "new_elo": 1595
+      },
+      {
+        "date": "2026-06-09 19:39",
+        "timestamp": 1781033974.0,
+        "race_name": "Round 17: Watkins Glen",
+        "elo_change": -8.4,
+        "new_elo": 1587
+      },
+      {
+        "date": "2026-06-09 19:39",
+        "timestamp": 1781033974.0,
+        "race_name": "Round 18: Laguna Seca",
+        "elo_change": 18.1,
+        "new_elo": 1605
+      },
+      {
+        "date": "2026-06-09 19:39",
+        "timestamp": 1781033974.0,
+        "race_name": "Round 19: Cota",
+        "elo_change": -4.9,
+        "new_elo": 1600
+      },
+      {
+        "date": "2026-06-09 19:39",
+        "timestamp": 1781033974.0,
+        "race_name": "Round 20: Indianapolis",
+        "elo_change": -1.3,
+        "new_elo": 1598
+      },
+      {
+        "date": "2026-07-10 21:01",
+        "timestamp": 1783717269.0,
+        "race_name": "Season Opener",
+        "elo_change": 24.2,
+        "new_elo": 1623
+      },
+      {
+        "date": "2026-07-17 19:38",
+        "timestamp": 1784317121.0,
+        "race_name": "TCX Mini-Champ - Race 1",
+        "elo_change": -7.1,
+        "new_elo": 1616
+      },
+      {
+        "date": "2026-07-17 20:22",
+        "timestamp": 1784319723.0,
+        "race_name": "TCX Mini-Champ - Race 2",
+        "elo_change": -6.0,
+        "new_elo": 1610
+      },
+      {
+        "date": "2026-07-17 21:07",
+        "timestamp": 1784322448.0,
+        "race_name": "TCX Mini-Champ - Race 3",
+        "elo_change": 7.6,
+        "new_elo": 1617
+      },
+      {
+        "date": "2026-07-24 20:39",
+        "timestamp": 1784925556.0,
+        "race_name": "Endurance Showcase",
+        "elo_change": -30.7,
+        "new_elo": 1586
+      },
+      {
+        "date": "2026-07-31 20:46",
+        "timestamp": 1785530770.0,
+        "race_name": "British Classic",
+        "elo_change": -13.5,
+        "new_elo": 1573
+      },
+      {
+        "date": "2026-08-07 19:38",
+        "timestamp": 1786131481.0,
+        "race_name": "Porsche Cup Mini-Champ - Race 1",
+        "elo_change": -19.4,
+        "new_elo": 1553
+      },
+      {
+        "date": "2026-08-07 20:22",
+        "timestamp": 1786134132.0,
+        "race_name": "Porsche Cup Mini-Champ - Race 2",
+        "elo_change": -0.8,
+        "new_elo": 1553
+      },
+      {
+        "date": "2026-08-07 21:07",
+        "timestamp": 1786136844.0,
+        "race_name": "Porsche Cup Mini-Champ - Race 3",
+        "elo_change": -12.4,
+        "new_elo": 1540
+      },
+      {
+        "date": "2026-08-14 20:59",
+        "timestamp": 1786741159.0,
+        "race_name": "Season Finale",
+        "elo_change": -22.0,
+        "new_elo": 1518
+      }
+    ]
+  },
+  {
+    "name": "John Smith",
+    "current_elo": 1518,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-04-03 21:09",
+        "timestamp": 1775250551.0,
+        "race_name": "Round 1: Nurburgring 24H",
+        "elo_change": 18.0,
+        "new_elo": 1518
+      }
+    ]
+  },
+  {
+    "name": "Vexal Santos",
+    "current_elo": 1518,
+    "races_completed": 7,
+    "history": [
+      {
+        "date": "2026-05-19 09:12",
+        "timestamp": 1779181920.0,
+        "race_name": "Round 8: Kyalami",
+        "elo_change": -34.3,
+        "new_elo": 1466
+      },
+      {
+        "date": "2026-05-22 20:59",
+        "timestamp": 1779483574.0,
+        "race_name": "Round 12: Nurburgring 24H",
+        "elo_change": -5.2,
+        "new_elo": 1460
+      },
+      {
+        "date": "2026-06-09 19:39",
+        "timestamp": 1781033974.0,
+        "race_name": "Round 17: Watkins Glen",
+        "elo_change": 5.5,
+        "new_elo": 1466
+      },
+      {
+        "date": "2026-06-09 19:39",
+        "timestamp": 1781033974.0,
+        "race_name": "Round 18: Laguna Seca",
+        "elo_change": 42.2,
+        "new_elo": 1508
+      },
+      {
+        "date": "2026-06-09 19:39",
+        "timestamp": 1781033974.0,
+        "race_name": "Round 19: Cota",
+        "elo_change": 3.8,
+        "new_elo": 1512
+      },
+      {
+        "date": "2026-06-09 19:39",
+        "timestamp": 1781033974.0,
+        "race_name": "Round 20: Indianapolis",
+        "elo_change": -0.9,
+        "new_elo": 1511
+      },
+      {
+        "date": "2026-07-10 21:01",
+        "timestamp": 1783717269.0,
+        "race_name": "Season Opener",
+        "elo_change": 6.7,
+        "new_elo": 1518
+      }
+    ]
+  },
+  {
+    "name": "Lev Slepuzjnikov",
+    "current_elo": 1518,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-08-07 19:38",
+        "timestamp": 1786131481.0,
+        "race_name": "Porsche Cup Mini-Champ - Race 1",
+        "elo_change": 17.8,
+        "new_elo": 1518
+      }
+    ]
+  },
+  {
+    "name": "Marco Botorea",
+    "current_elo": 1517,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-04-10 20:37",
+        "timestamp": 1775853464.0,
+        "race_name": "Round 2: Brands Hatch",
+        "elo_change": 16.9,
+        "new_elo": 1517
+      }
+    ]
+  },
+  {
+    "name": "Vinicius Ferreira",
+    "current_elo": 1517,
+    "races_completed": 4,
+    "history": [
+      {
+        "date": "2026-06-09 19:39",
+        "timestamp": 1781033974.0,
+        "race_name": "Round 17: Watkins Glen",
+        "elo_change": 6.2,
+        "new_elo": 1506
+      },
+      {
+        "date": "2026-06-09 19:39",
+        "timestamp": 1781033974.0,
+        "race_name": "Round 18: Laguna Seca",
+        "elo_change": 21.2,
+        "new_elo": 1527
+      },
+      {
+        "date": "2026-06-09 19:39",
+        "timestamp": 1781033974.0,
+        "race_name": "Round 19: Cota",
+        "elo_change": -3.3,
+        "new_elo": 1524
+      },
+      {
+        "date": "2026-06-09 19:39",
+        "timestamp": 1781033974.0,
+        "race_name": "Round 20: Indianapolis",
+        "elo_change": -7.4,
+        "new_elo": 1517
+      }
+    ]
+  },
+  {
+    "name": "Kozma Bandi",
+    "current_elo": 1516,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-05-01 19:39",
+        "timestamp": 1777664372.0,
+        "race_name": "Round 4: Brands Hatch",
+        "elo_change": 15.9,
+        "new_elo": 1516
+      }
+    ]
+  },
+  {
+    "name": "keVin peeters",
+    "current_elo": 1516,
+    "races_completed": 9,
+    "history": [
+      {
+        "date": "2026-05-22 20:59",
+        "timestamp": 1779483574.0,
+        "race_name": "Round 12: Nurburgring 24H",
+        "elo_change": -5.9,
+        "new_elo": 1494
+      },
+      {
+        "date": "2026-06-02 09:14",
+        "timestamp": 1780391666.0,
+        "race_name": "Round 13: Spa",
+        "elo_change": 14.5,
+        "new_elo": 1509
+      },
+      {
+        "date": "2026-06-02 09:14",
+        "timestamp": 1780391666.0,
+        "race_name": "Round 15: Barcelona",
+        "elo_change": 2.4,
+        "new_elo": 1511
+      },
+      {
+        "date": "2026-06-02 09:14",
+        "timestamp": 1780391666.0,
+        "race_name": "Round 16: Monza",
+        "elo_change": 2.6,
+        "new_elo": 1514
+      },
+      {
+        "date": "2026-06-09 19:39",
+        "timestamp": 1781033974.0,
+        "race_name": "Round 19: Cota",
+        "elo_change": -13.5,
+        "new_elo": 1500
+      },
+      {
+        "date": "2026-07-17 19:38",
+        "timestamp": 1784317121.0,
+        "race_name": "TCX Mini-Champ - Race 1",
+        "elo_change": 14.4,
+        "new_elo": 1515
+      },
+      {
+        "date": "2026-07-17 20:22",
+        "timestamp": 1784319723.0,
+        "race_name": "TCX Mini-Champ - Race 2",
+        "elo_change": -6.6,
+        "new_elo": 1508
+      },
+      {
+        "date": "2026-07-17 21:07",
+        "timestamp": 1784322448.0,
+        "race_name": "TCX Mini-Champ - Race 3",
+        "elo_change": -8.4,
+        "new_elo": 1500
+      },
+      {
+        "date": "2026-07-31 20:46",
+        "timestamp": 1785530770.0,
+        "race_name": "British Classic",
+        "elo_change": 16.1,
+        "new_elo": 1516
+      }
+    ]
+  },
+  {
+    "name": "Wise Old Man",
+    "current_elo": 1516,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-06-09 19:39",
+        "timestamp": 1781033974.0,
+        "race_name": "Round 18: Laguna Seca",
+        "elo_change": 16.1,
+        "new_elo": 1516
+      }
+    ]
+  },
+  {
+    "name": "Christian Weiß",
+    "current_elo": 1515,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-04-03 21:09",
+        "timestamp": 1775250551.0,
+        "race_name": "Round 1: Nurburgring 24H",
+        "elo_change": 15.0,
+        "new_elo": 1515
+      }
+    ]
+  },
+  {
+    "name": "Buddy DarkeSide",
+    "current_elo": 1515,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-07-24 20:39",
+        "timestamp": 1784925556.0,
+        "race_name": "Endurance Showcase",
+        "elo_change": 14.7,
+        "new_elo": 1515
+      }
+    ]
+  },
+  {
+    "name": "Stuart Woolley",
+    "current_elo": 1515,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-08-14 20:59",
+        "timestamp": 1786741159.0,
+        "race_name": "Season Finale",
+        "elo_change": 15.2,
+        "new_elo": 1515
+      }
+    ]
+  },
+  {
+    "name": "Youssef Mohamed",
+    "current_elo": 1514,
+    "races_completed": 6,
+    "history": [
+      {
+        "date": "2026-07-17 19:38",
+        "timestamp": 1784317121.0,
+        "race_name": "TCX Mini-Champ - Race 1",
+        "elo_change": 17.4,
+        "new_elo": 1517
+      },
+      {
+        "date": "2026-07-17 20:22",
+        "timestamp": 1784319723.0,
+        "race_name": "TCX Mini-Champ - Race 2",
+        "elo_change": 20.3,
+        "new_elo": 1538
+      },
+      {
+        "date": "2026-07-17 21:07",
+        "timestamp": 1784322448.0,
+        "race_name": "TCX Mini-Champ - Race 3",
+        "elo_change": 8.1,
+        "new_elo": 1546
+      },
+      {
+        "date": "2026-07-24 20:39",
+        "timestamp": 1784925556.0,
+        "race_name": "Endurance Showcase",
+        "elo_change": -33.4,
+        "new_elo": 1512
+      },
+      {
+        "date": "2026-07-31 20:46",
+        "timestamp": 1785530770.0,
+        "race_name": "British Classic",
+        "elo_change": 29.9,
+        "new_elo": 1542
+      },
+      {
+        "date": "2026-08-14 20:59",
+        "timestamp": 1786741159.0,
+        "race_name": "Season Finale",
+        "elo_change": -28.2,
+        "new_elo": 1514
+      }
+    ]
+  },
+  {
+    "name": "Czech Blackness [SL]",
+    "current_elo": 1513,
+    "races_completed": 3,
+    "history": [
+      {
+        "date": "2026-05-01 19:39",
+        "timestamp": 1777664372.0,
+        "race_name": "Round 4: Brands Hatch",
+        "elo_change": 30.9,
+        "new_elo": 1531
+      },
+      {
+        "date": "2026-05-01 20:34",
+        "timestamp": 1777667696.0,
+        "race_name": "Round 5: Donington",
+        "elo_change": -0.6,
+        "new_elo": 1530
+      },
+      {
+        "date": "2026-05-08 21:02",
+        "timestamp": 1778274129.0,
+        "race_name": "Round 7: Nurburgring 24H",
+        "elo_change": -17.5,
+        "new_elo": 1513
+      }
+    ]
+  },
+  {
+    "name": "Stututututu Stututututu",
+    "current_elo": 1513,
+    "races_completed": 2,
+    "history": [
+      {
+        "date": "2026-05-08 21:02",
+        "timestamp": 1778274129.0,
+        "race_name": "Round 7: Nurburgring 24H",
+        "elo_change": -16.0,
+        "new_elo": 1484
+      },
+      {
+        "date": "2026-08-14 20:59",
+        "timestamp": 1786741159.0,
+        "race_name": "Season Finale",
+        "elo_change": 28.9,
+        "new_elo": 1513
+      }
+    ]
+  },
+  {
+    "name": "Daniel Keisu",
+    "current_elo": 1513,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-06-09 19:39",
+        "timestamp": 1781033974.0,
+        "race_name": "Round 18: Laguna Seca",
+        "elo_change": 13.1,
+        "new_elo": 1513
+      }
+    ]
+  },
+  {
+    "name": "Uro :D",
+    "current_elo": 1513,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-07-31 20:46",
+        "timestamp": 1785530770.0,
+        "race_name": "British Classic",
+        "elo_change": 13.1,
+        "new_elo": 1513
+      }
+    ]
+  },
+  {
+    "name": "Kacper Slawinski",
+    "current_elo": 1513,
+    "races_completed": 3,
+    "history": [
+      {
+        "date": "2026-08-07 19:38",
+        "timestamp": 1786131481.0,
+        "race_name": "Porsche Cup Mini-Champ - Race 1",
+        "elo_change": -3.2,
+        "new_elo": 1497
+      },
+      {
+        "date": "2026-08-07 20:22",
+        "timestamp": 1786134132.0,
+        "race_name": "Porsche Cup Mini-Champ - Race 2",
+        "elo_change": 11.0,
+        "new_elo": 1508
+      },
+      {
+        "date": "2026-08-07 21:07",
+        "timestamp": 1786136844.0,
+        "race_name": "Porsche Cup Mini-Champ - Race 3",
+        "elo_change": 5.5,
+        "new_elo": 1513
+      }
+    ]
+  },
+  {
+    "name": "Alice Schupp-Müller",
+    "current_elo": 1511,
+    "races_completed": 2,
+    "history": [
+      {
+        "date": "2026-07-10 21:01",
+        "timestamp": 1783717269.0,
+        "race_name": "Season Opener",
+        "elo_change": 4.9,
+        "new_elo": 1505
+      },
+      {
+        "date": "2026-08-14 20:59",
+        "timestamp": 1786741159.0,
+        "race_name": "Season Finale",
+        "elo_change": 5.7,
+        "new_elo": 1511
+      }
+    ]
+  },
+  {
+    "name": "Chandler Bing",
+    "current_elo": 1510,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-05-01 19:39",
+        "timestamp": 1777664372.0,
+        "race_name": "Round 4: Brands Hatch",
+        "elo_change": 9.9,
+        "new_elo": 1510
+      }
+    ]
+  },
+  {
+    "name": "Jörn Schmidt",
+    "current_elo": 1509,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-07-24 20:39",
+        "timestamp": 1784925556.0,
+        "race_name": "Endurance Showcase",
+        "elo_change": 8.7,
+        "new_elo": 1509
+      }
+    ]
+  },
+  {
+    "name": "Tommy Williamson",
+    "current_elo": 1508,
+    "races_completed": 2,
+    "history": [
+      {
+        "date": "2026-04-03 21:09",
+        "timestamp": 1775250551.0,
+        "race_name": "Round 1: Nurburgring 24H",
+        "elo_change": 27.0,
+        "new_elo": 1527
+      },
+      {
+        "date": "2026-05-01 20:34",
+        "timestamp": 1777667696.0,
+        "race_name": "Round 5: Donington",
+        "elo_change": -18.7,
+        "new_elo": 1508
+      }
+    ]
+  },
+  {
+    "name": "kristof polleunis",
+    "current_elo": 1508,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-05-19 09:12",
+        "timestamp": 1779181920.0,
+        "race_name": "Round 8: Kyalami",
+        "elo_change": 7.6,
+        "new_elo": 1508
+      }
+    ]
+  },
+  {
+    "name": "Fiesta Bonanza",
+    "current_elo": 1508,
+    "races_completed": 4,
+    "history": [
+      {
+        "date": "2026-06-02 09:14",
+        "timestamp": 1780391666.0,
+        "race_name": "Round 13: Spa",
+        "elo_change": 11.0,
+        "new_elo": 1511
+      },
+      {
+        "date": "2026-06-02 09:14",
+        "timestamp": 1780391666.0,
+        "race_name": "Round 14: Hungaroring",
+        "elo_change": 3.4,
+        "new_elo": 1514
+      },
+      {
+        "date": "2026-06-02 09:14",
+        "timestamp": 1780391666.0,
+        "race_name": "Round 15: Barcelona",
+        "elo_change": -15.9,
+        "new_elo": 1498
+      },
+      {
+        "date": "2026-06-02 09:14",
+        "timestamp": 1780391666.0,
+        "race_name": "Round 16: Monza",
+        "elo_change": 9.2,
+        "new_elo": 1508
+      }
+    ]
+  },
+  {
+    "name": "Davey Van den Eynde",
+    "current_elo": 1507,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-07-31 20:46",
+        "timestamp": 1785530770.0,
+        "race_name": "British Classic",
+        "elo_change": 7.1,
+        "new_elo": 1507
+      }
+    ]
+  },
+  {
+    "name": "Cesare Bacchetti",
+    "current_elo": 1506,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-05-19 09:12",
+        "timestamp": 1779181931.0,
+        "race_name": "Round 10: Suzuka",
+        "elo_change": 6.2,
+        "new_elo": 1506
+      }
+    ]
+  },
+  {
+    "name": "Romain Luthi",
+    "current_elo": 1506,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-08-07 19:38",
+        "timestamp": 1786131481.0,
+        "race_name": "Porsche Cup Mini-Champ - Race 1",
+        "elo_change": 5.8,
+        "new_elo": 1506
+      }
+    ]
+  },
+  {
+    "name": "Tenike Tenike",
+    "current_elo": 1505,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-06-02 09:14",
+        "timestamp": 1780391666.0,
+        "race_name": "Round 13: Spa",
+        "elo_change": 5.0,
+        "new_elo": 1505
+      }
+    ]
+  },
+  {
+    "name": "Stefan Kailuweit",
+    "current_elo": 1504,
+    "races_completed": 3,
+    "history": [
+      {
+        "date": "2026-04-03 21:09",
+        "timestamp": 1775250551.0,
+        "race_name": "Round 1: Nurburgring 24H",
+        "elo_change": 42.0,
+        "new_elo": 1542
+      },
+      {
+        "date": "2026-04-10 20:37",
+        "timestamp": 1775853464.0,
+        "race_name": "Round 2: Brands Hatch",
+        "elo_change": -21.3,
+        "new_elo": 1521
+      },
+      {
+        "date": "2026-05-08 21:02",
+        "timestamp": 1778274129.0,
+        "race_name": "Round 7: Nurburgring 24H",
+        "elo_change": -17.0,
+        "new_elo": 1504
+      }
+    ]
+  },
+  {
+    "name": "Daniel Adams",
+    "current_elo": 1504,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-05-01 19:39",
+        "timestamp": 1777664372.0,
+        "race_name": "Round 4: Brands Hatch",
+        "elo_change": 3.9,
+        "new_elo": 1504
+      }
+    ]
+  },
+  {
+    "name": "Terence Cattoor",
+    "current_elo": 1503,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-07-24 20:39",
+        "timestamp": 1784925556.0,
+        "race_name": "Endurance Showcase",
+        "elo_change": 2.7,
+        "new_elo": 1503
+      }
+    ]
+  },
+  {
+    "name": "michele ango",
+    "current_elo": 1503,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-08-14 20:59",
+        "timestamp": 1786741159.0,
+        "race_name": "Season Finale",
+        "elo_change": 3.2,
+        "new_elo": 1503
+      }
+    ]
+  },
+  {
+    "name": "Martin Plevko",
+    "current_elo": 1500,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-06-02 09:14",
+        "timestamp": 1780391666.0,
+        "race_name": "Round 15: Barcelona",
+        "elo_change": -0.2,
+        "new_elo": 1500
+      }
+    ]
+  },
+  {
+    "name": "Laurent Vermaercke",
+    "current_elo": 1500,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-07-24 20:39",
+        "timestamp": 1784925556.0,
+        "race_name": "Endurance Showcase",
+        "elo_change": -0.3,
+        "new_elo": 1500
+      }
+    ]
+  },
+  {
+    "name": "Roland L. (GER)",
+    "current_elo": 1500,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-08-14 20:59",
+        "timestamp": 1786741159.0,
+        "race_name": "Season Finale",
+        "elo_change": 0.2,
+        "new_elo": 1500
+      }
+    ]
+  },
+  {
+    "name": "Andrew Davidenko",
+    "current_elo": 1499,
+    "races_completed": 2,
+    "history": [
+      {
+        "date": "2026-06-02 09:14",
+        "timestamp": 1780391666.0,
+        "race_name": "Round 13: Spa",
+        "elo_change": -1.0,
+        "new_elo": 1499
+      },
+      {
+        "date": "2026-06-02 09:14",
+        "timestamp": 1780391666.0,
+        "race_name": "Round 16: Monza",
+        "elo_change": 0.2,
+        "new_elo": 1499
+      }
+    ]
+  },
+  {
+    "name": "Casper Smit",
+    "current_elo": 1499,
+    "races_completed": 4,
+    "history": [
+      {
+        "date": "2026-07-17 19:38",
+        "timestamp": 1784317121.0,
+        "race_name": "TCX Mini-Champ - Race 1",
+        "elo_change": -3.6,
+        "new_elo": 1496
+      },
+      {
+        "date": "2026-07-17 20:22",
+        "timestamp": 1784319723.0,
+        "race_name": "TCX Mini-Champ - Race 2",
+        "elo_change": -2.6,
+        "new_elo": 1494
+      },
+      {
+        "date": "2026-08-07 19:38",
+        "timestamp": 1786131481.0,
+        "race_name": "Porsche Cup Mini-Champ - Race 1",
+        "elo_change": -5.6,
+        "new_elo": 1488
+      },
+      {
+        "date": "2026-08-14 20:59",
+        "timestamp": 1786741159.0,
+        "race_name": "Season Finale",
+        "elo_change": 10.4,
+        "new_elo": 1499
+      }
+    ]
+  },
+  {
+    "name": "paul webb",
+    "current_elo": 1498,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-05-01 19:39",
+        "timestamp": 1777664372.0,
+        "race_name": "Round 4: Brands Hatch",
+        "elo_change": -2.1,
+        "new_elo": 1498
+      }
+    ]
+  },
+  {
+    "name": "Davide Leone",
+    "current_elo": 1498,
+    "races_completed": 4,
+    "history": [
+      {
+        "date": "2026-05-01 20:34",
+        "timestamp": 1777667696.0,
+        "race_name": "Round 5: Donington",
+        "elo_change": 14.4,
+        "new_elo": 1514
+      },
+      {
+        "date": "2026-05-01 21:33",
+        "timestamp": 1777671187.0,
+        "race_name": "Round 6: Snetterton",
+        "elo_change": 6.4,
+        "new_elo": 1521
+      },
+      {
+        "date": "2026-05-08 21:02",
+        "timestamp": 1778274129.0,
+        "race_name": "Round 7: Nurburgring 24H",
+        "elo_change": -17.0,
+        "new_elo": 1504
+      },
+      {
+        "date": "2026-05-22 20:59",
+        "timestamp": 1779483574.0,
+        "race_name": "Round 12: Nurburgring 24H",
+        "elo_change": -5.9,
+        "new_elo": 1498
+      }
+    ]
+  },
+  {
+    "name": "M JEAGER[FR]",
+    "current_elo": 1498,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-06-24 14:40",
+        "timestamp": 1782312007.0,
+        "race_name": "Round 22: Nurburgring 24H",
+        "elo_change": -1.7,
+        "new_elo": 1498
+      }
+    ]
+  },
+  {
+    "name": "Edjas Silva",
+    "current_elo": 1498,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-07-17 21:07",
+        "timestamp": 1784322448.0,
+        "race_name": "TCX Mini-Champ - Race 3",
+        "elo_change": -2.0,
+        "new_elo": 1498
+      }
+    ]
+  },
+  {
+    "name": "Andre Seifert",
+    "current_elo": 1497,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-07-24 20:39",
+        "timestamp": 1784925556.0,
+        "race_name": "Endurance Showcase",
+        "elo_change": -3.3,
+        "new_elo": 1497
+      }
+    ]
+  },
+  {
+    "name": "Alasdair Parky",
+    "current_elo": 1497,
+    "races_completed": 5,
+    "history": [
+      {
+        "date": "2026-07-31 20:46",
+        "timestamp": 1785530770.0,
+        "race_name": "British Classic",
+        "elo_change": 1.1,
+        "new_elo": 1501
+      },
+      {
+        "date": "2026-08-07 19:38",
+        "timestamp": 1786131481.0,
+        "race_name": "Porsche Cup Mini-Champ - Race 1",
+        "elo_change": 2.7,
+        "new_elo": 1504
+      },
+      {
+        "date": "2026-08-07 20:22",
+        "timestamp": 1786134132.0,
+        "race_name": "Porsche Cup Mini-Champ - Race 2",
+        "elo_change": -4.3,
+        "new_elo": 1499
+      },
+      {
+        "date": "2026-08-07 21:07",
+        "timestamp": 1786136844.0,
+        "race_name": "Porsche Cup Mini-Champ - Race 3",
+        "elo_change": 0.0,
+        "new_elo": 1499
+      },
+      {
+        "date": "2026-08-14 20:59",
+        "timestamp": 1786741159.0,
+        "race_name": "Season Finale",
+        "elo_change": -2.7,
+        "new_elo": 1497
+      }
+    ]
+  },
+  {
+    "name": "STEFAN NOHAI",
+    "current_elo": 1496,
+    "races_completed": 3,
+    "history": [
+      {
+        "date": "2026-04-03 21:09",
+        "timestamp": 1775250551.0,
+        "race_name": "Round 1: Nurburgring 24H",
+        "elo_change": 45.0,
+        "new_elo": 1545
+      },
+      {
+        "date": "2026-05-01 19:39",
+        "timestamp": 1777664372.0,
+        "race_name": "Round 4: Brands Hatch",
+        "elo_change": -32.3,
+        "new_elo": 1513
+      },
+      {
+        "date": "2026-05-08 21:02",
+        "timestamp": 1778274129.0,
+        "race_name": "Round 7: Nurburgring 24H",
+        "elo_change": -16.6,
+        "new_elo": 1496
+      }
+    ]
+  },
+  {
+    "name": "Teodor Florentin",
+    "current_elo": 1496,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-07-10 21:01",
+        "timestamp": 1783717269.0,
+        "race_name": "Season Opener",
+        "elo_change": -4.1,
+        "new_elo": 1496
+      }
+    ]
+  },
+  {
+    "name": "Markel Markel",
+    "current_elo": 1495,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-06-24 14:40",
+        "timestamp": 1782312007.0,
+        "race_name": "Round 21: Nurburgring 24H",
+        "elo_change": -4.7,
+        "new_elo": 1495
+      }
+    ]
+  },
+  {
+    "name": "Kardan Kamazov",
+    "current_elo": 1495,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-06-24 14:40",
+        "timestamp": 1782312007.0,
+        "race_name": "Round 21: Nurburgring 24H",
+        "elo_change": -4.7,
+        "new_elo": 1495
+      }
+    ]
+  },
+  {
+    "name": "Finn Fast | TFL",
+    "current_elo": 1495,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-06-24 14:40",
+        "timestamp": 1782312007.0,
+        "race_name": "Round 21: Nurburgring 24H",
+        "elo_change": -4.7,
+        "new_elo": 1495
+      }
+    ]
+  },
+  {
+    "name": "ALESSANDRO ROSTICCI",
+    "current_elo": 1495,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-06-24 14:40",
+        "timestamp": 1782312007.0,
+        "race_name": "Round 21: Nurburgring 24H",
+        "elo_change": -4.7,
+        "new_elo": 1495
+      }
+    ]
+  },
+  {
+    "name": "Gore Demons",
+    "current_elo": 1494,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-05-22 20:59",
+        "timestamp": 1779483574.0,
+        "race_name": "Round 12: Nurburgring 24H",
+        "elo_change": -5.9,
+        "new_elo": 1494
+      }
+    ]
+  },
+  {
+    "name": "Alex Kaier",
+    "current_elo": 1494,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-05-22 20:59",
+        "timestamp": 1779483574.0,
+        "race_name": "Round 12: Nurburgring 24H",
+        "elo_change": -5.9,
+        "new_elo": 1494
+      }
+    ]
+  },
+  {
+    "name": "Tharos Zyvelionn",
+    "current_elo": 1494,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-05-22 20:59",
+        "timestamp": 1779483574.0,
+        "race_name": "Round 12: Nurburgring 24H",
+        "elo_change": -5.9,
+        "new_elo": 1494
+      }
+    ]
+  },
+  {
+    "name": "F A",
+    "current_elo": 1494,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-05-22 20:59",
+        "timestamp": 1779483574.0,
+        "race_name": "Round 12: Nurburgring 24H",
+        "elo_change": -5.9,
+        "new_elo": 1494
+      }
+    ]
+  },
+  {
+    "name": "emil i",
+    "current_elo": 1494,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-05-22 20:59",
+        "timestamp": 1779483574.0,
+        "race_name": "Round 12: Nurburgring 24H",
+        "elo_change": -5.9,
+        "new_elo": 1494
+      }
+    ]
+  },
+  {
+    "name": "Stepan Rayda",
+    "current_elo": 1494,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-05-22 20:59",
+        "timestamp": 1779483574.0,
+        "race_name": "Round 12: Nurburgring 24H",
+        "elo_change": -5.9,
+        "new_elo": 1494
+      }
+    ]
+  },
+  {
+    "name": "Aldrial Mardayanto",
+    "current_elo": 1494,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-05-22 20:59",
+        "timestamp": 1779483574.0,
+        "race_name": "Round 12: Nurburgring 24H",
+        "elo_change": -5.9,
+        "new_elo": 1494
+      }
+    ]
+  },
+  {
+    "name": "FABIO SCARNO",
+    "current_elo": 1494,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-05-22 20:59",
+        "timestamp": 1779483574.0,
+        "race_name": "Round 12: Nurburgring 24H",
+        "elo_change": -5.9,
+        "new_elo": 1494
+      }
+    ]
+  },
+  {
+    "name": "Ricky Luthor",
+    "current_elo": 1494,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-05-22 20:59",
+        "timestamp": 1779483574.0,
+        "race_name": "Round 12: Nurburgring 24H",
+        "elo_change": -5.9,
+        "new_elo": 1494
+      }
+    ]
+  },
+  {
+    "name": "D Reyes",
+    "current_elo": 1494,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-05-22 20:59",
+        "timestamp": 1779483574.0,
+        "race_name": "Round 12: Nurburgring 24H",
+        "elo_change": -5.9,
+        "new_elo": 1494
+      }
+    ]
+  },
+  {
+    "name": "Mark Fratatelli",
+    "current_elo": 1494,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-05-22 20:59",
+        "timestamp": 1779483574.0,
+        "race_name": "Round 12: Nurburgring 24H",
+        "elo_change": -5.9,
+        "new_elo": 1494
+      }
+    ]
+  },
+  {
+    "name": "Filippo Luciano",
+    "current_elo": 1494,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-05-22 20:59",
+        "timestamp": 1779483574.0,
+        "race_name": "Round 12: Nurburgring 24H",
+        "elo_change": -5.9,
+        "new_elo": 1494
+      }
+    ]
+  },
+  {
+    "name": "Andrey Nazarenko",
+    "current_elo": 1494,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-05-22 20:59",
+        "timestamp": 1779483574.0,
+        "race_name": "Round 12: Nurburgring 24H",
+        "elo_change": -5.9,
+        "new_elo": 1494
+      }
+    ]
+  },
+  {
+    "name": "Julius Nuhn",
+    "current_elo": 1494,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-05-22 20:59",
+        "timestamp": 1779483574.0,
+        "race_name": "Round 12: Nurburgring 24H",
+        "elo_change": -5.9,
+        "new_elo": 1494
+      }
+    ]
+  },
+  {
+    "name": "FER 47.1",
+    "current_elo": 1494,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-05-22 20:59",
+        "timestamp": 1779483574.0,
+        "race_name": "Round 12: Nurburgring 24H",
+        "elo_change": -5.9,
+        "new_elo": 1494
+      }
+    ]
+  },
+  {
+    "name": "Victor VM",
+    "current_elo": 1494,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-05-22 20:59",
+        "timestamp": 1779483574.0,
+        "race_name": "Round 12: Nurburgring 24H",
+        "elo_change": -5.9,
+        "new_elo": 1494
+      }
+    ]
+  },
+  {
+    "name": "Teo Gregoire",
+    "current_elo": 1494,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-05-22 20:59",
+        "timestamp": 1779483574.0,
+        "race_name": "Round 12: Nurburgring 24H",
+        "elo_change": -5.9,
+        "new_elo": 1494
+      }
+    ]
+  },
+  {
+    "name": "Lukas Schubert",
+    "current_elo": 1494,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-05-22 20:59",
+        "timestamp": 1779483574.0,
+        "race_name": "Round 12: Nurburgring 24H",
+        "elo_change": -5.9,
+        "new_elo": 1494
+      }
+    ]
+  },
+  {
+    "name": "colin Iredale",
+    "current_elo": 1494,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-05-22 20:59",
+        "timestamp": 1779483574.0,
+        "race_name": "Round 12: Nurburgring 24H",
+        "elo_change": -5.9,
+        "new_elo": 1494
+      }
+    ]
+  },
+  {
+    "name": "The Duck",
+    "current_elo": 1494,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-05-22 20:59",
+        "timestamp": 1779483574.0,
+        "race_name": "Round 12: Nurburgring 24H",
+        "elo_change": -5.9,
+        "new_elo": 1494
+      }
+    ]
+  },
+  {
+    "name": "Vlad Knife",
+    "current_elo": 1494,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-05-22 20:59",
+        "timestamp": 1779483574.0,
+        "race_name": "Round 12: Nurburgring 24H",
+        "elo_change": -5.9,
+        "new_elo": 1494
+      }
+    ]
+  },
+  {
+    "name": "Gabriel Sevilleja",
+    "current_elo": 1494,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-05-22 20:59",
+        "timestamp": 1779483574.0,
+        "race_name": "Round 12: Nurburgring 24H",
+        "elo_change": -5.9,
+        "new_elo": 1494
+      }
+    ]
+  },
+  {
+    "name": "Artjom Arno",
+    "current_elo": 1494,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-05-22 20:59",
+        "timestamp": 1779483574.0,
+        "race_name": "Round 12: Nurburgring 24H",
+        "elo_change": -5.9,
+        "new_elo": 1494
+      }
+    ]
+  },
+  {
+    "name": "Sean Wainman",
+    "current_elo": 1494,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-05-22 20:59",
+        "timestamp": 1779483574.0,
+        "race_name": "Round 12: Nurburgring 24H",
+        "elo_change": -5.9,
+        "new_elo": 1494
+      }
+    ]
+  },
+  {
+    "name": "Jean Mostert",
+    "current_elo": 1494,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-05-22 20:59",
+        "timestamp": 1779483574.0,
+        "race_name": "Round 12: Nurburgring 24H",
+        "elo_change": -5.9,
+        "new_elo": 1494
+      }
+    ]
+  },
+  {
+    "name": "Tuna Ekemenlı",
+    "current_elo": 1494,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-05-22 20:59",
+        "timestamp": 1779483574.0,
+        "race_name": "Round 12: Nurburgring 24H",
+        "elo_change": -5.9,
+        "new_elo": 1494
+      }
+    ]
+  },
+  {
+    "name": "Mr Grape",
+    "current_elo": 1494,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-05-22 20:59",
+        "timestamp": 1779483574.0,
+        "race_name": "Round 12: Nurburgring 24H",
+        "elo_change": -5.9,
+        "new_elo": 1494
+      }
+    ]
+  },
+  {
+    "name": "Evgeny Dorofeev",
+    "current_elo": 1494,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-05-22 20:59",
+        "timestamp": 1779483574.0,
+        "race_name": "Round 12: Nurburgring 24H",
+        "elo_change": -5.9,
+        "new_elo": 1494
+      }
+    ]
+  },
+  {
+    "name": "Kai Bittscheidt",
+    "current_elo": 1494,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-05-22 20:59",
+        "timestamp": 1779483574.0,
+        "race_name": "Round 12: Nurburgring 24H",
+        "elo_change": -5.9,
+        "new_elo": 1494
+      }
+    ]
+  },
+  {
+    "name": "sunipon nunang",
+    "current_elo": 1494,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-05-22 20:59",
+        "timestamp": 1779483574.0,
+        "race_name": "Round 12: Nurburgring 24H",
+        "elo_change": -5.9,
+        "new_elo": 1494
+      }
+    ]
+  },
+  {
+    "name": "Silver Star",
+    "current_elo": 1494,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-05-22 20:59",
+        "timestamp": 1779483574.0,
+        "race_name": "Round 12: Nurburgring 24H",
+        "elo_change": -5.9,
+        "new_elo": 1494
+      }
+    ]
+  },
+  {
+    "name": "G Roberts",
+    "current_elo": 1494,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-05-22 20:59",
+        "timestamp": 1779483574.0,
+        "race_name": "Round 12: Nurburgring 24H",
+        "elo_change": -5.9,
+        "new_elo": 1494
+      }
+    ]
+  },
+  {
+    "name": "Andre Schmidt",
+    "current_elo": 1494,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-05-22 20:59",
+        "timestamp": 1779483574.0,
+        "race_name": "Round 12: Nurburgring 24H",
+        "elo_change": -5.9,
+        "new_elo": 1494
+      }
+    ]
+  },
+  {
+    "name": "Bounty Cat",
+    "current_elo": 1494,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-05-22 20:59",
+        "timestamp": 1779483574.0,
+        "race_name": "Round 12: Nurburgring 24H",
+        "elo_change": -5.9,
+        "new_elo": 1494
+      }
+    ]
+  },
+  {
+    "name": "Christian Racky",
+    "current_elo": 1494,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-08-07 21:07",
+        "timestamp": 1786136844.0,
+        "race_name": "Porsche Cup Mini-Champ - Race 3",
+        "elo_change": -6.0,
+        "new_elo": 1494
+      }
+    ]
+  },
+  {
+    "name": "Sergi Pérez",
+    "current_elo": 1493,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-05-19 09:12",
+        "timestamp": 1779181920.0,
+        "race_name": "Round 8: Kyalami",
+        "elo_change": -7.4,
+        "new_elo": 1493
+      }
+    ]
+  },
+  {
+    "name": "TW AgentZen",
+    "current_elo": 1491,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-06-09 19:39",
+        "timestamp": 1781033974.0,
+        "race_name": "Round 17: Watkins Glen",
+        "elo_change": -8.8,
+        "new_elo": 1491
+      }
+    ]
+  },
+  {
+    "name": "Paul Kelly",
+    "current_elo": 1491,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-07-24 20:39",
+        "timestamp": 1784925556.0,
+        "race_name": "Endurance Showcase",
+        "elo_change": -9.3,
+        "new_elo": 1491
+      }
+    ]
+  },
+  {
+    "name": "A. García Santos",
+    "current_elo": 1490,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-07-10 21:01",
+        "timestamp": 1783717269.0,
+        "race_name": "Season Opener",
+        "elo_change": -10.1,
+        "new_elo": 1490
+      }
+    ]
+  },
+  {
+    "name": "Edoardo Marzorati [MRZ]",
+    "current_elo": 1489,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-06-24 14:40",
+        "timestamp": 1782312007.0,
+        "race_name": "Round 22: Nurburgring 24H",
+        "elo_change": -10.6,
+        "new_elo": 1489
+      }
+    ]
+  },
+  {
+    "name": "Maximiliano J Herrera",
+    "current_elo": 1489,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-07-31 20:46",
+        "timestamp": 1785530770.0,
+        "race_name": "British Classic",
+        "elo_change": -10.9,
+        "new_elo": 1489
+      }
+    ]
+  },
+  {
+    "name": "Munklesunkee",
+    "current_elo": 1488,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-08-07 21:07",
+        "timestamp": 1786136844.0,
+        "race_name": "Porsche Cup Mini-Champ - Race 3",
+        "elo_change": -12.0,
+        "new_elo": 1488
+      }
+    ]
+  },
+  {
+    "name": "Viktor Ruga",
+    "current_elo": 1487,
+    "races_completed": 8,
+    "history": [
+      {
+        "date": "2026-04-17 20:51",
+        "timestamp": 1776459084.0,
+        "race_name": "Round 3: Nurburgring 24H",
+        "elo_change": 28.7,
+        "new_elo": 1529
+      },
+      {
+        "date": "2026-05-01 19:39",
+        "timestamp": 1777664372.0,
+        "race_name": "Round 4: Brands Hatch",
+        "elo_change": 8.7,
+        "new_elo": 1537
+      },
+      {
+        "date": "2026-05-01 20:34",
+        "timestamp": 1777667696.0,
+        "race_name": "Round 5: Donington",
+        "elo_change": -4.2,
+        "new_elo": 1533
+      },
+      {
+        "date": "2026-05-01 21:33",
+        "timestamp": 1777671187.0,
+        "race_name": "Round 6: Snetterton",
+        "elo_change": -4.9,
+        "new_elo": 1528
+      },
+      {
+        "date": "2026-05-08 21:02",
+        "timestamp": 1778274129.0,
+        "race_name": "Round 7: Nurburgring 24H",
+        "elo_change": -17.4,
+        "new_elo": 1511
+      },
+      {
+        "date": "2026-05-22 20:59",
+        "timestamp": 1779483574.0,
+        "race_name": "Round 12: Nurburgring 24H",
+        "elo_change": -6.1,
+        "new_elo": 1505
+      },
+      {
+        "date": "2026-06-24 14:40",
+        "timestamp": 1782312007.0,
+        "race_name": "Round 22: Nurburgring 24H",
+        "elo_change": 4.1,
+        "new_elo": 1509
+      },
+      {
+        "date": "2026-08-14 20:59",
+        "timestamp": 1786741159.0,
+        "race_name": "Season Finale",
+        "elo_change": -21.7,
+        "new_elo": 1487
+      }
+    ]
+  },
+  {
+    "name": "Mati Hoheisel",
+    "current_elo": 1487,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-06-02 09:14",
+        "timestamp": 1780391666.0,
+        "race_name": "Round 14: Hungaroring",
+        "elo_change": -13.4,
+        "new_elo": 1487
+      }
+    ]
+  },
+  {
+    "name": "Enrico Piscopiello",
+    "current_elo": 1487,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-06-02 09:14",
+        "timestamp": 1780391666.0,
+        "race_name": "Round 14: Hungaroring",
+        "elo_change": -13.4,
+        "new_elo": 1487
+      }
+    ]
+  },
+  {
+    "name": "Michal R",
+    "current_elo": 1487,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-06-02 09:14",
+        "timestamp": 1780391666.0,
+        "race_name": "Round 14: Hungaroring",
+        "elo_change": -13.4,
+        "new_elo": 1487
+      }
+    ]
+  },
+  {
+    "name": "- RIZZ-RACER-",
+    "current_elo": 1486,
+    "races_completed": 2,
+    "history": [
+      {
+        "date": "2026-06-02 09:14",
+        "timestamp": 1780391666.0,
+        "race_name": "Round 13: Spa",
+        "elo_change": 8.0,
+        "new_elo": 1508
+      },
+      {
+        "date": "2026-06-09 19:39",
+        "timestamp": 1781033974.0,
+        "race_name": "Round 18: Laguna Seca",
+        "elo_change": -22.2,
+        "new_elo": 1486
+      }
+    ]
+  },
+  {
+    "name": "Tiago Dresch",
+    "current_elo": 1486,
+    "races_completed": 2,
+    "history": [
+      {
+        "date": "2026-07-24 20:39",
+        "timestamp": 1784925556.0,
+        "race_name": "Endurance Showcase",
+        "elo_change": -36.3,
+        "new_elo": 1464
+      },
+      {
+        "date": "2026-07-31 20:46",
+        "timestamp": 1785530770.0,
+        "race_name": "British Classic",
+        "elo_change": 22.7,
+        "new_elo": 1486
+      }
+    ]
+  },
+  {
+    "name": "Eugen Naza",
+    "current_elo": 1486,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-07-31 20:46",
+        "timestamp": 1785530770.0,
+        "race_name": "British Classic",
+        "elo_change": -13.9,
+        "new_elo": 1486
+      }
+    ]
+  },
+  {
+    "name": "Andy Mcdonald [SL]",
+    "current_elo": 1485,
+    "races_completed": 9,
+    "history": [
+      {
+        "date": "2026-04-17 20:51",
+        "timestamp": 1776459084.0,
+        "race_name": "Round 3: Nurburgring 24H",
+        "elo_change": 25.7,
+        "new_elo": 1526
+      },
+      {
+        "date": "2026-05-08 21:02",
+        "timestamp": 1778274129.0,
+        "race_name": "Round 7: Nurburgring 24H",
+        "elo_change": -17.3,
+        "new_elo": 1508
+      },
+      {
+        "date": "2026-05-19 09:12",
+        "timestamp": 1779181920.0,
+        "race_name": "Round 8: Kyalami",
+        "elo_change": -2.9,
+        "new_elo": 1506
+      },
+      {
+        "date": "2026-05-19 09:12",
+        "timestamp": 1779181926.0,
+        "race_name": "Round 9: Mount Panorama",
+        "elo_change": 12.7,
+        "new_elo": 1518
+      },
+      {
+        "date": "2026-05-19 09:12",
+        "timestamp": 1779181931.0,
+        "race_name": "Round 10: Suzuka",
+        "elo_change": -13.9,
+        "new_elo": 1504
+      },
+      {
+        "date": "2026-05-19 09:12",
+        "timestamp": 1779181937.0,
+        "race_name": "Round 11: Red Bull Ring",
+        "elo_change": 12.4,
+        "new_elo": 1517
+      },
+      {
+        "date": "2026-05-22 20:59",
+        "timestamp": 1779483574.0,
+        "race_name": "Round 12: Nurburgring 24H",
+        "elo_change": -6.2,
+        "new_elo": 1511
+      },
+      {
+        "date": "2026-06-02 09:14",
+        "timestamp": 1780391666.0,
+        "race_name": "Round 14: Hungaroring",
+        "elo_change": -13.9,
+        "new_elo": 1497
+      },
+      {
+        "date": "2026-06-02 09:14",
+        "timestamp": 1780391666.0,
+        "race_name": "Round 15: Barcelona",
+        "elo_change": -12.0,
+        "new_elo": 1485
+      }
+    ]
+  },
+  {
+    "name": "Tony Buller",
+    "current_elo": 1485,
+    "races_completed": 4,
+    "history": [
+      {
+        "date": "2026-05-01 21:33",
+        "timestamp": 1777671187.0,
+        "race_name": "Round 6: Snetterton",
+        "elo_change": -3.8,
+        "new_elo": 1496
+      },
+      {
+        "date": "2026-05-19 09:12",
+        "timestamp": 1779181926.0,
+        "race_name": "Round 9: Mount Panorama",
+        "elo_change": -16.1,
+        "new_elo": 1480
+      },
+      {
+        "date": "2026-05-19 09:12",
+        "timestamp": 1779181931.0,
+        "race_name": "Round 10: Suzuka",
+        "elo_change": 5.5,
+        "new_elo": 1486
+      },
+      {
+        "date": "2026-05-19 09:12",
+        "timestamp": 1779181937.0,
+        "race_name": "Round 11: Red Bull Ring",
+        "elo_change": -0.1,
+        "new_elo": 1485
+      }
+    ]
+  },
+  {
+    "name": "Antony Gambino",
+    "current_elo": 1485,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-08-07 19:38",
+        "timestamp": 1786131481.0,
+        "race_name": "Porsche Cup Mini-Champ - Race 1",
+        "elo_change": -15.2,
+        "new_elo": 1485
+      }
+    ]
+  },
+  {
+    "name": "Илья Грибанов",
+    "current_elo": 1485,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-08-14 20:59",
+        "timestamp": 1786741159.0,
+        "race_name": "Season Finale",
+        "elo_change": -14.8,
+        "new_elo": 1485
+      }
+    ]
+  },
+  {
+    "name": "donny barty",
+    "current_elo": 1484,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-05-08 21:02",
+        "timestamp": 1778274129.0,
+        "race_name": "Round 7: Nurburgring 24H",
+        "elo_change": -16.0,
+        "new_elo": 1484
+      }
+    ]
+  },
+  {
+    "name": "Patricio duda",
+    "current_elo": 1484,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-05-08 21:02",
+        "timestamp": 1778274129.0,
+        "race_name": "Round 7: Nurburgring 24H",
+        "elo_change": -16.0,
+        "new_elo": 1484
+      }
+    ]
+  },
+  {
+    "name": "MIGUEL 12",
+    "current_elo": 1484,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-05-08 21:02",
+        "timestamp": 1778274129.0,
+        "race_name": "Round 7: Nurburgring 24H",
+        "elo_change": -16.0,
+        "new_elo": 1484
+      }
+    ]
+  },
+  {
+    "name": "Logan Schaeffer",
+    "current_elo": 1484,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-05-08 21:02",
+        "timestamp": 1778274129.0,
+        "race_name": "Round 7: Nurburgring 24H",
+        "elo_change": -16.0,
+        "new_elo": 1484
+      }
+    ]
+  },
+  {
+    "name": "Jakub Książek",
+    "current_elo": 1484,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-05-08 21:02",
+        "timestamp": 1778274129.0,
+        "race_name": "Round 7: Nurburgring 24H",
+        "elo_change": -16.0,
+        "new_elo": 1484
+      }
+    ]
+  },
+  {
+    "name": "Patryk Cepiga",
+    "current_elo": 1484,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-05-08 21:02",
+        "timestamp": 1778274129.0,
+        "race_name": "Round 7: Nurburgring 24H",
+        "elo_change": -16.0,
+        "new_elo": 1484
+      }
+    ]
+  },
+  {
+    "name": "Patrick Linex",
+    "current_elo": 1484,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-05-08 21:02",
+        "timestamp": 1778274129.0,
+        "race_name": "Round 7: Nurburgring 24H",
+        "elo_change": -16.0,
+        "new_elo": 1484
+      }
+    ]
+  },
+  {
+    "name": "Swdevil Swdevil",
+    "current_elo": 1484,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-05-08 21:02",
+        "timestamp": 1778274129.0,
+        "race_name": "Round 7: Nurburgring 24H",
+        "elo_change": -16.0,
+        "new_elo": 1484
+      }
+    ]
+  },
+  {
+    "name": "Luca Kronenberg",
+    "current_elo": 1484,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-05-08 21:02",
+        "timestamp": 1778274129.0,
+        "race_name": "Round 7: Nurburgring 24H",
+        "elo_change": -16.0,
+        "new_elo": 1484
+      }
+    ]
+  },
+  {
+    "name": "Thilo Steinhorn",
+    "current_elo": 1484,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-05-08 21:02",
+        "timestamp": 1778274129.0,
+        "race_name": "Round 7: Nurburgring 24H",
+        "elo_change": -16.0,
+        "new_elo": 1484
+      }
+    ]
+  },
+  {
+    "name": "António Barbosa",
+    "current_elo": 1484,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-05-08 21:02",
+        "timestamp": 1778274129.0,
+        "race_name": "Round 7: Nurburgring 24H",
+        "elo_change": -16.0,
+        "new_elo": 1484
+      }
+    ]
+  },
+  {
+    "name": "Lukas Kimoudjoglou-Voulant",
+    "current_elo": 1484,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-05-08 21:02",
+        "timestamp": 1778274129.0,
+        "race_name": "Round 7: Nurburgring 24H",
+        "elo_change": -16.0,
+        "new_elo": 1484
+      }
+    ]
+  },
+  {
+    "name": "Valde Launder",
+    "current_elo": 1484,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-05-08 21:02",
+        "timestamp": 1778274129.0,
+        "race_name": "Round 7: Nurburgring 24H",
+        "elo_change": -16.0,
+        "new_elo": 1484
+      }
+    ]
+  },
+  {
+    "name": "Jorge GaTo",
+    "current_elo": 1484,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-05-08 21:02",
+        "timestamp": 1778274129.0,
+        "race_name": "Round 7: Nurburgring 24H",
+        "elo_change": -16.0,
+        "new_elo": 1484
+      }
+    ]
+  },
+  {
+    "name": "Meister Proper",
+    "current_elo": 1484,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-05-19 09:12",
+        "timestamp": 1779181926.0,
+        "race_name": "Round 9: Mount Panorama",
+        "elo_change": -16.3,
+        "new_elo": 1484
+      }
+    ]
+  },
+  {
+    "name": "Rene Joebstl",
+    "current_elo": 1484,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-05-19 09:12",
+        "timestamp": 1779181926.0,
+        "race_name": "Round 9: Mount Panorama",
+        "elo_change": -16.3,
+        "new_elo": 1484
+      }
+    ]
+  },
+  {
+    "name": "Dirk Steiner",
+    "current_elo": 1484,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-05-19 09:12",
+        "timestamp": 1779181926.0,
+        "race_name": "Round 9: Mount Panorama",
+        "elo_change": -16.3,
+        "new_elo": 1484
+      }
+    ]
+  },
+  {
+    "name": "Andi Janko",
+    "current_elo": 1484,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-05-19 09:12",
+        "timestamp": 1779181926.0,
+        "race_name": "Round 9: Mount Panorama",
+        "elo_change": -16.3,
+        "new_elo": 1484
+      }
+    ]
+  },
+  {
+    "name": "Michal Wilkanowski",
+    "current_elo": 1484,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-05-19 09:12",
+        "timestamp": 1779181926.0,
+        "race_name": "Round 9: Mount Panorama",
+        "elo_change": -16.3,
+        "new_elo": 1484
+      }
+    ]
+  },
+  {
+    "name": "ALEX santamery",
+    "current_elo": 1484,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-05-19 09:12",
+        "timestamp": 1779181926.0,
+        "race_name": "Round 9: Mount Panorama",
+        "elo_change": -16.3,
+        "new_elo": 1484
+      }
+    ]
+  },
+  {
+    "name": "DAN_ 1988",
+    "current_elo": 1484,
+    "races_completed": 2,
+    "history": [
+      {
+        "date": "2026-05-22 20:59",
+        "timestamp": 1779483574.0,
+        "race_name": "Round 12: Nurburgring 24H",
+        "elo_change": -5.9,
+        "new_elo": 1494
+      },
+      {
+        "date": "2026-06-24 14:40",
+        "timestamp": 1782312007.0,
+        "race_name": "Round 22: Nurburgring 24H",
+        "elo_change": -10.4,
+        "new_elo": 1484
+      }
+    ]
+  },
+  {
+    "name": "Joshua Garcia",
+    "current_elo": 1484,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-06-02 09:14",
+        "timestamp": 1780391666.0,
+        "race_name": "Round 13: Spa",
+        "elo_change": -15.9,
+        "new_elo": 1484
+      }
+    ]
+  },
+  {
+    "name": "X Manuel |NEON GRID",
+    "current_elo": 1484,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-06-02 09:14",
+        "timestamp": 1780391666.0,
+        "race_name": "Round 13: Spa",
+        "elo_change": -15.9,
+        "new_elo": 1484
+      }
+    ]
+  },
+  {
+    "name": "Michal Walczak",
+    "current_elo": 1484,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-06-02 09:14",
+        "timestamp": 1780391666.0,
+        "race_name": "Round 13: Spa",
+        "elo_change": -15.9,
+        "new_elo": 1484
+      }
+    ]
+  },
+  {
+    "name": "john vakero",
+    "current_elo": 1484,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-06-02 09:14",
+        "timestamp": 1780391666.0,
+        "race_name": "Round 13: Spa",
+        "elo_change": -15.9,
+        "new_elo": 1484
+      }
+    ]
+  },
+  {
+    "name": "Lor Rezo",
+    "current_elo": 1484,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-06-02 09:14",
+        "timestamp": 1780391666.0,
+        "race_name": "Round 13: Spa",
+        "elo_change": -15.9,
+        "new_elo": 1484
+      }
+    ]
+  },
+  {
+    "name": "Tommi Pommi",
+    "current_elo": 1483,
+    "races_completed": 3,
+    "history": [
+      {
+        "date": "2026-04-03 21:09",
+        "timestamp": 1775250551.0,
+        "race_name": "Round 1: Nurburgring 24H",
+        "elo_change": -25.5,
+        "new_elo": 1474
+      },
+      {
+        "date": "2026-04-10 20:37",
+        "timestamp": 1775853464.0,
+        "race_name": "Round 2: Brands Hatch",
+        "elo_change": 29.9,
+        "new_elo": 1504
+      },
+      {
+        "date": "2026-04-17 20:51",
+        "timestamp": 1776459084.0,
+        "race_name": "Round 3: Nurburgring 24H",
+        "elo_change": -21.4,
+        "new_elo": 1483
+      }
+    ]
+  },
+  {
+    "name": "Gael Duchêne ESP",
+    "current_elo": 1483,
+    "races_completed": 22,
+    "history": [
+      {
+        "date": "2026-04-10 20:37",
+        "timestamp": 1775853464.0,
+        "race_name": "Round 2: Brands Hatch",
+        "elo_change": 19.9,
+        "new_elo": 1520
+      },
+      {
+        "date": "2026-04-17 20:51",
+        "timestamp": 1776459084.0,
+        "race_name": "Round 3: Nurburgring 24H",
+        "elo_change": 39.8,
+        "new_elo": 1560
+      },
+      {
+        "date": "2026-05-01 19:39",
+        "timestamp": 1777664372.0,
+        "race_name": "Round 4: Brands Hatch",
+        "elo_change": -14.3,
+        "new_elo": 1545
+      },
+      {
+        "date": "2026-05-01 19:39",
+        "timestamp": 1777664372.0,
+        "race_name": "Round 4: Brands Hatch",
+        "elo_change": -14.3,
+        "new_elo": 1531
+      },
+      {
+        "date": "2026-05-01 20:34",
+        "timestamp": 1777667696.0,
+        "race_name": "Round 5: Donington",
+        "elo_change": -37.8,
+        "new_elo": 1493
+      },
+      {
+        "date": "2026-05-01 20:34",
+        "timestamp": 1777667696.0,
+        "race_name": "Round 5: Donington",
+        "elo_change": -37.8,
+        "new_elo": 1456
+      },
+      {
+        "date": "2026-05-01 21:33",
+        "timestamp": 1777671187.0,
+        "race_name": "Round 6: Snetterton",
+        "elo_change": 37.6,
+        "new_elo": 1493
+      },
+      {
+        "date": "2026-05-08 21:02",
+        "timestamp": 1778274129.0,
+        "race_name": "Round 7: Nurburgring 24H",
+        "elo_change": -15.6,
+        "new_elo": 1477
+      },
+      {
+        "date": "2026-05-19 09:12",
+        "timestamp": 1779181920.0,
+        "race_name": "Round 8: Kyalami",
+        "elo_change": 8.3,
+        "new_elo": 1486
+      },
+      {
+        "date": "2026-05-19 09:12",
+        "timestamp": 1779181926.0,
+        "race_name": "Round 9: Mount Panorama",
+        "elo_change": 12.1,
+        "new_elo": 1498
+      },
+      {
+        "date": "2026-05-19 09:12",
+        "timestamp": 1779181931.0,
+        "race_name": "Round 10: Suzuka",
+        "elo_change": 18.5,
+        "new_elo": 1516
+      },
+      {
+        "date": "2026-05-19 09:12",
+        "timestamp": 1779181937.0,
+        "race_name": "Round 11: Red Bull Ring",
+        "elo_change": -26.6,
+        "new_elo": 1490
+      },
+      {
+        "date": "2026-06-02 09:14",
+        "timestamp": 1780391666.0,
+        "race_name": "Round 13: Spa",
+        "elo_change": -15.4,
+        "new_elo": 1474
+      },
+      {
+        "date": "2026-06-09 19:39",
+        "timestamp": 1781033974.0,
+        "race_name": "Round 17: Watkins Glen",
+        "elo_change": -13.9,
+        "new_elo": 1460
+      },
+      {
+        "date": "2026-06-09 19:39",
+        "timestamp": 1781033974.0,
+        "race_name": "Round 18: Laguna Seca",
+        "elo_change": 46.1,
+        "new_elo": 1506
+      },
+      {
+        "date": "2026-06-09 19:39",
+        "timestamp": 1781033974.0,
+        "race_name": "Round 19: Cota",
+        "elo_change": 15.9,
+        "new_elo": 1522
+      },
+      {
+        "date": "2026-06-09 19:39",
+        "timestamp": 1781033974.0,
+        "race_name": "Round 20: Indianapolis",
+        "elo_change": -7.3,
+        "new_elo": 1515
+      },
+      {
+        "date": "2026-07-10 21:01",
+        "timestamp": 1783717269.0,
+        "race_name": "Season Opener",
+        "elo_change": -32.7,
+        "new_elo": 1482
+      },
+      {
+        "date": "2026-07-31 20:46",
+        "timestamp": 1785530770.0,
+        "race_name": "British Classic",
+        "elo_change": 5.9,
+        "new_elo": 1488
+      },
+      {
+        "date": "2026-08-07 19:38",
+        "timestamp": 1786131481.0,
+        "race_name": "Porsche Cup Mini-Champ - Race 1",
+        "elo_change": 1.0,
+        "new_elo": 1489
+      },
+      {
+        "date": "2026-08-07 20:22",
+        "timestamp": 1786134132.0,
+        "race_name": "Porsche Cup Mini-Champ - Race 2",
+        "elo_change": 8.4,
+        "new_elo": 1498
+      },
+      {
+        "date": "2026-08-07 21:07",
+        "timestamp": 1786136844.0,
+        "race_name": "Porsche Cup Mini-Champ - Race 3",
+        "elo_change": -14.9,
+        "new_elo": 1483
+      }
+    ]
+  },
+  {
+    "name": "ashley motler",
+    "current_elo": 1483,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-05-01 20:34",
+        "timestamp": 1777667696.0,
+        "race_name": "Round 5: Donington",
+        "elo_change": -17.2,
+        "new_elo": 1483
+      }
+    ]
+  },
+  {
+    "name": "DC Nitemare2",
+    "current_elo": 1483,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-05-01 20:34",
+        "timestamp": 1777667696.0,
+        "race_name": "Round 5: Donington",
+        "elo_change": -17.2,
+        "new_elo": 1483
+      }
+    ]
+  },
+  {
+    "name": "Adrien Balondrade",
+    "current_elo": 1483,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-05-01 20:34",
+        "timestamp": 1777667696.0,
+        "race_name": "Round 5: Donington",
+        "elo_change": -17.2,
+        "new_elo": 1483
+      }
+    ]
+  },
+  {
+    "name": "John Porter",
+    "current_elo": 1483,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-07-31 20:46",
+        "timestamp": 1785530770.0,
+        "race_name": "British Classic",
+        "elo_change": -16.9,
+        "new_elo": 1483
+      }
+    ]
+  },
+  {
+    "name": "Alex Grandi",
+    "current_elo": 1482,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-07-24 20:39",
+        "timestamp": 1784925556.0,
+        "race_name": "Endurance Showcase",
+        "elo_change": -18.3,
+        "new_elo": 1482
+      }
+    ]
+  },
+  {
+    "name": "German Turchinovich",
+    "current_elo": 1482,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-08-07 19:38",
+        "timestamp": 1786131481.0,
+        "race_name": "Porsche Cup Mini-Champ - Race 1",
+        "elo_change": -18.2,
+        "new_elo": 1482
+      }
+    ]
+  },
+  {
+    "name": "Patrick Thomas",
+    "current_elo": 1481,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-04-10 20:37",
+        "timestamp": 1775853464.0,
+        "race_name": "Round 2: Brands Hatch",
+        "elo_change": -18.9,
+        "new_elo": 1481
+      }
+    ]
+  },
+  {
+    "name": "Málnási Dániel",
+    "current_elo": 1481,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-04-10 20:37",
+        "timestamp": 1775853464.0,
+        "race_name": "Round 2: Brands Hatch",
+        "elo_change": -18.9,
+        "new_elo": 1481
+      }
+    ]
+  },
+  {
+    "name": "LUCAS RESENDE",
+    "current_elo": 1481,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-04-10 20:37",
+        "timestamp": 1775853464.0,
+        "race_name": "Round 2: Brands Hatch",
+        "elo_change": -18.9,
+        "new_elo": 1481
+      }
+    ]
+  },
+  {
+    "name": "Harry Fletcher",
+    "current_elo": 1481,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-04-10 20:37",
+        "timestamp": 1775853464.0,
+        "race_name": "Round 2: Brands Hatch",
+        "elo_change": -18.9,
+        "new_elo": 1481
+      }
+    ]
+  },
+  {
+    "name": "Aurèle Pensec",
+    "current_elo": 1481,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-04-10 20:37",
+        "timestamp": 1775853464.0,
+        "race_name": "Round 2: Brands Hatch",
+        "elo_change": -18.9,
+        "new_elo": 1481
+      }
+    ]
+  },
+  {
+    "name": "Piere Russo",
+    "current_elo": 1481,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-04-10 20:37",
+        "timestamp": 1775853464.0,
+        "race_name": "Round 2: Brands Hatch",
+        "elo_change": -18.9,
+        "new_elo": 1481
+      }
+    ]
+  },
+  {
+    "name": "p burrows",
+    "current_elo": 1481,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-04-10 20:37",
+        "timestamp": 1775853464.0,
+        "race_name": "Round 2: Brands Hatch",
+        "elo_change": -18.9,
+        "new_elo": 1481
+      }
+    ]
+  },
+  {
+    "name": "Thorsten Weidemann",
+    "current_elo": 1481,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-04-10 20:37",
+        "timestamp": 1775853464.0,
+        "race_name": "Round 2: Brands Hatch",
+        "elo_change": -18.9,
+        "new_elo": 1481
+      }
+    ]
+  },
+  {
+    "name": "Kristiyan Yanachkov",
+    "current_elo": 1481,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-04-10 20:37",
+        "timestamp": 1775853464.0,
+        "race_name": "Round 2: Brands Hatch",
+        "elo_change": -18.9,
+        "new_elo": 1481
+      }
+    ]
+  },
+  {
+    "name": "Oliver Pelz",
+    "current_elo": 1481,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-04-10 20:37",
+        "timestamp": 1775853464.0,
+        "race_name": "Round 2: Brands Hatch",
+        "elo_change": -18.9,
+        "new_elo": 1481
+      }
+    ]
+  },
+  {
+    "name": "Jorge Campos",
+    "current_elo": 1481,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-04-10 20:37",
+        "timestamp": 1775853464.0,
+        "race_name": "Round 2: Brands Hatch",
+        "elo_change": -18.9,
+        "new_elo": 1481
+      }
+    ]
+  },
+  {
+    "name": "boulinghez jean marie",
+    "current_elo": 1481,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-04-10 20:37",
+        "timestamp": 1775853464.0,
+        "race_name": "Round 2: Brands Hatch",
+        "elo_change": -18.9,
+        "new_elo": 1481
+      }
+    ]
+  },
+  {
+    "name": "Vladislav Volkoff",
+    "current_elo": 1481,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-04-10 20:37",
+        "timestamp": 1775853464.0,
+        "race_name": "Round 2: Brands Hatch",
+        "elo_change": -18.9,
+        "new_elo": 1481
+      }
+    ]
+  },
+  {
+    "name": "Andre Giese_GER",
+    "current_elo": 1481,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-04-10 20:37",
+        "timestamp": 1775853464.0,
+        "race_name": "Round 2: Brands Hatch",
+        "elo_change": -18.9,
+        "new_elo": 1481
+      }
+    ]
+  },
+  {
+    "name": "Sean Turner",
+    "current_elo": 1481,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-04-10 20:37",
+        "timestamp": 1775853464.0,
+        "race_name": "Round 2: Brands Hatch",
+        "elo_change": -18.9,
+        "new_elo": 1481
+      }
+    ]
+  },
+  {
+    "name": "T TV/ICEY0082 | WRT",
+    "current_elo": 1481,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-04-10 20:37",
+        "timestamp": 1775853464.0,
+        "race_name": "Round 2: Brands Hatch",
+        "elo_change": -18.9,
+        "new_elo": 1481
+      }
+    ]
+  },
+  {
+    "name": "Robert Prochazka",
+    "current_elo": 1481,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-07-10 21:01",
+        "timestamp": 1783717269.0,
+        "race_name": "Season Opener",
+        "elo_change": -19.1,
+        "new_elo": 1481
+      }
+    ]
+  },
+  {
+    "name": "Almir Razetdinov",
+    "current_elo": 1479,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-04-17 20:51",
+        "timestamp": 1776459084.0,
+        "race_name": "Round 3: Nurburgring 24H",
+        "elo_change": -21.1,
+        "new_elo": 1479
+      }
+    ]
+  },
+  {
+    "name": "Oleg Kruglikov",
+    "current_elo": 1479,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-04-17 20:51",
+        "timestamp": 1776459084.0,
+        "race_name": "Round 3: Nurburgring 24H",
+        "elo_change": -21.1,
+        "new_elo": 1479
+      }
+    ]
+  },
+  {
+    "name": "英国 椎名真白",
+    "current_elo": 1479,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-04-17 20:51",
+        "timestamp": 1776459084.0,
+        "race_name": "Round 3: Nurburgring 24H",
+        "elo_change": -21.1,
+        "new_elo": 1479
+      }
+    ]
+  },
+  {
+    "name": "Schy Altherr",
+    "current_elo": 1479,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-04-17 20:51",
+        "timestamp": 1776459084.0,
+        "race_name": "Round 3: Nurburgring 24H",
+        "elo_change": -21.1,
+        "new_elo": 1479
+      }
+    ]
+  },
+  {
+    "name": "Dozy Mitsubishi",
+    "current_elo": 1479,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-04-17 20:51",
+        "timestamp": 1776459084.0,
+        "race_name": "Round 3: Nurburgring 24H",
+        "elo_change": -21.1,
+        "new_elo": 1479
+      }
+    ]
+  },
+  {
+    "name": "Nicola Nardin",
+    "current_elo": 1479,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-04-17 20:51",
+        "timestamp": 1776459084.0,
+        "race_name": "Round 3: Nurburgring 24H",
+        "elo_change": -21.1,
+        "new_elo": 1479
+      }
+    ]
+  },
+  {
+    "name": "Dave Young",
+    "current_elo": 1479,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-04-17 20:51",
+        "timestamp": 1776459084.0,
+        "race_name": "Round 3: Nurburgring 24H",
+        "elo_change": -21.1,
+        "new_elo": 1479
+      }
+    ]
+  },
+  {
+    "name": "dec",
+    "current_elo": 1479,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-04-17 20:51",
+        "timestamp": 1776459084.0,
+        "race_name": "Round 3: Nurburgring 24H",
+        "elo_change": -21.1,
+        "new_elo": 1479
+      }
+    ]
+  },
+  {
+    "name": "Guillermo Sanchez",
+    "current_elo": 1479,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-04-17 20:51",
+        "timestamp": 1776459084.0,
+        "race_name": "Round 3: Nurburgring 24H",
+        "elo_change": -21.1,
+        "new_elo": 1479
+      }
+    ]
+  },
+  {
+    "name": "Christian Haugom",
+    "current_elo": 1479,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-04-17 20:51",
+        "timestamp": 1776459084.0,
+        "race_name": "Round 3: Nurburgring 24H",
+        "elo_change": -21.1,
+        "new_elo": 1479
+      }
+    ]
+  },
+  {
+    "name": "Titusz Zsedényi",
+    "current_elo": 1479,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-04-17 20:51",
+        "timestamp": 1776459084.0,
+        "race_name": "Round 3: Nurburgring 24H",
+        "elo_change": -21.1,
+        "new_elo": 1479
+      }
+    ]
+  },
+  {
+    "name": "Temer Lakerino",
+    "current_elo": 1479,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-04-17 20:51",
+        "timestamp": 1776459084.0,
+        "race_name": "Round 3: Nurburgring 24H",
+        "elo_change": -21.1,
+        "new_elo": 1479
+      }
+    ]
+  },
+  {
+    "name": "Simon Tonkin | MPM",
+    "current_elo": 1479,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-04-17 20:51",
+        "timestamp": 1776459084.0,
+        "race_name": "Round 3: Nurburgring 24H",
+        "elo_change": -21.1,
+        "new_elo": 1479
+      }
+    ]
+  },
+  {
+    "name": "Delmar Klymenko",
+    "current_elo": 1479,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-04-17 20:51",
+        "timestamp": 1776459084.0,
+        "race_name": "Round 3: Nurburgring 24H",
+        "elo_change": -21.1,
+        "new_elo": 1479
+      }
+    ]
+  },
+  {
+    "name": "Oleg Slavuta",
+    "current_elo": 1479,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-04-17 20:51",
+        "timestamp": 1776459084.0,
+        "race_name": "Round 3: Nurburgring 24H",
+        "elo_change": -21.1,
+        "new_elo": 1479
+      }
+    ]
+  },
+  {
+    "name": "Giorgio Ferroci",
+    "current_elo": 1479,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-04-17 20:51",
+        "timestamp": 1776459084.0,
+        "race_name": "Round 3: Nurburgring 24H",
+        "elo_change": -21.1,
+        "new_elo": 1479
+      }
+    ]
+  },
+  {
+    "name": "Evaldas Altukavicius",
+    "current_elo": 1479,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-04-17 20:51",
+        "timestamp": 1776459084.0,
+        "race_name": "Round 3: Nurburgring 24H",
+        "elo_change": -21.1,
+        "new_elo": 1479
+      }
+    ]
+  },
+  {
+    "name": "Kevin Kunschner",
+    "current_elo": 1479,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-04-17 20:51",
+        "timestamp": 1776459084.0,
+        "race_name": "Round 3: Nurburgring 24H",
+        "elo_change": -21.1,
+        "new_elo": 1479
+      }
+    ]
+  },
+  {
+    "name": "Mikołaj Krysiak",
+    "current_elo": 1479,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-04-17 20:51",
+        "timestamp": 1776459084.0,
+        "race_name": "Round 3: Nurburgring 24H",
+        "elo_change": -21.1,
+        "new_elo": 1479
+      }
+    ]
+  },
+  {
+    "name": "Dmitryi Komaristyi",
+    "current_elo": 1479,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-04-17 20:51",
+        "timestamp": 1776459084.0,
+        "race_name": "Round 3: Nurburgring 24H",
+        "elo_change": -21.1,
+        "new_elo": 1479
+      }
+    ]
+  },
+  {
+    "name": "Matthew Whiteley",
+    "current_elo": 1479,
+    "races_completed": 2,
+    "history": [
+      {
+        "date": "2026-05-01 20:34",
+        "timestamp": 1777667696.0,
+        "race_name": "Round 5: Donington",
+        "elo_change": -17.2,
+        "new_elo": 1483
+      },
+      {
+        "date": "2026-06-09 19:39",
+        "timestamp": 1781033974.0,
+        "race_name": "Round 19: Cota",
+        "elo_change": -3.7,
+        "new_elo": 1479
+      }
+    ]
+  },
+  {
+    "name": "Emil vRS",
+    "current_elo": 1479,
+    "races_completed": 2,
+    "history": [
+      {
+        "date": "2026-05-01 21:33",
+        "timestamp": 1777671187.0,
+        "race_name": "Round 6: Snetterton",
+        "elo_change": -10.6,
+        "new_elo": 1489
+      },
+      {
+        "date": "2026-05-01 21:33",
+        "timestamp": 1777671187.0,
+        "race_name": "Round 6: Snetterton",
+        "elo_change": -10.6,
+        "new_elo": 1479
+      }
+    ]
+  },
+  {
+    "name": "Danil kolbasenko",
+    "current_elo": 1479,
+    "races_completed": 6,
+    "history": [
+      {
+        "date": "2026-05-19 09:12",
+        "timestamp": 1779181920.0,
+        "race_name": "Round 8: Kyalami",
+        "elo_change": 13.6,
+        "new_elo": 1514
+      },
+      {
+        "date": "2026-05-19 09:12",
+        "timestamp": 1779181926.0,
+        "race_name": "Round 9: Mount Panorama",
+        "elo_change": -17.0,
+        "new_elo": 1497
+      },
+      {
+        "date": "2026-05-19 09:12",
+        "timestamp": 1779181931.0,
+        "race_name": "Round 10: Suzuka",
+        "elo_change": 21.6,
+        "new_elo": 1518
+      },
+      {
+        "date": "2026-05-19 09:12",
+        "timestamp": 1779181937.0,
+        "race_name": "Round 11: Red Bull Ring",
+        "elo_change": 1.6,
+        "new_elo": 1520
+      },
+      {
+        "date": "2026-07-31 20:46",
+        "timestamp": 1785530770.0,
+        "race_name": "British Classic",
+        "elo_change": -9.9,
+        "new_elo": 1510
+      },
+      {
+        "date": "2026-08-14 20:59",
+        "timestamp": 1786741159.0,
+        "race_name": "Season Finale",
+        "elo_change": -30.8,
+        "new_elo": 1479
+      }
+    ]
+  },
+  {
+    "name": "karl l",
+    "current_elo": 1479,
+    "races_completed": 3,
+    "history": [
+      {
+        "date": "2026-05-22 20:59",
+        "timestamp": 1779483574.0,
+        "race_name": "Round 12: Nurburgring 24H",
+        "elo_change": -11.7,
+        "new_elo": 1488
+      },
+      {
+        "date": "2026-05-22 20:59",
+        "timestamp": 1779483574.0,
+        "race_name": "Round 12: Nurburgring 24H",
+        "elo_change": -11.7,
+        "new_elo": 1477
+      },
+      {
+        "date": "2026-06-24 14:40",
+        "timestamp": 1782312007.0,
+        "race_name": "Round 22: Nurburgring 24H",
+        "elo_change": 2.5,
+        "new_elo": 1479
+      }
+    ]
+  },
+  {
+    "name": "Al Parky",
+    "current_elo": 1479,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-07-24 20:39",
+        "timestamp": 1784925556.0,
+        "race_name": "Endurance Showcase",
+        "elo_change": -21.3,
+        "new_elo": 1479
+      }
+    ]
+  },
+  {
+    "name": "Jonathon Moon",
+    "current_elo": 1479,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-08-07 19:38",
+        "timestamp": 1786131481.0,
+        "race_name": "Porsche Cup Mini-Champ - Race 1",
+        "elo_change": -21.2,
+        "new_elo": 1479
+      }
+    ]
+  },
+  {
+    "name": "D Claire [SL]",
+    "current_elo": 1478,
+    "races_completed": 2,
+    "history": [
+      {
+        "date": "2026-05-08 21:02",
+        "timestamp": 1778274129.0,
+        "race_name": "Round 7: Nurburgring 24H",
+        "elo_change": -16.0,
+        "new_elo": 1484
+      },
+      {
+        "date": "2026-05-22 20:59",
+        "timestamp": 1779483574.0,
+        "race_name": "Round 12: Nurburgring 24H",
+        "elo_change": -5.6,
+        "new_elo": 1478
+      }
+    ]
+  },
+  {
+    "name": "Ruby Sahibgareev",
+    "current_elo": 1478,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-06-09 19:39",
+        "timestamp": 1781033974.0,
+        "race_name": "Round 18: Laguna Seca",
+        "elo_change": -21.7,
+        "new_elo": 1478
+      }
+    ]
+  },
+  {
+    "name": "Jin Hayate",
+    "current_elo": 1478,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-06-09 19:39",
+        "timestamp": 1781033974.0,
+        "race_name": "Round 18: Laguna Seca",
+        "elo_change": -21.7,
+        "new_elo": 1478
+      }
+    ]
+  },
+  {
+    "name": "Nei Mak",
+    "current_elo": 1478,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-06-09 19:39",
+        "timestamp": 1781033974.0,
+        "race_name": "Round 18: Laguna Seca",
+        "elo_change": -21.7,
+        "new_elo": 1478
+      }
+    ]
+  },
+  {
+    "name": "Miguel Montero",
+    "current_elo": 1478,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-06-09 19:39",
+        "timestamp": 1781033974.0,
+        "race_name": "Round 18: Laguna Seca",
+        "elo_change": -21.7,
+        "new_elo": 1478
+      }
+    ]
+  },
+  {
+    "name": "Alexej Leborg",
+    "current_elo": 1478,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-06-09 19:39",
+        "timestamp": 1781033974.0,
+        "race_name": "Round 18: Laguna Seca",
+        "elo_change": -21.7,
+        "new_elo": 1478
+      }
+    ]
+  },
+  {
+    "name": "Oida Voda",
+    "current_elo": 1478,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-06-09 19:39",
+        "timestamp": 1781033974.0,
+        "race_name": "Round 18: Laguna Seca",
+        "elo_change": -21.7,
+        "new_elo": 1478
+      }
+    ]
+  },
+  {
+    "name": "Tanis Halfblood",
+    "current_elo": 1478,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-06-09 19:39",
+        "timestamp": 1781033974.0,
+        "race_name": "Round 18: Laguna Seca",
+        "elo_change": -21.7,
+        "new_elo": 1478
+      }
+    ]
+  },
+  {
+    "name": "a spider",
+    "current_elo": 1478,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-06-09 19:39",
+        "timestamp": 1781033974.0,
+        "race_name": "Round 18: Laguna Seca",
+        "elo_change": -21.7,
+        "new_elo": 1478
+      }
+    ]
+  },
+  {
+    "name": "American Kiwi",
+    "current_elo": 1478,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-06-09 19:39",
+        "timestamp": 1781033974.0,
+        "race_name": "Round 18: Laguna Seca",
+        "elo_change": -21.7,
+        "new_elo": 1478
+      }
+    ]
+  },
+  {
+    "name": "Thomas Stanley",
+    "current_elo": 1478,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-06-09 19:39",
+        "timestamp": 1781033974.0,
+        "race_name": "Round 18: Laguna Seca",
+        "elo_change": -21.7,
+        "new_elo": 1478
+      }
+    ]
+  },
+  {
+    "name": "Pares y Nones",
+    "current_elo": 1478,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-06-09 19:39",
+        "timestamp": 1781033974.0,
+        "race_name": "Round 18: Laguna Seca",
+        "elo_change": -21.7,
+        "new_elo": 1478
+      }
+    ]
+  },
+  {
+    "name": "pedro ribeiro",
+    "current_elo": 1478,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-06-09 19:39",
+        "timestamp": 1781033974.0,
+        "race_name": "Round 18: Laguna Seca",
+        "elo_change": -21.7,
+        "new_elo": 1478
+      }
+    ]
+  },
+  {
+    "name": "AK 47",
+    "current_elo": 1478,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-06-09 19:39",
+        "timestamp": 1781033974.0,
+        "race_name": "Round 18: Laguna Seca",
+        "elo_change": -21.7,
+        "new_elo": 1478
+      }
+    ]
+  },
+  {
+    "name": "Berti Manuele",
+    "current_elo": 1478,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-06-09 19:39",
+        "timestamp": 1781033974.0,
+        "race_name": "Round 18: Laguna Seca",
+        "elo_change": -21.7,
+        "new_elo": 1478
+      }
+    ]
+  },
+  {
+    "name": "D Talens",
+    "current_elo": 1478,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-06-09 19:39",
+        "timestamp": 1781033974.0,
+        "race_name": "Round 18: Laguna Seca",
+        "elo_change": -21.7,
+        "new_elo": 1478
+      }
+    ]
+  },
+  {
+    "name": "K Ömer",
+    "current_elo": 1478,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-07-10 21:01",
+        "timestamp": 1783717269.0,
+        "race_name": "Season Opener",
+        "elo_change": -22.1,
+        "new_elo": 1478
+      }
+    ]
+  },
+  {
+    "name": "Kamil Utku",
+    "current_elo": 1478,
+    "races_completed": 2,
+    "history": [
+      {
+        "date": "2026-07-17 21:07",
+        "timestamp": 1784322448.0,
+        "race_name": "TCX Mini-Champ - Race 3",
+        "elo_change": -14.0,
+        "new_elo": 1486
+      },
+      {
+        "date": "2026-08-07 19:38",
+        "timestamp": 1786131481.0,
+        "race_name": "Porsche Cup Mini-Champ - Race 1",
+        "elo_change": -7.8,
+        "new_elo": 1478
+      }
+    ]
+  },
+  {
+    "name": "Burak Gökçal",
+    "current_elo": 1476,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-07-24 20:39",
+        "timestamp": 1784925556.0,
+        "race_name": "Endurance Showcase",
+        "elo_change": -24.3,
+        "new_elo": 1476
+      }
+    ]
+  },
+  {
+    "name": "kyle guy",
+    "current_elo": 1475,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-05-01 21:33",
+        "timestamp": 1777671187.0,
+        "race_name": "Round 6: Snetterton",
+        "elo_change": -24.8,
+        "new_elo": 1475
+      }
+    ]
+  },
+  {
+    "name": "David Boulbes",
+    "current_elo": 1475,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-05-01 21:33",
+        "timestamp": 1777671187.0,
+        "race_name": "Round 6: Snetterton",
+        "elo_change": -24.8,
+        "new_elo": 1475
+      }
+    ]
+  },
+  {
+    "name": "D Cal",
+    "current_elo": 1475,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-05-01 21:33",
+        "timestamp": 1777671187.0,
+        "race_name": "Round 6: Snetterton",
+        "elo_change": -24.8,
+        "new_elo": 1475
+      }
+    ]
+  },
+  {
+    "name": "Sebi Popp",
+    "current_elo": 1475,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-05-01 21:33",
+        "timestamp": 1777671187.0,
+        "race_name": "Round 6: Snetterton",
+        "elo_change": -24.8,
+        "new_elo": 1475
+      }
+    ]
+  },
+  {
+    "name": "Ogulcan Sunel",
+    "current_elo": 1475,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-05-01 21:33",
+        "timestamp": 1777671187.0,
+        "race_name": "Round 6: Snetterton",
+        "elo_change": -24.8,
+        "new_elo": 1475
+      }
+    ]
+  },
+  {
+    "name": "JF Jonot",
+    "current_elo": 1475,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-05-01 21:33",
+        "timestamp": 1777671187.0,
+        "race_name": "Round 6: Snetterton",
+        "elo_change": -24.8,
+        "new_elo": 1475
+      }
+    ]
+  },
+  {
+    "name": "Leo Ganser",
+    "current_elo": 1475,
+    "races_completed": 2,
+    "history": [
+      {
+        "date": "2026-05-19 09:12",
+        "timestamp": 1779181931.0,
+        "race_name": "Round 10: Suzuka",
+        "elo_change": 0.2,
+        "new_elo": 1500
+      },
+      {
+        "date": "2026-05-19 09:12",
+        "timestamp": 1779181937.0,
+        "race_name": "Round 11: Red Bull Ring",
+        "elo_change": -25.3,
+        "new_elo": 1475
+      }
+    ]
+  },
+  {
+    "name": "Dylan Rubin [RTPB]",
+    "current_elo": 1475,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-05-19 09:12",
+        "timestamp": 1779181937.0,
+        "race_name": "Round 11: Red Bull Ring",
+        "elo_change": -25.3,
+        "new_elo": 1475
+      }
+    ]
+  },
+  {
+    "name": "Pedro Ebrahim",
+    "current_elo": 1475,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-05-19 09:12",
+        "timestamp": 1779181937.0,
+        "race_name": "Round 11: Red Bull Ring",
+        "elo_change": -25.3,
+        "new_elo": 1475
+      }
+    ]
+  },
+  {
+    "name": "Jacob Weasel",
+    "current_elo": 1475,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-05-19 09:12",
+        "timestamp": 1779181937.0,
+        "race_name": "Round 11: Red Bull Ring",
+        "elo_change": -25.3,
+        "new_elo": 1475
+      }
+    ]
+  },
+  {
+    "name": "M Shimithiz | ZMT",
+    "current_elo": 1475,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-05-19 09:12",
+        "timestamp": 1779181937.0,
+        "race_name": "Round 11: Red Bull Ring",
+        "elo_change": -25.3,
+        "new_elo": 1475
+      }
+    ]
+  },
+  {
+    "name": "Andrea Cimini | TSS",
+    "current_elo": 1475,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-05-19 09:12",
+        "timestamp": 1779181937.0,
+        "race_name": "Round 11: Red Bull Ring",
+        "elo_change": -25.3,
+        "new_elo": 1475
+      }
+    ]
+  },
+  {
+    "name": "A Kondrashov",
+    "current_elo": 1475,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-07-10 21:01",
+        "timestamp": 1783717269.0,
+        "race_name": "Season Opener",
+        "elo_change": -25.1,
+        "new_elo": 1475
+      }
+    ]
+  },
+  {
+    "name": "Leon Sachse | POWERCUT",
+    "current_elo": 1474,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-04-03 21:09",
+        "timestamp": 1775250551.0,
+        "race_name": "Round 1: Nurburgring 24H",
+        "elo_change": -25.5,
+        "new_elo": 1474
+      }
+    ]
+  },
+  {
+    "name": "Karl Zwiebel",
+    "current_elo": 1474,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-04-03 21:09",
+        "timestamp": 1775250551.0,
+        "race_name": "Round 1: Nurburgring 24H",
+        "elo_change": -25.5,
+        "new_elo": 1474
+      }
+    ]
+  },
+  {
+    "name": "Dustin Cohen",
+    "current_elo": 1474,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-04-03 21:09",
+        "timestamp": 1775250551.0,
+        "race_name": "Round 1: Nurburgring 24H",
+        "elo_change": -25.5,
+        "new_elo": 1474
+      }
+    ]
+  },
+  {
+    "name": "HM Flippi",
+    "current_elo": 1474,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-04-03 21:09",
+        "timestamp": 1775250551.0,
+        "race_name": "Round 1: Nurburgring 24H",
+        "elo_change": -25.5,
+        "new_elo": 1474
+      }
+    ]
+  },
+  {
+    "name": "Danneille Falconete",
+    "current_elo": 1474,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-04-03 21:09",
+        "timestamp": 1775250551.0,
+        "race_name": "Round 1: Nurburgring 24H",
+        "elo_change": -25.5,
+        "new_elo": 1474
+      }
+    ]
+  },
+  {
+    "name": "Aka Kepler | SOLARIS",
+    "current_elo": 1474,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-04-03 21:09",
+        "timestamp": 1775250551.0,
+        "race_name": "Round 1: Nurburgring 24H",
+        "elo_change": -25.5,
+        "new_elo": 1474
+      }
+    ]
+  },
+  {
+    "name": "Thomas Dupercijn",
+    "current_elo": 1474,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-04-03 21:09",
+        "timestamp": 1775250551.0,
+        "race_name": "Round 1: Nurburgring 24H",
+        "elo_change": -25.5,
+        "new_elo": 1474
+      }
+    ]
+  },
+  {
+    "name": "Dominik K",
+    "current_elo": 1474,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-04-03 21:09",
+        "timestamp": 1775250551.0,
+        "race_name": "Round 1: Nurburgring 24H",
+        "elo_change": -25.5,
+        "new_elo": 1474
+      }
+    ]
+  },
+  {
+    "name": "Thomas Ehrentraut",
+    "current_elo": 1474,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-04-03 21:09",
+        "timestamp": 1775250551.0,
+        "race_name": "Round 1: Nurburgring 24H",
+        "elo_change": -25.5,
+        "new_elo": 1474
+      }
+    ]
+  },
+  {
+    "name": "Vasilii Gyuliaev",
+    "current_elo": 1474,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-04-03 21:09",
+        "timestamp": 1775250551.0,
+        "race_name": "Round 1: Nurburgring 24H",
+        "elo_change": -25.5,
+        "new_elo": 1474
+      }
+    ]
+  },
+  {
+    "name": "Baruch Montana",
+    "current_elo": 1474,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-04-03 21:09",
+        "timestamp": 1775250551.0,
+        "race_name": "Round 1: Nurburgring 24H",
+        "elo_change": -25.5,
+        "new_elo": 1474
+      }
+    ]
+  },
+  {
+    "name": "USB ke12",
+    "current_elo": 1474,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-04-03 21:09",
+        "timestamp": 1775250551.0,
+        "race_name": "Round 1: Nurburgring 24H",
+        "elo_change": -25.5,
+        "new_elo": 1474
+      }
+    ]
+  },
+  {
+    "name": "Christer Aspen",
+    "current_elo": 1474,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-04-03 21:09",
+        "timestamp": 1775250551.0,
+        "race_name": "Round 1: Nurburgring 24H",
+        "elo_change": -25.5,
+        "new_elo": 1474
+      }
+    ]
+  },
+  {
+    "name": "Patrick Piel",
+    "current_elo": 1474,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-04-03 21:09",
+        "timestamp": 1775250551.0,
+        "race_name": "Round 1: Nurburgring 24H",
+        "elo_change": -25.5,
+        "new_elo": 1474
+      }
+    ]
+  },
+  {
+    "name": "Péter Labát",
+    "current_elo": 1474,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-04-03 21:09",
+        "timestamp": 1775250551.0,
+        "race_name": "Round 1: Nurburgring 24H",
+        "elo_change": -25.5,
+        "new_elo": 1474
+      }
+    ]
+  },
+  {
+    "name": "Kacper Dąbrowski",
+    "current_elo": 1474,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-04-03 21:09",
+        "timestamp": 1775250551.0,
+        "race_name": "Round 1: Nurburgring 24H",
+        "elo_change": -25.5,
+        "new_elo": 1474
+      }
+    ]
+  },
+  {
+    "name": "Alan Macleod",
+    "current_elo": 1474,
+    "races_completed": 2,
+    "history": [
+      {
+        "date": "2026-05-19 09:12",
+        "timestamp": 1779181920.0,
+        "race_name": "Round 8: Kyalami",
+        "elo_change": -10.4,
+        "new_elo": 1490
+      },
+      {
+        "date": "2026-05-19 09:12",
+        "timestamp": 1779181926.0,
+        "race_name": "Round 9: Mount Panorama",
+        "elo_change": -15.8,
+        "new_elo": 1474
+      }
+    ]
+  },
+  {
+    "name": "Riccardo Cazzulo",
+    "current_elo": 1474,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-05-19 09:12",
+        "timestamp": 1779181931.0,
+        "race_name": "Round 10: Suzuka",
+        "elo_change": -26.1,
+        "new_elo": 1474
+      }
+    ]
+  },
+  {
+    "name": "Edoardo Protto",
+    "current_elo": 1474,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-05-19 09:12",
+        "timestamp": 1779181931.0,
+        "race_name": "Round 10: Suzuka",
+        "elo_change": -26.1,
+        "new_elo": 1474
+      }
+    ]
+  },
+  {
+    "name": "Callum Ferguson",
+    "current_elo": 1474,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-05-19 09:12",
+        "timestamp": 1779181931.0,
+        "race_name": "Round 10: Suzuka",
+        "elo_change": -26.1,
+        "new_elo": 1474
+      }
+    ]
+  },
+  {
+    "name": "Luc Sanf",
+    "current_elo": 1474,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-07-31 20:46",
+        "timestamp": 1785530770.0,
+        "race_name": "British Classic",
+        "elo_change": -25.9,
+        "new_elo": 1474
+      }
+    ]
+  },
+  {
+    "name": "dj bobo",
+    "current_elo": 1473,
+    "races_completed": 2,
+    "history": [
+      {
+        "date": "2026-04-17 20:51",
+        "timestamp": 1776459084.0,
+        "race_name": "Round 3: Nurburgring 24H",
+        "elo_change": -21.1,
+        "new_elo": 1479
+      },
+      {
+        "date": "2026-05-22 20:59",
+        "timestamp": 1779483574.0,
+        "race_name": "Round 12: Nurburgring 24H",
+        "elo_change": -5.5,
+        "new_elo": 1473
+      }
+    ]
+  },
+  {
+    "name": "Batuhan Tehneldere",
+    "current_elo": 1473,
+    "races_completed": 2,
+    "history": [
+      {
+        "date": "2026-06-09 19:39",
+        "timestamp": 1781033974.0,
+        "race_name": "Round 17: Watkins Glen",
+        "elo_change": -15.1,
+        "new_elo": 1485
+      },
+      {
+        "date": "2026-06-09 19:39",
+        "timestamp": 1781033974.0,
+        "race_name": "Round 19: Cota",
+        "elo_change": -12.3,
+        "new_elo": 1473
+      }
+    ]
+  },
+  {
+    "name": "Niccolò Monni",
+    "current_elo": 1473,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-08-07 19:38",
+        "timestamp": 1786131481.0,
+        "race_name": "Porsche Cup Mini-Champ - Race 1",
+        "elo_change": -27.2,
+        "new_elo": 1473
+      }
+    ]
+  },
+  {
+    "name": "David Desmet",
+    "current_elo": 1473,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-08-14 20:59",
+        "timestamp": 1786741159.0,
+        "race_name": "Season Finale",
+        "elo_change": -26.8,
+        "new_elo": 1473
+      }
+    ]
+  },
+  {
+    "name": "Dave Keulen",
+    "current_elo": 1472,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-05-01 19:39",
+        "timestamp": 1777664372.0,
+        "race_name": "Round 4: Brands Hatch",
+        "elo_change": -28.4,
+        "new_elo": 1472
+      }
+    ]
+  },
+  {
+    "name": "Michael McCray",
+    "current_elo": 1472,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-05-01 19:39",
+        "timestamp": 1777664372.0,
+        "race_name": "Round 4: Brands Hatch",
+        "elo_change": -28.4,
+        "new_elo": 1472
+      }
+    ]
+  },
+  {
+    "name": "Loud Acoustique",
+    "current_elo": 1472,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-05-01 19:39",
+        "timestamp": 1777664372.0,
+        "race_name": "Round 4: Brands Hatch",
+        "elo_change": -28.4,
+        "new_elo": 1472
+      }
+    ]
+  },
+  {
+    "name": "Antonio Oliveira",
+    "current_elo": 1472,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-05-01 19:39",
+        "timestamp": 1777664372.0,
+        "race_name": "Round 4: Brands Hatch",
+        "elo_change": -28.4,
+        "new_elo": 1472
+      }
+    ]
+  },
+  {
+    "name": "Marcos Mazzocchi",
+    "current_elo": 1472,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-05-01 19:39",
+        "timestamp": 1777664372.0,
+        "race_name": "Round 4: Brands Hatch",
+        "elo_change": -28.4,
+        "new_elo": 1472
+      }
+    ]
+  },
+  {
+    "name": "Nicholas Franklin",
+    "current_elo": 1472,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-05-01 19:39",
+        "timestamp": 1777664372.0,
+        "race_name": "Round 4: Brands Hatch",
+        "elo_change": -28.4,
+        "new_elo": 1472
+      }
+    ]
+  },
+  {
+    "name": "John Eraser",
+    "current_elo": 1472,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-05-01 19:39",
+        "timestamp": 1777664372.0,
+        "race_name": "Round 4: Brands Hatch",
+        "elo_change": -28.4,
+        "new_elo": 1472
+      }
+    ]
+  },
+  {
+    "name": "Sjoerd Kooistra",
+    "current_elo": 1472,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-05-01 19:39",
+        "timestamp": 1777664372.0,
+        "race_name": "Round 4: Brands Hatch",
+        "elo_change": -28.4,
+        "new_elo": 1472
+      }
+    ]
+  },
+  {
+    "name": "Mykhailo Yanchuk",
+    "current_elo": 1472,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-07-10 21:01",
+        "timestamp": 1783717269.0,
+        "race_name": "Season Opener",
+        "elo_change": -28.1,
+        "new_elo": 1472
+      }
+    ]
+  },
+  {
+    "name": "A Resolute",
+    "current_elo": 1471,
+    "races_completed": 3,
+    "history": [
+      {
+        "date": "2026-05-22 20:59",
+        "timestamp": 1779483574.0,
+        "race_name": "Round 12: Nurburgring 24H",
+        "elo_change": -5.9,
+        "new_elo": 1494
+      },
+      {
+        "date": "2026-06-02 09:14",
+        "timestamp": 1780391666.0,
+        "race_name": "Round 14: Hungaroring",
+        "elo_change": -13.2,
+        "new_elo": 1481
+      },
+      {
+        "date": "2026-06-24 14:40",
+        "timestamp": 1782312007.0,
+        "race_name": "Round 22: Nurburgring 24H",
+        "elo_change": -9.9,
+        "new_elo": 1471
+      }
+    ]
+  },
+  {
+    "name": "Neo Nilsson",
+    "current_elo": 1471,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-07-31 20:46",
+        "timestamp": 1785530770.0,
+        "race_name": "British Classic",
+        "elo_change": -28.9,
+        "new_elo": 1471
+      }
+    ]
+  },
+  {
+    "name": "R. Scharke",
+    "current_elo": 1470,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-07-24 20:39",
+        "timestamp": 1784925556.0,
+        "race_name": "Endurance Showcase",
+        "elo_change": -30.3,
+        "new_elo": 1470
+      }
+    ]
+  },
+  {
+    "name": "Vuk Pikić",
+    "current_elo": 1470,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-08-07 19:38",
+        "timestamp": 1786131481.0,
+        "race_name": "Porsche Cup Mini-Champ - Race 1",
+        "elo_change": -30.2,
+        "new_elo": 1470
+      }
+    ]
+  },
+  {
+    "name": "MarqueZ Hùmmels",
+    "current_elo": 1469,
+    "races_completed": 2,
+    "history": [
+      {
+        "date": "2026-05-19 09:12",
+        "timestamp": 1779181937.0,
+        "race_name": "Round 11: Red Bull Ring",
+        "elo_change": -25.3,
+        "new_elo": 1475
+      },
+      {
+        "date": "2026-05-22 20:59",
+        "timestamp": 1779483574.0,
+        "race_name": "Round 12: Nurburgring 24H",
+        "elo_change": -5.4,
+        "new_elo": 1469
+      }
+    ]
+  },
+  {
+    "name": "Luwie Franco",
+    "current_elo": 1468,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-07-31 20:46",
+        "timestamp": 1785530770.0,
+        "race_name": "British Classic",
+        "elo_change": -31.9,
+        "new_elo": 1468
+      }
+    ]
+  },
+  {
+    "name": "RSA Scott",
+    "current_elo": 1466,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-05-19 09:12",
+        "timestamp": 1779181920.0,
+        "race_name": "Round 8: Kyalami",
+        "elo_change": -34.3,
+        "new_elo": 1466
+      }
+    ]
+  },
+  {
+    "name": "Enzo Soares",
+    "current_elo": 1466,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-05-19 09:12",
+        "timestamp": 1779181920.0,
+        "race_name": "Round 8: Kyalami",
+        "elo_change": -34.3,
+        "new_elo": 1466
+      }
+    ]
+  },
+  {
+    "name": "Luc Vanbutzeele",
+    "current_elo": 1466,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-05-19 09:12",
+        "timestamp": 1779181920.0,
+        "race_name": "Round 8: Kyalami",
+        "elo_change": -34.3,
+        "new_elo": 1466
+      }
+    ]
+  },
+  {
+    "name": "Jeroen Alferink",
+    "current_elo": 1466,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-05-19 09:12",
+        "timestamp": 1779181920.0,
+        "race_name": "Round 8: Kyalami",
+        "elo_change": -34.3,
+        "new_elo": 1466
+      }
+    ]
+  },
+  {
+    "name": "nik vrabl",
+    "current_elo": 1466,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-05-19 09:12",
+        "timestamp": 1779181920.0,
+        "race_name": "Round 8: Kyalami",
+        "elo_change": -34.3,
+        "new_elo": 1466
+      }
+    ]
+  },
+  {
+    "name": "Danijel Stanojevic",
+    "current_elo": 1466,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-05-19 09:12",
+        "timestamp": 1779181920.0,
+        "race_name": "Round 8: Kyalami",
+        "elo_change": -34.3,
+        "new_elo": 1466
+      }
+    ]
+  },
+  {
+    "name": "Black Falcon Racing / Team NOS",
+    "current_elo": 1466,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-05-19 09:12",
+        "timestamp": 1779181920.0,
+        "race_name": "Round 8: Kyalami",
+        "elo_change": -34.3,
+        "new_elo": 1466
+      }
+    ]
+  },
+  {
+    "name": "Vincent Vince",
+    "current_elo": 1466,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-05-19 09:12",
+        "timestamp": 1779181920.0,
+        "race_name": "Round 8: Kyalami",
+        "elo_change": -34.3,
+        "new_elo": 1466
+      }
+    ]
+  },
+  {
+    "name": "Ruslan Vlasov",
+    "current_elo": 1466,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-05-19 09:12",
+        "timestamp": 1779181920.0,
+        "race_name": "Round 8: Kyalami",
+        "elo_change": -34.3,
+        "new_elo": 1466
+      }
+    ]
+  },
+  {
+    "name": "Alain Bolha",
+    "current_elo": 1466,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-05-19 09:12",
+        "timestamp": 1779181920.0,
+        "race_name": "Round 8: Kyalami",
+        "elo_change": -34.3,
+        "new_elo": 1466
+      }
+    ]
+  },
+  {
+    "name": "jolan skiba",
+    "current_elo": 1466,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-05-19 09:12",
+        "timestamp": 1779181920.0,
+        "race_name": "Round 8: Kyalami",
+        "elo_change": -34.3,
+        "new_elo": 1466
+      }
+    ]
+  },
+  {
+    "name": "Hans Grubher",
+    "current_elo": 1466,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-07-10 21:01",
+        "timestamp": 1783717269.0,
+        "race_name": "Season Opener",
+        "elo_change": -34.1,
+        "new_elo": 1466
+      }
+    ]
+  },
+  {
+    "name": "Mathieu Perreault",
+    "current_elo": 1461,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-07-24 20:39",
+        "timestamp": 1784925556.0,
+        "race_name": "Endurance Showcase",
+        "elo_change": -39.3,
+        "new_elo": 1461
+      }
+    ]
+  },
+  {
+    "name": "Valeriy Lubimtcev",
+    "current_elo": 1459,
+    "races_completed": 3,
+    "history": [
+      {
+        "date": "2026-04-17 20:51",
+        "timestamp": 1776459084.0,
+        "race_name": "Round 3: Nurburgring 24H",
+        "elo_change": -21.1,
+        "new_elo": 1479
+      },
+      {
+        "date": "2026-05-08 21:02",
+        "timestamp": 1778274129.0,
+        "race_name": "Round 7: Nurburgring 24H",
+        "elo_change": -14.9,
+        "new_elo": 1464
+      },
+      {
+        "date": "2026-05-22 20:59",
+        "timestamp": 1779483574.0,
+        "race_name": "Round 12: Nurburgring 24H",
+        "elo_change": -5.2,
+        "new_elo": 1459
+      }
+    ]
+  },
+  {
+    "name": "Jan Tyc",
+    "current_elo": 1459,
+    "races_completed": 2,
+    "history": [
+      {
+        "date": "2026-05-19 09:12",
+        "timestamp": 1779181931.0,
+        "race_name": "Round 10: Suzuka",
+        "elo_change": -26.1,
+        "new_elo": 1474
+      },
+      {
+        "date": "2026-06-02 09:14",
+        "timestamp": 1780391666.0,
+        "race_name": "Round 13: Spa",
+        "elo_change": -14.6,
+        "new_elo": 1459
+      }
+    ]
+  },
+  {
+    "name": "Andrea Genovese",
+    "current_elo": 1458,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-07-24 20:39",
+        "timestamp": 1784925556.0,
+        "race_name": "Endurance Showcase",
+        "elo_change": -42.3,
+        "new_elo": 1458
+      }
+    ]
+  },
+  {
+    "name": "Pat Noodle",
+    "current_elo": 1457,
+    "races_completed": 2,
+    "history": [
+      {
+        "date": "2026-04-03 21:09",
+        "timestamp": 1775250551.0,
+        "race_name": "Round 1: Nurburgring 24H",
+        "elo_change": -25.5,
+        "new_elo": 1474
+      },
+      {
+        "date": "2026-04-10 20:37",
+        "timestamp": 1775853464.0,
+        "race_name": "Round 2: Brands Hatch",
+        "elo_change": -17.5,
+        "new_elo": 1457
+      }
+    ]
+  },
+  {
+    "name": "Nigel Eames | ZR",
+    "current_elo": 1457,
+    "races_completed": 2,
+    "history": [
+      {
+        "date": "2026-05-01 19:39",
+        "timestamp": 1777664372.0,
+        "race_name": "Round 4: Brands Hatch",
+        "elo_change": -21.6,
+        "new_elo": 1478
+      },
+      {
+        "date": "2026-05-01 19:39",
+        "timestamp": 1777664372.0,
+        "race_name": "Round 4: Brands Hatch",
+        "elo_change": -21.6,
+        "new_elo": 1457
+      }
+    ]
+  },
+  {
+    "name": "Max Meier",
+    "current_elo": 1456,
+    "races_completed": 2,
+    "history": [
+      {
+        "date": "2026-07-24 20:39",
+        "timestamp": 1784925556.0,
+        "race_name": "Endurance Showcase",
+        "elo_change": -12.3,
+        "new_elo": 1488
+      },
+      {
+        "date": "2026-08-14 20:59",
+        "timestamp": 1786741159.0,
+        "race_name": "Season Finale",
+        "elo_change": -31.5,
+        "new_elo": 1456
+      }
+    ]
+  },
+  {
+    "name": "Jonas Kaufmann",
+    "current_elo": 1454,
+    "races_completed": 4,
+    "history": [
+      {
+        "date": "2026-05-19 09:12",
+        "timestamp": 1779181920.0,
+        "race_name": "Round 8: Kyalami",
+        "elo_change": -34.3,
+        "new_elo": 1466
+      },
+      {
+        "date": "2026-05-19 09:12",
+        "timestamp": 1779181926.0,
+        "race_name": "Round 9: Mount Panorama",
+        "elo_change": 38.4,
+        "new_elo": 1504
+      },
+      {
+        "date": "2026-05-19 09:12",
+        "timestamp": 1779181931.0,
+        "race_name": "Round 10: Suzuka",
+        "elo_change": -26.5,
+        "new_elo": 1478
+      },
+      {
+        "date": "2026-05-19 09:12",
+        "timestamp": 1779181937.0,
+        "race_name": "Round 11: Red Bull Ring",
+        "elo_change": -23.5,
+        "new_elo": 1454
+      }
+    ]
+  },
+  {
+    "name": "Matt Rigby",
+    "current_elo": 1440,
+    "races_completed": 8,
+    "history": [
+      {
+        "date": "2026-04-17 20:51",
+        "timestamp": 1776459084.0,
+        "race_name": "Round 3: Nurburgring 24H",
+        "elo_change": -21.1,
+        "new_elo": 1479
+      },
+      {
+        "date": "2026-05-01 21:33",
+        "timestamp": 1777671187.0,
+        "race_name": "Round 6: Snetterton",
+        "elo_change": -23.2,
+        "new_elo": 1456
+      },
+      {
+        "date": "2026-05-19 09:12",
+        "timestamp": 1779181920.0,
+        "race_name": "Round 8: Kyalami",
+        "elo_change": 8.9,
+        "new_elo": 1465
+      },
+      {
+        "date": "2026-05-19 09:12",
+        "timestamp": 1779181926.0,
+        "race_name": "Round 9: Mount Panorama",
+        "elo_change": -14.5,
+        "new_elo": 1450
+      },
+      {
+        "date": "2026-05-19 09:12",
+        "timestamp": 1779181931.0,
+        "race_name": "Round 10: Suzuka",
+        "elo_change": -22.2,
+        "new_elo": 1428
+      },
+      {
+        "date": "2026-05-19 09:12",
+        "timestamp": 1779181937.0,
+        "race_name": "Round 11: Red Bull Ring",
+        "elo_change": 10.1,
+        "new_elo": 1438
+      },
+      {
+        "date": "2026-06-02 09:14",
+        "timestamp": 1780391666.0,
+        "race_name": "Round 14: Hungaroring",
+        "elo_change": 5.1,
+        "new_elo": 1443
+      },
+      {
+        "date": "2026-06-02 09:14",
+        "timestamp": 1780391666.0,
+        "race_name": "Round 15: Barcelona",
+        "elo_change": -3.2,
+        "new_elo": 1440
+      }
+    ]
+  },
+  {
+    "name": "Ryan mouse driver 95",
+    "current_elo": 1439,
+    "races_completed": 3,
+    "history": [
+      {
+        "date": "2026-04-03 21:09",
+        "timestamp": 1775250551.0,
+        "race_name": "Round 1: Nurburgring 24H",
+        "elo_change": -25.5,
+        "new_elo": 1474
+      },
+      {
+        "date": "2026-04-10 20:37",
+        "timestamp": 1775853464.0,
+        "race_name": "Round 2: Brands Hatch",
+        "elo_change": -17.5,
+        "new_elo": 1457
+      },
+      {
+        "date": "2026-04-17 20:51",
+        "timestamp": 1776459084.0,
+        "race_name": "Round 3: Nurburgring 24H",
+        "elo_change": -18.4,
+        "new_elo": 1439
+      }
+    ]
+  },
+  {
+    "name": "Purple Kelpie",
+    "current_elo": 1439,
+    "races_completed": 6,
+    "history": [
+      {
+        "date": "2026-07-17 19:38",
+        "timestamp": 1784317121.0,
+        "race_name": "TCX Mini-Champ - Race 1",
+        "elo_change": -12.6,
+        "new_elo": 1487
+      },
+      {
+        "date": "2026-07-17 20:22",
+        "timestamp": 1784319723.0,
+        "race_name": "TCX Mini-Champ - Race 2",
+        "elo_change": -11.2,
+        "new_elo": 1476
+      },
+      {
+        "date": "2026-07-17 21:07",
+        "timestamp": 1784322448.0,
+        "race_name": "TCX Mini-Champ - Race 3",
+        "elo_change": -9.8,
+        "new_elo": 1466
+      },
+      {
+        "date": "2026-07-24 20:39",
+        "timestamp": 1784925556.0,
+        "race_name": "Endurance Showcase",
+        "elo_change": -1.9,
+        "new_elo": 1465
+      },
+      {
+        "date": "2026-07-31 20:46",
+        "timestamp": 1785530770.0,
+        "race_name": "British Classic",
+        "elo_change": -19.4,
+        "new_elo": 1445
+      },
+      {
+        "date": "2026-08-14 20:59",
+        "timestamp": 1786741159.0,
+        "race_name": "Season Finale",
+        "elo_change": -6.2,
+        "new_elo": 1439
+      }
+    ]
+  },
+  {
+    "name": "Patrick Anderson",
+    "current_elo": 1437,
+    "races_completed": 2,
+    "history": [
+      {
+        "date": "2026-05-01 21:33",
+        "timestamp": 1777671187.0,
+        "race_name": "Round 6: Snetterton",
+        "elo_change": -31.6,
+        "new_elo": 1468
+      },
+      {
+        "date": "2026-05-01 21:33",
+        "timestamp": 1777671187.0,
+        "race_name": "Round 6: Snetterton",
+        "elo_change": -31.6,
+        "new_elo": 1437
+      }
+    ]
+  },
+  {
+    "name": "Michael Fedichkin",
+    "current_elo": 1436,
+    "races_completed": 2,
+    "history": [
+      {
+        "date": "2026-05-08 21:02",
+        "timestamp": 1778274129.0,
+        "race_name": "Round 7: Nurburgring 24H",
+        "elo_change": -32.0,
+        "new_elo": 1468
+      },
+      {
+        "date": "2026-05-08 21:02",
+        "timestamp": 1778274129.0,
+        "race_name": "Round 7: Nurburgring 24H",
+        "elo_change": -32.0,
+        "new_elo": 1436
+      }
+    ]
+  },
+  {
+    "name": "Artem Nikolaenko",
+    "current_elo": 1436,
+    "races_completed": 2,
+    "history": [
+      {
+        "date": "2026-05-08 21:02",
+        "timestamp": 1778274129.0,
+        "race_name": "Round 7: Nurburgring 24H",
+        "elo_change": -32.0,
+        "new_elo": 1468
+      },
+      {
+        "date": "2026-05-08 21:02",
+        "timestamp": 1778274129.0,
+        "race_name": "Round 7: Nurburgring 24H",
+        "elo_change": -32.0,
+        "new_elo": 1436
+      }
+    ]
+  },
+  {
+    "name": "Jason Keen",
+    "current_elo": 1433,
+    "races_completed": 5,
+    "history": [
+      {
+        "date": "2026-07-17 19:38",
+        "timestamp": 1784317121.0,
+        "race_name": "TCX Mini-Champ - Race 1",
+        "elo_change": -9.6,
+        "new_elo": 1490
+      },
+      {
+        "date": "2026-07-17 20:22",
+        "timestamp": 1784319723.0,
+        "race_name": "TCX Mini-Champ - Race 2",
+        "elo_change": -8.3,
+        "new_elo": 1482
+      },
+      {
+        "date": "2026-07-17 21:07",
+        "timestamp": 1784322448.0,
+        "race_name": "TCX Mini-Champ - Race 3",
+        "elo_change": -4.1,
+        "new_elo": 1478
+      },
+      {
+        "date": "2026-07-24 20:39",
+        "timestamp": 1784925556.0,
+        "race_name": "Endurance Showcase",
+        "elo_change": -30.4,
+        "new_elo": 1448
+      },
+      {
+        "date": "2026-07-31 20:46",
+        "timestamp": 1785530770.0,
+        "race_name": "British Classic",
+        "elo_change": -14.7,
+        "new_elo": 1433
+      }
+    ]
+  },
+  {
+    "name": "Gabrielle Foch",
+    "current_elo": 1431,
+    "races_completed": 2,
+    "history": [
+      {
+        "date": "2026-05-01 20:34",
+        "timestamp": 1777667696.0,
+        "race_name": "Round 5: Donington",
+        "elo_change": -34.4,
+        "new_elo": 1466
+      },
+      {
+        "date": "2026-05-01 20:34",
+        "timestamp": 1777667696.0,
+        "race_name": "Round 5: Donington",
+        "elo_change": -34.4,
+        "new_elo": 1431
+      }
+    ]
+  },
+  {
+    "name": "- RGT-61 | ZR",
+    "current_elo": 1419,
+    "races_completed": 3,
+    "history": [
+      {
+        "date": "2026-05-01 19:39",
+        "timestamp": 1777664372.0,
+        "race_name": "Round 4: Brands Hatch",
+        "elo_change": -33.6,
+        "new_elo": 1466
+      },
+      {
+        "date": "2026-05-01 19:39",
+        "timestamp": 1777664372.0,
+        "race_name": "Round 4: Brands Hatch",
+        "elo_change": -33.6,
+        "new_elo": 1433
+      },
+      {
+        "date": "2026-05-01 20:34",
+        "timestamp": 1777667696.0,
+        "race_name": "Round 5: Donington",
+        "elo_change": -13.6,
+        "new_elo": 1419
+      }
+    ]
+  },
+  {
+    "name": "Maxim Gubin [SL]",
+    "current_elo": 1417,
+    "races_completed": 5,
+    "history": [
+      {
+        "date": "2026-04-17 20:51",
+        "timestamp": 1776459084.0,
+        "race_name": "Round 3: Nurburgring 24H",
+        "elo_change": -21.1,
+        "new_elo": 1479
+      },
+      {
+        "date": "2026-05-08 21:02",
+        "timestamp": 1778274129.0,
+        "race_name": "Round 7: Nurburgring 24H",
+        "elo_change": -14.9,
+        "new_elo": 1464
+      },
+      {
+        "date": "2026-05-19 09:12",
+        "timestamp": 1779181920.0,
+        "race_name": "Round 8: Kyalami",
+        "elo_change": -30.6,
+        "new_elo": 1433
+      },
+      {
+        "date": "2026-06-02 09:14",
+        "timestamp": 1780391666.0,
+        "race_name": "Round 13: Spa",
+        "elo_change": -12.7,
+        "new_elo": 1421
+      },
+      {
+        "date": "2026-06-24 14:40",
+        "timestamp": 1782312007.0,
+        "race_name": "Round 21: Nurburgring 24H",
+        "elo_change": -3.4,
+        "new_elo": 1417
+      }
+    ]
+  },
+  {
+    "name": "Batuhan Demirel",
+    "current_elo": 1405,
+    "races_completed": 3,
+    "history": [
+      {
+        "date": "2026-04-03 21:09",
+        "timestamp": 1775250551.0,
+        "race_name": "Round 1: Nurburgring 24H",
+        "elo_change": -25.5,
+        "new_elo": 1474
+      },
+      {
+        "date": "2026-04-10 20:37",
+        "timestamp": 1775853464.0,
+        "race_name": "Round 2: Brands Hatch",
+        "elo_change": -35.0,
+        "new_elo": 1440
+      },
+      {
+        "date": "2026-04-10 20:37",
+        "timestamp": 1775853464.0,
+        "race_name": "Round 2: Brands Hatch",
+        "elo_change": -35.0,
+        "new_elo": 1405
+      }
+    ]
+  },
+  {
+    "name": "Leonardo Rigon",
+    "current_elo": 1402,
+    "races_completed": 7,
+    "history": [
+      {
+        "date": "2026-05-08 21:02",
+        "timestamp": 1778274129.0,
+        "race_name": "Round 7: Nurburgring 24H",
+        "elo_change": -32.0,
+        "new_elo": 1468
+      },
+      {
+        "date": "2026-05-08 21:02",
+        "timestamp": 1778274129.0,
+        "race_name": "Round 7: Nurburgring 24H",
+        "elo_change": -32.0,
+        "new_elo": 1436
+      },
+      {
+        "date": "2026-05-19 09:12",
+        "timestamp": 1779181920.0,
+        "race_name": "Round 8: Kyalami",
+        "elo_change": 6.1,
+        "new_elo": 1442
+      },
+      {
+        "date": "2026-05-19 09:12",
+        "timestamp": 1779181926.0,
+        "race_name": "Round 9: Mount Panorama",
+        "elo_change": -13.4,
+        "new_elo": 1429
+      },
+      {
+        "date": "2026-05-19 09:12",
+        "timestamp": 1779181931.0,
+        "race_name": "Round 10: Suzuka",
+        "elo_change": 2.2,
+        "new_elo": 1431
+      },
+      {
+        "date": "2026-06-09 19:39",
+        "timestamp": 1781033974.0,
+        "race_name": "Round 18: Laguna Seca",
+        "elo_change": -17.3,
+        "new_elo": 1414
+      },
+      {
+        "date": "2026-07-17 19:38",
+        "timestamp": 1784317121.0,
+        "race_name": "TCX Mini-Champ - Race 1",
+        "elo_change": -11.2,
+        "new_elo": 1402
+      }
+    ]
+  },
+  {
+    "name": "keith paul",
+    "current_elo": 1401,
+    "races_completed": 2,
+    "history": [
+      {
+        "date": "2026-05-01 21:33",
+        "timestamp": 1777671187.0,
+        "race_name": "Round 6: Snetterton",
+        "elo_change": -49.5,
+        "new_elo": 1450
+      },
+      {
+        "date": "2026-05-01 21:33",
+        "timestamp": 1777671187.0,
+        "race_name": "Round 6: Snetterton",
+        "elo_change": -49.5,
+        "new_elo": 1401
+      }
+    ]
+  },
+  {
+    "name": "RM Guess",
+    "current_elo": 1398,
+    "races_completed": 2,
+    "history": [
+      {
+        "date": "2026-04-03 21:09",
+        "timestamp": 1775250551.0,
+        "race_name": "Round 1: Nurburgring 24H",
+        "elo_change": -51.0,
+        "new_elo": 1449
+      },
+      {
+        "date": "2026-04-03 21:09",
+        "timestamp": 1775250551.0,
+        "race_name": "Round 1: Nurburgring 24H",
+        "elo_change": -51.0,
+        "new_elo": 1398
+      }
+    ]
+  },
+  {
+    "name": "S.I. LND | DSR",
+    "current_elo": 1398,
+    "races_completed": 2,
+    "history": [
+      {
+        "date": "2026-04-03 21:09",
+        "timestamp": 1775250551.0,
+        "race_name": "Round 1: Nurburgring 24H",
+        "elo_change": -51.0,
+        "new_elo": 1449
+      },
+      {
+        "date": "2026-04-03 21:09",
+        "timestamp": 1775250551.0,
+        "race_name": "Round 1: Nurburgring 24H",
+        "elo_change": -51.0,
+        "new_elo": 1398
+      }
+    ]
+  }
+]

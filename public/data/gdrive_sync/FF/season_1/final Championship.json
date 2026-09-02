@@ -1,0 +1,1171 @@
+{
+  "Championship": {
+    "Name": "Converted Championship (Old Files)",
+    "Events": [
+      {
+        "Sessions": [
+          {
+            "Type": 1,
+            "Duration": 600000000000,
+            "CompletedTime": "2026-06-24T14:39:53Z",
+            "Results": {
+              "TrackID": "nurburgring_24h",
+              "IsWetSession": false,
+              "Places": [
+                {
+                  "Class": "GT3",
+                  "CarModel": 28,
+                  "TotalRaceTime": 616598000000,
+                  "Drivers": [
+                    {
+                      "Name": "Marsi Bella [SL]"
+                    }
+                  ],
+                  "Laps": [
+                    {
+                      "Time": 508287000000,
+                      "Valid": true,
+                      "Sectors": [
+                        {
+                          "Time": 175462000000
+                        },
+                        {
+                          "Time": 158570000000
+                        },
+                        {
+                          "Time": 174255000000
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "Class": "GT3",
+                  "CarModel": 28,
+                  "TotalRaceTime": 761855000000,
+                  "Drivers": [
+                    {
+                      "Name": "alex k\u00fcch [SL]"
+                    }
+                  ],
+                  "Laps": [
+                    {
+                      "Time": 517207000000,
+                      "Valid": true,
+                      "Sectors": [
+                        {
+                          "Time": 179212000000
+                        },
+                        {
+                          "Time": 161802000000
+                        },
+                        {
+                          "Time": 176192000000
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "Class": "GT3",
+                  "CarModel": 28,
+                  "TotalRaceTime": 650181000000,
+                  "Drivers": [
+                    {
+                      "Name": "Moritz Brandl"
+                    }
+                  ],
+                  "Laps": [
+                    {
+                      "Time": 521465000000,
+                      "Valid": true,
+                      "Sectors": [
+                        {
+                          "Time": 182002000000
+                        },
+                        {
+                          "Time": 162230000000
+                        },
+                        {
+                          "Time": 177232000000
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "Class": "GT3",
+                  "CarModel": 28,
+                  "TotalRaceTime": 783856000000,
+                  "Drivers": [
+                    {
+                      "Name": "Antoni Mencik"
+                    }
+                  ],
+                  "Laps": [
+                    {
+                      "Time": 526605000000,
+                      "Valid": true,
+                      "Sectors": [
+                        {
+                          "Time": 181922000000
+                        },
+                        {
+                          "Time": 163642000000
+                        },
+                        {
+                          "Time": 181040000000
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "Class": "GT3",
+                  "CarModel": 28,
+                  "TotalRaceTime": 2147483647000000,
+                  "Drivers": [
+                    {
+                      "Name": "Cla Rens [SL]"
+                    }
+                  ],
+                  "Laps": []
+                },
+                {
+                  "Class": "GT3",
+                  "CarModel": 28,
+                  "TotalRaceTime": 405777000000,
+                  "Drivers": [
+                    {
+                      "Name": "Florian Braun"
+                    }
+                  ],
+                  "Laps": []
+                },
+                {
+                  "Class": "GT3",
+                  "CarModel": 28,
+                  "TotalRaceTime": 472387000000,
+                  "Drivers": [
+                    {
+                      "Name": "Bence Kamaras"
+                    }
+                  ],
+                  "Laps": []
+                },
+                {
+                  "Class": "GT3",
+                  "CarModel": 28,
+                  "TotalRaceTime": 2147483647000000,
+                  "Drivers": [
+                    {
+                      "Name": "Maxim Gubin [SL]"
+                    }
+                  ],
+                  "Laps": []
+                },
+                {
+                  "Class": "CUP",
+                  "CarModel": 9,
+                  "TotalRaceTime": 2147483647000000,
+                  "Drivers": [
+                    {
+                      "Name": "Markel Markel"
+                    }
+                  ],
+                  "Laps": []
+                },
+                {
+                  "Class": "ST",
+                  "CarModel": 18,
+                  "TotalRaceTime": 2147483647000000,
+                  "Drivers": [
+                    {
+                      "Name": "Kardan Kamazov"
+                    }
+                  ],
+                  "Laps": []
+                },
+                {
+                  "Class": "GT3",
+                  "CarModel": 28,
+                  "TotalRaceTime": 2147483647000000,
+                  "Drivers": [
+                    {
+                      "Name": "Finn Fast | TFL"
+                    }
+                  ],
+                  "Laps": []
+                }
+              ]
+            }
+          },
+          {
+            "Type": 1,
+            "Duration": 600000000000,
+            "CompletedTime": "2026-06-24T14:39:53Z",
+            "Results": {
+              "TrackID": "nurburgring_24h",
+              "IsWetSession": false,
+              "Places": [
+                {
+                  "Class": "GT4",
+                  "CarModel": 51,
+                  "TotalRaceTime": 651060000000,
+                  "Drivers": [
+                    {
+                      "Name": "Marsi Bella [SL]"
+                    }
+                  ],
+                  "Laps": [
+                    {
+                      "Time": 537472000000,
+                      "Valid": true,
+                      "Sectors": [
+                        {
+                          "Time": 185452000000
+                        },
+                        {
+                          "Time": 168445000000
+                        },
+                        {
+                          "Time": 183575000000
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "Class": "GT4",
+                  "CarModel": 60,
+                  "TotalRaceTime": 877552000000,
+                  "Drivers": [
+                    {
+                      "Name": "Antoni Mencik"
+                    }
+                  ],
+                  "Laps": [
+                    {
+                      "Time": 541885000000,
+                      "Valid": true,
+                      "Sectors": [
+                        {
+                          "Time": 186627000000
+                        },
+                        {
+                          "Time": 168632000000
+                        },
+                        {
+                          "Time": 186625000000
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "Class": "GT4",
+                  "CarModel": 60,
+                  "TotalRaceTime": 793598000000,
+                  "Drivers": [
+                    {
+                      "Name": "alex k\u00fcch [SL]"
+                    }
+                  ],
+                  "Laps": [
+                    {
+                      "Time": 542560000000,
+                      "Valid": true,
+                      "Sectors": [
+                        {
+                          "Time": 186932000000
+                        },
+                        {
+                          "Time": 169802000000
+                        },
+                        {
+                          "Time": 185825000000
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "Class": "GT4",
+                  "CarModel": 51,
+                  "TotalRaceTime": 704006000000,
+                  "Drivers": [
+                    {
+                      "Name": "Moritz Brandl"
+                    }
+                  ],
+                  "Laps": [
+                    {
+                      "Time": 549700000000,
+                      "Valid": true,
+                      "Sectors": [
+                        {
+                          "Time": 190740000000
+                        },
+                        {
+                          "Time": 171535000000
+                        },
+                        {
+                          "Time": 187425000000
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "Class": "GT4",
+                  "CarModel": 61,
+                  "TotalRaceTime": 703288000000,
+                  "Drivers": [
+                    {
+                      "Name": "karl l"
+                    }
+                  ],
+                  "Laps": [
+                    {
+                      "Time": 560677000000,
+                      "Valid": true,
+                      "Sectors": [
+                        {
+                          "Time": 192152000000
+                        },
+                        {
+                          "Time": 174022000000
+                        },
+                        {
+                          "Time": 194502000000
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "Class": "GT4",
+                  "CarModel": 60,
+                  "TotalRaceTime": 324224000000,
+                  "Drivers": [
+                    {
+                      "Name": "Bence Kamaras"
+                    }
+                  ],
+                  "Laps": []
+                },
+                {
+                  "Class": "GT4",
+                  "CarModel": 51,
+                  "TotalRaceTime": 604582000000,
+                  "Drivers": [
+                    {
+                      "Name": "Florian Braun"
+                    }
+                  ],
+                  "Laps": []
+                },
+                {
+                  "Class": "GT4",
+                  "CarModel": 60,
+                  "TotalRaceTime": 340118000000,
+                  "Drivers": [
+                    {
+                      "Name": "Viktor Ruga"
+                    }
+                  ],
+                  "Laps": []
+                },
+                {
+                  "Class": "GT4",
+                  "CarModel": 53,
+                  "TotalRaceTime": 2147483647000000,
+                  "Drivers": [
+                    {
+                      "Name": "DAN_ 1988"
+                    }
+                  ],
+                  "Laps": []
+                },
+                {
+                  "Class": "GT4",
+                  "CarModel": 60,
+                  "TotalRaceTime": 316822000000,
+                  "Drivers": [
+                    {
+                      "Name": "A Resolute"
+                    }
+                  ],
+                  "Laps": []
+                },
+                {
+                  "Class": "GT4",
+                  "CarModel": 53,
+                  "TotalRaceTime": 495721000000,
+                  "Drivers": [
+                    {
+                      "Name": "M JEAGER[FR]"
+                    }
+                  ],
+                  "Laps": []
+                }
+              ]
+            }
+          },
+          {
+            "Type": 2,
+            "Duration": 1200000000000,
+            "CompletedTime": "2026-06-24T14:40:07Z",
+            "Results": {
+              "TrackID": "nurburgring_24h",
+              "IsWetSession": false,
+              "Places": [
+                {
+                  "Class": "GT3",
+                  "CarModel": 28,
+                  "TotalRaceTime": 1024795000000,
+                  "Drivers": [
+                    {
+                      "Name": "Marsi Bella [SL]"
+                    }
+                  ],
+                  "Laps": [
+                    {
+                      "Time": 514810000000,
+                      "Valid": true,
+                      "Sectors": [
+                        {
+                          "Time": 180465000000
+                        },
+                        {
+                          "Time": 159292000000
+                        },
+                        {
+                          "Time": 175052000000
+                        }
+                      ]
+                    },
+                    {
+                      "Time": 507760000000,
+                      "Valid": true,
+                      "Sectors": [
+                        {
+                          "Time": 174965000000
+                        },
+                        {
+                          "Time": 158160000000
+                        },
+                        {
+                          "Time": 174635000000
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "Class": "GT3",
+                  "CarModel": 28,
+                  "TotalRaceTime": 1040910000000,
+                  "Drivers": [
+                    {
+                      "Name": "Moritz Brandl"
+                    }
+                  ],
+                  "Laps": [
+                    {
+                      "Time": 518785000000,
+                      "Valid": false,
+                      "Sectors": [
+                        {
+                          "Time": 181935000000
+                        },
+                        {
+                          "Time": 160072000000
+                        },
+                        {
+                          "Time": 176777000000
+                        }
+                      ]
+                    },
+                    {
+                      "Time": 519312000000,
+                      "Valid": true,
+                      "Sectors": [
+                        {
+                          "Time": 180690000000
+                        },
+                        {
+                          "Time": 161142000000
+                        },
+                        {
+                          "Time": 177480000000
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "Class": "GT3",
+                  "CarModel": 28,
+                  "TotalRaceTime": 1041307000000,
+                  "Drivers": [
+                    {
+                      "Name": "Florian Braun"
+                    }
+                  ],
+                  "Laps": [
+                    {
+                      "Time": 525902000000,
+                      "Valid": true,
+                      "Sectors": [
+                        {
+                          "Time": 184860000000
+                        },
+                        {
+                          "Time": 162250000000
+                        },
+                        {
+                          "Time": 178792000000
+                        }
+                      ]
+                    },
+                    {
+                      "Time": 512205000000,
+                      "Valid": true,
+                      "Sectors": [
+                        {
+                          "Time": 177795000000
+                        },
+                        {
+                          "Time": 159937000000
+                        },
+                        {
+                          "Time": 174472000000
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "Class": "GT3",
+                  "CarModel": 28,
+                  "TotalRaceTime": 1064170000000,
+                  "Drivers": [
+                    {
+                      "Name": "Cla Rens [SL]"
+                    }
+                  ],
+                  "Laps": [
+                    {
+                      "Time": 527897000000,
+                      "Valid": false,
+                      "Sectors": [
+                        {
+                          "Time": 183452000000
+                        },
+                        {
+                          "Time": 166305000000
+                        },
+                        {
+                          "Time": 178140000000
+                        }
+                      ]
+                    },
+                    {
+                      "Time": 533005000000,
+                      "Valid": false,
+                      "Sectors": [
+                        {
+                          "Time": 177012000000
+                        },
+                        {
+                          "Time": 163332000000
+                        },
+                        {
+                          "Time": 192660000000
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "Class": "GT3",
+                  "CarModel": 28,
+                  "TotalRaceTime": 1064368000000,
+                  "Drivers": [
+                    {
+                      "Name": "Antoni Mencik"
+                    }
+                  ],
+                  "Laps": [
+                    {
+                      "Time": 527630000000,
+                      "Valid": true,
+                      "Sectors": [
+                        {
+                          "Time": 183357000000
+                        },
+                        {
+                          "Time": 163432000000
+                        },
+                        {
+                          "Time": 180840000000
+                        }
+                      ]
+                    },
+                    {
+                      "Time": 533735000000,
+                      "Valid": false,
+                      "Sectors": [
+                        {
+                          "Time": 189217000000
+                        },
+                        {
+                          "Time": 164292000000
+                        },
+                        {
+                          "Time": 180225000000
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "Class": "GT3",
+                  "CarModel": 28,
+                  "TotalRaceTime": 713941000000,
+                  "Drivers": [
+                    {
+                      "Name": "alex k\u00fcch [SL]"
+                    }
+                  ],
+                  "Laps": [
+                    {
+                      "Time": 532222000000,
+                      "Valid": false,
+                      "Sectors": [
+                        {
+                          "Time": 198605000000
+                        },
+                        {
+                          "Time": 159730000000
+                        },
+                        {
+                          "Time": 173887000000
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "Class": "GT3",
+                  "CarModel": 28,
+                  "TotalRaceTime": 200347000000,
+                  "Drivers": [
+                    {
+                      "Name": "Bence Kamaras"
+                    }
+                  ],
+                  "Laps": []
+                },
+                {
+                  "Class": "GT3",
+                  "CarModel": 28,
+                  "TotalRaceTime": 2147483647000000,
+                  "Drivers": [
+                    {
+                      "Name": "Maxim Gubin [SL]"
+                    }
+                  ],
+                  "Laps": []
+                },
+                {
+                  "Class": "CUP",
+                  "CarModel": 9,
+                  "TotalRaceTime": 2147483647000000,
+                  "Drivers": [
+                    {
+                      "Name": "Markel Markel"
+                    }
+                  ],
+                  "Laps": []
+                },
+                {
+                  "Class": "ST",
+                  "CarModel": 18,
+                  "TotalRaceTime": 2147483647000000,
+                  "Drivers": [
+                    {
+                      "Name": "Kardan Kamazov"
+                    }
+                  ],
+                  "Laps": []
+                },
+                {
+                  "Class": "GT3",
+                  "CarModel": 28,
+                  "TotalRaceTime": 2147483647000000,
+                  "Drivers": [
+                    {
+                      "Name": "Finn Fast | TFL"
+                    }
+                  ],
+                  "Laps": []
+                },
+                {
+                  "Class": "CUP",
+                  "CarModel": 9,
+                  "TotalRaceTime": 2147483647000000,
+                  "Drivers": [
+                    {
+                      "Name": "ALESSANDRO ROSTICCI"
+                    }
+                  ],
+                  "Laps": []
+                }
+              ]
+            }
+          },
+          {
+            "Type": 2,
+            "Duration": 1200000000000,
+            "CompletedTime": "2026-06-24T14:40:07Z",
+            "Results": {
+              "TrackID": "nurburgring_24h",
+              "IsWetSession": false,
+              "Places": [
+                {
+                  "Class": "GT4",
+                  "CarModel": 51,
+                  "TotalRaceTime": 1080036000000,
+                  "Drivers": [
+                    {
+                      "Name": "Marsi Bella [SL]"
+                    }
+                  ],
+                  "Laps": [
+                    {
+                      "Time": 540630000000,
+                      "Valid": true,
+                      "Sectors": [
+                        {
+                          "Time": 188820000000
+                        },
+                        {
+                          "Time": 168727000000
+                        },
+                        {
+                          "Time": 183082000000
+                        }
+                      ]
+                    },
+                    {
+                      "Time": 538625000000,
+                      "Valid": true,
+                      "Sectors": [
+                        {
+                          "Time": 187092000000
+                        },
+                        {
+                          "Time": 168452000000
+                        },
+                        {
+                          "Time": 183080000000
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "Class": "GT4",
+                  "CarModel": 60,
+                  "TotalRaceTime": 1080302000000,
+                  "Drivers": [
+                    {
+                      "Name": "Antoni Mencik"
+                    }
+                  ],
+                  "Laps": [
+                    {
+                      "Time": 540805000000,
+                      "Valid": true,
+                      "Sectors": [
+                        {
+                          "Time": 189115000000
+                        },
+                        {
+                          "Time": 168595000000
+                        },
+                        {
+                          "Time": 183095000000
+                        }
+                      ]
+                    },
+                    {
+                      "Time": 538310000000,
+                      "Valid": true,
+                      "Sectors": [
+                        {
+                          "Time": 186212000000
+                        },
+                        {
+                          "Time": 168267000000
+                        },
+                        {
+                          "Time": 183830000000
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "Class": "GT4",
+                  "CarModel": 60,
+                  "TotalRaceTime": 1096275000000,
+                  "Drivers": [
+                    {
+                      "Name": "alex k\u00fcch [SL]"
+                    }
+                  ],
+                  "Laps": [
+                    {
+                      "Time": 552267000000,
+                      "Valid": false,
+                      "Sectors": [
+                        {
+                          "Time": 195507000000
+                        },
+                        {
+                          "Time": 169857000000
+                        },
+                        {
+                          "Time": 186902000000
+                        }
+                      ]
+                    },
+                    {
+                      "Time": 540997000000,
+                      "Valid": false,
+                      "Sectors": [
+                        {
+                          "Time": 186395000000
+                        },
+                        {
+                          "Time": 169562000000
+                        },
+                        {
+                          "Time": 185040000000
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "Class": "GT4",
+                  "CarModel": 60,
+                  "TotalRaceTime": 1102285000000,
+                  "Drivers": [
+                    {
+                      "Name": "Bence Kamaras"
+                    }
+                  ],
+                  "Laps": [
+                    {
+                      "Time": 554610000000,
+                      "Valid": true,
+                      "Sectors": [
+                        {
+                          "Time": 194615000000
+                        },
+                        {
+                          "Time": 170772000000
+                        },
+                        {
+                          "Time": 189222000000
+                        }
+                      ]
+                    },
+                    {
+                      "Time": 545590000000,
+                      "Valid": true,
+                      "Sectors": [
+                        {
+                          "Time": 187692000000
+                        },
+                        {
+                          "Time": 171480000000
+                        },
+                        {
+                          "Time": 186417000000
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "Class": "GT4",
+                  "CarModel": 51,
+                  "TotalRaceTime": 1108673000000,
+                  "Drivers": [
+                    {
+                      "Name": "Moritz Brandl"
+                    }
+                  ],
+                  "Laps": [
+                    {
+                      "Time": 552710000000,
+                      "Valid": false,
+                      "Sectors": [
+                        {
+                          "Time": 193472000000
+                        },
+                        {
+                          "Time": 171435000000
+                        },
+                        {
+                          "Time": 187802000000
+                        }
+                      ]
+                    },
+                    {
+                      "Time": 549367000000,
+                      "Valid": false,
+                      "Sectors": [
+                        {
+                          "Time": 189770000000
+                        },
+                        {
+                          "Time": 170690000000
+                        },
+                        {
+                          "Time": 188907000000
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "Class": "GT4",
+                  "CarModel": 60,
+                  "TotalRaceTime": 1124867000000,
+                  "Drivers": [
+                    {
+                      "Name": "Viktor Ruga"
+                    }
+                  ],
+                  "Laps": [
+                    {
+                      "Time": 565820000000,
+                      "Valid": false,
+                      "Sectors": [
+                        {
+                          "Time": 199842000000
+                        },
+                        {
+                          "Time": 174185000000
+                        },
+                        {
+                          "Time": 191792000000
+                        }
+                      ]
+                    },
+                    {
+                      "Time": 556557000000,
+                      "Valid": false,
+                      "Sectors": [
+                        {
+                          "Time": 191522000000
+                        },
+                        {
+                          "Time": 172537000000
+                        },
+                        {
+                          "Time": 192497000000
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "Class": "GT4",
+                  "CarModel": 61,
+                  "TotalRaceTime": 1145509000000,
+                  "Drivers": [
+                    {
+                      "Name": "karl l"
+                    }
+                  ],
+                  "Laps": [
+                    {
+                      "Time": 570527000000,
+                      "Valid": true,
+                      "Sectors": [
+                        {
+                          "Time": 201062000000
+                        },
+                        {
+                          "Time": 177112000000
+                        },
+                        {
+                          "Time": 192352000000
+                        }
+                      ]
+                    },
+                    {
+                      "Time": 573055000000,
+                      "Valid": false,
+                      "Sectors": [
+                        {
+                          "Time": 201870000000
+                        },
+                        {
+                          "Time": 175602000000
+                        },
+                        {
+                          "Time": 195582000000
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "Class": "GT4",
+                  "CarModel": 53,
+                  "TotalRaceTime": 1218314000000,
+                  "Drivers": [
+                    {
+                      "Name": "M JEAGER[FR]"
+                    }
+                  ],
+                  "Laps": [
+                    {
+                      "Time": 576787000000,
+                      "Valid": false,
+                      "Sectors": [
+                        {
+                          "Time": 196210000000
+                        },
+                        {
+                          "Time": 173042000000
+                        },
+                        {
+                          "Time": 207535000000
+                        }
+                      ]
+                    },
+                    {
+                      "Time": 638147000000,
+                      "Valid": false,
+                      "Sectors": [
+                        {
+                          "Time": 266567000000
+                        },
+                        {
+                          "Time": 172400000000
+                        },
+                        {
+                          "Time": 199180000000
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "Class": "GT4",
+                  "CarModel": 51,
+                  "TotalRaceTime": 1258272000000,
+                  "Drivers": [
+                    {
+                      "Name": "Florian Braun"
+                    }
+                  ],
+                  "Laps": [
+                    {
+                      "Time": 567052000000,
+                      "Valid": false,
+                      "Sectors": [
+                        {
+                          "Time": 207695000000
+                        },
+                        {
+                          "Time": 170852000000
+                        },
+                        {
+                          "Time": 188505000000
+                        }
+                      ]
+                    },
+                    {
+                      "Time": 689107000000,
+                      "Valid": false,
+                      "Sectors": [
+                        {
+                          "Time": 188465000000
+                        },
+                        {
+                          "Time": 189195000000
+                        },
+                        {
+                          "Time": 311447000000
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "Class": "GT4",
+                  "CarModel": 60,
+                  "TotalRaceTime": 620690000000,
+                  "Drivers": [
+                    {
+                      "Name": "A Resolute"
+                    }
+                  ],
+                  "Laps": [
+                    {
+                      "Time": 617892000000,
+                      "Valid": false,
+                      "Sectors": [
+                        {
+                          "Time": 214400000000
+                        },
+                        {
+                          "Time": 173572000000
+                        },
+                        {
+                          "Time": 229920000000
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "Class": "GT4",
+                  "CarModel": 53,
+                  "TotalRaceTime": 2147483647000000,
+                  "Drivers": [
+                    {
+                      "Name": "DAN_ 1988"
+                    }
+                  ],
+                  "Laps": []
+                },
+                {
+                  "Class": "GT4",
+                  "CarModel": 61,
+                  "TotalRaceTime": 2147483647000000,
+                  "Drivers": [
+                    {
+                      "Name": "Edoardo Marzorati [MRZ]"
+                    }
+                  ],
+                  "Laps": []
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  }
+}
