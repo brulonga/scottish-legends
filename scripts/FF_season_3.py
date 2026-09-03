@@ -78,7 +78,6 @@ def get_car_class(car_model, car_group=""):
         
     if 50 <= model <= 61: return "GT4"
     if model in [80, 82, 83, 84, 85, 86, 18, 29, 26]: 
-        # El modelo 26 y 18 se usan habitualmente para desafíos/copas monomarca
         if model in [26, 18, 9, 28]: return "CUP"
         return "GT2"
     if model in [9, 28]: return "CUP"
@@ -98,7 +97,6 @@ def is_car_brand_honda_or_nissan(car_model):
         model = int(car_model)
     except:
         return False
-    # Modelos típicos de Honda (NSX GT3, Evo, GT4) y Nissan (GT-R GT3, 370Z) en ACC
     honda_nissan_models = [15, 35, 54, 11, 34, 58]
     return model in honda_nissan_models
 
@@ -316,7 +314,7 @@ def load_and_process():
                 laps, total_time, best_lap = line['timing']['lapCount'], line['timing']['totalTime'], line['timing']['bestLap']
                 penalty_applied = line.get('penalty_applied', 0)
 
-                # 🚀 VALIDACIÓN DE REGLAMENTO / LEGALIDAD DEL COCHE
+                # Validación de reglamento
                 is_legal = check_legality(car_model, c_class, round_rule)
 
                 has_stats = is_legal and (laps >= min_laps_stats.get(c_class, 0))
@@ -397,11 +395,11 @@ def load_and_process():
                 "qualy_dict": qualy_dict
             })
 
-        # 4. CALCULAR PUNTOS AGREGADOS DE LA RONDA (Excluyendo ilegales)
+        # 4. CALCULAR PUNTOS AGREGADOS DE LA RONDA
         round_standings = {}
         for r_data in round_races_data:
             for d in r_data['temp_drivers']:
-                if not d['is_legal']: continue # 🚀 Ignorar pilotos ilegales en los puntos
+                if not d['is_legal']: continue
                 pid = d['pid']
                 if pid not in round_standings:
                     round_standings[pid] = {'races_completed': 0, 'pos_sum': 0, 'total_time': 0, 'driver_obj': d}
@@ -429,53 +427,70 @@ def load_and_process():
                     rs['round_points'] = 0
                     rs['round_pos'] = "DNF"
 
-        # 5. ACTUALIZAR CLASIFICACIÓN GLOBAL
+        # 5. ACTUALIZAR CLASIFICACIÓN GLOBAL AGRUPADA POR PILOTO
         round_sub_sessions = []
+        round_credited_drivers = set()
+
         for i, r_data in enumerate(round_races_data):
             session_results_export = []
             
             for d in r_data['temp_drivers']:
                 pid = d['pid']
                 c_class = d['car_class']
+                d_name = d['name']
                 
                 if not d['is_legal']:
-                    # Si no es legal, ponemos puntos a 0 y no computa en global
                     d['points'] = 0
                 else:
-                    if i == 0 and pid in round_standings:
+                    # Se acreditan puntos una sola vez por ronda al piloto
+                    if pid in round_standings and d_name not in round_credited_drivers:
                         d['points'] = round_standings[pid]['round_points']
+                        round_credited_drivers.add(d_name)
                         
-                        if pid not in global_drivers:
-                            global_drivers[pid] = {
-                                "name": d['name'], "car_class": c_class, "cars": {}, "total_points": 0, "races": 0, 
-                                "pos_sum": 0, "pos_count": 0, "pace_pos_sum": 0, "pace_pos_count": 0, 
-                                "pos_gained_vs_pace": 0, "gap_pace_sum_ms": 0, "gap_count": 0, 
-                                "qualy_pos_sum": 0, "qualy_pos_count": 0, "qualy_gap_sum_ms": 0, 
-                                "qualy_gap_count": 0, "net_pos_gained_vs_qualy": 0
+                        if d_name not in global_drivers:
+                            global_drivers[d_name] = {
+                                "name": d_name, "car_class": c_class, "classes": defaultdict(int), "cars": {}, 
+                                "total_points": 0, "races": 0, "pos_sum": 0, "pos_count": 0, 
+                                "pace_pos_sum": 0, "pace_pos_count": 0, "pos_gained_vs_pace": 0, 
+                                "gap_pace_sum_ms": 0, "gap_count": 0, "qualy_pos_sum": 0, 
+                                "qualy_pos_count": 0, "qualy_gap_sum_ms": 0, "qualy_gap_count": 0, 
+                                "net_pos_gained_vs_qualy": 0
                             }
                         
                         if round_standings[pid]['races_completed'] > 0:
-                            global_drivers[pid]["races"] += 1
-                            global_drivers[pid]["total_points"] += round_standings[pid]['round_points']
-                            global_drivers[pid]["pos_sum"] += round_standings[pid]['round_pos']
-                            global_drivers[pid]["pos_count"] += 1
+                            global_drivers[d_name]["races"] += 1
+                            global_drivers[d_name]["total_points"] += round_standings[pid]['round_points']
+                            global_drivers[d_name]["pos_sum"] += round_standings[pid]['round_pos']
+                            global_drivers[d_name]["pos_count"] += 1
                     else:
                         d['points'] = 0
 
-                if d['has_stats'] and d['is_legal'] and pid in global_drivers:
-                    global_drivers[pid]["cars"][d['car_model']] = global_drivers[pid]["cars"].get(d['car_model'], 0) + 1
+                if d['has_stats'] and d['is_legal']:
+                    if d_name not in global_drivers:
+                        global_drivers[d_name] = {
+                            "name": d_name, "car_class": c_class, "classes": defaultdict(int), "cars": {}, 
+                            "total_points": 0, "races": 0, "pos_sum": 0, "pos_count": 0, 
+                            "pace_pos_sum": 0, "pace_pos_count": 0, "pos_gained_vs_pace": 0, 
+                            "gap_pace_sum_ms": 0, "gap_count": 0, "qualy_pos_sum": 0, 
+                            "qualy_pos_count": 0, "qualy_gap_sum_ms": 0, "qualy_gap_count": 0, 
+                            "net_pos_gained_vs_qualy": 0
+                        }
+
+                    global_drivers[d_name]["classes"][c_class] += 1
+                    global_drivers[d_name]["cars"][d['car_model']] = global_drivers[d_name]["cars"].get(d['car_model'], 0) + 1
+                    
                     if d['pace_pos'] != "-":
-                        global_drivers[pid]["pace_pos_sum"] += d['pace_pos']
-                        global_drivers[pid]["pace_pos_count"] += 1
+                        global_drivers[d_name]["pace_pos_sum"] += d['pace_pos']
+                        global_drivers[d_name]["pace_pos_count"] += 1
                     if d['has_valid_pace_gap'] and "nurburgring" not in r_data['track_name'].lower():
-                        global_drivers[pid]["gap_pace_sum_ms"] += d['gap_pace_ms']
-                        global_drivers[pid]["gap_count"] += 1
+                        global_drivers[d_name]["gap_pace_sum_ms"] += d['gap_pace_ms']
+                        global_drivers[d_name]["gap_count"] += 1
                     if d['qualy_pos'] != "-":
-                        global_drivers[pid]["qualy_pos_sum"] += d['qualy_pos']
-                        global_drivers[pid]["qualy_pos_count"] += 1
+                        global_drivers[d_name]["qualy_pos_sum"] += d['qualy_pos']
+                        global_drivers[d_name]["qualy_pos_count"] += 1
                         if d['qualy_gap_ms'] is not None and "nurburgring" not in r_data['track_name'].lower():
-                            global_drivers[pid]["qualy_gap_sum_ms"] += d['qualy_gap_ms']
-                            global_drivers[pid]["qualy_gap_count"] += 1
+                            global_drivers[d_name]["qualy_gap_sum_ms"] += d['qualy_gap_ms']
+                            global_drivers[d_name]["qualy_gap_count"] += 1
 
                 if not d['has_stats']: continue
                 
@@ -512,7 +527,7 @@ def load_and_process():
 
     # 6. GENERAR RANKING GLOBAL
     final_ranking = []
-    for pid, data in global_drivers.items():
+    for d_name, data in global_drivers.items():
         if data["pace_pos_count"] == 0 and data["qualy_pos_count"] == 0 and data["races"] == 0: continue
 
         avg_points = data["total_points"] / data["races"] if data["races"] > 0 else 0
@@ -522,8 +537,12 @@ def load_and_process():
         avg_q_pos_str = round(data["qualy_pos_sum"] / data["qualy_pos_count"], 1) if data["qualy_pos_count"] > 0 else "-" 
         avg_q_gap_str = f"+{data['qualy_gap_sum_ms']/data['qualy_gap_count']/1000:.3f}" if data["qualy_gap_count"] > 0 else "-"
 
+        # Determinar la clase más frecuentada por el piloto para la etiqueta de la web
+        fav_class = max(data["classes"], key=data["classes"].get) if data["classes"] else data.get("car_class", "GT3")
+
         final_ranking.append({
-            "name": data["name"], "car_class": data["car_class"], 
+            "name": data["name"], 
+            "car_class": fav_class, 
             "favorite_car": max(data["cars"], key=data["cars"].get) if data["cars"] else 0,
             "points": data["total_points"], "avg_points": round(avg_points, 2),
             "avg_pos": avg_pos_str, "avg_pace_pos": avg_pace_pos_str, "net_pos_gained": data["pos_gained_vs_pace"],
