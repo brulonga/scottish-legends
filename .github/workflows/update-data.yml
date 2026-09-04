@@ -2,7 +2,7 @@ name: Actualizar Ligas y Estadísticas
 on:
   workflow_dispatch: 
   repository_dispatch:
-    types: [drive_upload]
+    types: [drive_upload, drive_delete]
 
 jobs:
   run-python-script:
