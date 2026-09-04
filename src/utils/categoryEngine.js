@@ -1,48 +1,29 @@
-export const getDriverCategories = (drivers) => {
-  if (!drivers || drivers.length === 0) return {};
+export const getCategoryByElo = (elo) => {
+  if (elo === undefined || elo === null) {
+    return { name: 'ROOKIE', color: 'text-green-500' };
+  }
+  
+  if (elo >= 2500) return { name: 'ALIEN', color: 'text-fuchsia-500' };
+  if (elo >= 2200) return { name: 'DIAMOND', color: 'text-cyan-400' };
+  if (elo >= 1900) return { name: 'PLATINUM', color: 'text-slate-300' };
+  if (elo >= 1600) return { name: 'GOLD', color: 'text-yellow-400' };
+  if (elo >= 1300) return { name: 'SILVER', color: 'text-zinc-400' };
+  if (elo >= 1000) return { name: 'BRONZE', color: 'text-amber-600' };
+  
+  return { name: 'ROOKIE', color: 'text-green-500' };
+};
 
-  // 1. Filtrar pilotos válidos y ordenar de MAYOR a MENOR ELO
-  const sortedDrivers = [...drivers]
-    .map(d => ({ ...d, elo: parseFloat(d.elo) || 0 }))
-    .sort((a, b) => b.elo - a.elo);
-
-  const totalDrivers = sortedDrivers.length;
-  const categories = {};
-
-  // 2. Asignación de categorías por percentiles de ELO
-  sortedDrivers.forEach((d, index) => {
-    let catName = '';
-    let colorClass = '';
-
-    // pct va de 0.0 (mejor ELO) a 1.0 (peor ELO)
-    const pct = index / totalDrivers;
-
-    if (pct < 0.10) {
-      catName = 'PLATINUM';
-      colorClass = 'bg-emerald-500';
-    } else if (pct < 0.25) {
-      catName = 'GOLD';
-      colorClass = 'bg-yellow-500';
-    } else if (pct < 0.65) {
-      catName = 'SILVER';
-      colorClass = 'bg-gray-300';
-    } else if (pct < 0.90) {
-      catName = 'BRONZE';
-      colorClass = 'bg-amber-600';
-    } else {
-      // 10% inferior (menor ELO)
-      catName = 'ROOKIE';
-      colorClass = 'bg-red-600';
-    }
-
-    categories[d.name] = {
-      name: catName,
-      expectedPos: index + 1,
-      rank: index + 1,
-      color: colorClass,
-      elo: d.elo
-    };
-  });
-
-  return categories;
+export const getDriverCategories = (rawDrivers) => {
+  if (elo === undefined || elo === null) {
+    return { name: 'ROOKIE', color: 'text-green-500' };
+  }
+  
+  if (elo >= 2500) return { name: 'ALIEN', color: 'text-fuchsia-500' };
+  if (elo >= 2200) return { name: 'DIAMOND', color: 'text-cyan-400' };
+  if (elo >= 1900) return { name: 'PLATINUM', color: 'text-slate-300' };
+  if (elo >= 1600) return { name: 'GOLD', color: 'text-yellow-400' };
+  if (elo >= 1300) return { name: 'SILVER', color: 'text-zinc-400' };
+  if (elo >= 1000) return { name: 'BRONZE', color: 'text-amber-600' };
+  
+  return { name: 'ROOKIE', color: 'text-green-500' };
 };

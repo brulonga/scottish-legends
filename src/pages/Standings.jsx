@@ -1,45 +1,70 @@
-import { useState, useMemo } from 'react'; 
-import { Trophy, ChevronUp, ChevronDown, Filter, Flag, CalendarDays } from 'lucide-react'; 
+import { useState, useMemo, useEffect } from 'react'; 
+import { Filter, Flag } from 'lucide-react'; 
 import { useLeagueData } from '../hooks/useLeagueData'; 
-import { isLegendDriver } from '../config/driversConfig'; 
-import { getDriverCategories } from '../utils/categoryEngine'; 
-import { LeagueSelector } from './LeagueSelector'; // 🚀 IMPORTAMOS EL NUEVO COMPONENTE
+import { getCategoryByElo } from '../utils/categoryEngine'; 
+import { LeagueSelector } from './LeagueSelector';
+import { LegacyStandings } from './LegacyStandings'; 
+import { ModernStandings } from './ModernStandings'; 
+
+// 💡 CALENDARIOS PREDEFINIDOS PARA TEMPORADAS EN CURSO
+const FUTURE_CALENDARS = {
+  'MM-season_2': [
+    { id: 'R1', track: 'Monza' },
+    { id: 'R2', track: 'Kyalami' },
+    { id: 'R3', track: 'Misano' },
+    { id: 'R4', track: 'Mount Panorama' },
+    { id: 'R5', track: 'Suzuka' },
+    { id: 'R6', track: 'Silverstone' }
+  ],
+  'FF-season_3': [
+    { id: 'R1', track: 'Carbonara Cup (Imola / Misano)' },
+    { id: 'R2', track: 'The Commonwealth (Silverstone / Bathurst)' },
+    { id: 'R3', track: 'The Curbs Are Lava (Zolder)' },
+    { id: 'R4', track: '4 Is More Than 3!? (Nürburgring 24H)' },
+    { id: 'R5', track: 'Japanese Showdown (Suzuka)' },
+    { id: 'R6', track: 'Which Way? (Indianapolis)' },
+    { id: 'R7', track: 'Speed Kills (Monza)' },
+    { id: 'R8', track: 'Mirror-Watching Masterclass (Watkins Glen)' }
+  ]
+};
 
 export const Standings = ({ onDriverClick }) => { 
   const [activeLeague, setActiveLeague] = useState(null); 
   const [activeSeason, setActiveSeason] = useState(null); 
-  
   const [sortConfig, setSortConfig] = useState({ key: 'points', direction: 'desc' }); 
   const [categoryFilter, setCategoryFilter] = useState('ALL'); 
+  const [eloData, setEloData] = useState({}); 
    
   const { leagueData, loading, error } = useLeagueData(activeLeague, activeSeason); 
-  
   const rawDrivers = leagueData?.global || []; 
-  const driverCategories = useMemo(() => getDriverCategories(rawDrivers), [rawDrivers]); 
-  
-  // 💡 LÓGICA INTELIGENTE: Si el JSON trae calendario, mostramos la tabla detallada
-  const hasCalendar = leagueData?.calendar && leagueData.calendar.length > 0;
 
-  const getCategoryDisplay = (driver) => {
-    if (typeof driver.category === 'string') {
-      const cat = driver.category.toUpperCase();
-      const colors = {
-        'PLATINUM': 'text-slate-300',
-        'GOLD': 'text-yellow-400',
-        'SILVER': 'text-zinc-400',
-        'BRONZE': 'text-amber-600',
-        'ROOKIE': 'text-green-500'
-      };
-      return { name: cat, color: colors[cat] || 'text-gray-500', expectedPos: driver.expectedPos };
-    }
-    return driverCategories[driver.name] || { name: 'ROOKIE', color: 'text-gray-500', expectedPos: 999 };
-  };
+  // 💡 LECTURA CORRECTA DE LA LISTA DE ELO (driver_elos.json)
+  useEffect(() => {
+    fetch('/data/driver_elos.json') 
+      .then(res => res.json())
+      .then(data => {
+        if (Array.isArray(data)) {
+          // Convertimos la lista en un diccionario { "Nombre del Piloto": current_elo }
+          const eloMap = {};
+          data.forEach(driver => {
+            eloMap[driver.name] = driver.current_elo;
+          });
+          setEloData(eloMap);
+        } else {
+          setEloData(data);
+        }
+      })
+      .catch(err => console.warn("No se pudo cargar el ELO.", err));
+  }, []);
 
   const baseDriversList = useMemo(() => { 
     return [...rawDrivers] 
       .sort((a, b) => (b.points || 0) - (a.points || 0)) 
       .map((d, index) => {
-        const cat = getCategoryDisplay(d);
+        // Buscamos el ELO usando el nombre exacto del piloto
+        const driverElo = eloData[d.name] !== undefined ? eloData[d.name] : null; 
+        const cat = getCategoryByElo(driverElo);
+        
         const cleanName = d.name.replace(/\[.*?\]|\|.*/g, '').trim();
         const nameParts = cleanName.split(' ');
         const lastName = nameParts.length > 1 ? nameParts[nameParts.length - 1] : cleanName;
@@ -52,7 +77,6 @@ export const Standings = ({ onDriverClick }) => {
           position: index + 1,  
           category: cat, 
           points: d.points || 0,  
-          expectedPos: cat.expectedPos || d.expectedPos || 999,
           avgPoints: d.avg_points,  
           avgQualyPos: d.avg_qualy_pos,  
           avgQualyGap: d.avg_qualy_gap, 
@@ -62,15 +86,13 @@ export const Standings = ({ onDriverClick }) => {
           rounds: d.rounds || {} 
         };
       }); 
-  }, [rawDrivers, driverCategories]); 
+  }, [rawDrivers, eloData]); 
  
   const sortedAndFilteredDrivers = useMemo(() => { 
     let result = [...baseDriversList];
-    
     if (categoryFilter !== 'ALL') {
       result = result.filter(d => d.category.name === categoryFilter);
     }
-
     result.sort((a, b) => {
       if (sortConfig.key === 'driver') {
         const nameA = `${a.lastName} ${a.driver}`.toLowerCase();
@@ -79,7 +101,6 @@ export const Standings = ({ onDriverClick }) => {
         if (nameA > nameB) return sortConfig.direction === 'asc' ? 1 : -1;
         return 0;
       }
-
       let valA = a[sortConfig.key];
       let valB = b[sortConfig.key];
 
@@ -98,13 +119,12 @@ export const Standings = ({ onDriverClick }) => {
       if (valA > valB) return sortConfig.direction === 'asc' ? 1 : -1;
       return 0;
     });
-
     return result;
   }, [baseDriversList, categoryFilter, sortConfig]); 
 
   const requestSort = (key) => { 
     let direction = 'desc'; 
-    if (['driver', 'category', 'expectedPos', 'avgQualyGap', 'avgPaceGap', 'avgQualyPos', 'avgRacePos', 'races'].includes(key)) {
+    if (['driver', 'category', 'avgQualyGap', 'avgPaceGap', 'avgQualyPos', 'avgRacePos', 'races'].includes(key)) {
       direction = 'asc'; 
     }
     if (sortConfig && sortConfig.key === key && sortConfig.direction === direction) {
@@ -113,53 +133,12 @@ export const Standings = ({ onDriverClick }) => {
     setSortConfig({ key, direction }); 
   }; 
 
-  const SortableHeader = ({ title, sortKey, align = 'center' }) => {
-    const isActive = sortConfig?.key === sortKey;
-    // 💡 Fix para Tailwind
-    const alignClasses = { left: 'text-left', center: 'text-center', right: 'text-right' };
-    
-    return (
-      <th 
-        className={`px-2 py-3 ${alignClasses[align]} font-['Teko'] text-lg font-bold text-gray-400 uppercase tracking-widest cursor-pointer hover:bg-gray-800 hover:text-white transition-colors group select-none`}
-        onClick={() => requestSort(sortKey)}
-      >
-        <div className={`flex items-center space-x-1 ${align === 'center' ? 'justify-center' : align === 'right' ? 'justify-end' : 'justify-start'}`}>
-          <span>{title}</span>
-          <span className={`flex flex-col opacity-50 group-hover:opacity-100 transition-opacity ${isActive ? 'opacity-100 text-yellow-400' : ''}`}>
-            {(!isActive || sortConfig.direction === 'asc') && <ChevronUp className="w-3 h-3 -mb-1" />}
-            {(!isActive || sortConfig.direction === 'desc') && <ChevronDown className="w-3 h-3" />}
-          </span>
-        </div>
-      </th>
-    );
-  };
+  const isLegacySeason = activeSeason === 'season_1';
 
-  const DriverNameCell = ({ driver }) => {
-    const isLegend = isLegendDriver(driver.driver);
-    return (
-      <td className="px-2 py-3 text-sm">
-        <div className="flex items-center">
-          <span className={`font-bold tracking-wide ${isLegend ? 'text-purple-400' : 'text-white'}`}>
-            {driver.driver}
-          </span>
-          {isLegend && (
-            <span className="ml-2 px-1.5 py-0.5 bg-purple-600 text-white text-[10px] font-bold rounded shadow-md uppercase tracking-widest">
-              LEGEND
-            </span>
-          )}
-        </div>
-      </td>
-    );
-  };
-
-  const DriverPosCell = ({ position }) => (
-    <td className="px-2 py-3 text-sm font-bold text-white">
-      <div className="flex items-center space-x-1">
-        {position <= 3 && <Trophy className={`w-4 h-4 ${position === 1 ? 'text-yellow-500' : position === 2 ? 'text-gray-400' : 'text-orange-600'}`} />}
-        <span className={`font-['Teko'] text-2xl ${position > 3 ? "ml-5" : ""}`}>{position}</span>
-      </div>
-    </td>
-  );
+  // Obtenemos el calendario de la liga/temporada, o usamos la plantilla predefinida si está vacía
+  const activeCalendar = leagueData?.calendar?.length > 0 
+    ? leagueData.calendar 
+    : (FUTURE_CALENDARS[`${activeLeague}-${activeSeason}`] || []);
 
   return (
     <div className="min-h-screen bg-black font-['Inter'] text-gray-300 py-8">
@@ -167,8 +146,6 @@ export const Standings = ({ onDriverClick }) => {
         
         <div className="mb-10 text-center md:text-left border-b border-gray-800 pb-8">
           <h1 className="font-['Teko'] text-6xl font-bold text-white mb-6 uppercase tracking-wide">Championship Standings</h1>
-          
-          {/* 🚀 SELECTOR DE LIGAS Y TEMPORADAS UNIFICADO */}
           <LeagueSelector 
             activeLeague={activeLeague} 
             setActiveLeague={setActiveLeague} 
@@ -181,7 +158,7 @@ export const Standings = ({ onDriverClick }) => {
           <div className="bg-[#0a0a0a] p-16 text-center border border-gray-800 rounded-lg">
             <Flag className="w-20 h-20 text-gray-700 mx-auto mb-6 animate-pulse" />
             <h2 className="font-['Teko'] text-4xl text-gray-400 uppercase tracking-widest mb-2">Welcome to the Paddock</h2>
-            <p className="text-gray-500 uppercase tracking-widest font-bold">Please select a League and a Season above to view the standings.</p>
+            <p className="text-gray-500 uppercase tracking-widest font-bold">Please select a League and a Season above.</p>
           </div>
         ) : loading ? (
           <div className="flex items-center justify-center py-20">
@@ -198,7 +175,7 @@ export const Standings = ({ onDriverClick }) => {
                 <Filter className="w-4 h-4" />
                 <span className="font-['Teko'] text-xl uppercase tracking-widest mt-1">Filter by Category:</span>
               </div>
-              {['ALL', 'PLATINUM', 'GOLD', 'SILVER', 'BRONZE', 'ROOKIE'].map(cat => (
+              {['ALL', 'ALIEN', 'DIAMOND', 'PLATINUM', 'GOLD', 'SILVER', 'BRONZE', 'ROOKIE'].map(cat => (
                 <button 
                   key={cat}
                   onClick={() => setCategoryFilter(cat)} 
@@ -213,146 +190,21 @@ export const Standings = ({ onDriverClick }) => {
               ))}
             </div>
 
-            {hasCalendar ? (
-              <div className="space-y-12">
-                
-                {/* TABLA 1: MARCADOR GENERAL Y ESTADÍSTICAS */}
-                <div>
-                  <h3 className="font-['Teko'] text-3xl text-yellow-500 uppercase tracking-widest mb-4 flex items-center">
-                    <Trophy className="w-6 h-6 mr-2" /> Overall & Category Standings
-                  </h3>
-                  <div className="bg-[#0a0a0a] border border-gray-800 shadow-2xl overflow-x-auto">
-                    <table className="w-full whitespace-nowrap">
-                      <thead className="bg-black border-b border-gray-800">
-                        <tr>
-                          <SortableHeader title="Pos" sortKey="position" align="left" />
-                          <SortableHeader title="Driver" sortKey="driver" align="left" />
-                          <SortableHeader title="Cat" sortKey="category" />
-                          <SortableHeader title="Exp Pos" sortKey="expectedPos" />
-                          <SortableHeader title="Total Pts" sortKey="points" />
-                          <SortableHeader title="Avg Pts" sortKey="avgPoints" />
-                          <SortableHeader title="Avg Q Pos" sortKey="avgQualyPos" />
-                          <SortableHeader title="Avg Q Gap" sortKey="avgQualyGap" />
-                          <SortableHeader title="Avg R Pos" sortKey="avgRacePos" />
-                          <SortableHeader title="Avg R Gap" sortKey="avgPaceGap" />
-                          <SortableHeader title="Races" sortKey="races" />
-                        </tr>
-                      </thead>
-                      <tbody className="divide-y divide-gray-800/50">
-                        {sortedAndFilteredDrivers.map((driver) => (
-                          <tr key={`stand-${driver.id}`} onClick={() => onDriverClick(driver.rawName)} className="cursor-pointer hover:bg-gray-800/30">
-                            <DriverPosCell position={driver.position} />
-                            <DriverNameCell driver={driver} />
-                            <td className="px-2 py-3 text-center">
-                              <span className={`px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-widest ${driver.category.color}`}>
-                                {driver.category.name}
-                              </span>
-                            </td>
-                            <td className="px-2 py-3 text-center font-['Teko'] text-3xl font-bold text-blue-400 drop-shadow-[0_0_5px_rgba(96,165,250,0.3)]">
-                              {driver.expectedPos !== 999 ? `P${driver.expectedPos}` : '-'}
-                            </td>
-                            <td className="px-2 py-3 text-center font-['Teko'] text-4xl font-bold text-yellow-400">
-                              {driver.points}
-                            </td>
-                            <td className="px-2 py-3 text-center font-bold text-gray-400 text-sm">{driver.avgPoints || '-'}</td>
-                            <td className="px-2 py-3 text-center text-gray-300 font-bold text-sm">{driver.avgQualyPos && driver.avgQualyPos !== '-' ? `P${driver.avgQualyPos}` : '-'}</td>
-                            <td className="px-2 py-3 text-center text-gray-400 text-xs">{driver.avgQualyGap || '-'}</td>
-                            <td className="px-2 py-3 text-center text-gray-300 font-bold text-sm">{driver.avgRacePos && driver.avgRacePos !== '-' ? `P${driver.avgRacePos}` : '-'}</td>
-                            <td className="px-2 py-3 text-center text-gray-400 text-xs">{driver.avgPaceGap || '-'}</td>
-                            <td className="px-2 py-3 text-center text-gray-500 font-bold text-sm">{driver.races}</td>
-                          </tr>
-                        ))}
-                      </tbody>
-                    </table>
-                  </div>
-                </div>
-
-                {/* TABLA 2: RESULTADOS DETALLADOS Y DROP ROUNDS */}
-                <div>
-                  <h3 className="font-['Teko'] text-3xl text-white uppercase tracking-widest mb-4 flex items-center">
-                    <CalendarDays className="w-6 h-6 mr-2 text-gray-400" /> Detailed Results & Drop Rounds
-                  </h3>
-                  <div className="bg-[#0a0a0a] border border-gray-800 shadow-2xl overflow-x-auto">
-                    <table className="w-full whitespace-nowrap">
-                      <thead className="bg-black border-b border-gray-800">
-                        <tr>
-                          <SortableHeader title="Driver" sortKey="driver" align="left" />
-                          {leagueData.calendar.map(race => (
-                            <th key={race.id} className="px-2 py-3 text-center font-['Teko'] text-lg text-gray-400 uppercase">
-                              {race.id}
-                              <div className="text-[10px] text-gray-600 truncate max-w-[80px]">{race.track}</div>
-                            </th>
-                          ))}
-                        </tr>
-                      </thead>
-                      <tbody className="divide-y divide-gray-800/50">
-                        {sortedAndFilteredDrivers.map(driver => (
-                          <tr key={`grid-${driver.id}`} onClick={() => onDriverClick(driver.rawName)} className="cursor-pointer hover:bg-gray-800/30">
-                            <DriverNameCell driver={driver} />
-                            {leagueData.calendar.map(race => {
-                              const roundData = driver.rounds[race.id];
-                              if (!roundData) return <td key={race.id} className="px-2 py-3 text-center text-gray-700 font-['Teko'] text-2xl">-</td>;
-                              
-                              return (
-                                <td key={race.id} className="px-2 py-3 text-center font-['Teko'] text-3xl font-bold">
-                                  <span className={roundData.isDropped ? 'line-through text-red-900/60' : 'text-white'}>
-                                    {roundData.points !== null ? roundData.points : 'DNS'}
-                                  </span>
-                                  {roundData.bonusPoints > 0 && !roundData.isDropped && (
-                                    <span className="text-yellow-500 text-sm ml-1">+{roundData.bonusPoints}</span>
-                                  )}
-                                </td>
-                              );
-                            })}
-                          </tr>
-                        ))}
-                      </tbody>
-                    </table>
-                  </div>
-                </div>
-
-              </div>
+            {isLegacySeason ? (
+              <LegacyStandings 
+                drivers={sortedAndFilteredDrivers} 
+                sortConfig={sortConfig}
+                requestSort={requestSort}
+                onDriverClick={onDriverClick}
+              />
             ) : (
-              
-              /* VISTA BÁSICA (Sin Calendario) */
-              <div className="bg-[#0a0a0a] border border-gray-800 shadow-2xl overflow-x-auto">
-                <table className="w-full whitespace-nowrap">
-                  <thead className="bg-black border-b border-gray-800">
-                    <tr>
-                      <SortableHeader title="Pos" sortKey="position" align="left" />
-                      <SortableHeader title="Driver" sortKey="driver" align="left" />
-                      <SortableHeader title="Cat" sortKey="category" />
-                      <SortableHeader title="Exp Pos" sortKey="expectedPos" />
-                      <SortableHeader title="Pts" sortKey="points" />
-                      <SortableHeader title="Avg Pts" sortKey="avgPoints" />
-                      <SortableHeader title="Avg Q Pos" sortKey="avgQualyPos" />
-                      <SortableHeader title="Avg R Pos" sortKey="avgRacePos" />
-                      <SortableHeader title="Races" sortKey="races" />
-                    </tr>
-                  </thead>
-                  <tbody className="divide-y divide-gray-800/50">
-                    {sortedAndFilteredDrivers.map((driver) => (
-                      <tr key={`legacy-${driver.id}`} onClick={() => onDriverClick(driver.rawName)} className="cursor-pointer hover:bg-gray-800/30">
-                        <DriverPosCell position={driver.position} />
-                        <DriverNameCell driver={driver} />
-                        <td className="px-1 py-3 text-center">
-                          <span className={`px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-widest ${driver.category.color}`}>
-                            {driver.category.name.substring(0, 4)}
-                          </span>
-                        </td>
-                        <td className="px-2 py-3 text-center font-['Teko'] text-3xl font-bold text-blue-400 drop-shadow-[0_0_5px_rgba(96,165,250,0.3)]">
-                          {driver.expectedPos !== 999 ? `P${driver.expectedPos}` : '-'}
-                        </td>
-                        <td className="px-2 py-3 text-center font-['Teko'] text-3xl font-bold text-yellow-400">{driver.points}</td>
-                        <td className="px-2 py-3 text-center font-bold text-gray-400 text-sm">{driver.avgPoints || '-'}</td>
-                        <td className="px-2 py-3 text-center text-gray-300 font-bold text-sm">{driver.avgQualyPos ? `P${driver.avgQualyPos}` : '-'}</td>
-                        <td className="px-2 py-3 text-center text-gray-300 font-bold text-sm">{driver.avgRacePos ? `P${driver.avgRacePos}` : '-'}</td>
-                        <td className="px-2 py-3 text-center text-gray-500 font-bold text-sm">{driver.races}</td>
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
-              </div>
+              <ModernStandings 
+                drivers={sortedAndFilteredDrivers} 
+                calendar={activeCalendar}
+                sortConfig={sortConfig}
+                requestSort={requestSort}
+                onDriverClick={onDriverClick}
+              />
             )}
           </>
         )}
