@@ -333,40 +333,40 @@
         "new_elo": 2087
       },
       {
-        "date": "2026-09-01 21:01",
-        "timestamp": 1788296467.0,
+        "date": "2026-08-31 21:01",
+        "timestamp": 1788210067.0,
         "race_name": "Round 1: Monza",
         "duration_minutes": 91.1,
         "elo_change": 11.4,
         "new_elo": 2099
       },
       {
-        "date": "2026-09-04 10:35",
-        "timestamp": 1788518105.4687893,
+        "date": "2026-09-04 11:13",
+        "timestamp": 1788520413.7653742,
         "race_name": "Race 1: Misano",
         "duration_minutes": 30.8,
         "elo_change": 1.8,
         "new_elo": 2101
       },
       {
-        "date": "2026-09-04 10:35",
-        "timestamp": 1788518105.4687893,
+        "date": "2026-09-04 11:13",
+        "timestamp": 1788520413.7653742,
         "race_name": "Race 2: Imola",
         "duration_minutes": 31.2,
         "elo_change": 1.2,
         "new_elo": 2102
       },
       {
-        "date": "2026-09-04 10:35",
-        "timestamp": 1788518105.4687893,
+        "date": "2026-09-04 11:13",
+        "timestamp": 1788520413.7653742,
         "race_name": "Race 1: Silverstone",
         "duration_minutes": 31.4,
         "elo_change": 1.6,
         "new_elo": 2103
       },
       {
-        "date": "2026-09-04 10:35",
-        "timestamp": 1788518105.4687893,
+        "date": "2026-09-04 11:13",
+        "timestamp": 1788520413.7653742,
         "race_name": "Race 2: Mount Panorama",
         "duration_minutes": 30.4,
         "elo_change": 0.8,
@@ -449,7 +449,7 @@
         "race_name": "Round 8: Spa",
         "duration_minutes": 106.4,
         "elo_change": 6.6,
-        "new_elo": 1834
+        "new_elo": 1835
       },
       {
         "date": "2026-04-13 21:01",
@@ -529,7 +529,7 @@
         "race_name": "Round 13: Misano",
         "duration_minutes": 90.8,
         "elo_change": 6.3,
-        "new_elo": 1955
+        "new_elo": 1956
       },
       {
         "date": "2026-05-19 09:12",
@@ -740,8 +740,8 @@
         "new_elo": 1937
       },
       {
-        "date": "2026-09-01 21:01",
-        "timestamp": 1788296467.0,
+        "date": "2026-08-31 21:01",
+        "timestamp": 1788210067.0,
         "race_name": "Round 1: Monza",
         "duration_minutes": 91.1,
         "elo_change": 20.1,
@@ -815,7 +815,7 @@
         "timestamp": 1784581343.0,
         "race_name": "Round 20: Monza",
         "duration_minutes": 90.2,
-        "elo_change": 23.2,
+        "elo_change": 23.1,
         "new_elo": 1811
       },
       {
@@ -1264,24 +1264,24 @@
         "new_elo": 1819
       },
       {
-        "date": "2026-09-01 21:01",
-        "timestamp": 1788296467.0,
+        "date": "2026-08-31 21:01",
+        "timestamp": 1788210067.0,
         "race_name": "Round 1: Monza",
         "duration_minutes": 91.1,
         "elo_change": 0.2,
         "new_elo": 1819
       },
       {
-        "date": "2026-09-04 10:35",
-        "timestamp": 1788518105.4687893,
+        "date": "2026-09-04 11:13",
+        "timestamp": 1788520413.7653742,
         "race_name": "Race 1: Misano",
         "duration_minutes": 30.8,
         "elo_change": -0.5,
         "new_elo": 1818
       },
       {
-        "date": "2026-09-04 10:35",
-        "timestamp": 1788518105.4687893,
+        "date": "2026-09-04 11:13",
+        "timestamp": 1788520413.7653742,
         "race_name": "Race 2: Imola",
         "duration_minutes": 31.2,
         "elo_change": 1.8,
@@ -1591,8 +1591,8 @@
         "new_elo": 1858
       },
       {
-        "date": "2026-09-01 21:01",
-        "timestamp": 1788296467.0,
+        "date": "2026-08-31 21:01",
+        "timestamp": 1788210067.0,
         "race_name": "Round 1: Monza",
         "duration_minutes": 91.1,
         "elo_change": -49.6,
@@ -1723,7 +1723,7 @@
         "race_name": "Round 15: Laguna Seca",
         "duration_minutes": 90.2,
         "elo_change": 17.4,
-        "new_elo": 1783
+        "new_elo": 1784
       },
       {
         "date": "2026-06-09 19:39",
@@ -2023,7 +2023,7 @@
         "timestamp": 1776459084.0,
         "race_name": "Round 3: Nurburgring 24H",
         "duration_minutes": 70.2,
-        "elo_change": -29.0,
+        "elo_change": -28.9,
         "new_elo": 1622
       },
       {
@@ -2673,16 +2673,16 @@
         "new_elo": 1754
       },
       {
-        "date": "2026-09-04 10:35",
-        "timestamp": 1788518105.4687893,
+        "date": "2026-09-04 11:13",
+        "timestamp": 1788520413.7653742,
         "race_name": "Race 1: Misano",
         "duration_minutes": 30.8,
         "elo_change": 4.5,
         "new_elo": 1758
       },
       {
-        "date": "2026-09-04 10:35",
-        "timestamp": 1788518105.4687893,
+        "date": "2026-09-04 11:13",
+        "timestamp": 1788520413.7653742,
         "race_name": "Race 2: Imola",
         "duration_minutes": 31.2,
         "elo_change": 4.5,
@@ -2894,24 +2894,24 @@
         "new_elo": 1699
       },
       {
-        "date": "2026-09-01 21:01",
-        "timestamp": 1788296467.0,
+        "date": "2026-08-31 21:01",
+        "timestamp": 1788210067.0,
         "race_name": "Round 1: Monza",
         "duration_minutes": 91.1,
         "elo_change": 50.6,
         "new_elo": 1750
       },
       {
-        "date": "2026-09-04 10:35",
-        "timestamp": 1788518105.4687893,
+        "date": "2026-09-04 11:13",
+        "timestamp": 1788520413.7653742,
         "race_name": "Race 1: Misano",
         "duration_minutes": 30.8,
         "elo_change": 6.2,
         "new_elo": 1756
       },
       {
-        "date": "2026-09-04 10:35",
-        "timestamp": 1788518105.4687893,
+        "date": "2026-09-04 11:13",
+        "timestamp": 1788520413.7653742,
         "race_name": "Race 2: Imola",
         "duration_minutes": 31.2,
         "elo_change": -8.3,
@@ -3032,7 +3032,7 @@
         "timestamp": 1775250551.0,
         "race_name": "Round 1: Nurburgring 24H",
         "duration_minutes": 75.5,
-        "elo_change": 81.5,
+        "elo_change": 81.6,
         "new_elo": 1534
       },
       {
@@ -3156,24 +3156,24 @@
         "new_elo": 1774
       },
       {
-        "date": "2026-09-01 21:01",
-        "timestamp": 1788296467.0,
+        "date": "2026-08-31 21:01",
+        "timestamp": 1788210067.0,
         "race_name": "Round 1: Monza",
         "duration_minutes": 91.1,
         "elo_change": -43.8,
         "new_elo": 1730
       },
       {
-        "date": "2026-09-04 10:35",
-        "timestamp": 1788518105.4687893,
+        "date": "2026-09-04 11:13",
+        "timestamp": 1788520413.7653742,
         "race_name": "Race 1: Misano",
         "duration_minutes": 30.8,
         "elo_change": -0.8,
         "new_elo": 1730
       },
       {
-        "date": "2026-09-04 10:35",
-        "timestamp": 1788518105.4687893,
+        "date": "2026-09-04 11:13",
+        "timestamp": 1788520413.7653742,
         "race_name": "Race 1: Silverstone",
         "duration_minutes": 31.4,
         "elo_change": 5.5,
@@ -3242,24 +3242,24 @@
         "new_elo": 1668
       },
       {
-        "date": "2026-09-01 21:01",
-        "timestamp": 1788296467.0,
+        "date": "2026-08-31 21:01",
+        "timestamp": 1788210067.0,
         "race_name": "Round 1: Monza",
         "duration_minutes": 91.1,
         "elo_change": 62.1,
         "new_elo": 1730
       },
       {
-        "date": "2026-09-04 10:35",
-        "timestamp": 1788518105.4687893,
+        "date": "2026-09-04 11:13",
+        "timestamp": 1788520413.7653742,
         "race_name": "Race 1: Silverstone",
         "duration_minutes": 31.4,
         "elo_change": -0.8,
         "new_elo": 1730
       },
       {
-        "date": "2026-09-04 10:35",
-        "timestamp": 1788518105.4687893,
+        "date": "2026-09-04 11:13",
+        "timestamp": 1788520413.7653742,
         "race_name": "Race 2: Mount Panorama",
         "duration_minutes": 30.4,
         "elo_change": 0.7,
@@ -3641,24 +3641,24 @@
         "new_elo": 1775
       },
       {
-        "date": "2026-09-01 21:01",
-        "timestamp": 1788296467.0,
+        "date": "2026-08-31 21:01",
+        "timestamp": 1788210067.0,
         "race_name": "Round 1: Monza",
         "duration_minutes": 91.1,
         "elo_change": -43.9,
         "new_elo": 1731
       },
       {
-        "date": "2026-09-04 10:35",
-        "timestamp": 1788518105.4687893,
+        "date": "2026-09-04 11:13",
+        "timestamp": 1788520413.7653742,
         "race_name": "Race 1: Misano",
         "duration_minutes": 30.8,
         "elo_change": -2.4,
         "new_elo": 1729
       },
       {
-        "date": "2026-09-04 10:35",
-        "timestamp": 1788518105.4687893,
+        "date": "2026-09-04 11:13",
+        "timestamp": 1788520413.7653742,
         "race_name": "Race 2: Imola",
         "duration_minutes": 31.2,
         "elo_change": 0.4,
@@ -3916,24 +3916,24 @@
         "new_elo": 1681
       },
       {
-        "date": "2026-09-01 21:01",
-        "timestamp": 1788296467.0,
+        "date": "2026-08-31 21:01",
+        "timestamp": 1788210067.0,
         "race_name": "Round 1: Monza",
         "duration_minutes": 91.1,
         "elo_change": 36.4,
         "new_elo": 1718
       },
       {
-        "date": "2026-09-04 10:35",
-        "timestamp": 1788518105.4687893,
+        "date": "2026-09-04 11:13",
+        "timestamp": 1788520413.7653742,
         "race_name": "Race 1: Silverstone",
         "duration_minutes": 31.4,
         "elo_change": -1.9,
         "new_elo": 1716
       },
       {
-        "date": "2026-09-04 10:35",
-        "timestamp": 1788518105.4687893,
+        "date": "2026-09-04 11:13",
+        "timestamp": 1788520413.7653742,
         "race_name": "Race 2: Mount Panorama",
         "duration_minutes": 30.4,
         "elo_change": -2.1,
@@ -4159,24 +4159,24 @@
         "new_elo": 1677
       },
       {
-        "date": "2026-09-01 21:01",
-        "timestamp": 1788296467.0,
+        "date": "2026-08-31 21:01",
+        "timestamp": 1788210067.0,
         "race_name": "Round 1: Monza",
         "duration_minutes": 91.1,
         "elo_change": 23.7,
         "new_elo": 1701
       },
       {
-        "date": "2026-09-04 10:35",
-        "timestamp": 1788518105.4687893,
+        "date": "2026-09-04 11:13",
+        "timestamp": 1788520413.7653742,
         "race_name": "Race 1: Misano",
         "duration_minutes": 30.8,
         "elo_change": -9.1,
         "new_elo": 1692
       },
       {
-        "date": "2026-09-04 10:35",
-        "timestamp": 1788518105.4687893,
+        "date": "2026-09-04 11:13",
+        "timestamp": 1788520413.7653742,
         "race_name": "Race 2: Imola",
         "duration_minutes": 31.2,
         "elo_change": -0.4,
@@ -4262,8 +4262,8 @@
         "new_elo": 1633
       },
       {
-        "date": "2026-09-01 21:01",
-        "timestamp": 1788296467.0,
+        "date": "2026-08-31 21:01",
+        "timestamp": 1788210067.0,
         "race_name": "Round 1: Monza",
         "duration_minutes": 91.1,
         "elo_change": 56.7,
@@ -4499,7 +4499,7 @@
         "timestamp": 1776459084.0,
         "race_name": "Round 3: Nurburgring 24H",
         "duration_minutes": 70.2,
-        "elo_change": 13.5,
+        "elo_change": 13.6,
         "new_elo": 1812
       },
       {
@@ -4758,8 +4758,8 @@
         "new_elo": 1613
       },
       {
-        "date": "2026-09-01 21:01",
-        "timestamp": 1788296467.0,
+        "date": "2026-08-31 21:01",
+        "timestamp": 1788210067.0,
         "race_name": "Round 1: Monza",
         "duration_minutes": 91.1,
         "elo_change": 34.2,
@@ -4869,24 +4869,24 @@
         "new_elo": 1566
       },
       {
-        "date": "2026-09-01 21:01",
-        "timestamp": 1788296467.0,
+        "date": "2026-08-31 21:01",
+        "timestamp": 1788210067.0,
         "race_name": "Round 1: Monza",
         "duration_minutes": 91.1,
         "elo_change": 77.9,
         "new_elo": 1644
       },
       {
-        "date": "2026-09-04 10:35",
-        "timestamp": 1788518105.4687893,
+        "date": "2026-09-04 11:13",
+        "timestamp": 1788520413.7653742,
         "race_name": "Race 1: Silverstone",
         "duration_minutes": 31.4,
         "elo_change": -5.0,
         "new_elo": 1639
       },
       {
-        "date": "2026-09-04 10:35",
-        "timestamp": 1788518105.4687893,
+        "date": "2026-09-04 11:13",
+        "timestamp": 1788520413.7653742,
         "race_name": "Race 2: Mount Panorama",
         "duration_minutes": 30.4,
         "elo_change": 5.5,
@@ -5103,16 +5103,16 @@
         "new_elo": 1613
       },
       {
-        "date": "2026-09-04 10:35",
-        "timestamp": 1788518105.4687893,
+        "date": "2026-09-04 11:13",
+        "timestamp": 1788520413.7653742,
         "race_name": "Race 1: Silverstone",
         "duration_minutes": 31.4,
         "elo_change": 13.7,
         "new_elo": 1627
       },
       {
-        "date": "2026-09-04 10:35",
-        "timestamp": 1788518105.4687893,
+        "date": "2026-09-04 11:13",
+        "timestamp": 1788520413.7653742,
         "race_name": "Race 2: Mount Panorama",
         "duration_minutes": 30.4,
         "elo_change": 4.2,
@@ -5233,8 +5233,8 @@
         "new_elo": 1581
       },
       {
-        "date": "2026-09-01 21:01",
-        "timestamp": 1788296467.0,
+        "date": "2026-08-31 21:01",
+        "timestamp": 1788210067.0,
         "race_name": "Round 1: Monza",
         "duration_minutes": 91.1,
         "elo_change": 37.7,
@@ -5723,8 +5723,8 @@
         "new_elo": 1607
       },
       {
-        "date": "2026-09-04 10:35",
-        "timestamp": 1788518105.4687893,
+        "date": "2026-09-04 11:13",
+        "timestamp": 1788520413.7653742,
         "race_name": "Race 1: Silverstone",
         "duration_minutes": 31.4,
         "elo_change": -7.9,
@@ -5761,8 +5761,8 @@
         "new_elo": 1596
       },
       {
-        "date": "2026-09-04 10:35",
-        "timestamp": 1788518105.4687893,
+        "date": "2026-09-04 11:13",
+        "timestamp": 1788520413.7653742,
         "race_name": "Race 1: Misano",
         "duration_minutes": 30.8,
         "elo_change": 1.0,
@@ -5884,24 +5884,24 @@
         "new_elo": 1610
       },
       {
-        "date": "2026-09-01 21:01",
-        "timestamp": 1788296467.0,
+        "date": "2026-08-31 21:01",
+        "timestamp": 1788210067.0,
         "race_name": "Round 1: Monza",
         "duration_minutes": 91.1,
         "elo_change": -30.5,
         "new_elo": 1580
       },
       {
-        "date": "2026-09-04 10:35",
-        "timestamp": 1788518105.4687893,
+        "date": "2026-09-04 11:13",
+        "timestamp": 1788520413.7653742,
         "race_name": "Race 1: Misano",
         "duration_minutes": 30.8,
         "elo_change": 6.2,
         "new_elo": 1586
       },
       {
-        "date": "2026-09-04 10:35",
-        "timestamp": 1788518105.4687893,
+        "date": "2026-09-04 11:13",
+        "timestamp": 1788520413.7653742,
         "race_name": "Race 2: Imola",
         "duration_minutes": 31.2,
         "elo_change": 4.8,
@@ -6173,8 +6173,8 @@
     "races_completed": 1,
     "history": [
       {
-        "date": "2026-09-01 21:01",
-        "timestamp": 1788296467.0,
+        "date": "2026-08-31 21:01",
+        "timestamp": 1788210067.0,
         "race_name": "Round 1: Monza",
         "duration_minutes": 91.1,
         "elo_change": 85.4,
@@ -6426,8 +6426,8 @@
         "new_elo": 1494
       },
       {
-        "date": "2026-09-01 21:01",
-        "timestamp": 1788296467.0,
+        "date": "2026-08-31 21:01",
+        "timestamp": 1788210067.0,
         "race_name": "Round 1: Monza",
         "duration_minutes": 91.1,
         "elo_change": 77.6,
@@ -6828,32 +6828,32 @@
         "new_elo": 1518
       },
       {
-        "date": "2026-09-01 21:01",
-        "timestamp": 1788296467.0,
+        "date": "2026-08-31 21:01",
+        "timestamp": 1788210067.0,
         "race_name": "Round 1: Monza",
         "duration_minutes": 91.1,
         "elo_change": 44.4,
         "new_elo": 1562
       },
       {
-        "date": "2026-09-04 10:35",
-        "timestamp": 1788518105.4687893,
+        "date": "2026-09-04 11:13",
+        "timestamp": 1788520413.7653742,
         "race_name": "Race 2: Imola",
         "duration_minutes": 31.2,
         "elo_change": -0.9,
         "new_elo": 1561
       },
       {
-        "date": "2026-09-04 10:35",
-        "timestamp": 1788518105.4687893,
+        "date": "2026-09-04 11:13",
+        "timestamp": 1788520413.7653742,
         "race_name": "Race 1: Silverstone",
         "duration_minutes": 31.4,
         "elo_change": -4.2,
         "new_elo": 1557
       },
       {
-        "date": "2026-09-04 10:35",
-        "timestamp": 1788518105.4687893,
+        "date": "2026-09-04 11:13",
+        "timestamp": 1788520413.7653742,
         "race_name": "Race 2: Mount Panorama",
         "duration_minutes": 30.4,
         "elo_change": -4.7,
@@ -6867,8 +6867,8 @@
     "races_completed": 1,
     "history": [
       {
-        "date": "2026-09-01 21:01",
-        "timestamp": 1788296467.0,
+        "date": "2026-08-31 21:01",
+        "timestamp": 1788210067.0,
         "race_name": "Round 1: Monza",
         "duration_minutes": 91.1,
         "elo_change": 53.5,
@@ -6981,16 +6981,16 @@
         "new_elo": 1528
       },
       {
-        "date": "2026-09-04 10:35",
-        "timestamp": 1788518105.4687893,
+        "date": "2026-09-04 11:13",
+        "timestamp": 1788520413.7653742,
         "race_name": "Race 1: Silverstone",
         "duration_minutes": 31.4,
         "elo_change": 13.2,
         "new_elo": 1541
       },
       {
-        "date": "2026-09-04 10:35",
-        "timestamp": 1788518105.4687893,
+        "date": "2026-09-04 11:13",
+        "timestamp": 1788520413.7653742,
         "race_name": "Race 2: Mount Panorama",
         "duration_minutes": 30.4,
         "elo_change": 2.9,
@@ -7027,8 +7027,8 @@
         "new_elo": 1545
       },
       {
-        "date": "2026-09-04 10:35",
-        "timestamp": 1788518105.4687893,
+        "date": "2026-09-04 11:13",
+        "timestamp": 1788520413.7653742,
         "race_name": "Race 1: Misano",
         "duration_minutes": 30.8,
         "elo_change": -4.7,
@@ -7296,7 +7296,7 @@
         "timestamp": 1776718928.0,
         "race_name": "Round 10: Paul Ricard",
         "duration_minutes": 91.5,
-        "elo_change": 31.4,
+        "elo_change": 31.5,
         "new_elo": 1531
       }
     ]
@@ -7697,7 +7697,7 @@
         "timestamp": 1784925556.0,
         "race_name": "Endurance Showcase",
         "duration_minutes": 71.6,
-        "elo_change": 28.3,
+        "elo_change": 28.4,
         "new_elo": 1528
       }
     ]
@@ -7953,8 +7953,8 @@
         "new_elo": 1508
       },
       {
-        "date": "2026-09-04 10:35",
-        "timestamp": 1788518105.4687893,
+        "date": "2026-09-04 11:13",
+        "timestamp": 1788520413.7653742,
         "race_name": "Race 1: Silverstone",
         "duration_minutes": 31.4,
         "elo_change": 12.6,
@@ -8357,16 +8357,16 @@
         "new_elo": 1528
       },
       {
-        "date": "2026-09-04 10:35",
-        "timestamp": 1788518105.4687893,
+        "date": "2026-09-04 11:13",
+        "timestamp": 1788520413.7653742,
         "race_name": "Race 1: Silverstone",
         "duration_minutes": 31.4,
         "elo_change": -10.4,
         "new_elo": 1518
       },
       {
-        "date": "2026-09-04 10:35",
-        "timestamp": 1788518105.4687893,
+        "date": "2026-09-04 11:13",
+        "timestamp": 1788520413.7653742,
         "race_name": "Race 2: Mount Panorama",
         "duration_minutes": 30.4,
         "elo_change": -4.2,
@@ -8502,8 +8502,8 @@
     "races_completed": 1,
     "history": [
       {
-        "date": "2026-09-04 10:35",
-        "timestamp": 1788518105.4687893,
+        "date": "2026-09-04 11:13",
+        "timestamp": 1788520413.7653742,
         "race_name": "Race 1: Misano",
         "duration_minutes": 30.8,
         "elo_change": 12.3,
@@ -8540,8 +8540,8 @@
         "new_elo": 1492
       },
       {
-        "date": "2026-09-04 10:35",
-        "timestamp": 1788518105.4687893,
+        "date": "2026-09-04 11:13",
+        "timestamp": 1788520413.7653742,
         "race_name": "Race 1: Silverstone",
         "duration_minutes": 31.4,
         "elo_change": 18.1,
@@ -8678,8 +8678,8 @@
         "new_elo": 1533
       },
       {
-        "date": "2026-09-01 21:01",
-        "timestamp": 1788296467.0,
+        "date": "2026-08-31 21:01",
+        "timestamp": 1788210067.0,
         "race_name": "Round 1: Monza",
         "duration_minutes": 91.1,
         "elo_change": -24.1,
@@ -8814,16 +8814,16 @@
     "races_completed": 2,
     "history": [
       {
-        "date": "2026-09-04 10:35",
-        "timestamp": 1788518105.4687893,
+        "date": "2026-09-04 11:13",
+        "timestamp": 1788520413.7653742,
         "race_name": "Race 1: Misano",
         "duration_minutes": 30.8,
         "elo_change": 1.6,
         "new_elo": 1502
       },
       {
-        "date": "2026-09-04 10:35",
-        "timestamp": 1788518105.4687893,
+        "date": "2026-09-04 11:13",
+        "timestamp": 1788520413.7653742,
         "race_name": "Race 1: Silverstone",
         "duration_minutes": 31.4,
         "elo_change": 5.1,
@@ -9006,32 +9006,32 @@
         "new_elo": 1513
       },
       {
-        "date": "2026-09-01 21:01",
-        "timestamp": 1788296467.0,
+        "date": "2026-08-31 21:01",
+        "timestamp": 1788210067.0,
         "race_name": "Round 1: Monza",
         "duration_minutes": 91.1,
         "elo_change": -22.5,
         "new_elo": 1490
       },
       {
-        "date": "2026-09-04 10:35",
-        "timestamp": 1788518105.4687893,
+        "date": "2026-09-04 11:13",
+        "timestamp": 1788520413.7653742,
         "race_name": "Race 1: Misano",
         "duration_minutes": 30.8,
         "elo_change": 17.3,
         "new_elo": 1508
       },
       {
-        "date": "2026-09-04 10:35",
-        "timestamp": 1788518105.4687893,
+        "date": "2026-09-04 11:13",
+        "timestamp": 1788520413.7653742,
         "race_name": "Race 2: Imola",
         "duration_minutes": 31.2,
         "elo_change": -4.3,
         "new_elo": 1503
       },
       {
-        "date": "2026-09-04 10:35",
-        "timestamp": 1788518105.4687893,
+        "date": "2026-09-04 11:13",
+        "timestamp": 1788520413.7653742,
         "race_name": "Race 1: Silverstone",
         "duration_minutes": 31.4,
         "elo_change": 0.3,
@@ -9060,8 +9060,8 @@
     "races_completed": 1,
     "history": [
       {
-        "date": "2026-09-04 10:35",
-        "timestamp": 1788518105.4687893,
+        "date": "2026-09-04 11:13",
+        "timestamp": 1788520413.7653742,
         "race_name": "Race 1: Silverstone",
         "duration_minutes": 31.4,
         "elo_change": 3.6,
@@ -9242,8 +9242,8 @@
     "races_completed": 1,
     "history": [
       {
-        "date": "2026-09-04 10:35",
-        "timestamp": 1788518105.4687893,
+        "date": "2026-09-04 11:13",
+        "timestamp": 1788520413.7653742,
         "race_name": "Race 1: Misano",
         "duration_minutes": 30.8,
         "elo_change": 0.0,
@@ -9371,8 +9371,8 @@
     "races_completed": 1,
     "history": [
       {
-        "date": "2026-09-04 10:35",
-        "timestamp": 1788518105.4687893,
+        "date": "2026-09-04 11:13",
+        "timestamp": 1788520413.7653742,
         "race_name": "Race 2: Imola",
         "duration_minutes": 31.2,
         "elo_change": -1.3,
@@ -9726,8 +9726,8 @@
         "new_elo": 1518
       },
       {
-        "date": "2026-09-01 21:01",
-        "timestamp": 1788296467.0,
+        "date": "2026-08-31 21:01",
+        "timestamp": 1788210067.0,
         "race_name": "Round 1: Monza",
         "duration_minutes": 91.1,
         "elo_change": -22.9,
@@ -9840,8 +9840,8 @@
     "races_completed": 1,
     "history": [
       {
-        "date": "2026-09-04 10:35",
-        "timestamp": 1788518105.4687893,
+        "date": "2026-09-04 11:13",
+        "timestamp": 1788520413.7653742,
         "race_name": "Race 1: Misano",
         "duration_minutes": 30.8,
         "elo_change": -4.6,
@@ -10380,8 +10380,8 @@
     "races_completed": 1,
     "history": [
       {
-        "date": "2026-09-04 10:35",
-        "timestamp": 1788518105.4687893,
+        "date": "2026-09-04 11:13",
+        "timestamp": 1788520413.7653742,
         "race_name": "Race 1: Misano",
         "duration_minutes": 30.8,
         "elo_change": -6.1,
@@ -10395,16 +10395,16 @@
     "races_completed": 2,
     "history": [
       {
-        "date": "2026-09-04 10:35",
-        "timestamp": 1788518105.4687893,
+        "date": "2026-09-04 11:13",
+        "timestamp": 1788520413.7653742,
         "race_name": "Race 1: Silverstone",
         "duration_minutes": 31.4,
         "elo_change": -5.8,
         "new_elo": 1494
       },
       {
-        "date": "2026-09-04 10:35",
-        "timestamp": 1788518105.4687893,
+        "date": "2026-09-04 11:13",
+        "timestamp": 1788520413.7653742,
         "race_name": "Race 2: Mount Panorama",
         "duration_minutes": 30.4,
         "elo_change": -0.7,
@@ -10778,8 +10778,8 @@
     "races_completed": 1,
     "history": [
       {
-        "date": "2026-09-04 10:35",
-        "timestamp": 1788518105.4687893,
+        "date": "2026-09-04 11:13",
+        "timestamp": 1788520413.7653742,
         "race_name": "Race 1: Silverstone",
         "duration_minutes": 31.4,
         "elo_change": -7.4,
@@ -11278,8 +11278,8 @@
     "races_completed": 1,
     "history": [
       {
-        "date": "2026-09-04 10:35",
-        "timestamp": 1788518105.4687893,
+        "date": "2026-09-04 11:13",
+        "timestamp": 1788520413.7653742,
         "race_name": "Race 1: Misano",
         "duration_minutes": 30.8,
         "elo_change": -9.2,
@@ -11849,8 +11849,8 @@
     "races_completed": 1,
     "history": [
       {
-        "date": "2026-09-04 10:35",
-        "timestamp": 1788518105.4687893,
+        "date": "2026-09-04 11:13",
+        "timestamp": 1788520413.7653742,
         "race_name": "Race 1: Silverstone",
         "duration_minutes": 31.4,
         "elo_change": -10.5,
@@ -11984,8 +11984,8 @@
     "races_completed": 1,
     "history": [
       {
-        "date": "2026-09-04 10:35",
-        "timestamp": 1788518105.4687893,
+        "date": "2026-09-04 11:13",
+        "timestamp": 1788520413.7653742,
         "race_name": "Race 1: Silverstone",
         "duration_minutes": 31.4,
         "elo_change": -12.1,
@@ -12022,16 +12022,16 @@
     "races_completed": 2,
     "history": [
       {
-        "date": "2026-09-04 10:35",
-        "timestamp": 1788518105.4687893,
+        "date": "2026-09-04 11:13",
+        "timestamp": 1788520413.7653742,
         "race_name": "Race 1: Misano",
         "duration_minutes": 30.8,
         "elo_change": -9.2,
         "new_elo": 1491
       },
       {
-        "date": "2026-09-04 10:35",
-        "timestamp": 1788518105.4687893,
+        "date": "2026-09-04 11:13",
+        "timestamp": 1788520413.7653742,
         "race_name": "Race 1: Silverstone",
         "duration_minutes": 31.4,
         "elo_change": -3.8,
@@ -15773,8 +15773,8 @@
     "races_completed": 1,
     "history": [
       {
-        "date": "2026-09-01 21:01",
-        "timestamp": 1788296467.0,
+        "date": "2026-08-31 21:01",
+        "timestamp": 1788210067.0,
         "race_name": "Round 1: Monza",
         "duration_minutes": 91.1,
         "elo_change": -21.5,
@@ -15788,8 +15788,8 @@
     "races_completed": 1,
     "history": [
       {
-        "date": "2026-09-01 21:01",
-        "timestamp": 1788296467.0,
+        "date": "2026-08-31 21:01",
+        "timestamp": 1788210067.0,
         "race_name": "Round 1: Monza",
         "duration_minutes": 91.1,
         "elo_change": -21.5,
@@ -15803,8 +15803,8 @@
     "races_completed": 1,
     "history": [
       {
-        "date": "2026-09-01 21:01",
-        "timestamp": 1788296467.0,
+        "date": "2026-08-31 21:01",
+        "timestamp": 1788210067.0,
         "race_name": "Round 1: Monza",
         "duration_minutes": 91.1,
         "elo_change": -21.5,
@@ -15818,8 +15818,8 @@
     "races_completed": 1,
     "history": [
       {
-        "date": "2026-09-01 21:01",
-        "timestamp": 1788296467.0,
+        "date": "2026-08-31 21:01",
+        "timestamp": 1788210067.0,
         "race_name": "Round 1: Monza",
         "duration_minutes": 91.1,
         "elo_change": -21.5,
@@ -15833,8 +15833,8 @@
     "races_completed": 1,
     "history": [
       {
-        "date": "2026-09-01 21:01",
-        "timestamp": 1788296467.0,
+        "date": "2026-08-31 21:01",
+        "timestamp": 1788210067.0,
         "race_name": "Round 1: Monza",
         "duration_minutes": 91.1,
         "elo_change": -21.5,
@@ -15848,8 +15848,8 @@
     "races_completed": 1,
     "history": [
       {
-        "date": "2026-09-01 21:01",
-        "timestamp": 1788296467.0,
+        "date": "2026-08-31 21:01",
+        "timestamp": 1788210067.0,
         "race_name": "Round 1: Monza",
         "duration_minutes": 91.1,
         "elo_change": -21.5,
@@ -15863,8 +15863,8 @@
     "races_completed": 1,
     "history": [
       {
-        "date": "2026-09-01 21:01",
-        "timestamp": 1788296467.0,
+        "date": "2026-08-31 21:01",
+        "timestamp": 1788210067.0,
         "race_name": "Round 1: Monza",
         "duration_minutes": 91.1,
         "elo_change": -21.5,
@@ -15878,8 +15878,8 @@
     "races_completed": 1,
     "history": [
       {
-        "date": "2026-09-01 21:01",
-        "timestamp": 1788296467.0,
+        "date": "2026-08-31 21:01",
+        "timestamp": 1788210067.0,
         "race_name": "Round 1: Monza",
         "duration_minutes": 91.1,
         "elo_change": -21.5,
@@ -15893,8 +15893,8 @@
     "races_completed": 1,
     "history": [
       {
-        "date": "2026-09-01 21:01",
-        "timestamp": 1788296467.0,
+        "date": "2026-08-31 21:01",
+        "timestamp": 1788210067.0,
         "race_name": "Round 1: Monza",
         "duration_minutes": 91.1,
         "elo_change": -21.5,
@@ -15908,8 +15908,8 @@
     "races_completed": 1,
     "history": [
       {
-        "date": "2026-09-01 21:01",
-        "timestamp": 1788296467.0,
+        "date": "2026-08-31 21:01",
+        "timestamp": 1788210067.0,
         "race_name": "Round 1: Monza",
         "duration_minutes": 91.1,
         "elo_change": -21.5,
@@ -15923,8 +15923,8 @@
     "races_completed": 1,
     "history": [
       {
-        "date": "2026-09-01 21:01",
-        "timestamp": 1788296467.0,
+        "date": "2026-08-31 21:01",
+        "timestamp": 1788210067.0,
         "race_name": "Round 1: Monza",
         "duration_minutes": 91.1,
         "elo_change": -21.5,
@@ -15938,8 +15938,8 @@
     "races_completed": 1,
     "history": [
       {
-        "date": "2026-09-01 21:01",
-        "timestamp": 1788296467.0,
+        "date": "2026-08-31 21:01",
+        "timestamp": 1788210067.0,
         "race_name": "Round 1: Monza",
         "duration_minutes": 91.1,
         "elo_change": -21.5,
@@ -15953,8 +15953,8 @@
     "races_completed": 1,
     "history": [
       {
-        "date": "2026-09-01 21:01",
-        "timestamp": 1788296467.0,
+        "date": "2026-08-31 21:01",
+        "timestamp": 1788210067.0,
         "race_name": "Round 1: Monza",
         "duration_minutes": 91.1,
         "elo_change": -21.5,
@@ -17895,7 +17895,7 @@
   {
     "name": "Raymond Crawford [SL]",
     "current_elo": 1474,
-    "races_completed": 49,
+    "races_completed": 50,
     "history": [
       {
         "date": "2026-02-16 21:17",
@@ -17922,12 +17922,20 @@
         "new_elo": 1448
       },
       {
+        "date": "2026-03-13 17:25",
+        "timestamp": 1773422738.0,
+        "race_name": "Round 2: Nurburgring 24H",
+        "duration_minutes": 60.0,
+        "elo_change": 1.5,
+        "new_elo": 1450
+      },
+      {
         "date": "2026-03-16 20:59",
         "timestamp": 1773694786.0,
         "race_name": "Round 5: Imola",
         "duration_minutes": 91.5,
-        "elo_change": -20.9,
-        "new_elo": 1427
+        "elo_change": -21.0,
+        "new_elo": 1429
       },
       {
         "date": "2026-03-30 20:59",
@@ -17935,46 +17943,46 @@
         "race_name": "Round 7: Zolder",
         "duration_minutes": 90.6,
         "elo_change": -13.5,
-        "new_elo": 1414
+        "new_elo": 1415
       },
       {
         "date": "2026-04-03 21:09",
         "timestamp": 1775250551.0,
         "race_name": "Round 1: Nurburgring 24H",
         "duration_minutes": 75.5,
-        "elo_change": 51.3,
-        "new_elo": 1465
+        "elo_change": 51.0,
+        "new_elo": 1466
       },
       {
         "date": "2026-04-06 00:00",
         "timestamp": 1775433600.0,
         "race_name": "Round 8: Spa",
         "duration_minutes": 106.4,
-        "elo_change": -26.1,
-        "new_elo": 1439
+        "elo_change": -26.2,
+        "new_elo": 1440
       },
       {
         "date": "2026-04-10 20:37",
         "timestamp": 1775853464.0,
         "race_name": "Round 2: Brands Hatch",
         "duration_minutes": 70.8,
-        "elo_change": 40.2,
-        "new_elo": 1479
+        "elo_change": 40.1,
+        "new_elo": 1480
       },
       {
         "date": "2026-04-13 21:01",
         "timestamp": 1776114084.0,
         "race_name": "Round 9: Suzuka",
         "duration_minutes": 90.2,
-        "elo_change": 95.6,
-        "new_elo": 1575
+        "elo_change": 95.4,
+        "new_elo": 1576
       },
       {
         "date": "2026-04-17 20:51",
         "timestamp": 1776459084.0,
         "race_name": "Round 3: Nurburgring 24H",
         "duration_minutes": 70.2,
-        "elo_change": 46.0,
+        "elo_change": 45.9,
         "new_elo": 1621
       },
       {
@@ -17982,8 +17990,8 @@
         "timestamp": 1776718928.0,
         "race_name": "Round 10: Paul Ricard",
         "duration_minutes": 91.5,
-        "elo_change": -43.8,
-        "new_elo": 1577
+        "elo_change": -43.9,
+        "new_elo": 1578
       },
       {
         "date": "2026-04-27 21:02",
@@ -17998,7 +18006,7 @@
         "timestamp": 1778274129.0,
         "race_name": "Round 7: Nurburgring 24H",
         "duration_minutes": 77.8,
-        "elo_change": 66.9,
+        "elo_change": 66.8,
         "new_elo": 1621
       },
       {
@@ -18031,7 +18039,7 @@
         "race_name": "Round 10: Suzuka",
         "duration_minutes": 20.9,
         "elo_change": 9.9,
-        "new_elo": 1593
+        "new_elo": 1594
       },
       {
         "date": "2026-05-19 09:12",
@@ -18070,7 +18078,7 @@
         "timestamp": 1780391666.0,
         "race_name": "Round 15: Barcelona",
         "duration_minutes": 21.3,
-        "elo_change": -1.9,
+        "elo_change": -2.0,
         "new_elo": 1606
       },
       {
@@ -18079,7 +18087,7 @@
         "race_name": "Round 16: Monza",
         "duration_minutes": 21.6,
         "elo_change": -2.5,
-        "new_elo": 1603
+        "new_elo": 1604
       },
       {
         "date": "2026-06-08 21:00",
@@ -18095,7 +18103,7 @@
         "race_name": "Round 17: Watkins Glen",
         "duration_minutes": 21.1,
         "elo_change": -1.9,
-        "new_elo": 1580
+        "new_elo": 1581
       },
       {
         "date": "2026-06-09 19:39",
@@ -18135,7 +18143,7 @@
         "race_name": "Round 24: Indianapolis",
         "duration_minutes": 90.0,
         "elo_change": -17.8,
-        "new_elo": 1551
+        "new_elo": 1552
       },
       {
         "date": "2026-07-10 21:01",
@@ -18143,7 +18151,7 @@
         "race_name": "Season Opener",
         "duration_minutes": 77.5,
         "elo_change": 44.9,
-        "new_elo": 1596
+        "new_elo": 1597
       },
       {
         "date": "2026-07-13 21:02",
@@ -18207,7 +18215,7 @@
         "race_name": "British Classic",
         "duration_minutes": 70.8,
         "elo_change": -1.2,
-        "new_elo": 1508
+        "new_elo": 1509
       },
       {
         "date": "2026-08-03 21:00",
@@ -18258,32 +18266,32 @@
         "new_elo": 1457
       },
       {
-        "date": "2026-09-04 10:35",
-        "timestamp": 1788518105.4687893,
+        "date": "2026-09-04 11:13",
+        "timestamp": 1788520413.7653742,
         "race_name": "Race 1: Misano",
         "duration_minutes": 30.8,
         "elo_change": 4.7,
         "new_elo": 1462
       },
       {
-        "date": "2026-09-04 10:35",
-        "timestamp": 1788518105.4687893,
+        "date": "2026-09-04 11:13",
+        "timestamp": 1788520413.7653742,
         "race_name": "Race 2: Imola",
         "duration_minutes": 31.2,
         "elo_change": 2.5,
         "new_elo": 1464
       },
       {
-        "date": "2026-09-04 10:35",
-        "timestamp": 1788518105.4687893,
+        "date": "2026-09-04 11:13",
+        "timestamp": 1788520413.7653742,
         "race_name": "Race 1: Silverstone",
         "duration_minutes": 31.4,
         "elo_change": 8.5,
         "new_elo": 1473
       },
       {
-        "date": "2026-09-04 10:35",
-        "timestamp": 1788518105.4687893,
+        "date": "2026-09-04 11:13",
+        "timestamp": 1788520413.7653742,
         "race_name": "Race 2: Mount Panorama",
         "duration_minutes": 30.4,
         "elo_change": 1.3,
@@ -20365,16 +20373,16 @@
         "new_elo": 1489
       },
       {
-        "date": "2026-09-04 10:35",
-        "timestamp": 1788518105.4687893,
+        "date": "2026-09-04 11:13",
+        "timestamp": 1788520413.7653742,
         "race_name": "Race 1: Silverstone",
         "duration_minutes": 31.4,
         "elo_change": -13.2,
         "new_elo": 1476
       },
       {
-        "date": "2026-09-04 10:35",
-        "timestamp": 1788518105.4687893,
+        "date": "2026-09-04 11:13",
+        "timestamp": 1788520413.7653742,
         "race_name": "Race 2: Mount Panorama",
         "duration_minutes": 30.4,
         "elo_change": -3.6,
@@ -20900,16 +20908,16 @@
         "new_elo": 1494
       },
       {
-        "date": "2026-09-04 10:35",
-        "timestamp": 1788518105.4687893,
+        "date": "2026-09-04 11:13",
+        "timestamp": 1788520413.7653742,
         "race_name": "Race 1: Misano",
         "duration_minutes": 30.8,
         "elo_change": -9.0,
         "new_elo": 1485
       },
       {
-        "date": "2026-09-04 10:35",
-        "timestamp": 1788518105.4687893,
+        "date": "2026-09-04 11:13",
+        "timestamp": 1788520413.7653742,
         "race_name": "Race 1: Silverstone",
         "duration_minutes": 31.4,
         "elo_change": -14.5,
@@ -21347,8 +21355,8 @@
         "new_elo": 1486
       },
       {
-        "date": "2026-09-01 21:01",
-        "timestamp": 1788296467.0,
+        "date": "2026-08-31 21:01",
+        "timestamp": 1788210067.0,
         "race_name": "Round 1: Monza",
         "duration_minutes": 91.1,
         "elo_change": -20.5,
@@ -21516,8 +21524,8 @@
         "new_elo": 1485
       },
       {
-        "date": "2026-09-01 21:01",
-        "timestamp": 1788296467.0,
+        "date": "2026-08-31 21:01",
+        "timestamp": 1788210067.0,
         "race_name": "Round 1: Monza",
         "duration_minutes": 91.1,
         "elo_change": -20.4,
@@ -21830,8 +21838,8 @@
         "new_elo": 1480
       },
       {
-        "date": "2026-09-01 21:01",
-        "timestamp": 1788296467.0,
+        "date": "2026-08-31 21:01",
+        "timestamp": 1788210067.0,
         "race_name": "Round 1: Monza",
         "duration_minutes": 91.1,
         "elo_change": -20.0,
@@ -22169,8 +22177,8 @@
         "new_elo": 1475
       },
       {
-        "date": "2026-09-01 21:01",
-        "timestamp": 1788296467.0,
+        "date": "2026-08-31 21:01",
+        "timestamp": 1788210067.0,
         "race_name": "Round 1: Monza",
         "duration_minutes": 91.1,
         "elo_change": -19.6,
@@ -22192,8 +22200,8 @@
         "new_elo": 1475
       },
       {
-        "date": "2026-09-01 21:01",
-        "timestamp": 1788296467.0,
+        "date": "2026-08-31 21:01",
+        "timestamp": 1788210067.0,
         "race_name": "Round 1: Monza",
         "duration_minutes": 91.1,
         "elo_change": -19.6,
@@ -22427,8 +22435,8 @@
         "new_elo": 1472
       },
       {
-        "date": "2026-09-01 21:01",
-        "timestamp": 1788296467.0,
+        "date": "2026-08-31 21:01",
+        "timestamp": 1788210067.0,
         "race_name": "Round 1: Monza",
         "duration_minutes": 91.1,
         "elo_change": -19.4,
@@ -22761,8 +22769,8 @@
         "new_elo": 1465
       },
       {
-        "date": "2026-09-01 21:01",
-        "timestamp": 1788296467.0,
+        "date": "2026-08-31 21:01",
+        "timestamp": 1788210067.0,
         "race_name": "Round 1: Monza",
         "duration_minutes": 91.1,
         "elo_change": -18.9,
@@ -22989,8 +22997,8 @@
   },
   {
     "name": "Gael Duchêne (ESPAÑA)",
-    "current_elo": 1436,
-    "races_completed": 3,
+    "current_elo": 1435,
+    "races_completed": 4,
     "history": [
       {
         "date": "2026-02-16 21:17",
@@ -23009,12 +23017,20 @@
         "new_elo": 1458
       },
       {
+        "date": "2026-03-13 17:25",
+        "timestamp": 1773422738.0,
+        "race_name": "Round 2: Nurburgring 24H",
+        "duration_minutes": 60.0,
+        "elo_change": -1.5,
+        "new_elo": 1456
+      },
+      {
         "date": "2026-03-16 20:59",
         "timestamp": 1773694786.0,
         "race_name": "Round 5: Imola",
         "duration_minutes": 91.5,
-        "elo_change": -21.6,
-        "new_elo": 1436
+        "elo_change": -21.5,
+        "new_elo": 1435
       }
     ]
   },
@@ -23079,16 +23095,16 @@
         "new_elo": 1435
       },
       {
-        "date": "2026-09-01 21:01",
-        "timestamp": 1788296467.0,
+        "date": "2026-08-31 21:01",
+        "timestamp": 1788210067.0,
         "race_name": "Round 1: Monza",
         "duration_minutes": 91.1,
         "elo_change": -16.8,
         "new_elo": 1418
       },
       {
-        "date": "2026-09-04 10:35",
-        "timestamp": 1788518105.4687893,
+        "date": "2026-09-04 11:13",
+        "timestamp": 1788520413.7653742,
         "race_name": "Race 1: Silverstone",
         "duration_minutes": 31.4,
         "elo_change": 15.3,
@@ -23115,7 +23131,7 @@
         "race_name": "TCX Mini-Champ - Race 1",
         "duration_minutes": 20.2,
         "elo_change": -1.6,
-        "new_elo": 1484
+        "new_elo": 1485
       },
       {
         "date": "2026-07-17 20:22",

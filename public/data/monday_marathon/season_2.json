@@ -16,6 +16,21 @@
       "races": 1
     },
     {
+      "name": "Raymond Crawford",
+      "car_class": "GT3",
+      "favorite_car": 32,
+      "points": 180,
+      "avg_points": 180.0,
+      "avg_pos": 1.0,
+      "avg_pace_pos": "-",
+      "net_pos_gained": 0,
+      "avg_qualy_pos": "-",
+      "avg_qualy_gap": "-",
+      "net_pos_gained_qualy": 0,
+      "avg_gap": "-",
+      "races": 1
+    },
+    {
       "name": "Dominic Zimmermann [SL]",
       "car_class": "GT3",
       "favorite_car": 35,
@@ -28,6 +43,21 @@
       "avg_qualy_gap": "+0.215",
       "net_pos_gained_qualy": 2,
       "avg_gap": "+0.388",
+      "races": 1
+    },
+    {
+      "name": "Gael Duch\u00eane (ESPA\u00d1A)",
+      "car_class": "GT3",
+      "favorite_car": 20,
+      "points": 150,
+      "avg_points": 150.0,
+      "avg_pos": 2.0,
+      "avg_pace_pos": "-",
+      "net_pos_gained": 0,
+      "avg_qualy_pos": "-",
+      "avg_qualy_gap": "-",
+      "net_pos_gained_qualy": 0,
+      "avg_gap": "-",
       "races": 1
     },
     {
@@ -305,7 +335,7 @@
     {
       "id": "race_0",
       "name": "Round 1: Monza",
-      "timestamp": "2026-09-01 21:01:07",
+      "timestamp": "2026-08-31 21:01:07",
       "results": [
         {
           "car_class": "GT3",
@@ -6072,6 +6102,74 @@
           "gap_pole_ms": null
         }
       ]
+    },
+    {
+      "id": "race_1",
+      "name": "Round 2: Nurburgring 24H",
+      "timestamp": "2026-03-13 17:25:38",
+      "results": [
+        {
+          "car_class": "GT3",
+          "pos": 1,
+          "qualy_pos": "-",
+          "qualy_time": "-",
+          "qualy_time_ms": null,
+          "s1": "-",
+          "s2": "-",
+          "s3": "-",
+          "qualy_gap": "-",
+          "qualy_gap_ms": null,
+          "net_vs_q": "-",
+          "name": "Raymond Crawford",
+          "car_model": 32,
+          "points": 180,
+          "laps": 0,
+          "incidents": "-",
+          "avg_time": "-",
+          "avg_lap_ms": null,
+          "lap_history": [],
+          "gap_pace_ms": 0,
+          "gap_best_ms": 0,
+          "gap_pace": "-",
+          "best_lap": "-",
+          "best_lap_ms": null,
+          "gap_best": "-",
+          "penalty": 0,
+          "race_gap": "WINNER",
+          "pace_pos": "-"
+        },
+        {
+          "car_class": "GT3",
+          "pos": 2,
+          "qualy_pos": "-",
+          "qualy_time": "-",
+          "qualy_time_ms": null,
+          "s1": "-",
+          "s2": "-",
+          "s3": "-",
+          "qualy_gap": "-",
+          "qualy_gap_ms": null,
+          "net_vs_q": "-",
+          "name": "Gael Duch\u00eane (ESPA\u00d1A)",
+          "car_model": 20,
+          "points": 150,
+          "laps": 0,
+          "incidents": "-",
+          "avg_time": "-",
+          "avg_lap_ms": null,
+          "lap_history": [],
+          "gap_pace_ms": 0,
+          "gap_best_ms": 0,
+          "gap_pace": "-",
+          "best_lap": "-",
+          "best_lap_ms": null,
+          "gap_best": "-",
+          "penalty": 0,
+          "race_gap": "+0.000s",
+          "pace_pos": "-"
+        }
+      ],
+      "qualy_results": []
     }
   ],
   "hall_of_fame": {
@@ -6088,6 +6186,37 @@
           "time_ms": 107255,
           "driver": "Dominic Zimmermann [SL]",
           "car": 35,
+          "wet": 0
+        }
+      },
+      "GT4": {
+        "qualy": {
+          "time_ms": null,
+          "driver": "-",
+          "car": 0,
+          "wet": 0
+        },
+        "race": {
+          "time_ms": null,
+          "driver": "-",
+          "car": 0,
+          "wet": 0
+        }
+      }
+    },
+    "nurburgring_24h": {
+      "name": "Nurburgring 24H",
+      "GT3": {
+        "qualy": {
+          "time_ms": null,
+          "driver": "-",
+          "car": 0,
+          "wet": 0
+        },
+        "race": {
+          "time_ms": null,
+          "driver": "-",
+          "car": 0,
           "wet": 0
         }
       },
