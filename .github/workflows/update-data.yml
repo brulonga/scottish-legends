@@ -1,8 +1,8 @@
 name: Actualizar Ligas y Estadísticas
 on:
-  workflow_dispatch: # Te permite ejecutarlo manualmente desde GitHub cuando quieras
-  # push: # (Descomenta 'push' si quieres que también se ejecute cada vez que hagas cambios en el código)
-  #   branches: [ main ]
+  workflow_dispatch: 
+  repository_dispatch:
+    types: [drive_upload]
 
 jobs:
   run-python-script:
