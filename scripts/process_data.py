@@ -15,9 +15,10 @@ def authenticate_gdrive():
     creds = service_account.Credentials.from_service_account_info(creds_dict, scopes=SCOPES)
     return build('drive', 'v3', credentials=creds)
 
-def download_folder_recursive(service, folder_id, local_path):
-    """Descarga el contenido de una carpeta de Drive manteniendo la estructura."""
+def download_folder_recursive(service, folder_id, local_path, valid_paths):
+    """Descarga el contenido de una carpeta de Drive manteniendo la estructura y anota lo descargado."""
     os.makedirs(local_path, exist_ok=True)
+    valid_paths.add(os.path.abspath(local_path)) # Añadimos la carpeta a la lista blanca
     
     page_token = None
     while True:
@@ -41,9 +42,9 @@ def download_folder_recursive(service, folder_id, local_path):
             # Si es una carpeta, volvemos a llamar a esta función para entrar en ella
             if mime_type == 'application/vnd.google-apps.folder':
                 print(f"📁 Explorando carpeta: {current_local_path}")
-                download_folder_recursive(service, item_id, current_local_path)
+                download_folder_recursive(service, item_id, current_local_path, valid_paths)
             
-            # Si es un archivo (como un JSON), lo descargamos
+            # Si es un archivo, lo descargamos
             else:
                 print(f"📥 Descargando archivo: {current_local_path}")
                 request = service.files().get_media(fileId=item_id)
@@ -56,9 +57,31 @@ def download_folder_recursive(service, folder_id, local_path):
                 with open(current_local_path, 'wb') as f:
                     f.write(fh.getvalue())
                 
+                valid_paths.add(os.path.abspath(current_local_path)) # Añadimos el archivo a la lista blanca
+                
         page_token = results.get('nextPageToken', None)
         if page_token is None:
             break
+
+def clean_orphan_files(base_path, valid_paths):
+    """Elimina los archivos y carpetas locales que ya no existen en Drive."""
+    for root, dirs, files in os.walk(base_path, topdown=False):
+        # 1. Limpiar archivos antiguos
+        for name in files:
+            full_path = os.path.abspath(os.path.join(root, name))
+            if full_path not in valid_paths:
+                print(f"🗑️ Eliminando archivo huérfano local: {full_path}")
+                os.remove(full_path)
+        
+        # 2. Limpiar carpetas vacías o antiguas
+        for name in dirs:
+            full_path = os.path.abspath(os.path.join(root, name))
+            if full_path not in valid_paths:
+                print(f"🗑️ Eliminando carpeta huérfana local: {full_path}")
+                try:
+                    os.rmdir(full_path)
+                except OSError:
+                    pass # Si falla por no estar vacía o permisos, la ignoramos
 
 if __name__ == '__main__':
     print("🚀 Iniciando sincronización con Google Drive...")
@@ -70,10 +93,16 @@ if __name__ == '__main__':
             raise ValueError("❌ No se encontró el secreto FOLDER_ID")
             
         base_sync_folder = 'public/data/gdrive_sync'
+        valid_paths = set() # Memoria de lo que realmente existe en Drive
         
         print(f"📡 Conectado a Drive. Clonando estructura en {base_sync_folder}/...")
-        download_folder_recursive(drive_service, main_folder_id, base_sync_folder)
-        print("✨ ¡Descarga completada con éxito!")
+        download_folder_recursive(drive_service, main_folder_id, base_sync_folder, valid_paths)
+        
+        print("🧹 Limpiando archivos locales eliminados en Drive...")
+        if os.path.exists(base_sync_folder):
+            clean_orphan_files(base_sync_folder, valid_paths)
+            
+        print("✨ ¡Sincronización completada con éxito!")
         
     except Exception as e:
         print(f"❌ Error crítico: {e}")
