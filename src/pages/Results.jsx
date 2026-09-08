@@ -1,9 +1,14 @@
 import { useState, useMemo, useEffect } from 'react';  
 import { Trophy, Timer, Flag, Calendar, AlertCircle } from 'lucide-react';  
 import { useLeagueData } from '../hooks/useLeagueData';  
-import { LeagueSelector } from './LeagueSelector'; // 🚀 IMPORTAMOS EL NUEVO COMPONENTE
+import { LeagueSelector } from './LeagueSelector'; // 🚀 Ajusta la ruta si es necesario
 
 // --- FORMATEADORES 100% BLINDADOS ---
+const normalizeName = (name) => {
+  if (!name) return "Unknown Driver";
+  return name.replace(/\[.*?\]|\|.*/g, '').trim();
+};
+
 const msToTimeStr = (ms) => {  
   if (ms === null || ms === undefined || ms === Infinity || ms === 0 || ms === "0" || ms === "-") return "-";  
   let val = Number(ms);  
@@ -53,7 +58,7 @@ const textNeonRed = "text-red-500 font-bold drop-shadow-[0_0_8px_rgba(239,68,68,
 // --- TABLA DE CLASIFICACIÓN (QUALY) ---
 const QualyTable = ({ data = [], bestSectors = [Infinity, Infinity, Infinity], onDriverClick }) => {  
   return (  
-    <div className="bg-[#0a0a0a] border border-gray-800 shadow-2xl mb-12 overflow-hidden">  
+    <div className="bg-[#0a0a0a] border border-gray-800 shadow-2xl mb-12 overflow-hidden rounded-lg">  
       <div className="p-4 border-b border-gray-800 bg-black flex items-center space-x-3">  
         <Timer className="w-6 h-6 text-blue-500" />  
         <h3 className="font-['Teko'] text-3xl font-bold text-white uppercase tracking-wide">Qualifying Results</h3>  
@@ -76,9 +81,7 @@ const QualyTable = ({ data = [], bestSectors = [Infinity, Infinity, Infinity], o
             {data.map((row, index) => {  
               if (!row) return null;
 
-              // 🧹 LIMPIADOR DE NOMBRES
-              const cleanName = row.name ? row.name.replace(/\[.*?\]|\|.*/g, '').trim() : "Unknown Driver";
-
+              const cleanName = normalizeName(row.name);
               const noTime = !row.best_lap || row.best_lap === "-" || row.best_lap === "NO TIME";  
               const isPole = !noTime && (row.gap_pole === "POLE" || row.gap_pole_ms === 0 || row.pos === 1 || row.pos === "1");  
                 
@@ -131,10 +134,10 @@ const QualyTable = ({ data = [], bestSectors = [Infinity, Infinity, Infinity], o
   );  
 };  
 
-// --- TABLA DE CARRERA ---
-const RaceTable = ({ data = [], bestLap = Infinity, bestPace = Infinity, onDriverClick }) => {  
+// --- TABLA DE CARRERA (CON COLUMNA DE ELO) ---
+const RaceTable = ({ data = [], bestLap = Infinity, bestPace = Infinity, onDriverClick, eloData = [], raceName = "" }) => {  
   return (  
-    <div className="bg-[#0a0a0a] border border-gray-800 shadow-2xl mb-12 overflow-hidden">  
+    <div className="bg-[#0a0a0a] border border-gray-800 shadow-2xl mb-12 overflow-hidden rounded-lg">  
       <div className="p-4 border-b border-gray-800 bg-black flex items-center space-x-3">  
         <Flag className="w-6 h-6 text-green-500" />  
         <h3 className="font-['Teko'] text-3xl font-bold text-white uppercase tracking-wide">Race Results</h3>  
@@ -149,7 +152,8 @@ const RaceTable = ({ data = [], bestLap = Infinity, bestPace = Infinity, onDrive
               <th className="px-3 py-3 font-bold text-center">Net vs Q</th>  
               <th className="px-3 py-3 font-bold">Driver</th>  
               <th className="px-3 py-3 font-bold">Car</th>  
-              <th className="px-3 py-3 font-bold text-center">Pts</th>  
+              <th className="px-3 py-3 font-bold text-center">Pts</th>
+              <th className="px-3 py-3 font-bold text-center border-x border-gray-800/50 text-purple-400">ELO Δ</th>  
               <th className="px-3 py-3 font-bold text-center">Laps</th>  
               <th className="px-3 py-3 font-bold text-center">Race Gap</th>  
               <th className="px-3 py-3 font-bold text-center">Inc</th>  
@@ -163,9 +167,7 @@ const RaceTable = ({ data = [], bestLap = Infinity, bestPace = Infinity, onDrive
             {data.map((row, index) => {  
               if (!row) return null;
 
-              // 🧹 LIMPIADOR DE NOMBRES
-              const cleanName = row.name ? row.name.replace(/\[.*?\]|\|.*/g, '').trim() : "Unknown Driver";
-
+              const cleanName = normalizeName(row.name);
               const displayPos = row.class_pos || row.pos; 
               const isWinner = displayPos === 1 || displayPos === "1" || row.race_gap === "WINNER";  
               const isDNF = String(row.pos).toUpperCase() === "DNF" || String(row.pos).toUpperCase() === "DSQ" || String(row.class_pos).toUpperCase() === "DNF";  
@@ -197,6 +199,31 @@ const RaceTable = ({ data = [], bestLap = Infinity, bestPace = Infinity, onDrive
               if (isDNF || row.race_gap === "DNF" || row.gap_ms === "DNF") raceGapText = <span className={textNeonRed}>DNF</span>;  
               else if (isWinner || row.race_gap === "WINNER" || row.gap_ms === "WINNER" || row.gap_ms === 0) raceGapText = <span className={textNeonGold}>WINNER</span>;  
 
+              // 🚀 CÁLCULO DEL CAMBIO DE ELO EN ESTA CARRERA (BLINDADO)
+              let eloChangeDisplay = <span className="text-gray-600">-</span>;
+              if (eloData && eloData.length > 0) {
+                const driverElo = eloData.find(d => normalizeName(d.name).toLowerCase() === cleanName.toLowerCase());
+                if (driverElo && driverElo.history) {
+                  // Búsqueda a prueba de fallos: minúsculas y sin espacios a los lados
+                  const match = driverElo.history.find(h => {
+                    const histName = String(h.race_name || "").toLowerCase().trim();
+                    const currName = String(raceName || "").toLowerCase().trim();
+                    return histName === currName;
+                  });
+
+                  if (match && match.elo_change !== undefined) {
+                    const change = match.elo_change;
+                    if (change > 0) {
+                      eloChangeDisplay = <span className="text-green-400 font-bold drop-shadow-[0_0_5px_rgba(74,222,128,0.4)]">+{change}</span>;
+                    } else if (change < 0) {
+                      eloChangeDisplay = <span className="text-red-400 font-bold drop-shadow-[0_0_5px_rgba(248,113,113,0.4)]">{change}</span>;
+                    } else {
+                      eloChangeDisplay = <span className="text-gray-500 font-bold">0</span>;
+                    }
+                  }
+                }
+              }
+
               return (  
                 <tr key={`race-${row.name || index}`} className="hover:bg-gray-800/30 transition-colors">  
                   <td className="px-3 py-3 text-center">  
@@ -217,7 +244,9 @@ const RaceTable = ({ data = [], bestLap = Infinity, bestPace = Infinity, onDrive
                     
                   <td className="px-3 py-3 text-gray-500 text-[11px] truncate max-w-[150px]">{row.car_model || row.car || "-"}</td>  
                     
-                  <td className="px-3 py-3 text-center font-bold text-white">{row.points ?? "-"}</td>  
+                  <td className="px-3 py-3 text-center font-bold text-white">{row.points ?? "-"}</td>
+                  <td className="px-3 py-3 text-center border-x border-gray-800/50 bg-purple-900/10">{eloChangeDisplay}</td>    
+                  
                   <td className="px-3 py-3 text-center text-gray-300 font-mono">{row.laps ?? "-"}</td>  
                     
                   <td className="px-3 py-3 text-center font-mono">{raceGapText}</td>  
@@ -255,19 +284,27 @@ export const Results = ({
   activeLeague: propsLeague,
   activeSeason: propsSeason
 }) => {
-  // 🚀 ESTADO LOCAL INDEPENDIENTE (Por si App.jsx no se lo pasa)
   const [activeLeague, setActiveLeague] = useState(propsLeague || null);
   const [activeSeason, setActiveSeason] = useState(propsSeason || null);
   const [selectedRound, setSelectedRound] = useState(0);
+  const [eloData, setEloData] = useState([]); // 🚀 ESTADO PARA GUARDAR EL ELO GLOBAL
 
-  // 🚀 HOOK DINÁMICO
   const { leagueData, loading, error } = useLeagueData(activeLeague, activeSeason);
   const sessions = leagueData?.sessions || [];
 
-  // Resetear la carrera seleccionada cuando cambiamos de liga o temporada
   useEffect(() => {
     setSelectedRound(0);
   }, [activeLeague, activeSeason]);
+
+  // 🚀 LECTURA DEL ARCHIVO DE ELO AL CARGAR EL COMPONENTE
+  useEffect(() => {
+    fetch('/data/elo/driver_elos.json')
+      .then(res => res.json())
+      .then(data => {
+         if (Array.isArray(data)) setEloData(data);
+      })
+      .catch(err => console.warn("No se pudo cargar el archivo ELO en resultados", err));
+  }, []);
 
   const currentEvent = sessions[selectedRound]; 
 
@@ -336,7 +373,6 @@ export const Results = ({
             Event <span className="text-yellow-400">Results</span>  
           </h1>  
            
-          {/* 🚀 SELECTORES DE LIGA Y TEMPORADA */}  
           <div className="mt-6 max-w-4xl mx-auto">
             <LeagueSelector 
               activeLeague={activeLeague} 
@@ -347,7 +383,6 @@ export const Results = ({
           </div>
         </div>  
 
-        {/* ESTADOS DE CARGA Y VACÍO */}  
         {!activeLeague || !activeSeason ? (  
           <div className="bg-[#0a0a0a] p-16 text-center border border-gray-800 rounded-lg">  
             <Flag className="w-20 h-20 text-gray-700 mx-auto mb-6 animate-pulse" />  
@@ -369,14 +404,13 @@ export const Results = ({
           </div>  
         ) : (  
           <>  
-            {/* SELECTOR DE CARRERA (ROUND) */}  
             <div className="mb-10 max-w-xl mx-auto">  
               <label className="text-gray-500 font-['Teko'] text-xl uppercase tracking-widest mb-2 block text-center">Select Race Event</label>  
               <div className="relative">  
                 <select  
                   value={selectedRound}  
                   onChange={(e) => setSelectedRound(Number(e.target.value))}  
-                  className="w-full bg-[#0a0a0a] border border-gray-700 text-white p-4 font-['Teko'] text-2xl uppercase tracking-widest outline-none focus:border-yellow-500 transition-colors appearance-none cursor-pointer"  
+                  className="w-full bg-[#0a0a0a] border border-gray-700 text-white p-4 font-['Teko'] text-2xl uppercase tracking-widest outline-none focus:border-yellow-500 transition-colors appearance-none cursor-pointer rounded"  
                 >  
                   {sessions.map((session, idx) => (  
                     <option key={idx} value={idx}>{session.name || `Round ${idx + 1}`}</option>  
@@ -388,12 +422,9 @@ export const Results = ({
               </div>  
             </div>  
 
-            {/* TABLAS DE RESULTADOS POR CLASE */}  
             {currentEvent && groupedClassData.length > 0 ? (  
               groupedClassData.map((group) => (  
                 <div key={group.uniqueId} className="mb-16 animate-fade-in">  
-
-                  {/* TÍTULO DE LA SESIÓN Y CLASE */}  
                   <div className="mb-6 flex flex-col border-b border-gray-800 pb-2">  
                     <span className="text-blue-400 text-sm font-bold uppercase tracking-widest mb-1">  
                       {group.sessionName}  
@@ -407,7 +438,16 @@ export const Results = ({
                   </div>  
 
                   {group.qualyResults.length > 0 && <QualyTable data={group.qualyResults} bestSectors={group.bestSectors} onDriverClick={onDriverClick} />}  
-                  {group.raceResults.length > 0 && <RaceTable data={group.raceResults} bestLap={group.bestLap} bestPace={group.bestPace} onDriverClick={onDriverClick} />}  
+                  {group.raceResults.length > 0 && (
+                    <RaceTable 
+                      data={group.raceResults} 
+                      bestLap={group.bestLap} 
+                      bestPace={group.bestPace} 
+                      onDriverClick={onDriverClick} 
+                      eloData={eloData} // 🚀 Pasamos el ELO a la tabla
+                      raceName={group.sessionName} // 🚀 Pasamos el nombre de la carrera para buscar
+                    />
+                  )}  
                 </div>  
               ))  
             ) : (  

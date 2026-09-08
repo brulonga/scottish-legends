@@ -13,8 +13,10 @@ INPUT_DIRS = [
 OUTPUT_FILE = "public/data/elo/driver_elos.json"
 
 STARTING_ELO = 1500
-BASE_K_FACTOR = 3  
-REFERENCE_DURATION_MINUTES = 60.0 
+# 🚀 1. EL BOTE TOTAL: Ajustado a 120 para equilibrar con la nueva referencia
+BASE_K_TOTAL = 120  
+# 🚀 2. REFERENCIA: 90 minutos es la carrera "Estándar" que da el 100% de puntos
+REFERENCE_DURATION_MINUTES = 90.0 
 
 def normalize_name(raw_name):
     if not raw_name: return "Unknown"
@@ -145,10 +147,6 @@ def calculate_elo():
         raw_results = race.get("results", [])
         if not raw_results: continue
         
-        duration_mins = calculate_race_duration_minutes(race)
-        duration_multiplier = max(0.2, min(4.0, duration_mins / REFERENCE_DURATION_MINUTES))
-        effective_k = BASE_K_FACTOR * duration_multiplier
-
         def get_pos(x):
             p = str(x.get("pos", "DNF")).strip().upper()
             if p in ["DNF", "DSQ", "DNS", "-", ""]: return 9999
@@ -157,12 +155,33 @@ def calculate_elo():
             
         sorted_results = sorted(raw_results, key=get_pos)
         
-        # Filtro antiduplicados por piloto en la misma carrera
         seen_in_race = set()
         deduped_results = []
         race_drivers_norm = []
         
         for r in sorted_results:
+            pos_str = str(r.get("pos", "")).strip().upper()
+            if pos_str == "DNS" or pos_str == "SPECTATOR":
+                continue
+                
+            has_lap_info = any(k in r for k in ["lapCount", "lapsCount", "laps", "lap_history"])
+            laps_completed = -1
+            
+            if has_lap_info:
+                try:
+                    if "lapCount" in r: laps_completed = int(r.get("lapCount", 0) or 0)
+                    elif "lapsCount" in r: laps_completed = int(r.get("lapsCount", 0) or 0)
+                    elif "laps" in r: 
+                        val = r.get("laps", 0)
+                        laps_completed = len(val) if isinstance(val, list) else int(val or 0)
+                    elif "lap_history" in r: 
+                        laps_completed = len(r.get("lap_history", []))
+                except:
+                    pass
+            
+            if has_lap_info and laps_completed == 0:
+                continue
+
             raw = r.get("name", "Unknown")
             norm = normalize_name(raw)
             if norm in seen_in_race:
@@ -175,6 +194,21 @@ def calculate_elo():
             if norm not in elos:
                 elos[norm] = STARTING_ELO
         
+        N = len(race_drivers_norm)
+        if N <= 1: 
+            continue
+            
+        duration_mins = calculate_race_duration_minutes(race)
+        
+        # 🚀 3. EL MULTIPLICADOR ESTRELLA: Mínimo 20% de los puntos, Máximo 100% (carreras de >= 90 mins)
+        duration_multiplier = max(0.2, min(1.0, duration_mins / REFERENCE_DURATION_MINUTES))
+        
+        effective_k = (BASE_K_TOTAL * duration_multiplier) / (N - 1)
+        
+        pre_race_elos = {d: elos[d] for d in race_drivers_norm}
+        sorted_by_elo = sorted(race_drivers_norm, key=lambda x: pre_race_elos[x], reverse=True)
+        expected_positions = {d: idx + 1 for idx, d in enumerate(sorted_by_elo)}
+
         changes = {d: 0 for d in race_drivers_norm}
         
         for i in range(len(race_drivers_norm)):
@@ -191,12 +225,44 @@ def calculate_elo():
                 if pos_a == 9999 and pos_b == 9999:
                     continue
                     
-                score_a, score_b = 1.0, 0.0
+                score_a = 1.0 if pos_a < pos_b else (0.5 if pos_a == pos_b else 0.0)
+                score_b = 1.0 - score_a
                     
                 changes[d_a] += effective_k * (score_a - ea)
                 changes[d_b] += effective_k * (score_b - eb)
+        
+        for d in race_drivers_norm:
+            pos = get_pos(deduped_results[race_drivers_norm.index(d)])
+            exp_pos = expected_positions[d]
+            
+            if pos != 9999:
+                if changes[d] > 0:
+                    changes[d] *= 2.0
                 
-        # Fecha legible calculada desde el timestamp
+                if pos == 1 and changes[d] > 0:
+                    changes[d] *= 1.50
+                elif pos == 2 and changes[d] > 0:
+                    changes[d] *= 1.35
+                elif pos == 3 and changes[d] > 0:
+                    changes[d] *= 1.20
+                elif pos <= 5 and changes[d] > 0:
+                    changes[d] *= 1.10
+                
+                if pos <= exp_pos + 3 or pos <= 5:
+                    if changes[d] < 0:
+                        changes[d] = 2.0 
+                        
+                # 🚀 4. BONOS FIJOS MULTIPLICADOS POR LA DURACIÓN
+                # Si ganas una sprint de 20 min te llevas un +6.6 extra, si es de 90 min te llevas el +30 íntegro
+                if pos == 1:
+                    changes[d] += (30.0 * duration_multiplier)
+                elif pos == 2:
+                    changes[d] += (20.0 * duration_multiplier)
+                elif pos == 3:
+                    changes[d] += (10.0 * duration_multiplier)
+                elif pos <= 5:
+                    changes[d] += (5.0 * duration_multiplier)
+                    
         parsed_ts = race.get("parsed_timestamp", 0)
         race_date = race.get("date")
         if not race_date or race_date == "Unknown Date":
@@ -231,7 +297,7 @@ def calculate_elo():
     with open(OUTPUT_FILE, 'w', encoding='utf-8') as f:
         json.dump(final_output, f, indent=2, ensure_ascii=False)
         
-    print(f"✅ Motor ELO finalizado: {len(races)} carreras procesadas.")
+    print(f"✅ Motor ELO High-Inflation (Escalado x Tiempo) finalizado: {len(races)} carreras procesadas.")
     print(f"💾 Archivo actualizado en: {OUTPUT_FILE}")
 
 if __name__ == "__main__":

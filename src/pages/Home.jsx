@@ -1,25 +1,37 @@
-import { Calendar, Trophy, Play, Users, ChevronRight, MonitorPlay, FileText } from 'lucide-react'; 
-import { useState, useEffect } from 'react'; 
+import { Calendar, Trophy, Play, Users, ChevronRight, MonitorPlay } from 'lucide-react'; 
+import { useState, useEffect, useMemo } from 'react'; 
 import heroBg from '../assets/fondo.png';  
  
-// ⚙️ PANEL DE CONFIGURACIÓN RÁPIDA 
+// ⚙️ PANEL DE CONFIGURACIÓN RÁPIDA (CALENDARIOS COMPLETOS)
 const HOME_CONFIG = { 
-  mondayRace: { 
-    track: "Monza", 
-    dateIso: "2026-07-20T22:00:00+02:00",  
-    details: "20 Min Qualy • 1.5h Race" 
+  mondayMarathon: { 
+    events: [
+      { id: 1, name: "Round 1", track: "Monza", cars: "GT3", format: "90 min Race" },
+      { id: 2, name: "Round 2", track: "Kyalami Grand Prix Circuit", cars: "GT3", format: "90 min Race" },
+      { id: 3, name: "Round 3", track: "Misano", cars: "GT3", format: "90 min Race" },
+      { id: 4, name: "Round 4", track: "Suzuka", cars: "GT3", format: "90 min Race" },
+      { id: 5, name: "Round 5", track: "Mount Panorama", cars: "GT3", format: "90 min Race" },
+      { id: 6, name: "Round 6", track: "Silverstone", cars: "GT3", format: "90 min Race" }
+    ]
   }, 
    
-  fridayRace: { 
-    track: "Endurance Showcase GT3 Spa-Francochamps", 
-    dateIso: "2026-07-24T22:00:00+02:00", 
-    details: "20 min Qualy • 70 min Race" 
+  funFriday: { 
+    events: [
+      { id: 1, name: "Carbonara Cup", track: "Imola / Misano", cars: "Ferrari Challenge", format: "2 x 30 min races" },
+      { id: 2, name: "The Commonwealth", track: "Silverstone | Mt Panorama", cars: "TCX", format: "2 x 30 min races" },
+      { id: 3, name: "The Curbs Are Lava", track: "Zolder", cars: "Cup Cars", format: "70 min race" },
+      { id: 4, name: "4 Is More Than 3!?", track: "Nürburgring 24H", cars: "GT4s", format: "70 min race" },
+      { id: 5, name: "Japanese Showdown", track: "Suzuka", cars: "Honda & Nissan only", format: "70 min race" },
+      { id: 6, name: "Which Way?", track: "Indianapolis", cars: "GT4s", format: "70 min race" },
+      { id: 7, name: "Speed Kills", track: "Monza", cars: "GT2s", format: "70 min race" },
+      { id: 8, name: "Mirror-Watching Masterclass", track: "Watkins Glen", cars: "Mixed Class", format: "70 min race" }
+    ]
   }, 
  
   featuredChannels: [ 
     { 
       name: "The Rookie Driver", 
-      description: "Championship HIghlights & Content", 
+      description: "Championship Highlights & Content", 
       url: "https://www.youtube.com/@TheRookieDriver-LFM", 
       bgImage: "/assets/yt/fondo_yt.png", 
       avatar: "/assets/yt/rookie_driver_avatar.jpg"  
@@ -47,11 +59,32 @@ const HOME_CONFIG = {
     } 
   ] 
 }; 
+
+// 🚀 FUNCIÓN MÁGICA: CALCULA EL PRÓXIMO DÍA AUTOMÁTICAMENTE
+const getNextTargetDate = (targetDayOfWeek, targetHourUTC = 20) => {
+  const now = new Date();
+  const currentDay = now.getUTCDay();
+  const currentHour = now.getUTCHours();
+  
+  let daysUntilTarget = (targetDayOfWeek + 7 - currentDay) % 7;
+  
+  if (daysUntilTarget === 0 && currentHour >= targetHourUTC) {
+    daysUntilTarget = 7;
+  }
+  
+  const targetDate = new Date(Date.UTC(
+    now.getUTCFullYear(), 
+    now.getUTCMonth(), 
+    now.getUTCDate() + daysUntilTarget, 
+    targetHourUTC, 0, 0, 0
+  ));
+  
+  return targetDate.getTime();
+};
  
-const calculateTimeLeft = (targetIsoStr) => { 
-  const targetDate = new Date(targetIsoStr).getTime(); 
+const calculateTimeLeft = (targetTimeMs) => { 
   const now = new Date().getTime(); 
-  const distance = targetDate - now; 
+  const distance = targetTimeMs - now; 
  
   if (distance <= 0) return { days: 0, hours: 0, minutes: 0, seconds: 0 }; 
  
@@ -62,29 +95,33 @@ const calculateTimeLeft = (targetIsoStr) => {
     seconds: Math.floor((distance % (1000 * 60)) / 1000) 
   }; 
 }; 
+
+// 📦 COMPONENTE EXTERNO PARA EL RELOJ (Mejora de rendimiento)
+const TimerBox = ({ label, value }) => ( 
+  <div className="bg-black border border-gray-800 p-2 md:p-3 text-center transform skew-x-[-5deg] shadow-inner"> 
+    <div className="transform skew-x-5"> 
+      <div className="font-['Teko'] text-3xl md:text-4xl font-bold text-yellow-400 mb-0 leading-none drop-shadow-[0_0_8px_rgba(250,204,21,0.4)]"> 
+        {value?.toString().padStart(2, '0') || '00'} 
+      </div> 
+      <div className="text-[9px] md:text-[10px] text-gray-500 uppercase tracking-widest font-bold mt-1">{label}</div> 
+    </div> 
+  </div> 
+); 
  
 export const Home = ({ onNavigate }) => { 
-  const [mondayTime, setMondayTime] = useState(calculateTimeLeft(HOME_CONFIG.mondayRace.dateIso)); 
-  const [fridayTime, setFridayTime] = useState(calculateTimeLeft(HOME_CONFIG.fridayRace.dateIso)); 
+  const nextMondayTimeMs = useMemo(() => getNextTargetDate(1, 20), []);
+  const nextFridayTimeMs = useMemo(() => getNextTargetDate(5, 20), []);
+
+  const [mondayTime, setMondayTime] = useState(calculateTimeLeft(nextMondayTimeMs)); 
+  const [fridayTime, setFridayTime] = useState(calculateTimeLeft(nextFridayTimeMs)); 
  
   useEffect(() => { 
     const timer = setInterval(() => { 
-      setMondayTime(calculateTimeLeft(HOME_CONFIG.mondayRace.dateIso)); 
-      setFridayTime(calculateTimeLeft(HOME_CONFIG.fridayRace.dateIso)); 
+      setMondayTime(calculateTimeLeft(nextMondayTimeMs)); 
+      setFridayTime(calculateTimeLeft(nextFridayTimeMs)); 
     }, 1000); 
     return () => clearInterval(timer); 
-  }, []); 
- 
-  const TimerBox = ({ label, value }) => ( 
-    <div className="bg-black border border-gray-800 p-2 md:p-4 text-center transform skew-x-[-5deg] shadow-inner"> 
-      <div className="transform skew-x-5"> 
-        <div className="font-['Teko'] text-4xl md:text-5xl font-bold text-yellow-400 mb-0 leading-none drop-shadow-[0_0_8px_rgba(250,204,21,0.4)]"> 
-          {value.toString().padStart(2, '0')} 
-        </div> 
-        <div className="text-[10px] md:text-xs text-gray-500 uppercase tracking-widest font-bold mt-1">{label}</div> 
-      </div> 
-    </div> 
-  ); 
+  }, [nextMondayTimeMs, nextFridayTimeMs]); 
  
   return ( 
     <div className="min-h-screen bg-black font-['Inter'] text-gray-300"> 
@@ -118,16 +155,16 @@ export const Home = ({ onNavigate }) => {
         </div> 
       </div> 
 
-      {/* 🔴 VÍDEO SEGURO (Miniatura que abre en YouTube) */}
+      {/* 🔴 VÍDEO SEGURO */}
       <div className="max-w-7xl mx-auto px-4 pt-16">
         <a 
-          href="https://www.youtube.com/watch?v=rKGSvXfOu9I" 
+          href="https://www.youtube.com/watch?v=Iqa8S9_DEz8" 
           target="_blank" 
           rel="noopener noreferrer"
           className="block relative w-full max-w-5xl mx-auto aspect-video shadow-[0_0_40px_rgba(220,38,38,0.3)] hover:shadow-[0_0_60px_rgba(220,38,38,0.5)] transition-all transform -skew-x-2 overflow-hidden border border-red-900 group"
         >
           <img 
-            src="https://img.youtube.com/vi/rKGSvXfOu9I/maxresdefault.jpg" 
+            src="https://img.youtube.com/vi/Iqa8S9_DEz8/maxresdefault.jpg" 
             alt="Video Scottish Legends" 
             className="w-full h-full object-cover transform skew-x-2 scale-110"
           />
@@ -139,47 +176,93 @@ export const Home = ({ onNavigate }) => {
  
       <div className="max-w-7xl mx-auto px-4 py-16 space-y-24"> 
          
-        {/* PRÓXIMAS CARRERAS */} 
+        {/* PRÓXIMAS CARRERAS / CALENDARIOS */} 
         <div> 
           <div className="flex items-center space-x-3 mb-8"> 
             <Calendar className="w-8 h-8 text-yellow-400" /> 
-            <h2 className="font-['Teko'] text-4xl md:text-5xl font-bold text-white uppercase tracking-wide">Upcoming Events</h2> 
+            <h2 className="font-['Teko'] text-4xl md:text-5xl font-bold text-white uppercase tracking-wide">Season Calendars</h2> 
           </div> 
  
-          <div className="grid md:grid-cols-2 gap-8"> 
-            <div className="bg-[#0a0a0a] border border-blue-500/30 p-6 md:p-8 relative overflow-hidden group hover:border-blue-500/60 transition-colors shadow-[0_0_15px_rgba(59,130,246,0.1)]"> 
-              <div className="absolute left-0 top-0 bottom-0 w-1.5 bg-blue-500"></div> 
-              <div className="mb-6"> 
-                <h3 className="font-['Teko'] text-white text-3xl md:text-4xl tracking-wide uppercase italic">Monday Marathon</h3> 
-                <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mt-2"> 
-                  <span className="text-blue-400 font-bold uppercase tracking-widest text-lg md:text-xl font-['Teko']">📍 {HOME_CONFIG.mondayRace.track}</span> 
-                  <span className="text-gray-500 font-bold uppercase tracking-widest text-xs mt-1 sm:mt-0">{HOME_CONFIG.mondayRace.details}</span> 
-                </div> 
+          <div className="grid lg:grid-cols-2 gap-8"> 
+            
+            {/* MONDAY MARATHON CALENDAR */}
+            <div className="bg-[#0a0a0a] border border-blue-500/30 relative overflow-hidden group shadow-[0_0_15px_rgba(59,130,246,0.1)] flex flex-col"> 
+              <div className="absolute left-0 top-0 bottom-0 w-1.5 bg-blue-500 z-10"></div> 
+              
+              <div className="p-6 bg-blue-900/10 border-b border-blue-500/20"> 
+                <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between">
+                  <h3 className="font-['Teko'] text-white text-3xl md:text-4xl tracking-wide uppercase italic">Monday Marathon</h3> 
+                  <div className="flex space-x-2 mt-4 sm:mt-0"> 
+                    <TimerBox label="Days" value={mondayTime.days} /> 
+                    <TimerBox label="Hrs" value={mondayTime.hours} /> 
+                    <TimerBox label="Mins" value={mondayTime.minutes} /> 
+                  </div>
+                </div>
               </div> 
-              <div className="grid grid-cols-4 gap-2 md:gap-4"> 
-                <TimerBox label="Days" value={mondayTime.days} /> 
-                <TimerBox label="Hours" value={mondayTime.hours} /> 
-                <TimerBox label="Mins" value={mondayTime.minutes} /> 
-                <TimerBox label="Secs" value={mondayTime.seconds} /> 
-              </div> 
+
+              <div className="p-6 flex-1 bg-black/50">
+                <h4 className="text-blue-500/80 font-bold uppercase tracking-widest text-[10px] mb-4">Event Schedule</h4>
+                <div className="space-y-2">
+                  {HOME_CONFIG.mondayMarathon.events.map(event => (
+                    <div key={`mm-${event.id}`} className="bg-black border border-gray-800 p-3 hover:border-blue-500/50 transition-colors flex items-center justify-between group/item">
+                      <div className="flex items-center space-x-4">
+                        <div className="font-['Teko'] text-3xl text-gray-600 font-bold w-6 text-center group-hover/item:text-blue-500 transition-colors">
+                          {event.id}
+                        </div>
+                        <div>
+                          <div className="text-gray-200 font-bold uppercase text-sm tracking-widest">{event.track}</div>
+                          <div className="text-blue-400 text-[10px] font-bold uppercase tracking-widest">{event.name}</div>
+                        </div>
+                      </div>
+                      <div className="text-right">
+                        <div className="text-gray-400 text-[10px] font-bold uppercase tracking-widest">{event.cars}</div>
+                        <div className="text-gray-600 text-[10px] uppercase tracking-widest">{event.format}</div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
             </div> 
  
-            <div className="bg-[#0a0a0a] border border-orange-500/30 p-6 md:p-8 relative overflow-hidden group hover:border-orange-500/60 transition-colors shadow-[0_0_15px_rgba(249,115,22,0.1)]"> 
-              <div className="absolute left-0 top-0 bottom-0 w-1.5 bg-orange-500"></div> 
-              <div className="mb-6"> 
-                <h3 className="font-['Teko'] text-white text-3xl md:text-4xl tracking-wide uppercase italic">Multiclass Friday</h3> 
-                <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mt-2"> 
-                  <span className="text-orange-400 font-bold uppercase tracking-widest text-lg md:text-xl font-['Teko']">📍 {HOME_CONFIG.fridayRace.track}</span> 
-                  <span className="text-gray-500 font-bold uppercase tracking-widest text-xs mt-1 sm:mt-0">{HOME_CONFIG.fridayRace.details}</span> 
-                </div> 
+            {/* FUN FRIDAY CALENDAR */}
+            <div className="bg-[#0a0a0a] border border-orange-500/30 relative overflow-hidden group shadow-[0_0_15px_rgba(249,115,22,0.1)] flex flex-col"> 
+              <div className="absolute left-0 top-0 bottom-0 w-1.5 bg-orange-500 z-10"></div> 
+              
+              <div className="p-6 bg-orange-900/10 border-b border-orange-500/20"> 
+                <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between">
+                  <h3 className="font-['Teko'] text-white text-3xl md:text-4xl tracking-wide uppercase italic">Multiclass Friday</h3> 
+                  <div className="flex space-x-2 mt-4 sm:mt-0"> 
+                    <TimerBox label="Days" value={fridayTime.days} /> 
+                    <TimerBox label="Hrs" value={fridayTime.hours} /> 
+                    <TimerBox label="Mins" value={fridayTime.minutes} /> 
+                  </div>
+                </div>
               </div> 
-              <div className="grid grid-cols-4 gap-2 md:gap-4"> 
-                <TimerBox label="Days" value={fridayTime.days} /> 
-                <TimerBox label="Hours" value={fridayTime.hours} /> 
-                <TimerBox label="Mins" value={fridayTime.minutes} /> 
-                <TimerBox label="Secs" value={fridayTime.seconds} /> 
-              </div> 
+
+              <div className="p-6 flex-1 bg-black/50">
+                <h4 className="text-orange-500/80 font-bold uppercase tracking-widest text-[10px] mb-4">Event Schedule</h4>
+                <div className="space-y-2">
+                  {HOME_CONFIG.funFriday.events.map(event => (
+                    <div key={`ff-${event.id}`} className="bg-black border border-gray-800 p-3 hover:border-orange-500/50 transition-colors flex items-center justify-between group/item">
+                      <div className="flex items-center space-x-4">
+                        <div className="font-['Teko'] text-3xl text-gray-600 font-bold w-6 text-center group-hover/item:text-orange-500 transition-colors">
+                          {event.id}
+                        </div>
+                        <div>
+                          <div className="text-gray-200 font-bold uppercase text-sm tracking-widest">{event.track}</div>
+                          <div className="text-orange-400 text-[10px] font-bold uppercase tracking-widest">{event.name}</div>
+                        </div>
+                      </div>
+                      <div className="text-right">
+                        <div className="text-gray-400 text-[10px] font-bold uppercase tracking-widest">{event.cars}</div>
+                        <div className="text-gray-600 text-[10px] uppercase tracking-widest">{event.format}</div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
             </div> 
+
           </div> 
         </div> 
  

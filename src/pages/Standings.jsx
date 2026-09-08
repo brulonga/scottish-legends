@@ -40,7 +40,7 @@ export const Standings = ({ onDriverClick }) => {
 
   // 💡 LECTURA CORRECTA DE LA LISTA DE ELO (driver_elos.json)
   useEffect(() => {
-    fetch('/data/driver_elos.json') 
+    fetch('/data/elo/driver_elos.json') 
       .then(res => res.json())
       .then(data => {
         if (Array.isArray(data)) {
