@@ -22,6 +22,16 @@ ORDEN_PISTAS = [
 PENALTIES = {
     "monza": {
         "Leonardo Cocco": 5,
+    },
+    "kyalami": {
+        "Stututututu Stututututu": 5,
+        "Leonardo Nenci | EoS": 15,
+        "Bence Kamaras": 5,
+        "Александр APNCTOKPAT": 20,
+        "Luuk Nieuwkoop": 20,
+        "Matt GangstaMatt {UK}": 5,
+        "Andrea Genovese": 15,
+        "Fryderyk Piontek": 5
     }
 }
 

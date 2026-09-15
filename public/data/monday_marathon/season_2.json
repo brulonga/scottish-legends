@@ -19,14 +19,14 @@
       "name": "Dominic Zimmermann [SL]",
       "car_class": "GT3",
       "favorite_car": 35,
-      "points": 270,
-      "avg_points": 135.0,
-      "avg_pos": 2.5,
+      "points": 300,
+      "avg_points": 150.0,
+      "avg_pos": 2.0,
       "avg_pace_pos": 3.0,
-      "net_pos_gained": 1,
+      "net_pos_gained": 2,
       "avg_qualy_pos": 3.5,
       "avg_qualy_gap": "+0.253",
-      "net_pos_gained_qualy": 2,
+      "net_pos_gained_qualy": 3,
       "avg_gap": "+0.436",
       "races": 2
     },
@@ -34,14 +34,14 @@
       "name": "Pauli Keski-Filppula",
       "car_class": "GT3",
       "favorite_car": 32,
-      "points": 216,
-      "avg_points": 108.0,
-      "avg_pos": 4.0,
+      "points": 240,
+      "avg_points": 120.0,
+      "avg_pos": 3.0,
       "avg_pace_pos": 3.0,
-      "net_pos_gained": -2,
+      "net_pos_gained": 0,
       "avg_qualy_pos": 8.0,
       "avg_qualy_gap": "+0.591",
-      "net_pos_gained_qualy": 8,
+      "net_pos_gained_qualy": 10,
       "avg_gap": "+0.437",
       "races": 2
     },
@@ -59,21 +59,6 @@
       "net_pos_gained_qualy": -5,
       "avg_gap": "+0.759",
       "races": 2
-    },
-    {
-      "name": "Leonardo Nenci | EoS",
-      "car_class": "GT3",
-      "favorite_car": 30,
-      "points": 150,
-      "avg_points": 150.0,
-      "avg_pos": 2.0,
-      "avg_pace_pos": 2.0,
-      "net_pos_gained": 0,
-      "avg_qualy_pos": 6.0,
-      "avg_qualy_gap": "+0.510",
-      "net_pos_gained_qualy": 4,
-      "avg_gap": "+0.364",
-      "races": 1
     },
     {
       "name": "Alasdair Parky",
@@ -106,17 +91,32 @@
       "races": 2
     },
     {
-      "name": "Fryderyk Piontek",
+      "name": "Leonardo Nenci | EoS",
       "car_class": "GT3",
-      "favorite_car": 36,
+      "favorite_car": 30,
       "points": 105,
       "avg_points": 105.0,
       "avg_pos": 4.0,
+      "avg_pace_pos": 2.0,
+      "net_pos_gained": -2,
+      "avg_qualy_pos": 6.0,
+      "avg_qualy_gap": "+0.510",
+      "net_pos_gained_qualy": 2,
+      "avg_gap": "+0.364",
+      "races": 1
+    },
+    {
+      "name": "Fryderyk Piontek",
+      "car_class": "GT3",
+      "favorite_car": 36,
+      "points": 96,
+      "avg_points": 96.0,
+      "avg_pos": 5.0,
       "avg_pace_pos": 5.0,
-      "net_pos_gained": 1,
+      "net_pos_gained": 0,
       "avg_qualy_pos": 10.0,
       "avg_qualy_gap": "+0.722",
-      "net_pos_gained_qualy": 6,
+      "net_pos_gained_qualy": 5,
       "avg_gap": "+0.540",
       "races": 1
     },
@@ -6534,249 +6534,6 @@
         {
           "car_class": "GT3",
           "pos": 2,
-          "qualy_pos": 6,
-          "qualy_time": "1:41.460",
-          "qualy_time_ms": 101460,
-          "s1": "0:31.080",
-          "s2": "0:40.217",
-          "s3": "0:30.162",
-          "qualy_gap": "+0.510s",
-          "qualy_gap_ms": 510,
-          "net_vs_q": 4,
-          "name": "Leonardo Nenci | EoS",
-          "car_model": 30,
-          "points": 150,
-          "laps": 53,
-          "incidents": 2,
-          "avg_time": "1:42.624",
-          "avg_lap_ms": 102624.23529411765,
-          "lap_history": [
-            {
-              "time_ms": 109060,
-              "is_incident": true
-            },
-            {
-              "time_ms": 102560,
-              "is_incident": false
-            },
-            {
-              "time_ms": 102165,
-              "is_incident": false
-            },
-            {
-              "time_ms": 101935,
-              "is_incident": false
-            },
-            {
-              "time_ms": 102705,
-              "is_incident": false
-            },
-            {
-              "time_ms": 103015,
-              "is_incident": false
-            },
-            {
-              "time_ms": 102002,
-              "is_incident": false
-            },
-            {
-              "time_ms": 102110,
-              "is_incident": false
-            },
-            {
-              "time_ms": 102262,
-              "is_incident": false
-            },
-            {
-              "time_ms": 103060,
-              "is_incident": false
-            },
-            {
-              "time_ms": 102140,
-              "is_incident": false
-            },
-            {
-              "time_ms": 102197,
-              "is_incident": false
-            },
-            {
-              "time_ms": 102185,
-              "is_incident": false
-            },
-            {
-              "time_ms": 102092,
-              "is_incident": false
-            },
-            {
-              "time_ms": 103000,
-              "is_incident": false
-            },
-            {
-              "time_ms": 103095,
-              "is_incident": false
-            },
-            {
-              "time_ms": 102857,
-              "is_incident": false
-            },
-            {
-              "time_ms": 102330,
-              "is_incident": false
-            },
-            {
-              "time_ms": 102525,
-              "is_incident": false
-            },
-            {
-              "time_ms": 102685,
-              "is_incident": false
-            },
-            {
-              "time_ms": 102280,
-              "is_incident": false
-            },
-            {
-              "time_ms": 102492,
-              "is_incident": false
-            },
-            {
-              "time_ms": 102765,
-              "is_incident": false
-            },
-            {
-              "time_ms": 102522,
-              "is_incident": false
-            },
-            {
-              "time_ms": 102665,
-              "is_incident": false
-            },
-            {
-              "time_ms": 103300,
-              "is_incident": false
-            },
-            {
-              "time_ms": 103042,
-              "is_incident": false
-            },
-            {
-              "time_ms": 102927,
-              "is_incident": false
-            },
-            {
-              "time_ms": 103022,
-              "is_incident": false
-            },
-            {
-              "time_ms": 102900,
-              "is_incident": false
-            },
-            {
-              "time_ms": 151117,
-              "is_incident": true
-            },
-            {
-              "time_ms": 107960,
-              "is_incident": false
-            },
-            {
-              "time_ms": 102170,
-              "is_incident": false
-            },
-            {
-              "time_ms": 102175,
-              "is_incident": false
-            },
-            {
-              "time_ms": 102237,
-              "is_incident": false
-            },
-            {
-              "time_ms": 102407,
-              "is_incident": false
-            },
-            {
-              "time_ms": 102057,
-              "is_incident": false
-            },
-            {
-              "time_ms": 101872,
-              "is_incident": false
-            },
-            {
-              "time_ms": 102035,
-              "is_incident": false
-            },
-            {
-              "time_ms": 101950,
-              "is_incident": false
-            },
-            {
-              "time_ms": 103792,
-              "is_incident": false
-            },
-            {
-              "time_ms": 102185,
-              "is_incident": false
-            },
-            {
-              "time_ms": 102200,
-              "is_incident": false
-            },
-            {
-              "time_ms": 102212,
-              "is_incident": false
-            },
-            {
-              "time_ms": 102637,
-              "is_incident": false
-            },
-            {
-              "time_ms": 102540,
-              "is_incident": false
-            },
-            {
-              "time_ms": 102812,
-              "is_incident": false
-            },
-            {
-              "time_ms": 102422,
-              "is_incident": false
-            },
-            {
-              "time_ms": 102532,
-              "is_incident": false
-            },
-            {
-              "time_ms": 102562,
-              "is_incident": false
-            },
-            {
-              "time_ms": 102592,
-              "is_incident": false
-            },
-            {
-              "time_ms": 102335,
-              "is_incident": false
-            },
-            {
-              "time_ms": 103317,
-              "is_incident": false
-            }
-          ],
-          "gap_pace_ms": 364.17760180996265,
-          "gap_best_ms": 377,
-          "gap_pace": "+0.364",
-          "best_lap": "1:41.872",
-          "best_lap_ms": 101872,
-          "gap_best": "+0.377",
-          "penalty": 0,
-          "race_gap": "+29.095s",
-          "pace_pos": 2
-        },
-        {
-          "car_class": "GT3",
-          "pos": 3,
           "qualy_pos": 3,
           "qualy_time": "1:41.240",
           "qualy_time_ms": 101240,
@@ -6785,10 +6542,10 @@
           "s3": "0:30.067",
           "qualy_gap": "+0.290s",
           "qualy_gap_ms": 290,
-          "net_vs_q": 0,
+          "net_vs_q": 1,
           "name": "Dominic Zimmermann [SL]",
           "car_model": 35,
-          "points": 120,
+          "points": 150,
           "laps": 53,
           "incidents": 2,
           "avg_time": "1:42.744",
@@ -7019,250 +6776,7 @@
         },
         {
           "car_class": "GT3",
-          "pos": 4,
-          "qualy_pos": 10,
-          "qualy_time": "1:41.672",
-          "qualy_time_ms": 101672,
-          "s1": "0:31.082",
-          "s2": "0:40.162",
-          "s3": "0:30.427",
-          "qualy_gap": "+0.722s",
-          "qualy_gap_ms": 722,
-          "net_vs_q": 6,
-          "name": "Fryderyk Piontek",
-          "car_model": 36,
-          "points": 105,
-          "laps": 53,
-          "incidents": 2,
-          "avg_time": "1:42.800",
-          "avg_lap_ms": 102800.29411764706,
-          "lap_history": [
-            {
-              "time_ms": 109057,
-              "is_incident": true
-            },
-            {
-              "time_ms": 103220,
-              "is_incident": false
-            },
-            {
-              "time_ms": 102367,
-              "is_incident": false
-            },
-            {
-              "time_ms": 102540,
-              "is_incident": false
-            },
-            {
-              "time_ms": 102122,
-              "is_incident": false
-            },
-            {
-              "time_ms": 102267,
-              "is_incident": false
-            },
-            {
-              "time_ms": 102390,
-              "is_incident": false
-            },
-            {
-              "time_ms": 102160,
-              "is_incident": false
-            },
-            {
-              "time_ms": 102575,
-              "is_incident": false
-            },
-            {
-              "time_ms": 102630,
-              "is_incident": false
-            },
-            {
-              "time_ms": 102497,
-              "is_incident": false
-            },
-            {
-              "time_ms": 102482,
-              "is_incident": false
-            },
-            {
-              "time_ms": 102357,
-              "is_incident": false
-            },
-            {
-              "time_ms": 102390,
-              "is_incident": false
-            },
-            {
-              "time_ms": 102405,
-              "is_incident": false
-            },
-            {
-              "time_ms": 103147,
-              "is_incident": false
-            },
-            {
-              "time_ms": 102567,
-              "is_incident": false
-            },
-            {
-              "time_ms": 102582,
-              "is_incident": false
-            },
-            {
-              "time_ms": 102685,
-              "is_incident": false
-            },
-            {
-              "time_ms": 103200,
-              "is_incident": false
-            },
-            {
-              "time_ms": 102537,
-              "is_incident": false
-            },
-            {
-              "time_ms": 103010,
-              "is_incident": false
-            },
-            {
-              "time_ms": 107870,
-              "is_incident": false
-            },
-            {
-              "time_ms": 102625,
-              "is_incident": false
-            },
-            {
-              "time_ms": 102555,
-              "is_incident": false
-            },
-            {
-              "time_ms": 102825,
-              "is_incident": false
-            },
-            {
-              "time_ms": 102702,
-              "is_incident": false
-            },
-            {
-              "time_ms": 102572,
-              "is_incident": false
-            },
-            {
-              "time_ms": 103185,
-              "is_incident": false
-            },
-            {
-              "time_ms": 103180,
-              "is_incident": false
-            },
-            {
-              "time_ms": 152117,
-              "is_incident": true
-            },
-            {
-              "time_ms": 108177,
-              "is_incident": false
-            },
-            {
-              "time_ms": 102272,
-              "is_incident": false
-            },
-            {
-              "time_ms": 102550,
-              "is_incident": false
-            },
-            {
-              "time_ms": 102837,
-              "is_incident": false
-            },
-            {
-              "time_ms": 103872,
-              "is_incident": false
-            },
-            {
-              "time_ms": 103170,
-              "is_incident": false
-            },
-            {
-              "time_ms": 102287,
-              "is_incident": false
-            },
-            {
-              "time_ms": 102232,
-              "is_incident": false
-            },
-            {
-              "time_ms": 102217,
-              "is_incident": false
-            },
-            {
-              "time_ms": 102017,
-              "is_incident": false
-            },
-            {
-              "time_ms": 102317,
-              "is_incident": false
-            },
-            {
-              "time_ms": 102560,
-              "is_incident": false
-            },
-            {
-              "time_ms": 102370,
-              "is_incident": false
-            },
-            {
-              "time_ms": 102167,
-              "is_incident": false
-            },
-            {
-              "time_ms": 102535,
-              "is_incident": false
-            },
-            {
-              "time_ms": 102487,
-              "is_incident": false
-            },
-            {
-              "time_ms": 102440,
-              "is_incident": false
-            },
-            {
-              "time_ms": 102357,
-              "is_incident": false
-            },
-            {
-              "time_ms": 102630,
-              "is_incident": false
-            },
-            {
-              "time_ms": 102377,
-              "is_incident": false
-            },
-            {
-              "time_ms": 102335,
-              "is_incident": false
-            },
-            {
-              "time_ms": 102965,
-              "is_incident": false
-            }
-          ],
-          "gap_pace_ms": 540.2364253393753,
-          "gap_best_ms": 522,
-          "gap_pace": "+0.540",
-          "best_lap": "1:42.017",
-          "best_lap_ms": 102017,
-          "gap_best": "+0.522",
-          "penalty": 0,
-          "race_gap": "+40.082s",
-          "pace_pos": 5
-        },
-        {
-          "car_class": "GT3",
-          "pos": 5,
+          "pos": 3,
           "qualy_pos": 8,
           "qualy_time": "1:41.632",
           "qualy_time_ms": 101632,
@@ -7271,10 +6785,10 @@
           "s3": "0:30.172",
           "qualy_gap": "+0.682s",
           "qualy_gap_ms": 682,
-          "net_vs_q": 3,
+          "net_vs_q": 5,
           "name": "Pauli Keski-Filppula",
           "car_model": 32,
-          "points": 96,
+          "points": 120,
           "laps": 53,
           "incidents": 2,
           "avg_time": "1:42.746",
@@ -7502,6 +7016,492 @@
           "penalty": 0,
           "race_gap": "+40.692s",
           "pace_pos": 4
+        },
+        {
+          "car_class": "GT3",
+          "pos": 4,
+          "qualy_pos": 6,
+          "qualy_time": "1:41.460",
+          "qualy_time_ms": 101460,
+          "s1": "0:31.080",
+          "s2": "0:40.217",
+          "s3": "0:30.162",
+          "qualy_gap": "+0.510s",
+          "qualy_gap_ms": 510,
+          "net_vs_q": 2,
+          "name": "Leonardo Nenci | EoS",
+          "car_model": 30,
+          "points": 105,
+          "laps": 53,
+          "incidents": 2,
+          "avg_time": "1:42.624",
+          "avg_lap_ms": 102624.23529411765,
+          "lap_history": [
+            {
+              "time_ms": 109060,
+              "is_incident": true
+            },
+            {
+              "time_ms": 102560,
+              "is_incident": false
+            },
+            {
+              "time_ms": 102165,
+              "is_incident": false
+            },
+            {
+              "time_ms": 101935,
+              "is_incident": false
+            },
+            {
+              "time_ms": 102705,
+              "is_incident": false
+            },
+            {
+              "time_ms": 103015,
+              "is_incident": false
+            },
+            {
+              "time_ms": 102002,
+              "is_incident": false
+            },
+            {
+              "time_ms": 102110,
+              "is_incident": false
+            },
+            {
+              "time_ms": 102262,
+              "is_incident": false
+            },
+            {
+              "time_ms": 103060,
+              "is_incident": false
+            },
+            {
+              "time_ms": 102140,
+              "is_incident": false
+            },
+            {
+              "time_ms": 102197,
+              "is_incident": false
+            },
+            {
+              "time_ms": 102185,
+              "is_incident": false
+            },
+            {
+              "time_ms": 102092,
+              "is_incident": false
+            },
+            {
+              "time_ms": 103000,
+              "is_incident": false
+            },
+            {
+              "time_ms": 103095,
+              "is_incident": false
+            },
+            {
+              "time_ms": 102857,
+              "is_incident": false
+            },
+            {
+              "time_ms": 102330,
+              "is_incident": false
+            },
+            {
+              "time_ms": 102525,
+              "is_incident": false
+            },
+            {
+              "time_ms": 102685,
+              "is_incident": false
+            },
+            {
+              "time_ms": 102280,
+              "is_incident": false
+            },
+            {
+              "time_ms": 102492,
+              "is_incident": false
+            },
+            {
+              "time_ms": 102765,
+              "is_incident": false
+            },
+            {
+              "time_ms": 102522,
+              "is_incident": false
+            },
+            {
+              "time_ms": 102665,
+              "is_incident": false
+            },
+            {
+              "time_ms": 103300,
+              "is_incident": false
+            },
+            {
+              "time_ms": 103042,
+              "is_incident": false
+            },
+            {
+              "time_ms": 102927,
+              "is_incident": false
+            },
+            {
+              "time_ms": 103022,
+              "is_incident": false
+            },
+            {
+              "time_ms": 102900,
+              "is_incident": false
+            },
+            {
+              "time_ms": 151117,
+              "is_incident": true
+            },
+            {
+              "time_ms": 107960,
+              "is_incident": false
+            },
+            {
+              "time_ms": 102170,
+              "is_incident": false
+            },
+            {
+              "time_ms": 102175,
+              "is_incident": false
+            },
+            {
+              "time_ms": 102237,
+              "is_incident": false
+            },
+            {
+              "time_ms": 102407,
+              "is_incident": false
+            },
+            {
+              "time_ms": 102057,
+              "is_incident": false
+            },
+            {
+              "time_ms": 101872,
+              "is_incident": false
+            },
+            {
+              "time_ms": 102035,
+              "is_incident": false
+            },
+            {
+              "time_ms": 101950,
+              "is_incident": false
+            },
+            {
+              "time_ms": 103792,
+              "is_incident": false
+            },
+            {
+              "time_ms": 102185,
+              "is_incident": false
+            },
+            {
+              "time_ms": 102200,
+              "is_incident": false
+            },
+            {
+              "time_ms": 102212,
+              "is_incident": false
+            },
+            {
+              "time_ms": 102637,
+              "is_incident": false
+            },
+            {
+              "time_ms": 102540,
+              "is_incident": false
+            },
+            {
+              "time_ms": 102812,
+              "is_incident": false
+            },
+            {
+              "time_ms": 102422,
+              "is_incident": false
+            },
+            {
+              "time_ms": 102532,
+              "is_incident": false
+            },
+            {
+              "time_ms": 102562,
+              "is_incident": false
+            },
+            {
+              "time_ms": 102592,
+              "is_incident": false
+            },
+            {
+              "time_ms": 102335,
+              "is_incident": false
+            },
+            {
+              "time_ms": 103317,
+              "is_incident": false
+            }
+          ],
+          "gap_pace_ms": 364.17760180996265,
+          "gap_best_ms": 377,
+          "gap_pace": "+0.364",
+          "best_lap": "1:41.872",
+          "best_lap_ms": 101872,
+          "gap_best": "+0.377",
+          "penalty": 15,
+          "race_gap": "+44.095s",
+          "pace_pos": 2
+        },
+        {
+          "car_class": "GT3",
+          "pos": 5,
+          "qualy_pos": 10,
+          "qualy_time": "1:41.672",
+          "qualy_time_ms": 101672,
+          "s1": "0:31.082",
+          "s2": "0:40.162",
+          "s3": "0:30.427",
+          "qualy_gap": "+0.722s",
+          "qualy_gap_ms": 722,
+          "net_vs_q": 5,
+          "name": "Fryderyk Piontek",
+          "car_model": 36,
+          "points": 96,
+          "laps": 53,
+          "incidents": 2,
+          "avg_time": "1:42.800",
+          "avg_lap_ms": 102800.29411764706,
+          "lap_history": [
+            {
+              "time_ms": 109057,
+              "is_incident": true
+            },
+            {
+              "time_ms": 103220,
+              "is_incident": false
+            },
+            {
+              "time_ms": 102367,
+              "is_incident": false
+            },
+            {
+              "time_ms": 102540,
+              "is_incident": false
+            },
+            {
+              "time_ms": 102122,
+              "is_incident": false
+            },
+            {
+              "time_ms": 102267,
+              "is_incident": false
+            },
+            {
+              "time_ms": 102390,
+              "is_incident": false
+            },
+            {
+              "time_ms": 102160,
+              "is_incident": false
+            },
+            {
+              "time_ms": 102575,
+              "is_incident": false
+            },
+            {
+              "time_ms": 102630,
+              "is_incident": false
+            },
+            {
+              "time_ms": 102497,
+              "is_incident": false
+            },
+            {
+              "time_ms": 102482,
+              "is_incident": false
+            },
+            {
+              "time_ms": 102357,
+              "is_incident": false
+            },
+            {
+              "time_ms": 102390,
+              "is_incident": false
+            },
+            {
+              "time_ms": 102405,
+              "is_incident": false
+            },
+            {
+              "time_ms": 103147,
+              "is_incident": false
+            },
+            {
+              "time_ms": 102567,
+              "is_incident": false
+            },
+            {
+              "time_ms": 102582,
+              "is_incident": false
+            },
+            {
+              "time_ms": 102685,
+              "is_incident": false
+            },
+            {
+              "time_ms": 103200,
+              "is_incident": false
+            },
+            {
+              "time_ms": 102537,
+              "is_incident": false
+            },
+            {
+              "time_ms": 103010,
+              "is_incident": false
+            },
+            {
+              "time_ms": 107870,
+              "is_incident": false
+            },
+            {
+              "time_ms": 102625,
+              "is_incident": false
+            },
+            {
+              "time_ms": 102555,
+              "is_incident": false
+            },
+            {
+              "time_ms": 102825,
+              "is_incident": false
+            },
+            {
+              "time_ms": 102702,
+              "is_incident": false
+            },
+            {
+              "time_ms": 102572,
+              "is_incident": false
+            },
+            {
+              "time_ms": 103185,
+              "is_incident": false
+            },
+            {
+              "time_ms": 103180,
+              "is_incident": false
+            },
+            {
+              "time_ms": 152117,
+              "is_incident": true
+            },
+            {
+              "time_ms": 108177,
+              "is_incident": false
+            },
+            {
+              "time_ms": 102272,
+              "is_incident": false
+            },
+            {
+              "time_ms": 102550,
+              "is_incident": false
+            },
+            {
+              "time_ms": 102837,
+              "is_incident": false
+            },
+            {
+              "time_ms": 103872,
+              "is_incident": false
+            },
+            {
+              "time_ms": 103170,
+              "is_incident": false
+            },
+            {
+              "time_ms": 102287,
+              "is_incident": false
+            },
+            {
+              "time_ms": 102232,
+              "is_incident": false
+            },
+            {
+              "time_ms": 102217,
+              "is_incident": false
+            },
+            {
+              "time_ms": 102017,
+              "is_incident": false
+            },
+            {
+              "time_ms": 102317,
+              "is_incident": false
+            },
+            {
+              "time_ms": 102560,
+              "is_incident": false
+            },
+            {
+              "time_ms": 102370,
+              "is_incident": false
+            },
+            {
+              "time_ms": 102167,
+              "is_incident": false
+            },
+            {
+              "time_ms": 102535,
+              "is_incident": false
+            },
+            {
+              "time_ms": 102487,
+              "is_incident": false
+            },
+            {
+              "time_ms": 102440,
+              "is_incident": false
+            },
+            {
+              "time_ms": 102357,
+              "is_incident": false
+            },
+            {
+              "time_ms": 102630,
+              "is_incident": false
+            },
+            {
+              "time_ms": 102377,
+              "is_incident": false
+            },
+            {
+              "time_ms": 102335,
+              "is_incident": false
+            },
+            {
+              "time_ms": 102965,
+              "is_incident": false
+            }
+          ],
+          "gap_pace_ms": 540.2364253393753,
+          "gap_best_ms": 522,
+          "gap_pace": "+0.540",
+          "best_lap": "1:42.017",
+          "best_lap_ms": 102017,
+          "gap_best": "+0.522",
+          "penalty": 5,
+          "race_gap": "+45.082s",
+          "pace_pos": 5
         },
         {
           "car_class": "GT3",
@@ -8957,8 +8957,8 @@
           "best_lap": "1:41.830",
           "best_lap_ms": 101830,
           "gap_best": "+0.335",
-          "penalty": 0,
-          "race_gap": "+102.951s",
+          "penalty": 15,
+          "race_gap": "+117.951s",
           "pace_pos": 10
         },
         {
@@ -9196,7 +9196,7 @@
           "best_lap": "1:42.892",
           "best_lap_ms": 102892,
           "gap_best": "+1.397",
-          "penalty": 0,
+          "penalty": 5,
           "race_gap": "+1 Lap",
           "pace_pos": 17
         },
@@ -11580,7 +11580,7 @@
           "best_lap": "-",
           "best_lap_ms": null,
           "gap_best": "-",
-          "penalty": 0,
+          "penalty": 5,
           "race_gap": "-",
           "pace_pos": "-"
         },
@@ -11639,7 +11639,7 @@
           "best_lap": "-",
           "best_lap_ms": null,
           "gap_best": "-",
-          "penalty": 0,
+          "penalty": 20,
           "race_gap": "-",
           "pace_pos": "-"
         },
@@ -11753,7 +11753,7 @@
           "best_lap": "-",
           "best_lap_ms": null,
           "gap_best": "-",
-          "penalty": 0,
+          "penalty": 5,
           "race_gap": "-",
           "pace_pos": "-"
         },
@@ -11808,7 +11808,7 @@
           "best_lap": "-",
           "best_lap_ms": null,
           "gap_best": "-",
-          "penalty": 0,
+          "penalty": 20,
           "race_gap": "-",
           "pace_pos": "-"
         },
