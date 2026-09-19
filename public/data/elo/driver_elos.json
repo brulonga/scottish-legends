@@ -325,48 +325,48 @@
         "new_elo": 2790
       },
       {
-        "date": "2026-09-14 21:42",
-        "timestamp": 1789422133.3088653,
+        "date": "2026-09-19 10:17",
+        "timestamp": 1789813031.9207625,
         "race_name": "Race 1: Misano",
         "duration_minutes": 30.8,
         "elo_change": 10.5,
         "new_elo": 2800
       },
       {
-        "date": "2026-09-14 21:42",
-        "timestamp": 1789422133.3088653,
+        "date": "2026-09-19 10:17",
+        "timestamp": 1789813031.9207625,
         "race_name": "Race 2: Imola",
         "duration_minutes": 31.2,
         "elo_change": 10.8,
         "new_elo": 2811
       },
       {
-        "date": "2026-09-14 21:42",
-        "timestamp": 1789422133.3088653,
+        "date": "2026-09-19 10:17",
+        "timestamp": 1789813031.9207625,
         "race_name": "Race 1: Silverstone",
         "duration_minutes": 31.4,
         "elo_change": 10.6,
         "new_elo": 2822
       },
       {
-        "date": "2026-09-14 21:42",
-        "timestamp": 1789422133.3088653,
+        "date": "2026-09-19 10:17",
+        "timestamp": 1789813031.9207625,
         "race_name": "Race 2: Mount Panorama",
         "duration_minutes": 30.4,
         "elo_change": 10.4,
         "new_elo": 2832
       },
       {
-        "date": "2026-09-14 21:42",
-        "timestamp": 1789422133.3088653,
+        "date": "2026-09-19 10:17",
+        "timestamp": 1789813031.9207625,
         "race_name": "Round 3: The Curbs Are Lava (Zolder)",
         "duration_minutes": 70.1,
         "elo_change": 23.9,
         "new_elo": 2856
       },
       {
-        "date": "2026-09-14 21:42",
-        "timestamp": 1789422133.3088653,
+        "date": "2026-09-19 10:17",
+        "timestamp": 1789813031.9207625,
         "race_name": "Round 4: 4 Is More Than 3!? (Nürburgring 24H)",
         "duration_minutes": 71.7,
         "elo_change": 24.4,
@@ -376,7 +376,7 @@
   },
   {
     "name": "Dominic Zimmermann [SL]",
-    "current_elo": 2247,
+    "current_elo": 2270,
     "races_completed": 46,
     "history": [
       {
@@ -744,8 +744,79 @@
         "timestamp": 1789419704.0,
         "race_name": "Round 2: Kyalami",
         "duration_minutes": 91.1,
-        "elo_change": 16.3,
-        "new_elo": 2247
+        "elo_change": 38.7,
+        "new_elo": 2270
+      }
+    ]
+  },
+  {
+    "name": "Pauli Keski-Filppula",
+    "current_elo": 2008,
+    "races_completed": 8,
+    "history": [
+      {
+        "date": "2026-07-24 20:39",
+        "timestamp": 1784925556.0,
+        "race_name": "Endurance Showcase",
+        "duration_minutes": 71.6,
+        "elo_change": 123.3,
+        "new_elo": 1623
+      },
+      {
+        "date": "2026-07-31 20:46",
+        "timestamp": 1785530770.0,
+        "race_name": "British Classic",
+        "duration_minutes": 70.8,
+        "elo_change": 71.3,
+        "new_elo": 1695
+      },
+      {
+        "date": "2026-08-07 19:38",
+        "timestamp": 1786131481.0,
+        "race_name": "Porsche Cup Mini-Champ - Race 1",
+        "duration_minutes": 21.4,
+        "elo_change": 5.0,
+        "new_elo": 1700
+      },
+      {
+        "date": "2026-08-17 21:17",
+        "timestamp": 1787001435.0,
+        "race_name": "Round 23: Barcelona",
+        "duration_minutes": 91.7,
+        "elo_change": 181.5,
+        "new_elo": 1881
+      },
+      {
+        "date": "2026-08-31 21:01",
+        "timestamp": 1788210067.0,
+        "race_name": "Round 1: Monza",
+        "duration_minutes": 91.1,
+        "elo_change": 66.1,
+        "new_elo": 1947
+      },
+      {
+        "date": "2026-09-14 21:01",
+        "timestamp": 1789419704.0,
+        "race_name": "Round 2: Kyalami",
+        "duration_minutes": 91.1,
+        "elo_change": 64.8,
+        "new_elo": 2012
+      },
+      {
+        "date": "2026-09-19 10:17",
+        "timestamp": 1789813031.9207625,
+        "race_name": "Race 1: Silverstone",
+        "duration_minutes": 31.4,
+        "elo_change": -7.3,
+        "new_elo": 2005
+      },
+      {
+        "date": "2026-09-19 10:17",
+        "timestamp": 1789813031.9207625,
+        "race_name": "Race 2: Mount Panorama",
+        "duration_minutes": 30.4,
+        "elo_change": 3.7,
+        "new_elo": 2008
       }
     ]
   },
@@ -1275,77 +1346,6 @@
     ]
   },
   {
-    "name": "Pauli Keski-Filppula",
-    "current_elo": 1980,
-    "races_completed": 8,
-    "history": [
-      {
-        "date": "2026-07-24 20:39",
-        "timestamp": 1784925556.0,
-        "race_name": "Endurance Showcase",
-        "duration_minutes": 71.6,
-        "elo_change": 123.3,
-        "new_elo": 1623
-      },
-      {
-        "date": "2026-07-31 20:46",
-        "timestamp": 1785530770.0,
-        "race_name": "British Classic",
-        "duration_minutes": 70.8,
-        "elo_change": 71.3,
-        "new_elo": 1695
-      },
-      {
-        "date": "2026-08-07 19:38",
-        "timestamp": 1786131481.0,
-        "race_name": "Porsche Cup Mini-Champ - Race 1",
-        "duration_minutes": 21.4,
-        "elo_change": 5.0,
-        "new_elo": 1700
-      },
-      {
-        "date": "2026-08-17 21:17",
-        "timestamp": 1787001435.0,
-        "race_name": "Round 23: Barcelona",
-        "duration_minutes": 91.7,
-        "elo_change": 181.5,
-        "new_elo": 1881
-      },
-      {
-        "date": "2026-08-31 21:01",
-        "timestamp": 1788210067.0,
-        "race_name": "Round 1: Monza",
-        "duration_minutes": 91.1,
-        "elo_change": 66.1,
-        "new_elo": 1947
-      },
-      {
-        "date": "2026-09-14 21:01",
-        "timestamp": 1789419704.0,
-        "race_name": "Round 2: Kyalami",
-        "duration_minutes": 91.1,
-        "elo_change": 36.4,
-        "new_elo": 1983
-      },
-      {
-        "date": "2026-09-14 21:42",
-        "timestamp": 1789422133.3088653,
-        "race_name": "Race 1: Silverstone",
-        "duration_minutes": 31.4,
-        "elo_change": -6.8,
-        "new_elo": 1977
-      },
-      {
-        "date": "2026-09-14 21:42",
-        "timestamp": 1789422133.3088653,
-        "race_name": "Race 2: Mount Panorama",
-        "duration_minutes": 30.4,
-        "elo_change": 3.7,
-        "new_elo": 1980
-      }
-    ]
-  },
-  {
     "name": "Luca Maggiolo",
     "current_elo": 1972,
     "races_completed": 29,
@@ -1586,7 +1586,7 @@
   },
   {
     "name": "Micha Nieuwkoop",
-    "current_elo": 1949,
+    "current_elo": 1950,
     "races_completed": 20,
     "history": [
       {
@@ -1718,36 +1718,36 @@
         "new_elo": 1920
       },
       {
-        "date": "2026-09-14 21:42",
-        "timestamp": 1789422133.3088653,
+        "date": "2026-09-19 10:17",
+        "timestamp": 1789813031.9207625,
         "race_name": "Race 1: Misano",
         "duration_minutes": 30.8,
         "elo_change": 2.0,
         "new_elo": 1922
       },
       {
-        "date": "2026-09-14 21:42",
-        "timestamp": 1789422133.3088653,
+        "date": "2026-09-19 10:17",
+        "timestamp": 1789813031.9207625,
         "race_name": "Race 2: Imola",
         "duration_minutes": 31.2,
         "elo_change": 15.0,
         "new_elo": 1937
       },
       {
-        "date": "2026-09-14 21:42",
-        "timestamp": 1789422133.3088653,
+        "date": "2026-09-19 10:17",
+        "timestamp": 1789813031.9207625,
         "race_name": "Round 3: The Curbs Are Lava (Zolder)",
         "duration_minutes": 70.1,
         "elo_change": -30.8,
         "new_elo": 1906
       },
       {
-        "date": "2026-09-14 21:42",
-        "timestamp": 1789422133.3088653,
+        "date": "2026-09-19 10:17",
+        "timestamp": 1789813031.9207625,
         "race_name": "Round 4: 4 Is More Than 3!? (Nürburgring 24H)",
         "duration_minutes": 71.7,
         "elo_change": 43.7,
-        "new_elo": 1949
+        "new_elo": 1950
       }
     ]
   },
@@ -1821,16 +1821,16 @@
         "new_elo": 1941
       },
       {
-        "date": "2026-09-14 21:42",
-        "timestamp": 1789422133.3088653,
+        "date": "2026-09-19 10:17",
+        "timestamp": 1789813031.9207625,
         "race_name": "Race 1: Misano",
         "duration_minutes": 30.8,
         "elo_change": 13.3,
         "new_elo": 1954
       },
       {
-        "date": "2026-09-14 21:42",
-        "timestamp": 1789422133.3088653,
+        "date": "2026-09-19 10:17",
+        "timestamp": 1789813031.9207625,
         "race_name": "Race 2: Imola",
         "duration_minutes": 31.2,
         "elo_change": -26.5,
@@ -2075,8 +2075,8 @@
         "new_elo": 1910
       },
       {
-        "date": "2026-09-14 21:42",
-        "timestamp": 1789422133.3088653,
+        "date": "2026-09-19 10:17",
+        "timestamp": 1789813031.9207625,
         "race_name": "Round 4: 4 Is More Than 3!? (Nürburgring 24H)",
         "duration_minutes": 71.7,
         "elo_change": 12.5,
@@ -2720,16 +2720,16 @@
         "new_elo": 1801
       },
       {
-        "date": "2026-09-14 21:42",
-        "timestamp": 1789422133.3088653,
+        "date": "2026-09-19 10:17",
+        "timestamp": 1789813031.9207625,
         "race_name": "Race 1: Misano",
         "duration_minutes": 30.8,
         "elo_change": 17.0,
         "new_elo": 1818
       },
       {
-        "date": "2026-09-14 21:42",
-        "timestamp": 1789422133.3088653,
+        "date": "2026-09-19 10:17",
+        "timestamp": 1789813031.9207625,
         "race_name": "Race 2: Imola",
         "duration_minutes": 31.2,
         "elo_change": 43.5,
@@ -2887,19 +2887,19 @@
         "new_elo": 1842
       },
       {
-        "date": "2026-09-14 21:42",
-        "timestamp": 1789422133.3088653,
+        "date": "2026-09-19 10:17",
+        "timestamp": 1789813031.9207625,
         "race_name": "Race 1: Misano",
         "duration_minutes": 30.8,
         "elo_change": -3.3,
         "new_elo": 1839
       },
       {
-        "date": "2026-09-14 21:42",
-        "timestamp": 1789422133.3088653,
+        "date": "2026-09-19 10:17",
+        "timestamp": 1789813031.9207625,
         "race_name": "Race 1: Silverstone",
         "duration_minutes": 31.4,
-        "elo_change": 12.2,
+        "elo_change": 12.3,
         "new_elo": 1851
       }
     ]
@@ -3119,7 +3119,7 @@
   },
   {
     "name": "Julian Maßner",
-    "current_elo": 1813,
+    "current_elo": 1814,
     "races_completed": 9,
     "history": [
       {
@@ -3163,36 +3163,36 @@
         "new_elo": 1749
       },
       {
-        "date": "2026-09-14 21:42",
-        "timestamp": 1789422133.3088653,
+        "date": "2026-09-19 10:17",
+        "timestamp": 1789813031.9207625,
         "race_name": "Race 1: Silverstone",
         "duration_minutes": 31.4,
-        "elo_change": 39.3,
+        "elo_change": 39.4,
         "new_elo": 1789
       },
       {
-        "date": "2026-09-14 21:42",
-        "timestamp": 1789422133.3088653,
+        "date": "2026-09-19 10:17",
+        "timestamp": 1789813031.9207625,
         "race_name": "Race 2: Mount Panorama",
         "duration_minutes": 30.4,
-        "elo_change": 21.5,
-        "new_elo": 1810
+        "elo_change": 21.8,
+        "new_elo": 1811
       },
       {
-        "date": "2026-09-14 21:42",
-        "timestamp": 1789422133.3088653,
+        "date": "2026-09-19 10:17",
+        "timestamp": 1789813031.9207625,
         "race_name": "Round 3: The Curbs Are Lava (Zolder)",
         "duration_minutes": 70.1,
         "elo_change": 47.5,
         "new_elo": 1858
       },
       {
-        "date": "2026-09-14 21:42",
-        "timestamp": 1789422133.3088653,
+        "date": "2026-09-19 10:17",
+        "timestamp": 1789813031.9207625,
         "race_name": "Round 4: 4 Is More Than 3!? (Nürburgring 24H)",
         "duration_minutes": 71.7,
         "elo_change": -44.6,
-        "new_elo": 1813
+        "new_elo": 1814
       }
     ]
   },
@@ -3306,8 +3306,8 @@
         "new_elo": 1809
       },
       {
-        "date": "2026-09-14 21:42",
-        "timestamp": 1789422133.3088653,
+        "date": "2026-09-19 10:17",
+        "timestamp": 1789813031.9207625,
         "race_name": "Round 4: 4 Is More Than 3!? (Nürburgring 24H)",
         "duration_minutes": 71.7,
         "elo_change": 2.0,
@@ -3495,24 +3495,24 @@
         "new_elo": 1732
       },
       {
-        "date": "2026-09-14 21:42",
-        "timestamp": 1789422133.3088653,
+        "date": "2026-09-19 10:17",
+        "timestamp": 1789813031.9207625,
         "race_name": "Race 1: Silverstone",
         "duration_minutes": 31.4,
-        "elo_change": -7.3,
+        "elo_change": -7.2,
         "new_elo": 1725
       },
       {
-        "date": "2026-09-14 21:42",
-        "timestamp": 1789422133.3088653,
+        "date": "2026-09-19 10:17",
+        "timestamp": 1789813031.9207625,
         "race_name": "Race 2: Mount Panorama",
         "duration_minutes": 30.4,
-        "elo_change": 46.0,
+        "elo_change": 46.3,
         "new_elo": 1771
       },
       {
-        "date": "2026-09-14 21:42",
-        "timestamp": 1789422133.3088653,
+        "date": "2026-09-19 10:17",
+        "timestamp": 1789813031.9207625,
         "race_name": "Round 3: The Curbs Are Lava (Zolder)",
         "duration_minutes": 70.1,
         "elo_change": 24.0,
@@ -3861,8 +3861,8 @@
         "new_elo": 1778
       },
       {
-        "date": "2026-09-14 21:42",
-        "timestamp": 1789422133.3088653,
+        "date": "2026-09-19 10:17",
+        "timestamp": 1789813031.9207625,
         "race_name": "Round 4: 4 Is More Than 3!? (Nürburgring 24H)",
         "duration_minutes": 71.7,
         "elo_change": 13.0,
@@ -4164,24 +4164,24 @@
         "new_elo": 1831
       },
       {
-        "date": "2026-09-14 21:42",
-        "timestamp": 1789422133.3088653,
+        "date": "2026-09-19 10:17",
+        "timestamp": 1789813031.9207625,
         "race_name": "Race 1: Misano",
         "duration_minutes": 30.8,
         "elo_change": -5.0,
         "new_elo": 1826
       },
       {
-        "date": "2026-09-14 21:42",
-        "timestamp": 1789422133.3088653,
+        "date": "2026-09-19 10:17",
+        "timestamp": 1789813031.9207625,
         "race_name": "Race 2: Imola",
         "duration_minutes": 31.2,
         "elo_change": 3.3,
         "new_elo": 1829
       },
       {
-        "date": "2026-09-14 21:42",
-        "timestamp": 1789422133.3088653,
+        "date": "2026-09-19 10:17",
+        "timestamp": 1789813031.9207625,
         "race_name": "Round 4: 4 Is More Than 3!? (Nürburgring 24H)",
         "duration_minutes": 71.7,
         "elo_change": -42.5,
@@ -4511,34 +4511,19 @@
         "new_elo": 1701
       },
       {
-        "date": "2026-09-14 21:42",
-        "timestamp": 1789422133.3088653,
+        "date": "2026-09-19 10:17",
+        "timestamp": 1789813031.9207625,
         "race_name": "Round 3: The Curbs Are Lava (Zolder)",
         "duration_minutes": 70.1,
         "elo_change": 2.0,
         "new_elo": 1703
       },
       {
-        "date": "2026-09-14 21:42",
-        "timestamp": 1789422133.3088653,
+        "date": "2026-09-19 10:17",
+        "timestamp": 1789813031.9207625,
         "race_name": "Round 4: 4 Is More Than 3!? (Nürburgring 24H)",
         "duration_minutes": 71.7,
         "elo_change": 40.8,
-        "new_elo": 1744
-      }
-    ]
-  },
-  {
-    "name": "Leonardo Nenci | EoS",
-    "current_elo": 1744,
-    "races_completed": 1,
-    "history": [
-      {
-        "date": "2026-09-14 21:01",
-        "timestamp": 1789419704.0,
-        "race_name": "Round 2: Kyalami",
-        "duration_minutes": 91.1,
-        "elo_change": 243.8,
         "new_elo": 1744
       }
     ]
@@ -4604,32 +4589,32 @@
         "new_elo": 1800
       },
       {
-        "date": "2026-09-14 21:42",
-        "timestamp": 1789422133.3088653,
+        "date": "2026-09-19 10:17",
+        "timestamp": 1789813031.9207625,
         "race_name": "Race 1: Silverstone",
         "duration_minutes": 31.4,
-        "elo_change": -2.9,
+        "elo_change": -2.8,
         "new_elo": 1797
       },
       {
-        "date": "2026-09-14 21:42",
-        "timestamp": 1789422133.3088653,
+        "date": "2026-09-19 10:17",
+        "timestamp": 1789813031.9207625,
         "race_name": "Race 2: Mount Panorama",
         "duration_minutes": 30.4,
         "elo_change": 2.0,
         "new_elo": 1799
       },
       {
-        "date": "2026-09-14 21:42",
-        "timestamp": 1789422133.3088653,
+        "date": "2026-09-19 10:17",
+        "timestamp": 1789813031.9207625,
         "race_name": "Round 3: The Curbs Are Lava (Zolder)",
         "duration_minutes": 70.1,
         "elo_change": -40.6,
         "new_elo": 1758
       },
       {
-        "date": "2026-09-14 21:42",
-        "timestamp": 1789422133.3088653,
+        "date": "2026-09-19 10:17",
+        "timestamp": 1789813031.9207625,
         "race_name": "Round 4: 4 Is More Than 3!? (Nürburgring 24H)",
         "duration_minutes": 71.7,
         "elo_change": -17.8,
@@ -4659,8 +4644,8 @@
         "new_elo": 1642
       },
       {
-        "date": "2026-09-14 21:42",
-        "timestamp": 1789422133.3088653,
+        "date": "2026-09-19 10:17",
+        "timestamp": 1789813031.9207625,
         "race_name": "Round 4: 4 Is More Than 3!? (Nürburgring 24H)",
         "duration_minutes": 71.7,
         "elo_change": 88.0,
@@ -4761,16 +4746,16 @@
         "new_elo": 1712
       },
       {
-        "date": "2026-09-14 21:42",
-        "timestamp": 1789422133.3088653,
+        "date": "2026-09-19 10:17",
+        "timestamp": 1789813031.9207625,
         "race_name": "Race 1: Misano",
         "duration_minutes": 30.8,
         "elo_change": -10.7,
         "new_elo": 1701
       },
       {
-        "date": "2026-09-14 21:42",
-        "timestamp": 1789422133.3088653,
+        "date": "2026-09-19 10:17",
+        "timestamp": 1789813031.9207625,
         "race_name": "Race 2: Imola",
         "duration_minutes": 31.2,
         "elo_change": 5.4,
@@ -4934,24 +4919,24 @@
         "new_elo": 1662
       },
       {
-        "date": "2026-09-14 21:42",
-        "timestamp": 1789422133.3088653,
+        "date": "2026-09-19 10:17",
+        "timestamp": 1789813031.9207625,
         "race_name": "Race 1: Misano",
         "duration_minutes": 30.8,
         "elo_change": 54.5,
         "new_elo": 1717
       },
       {
-        "date": "2026-09-14 21:42",
-        "timestamp": 1789422133.3088653,
+        "date": "2026-09-19 10:17",
+        "timestamp": 1789813031.9207625,
         "race_name": "Race 2: Imola",
         "duration_minutes": 31.2,
         "elo_change": -18.0,
         "new_elo": 1699
       },
       {
-        "date": "2026-09-14 21:42",
-        "timestamp": 1789422133.3088653,
+        "date": "2026-09-19 10:17",
+        "timestamp": 1789813031.9207625,
         "race_name": "Race 1: Silverstone",
         "duration_minutes": 31.4,
         "elo_change": -7.5,
@@ -4965,8 +4950,8 @@
     "races_completed": 1,
     "history": [
       {
-        "date": "2026-09-14 21:42",
-        "timestamp": 1789422133.3088653,
+        "date": "2026-09-19 10:17",
+        "timestamp": 1789813031.9207625,
         "race_name": "Round 4: 4 Is More Than 3!? (Nürburgring 24H)",
         "duration_minutes": 71.7,
         "elo_change": 190.7,
@@ -5043,11 +5028,11 @@
         "new_elo": 1699
       },
       {
-        "date": "2026-09-14 21:42",
-        "timestamp": 1789422133.3088653,
+        "date": "2026-09-19 10:17",
+        "timestamp": 1789813031.9207625,
         "race_name": "Race 1: Silverstone",
         "duration_minutes": 31.4,
-        "elo_change": -11.2,
+        "elo_change": -11.1,
         "new_elo": 1688
       }
     ]
@@ -5073,11 +5058,11 @@
     "races_completed": 1,
     "history": [
       {
-        "date": "2026-09-14 21:42",
-        "timestamp": 1789422133.3088653,
+        "date": "2026-09-19 10:17",
+        "timestamp": 1789813031.9207625,
         "race_name": "Round 3: The Curbs Are Lava (Zolder)",
         "duration_minutes": 70.1,
-        "elo_change": 182.4,
+        "elo_change": 182.5,
         "new_elo": 1682
       }
     ]
@@ -5098,7 +5083,7 @@
     ]
   },
   {
-    "name": "Fryderyk Piontek",
+    "name": "Leonardo Nenci | EoS",
     "current_elo": 1669,
     "races_completed": 1,
     "history": [
@@ -5207,6 +5192,21 @@
     ]
   },
   {
+    "name": "Fryderyk Piontek",
+    "current_elo": 1659,
+    "races_completed": 1,
+    "history": [
+      {
+        "date": "2026-09-14 21:01",
+        "timestamp": 1789419704.0,
+        "race_name": "Round 2: Kyalami",
+        "duration_minutes": 91.1,
+        "elo_change": 159.1,
+        "new_elo": 1659
+      }
+    ]
+  },
+  {
     "name": "Ruben Cops",
     "current_elo": 1655,
     "races_completed": 3,
@@ -5289,8 +5289,8 @@
         "new_elo": 1635
       },
       {
-        "date": "2026-09-14 21:42",
-        "timestamp": 1789422133.3088653,
+        "date": "2026-09-19 10:17",
+        "timestamp": 1789813031.9207625,
         "race_name": "Race 1: Misano",
         "duration_minutes": 30.8,
         "elo_change": 3.5,
@@ -5493,8 +5493,8 @@
         "new_elo": 1660
       },
       {
-        "date": "2026-09-14 21:42",
-        "timestamp": 1789422133.3088653,
+        "date": "2026-09-19 10:17",
+        "timestamp": 1789813031.9207625,
         "race_name": "Round 4: 4 Is More Than 3!? (Nürburgring 24H)",
         "duration_minutes": 71.7,
         "elo_change": -29.4,
@@ -5542,7 +5542,7 @@
   },
   {
     "name": "Stuart Woolley",
-    "current_elo": 1623,
+    "current_elo": 1624,
     "races_completed": 3,
     "history": [
       {
@@ -5554,20 +5554,20 @@
         "new_elo": 1567
       },
       {
-        "date": "2026-09-14 21:42",
-        "timestamp": 1789422133.3088653,
+        "date": "2026-09-19 10:17",
+        "timestamp": 1789813031.9207625,
         "race_name": "Race 1: Silverstone",
         "duration_minutes": 31.4,
-        "elo_change": 36.0,
+        "elo_change": 36.1,
         "new_elo": 1603
       },
       {
-        "date": "2026-09-14 21:42",
-        "timestamp": 1789422133.3088653,
+        "date": "2026-09-19 10:17",
+        "timestamp": 1789813031.9207625,
         "race_name": "Race 2: Mount Panorama",
         "duration_minutes": 30.4,
-        "elo_change": 20.1,
-        "new_elo": 1623
+        "elo_change": 20.2,
+        "new_elo": 1624
       }
     ]
   },
@@ -5704,24 +5704,24 @@
         "new_elo": 1532
       },
       {
-        "date": "2026-09-14 21:42",
-        "timestamp": 1789422133.3088653,
+        "date": "2026-09-19 10:17",
+        "timestamp": 1789813031.9207625,
         "race_name": "Race 1: Misano",
         "duration_minutes": 30.8,
         "elo_change": 26.7,
         "new_elo": 1558
       },
       {
-        "date": "2026-09-14 21:42",
-        "timestamp": 1789422133.3088653,
+        "date": "2026-09-19 10:17",
+        "timestamp": 1789813031.9207625,
         "race_name": "Race 2: Imola",
         "duration_minutes": 31.2,
         "elo_change": 41.3,
         "new_elo": 1600
       },
       {
-        "date": "2026-09-14 21:42",
-        "timestamp": 1789422133.3088653,
+        "date": "2026-09-19 10:17",
+        "timestamp": 1789813031.9207625,
         "race_name": "Round 4: 4 Is More Than 3!? (Nürburgring 24H)",
         "duration_minutes": 71.7,
         "elo_change": 22.6,
@@ -6148,32 +6148,32 @@
         "new_elo": 1592
       },
       {
-        "date": "2026-09-14 21:42",
-        "timestamp": 1789422133.3088653,
+        "date": "2026-09-19 10:17",
+        "timestamp": 1789813031.9207625,
         "race_name": "Race 1: Misano",
         "duration_minutes": 30.8,
         "elo_change": 3.4,
         "new_elo": 1595
       },
       {
-        "date": "2026-09-14 21:42",
-        "timestamp": 1789422133.3088653,
+        "date": "2026-09-19 10:17",
+        "timestamp": 1789813031.9207625,
         "race_name": "Race 2: Imola",
         "duration_minutes": 31.2,
         "elo_change": 7.6,
         "new_elo": 1603
       },
       {
-        "date": "2026-09-14 21:42",
-        "timestamp": 1789422133.3088653,
+        "date": "2026-09-19 10:17",
+        "timestamp": 1789813031.9207625,
         "race_name": "Race 1: Silverstone",
         "duration_minutes": 31.4,
-        "elo_change": 9.2,
+        "elo_change": 9.3,
         "new_elo": 1612
       },
       {
-        "date": "2026-09-14 21:42",
-        "timestamp": 1789422133.3088653,
+        "date": "2026-09-19 10:17",
+        "timestamp": 1789813031.9207625,
         "race_name": "Race 2: Mount Panorama",
         "duration_minutes": 30.4,
         "elo_change": 2.0,
@@ -6234,8 +6234,8 @@
         "new_elo": 1565
       },
       {
-        "date": "2026-09-14 21:42",
-        "timestamp": 1789422133.3088653,
+        "date": "2026-09-19 10:17",
+        "timestamp": 1789813031.9207625,
         "race_name": "Round 4: 4 Is More Than 3!? (Nürburgring 24H)",
         "duration_minutes": 71.7,
         "elo_change": 41.1,
@@ -6341,8 +6341,8 @@
         "new_elo": 1579
       },
       {
-        "date": "2026-09-14 21:42",
-        "timestamp": 1789422133.3088653,
+        "date": "2026-09-19 10:17",
+        "timestamp": 1789813031.9207625,
         "race_name": "Round 4: 4 Is More Than 3!? (Nürburgring 24H)",
         "duration_minutes": 71.7,
         "elo_change": 16.7,
@@ -7212,16 +7212,16 @@
     "races_completed": 2,
     "history": [
       {
-        "date": "2026-09-14 21:42",
-        "timestamp": 1789422133.3088653,
+        "date": "2026-09-19 10:17",
+        "timestamp": 1789813031.9207625,
         "race_name": "Race 1: Silverstone",
         "duration_minutes": 31.4,
         "elo_change": 2.0,
         "new_elo": 1502
       },
       {
-        "date": "2026-09-14 21:42",
-        "timestamp": 1789422133.3088653,
+        "date": "2026-09-19 10:17",
+        "timestamp": 1789813031.9207625,
         "race_name": "Round 3: The Curbs Are Lava (Zolder)",
         "duration_minutes": 70.1,
         "elo_change": 62.4,
@@ -7243,8 +7243,8 @@
         "new_elo": 1561
       },
       {
-        "date": "2026-09-14 21:42",
-        "timestamp": 1789422133.3088653,
+        "date": "2026-09-19 10:17",
+        "timestamp": 1789813031.9207625,
         "race_name": "Round 4: 4 Is More Than 3!? (Nürburgring 24H)",
         "duration_minutes": 71.7,
         "elo_change": 2.0,
@@ -7266,8 +7266,8 @@
         "new_elo": 1567
       },
       {
-        "date": "2026-09-14 21:42",
-        "timestamp": 1789422133.3088653,
+        "date": "2026-09-19 10:17",
+        "timestamp": 1789813031.9207625,
         "race_name": "Race 1: Misano",
         "duration_minutes": 30.8,
         "elo_change": -5.7,
@@ -7406,11 +7406,11 @@
     "races_completed": 1,
     "history": [
       {
-        "date": "2026-09-14 21:42",
-        "timestamp": 1789422133.3088653,
+        "date": "2026-09-19 10:17",
+        "timestamp": 1789813031.9207625,
         "race_name": "Race 1: Silverstone",
         "duration_minutes": 31.4,
-        "elo_change": 58.1,
+        "elo_change": 58.2,
         "new_elo": 1558
       }
     ]
@@ -7598,11 +7598,11 @@
         "new_elo": 1521
       },
       {
-        "date": "2026-09-14 21:42",
-        "timestamp": 1789422133.3088653,
+        "date": "2026-09-19 10:17",
+        "timestamp": 1789813031.9207625,
         "race_name": "Race 1: Silverstone",
         "duration_minutes": 31.4,
-        "elo_change": 32.4,
+        "elo_change": 32.5,
         "new_elo": 1553
       }
     ]
@@ -7644,8 +7644,8 @@
         "new_elo": 1550
       },
       {
-        "date": "2026-09-14 21:42",
-        "timestamp": 1789422133.3088653,
+        "date": "2026-09-19 10:17",
+        "timestamp": 1789813031.9207625,
         "race_name": "Round 3: The Curbs Are Lava (Zolder)",
         "duration_minutes": 70.1,
         "elo_change": 2.0,
@@ -7817,24 +7817,24 @@
         "new_elo": 1560
       },
       {
-        "date": "2026-09-14 21:42",
-        "timestamp": 1789422133.3088653,
+        "date": "2026-09-19 10:17",
+        "timestamp": 1789813031.9207625,
         "race_name": "Race 2: Imola",
         "duration_minutes": 31.2,
         "elo_change": 2.5,
         "new_elo": 1562
       },
       {
-        "date": "2026-09-14 21:42",
-        "timestamp": 1789422133.3088653,
+        "date": "2026-09-19 10:17",
+        "timestamp": 1789813031.9207625,
         "race_name": "Race 1: Silverstone",
         "duration_minutes": 31.4,
-        "elo_change": -2.4,
+        "elo_change": -2.3,
         "new_elo": 1560
       },
       {
-        "date": "2026-09-14 21:42",
-        "timestamp": 1789422133.3088653,
+        "date": "2026-09-19 10:17",
+        "timestamp": 1789813031.9207625,
         "race_name": "Race 2: Mount Panorama",
         "duration_minutes": 30.4,
         "elo_change": -9.0,
@@ -7939,8 +7939,8 @@
     "races_completed": 1,
     "history": [
       {
-        "date": "2026-09-14 21:42",
-        "timestamp": 1789422133.3088653,
+        "date": "2026-09-19 10:17",
+        "timestamp": 1789813031.9207625,
         "race_name": "Race 1: Misano",
         "duration_minutes": 30.8,
         "elo_change": 43.9,
@@ -8559,16 +8559,16 @@
     "races_completed": 2,
     "history": [
       {
-        "date": "2026-09-14 21:42",
-        "timestamp": 1789422133.3088653,
+        "date": "2026-09-19 10:17",
+        "timestamp": 1789813031.9207625,
         "race_name": "Race 1: Misano",
         "duration_minutes": 30.8,
         "elo_change": 8.1,
         "new_elo": 1508
       },
       {
-        "date": "2026-09-14 21:42",
-        "timestamp": 1789422133.3088653,
+        "date": "2026-09-19 10:17",
+        "timestamp": 1789813031.9207625,
         "race_name": "Race 1: Silverstone",
         "duration_minutes": 31.4,
         "elo_change": 15.6,
@@ -8909,8 +8909,8 @@
     "races_completed": 1,
     "history": [
       {
-        "date": "2026-09-14 21:42",
-        "timestamp": 1789422133.3088653,
+        "date": "2026-09-19 10:17",
+        "timestamp": 1789813031.9207625,
         "race_name": "Race 1: Silverstone",
         "duration_minutes": 31.4,
         "elo_change": 12.8,
@@ -9335,8 +9335,8 @@
     "races_completed": 1,
     "history": [
       {
-        "date": "2026-09-14 21:42",
-        "timestamp": 1789422133.3088653,
+        "date": "2026-09-19 10:17",
+        "timestamp": 1789813031.9207625,
         "race_name": "Race 1: Misano",
         "duration_minutes": 30.8,
         "elo_change": 3.8,
@@ -9350,19 +9350,19 @@
     "races_completed": 2,
     "history": [
       {
-        "date": "2026-09-14 21:42",
-        "timestamp": 1789422133.3088653,
+        "date": "2026-09-19 10:17",
+        "timestamp": 1789813031.9207625,
         "race_name": "Race 1: Silverstone",
         "duration_minutes": 31.4,
         "elo_change": 2.0,
         "new_elo": 1502
       },
       {
-        "date": "2026-09-14 21:42",
-        "timestamp": 1789422133.3088653,
+        "date": "2026-09-19 10:17",
+        "timestamp": 1789813031.9207625,
         "race_name": "Race 2: Mount Panorama",
         "duration_minutes": 30.4,
-        "elo_change": 2.0,
+        "elo_change": 2.1,
         "new_elo": 1504
       }
     ]
@@ -9959,8 +9959,8 @@
     "races_completed": 1,
     "history": [
       {
-        "date": "2026-09-14 21:42",
-        "timestamp": 1789422133.3088653,
+        "date": "2026-09-19 10:17",
+        "timestamp": 1789813031.9207625,
         "race_name": "Race 1: Misano",
         "duration_minutes": 30.8,
         "elo_change": 2.0,
@@ -9974,8 +9974,8 @@
     "races_completed": 1,
     "history": [
       {
-        "date": "2026-09-14 21:42",
-        "timestamp": 1789422133.3088653,
+        "date": "2026-09-19 10:17",
+        "timestamp": 1789813031.9207625,
         "race_name": "Race 1: Misano",
         "duration_minutes": 30.8,
         "elo_change": 2.0,
@@ -9989,8 +9989,8 @@
     "races_completed": 1,
     "history": [
       {
-        "date": "2026-09-14 21:42",
-        "timestamp": 1789422133.3088653,
+        "date": "2026-09-19 10:17",
+        "timestamp": 1789813031.9207625,
         "race_name": "Race 2: Imola",
         "duration_minutes": 31.2,
         "elo_change": 2.0,
@@ -10004,8 +10004,8 @@
     "races_completed": 1,
     "history": [
       {
-        "date": "2026-09-14 21:42",
-        "timestamp": 1789422133.3088653,
+        "date": "2026-09-19 10:17",
+        "timestamp": 1789813031.9207625,
         "race_name": "Race 1: Silverstone",
         "duration_minutes": 31.4,
         "elo_change": 2.0,
@@ -10735,16 +10735,16 @@
     "races_completed": 2,
     "history": [
       {
-        "date": "2026-09-14 21:42",
-        "timestamp": 1789422133.3088653,
+        "date": "2026-09-19 10:17",
+        "timestamp": 1789813031.9207625,
         "race_name": "Race 1: Misano",
         "duration_minutes": 30.8,
         "elo_change": -11.0,
         "new_elo": 1489
       },
       {
-        "date": "2026-09-14 21:42",
-        "timestamp": 1789422133.3088653,
+        "date": "2026-09-19 10:17",
+        "timestamp": 1789813031.9207625,
         "race_name": "Race 1: Silverstone",
         "duration_minutes": 31.4,
         "elo_change": 2.0,
@@ -10773,8 +10773,8 @@
     "races_completed": 1,
     "history": [
       {
-        "date": "2026-09-14 21:42",
-        "timestamp": 1789422133.3088653,
+        "date": "2026-09-19 10:17",
+        "timestamp": 1789813031.9207625,
         "race_name": "Race 1: Misano",
         "duration_minutes": 30.8,
         "elo_change": -11.0,
@@ -10844,19 +10844,19 @@
         "new_elo": 1502
       },
       {
-        "date": "2026-09-14 21:42",
-        "timestamp": 1789422133.3088653,
+        "date": "2026-09-19 10:17",
+        "timestamp": 1789813031.9207625,
         "race_name": "Race 1: Silverstone",
         "duration_minutes": 31.4,
         "elo_change": -8.3,
         "new_elo": 1494
       },
       {
-        "date": "2026-09-14 21:42",
-        "timestamp": 1789422133.3088653,
+        "date": "2026-09-19 10:17",
+        "timestamp": 1789813031.9207625,
         "race_name": "Race 2: Mount Panorama",
         "duration_minutes": 30.4,
-        "elo_change": -7.1,
+        "elo_change": -7.0,
         "new_elo": 1487
       }
     ]
@@ -11243,16 +11243,16 @@
     "races_completed": 2,
     "history": [
       {
-        "date": "2026-09-14 21:42",
-        "timestamp": 1789422133.3088653,
+        "date": "2026-09-19 10:17",
+        "timestamp": 1789813031.9207625,
         "race_name": "Race 1: Silverstone",
         "duration_minutes": 31.4,
         "elo_change": 2.0,
         "new_elo": 1502
       },
       {
-        "date": "2026-09-14 21:42",
-        "timestamp": 1789422133.3088653,
+        "date": "2026-09-19 10:17",
+        "timestamp": 1789813031.9207625,
         "race_name": "Round 4: 4 Is More Than 3!? (Nürburgring 24H)",
         "duration_minutes": 71.7,
         "elo_change": -17.6,
@@ -11349,8 +11349,8 @@
     "races_completed": 1,
     "history": [
       {
-        "date": "2026-09-14 21:42",
-        "timestamp": 1789422133.3088653,
+        "date": "2026-09-19 10:17",
+        "timestamp": 1789813031.9207625,
         "race_name": "Round 4: 4 Is More Than 3!? (Nürburgring 24H)",
         "duration_minutes": 71.7,
         "elo_change": -17.4,
@@ -11687,16 +11687,16 @@
         "new_elo": 1502
       },
       {
-        "date": "2026-09-14 21:42",
-        "timestamp": 1789422133.3088653,
+        "date": "2026-09-19 10:17",
+        "timestamp": 1789813031.9207625,
         "race_name": "Race 1: Silverstone",
         "duration_minutes": 31.4,
         "elo_change": -13.7,
         "new_elo": 1488
       },
       {
-        "date": "2026-09-14 21:42",
-        "timestamp": 1789422133.3088653,
+        "date": "2026-09-19 10:17",
+        "timestamp": 1789813031.9207625,
         "race_name": "Race 2: Mount Panorama",
         "duration_minutes": 30.4,
         "elo_change": -6.9,
@@ -12299,8 +12299,8 @@
         "new_elo": 1494
       },
       {
-        "date": "2026-09-14 21:42",
-        "timestamp": 1789422133.3088653,
+        "date": "2026-09-19 10:17",
+        "timestamp": 1789813031.9207625,
         "race_name": "Round 4: 4 Is More Than 3!? (Nürburgring 24H)",
         "duration_minutes": 71.7,
         "elo_change": -17.1,
@@ -13080,16 +13080,16 @@
         "new_elo": 1495
       },
       {
-        "date": "2026-09-14 21:42",
-        "timestamp": 1789422133.3088653,
+        "date": "2026-09-19 10:17",
+        "timestamp": 1789813031.9207625,
         "race_name": "Race 1: Misano",
         "duration_minutes": 30.8,
         "elo_change": -10.9,
         "new_elo": 1485
       },
       {
-        "date": "2026-09-14 21:42",
-        "timestamp": 1789422133.3088653,
+        "date": "2026-09-19 10:17",
+        "timestamp": 1789813031.9207625,
         "race_name": "Race 1: Silverstone",
         "duration_minutes": 31.4,
         "elo_change": -14.7,
@@ -13463,8 +13463,8 @@
         "new_elo": 1419
       },
       {
-        "date": "2026-09-14 21:42",
-        "timestamp": 1789422133.3088653,
+        "date": "2026-09-19 10:17",
+        "timestamp": 1789813031.9207625,
         "race_name": "Race 1: Silverstone",
         "duration_minutes": 31.4,
         "elo_change": 38.9,
