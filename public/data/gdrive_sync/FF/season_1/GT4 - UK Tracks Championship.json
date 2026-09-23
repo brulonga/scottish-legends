@@ -5,7 +5,7 @@
     "Updated": "2026-05-01T21:34:04.20868677+01:00",
     "Deleted": "0001-01-01T00:00:00Z",
     "Name": "GT4 - UK Tracks Championship",
-    "Description": "\u003chtml\u003e\u003chead\u003e\u003c/head\u003e\u003cbody\u003e\u003c/body\u003e\u003c/html\u003e",
+    "Description": "<html><head></head><body></body></html>",
     "IgnoreXWorstEvents": 0,
     "StartNextPracticeOnEventComplete": true,
     "LoopingPracticeSessionDuration": 15,
@@ -31453,8 +31453,8 @@
         {
           "drivers": [
             {
-              "firstName": "alex",
-              "lastName": "küch [SL]",
+              "firstName": "Alex Küch",
+              "lastName": "",
               "shortName": "ALE",
               "driverCategory": 2,
               "nationality": 2,
@@ -31849,8 +31849,8 @@
         {
           "drivers": [
             {
-              "firstName": "Gael",
-              "lastName": "Duchêne ESP [SL]",
+              "firstName": "Gael Duchene",
+              "lastName": "",
               "shortName": "GDG",
               "driverCategory": 2,
               "nationality": 4,
@@ -32982,8 +32982,8 @@
             {
               "drivers": [
                 {
-                  "firstName": "alex",
-                  "lastName": "küch [SL]",
+                  "firstName": "Alex Küch",
+                  "lastName": "",
                   "shortName": "ALE",
                   "driverCategory": 2,
                   "nationality": 2,
@@ -33378,8 +33378,8 @@
             {
               "drivers": [
                 {
-                  "firstName": "Gael",
-                  "lastName": "Duchêne ESP [SL]",
+                  "firstName": "Gael Duchene",
+                  "lastName": "",
                   "shortName": "GDG",
                   "driverCategory": 2,
                   "nationality": 4,
@@ -34550,8 +34550,8 @@
             {
               "drivers": [
                 {
-                  "firstName": "alex",
-                  "lastName": "küch [SL]",
+                  "firstName": "Alex Küch",
+                  "lastName": "",
                   "shortName": "ALE",
                   "driverCategory": 2,
                   "nationality": 2,
@@ -34946,8 +34946,8 @@
             {
               "drivers": [
                 {
-                  "firstName": "Gael",
-                  "lastName": "Duchêne ESP [SL]",
+                  "firstName": "Gael Duchene",
+                  "lastName": "",
                   "shortName": "GDG",
                   "driverCategory": 2,
                   "nationality": 4,
@@ -36118,8 +36118,8 @@
             {
               "drivers": [
                 {
-                  "firstName": "alex",
-                  "lastName": "küch [SL]",
+                  "firstName": "Alex Küch",
+                  "lastName": "",
                   "shortName": "ALE",
                   "driverCategory": 2,
                   "nationality": 2,
@@ -36514,8 +36514,8 @@
             {
               "drivers": [
                 {
-                  "firstName": "Gael",
-                  "lastName": "Duchêne ESP [SL]",
+                  "firstName": "Gael Duchene",
+                  "lastName": "",
                   "shortName": "GDG",
                   "driverCategory": 2,
                   "nationality": 4,

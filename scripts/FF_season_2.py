@@ -137,9 +137,25 @@ def fix_mojibake(text):
     except: return text
 
 def clean_name(name):
+    if not name: return "Unknown"
+    
+    # 1. Tu función original para arreglar los caracteres rotos
     fixed_name = fix_mojibake(name)
-    cleaned = re.sub(r'\[.*?\]|\|.*', '', fixed_name)
-    return re.sub(r'\s+', ' ', cleaned).strip()
+    
+    # 2. Limpiar caracteres invisibles
+    cleaned = re.sub(r'[\u200B-\u200D\uFEFF]', '', fixed_name)
+    
+    # 3. Limpiar etiquetas de equipos y separadores (añado paréntesis por si acaso)
+    cleaned = re.sub(r'\[.*?\]|\(.*?\)|\|.*', '', cleaned)
+    
+    # 4. Eliminar tildes, diéresis y acentos (ej: Küch -> Kuch)
+    cleaned = unicodedata.normalize('NFD', cleaned).encode('ascii', 'ignore').decode('utf-8')
+    
+    # 5. Eliminar puntuación (puntos, guiones, etc.) dejando solo letras y espacios
+    cleaned = re.sub(r'[^a-zA-Z\s]', '', cleaned)
+    
+    # 6. Quitar espacios dobles, espacios en los bordes y capitalizar correctamente
+    return re.sub(r'\s+', ' ', cleaned).strip().title()
 
 def normalize_str(s):
     return ''.join(c for c in unicodedata.normalize('NFD', s) if unicodedata.category(c) != 'Mn').lower()

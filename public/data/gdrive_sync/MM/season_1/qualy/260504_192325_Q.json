@@ -1906,8 +1906,8 @@
           "cupCategory": 0,
           "drivers": [
             {
-              "firstName": "Gael",
-              "lastName": "Duchêne ESP [SL]",
+              "firstName": "Gael Duchene",
+              "lastName": "",
               "playerId": "S76561199859661866",
               "shortName": "GDG"
             }
@@ -1918,8 +1918,8 @@
           "ballastKg": 23
         },
         "currentDriver": {
-          "firstName": "Gael",
-          "lastName": "Duchêne ESP [SL]",
+          "firstName": "Gael Duchene",
+          "lastName": "",
           "playerId": "S76561199859661866",
           "shortName": "GDG"
         },
@@ -2090,8 +2090,8 @@
           "cupCategory": 0,
           "drivers": [
             {
-              "firstName": "Gael",
-              "lastName": "Duchêne ESP [SL]",
+              "firstName": "Gael Duchene",
+              "lastName": "",
               "playerId": "S76561199859661866",
               "shortName": "GDG"
             }
@@ -2102,8 +2102,8 @@
           "ballastKg": 28
         },
         "currentDriver": {
-          "firstName": "Gael",
-          "lastName": "Duchêne ESP [SL]",
+          "firstName": "Gael Duchene",
+          "lastName": "",
           "playerId": "S76561199859661866",
           "shortName": "GDG"
         },

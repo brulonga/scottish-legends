@@ -10827,8 +10827,8 @@
           "cupCategory": 0,
           "drivers": [
             {
-              "firstName": "Gael",
-              "lastName": "Duchêne ESP [SL]",
+              "firstName": "Gael Duchene",
+              "lastName": "",
               "playerId": "S76561199859661866",
               "shortName": "GDG"
             }
@@ -10839,8 +10839,8 @@
           "ballastKg": 8
         },
         "currentDriver": {
-          "firstName": "Gael",
-          "lastName": "Duchêne ESP [SL]",
+          "firstName": "Gael Duchene",
+          "lastName": "",
           "playerId": "S76561199859661866",
           "shortName": "GDG"
         },

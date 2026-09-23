@@ -4,6 +4,7 @@ import glob
 import re
 from datetime import datetime
 from collections import defaultdict
+import unicodedata
 
 # --- CONFIGURACIÓN ---
 INPUT_DIRS = [
@@ -18,10 +19,44 @@ BASE_K_TOTAL = 120
 # 🚀 2. REFERENCIA: 90 minutos es la carrera "Estándar" que da el 100% de puntos
 REFERENCE_DURATION_MINUTES = 90.0 
 
+CORRECCIONES = {
+    "küch": "Alex Küch",
+    "kuch": "Alex Küch",
+    "kã¼ch": "Alex Küch",
+    "kach": "Alex Küch",
+    "woolley": "Stuart Woolley",
+    "wooley": "Stuart Woolley",
+    "duchêne": "Gael Duchene",
+    "duchene": "Gael Duchene",
+    "duchãªne": "Gael Duchene"
+}
+
 def normalize_name(raw_name):
-    if not raw_name: return "Unknown"
-    name = re.sub(r'\[.*?\]|\(.*?\)|\|.*', '', raw_name)
-    return re.sub(r'\s+', ' ', name).strip().title()
+    if not isinstance(raw_name, str) or not raw_name: 
+        return "Unknown"
+        
+    # 1. EL FRANCOTIRADOR MATA-FANTASMAS
+    name_lower = raw_name.lower()
+    for mal, bien in CORRECCIONES.items():
+        if mal in name_lower:
+            return bien
+
+    # 2. LIMPIEZA PARA EL RESTO DE PILOTOS
+    cleaned = re.sub(r'[\u200B-\u200D\uFEFF]', '', raw_name)
+    try:
+        cleaned = cleaned.encode('latin-1').decode('utf-8')
+    except Exception:
+        pass
+
+    # Quitamos etiquetas [SL], (ESP) y el infame ESP suelto al final
+    cleaned = re.sub(r'\[.*?\]|\(.*?\)|\|.*', '', cleaned)
+    # Si alguien se puso "ESP" suelto sin corchetes al final del nombre, esto lo vuela:
+    cleaned = re.sub(r'\s(?i)esp$', '', cleaned) 
+    
+    cleaned = unicodedata.normalize('NFD', cleaned).encode('ascii', 'ignore').decode('utf-8')
+    cleaned = re.sub(r'[^a-zA-Z\s]', '', cleaned)
+    
+    return re.sub(r'\s+', ' ', cleaned).strip().title()
 
 def parse_timestamp(ts):
     if isinstance(ts, (int, float)) and ts > 0:
@@ -189,7 +224,7 @@ def calculate_elo():
             seen_in_race.add(norm)
             deduped_results.append(r)
             race_drivers_norm.append(norm)
-            original_names[norm] = raw
+            original_names[norm] = norm
             
             if norm not in elos:
                 elos[norm] = STARTING_ELO

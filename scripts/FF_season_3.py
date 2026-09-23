@@ -54,12 +54,56 @@ def format_time(ms):
     milis = int(ms % 1000)
     return f"{minutes}:{seconds:02d}.{milis:03d}"
 
+import json
+import re
+import unicodedata
+
+def _aggressive_clean(name):
+    """La aspiradora agresiva para limpiar cualquier string de nombre"""
+    if not isinstance(name, str) or not name: return ""
+    
+    # 1. Quitar caracteres invisibles
+    cleaned = re.sub(r'[\u200B-\u200D\uFEFF]', '', name)
+    # 2. Quitar etiquetas y equipos
+    cleaned = re.sub(r'\[.*?\]|\(.*?\)|\|.*', '', cleaned)
+    # 3. Quitar tildes y diéresis
+    cleaned = unicodedata.normalize('NFD', cleaned).encode('ascii', 'ignore').decode('utf-8')
+    # 4. Quitar puntuación
+    cleaned = re.sub(r'[^a-zA-Z\s]', '', cleaned)
+    # 5. Capitalizar y espaciar bien
+    return re.sub(r'\s+', ' ', cleaned).strip().title()
+
+def _clean_json_data(data):
+    """Viaja por el JSON buscando nombres para limpiarlos al vuelo"""
+    if isinstance(data, dict):
+        # Caso 1: Formato nativo de ACC (Une firstName y lastName, y vacía el apellido)
+        if 'firstName' in data and 'lastName' in data:
+            raw_full = f"{data.get('firstName', '')} {data.get('lastName', '')}".strip()
+            data['firstName'] = _aggressive_clean(raw_full)
+            data['lastName'] = "" 
+        
+        # Recorremos el resto de las claves
+        for key, value in data.items():
+            # Caso 2: Formato de JSON ya procesado (clave 'name')
+            if key == 'name' and isinstance(value, str):
+                data[key] = _aggressive_clean(value)
+            else:
+                _clean_json_data(value) # Llamada recursiva
+                
+    elif isinstance(data, list):
+        for item in data:
+            _clean_json_data(item) # Llamada recursiva
+            
+    return data
+
 def read_json(file_path):
     encodings = ['utf-8-sig', 'utf-16-le', 'utf-16', 'latin-1', 'cp1252']
     for encoding in encodings:
         try:
             with open(file_path, 'r', encoding=encoding) as f:
-                return json.load(f)
+                data = json.load(f)
+                # 🚀 MAGIA: Limpiamos todo el JSON en memoria antes de devolverlo
+                return _clean_json_data(data)
         except (UnicodeError, json.JSONDecodeError, UnicodeDecodeError):
             continue
     return None

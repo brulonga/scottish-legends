@@ -1,7 +1,7 @@
 {
   "global": [
     {
-      "name": "Marsi Bella [SL]",
+      "name": "Marsi Bella",
       "car_class": "CUP",
       "favorite_car": 26,
       "points": 720,
@@ -31,7 +31,7 @@
       "races": 3
     },
     {
-      "name": "Julian Ma\u00dfner",
+      "name": "Julian Maner",
       "car_class": "TCX",
       "favorite_car": 27,
       "points": 270,
@@ -46,7 +46,7 @@
       "races": 2
     },
     {
-      "name": "Ulrich BigU",
+      "name": "Ulrich Bigu",
       "car_class": "TCX",
       "favorite_car": 27,
       "points": 225,
@@ -76,7 +76,7 @@
       "races": 2
     },
     {
-      "name": "Raymond Crawford [SL]",
+      "name": "Raymond Crawford",
       "car_class": "CUP",
       "favorite_car": 26,
       "points": 174,
@@ -151,7 +151,7 @@
       "races": 1
     },
     {
-      "name": "\u00e7\u00be\u017d\u00e5\u00a4\u0153 Miyo",
+      "name": "Cza Miyo",
       "car_class": "GT4",
       "favorite_car": 59,
       "points": 150,
@@ -196,7 +196,7 @@
       "races": 1
     },
     {
-      "name": ".. miru..momo..",
+      "name": "Mirumomo",
       "car_class": "CUP",
       "favorite_car": 26,
       "points": 120,
@@ -211,7 +211,7 @@
       "races": 2
     },
     {
-      "name": "Pauli Keski-Filppula",
+      "name": "Pauli Keskifilppula",
       "car_class": "TCX",
       "favorite_car": 27,
       "points": 105,
@@ -226,7 +226,7 @@
       "races": 1
     },
     {
-      "name": "alex k\u00c3\u00bcch [SL]",
+      "name": "Alex Kuch",
       "car_class": "GT4",
       "favorite_car": 60,
       "points": 105,
@@ -241,7 +241,7 @@
       "races": 1
     },
     {
-      "name": "Marty Fox [SL]",
+      "name": "Marty Fox",
       "car_class": "CUP",
       "favorite_car": 26,
       "points": 96,
@@ -256,7 +256,7 @@
       "races": 1
     },
     {
-      "name": "Nick [LZRT] Ice",
+      "name": "Nick Ice",
       "car_class": "GT4",
       "favorite_car": 60,
       "points": 96,
@@ -286,7 +286,7 @@
       "races": 1
     },
     {
-      "name": "marc du chatinier",
+      "name": "Marc Du Chatinier",
       "car_class": "CUP",
       "favorite_car": 28,
       "points": 84,
@@ -301,7 +301,7 @@
       "races": 1
     },
     {
-      "name": "Cla Rens [SL]",
+      "name": "Cla Rens",
       "car_class": "GT4",
       "favorite_car": 51,
       "points": 84,
@@ -406,7 +406,7 @@
       "races": 1
     },
     {
-      "name": "mr. genius",
+      "name": "Mr Genius",
       "car_class": "CUP",
       "favorite_car": 26,
       "points": 72,
@@ -556,7 +556,7 @@
       "races": 1
     },
     {
-      "name": "memories Xu",
+      "name": "Memories Xu",
       "car_class": "GT4",
       "favorite_car": 60,
       "points": 54,
@@ -586,7 +586,7 @@
       "races": 1
     },
     {
-      "name": "Alonzo Allons-y",
+      "name": "Alonzo Allonsy",
       "car_class": "CUP",
       "favorite_car": 26,
       "points": 51,
@@ -616,7 +616,7 @@
       "races": 1
     },
     {
-      "name": "Alice Schupp-M\u00c3\u00bcller",
+      "name": "Alice Schuppmaller",
       "car_class": "TCX",
       "favorite_car": 27,
       "points": 48,
@@ -661,7 +661,7 @@
       "races": 1
     },
     {
-      "name": "Gael Duch\u00c3\u00aane ESP [SL]",
+      "name": "Gael Duchene",
       "car_class": "TCX",
       "favorite_car": 27,
       "points": 39,
@@ -676,7 +676,7 @@
       "races": 1
     },
     {
-      "name": "Danil kolbasenko",
+      "name": "Danil Kolbasenko",
       "car_class": "TCX",
       "favorite_car": 27,
       "points": 30,
@@ -706,7 +706,7 @@
       "races": 1
     },
     {
-      "name": "Toma Alex | ARF",
+      "name": "Toma Alex",
       "car_class": "CUP",
       "favorite_car": 26,
       "points": 0,
@@ -736,7 +736,7 @@
       "races": 0
     },
     {
-      "name": "keVin peeters [SL]",
+      "name": "Kevin Peeters",
       "car_class": "GT4",
       "favorite_car": 55,
       "points": 0,
@@ -786,7 +786,7 @@
               "qualy_gap": "POLE",
               "qualy_gap_ms": 0,
               "net_vs_q": 0,
-              "name": "Marsi Bella [SL]",
+              "name": "Marsi Bella",
               "car_model": 26,
               "laps": 19,
               "incidents": 0,
@@ -1642,7 +1642,7 @@
               "qualy_gap": "+1.415s",
               "qualy_gap_ms": 1415,
               "net_vs_q": 0,
-              "name": "Marty Fox [SL]",
+              "name": "Marty Fox",
               "car_model": 26,
               "laps": 19,
               "incidents": 2,
@@ -1856,7 +1856,7 @@
               "qualy_gap": "+1.460s",
               "qualy_gap_ms": 1460,
               "net_vs_q": 0,
-              "name": "Raymond Crawford [SL]",
+              "name": "Raymond Crawford",
               "car_model": 26,
               "laps": 19,
               "incidents": 1,
@@ -1963,7 +1963,7 @@
               "qualy_gap": "+1.847s",
               "qualy_gap_ms": 1847,
               "net_vs_q": 2,
-              "name": ".. miru..momo..",
+              "name": "Mirumomo",
               "car_model": 26,
               "laps": 19,
               "incidents": 1,
@@ -2605,7 +2605,7 @@
               "qualy_gap": "-",
               "qualy_gap_ms": null,
               "net_vs_q": "-",
-              "name": "Alonzo Allons-y",
+              "name": "Alonzo Allonsy",
               "car_model": 26,
               "laps": 17,
               "incidents": 14,
@@ -2795,7 +2795,7 @@
               "qualy_gap": "-",
               "qualy_gap_ms": null,
               "net_vs_q": "-",
-              "name": "Toma Alex | ARF",
+              "name": "Toma Alex",
               "car_model": 26,
               "laps": 15,
               "incidents": 3,
@@ -2878,7 +2878,7 @@
           "qualy_results": [
             {
               "pos": 1,
-              "name": "Marsi Bella [SL]",
+              "name": "Marsi Bella",
               "car_class": "CUP",
               "car_model": 26,
               "s1": "0:24.550",
@@ -2938,7 +2938,7 @@
             },
             {
               "pos": 6,
-              "name": "Cla Rens [SL]",
+              "name": "Cla Rens",
               "car_class": "CUP",
               "car_model": 26,
               "s1": "0:24.967",
@@ -2974,7 +2974,7 @@
             },
             {
               "pos": 9,
-              "name": "Marty Fox [SL]",
+              "name": "Marty Fox",
               "car_class": "CUP",
               "car_model": 26,
               "s1": "0:24.980",
@@ -2998,7 +2998,7 @@
             },
             {
               "pos": 11,
-              "name": "Raymond Crawford [SL]",
+              "name": "Raymond Crawford",
               "car_class": "CUP",
               "car_model": 26,
               "s1": "0:24.810",
@@ -3034,7 +3034,7 @@
             },
             {
               "pos": 14,
-              "name": ".. miru..momo..",
+              "name": "Mirumomo",
               "car_class": "CUP",
               "car_model": 26,
               "s1": "0:25.285",
@@ -3046,7 +3046,7 @@
             },
             {
               "pos": 15,
-              "name": "keVin peeters [SL]",
+              "name": "Kevin Peeters",
               "car_class": "CUP",
               "car_model": 26,
               "s1": "0:24.817",
@@ -3106,7 +3106,7 @@
             },
             {
               "pos": "-",
-              "name": "Alonzo Allons-y",
+              "name": "Alonzo Allonsy",
               "car_class": "CUP",
               "car_model": 28,
               "s1": "-",
@@ -3130,7 +3130,7 @@
             },
             {
               "pos": "-",
-              "name": "Splif Splifmeister | SLR",
+              "name": "Splif Splifmeister",
               "car_class": "CUP",
               "car_model": 18,
               "s1": "-",
@@ -3166,7 +3166,7 @@
             },
             {
               "pos": "-",
-              "name": "Toma Alex | ARF",
+              "name": "Toma Alex",
               "car_class": "CUP",
               "car_model": 26,
               "s1": "-",
@@ -3202,7 +3202,7 @@
             },
             {
               "pos": "-",
-              "name": "Fred M\u00f6ller",
+              "name": "Fred Moller",
               "car_class": "CUP",
               "car_model": 28,
               "s1": "-",
@@ -3214,7 +3214,7 @@
             },
             {
               "pos": "-",
-              "name": "Dominic Zimmermann [SL]",
+              "name": "Dominic Zimmermann",
               "car_class": "CUP",
               "car_model": 28,
               "s1": "-",
@@ -3238,7 +3238,7 @@
             },
             {
               "pos": "-",
-              "name": "Toma Alex | ARF",
+              "name": "Toma Alex",
               "car_class": "GT2",
               "car_model": 29,
               "s1": "-",
@@ -3265,7 +3265,7 @@
               "qualy_gap": "POLE",
               "qualy_gap_ms": 0,
               "net_vs_q": 0,
-              "name": "Marsi Bella [SL]",
+              "name": "Marsi Bella",
               "car_model": 26,
               "laps": 18,
               "incidents": 1,
@@ -3677,7 +3677,7 @@
               "qualy_gap": "+1.665s",
               "qualy_gap_ms": 1665,
               "net_vs_q": 5,
-              "name": "Marty Fox [SL]",
+              "name": "Marty Fox",
               "car_model": 26,
               "laps": 18,
               "incidents": 1,
@@ -3883,7 +3883,7 @@
               "qualy_gap": "+1.588s",
               "qualy_gap_ms": 1588,
               "net_vs_q": 2,
-              "name": "Raymond Crawford [SL]",
+              "name": "Raymond Crawford",
               "car_model": 26,
               "laps": 18,
               "incidents": 2,
@@ -4089,7 +4089,7 @@
               "qualy_gap": "+1.935s",
               "qualy_gap_ms": 1935,
               "net_vs_q": 2,
-              "name": "mr. genius",
+              "name": "Mr Genius",
               "car_model": 26,
               "laps": 18,
               "incidents": 1,
@@ -4330,7 +4330,7 @@
           "qualy_results": [
             {
               "pos": 1,
-              "name": "Marsi Bella [SL]",
+              "name": "Marsi Bella",
               "car_class": "CUP",
               "car_model": 26,
               "s1": "0:22.002",
@@ -4426,7 +4426,7 @@
             },
             {
               "pos": 9,
-              "name": "Raymond Crawford [SL]",
+              "name": "Raymond Crawford",
               "car_class": "CUP",
               "car_model": 26,
               "s1": "0:22.107",
@@ -4438,7 +4438,7 @@
             },
             {
               "pos": 10,
-              "name": "Marty Fox [SL]",
+              "name": "Marty Fox",
               "car_class": "CUP",
               "car_model": 26,
               "s1": "0:22.240",
@@ -4450,7 +4450,7 @@
             },
             {
               "pos": 11,
-              "name": "mr. genius",
+              "name": "Mr Genius",
               "car_class": "CUP",
               "car_model": 26,
               "s1": "0:22.327",
@@ -4498,7 +4498,7 @@
             },
             {
               "pos": "-",
-              "name": "Dominic Zimmermann [SL]",
+              "name": "Dominic Zimmermann",
               "car_class": "CUP",
               "car_model": 26,
               "s1": "-",
@@ -4533,7 +4533,7 @@
               "qualy_gap": "+0.315s",
               "qualy_gap_ms": 315,
               "net_vs_q": 1,
-              "name": "Marsi Bella [SL]",
+              "name": "Marsi Bella",
               "car_model": 27,
               "laps": 13,
               "incidents": 0,
@@ -4616,7 +4616,7 @@
               "qualy_gap": "POLE",
               "qualy_gap_ms": 0,
               "net_vs_q": -1,
-              "name": "Julian Ma\u00dfner",
+              "name": "Julian Maner",
               "car_model": 27,
               "laps": 13,
               "incidents": 0,
@@ -5031,7 +5031,7 @@
               "qualy_gap": "+1.648s",
               "qualy_gap_ms": 1648,
               "net_vs_q": 3,
-              "name": "Gael Duch\u00c3\u00aane ESP [SL]",
+              "name": "Gael Duchene",
               "car_model": 27,
               "laps": 13,
               "incidents": 1,
@@ -5114,7 +5114,7 @@
               "qualy_gap": "+0.733s",
               "qualy_gap_ms": 733,
               "net_vs_q": -5,
-              "name": "Pauli Keski-Filppula",
+              "name": "Pauli Keskifilppula",
               "car_model": 27,
               "laps": 13,
               "incidents": 1,
@@ -5197,7 +5197,7 @@
               "qualy_gap": "+3.210s",
               "qualy_gap_ms": 3210,
               "net_vs_q": 6,
-              "name": "Ulrich BigU",
+              "name": "Ulrich Bigu",
               "car_model": 27,
               "laps": 13,
               "incidents": 0,
@@ -5280,7 +5280,7 @@
               "qualy_gap": "+1.360s",
               "qualy_gap_ms": 1360,
               "net_vs_q": -4,
-              "name": "Raymond Crawford [SL]",
+              "name": "Raymond Crawford",
               "car_model": 27,
               "laps": 13,
               "incidents": 2,
@@ -5363,7 +5363,7 @@
               "qualy_gap": "-",
               "qualy_gap_ms": null,
               "net_vs_q": "-",
-              "name": ".. miru..momo..",
+              "name": "Mirumomo",
               "car_model": 27,
               "laps": 13,
               "incidents": 1,
@@ -5861,7 +5861,7 @@
               "qualy_gap": "+4.128s",
               "qualy_gap_ms": 4128,
               "net_vs_q": 0,
-              "name": "Alonzo Allons-y",
+              "name": "Alonzo Allonsy",
               "car_model": 27,
               "laps": 13,
               "incidents": 3,
@@ -6027,7 +6027,7 @@
               "qualy_gap": "+4.838s",
               "qualy_gap_ms": 4838,
               "net_vs_q": -1,
-              "name": "Alice Schupp-M\u00c3\u00bcller",
+              "name": "Alice Schuppmaller",
               "car_model": 27,
               "laps": 13,
               "incidents": 5,
@@ -6110,7 +6110,7 @@
               "qualy_gap": "+6.158s",
               "qualy_gap_ms": 6158,
               "net_vs_q": 1,
-              "name": "Danil kolbasenko",
+              "name": "Danil Kolbasenko",
               "car_model": 27,
               "laps": 12,
               "incidents": 8,
@@ -6489,7 +6489,7 @@
           "qualy_results": [
             {
               "pos": 1,
-              "name": "Julian Ma\u00dfner",
+              "name": "Julian Maner",
               "car_class": "TCX",
               "car_model": 27,
               "s1": "0:40.660",
@@ -6501,7 +6501,7 @@
             },
             {
               "pos": 2,
-              "name": "Marsi Bella [SL]",
+              "name": "Marsi Bella",
               "car_class": "TCX",
               "car_model": 27,
               "s1": "0:41.100",
@@ -6513,7 +6513,7 @@
             },
             {
               "pos": 3,
-              "name": "Pauli Keski-Filppula",
+              "name": "Pauli Keskifilppula",
               "car_class": "TCX",
               "car_model": 27,
               "s1": "0:41.090",
@@ -6537,7 +6537,7 @@
             },
             {
               "pos": 5,
-              "name": "Cla Rens [SL]",
+              "name": "Cla Rens",
               "car_class": "TCX",
               "car_model": 27,
               "s1": "0:40.935",
@@ -6549,7 +6549,7 @@
             },
             {
               "pos": 6,
-              "name": "Raymond Crawford [SL]",
+              "name": "Raymond Crawford",
               "car_class": "TCX",
               "car_model": 27,
               "s1": "0:40.800",
@@ -6597,7 +6597,7 @@
             },
             {
               "pos": 10,
-              "name": "Gael Duch\u00c3\u00aane ESP [SL]",
+              "name": "Gael Duchene",
               "car_class": "TCX",
               "car_model": 27,
               "s1": "0:40.875",
@@ -6657,7 +6657,7 @@
             },
             {
               "pos": 15,
-              "name": "Ulrich BigU",
+              "name": "Ulrich Bigu",
               "car_class": "TCX",
               "car_model": 27,
               "s1": "0:41.782",
@@ -6681,7 +6681,7 @@
             },
             {
               "pos": 17,
-              "name": "Alonzo Allons-y",
+              "name": "Alonzo Allonsy",
               "car_class": "TCX",
               "car_model": 27,
               "s1": "0:42.170",
@@ -6693,7 +6693,7 @@
             },
             {
               "pos": 18,
-              "name": "Alice Schupp-M\u00c3\u00bcller",
+              "name": "Alice Schuppmaller",
               "car_class": "TCX",
               "car_model": 27,
               "s1": "0:42.307",
@@ -6729,7 +6729,7 @@
             },
             {
               "pos": 21,
-              "name": "Danil kolbasenko",
+              "name": "Danil Kolbasenko",
               "car_class": "TCX",
               "car_model": 27,
               "s1": "0:42.805",
@@ -6753,7 +6753,7 @@
             },
             {
               "pos": 23,
-              "name": "Andr\u00e9 Luiz666",
+              "name": "Andre Luiz",
               "car_class": "TCX",
               "car_model": 27,
               "s1": "0:42.725",
@@ -6837,7 +6837,7 @@
             },
             {
               "pos": "-",
-              "name": ".. miru..momo..",
+              "name": "Mirumomo",
               "car_class": "TCX",
               "car_model": 27,
               "s1": "-",
@@ -6849,7 +6849,7 @@
             },
             {
               "pos": "-",
-              "name": "K Magomed [ASG]",
+              "name": "K Magomed",
               "car_class": "TCX",
               "car_model": 27,
               "s1": "-",
@@ -6861,7 +6861,7 @@
             },
             {
               "pos": "-",
-              "name": "Dominic Zimmermann [SL]",
+              "name": "Dominic Zimmermann",
               "car_class": "TCX",
               "car_model": 27,
               "s1": "-",
@@ -6888,7 +6888,7 @@
               "qualy_gap": "POLE",
               "qualy_gap_ms": 0,
               "net_vs_q": 0,
-              "name": "Marsi Bella [SL]",
+              "name": "Marsi Bella",
               "car_model": 27,
               "laps": 13,
               "incidents": 0,
@@ -7054,7 +7054,7 @@
               "qualy_gap": "+0.623s",
               "qualy_gap_ms": 623,
               "net_vs_q": 0,
-              "name": "Julian Ma\u00dfner",
+              "name": "Julian Maner",
               "car_model": 27,
               "laps": 13,
               "incidents": 0,
@@ -7137,7 +7137,7 @@
               "qualy_gap": "+1.055s",
               "qualy_gap_ms": 1055,
               "net_vs_q": 0,
-              "name": "Pauli Keski-Filppula",
+              "name": "Pauli Keskifilppula",
               "car_model": 27,
               "laps": 13,
               "incidents": 0,
@@ -7303,7 +7303,7 @@
               "qualy_gap": "+3.945s",
               "qualy_gap_ms": 3945,
               "net_vs_q": 5,
-              "name": "Ulrich BigU",
+              "name": "Ulrich Bigu",
               "car_model": 27,
               "laps": 13,
               "incidents": 1,
@@ -7386,7 +7386,7 @@
               "qualy_gap": "+1.193s",
               "qualy_gap_ms": 1193,
               "net_vs_q": -2,
-              "name": "Raymond Crawford [SL]",
+              "name": "Raymond Crawford",
               "car_model": 27,
               "laps": 12,
               "incidents": 3,
@@ -7619,7 +7619,7 @@
               "qualy_gap": "+7.880s",
               "qualy_gap_ms": 7880,
               "net_vs_q": "-",
-              "name": "Danil kolbasenko",
+              "name": "Danil Kolbasenko",
               "car_model": 27,
               "laps": 11,
               "incidents": 2,
@@ -7757,7 +7757,7 @@
           "qualy_results": [
             {
               "pos": 1,
-              "name": "Marsi Bella [SL]",
+              "name": "Marsi Bella",
               "car_class": "TCX",
               "car_model": 27,
               "s1": "0:45.002",
@@ -7781,7 +7781,7 @@
             },
             {
               "pos": 3,
-              "name": "Julian Ma\u00dfner",
+              "name": "Julian Maner",
               "car_class": "TCX",
               "car_model": 27,
               "s1": "0:44.897",
@@ -7793,7 +7793,7 @@
             },
             {
               "pos": 4,
-              "name": "Pauli Keski-Filppula",
+              "name": "Pauli Keskifilppula",
               "car_class": "TCX",
               "car_model": 27,
               "s1": "0:45.157",
@@ -7805,7 +7805,7 @@
             },
             {
               "pos": 5,
-              "name": "Raymond Crawford [SL]",
+              "name": "Raymond Crawford",
               "car_class": "TCX",
               "car_model": 27,
               "s1": "0:45.197",
@@ -7865,7 +7865,7 @@
             },
             {
               "pos": 10,
-              "name": "Gael Duch\u00c3\u00aane ESP [SL]",
+              "name": "Gael Duchene",
               "car_class": "TCX",
               "car_model": 27,
               "s1": "0:45.255",
@@ -7877,7 +7877,7 @@
             },
             {
               "pos": 11,
-              "name": "Ulrich BigU",
+              "name": "Ulrich Bigu",
               "car_class": "TCX",
               "car_model": 27,
               "s1": "0:46.462",
@@ -7901,7 +7901,7 @@
             },
             {
               "pos": 13,
-              "name": "Danil kolbasenko",
+              "name": "Danil Kolbasenko",
               "car_class": "TCX",
               "car_model": 27,
               "s1": "0:47.380",
@@ -7958,7 +7958,7 @@
           "qualy_gap": "+0.095s",
           "qualy_gap_ms": 95,
           "net_vs_q": 1,
-          "name": "Marsi Bella [SL]",
+          "name": "Marsi Bella",
           "car_model": 28,
           "laps": 46,
           "incidents": 0,
@@ -8388,7 +8388,7 @@
           "qualy_gap": "POLE",
           "qualy_gap_ms": 0,
           "net_vs_q": -2,
-          "name": "Julian Ma\u00dfner",
+          "name": "Julian Maner",
           "car_model": 28,
           "laps": 46,
           "incidents": 0,
@@ -9244,7 +9244,7 @@
           "qualy_gap": "+3.137s",
           "qualy_gap_ms": 3137,
           "net_vs_q": 7,
-          "name": "marc du chatinier",
+          "name": "Marc Du Chatinier",
           "car_model": 28,
           "laps": 45,
           "incidents": 5,
@@ -9455,7 +9455,7 @@
           "qualy_gap": "+2.167s",
           "qualy_gap_ms": 2167,
           "net_vs_q": 2,
-          "name": "Ulrich BigU",
+          "name": "Ulrich Bigu",
           "car_model": 28,
           "laps": 45,
           "incidents": 5,
@@ -9865,7 +9865,7 @@
       "qualy_results": [
         {
           "pos": 1,
-          "name": "Julian Ma\u00dfner",
+          "name": "Julian Maner",
           "car_class": "CUP",
           "car_model": 28,
           "s1": "0:30.797",
@@ -9877,7 +9877,7 @@
         },
         {
           "pos": 2,
-          "name": "Marsi Bella [SL]",
+          "name": "Marsi Bella",
           "car_class": "CUP",
           "car_model": 28,
           "s1": "0:30.932",
@@ -9937,7 +9937,7 @@
         },
         {
           "pos": 7,
-          "name": "Cla Rens [SL]",
+          "name": "Cla Rens",
           "car_class": "CUP",
           "car_model": 28,
           "s1": "0:31.375",
@@ -9961,7 +9961,7 @@
         },
         {
           "pos": 9,
-          "name": "Gael Duch\u00c3\u00aane ESP [SL]",
+          "name": "Gael Duchene",
           "car_class": "CUP",
           "car_model": 28,
           "s1": "0:31.297",
@@ -9973,7 +9973,7 @@
         },
         {
           "pos": 10,
-          "name": "Ulrich BigU",
+          "name": "Ulrich Bigu",
           "car_class": "CUP",
           "car_model": 28,
           "s1": "0:31.627",
@@ -10021,7 +10021,7 @@
         },
         {
           "pos": 14,
-          "name": "marc du chatinier",
+          "name": "Marc Du Chatinier",
           "car_class": "CUP",
           "car_model": 28,
           "s1": "0:31.352",
@@ -10045,7 +10045,7 @@
         },
         {
           "pos": "-",
-          "name": "Raymond Crawford [SL]",
+          "name": "Raymond Crawford",
           "car_class": "CUP",
           "car_model": 28,
           "s1": "-",
@@ -10069,7 +10069,7 @@
         },
         {
           "pos": "-",
-          "name": "xxxx ...XXXX",
+          "name": "Xxxx Xxxx",
           "car_class": "CUP",
           "car_model": 28,
           "s1": "-",
@@ -10081,7 +10081,7 @@
         },
         {
           "pos": "-",
-          "name": "xxxx ...XXXX",
+          "name": "Xxxx Xxxx",
           "car_class": "GT2",
           "car_model": 29,
           "s1": "-",
@@ -10110,7 +10110,7 @@
           "qualy_gap": "POLE",
           "qualy_gap_ms": 0,
           "net_vs_q": 0,
-          "name": "Marsi Bella [SL]",
+          "name": "Marsi Bella",
           "car_model": 51,
           "laps": 8,
           "incidents": 0,
@@ -10173,7 +10173,7 @@
           "qualy_gap": "+3.608s",
           "qualy_gap_ms": 3608,
           "net_vs_q": 2,
-          "name": "\u00e7\u00be\u017d\u00e5\u00a4\u0153 Miyo",
+          "name": "Cza Miyo",
           "car_model": 59,
           "laps": 8,
           "incidents": 0,
@@ -10299,7 +10299,7 @@
           "qualy_gap": "+5.400s",
           "qualy_gap_ms": 5400,
           "net_vs_q": 1,
-          "name": "alex k\u00c3\u00bcch [SL]",
+          "name": "Alex Kuch",
           "car_model": 60,
           "laps": 8,
           "incidents": 0,
@@ -10362,7 +10362,7 @@
           "qualy_gap": "+6.278s",
           "qualy_gap_ms": 6278,
           "net_vs_q": 1,
-          "name": "Nick [LZRT] Ice",
+          "name": "Nick Ice",
           "car_model": 60,
           "laps": 8,
           "incidents": 0,
@@ -10488,7 +10488,7 @@
           "qualy_gap": "+0.288s",
           "qualy_gap_ms": 288,
           "net_vs_q": -5,
-          "name": "Cla Rens [SL]",
+          "name": "Cla Rens",
           "car_model": 51,
           "laps": 8,
           "incidents": 1,
@@ -10803,7 +10803,7 @@
           "qualy_gap": "-",
           "qualy_gap_ms": null,
           "net_vs_q": "-",
-          "name": "Ulrich BigU",
+          "name": "Ulrich Bigu",
           "car_model": 53,
           "laps": 8,
           "incidents": 1,
@@ -10866,7 +10866,7 @@
           "qualy_gap": "-",
           "qualy_gap_ms": null,
           "net_vs_q": "-",
-          "name": "memories Xu",
+          "name": "Memories Xu",
           "car_model": 60,
           "laps": 8,
           "incidents": 1,
@@ -10929,7 +10929,7 @@
           "qualy_gap": "-",
           "qualy_gap_ms": null,
           "net_vs_q": "-",
-          "name": "Marty Fox [SL]",
+          "name": "Marty Fox",
           "car_model": 51,
           "laps": 7,
           "incidents": 1,
@@ -10988,7 +10988,7 @@
           "qualy_gap": "-",
           "qualy_gap_ms": null,
           "net_vs_q": "-",
-          "name": "Alice Schupp-M\u00c3\u00bcller",
+          "name": "Alice Schuppmaller",
           "car_model": 60,
           "laps": 7,
           "incidents": 3,
@@ -11047,7 +11047,7 @@
           "qualy_gap": "+12.215s",
           "qualy_gap_ms": 12215,
           "net_vs_q": "-",
-          "name": "keVin peeters [SL]",
+          "name": "Kevin Peeters",
           "car_model": 55,
           "laps": 6,
           "incidents": 1,
@@ -11102,7 +11102,7 @@
           "qualy_gap": "-",
           "qualy_gap_ms": null,
           "net_vs_q": "-",
-          "name": "Julian Ma\u00dfner",
+          "name": "Julian Maner",
           "car_model": 61,
           "laps": 6,
           "incidents": 1,
@@ -11247,7 +11247,7 @@
       "qualy_results": [
         {
           "pos": 1,
-          "name": "Marsi Bella [SL]",
+          "name": "Marsi Bella",
           "car_class": "GT4",
           "car_model": 51,
           "s1": "3:03.995",
@@ -11259,7 +11259,7 @@
         },
         {
           "pos": 2,
-          "name": "Cla Rens [SL]",
+          "name": "Cla Rens",
           "car_class": "GT4",
           "car_model": 51,
           "s1": "3:05.172",
@@ -11283,7 +11283,7 @@
         },
         {
           "pos": 4,
-          "name": "\u00e7\u00be\u017d\u00e5\u00a4\u0153 Miyo",
+          "name": "Cza Miyo",
           "car_class": "GT4",
           "car_model": 59,
           "s1": "3:06.560",
@@ -11295,7 +11295,7 @@
         },
         {
           "pos": 5,
-          "name": "alex k\u00c3\u00bcch [SL]",
+          "name": "Alex Kuch",
           "car_class": "GT4",
           "car_model": 60,
           "s1": "3:06.987",
@@ -11307,7 +11307,7 @@
         },
         {
           "pos": 6,
-          "name": "Nick [LZRT] Ice",
+          "name": "Nick Ice",
           "car_class": "GT4",
           "car_model": 60,
           "s1": "3:06.382",
@@ -11319,7 +11319,7 @@
         },
         {
           "pos": 7,
-          "name": "Gael Duch\u00c3\u00aane ESP [SL]",
+          "name": "Gael Duchene",
           "car_class": "GT4",
           "car_model": 51,
           "s1": "3:06.990",
@@ -11391,7 +11391,7 @@
         },
         {
           "pos": 13,
-          "name": "keVin peeters [SL]",
+          "name": "Kevin Peeters",
           "car_class": "GT4",
           "car_model": 55,
           "s1": "3:09.280",
@@ -11427,7 +11427,7 @@
         },
         {
           "pos": "-",
-          "name": "Joram B\u00f6ttinger",
+          "name": "Joram Bottinger",
           "car_class": "GT4",
           "car_model": 61,
           "s1": "-",
@@ -11487,7 +11487,7 @@
         },
         {
           "pos": "-",
-          "name": "\u8336 Liang",
+          "name": "Liang",
           "car_class": "GT4",
           "car_model": 61,
           "s1": "-",
@@ -11535,7 +11535,7 @@
         },
         {
           "pos": "-",
-          "name": "Raymond Crawford [SL]",
+          "name": "Raymond Crawford",
           "car_class": "GT4",
           "car_model": 53,
           "s1": "-",
@@ -11547,7 +11547,7 @@
         },
         {
           "pos": "-",
-          "name": "Julian Ma\u00dfner",
+          "name": "Julian Maner",
           "car_class": "GT4",
           "car_model": 61,
           "s1": "3:04.460",
@@ -11571,7 +11571,7 @@
         },
         {
           "pos": "-",
-          "name": "Uro :D",
+          "name": "Uro D",
           "car_class": "GT4",
           "car_model": 60,
           "s1": "-",
@@ -11583,7 +11583,7 @@
         },
         {
           "pos": "-",
-          "name": "guagua hu",
+          "name": "Guagua Hu",
           "car_class": "GT4",
           "car_model": 53,
           "s1": "-",
@@ -11595,7 +11595,7 @@
         },
         {
           "pos": "-",
-          "name": "Ulrich BigU",
+          "name": "Ulrich Bigu",
           "car_class": "GT4",
           "car_model": 61,
           "s1": "-",
@@ -11619,7 +11619,7 @@
         },
         {
           "pos": "-",
-          "name": "Marty Fox [SL]",
+          "name": "Marty Fox",
           "car_class": "GT4",
           "car_model": 51,
           "s1": "-",
@@ -11631,7 +11631,7 @@
         },
         {
           "pos": "-",
-          "name": "Alice Schupp-M\u00c3\u00bcller",
+          "name": "Alice Schuppmaller",
           "car_class": "GT4",
           "car_model": 60,
           "s1": "-",
@@ -11655,7 +11655,7 @@
         },
         {
           "pos": "-",
-          "name": "memories Xu",
+          "name": "Memories Xu",
           "car_class": "GT4",
           "car_model": 60,
           "s1": "-",
@@ -11699,7 +11699,7 @@
       "qualy_results": [
         {
           "pos": 1,
-          "name": "Marsi Bella [SL]",
+          "name": "Marsi Bella",
           "car_class": "GT3",
           "car_model": 6,
           "s1": "0:40.325",
@@ -11711,7 +11711,7 @@
         },
         {
           "pos": 2,
-          "name": "Julian Ma\u00dfner",
+          "name": "Julian Maner",
           "car_class": "GT3",
           "car_model": 21,
           "s1": "0:40.367",
@@ -11723,7 +11723,7 @@
         },
         {
           "pos": 3,
-          "name": "Dominic Zimmermann [SL]",
+          "name": "Dominic Zimmermann",
           "car_class": "GT3",
           "car_model": 6,
           "s1": "0:40.470",
@@ -11771,7 +11771,7 @@
         },
         {
           "pos": 7,
-          "name": "\u00e7\u00be\u017d\u00e5\u00a4\u0153 Miyo",
+          "name": "Cza Miyo",
           "car_class": "GT3",
           "car_model": 6,
           "s1": "0:40.935",
@@ -11795,7 +11795,7 @@
         },
         {
           "pos": 9,
-          "name": "Cla Rens [SL]",
+          "name": "Cla Rens",
           "car_class": "GT3",
           "car_model": 21,
           "s1": "0:41.000",
@@ -11831,7 +11831,7 @@
         },
         {
           "pos": 12,
-          "name": "Marty Fox [SL]",
+          "name": "Marty Fox",
           "car_class": "GT3",
           "car_model": 6,
           "s1": "0:41.462",
@@ -11891,7 +11891,7 @@
         },
         {
           "pos": "-",
-          "name": "Gael Duch\u00c3\u00aane ESP [SL]",
+          "name": "Gael Duchene",
           "car_class": "GT3",
           "car_model": 6,
           "s1": "-",
@@ -11927,7 +11927,7 @@
         },
         {
           "pos": "-",
-          "name": "Timo Str\u00f6der / NOS",
+          "name": "Timo Stroder Nos",
           "car_class": "GT3",
           "car_model": 32,
           "s1": "-",
@@ -11951,7 +11951,7 @@
         },
         {
           "pos": "-",
-          "name": "Lukas Hintzen I CGR",
+          "name": "Lukas Hintzen I Cgr",
           "car_class": "GT3",
           "car_model": 36,
           "s1": "-",
@@ -11963,7 +11963,7 @@
         },
         {
           "pos": "-",
-          "name": "sergio 46",
+          "name": "Sergio",
           "car_class": "GT3",
           "car_model": 35,
           "s1": "-",
@@ -11987,7 +11987,7 @@
         },
         {
           "pos": "-",
-          "name": "Alice Schupp-M\u00c3\u00bcller",
+          "name": "Alice Schuppmaller",
           "car_class": "GT3",
           "car_model": 21,
           "s1": "-",
@@ -11999,7 +11999,7 @@
         },
         {
           "pos": "-",
-          "name": "Joeri  De Groot [DGR]",
+          "name": "Joeri De Groot",
           "car_class": "GT3",
           "car_model": 34,
           "s1": "-",
@@ -12011,7 +12011,7 @@
         },
         {
           "pos": "-",
-          "name": "Niels Voorthuizen [DGR]",
+          "name": "Niels Voorthuizen",
           "car_class": "GT3",
           "car_model": 34,
           "s1": "-",
@@ -12035,7 +12035,7 @@
         },
         {
           "pos": "-",
-          "name": "Ale\u0161 Novotn\u00fd",
+          "name": "Ales Novotny",
           "car_class": "GT3",
           "car_model": 20,
           "s1": "0:50.075",
@@ -12071,7 +12071,7 @@
         },
         {
           "pos": "-",
-          "name": "Richard S.",
+          "name": "Richard S",
           "car_class": "GT3",
           "car_model": 32,
           "s1": "-",
@@ -12132,13 +12132,13 @@
       "CUP": {
         "qualy": {
           "time_ms": 96530,
-          "driver": "Marsi Bella [SL]",
+          "driver": "Marsi Bella",
           "car": 26,
           "wet": 0
         },
         "race": {
           "time_ms": 96475,
-          "driver": "Marsi Bella [SL]",
+          "driver": "Marsi Bella",
           "car": 26,
           "wet": 0
         }
@@ -12205,7 +12205,7 @@
       "CUP": {
         "qualy": {
           "time_ms": 102967,
-          "driver": "Marsi Bella [SL]",
+          "driver": "Marsi Bella",
           "car": 26,
           "wet": 0
         },
@@ -12264,13 +12264,13 @@
       "TCX": {
         "qualy": {
           "time_ms": 136322,
-          "driver": "Julian Ma\u00dfner",
+          "driver": "Julian Maner",
           "car": 27,
           "wet": 0
         },
         "race": {
           "time_ms": 143237,
-          "driver": "Marsi Bella [SL]",
+          "driver": "Marsi Bella",
           "car": 27,
           "wet": 1
         }
@@ -12337,13 +12337,13 @@
       "TCX": {
         "qualy": {
           "time_ms": 139742,
-          "driver": "Marsi Bella [SL]",
+          "driver": "Marsi Bella",
           "car": 27,
           "wet": 0
         },
         "race": {
           "time_ms": 139547,
-          "driver": "Marsi Bella [SL]",
+          "driver": "Marsi Bella",
           "car": 27,
           "wet": 0
         }
@@ -12424,13 +12424,13 @@
       "CUP": {
         "qualy": {
           "time_ms": 89890,
-          "driver": "Julian Ma\u00dfner",
+          "driver": "Julian Maner",
           "car": 28,
           "wet": 0
         },
         "race": {
           "time_ms": 90605,
-          "driver": "Julian Ma\u00dfner",
+          "driver": "Julian Maner",
           "car": 28,
           "wet": 0
         }
@@ -12469,13 +12469,13 @@
       "GT4": {
         "qualy": {
           "time_ms": 534567,
-          "driver": "Marsi Bella [SL]",
+          "driver": "Marsi Bella",
           "car": 51,
           "wet": 0
         },
         "race": {
           "time_ms": 536552,
-          "driver": "Marsi Bella [SL]",
+          "driver": "Marsi Bella",
           "car": 51,
           "wet": 0
         }
@@ -12528,7 +12528,7 @@
       "GT3": {
         "qualy": {
           "time_ms": 120005,
-          "driver": "Marsi Bella [SL]",
+          "driver": "Marsi Bella",
           "car": 6,
           "wet": 0
         },

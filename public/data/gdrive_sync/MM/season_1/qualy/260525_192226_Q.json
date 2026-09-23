@@ -1486,8 +1486,8 @@
           "cupCategory": 0,
           "drivers": [
             {
-              "firstName": "alex",
-              "lastName": "küch [SL]",
+              "firstName": "Alex Küch",
+              "lastName": "",
               "playerId": "S76561199543025762",
               "shortName": "ALE"
             }
@@ -1498,8 +1498,8 @@
           "ballastKg": 11
         },
         "currentDriver": {
-          "firstName": "alex",
-          "lastName": "küch [SL]",
+          "firstName": "Alex Küch",
+          "lastName": "",
           "playerId": "S76561199543025762",
           "shortName": "ALE"
         },
@@ -2150,8 +2150,8 @@
           "cupCategory": 0,
           "drivers": [
             {
-              "firstName": "Gael",
-              "lastName": "Duchêne ESP [SL]",
+              "firstName": "Gael Duchene",
+              "lastName": "",
               "playerId": "S76561199859661866",
               "shortName": "GDG"
             }
@@ -2162,8 +2162,8 @@
           "ballastKg": 27
         },
         "currentDriver": {
-          "firstName": "Gael",
-          "lastName": "Duchêne ESP [SL]",
+          "firstName": "Gael Duchene",
+          "lastName": "",
           "playerId": "S76561199859661866",
           "shortName": "GDG"
         },

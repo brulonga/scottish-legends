@@ -2,6 +2,7 @@ import json
 import glob
 import os
 import re
+import unicodedata
 
 # --- CONFIGURATION ---
 MIN_LAPS_STATS = 0.50        # 50%: Mínimo para extraer telemetría y ritmo (pero no suma carrera ni puntos)
@@ -43,6 +44,27 @@ POINTS_SYSTEM = {
     21: 30, 22: 27, 23: 27, 24: 21, 25: 18,
     26: 15, 27: 12, 28: 9, 29: 6, 30: 3
 }
+
+def normalize_name(raw_name):
+    if not raw_name: return "Unknown"
+    
+    # 1. Arreglar caracteres rotos de ACC (latin-1 a utf-8)
+    try:
+        fixed_name = raw_name.encode('latin-1').decode('utf-8')
+    except Exception:
+        fixed_name = raw_name
+
+    # 2. Limpiar etiquetas de equipos y separadores
+    name = re.sub(r'\[.*?\]|\(.*?\)|\|.*', '', fixed_name)
+    
+    # 3. 🚀 MAGIA AUTOMÁTICA: Eliminar tildes, diéresis y acentos (Küch -> Kuch)
+    name = unicodedata.normalize('NFD', name).encode('ascii', 'ignore').decode('utf-8')
+    
+    # 4. 🚀 DESTRUCCIÓN DE PUNTUACIÓN: Quitar puntos, guiones, comas (solo dejamos letras y espacios)
+    name = re.sub(r'[^a-zA-Z\s]', '', name)
+    
+    # 5. Capitalizar correctamente y quitar dobles espacios
+    return re.sub(r'\s+', ' ', name).strip().title()
 
 def extract_date_from_filename(filename):
     """Extrae la fecha del nombre del archivo y la devuelve en formato ISO (YYYY-MM-DD HH:MM:SS)"""
@@ -116,6 +138,24 @@ def load_and_process():
         data = read_json(f) # Supongo que read_json es una función que ya tienes definida
         if not data or 'sessionResult' not in data: 
             continue
+        if 'leaderBoardLines' in data['sessionResult']:
+            for line in data['sessionResult']['leaderBoardLines']:
+                if 'car' in line and 'drivers' in line['car']:
+                    for driver in line['car']['drivers']:
+                        # Unimos nombre y apellido tal como vienen de ACC
+                        raw_first = driver.get('firstName', '')
+                        raw_last = driver.get('lastName', '')
+                        raw_full = f"{raw_first} {raw_last}".strip()
+                        
+                        # Pasamos la aspiradora mágica
+                        clean_full = normalize_name(raw_full)
+                        
+                        # Sobrescribimos en el diccionario en memoria.
+                        # Guardamos el nombre completo limpio en firstName y vaciamos el lastName 
+                        # para que cuando tu script los sume más adelante quede perfecto.
+                        driver['firstName'] = clean_full
+                        driver['lastName'] = ""
+
         archivos_parseados.append((f, data))
 
     # 2. Función para buscar la posición de la pista en nuestro calendario (ignorando mayus/minus)

@@ -346,7 +346,7 @@
       "races": 1
     },
     {
-      "name": "alex k\u00c3\u00bcch [SL]",
+      "name": "Alex K\u00fcch",
       "car_class": "GT3",
       "favorite_car": 25,
       "points": 57,
@@ -3156,7 +3156,7 @@
           "qualy_gap": "+1.290s",
           "qualy_gap_ms": 1290,
           "net_vs_q": 7,
-          "name": "alex k\u00c3\u00bcch [SL]",
+          "name": "Alex K\u00fcch",
           "car_model": 25,
           "points": 57,
           "laps": 49,
@@ -5270,7 +5270,7 @@
           "qualy_gap": "+1.248s",
           "qualy_gap_ms": 1248,
           "net_vs_q": "-",
-          "name": "Gael Duch\u00c3\u00aane ESP [SL]",
+          "name": "Gael Duchene",
           "car_model": 35,
           "points": 0,
           "laps": 7,
@@ -6061,7 +6061,7 @@
         },
         {
           "pos": 18,
-          "name": "Gael Duch\u00c3\u00aane ESP [SL]",
+          "name": "Gael Duchene",
           "car_class": "GT3",
           "car_model": 35,
           "s1": "0:35.020",
@@ -6073,7 +6073,7 @@
         },
         {
           "pos": 19,
-          "name": "alex k\u00c3\u00bcch [SL]",
+          "name": "Alex K\u00fcch",
           "car_class": "GT3",
           "car_model": 25,
           "s1": "0:34.927",
@@ -18557,7 +18557,7 @@
           "qualy_gap": "-",
           "qualy_gap_ms": null,
           "net_vs_q": "-",
-          "name": "Gael Duch\u00c3\u00aane ESP [SL]",
+          "name": "Gael Duchene",
           "car_model": 35,
           "points": 0,
           "laps": 0,
@@ -19107,7 +19107,7 @@
         },
         {
           "pos": "-",
-          "name": "Gael Duch\u00c3\u00aane ESP [SL]",
+          "name": "Gael Duchene",
           "car_class": "GT3",
           "car_model": 35,
           "s1": "-",

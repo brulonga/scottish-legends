@@ -82,11 +82,33 @@ def determine_class(model_id, fallback_group):
 
 def clean_driver_name(raw_name):
     if not raw_name: return "Unknown"
-    name = unicodedata.normalize('NFKC', raw_name)
-    name = re.sub(r'[\u200B-\u200D\uFEFF]', '', name)
-    name = re.sub(r'\s+', ' ', name)
-    name = name.strip()
-    return DRIVER_ALIASES.get(name, name)
+    
+    # 1. Arreglar caracteres rotos de ACC (latin-1 a utf-8)
+    try:
+        fixed_name = raw_name.encode('latin-1').decode('utf-8')
+    except Exception:
+        fixed_name = raw_name
+
+    # 2. Limpiar caracteres invisibles (tu código)
+    name = re.sub(r'[\u200B-\u200D\uFEFF]', '', fixed_name)
+
+    # 3. Limpiar etiquetas de equipos y separadores (ej: [SL], | Team)
+    name = re.sub(r'\[.*?\]|\(.*?\)|\|.*', '', name)
+    
+    # 4. Eliminar tildes, diéresis y acentos (Küch -> Kuch)
+    name = unicodedata.normalize('NFD', name).encode('ascii', 'ignore').decode('utf-8')
+    
+    # 5. Eliminar puntuación (puntos, guiones, etc.) dejando solo letras y espacios
+    name = re.sub(r'[^a-zA-Z\s]', '', name)
+    
+    # 6. Quitar espacios dobles y capitalizar correctamente
+    clean_name = re.sub(r'\s+', ' ', name).strip().title()
+    
+    # 7. Si tienes el diccionario (aunque esté vacío), lo usamos por si acaso
+    # Si clean_name no está en el diccionario, devuelve clean_name
+    # return DRIVER_ALIASES.get(clean_name, clean_name)
+    
+    return clean_name
 
 def format_time(ms):
     if ms is None or ms == 0 or ms >= 2000000000: return "-"
