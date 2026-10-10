@@ -1367,8 +1367,8 @@
           "cupCategory": 0,
           "drivers": [
             {
-              "firstName": "Alex Küch",
-              "lastName": "",
+              "firstName": "alex",
+              "lastName": "küch [SL]",
               "playerId": "S76561199543025762",
               "shortName": "ALE"
             }
@@ -1379,8 +1379,8 @@
           "ballastKg": 7
         },
         "currentDriver": {
-          "firstName": "Alex Küch",
-          "lastName": "",
+          "firstName": "alex",
+          "lastName": "küch [SL]",
           "playerId": "S76561199543025762",
           "shortName": "ALE"
         },
@@ -1867,8 +1867,8 @@
           "cupCategory": 0,
           "drivers": [
             {
-              "firstName": "Alex Küch",
-              "lastName": "",
+              "firstName": "Alex",
+              "lastName": "Kaier",
               "playerId": "S76561198128570254",
               "shortName": "PLY"
             }

@@ -3,7 +3,7 @@
   "seasonId": "season_2",
   "leagueName": "Scottish Legends ACC",
   "seasonName": "Season 2",
-  "lastUpdated": "2026-09-23T15:33:40.184613Z",
+  "lastUpdated": "2026-10-10T17:31:59.144088Z",
   "calendar": [
     {
       "id": "R1",
@@ -116,7 +116,7 @@
     {
       "name": "Raymond Crawford",
       "category": "SILVER",
-      "points": 505,
+      "points": 492,
       "races": 6,
       "rounds": {
         "R1": {
@@ -138,13 +138,13 @@
           "isDropped": true
         },
         "R4": {
-          "points": 122,
+          "points": 111,
           "bonusPoints": 0,
           "carClass": "GT4",
           "isDropped": true
         },
         "R5": {
-          "points": 155,
+          "points": 142,
           "bonusPoints": 20,
           "carClass": "CUP",
           "isDropped": false
@@ -156,8 +156,8 @@
           "isDropped": true
         }
       },
-      "avg_points": 168.3,
-      "avg_pos": 5.2,
+      "avg_points": 164.0,
+      "avg_pos": 5.7,
       "avg_qualy_pos": 12.3,
       "avg_gap": "+6.778s",
       "avg_qualy_gap": "+7.656s",
@@ -167,7 +167,7 @@
     {
       "name": "Marty Fox",
       "category": "SILVER",
-      "points": 570,
+      "points": 540,
       "races": 6,
       "rounds": {
         "R1": {
@@ -195,7 +195,7 @@
           "isDropped": false
         },
         "R5": {
-          "points": 210,
+          "points": 180,
           "bonusPoints": 30,
           "carClass": "CUP",
           "isDropped": false
@@ -207,8 +207,8 @@
           "isDropped": true
         }
       },
-      "avg_points": 190.0,
-      "avg_pos": 3.2,
+      "avg_points": 180.0,
+      "avg_pos": 3.3,
       "avg_qualy_pos": 9.8,
       "avg_gap": "+13.229s",
       "avg_qualy_gap": "+7.866s",
@@ -738,9 +738,9 @@
       "favorite_car": 0
     },
     {
-      "name": "Gael Duchene",
-      "category": "ROOKIE",
-      "points": 188,
+      "name": "Gael Duchene Esp",
+      "category": "BRONZE",
+      "points": 405,
       "races": 3,
       "rounds": {
         "R1": {
@@ -750,20 +750,20 @@
           "isDropped": false
         },
         "R4": {
-          "points": 94,
-          "bonusPoints": 0,
+          "points": 155,
+          "bonusPoints": 20,
           "carClass": "GT4",
           "isDropped": false
         },
         "R5": {
-          "points": 94,
-          "bonusPoints": 0,
+          "points": 250,
+          "bonusPoints": 70,
           "carClass": "CUP",
           "isDropped": false
         }
       },
-      "avg_points": 62.7,
-      "avg_pos": 6.7,
+      "avg_points": 135.0,
+      "avg_pos": 2.0,
       "avg_qualy_pos": 11.2,
       "avg_gap": "+3.174s",
       "avg_qualy_gap": "+3.977s",
@@ -914,7 +914,7 @@
     {
       "name": "Casper Smit",
       "category": "ROOKIE",
-      "points": 356,
+      "points": 361,
       "races": 3,
       "rounds": {
         "R2": {
@@ -924,7 +924,7 @@
           "isDropped": false
         },
         "R5": {
-          "points": 71,
+          "points": 76,
           "bonusPoints": 0,
           "carClass": "CUP",
           "isDropped": false
@@ -936,8 +936,8 @@
           "isDropped": false
         }
       },
-      "avg_points": 118.7,
-      "avg_pos": 5.7,
+      "avg_points": 120.3,
+      "avg_pos": 5.3,
       "avg_qualy_pos": 12.0,
       "avg_gap": "+25.918s",
       "avg_qualy_gap": "+1.423s",
@@ -1033,7 +1033,7 @@
     {
       "name": "Bence Kamaras",
       "category": "SILVER",
-      "points": 457,
+      "points": 442,
       "races": 5,
       "rounds": {
         "R2": {
@@ -1049,13 +1049,13 @@
           "isDropped": false
         },
         "R4": {
-          "points": 135,
+          "points": 122,
           "bonusPoints": 0,
           "carClass": "GT4",
           "isDropped": true
         },
         "R5": {
-          "points": 160,
+          "points": 145,
           "bonusPoints": 10,
           "carClass": "CUP",
           "isDropped": false
@@ -1067,8 +1067,8 @@
           "isDropped": true
         }
       },
-      "avg_points": 152.3,
-      "avg_pos": 3.6,
+      "avg_points": 147.3,
+      "avg_pos": 4.0,
       "avg_qualy_pos": 10.6,
       "avg_gap": "+17.871s",
       "avg_qualy_gap": "+8.395s",
@@ -1099,18 +1099,18 @@
     {
       "name": "Kamil Utku",
       "category": "ROOKIE",
-      "points": 66,
+      "points": 71,
       "races": 1,
       "rounds": {
         "R5": {
-          "points": 66,
+          "points": 71,
           "bonusPoints": 0,
           "carClass": "CUP",
           "isDropped": false
         }
       },
-      "avg_points": 66.0,
-      "avg_pos": 12.0,
+      "avg_points": 71.0,
+      "avg_pos": 11.0,
       "avg_qualy_pos": 12.0,
       "avg_gap": "+6.330s",
       "avg_qualy_gap": "+1.549s",
@@ -1180,7 +1180,7 @@
     {
       "name": "Pauli Keskifilppula",
       "category": "ROOKIE",
-      "points": 411,
+      "points": 417,
       "races": 3,
       "rounds": {
         "R3": {
@@ -1196,13 +1196,13 @@
           "isDropped": false
         },
         "R5": {
-          "points": 81,
+          "points": 87,
           "bonusPoints": 0,
           "carClass": "CUP",
           "isDropped": false
         }
       },
-      "avg_points": 137.0,
+      "avg_points": 139.0,
       "avg_pos": 2.7,
       "avg_qualy_pos": 3.7,
       "avg_gap": "+2.052s",
@@ -1672,11 +1672,11 @@
     {
       "name": "Alasdair Parky",
       "category": "ROOKIE",
-      "points": 189,
+      "points": 196,
       "races": 3,
       "rounds": {
         "R4": {
-          "points": 87,
+          "points": 94,
           "bonusPoints": 0,
           "carClass": "GT4",
           "isDropped": false
@@ -1694,8 +1694,8 @@
           "isDropped": false
         }
       },
-      "avg_points": 63.0,
-      "avg_pos": 14.0,
+      "avg_points": 65.3,
+      "avg_pos": 13.3,
       "avg_qualy_pos": 11.8,
       "avg_gap": "+65.181s",
       "avg_qualy_gap": "+2.695s",
@@ -1705,11 +1705,11 @@
     {
       "name": "Danil Kolbasenko",
       "category": "BRONZE",
-      "points": 111,
+      "points": 102,
       "races": 2,
       "rounds": {
         "R4": {
-          "points": 111,
+          "points": 102,
           "bonusPoints": 0,
           "carClass": "GT4",
           "isDropped": false
@@ -1721,8 +1721,8 @@
           "isDropped": false
         }
       },
-      "avg_points": 55.5,
-      "avg_pos": 2.5,
+      "avg_points": 51.0,
+      "avg_pos": 3.0,
       "avg_qualy_pos": 14.5,
       "avg_gap": "+2.616s",
       "avg_qualy_gap": "+11.463s",
@@ -1731,6 +1731,27 @@
     },
     {
       "name": "Maximiliano J Herrera",
+      "category": "ROOKIE",
+      "points": 87,
+      "races": 1,
+      "rounds": {
+        "R4": {
+          "points": 87,
+          "bonusPoints": 0,
+          "carClass": "GT4",
+          "isDropped": false
+        }
+      },
+      "avg_points": 87.0,
+      "avg_pos": 8.0,
+      "avg_qualy_pos": 19.0,
+      "avg_gap": "+6.819s",
+      "avg_qualy_gap": "+3.505s",
+      "net_pos_gained": 2,
+      "favorite_car": 50
+    },
+    {
+      "name": "Eugen Naza",
       "category": "ROOKIE",
       "points": 81,
       "races": 1,
@@ -1744,14 +1765,14 @@
       },
       "avg_points": 81.0,
       "avg_pos": 9.0,
-      "avg_qualy_pos": 19.0,
-      "avg_gap": "+6.819s",
-      "avg_qualy_gap": "+3.505s",
-      "net_pos_gained": 2,
-      "favorite_car": 50
+      "avg_qualy_pos": 26.0,
+      "avg_gap": "+9.304s",
+      "avg_qualy_gap": "+10.160s",
+      "net_pos_gained": 8,
+      "favorite_car": 61
     },
     {
-      "name": "Eugen Naza",
+      "name": "John Porter",
       "category": "ROOKIE",
       "points": 76,
       "races": 1,
@@ -1765,27 +1786,6 @@
       },
       "avg_points": 76.0,
       "avg_pos": 10.0,
-      "avg_qualy_pos": 26.0,
-      "avg_gap": "+9.304s",
-      "avg_qualy_gap": "+10.160s",
-      "net_pos_gained": 8,
-      "favorite_car": 61
-    },
-    {
-      "name": "John Porter",
-      "category": "ROOKIE",
-      "points": 71,
-      "races": 1,
-      "rounds": {
-        "R4": {
-          "points": 71,
-          "bonusPoints": 0,
-          "carClass": "GT4",
-          "isDropped": false
-        }
-      },
-      "avg_points": 71.0,
-      "avg_pos": 11.0,
       "avg_qualy_pos": 23.0,
       "avg_gap": "+5.727s",
       "avg_qualy_gap": "+5.118s",
@@ -1869,7 +1869,7 @@
         }
       },
       "avg_points": 150.0,
-      "avg_pos": 10.0,
+      "avg_pos": 9.0,
       "avg_qualy_pos": 5.7,
       "avg_gap": "+6.405s",
       "avg_qualy_gap": "+1.466s",
@@ -1877,46 +1877,40 @@
       "favorite_car": 28
     },
     {
-      "name": "Stuart Woolley",
+      "name": "Stuart Wooley",
       "category": "ROOKIE",
-      "points": 360,
-      "races": 2,
+      "points": 180,
+      "races": 1,
       "rounds": {
         "R5": {
           "points": 180,
           "bonusPoints": 0,
           "carClass": "CUP",
           "isDropped": false
-        },
-        "R6": {
-          "points": 180,
-          "bonusPoints": 0,
-          "carClass": "GT4",
-          "isDropped": false
         }
       },
       "avg_points": 180.0,
-      "avg_pos": 4.0,
-      "avg_qualy_pos": 9.2,
-      "avg_gap": "+31.416s",
-      "avg_qualy_gap": "+14.133s",
-      "net_pos_gained": 13,
+      "avg_pos": 7.0,
+      "avg_qualy_pos": 7.0,
+      "avg_gap": "+4.630s",
+      "avg_qualy_gap": "+1.663s",
+      "net_pos_gained": 6,
       "favorite_car": 28
     },
     {
       "name": "Lev Slepuzjnikov",
       "category": "ROOKIE",
-      "points": 87,
+      "points": 94,
       "races": 1,
       "rounds": {
         "R5": {
-          "points": 87,
+          "points": 94,
           "bonusPoints": 0,
           "carClass": "CUP",
           "isDropped": false
         }
       },
-      "avg_points": 87.0,
+      "avg_points": 94.0,
       "avg_pos": 4.0,
       "avg_qualy_pos": 12.0,
       "avg_gap": "+2.954s",
@@ -1954,17 +1948,17 @@
     {
       "name": "Romain Luthi",
       "category": "ROOKIE",
-      "points": 76,
+      "points": 81,
       "races": 1,
       "rounds": {
         "R5": {
-          "points": 76,
+          "points": 81,
           "bonusPoints": 0,
           "carClass": "CUP",
           "isDropped": false
         }
       },
-      "avg_points": 76.0,
+      "avg_points": 81.0,
       "avg_pos": 7.0,
       "avg_qualy_pos": 9.0,
       "avg_gap": "+3.836s",
@@ -1986,7 +1980,7 @@
         }
       },
       "avg_points": 111.0,
-      "avg_pos": 18.0,
+      "avg_pos": 17.0,
       "avg_qualy_pos": 14.0,
       "avg_gap": "+10.187s",
       "avg_qualy_gap": "+0.516s",
@@ -1995,6 +1989,27 @@
     },
     {
       "name": "Antony Gambino",
+      "category": "ROOKIE",
+      "points": 66,
+      "races": 1,
+      "rounds": {
+        "R5": {
+          "points": 66,
+          "bonusPoints": 0,
+          "carClass": "CUP",
+          "isDropped": false
+        }
+      },
+      "avg_points": 66.0,
+      "avg_pos": 12.0,
+      "avg_qualy_pos": "-",
+      "avg_gap": "+7.021s",
+      "avg_qualy_gap": "-",
+      "net_pos_gained": 0,
+      "favorite_car": 28
+    },
+    {
+      "name": "German Turchinovich",
       "category": "ROOKIE",
       "points": 62,
       "races": 1,
@@ -2008,27 +2023,6 @@
       },
       "avg_points": 62.0,
       "avg_pos": 13.0,
-      "avg_qualy_pos": "-",
-      "avg_gap": "+7.021s",
-      "avg_qualy_gap": "-",
-      "net_pos_gained": 0,
-      "favorite_car": 28
-    },
-    {
-      "name": "German Turchinovich",
-      "category": "ROOKIE",
-      "points": 58,
-      "races": 1,
-      "rounds": {
-        "R5": {
-          "points": 58,
-          "bonusPoints": 0,
-          "carClass": "CUP",
-          "isDropped": false
-        }
-      },
-      "avg_points": 58.0,
-      "avg_pos": 14.0,
       "avg_qualy_pos": 20.0,
       "avg_gap": "+8.989s",
       "avg_qualy_gap": "+0.000s",
@@ -2148,6 +2142,27 @@
       "favorite_car": 32
     },
     {
+      "name": "Stuart Woolley",
+      "category": "ROOKIE",
+      "points": 180,
+      "races": 1,
+      "rounds": {
+        "R6": {
+          "points": 180,
+          "bonusPoints": 0,
+          "carClass": "GT4",
+          "isDropped": false
+        }
+      },
+      "avg_points": 180.0,
+      "avg_pos": 1.0,
+      "avg_qualy_pos": 16.0,
+      "avg_gap": "+58.203s",
+      "avg_qualy_gap": "+51.540s",
+      "net_pos_gained": 7,
+      "favorite_car": 60
+    },
+    {
       "name": "Michele Ango",
       "category": "ROOKIE",
       "points": 135,
@@ -2260,7 +2275,7 @@
       "sessions": [
         {
           "name": "Season Opener",
-          "timestamp": 1783710069.0,
+          "timestamp": 1783717269.0,
           "date": "2026-07-10 21:01",
           "qualy_results": [
             {
@@ -2446,8 +2461,8 @@
               "pos": 13
             },
             {
-              "name": "Gael Duchene",
-              "raw_name": "Gael Duchene ",
+              "name": "Gael Duchene Esp",
+              "raw_name": "Gael DuchÃªne ESP [SL]",
               "car_class": "GT3",
               "car_model": 30,
               "s1": "2:52.720",
@@ -2489,7 +2504,7 @@
             },
             {
               "name": "Alex Kuch",
-              "raw_name": "Alex Küch ",
+              "raw_name": "alex kÃ¼ch [SL]",
               "car_class": "GT4",
               "car_model": 60,
               "s1": "3:06.265",
@@ -3357,7 +3372,7 @@
             },
             {
               "name": "Alex Kuch",
-              "raw_name": "Alex Küch ",
+              "raw_name": "alex kÃ¼ch [SL]",
               "car_class": "GT4",
               "car_model": 60,
               "laps": 8,
@@ -3800,8 +3815,8 @@
               "race_gap": "DNF"
             },
             {
-              "name": "Gael Duchene",
-              "raw_name": "Gael Duchene ",
+              "name": "Gael Duchene Esp",
+              "raw_name": "Gael DuchÃªne ESP [SL]",
               "car_class": "GT3",
               "car_model": 30,
               "laps": 1,
@@ -3865,7 +3880,7 @@
       "sessions": [
         {
           "name": "TCX Mini-Champ - Race 1",
-          "timestamp": 1784309921.0,
+          "timestamp": 1784317121.0,
           "date": "2026-07-17 19:38",
           "qualy_results": [
             {
@@ -5002,7 +5017,7 @@
         },
         {
           "name": "TCX Mini-Champ - Race 2",
-          "timestamp": 1784312523.0,
+          "timestamp": 1784319723.0,
           "date": "2026-07-17 20:22",
           "qualy_results": [
             {
@@ -6085,7 +6100,7 @@
         },
         {
           "name": "TCX Mini-Champ - Race 3",
-          "timestamp": 1784315248.0,
+          "timestamp": 1784322448.0,
           "date": "2026-07-17 21:07",
           "qualy_results": [
             {
@@ -6960,7 +6975,7 @@
       "sessions": [
         {
           "name": "Endurance Showcase",
-          "timestamp": 1784918356.0,
+          "timestamp": 1784925556.0,
           "date": "2026-07-24 20:39",
           "qualy_results": [
             {
@@ -7161,7 +7176,7 @@
             },
             {
               "name": "Alex Kuch",
-              "raw_name": "Alex Küch ",
+              "raw_name": "alex küch [SL]",
               "car_class": "GT3",
               "car_model": 34,
               "s1": "40.687",
@@ -9325,7 +9340,7 @@
             },
             {
               "name": "Alex Kuch",
-              "raw_name": "Alex Küch ",
+              "raw_name": "alex küch [SL]",
               "car_class": "GT3",
               "car_model": 34,
               "laps": 31,
@@ -11009,7 +11024,7 @@
       "sessions": [
         {
           "name": "British Classic",
-          "timestamp": 1785523570.0,
+          "timestamp": 1785530770.0,
           "date": "2026-07-31 20:46",
           "qualy_results": [
             {
@@ -11139,8 +11154,8 @@
               "pos": 9
             },
             {
-              "name": "Gael Duchene",
-              "raw_name": "Gael Duchene ",
+              "name": "Gael Duchene Esp",
+              "raw_name": "Gael DuchÃªne ESP [SL]",
               "car_class": "GT4",
               "car_model": 51,
               "s1": "29.805",
@@ -13673,8 +13688,8 @@
               "race_gap": "+28.671s"
             },
             {
-              "name": "Gael Duchene",
-              "raw_name": "Gael Duchene ",
+              "name": "Gael Duchene Esp",
+              "raw_name": "Gael DuchÃªne ESP [SL]",
               "car_class": "GT4",
               "car_model": 51,
               "laps": 45,
@@ -13868,8 +13883,8 @@
               ],
               "penalty": 0,
               "pos": 12,
-              "class_pos": 7,
-              "points": 94,
+              "class_pos": 3,
+              "points": 155,
               "qualy_pos": 10,
               "net_vs_q": -2,
               "gap_best_ms": 2018,
@@ -14072,8 +14087,8 @@
               ],
               "penalty": 0,
               "pos": 13,
-              "class_pos": 8,
-              "points": 87,
+              "class_pos": 7,
+              "points": 94,
               "qualy_pos": 12,
               "net_vs_q": -1,
               "gap_best_ms": 2463,
@@ -14276,8 +14291,8 @@
               ],
               "penalty": 0,
               "pos": 14,
-              "class_pos": 3,
-              "points": 135,
+              "class_pos": 4,
+              "points": 122,
               "qualy_pos": 7,
               "net_vs_q": -7,
               "gap_best_ms": 1775,
@@ -14480,8 +14495,8 @@
               ],
               "penalty": 0,
               "pos": 15,
-              "class_pos": 4,
-              "points": 122,
+              "class_pos": 5,
+              "points": 111,
               "qualy_pos": 15,
               "net_vs_q": 0,
               "gap_best_ms": 2565,
@@ -14680,8 +14695,8 @@
               ],
               "penalty": 0,
               "pos": 16,
-              "class_pos": 5,
-              "points": 111,
+              "class_pos": 6,
+              "points": 102,
               "qualy_pos": 21,
               "net_vs_q": 5,
               "gap_best_ms": 3875,
@@ -14876,8 +14891,8 @@
               ],
               "penalty": 0,
               "pos": 17,
-              "class_pos": 9,
-              "points": 81,
+              "class_pos": 8,
+              "points": 87,
               "qualy_pos": 19,
               "net_vs_q": 2,
               "gap_best_ms": 2745,
@@ -15068,8 +15083,8 @@
               ],
               "penalty": 0,
               "pos": 18,
-              "class_pos": 10,
-              "points": 76,
+              "class_pos": 9,
+              "points": 81,
               "qualy_pos": 26,
               "net_vs_q": 8,
               "gap_best_ms": 5828,
@@ -15256,8 +15271,8 @@
               ],
               "penalty": 0,
               "pos": 19,
-              "class_pos": 11,
-              "points": 71,
+              "class_pos": 10,
+              "points": 76,
               "qualy_pos": 23,
               "net_vs_q": 4,
               "gap_best_ms": 3968,
@@ -15762,7 +15777,7 @@
       "sessions": [
         {
           "name": "Porsche Cup Mini-Champ - Race 1",
-          "timestamp": 1786124281.0,
+          "timestamp": 1786131481.0,
           "date": "2026-08-07 19:38",
           "qualy_results": [
             {
@@ -15850,8 +15865,8 @@
               "pos": 6
             },
             {
-              "name": "Stuart Woolley",
-              "raw_name": "Stuart Woolley ",
+              "name": "Stuart Wooley",
+              "raw_name": "Stuart Wooley",
               "car_class": "CUP",
               "car_model": 28,
               "s1": "32.587",
@@ -15865,7 +15880,7 @@
             },
             {
               "name": "Alex Kuch",
-              "raw_name": "Alex Küch ",
+              "raw_name": "alex kÃ¼ch [SL]",
               "car_class": "CUP",
               "car_model": 28,
               "s1": "32.735",
@@ -15990,8 +16005,8 @@
               "pos": 16
             },
             {
-              "name": "Gael Duchene",
-              "raw_name": "Gael Duchene ",
+              "name": "Gael Duchene Esp",
+              "raw_name": "Gael DuchÃªne ESP [SL]",
               "car_class": "CUP",
               "car_model": 28,
               "s1": "32.712",
@@ -16441,7 +16456,7 @@
             },
             {
               "name": "Alex Kuch",
-              "raw_name": "Alex Küch ",
+              "raw_name": "alex kÃ¼ch [SL]",
               "car_class": "CUP",
               "car_model": 28,
               "laps": 11,
@@ -16510,8 +16525,8 @@
               "race_gap": "+18.184s"
             },
             {
-              "name": "Stuart Woolley",
-              "raw_name": "Stuart Woolley ",
+              "name": "Stuart Wooley",
+              "raw_name": "Stuart Wooley",
               "car_class": "CUP",
               "car_model": 28,
               "laps": 11,
@@ -17000,8 +17015,8 @@
               "race_gap": "+46.940s"
             },
             {
-              "name": "Gael Duchene",
-              "raw_name": "Gael Duchene ",
+              "name": "Gael Duchene Esp",
+              "raw_name": "Gael DuchÃªne ESP [SL]",
               "car_class": "CUP",
               "car_model": 28,
               "laps": 11,
@@ -17059,10 +17074,10 @@
               ],
               "penalty": 0,
               "pos": 14,
-              "class_pos": 9,
-              "points": 81,
-              "sprint_internal_pts": 81,
-              "sprint_bonus": 0,
+              "class_pos": 2,
+              "points": 170,
+              "sprint_internal_pts": 150,
+              "sprint_bonus": 20,
               "qualy_pos": 17,
               "net_vs_q": 3,
               "gap_best_ms": 3700,
@@ -17129,9 +17144,9 @@
               ],
               "penalty": 0,
               "pos": 15,
-              "class_pos": 10,
-              "points": 76,
-              "sprint_internal_pts": 76,
+              "class_pos": 9,
+              "points": 81,
+              "sprint_internal_pts": 81,
               "sprint_bonus": 0,
               "qualy_pos": 21,
               "net_vs_q": 6,
@@ -17199,9 +17214,9 @@
               ],
               "penalty": 0,
               "pos": 16,
-              "class_pos": 11,
-              "points": 71,
-              "sprint_internal_pts": 71,
+              "class_pos": 10,
+              "points": 76,
+              "sprint_internal_pts": 76,
               "sprint_bonus": 0,
               "qualy_pos": 13,
               "net_vs_q": -3,
@@ -17269,9 +17284,9 @@
               ],
               "penalty": 0,
               "pos": 17,
-              "class_pos": 12,
-              "points": 66,
-              "sprint_internal_pts": 66,
+              "class_pos": 11,
+              "points": 71,
+              "sprint_internal_pts": 71,
               "sprint_bonus": 0,
               "qualy_pos": 14,
               "net_vs_q": -3,
@@ -17339,9 +17354,9 @@
               ],
               "penalty": 0,
               "pos": 18,
-              "class_pos": 2,
-              "points": 150,
-              "sprint_internal_pts": 150,
+              "class_pos": 3,
+              "points": 135,
+              "sprint_internal_pts": 135,
               "sprint_bonus": 0,
               "qualy_pos": 16,
               "net_vs_q": -2,
@@ -17409,9 +17424,9 @@
               ],
               "penalty": 0,
               "pos": 19,
-              "class_pos": 13,
-              "points": 62,
-              "sprint_internal_pts": 62,
+              "class_pos": 12,
+              "points": 66,
+              "sprint_internal_pts": 66,
               "sprint_bonus": 0,
               "qualy_pos": "-",
               "net_vs_q": "-",
@@ -17479,9 +17494,9 @@
               ],
               "penalty": 0,
               "pos": 20,
-              "class_pos": 14,
-              "points": 58,
-              "sprint_internal_pts": 58,
+              "class_pos": 13,
+              "points": 62,
+              "sprint_internal_pts": 62,
               "sprint_bonus": 0,
               "qualy_pos": 20,
               "net_vs_q": 0,
@@ -17661,7 +17676,7 @@
         },
         {
           "name": "Porsche Cup Mini-Champ - Race 2",
-          "timestamp": 1786126932.0,
+          "timestamp": 1786134132.0,
           "date": "2026-08-07 20:22",
           "qualy_results": [
             {
@@ -17721,8 +17736,8 @@
               "pos": 4
             },
             {
-              "name": "Gael Duchene",
-              "raw_name": "Gael Duchene ",
+              "name": "Gael Duchene Esp",
+              "raw_name": "Gael DuchÃªne ESP [SL]",
               "car_class": "CUP",
               "car_model": 28,
               "s1": "33.335",
@@ -17763,8 +17778,8 @@
               "pos": 7
             },
             {
-              "name": "Stuart Woolley",
-              "raw_name": "Stuart Woolley ",
+              "name": "Stuart Wooley",
+              "raw_name": "Stuart Wooley",
               "car_class": "CUP",
               "car_model": 28,
               "s1": "33.697",
@@ -17792,7 +17807,7 @@
             },
             {
               "name": "Alex Kuch",
-              "raw_name": "Alex Küch ",
+              "raw_name": "alex kÃ¼ch [SL]",
               "car_class": "CUP",
               "car_model": 28,
               "s1": "33.627",
@@ -17947,8 +17962,8 @@
               "race_gap": "WINNER"
             },
             {
-              "name": "Stuart Woolley",
-              "raw_name": "Stuart Woolley ",
+              "name": "Stuart Wooley",
+              "raw_name": "Stuart Wooley",
               "car_class": "CUP",
               "car_model": 28,
               "laps": 11,
@@ -18157,8 +18172,8 @@
               "race_gap": "+23.407s"
             },
             {
-              "name": "Gael Duchene",
-              "raw_name": "Gael Duchene ",
+              "name": "Gael Duchene Esp",
+              "raw_name": "Gael DuchÃªne ESP [SL]",
               "car_class": "CUP",
               "car_model": 28,
               "laps": 11,
@@ -18216,10 +18231,10 @@
               ],
               "penalty": 0,
               "pos": 5,
-              "class_pos": 4,
-              "points": 122,
-              "sprint_internal_pts": 122,
-              "sprint_bonus": 0,
+              "class_pos": 1,
+              "points": 230,
+              "sprint_internal_pts": 180,
+              "sprint_bonus": 50,
               "qualy_pos": 5,
               "net_vs_q": 0,
               "gap_best_ms": 2170,
@@ -18286,9 +18301,9 @@
               ],
               "penalty": 0,
               "pos": 6,
-              "class_pos": 1,
-              "points": 200,
-              "sprint_internal_pts": 180,
+              "class_pos": 2,
+              "points": 170,
+              "sprint_internal_pts": 150,
               "sprint_bonus": 20,
               "qualy_pos": 4,
               "net_vs_q": -2,
@@ -18356,9 +18371,9 @@
               ],
               "penalty": 0,
               "pos": 7,
-              "class_pos": 2,
-              "points": 170,
-              "sprint_internal_pts": 150,
+              "class_pos": 3,
+              "points": 155,
+              "sprint_internal_pts": 135,
               "sprint_bonus": 20,
               "qualy_pos": 12,
               "net_vs_q": 5,
@@ -18368,7 +18383,7 @@
             },
             {
               "name": "Alex Kuch",
-              "raw_name": "Alex Küch ",
+              "raw_name": "alex kÃ¼ch [SL]",
               "car_class": "CUP",
               "car_model": 28,
               "laps": 11,
@@ -18496,9 +18511,9 @@
               ],
               "penalty": 0,
               "pos": 9,
-              "class_pos": 5,
-              "points": 111,
-              "sprint_internal_pts": 111,
+              "class_pos": 4,
+              "points": 122,
+              "sprint_internal_pts": 122,
               "sprint_bonus": 0,
               "qualy_pos": 11,
               "net_vs_q": 2,
@@ -18566,9 +18581,9 @@
               ],
               "penalty": 0,
               "pos": 10,
-              "class_pos": 6,
-              "points": 102,
-              "sprint_internal_pts": 102,
+              "class_pos": 5,
+              "points": 111,
+              "sprint_internal_pts": 111,
               "sprint_bonus": 0,
               "qualy_pos": 6,
               "net_vs_q": -4,
@@ -18632,9 +18647,9 @@
               ],
               "penalty": 0,
               "pos": 11,
-              "class_pos": 3,
-              "points": 145,
-              "sprint_internal_pts": 135,
+              "class_pos": 4,
+              "points": 132,
+              "sprint_internal_pts": 122,
               "sprint_bonus": 10,
               "qualy_pos": 13,
               "net_vs_q": 2,
@@ -18700,7 +18715,7 @@
         },
         {
           "name": "Porsche Cup Mini-Champ - Race 3",
-          "timestamp": 1786129644.0,
+          "timestamp": 1786136844.0,
           "date": "2026-08-07 21:07",
           "qualy_results": [
             {
@@ -18774,8 +18789,8 @@
               "pos": 5
             },
             {
-              "name": "Stuart Woolley",
-              "raw_name": "Stuart Woolley ",
+              "name": "Stuart Wooley",
+              "raw_name": "Stuart Wooley",
               "car_class": "CUP",
               "car_model": 28,
               "s1": "42.440",
@@ -18789,7 +18804,7 @@
             },
             {
               "name": "Alex Kuch",
-              "raw_name": "Alex Küch ",
+              "raw_name": "alex kÃ¼ch [SL]",
               "car_class": "CUP",
               "car_model": 28,
               "s1": "42.400",
@@ -18830,8 +18845,8 @@
               "pos": 9
             },
             {
-              "name": "Gael Duchene",
-              "raw_name": "Gael Duchene ",
+              "name": "Gael Duchene Esp",
+              "raw_name": "Gael DuchÃªne ESP [SL]",
               "car_class": "CUP",
               "car_model": 28,
               "s1": "42.937",
@@ -19115,7 +19130,7 @@
             },
             {
               "name": "Alex Kuch",
-              "raw_name": "Alex Küch ",
+              "raw_name": "alex kÃ¼ch [SL]",
               "car_class": "CUP",
               "car_model": 28,
               "laps": 10,
@@ -19246,8 +19261,8 @@
               "race_gap": "+13.575s"
             },
             {
-              "name": "Stuart Woolley",
-              "raw_name": "Stuart Woolley ",
+              "name": "Stuart Wooley",
+              "raw_name": "Stuart Wooley",
               "car_class": "CUP",
               "car_model": 28,
               "laps": 10,
@@ -19784,8 +19799,8 @@
               "race_gap": "DNF"
             },
             {
-              "name": "Gael Duchene",
-              "raw_name": "Gael Duchene ",
+              "name": "Gael Duchene Esp",
+              "raw_name": "Gael DuchÃªne ESP [SL]",
               "car_class": "CUP",
               "car_model": 28,
               "laps": 2,
@@ -19857,7 +19872,7 @@
       "sessions": [
         {
           "name": "Season Finale",
-          "timestamp": 1786733959.0,
+          "timestamp": 1786741159.0,
           "date": "2026-08-14 20:59",
           "qualy_results": [
             {
@@ -19904,7 +19919,7 @@
             },
             {
               "name": "Alex Kuch",
-              "raw_name": "Alex Küch ",
+              "raw_name": "alex küch [SL]",
               "car_class": "GT3",
               "car_model": 32,
               "s1": "2:51.715",
@@ -21006,7 +21021,7 @@
             },
             {
               "name": "Alex Kuch",
-              "raw_name": "Alex Küch ",
+              "raw_name": "alex küch [SL]",
               "car_class": "GT3",
               "car_model": 32,
               "laps": 7,

@@ -548,6 +548,49 @@
       "races": 7
     },
     {
+      "name": "Gael Duchene Esp",
+      "car_class": "GT2 / GT3",
+      "class_stats": {
+        "GT3": {
+          "favorite_car": 30,
+          "points": 350,
+          "avg_points": 38.89,
+          "avg_pos": 7.9,
+          "avg_pace_pos": 10.6,
+          "net_pos_gained": 27,
+          "avg_qualy_pos": 12.8,
+          "avg_qualy_gap": "+3.311",
+          "net_pos_gained_qualy": 37,
+          "avg_gap": "+3.873",
+          "races": 9
+        },
+        "GT2": {
+          "favorite_car": 83,
+          "points": 0,
+          "avg_points": 0,
+          "avg_pos": "-",
+          "avg_pace_pos": 12.0,
+          "net_pos_gained": 0,
+          "avg_qualy_pos": 14.0,
+          "avg_qualy_gap": "+6.285",
+          "net_pos_gained_qualy": 0,
+          "avg_gap": "+4.482",
+          "races": 0
+        }
+      },
+      "favorite_car": 30,
+      "points": 350,
+      "avg_points": 38.89,
+      "avg_pos": 7.9,
+      "avg_pace_pos": 10.7,
+      "net_pos_gained": 27,
+      "avg_qualy_pos": 12.9,
+      "avg_qualy_gap": "+3.683",
+      "net_pos_gained_qualy": 37,
+      "avg_gap": "+3.934",
+      "races": 9
+    },
+    {
       "name": "Vis Nalu",
       "car_class": "GT3 / GT4",
       "class_stats": {
@@ -780,36 +823,6 @@
       "races": 4
     },
     {
-      "name": "Gael Duchene",
-      "car_class": "GT3",
-      "class_stats": {
-        "GT3": {
-          "favorite_car": 30,
-          "points": 186,
-          "avg_points": 93.0,
-          "avg_pos": 5.5,
-          "avg_pace_pos": 9.0,
-          "net_pos_gained": 7,
-          "avg_qualy_pos": 13.5,
-          "avg_qualy_gap": "+3.687",
-          "net_pos_gained_qualy": 16,
-          "avg_gap": "+2.232",
-          "races": 2
-        }
-      },
-      "favorite_car": 30,
-      "points": 186,
-      "avg_points": 93.0,
-      "avg_pos": 5.5,
-      "avg_pace_pos": 9.0,
-      "net_pos_gained": 7,
-      "avg_qualy_pos": 13.5,
-      "avg_qualy_gap": "+3.687",
-      "net_pos_gained_qualy": 16,
-      "avg_gap": "+2.232",
-      "races": 2
-    },
-    {
       "name": "Alex Kuch",
       "car_class": "Cup / GT3 / GT4",
       "class_stats": {
@@ -980,49 +993,6 @@
       "net_pos_gained_qualy": -3,
       "avg_gap": "+2.335",
       "races": 8
-    },
-    {
-      "name": "Gael Duchene Esp",
-      "car_class": "GT2 / GT3",
-      "class_stats": {
-        "GT3": {
-          "favorite_car": 30,
-          "points": 164,
-          "avg_points": 23.43,
-          "avg_pos": 8.6,
-          "avg_pace_pos": 11.0,
-          "net_pos_gained": 20,
-          "avg_qualy_pos": 12.5,
-          "avg_qualy_gap": "+3.248",
-          "net_pos_gained_qualy": 21,
-          "avg_gap": "+4.078",
-          "races": 7
-        },
-        "GT2": {
-          "favorite_car": 83,
-          "points": 0,
-          "avg_points": 0,
-          "avg_pos": "-",
-          "avg_pace_pos": 12.0,
-          "net_pos_gained": 0,
-          "avg_qualy_pos": 14.0,
-          "avg_qualy_gap": "+6.285",
-          "net_pos_gained_qualy": 0,
-          "avg_gap": "+4.482",
-          "races": 0
-        }
-      },
-      "favorite_car": 30,
-      "points": 164,
-      "avg_points": 23.43,
-      "avg_pos": 8.6,
-      "avg_pace_pos": 11.1,
-      "net_pos_gained": 20,
-      "avg_qualy_pos": 12.7,
-      "avg_qualy_gap": "+3.682",
-      "net_pos_gained_qualy": 21,
-      "avg_gap": "+4.123",
-      "races": 7
     },
     {
       "name": "Viktor Ruga",
@@ -4168,7 +4138,7 @@
       "id": "race_0",
       "name": "Round 1: Nurburgring 24H",
       "date": "2026-04-03 21:09",
-      "timestamp": 1775243351.0,
+      "timestamp": 1775250551.0,
       "results": [
         {
           "car_class": "GT3",
@@ -6577,7 +6547,7 @@
       "id": "race_1",
       "name": "Round 2: Brands Hatch",
       "date": "2026-04-10 20:37",
-      "timestamp": 1775846264.0,
+      "timestamp": 1775853464.0,
       "results": [
         {
           "car_class": "GT3",
@@ -8832,7 +8802,7 @@
           "qualy_gap": "+3.687s",
           "qualy_gap_ms": 3687,
           "net_vs_q": 12,
-          "name": "Gael Duchene",
+          "name": "Gael Duchene Esp",
           "car_model": 30,
           "points": 90,
           "laps": 42,
@@ -11013,7 +10983,7 @@
         },
         {
           "pos": 18,
-          "name": "Gael Duchene",
+          "name": "Gael Duchene Esp",
           "car_class": "GT3",
           "car_model": 30,
           "s1": "0:27.987",
@@ -11245,7 +11215,7 @@
       "id": "race_2",
       "name": "Round 3: Nurburgring 24H",
       "date": "2026-04-17 20:51",
-      "timestamp": 1776451884.0,
+      "timestamp": 1776459084.0,
       "results": [
         {
           "car_class": "GT3",
@@ -11496,7 +11466,7 @@
           "qualy_gap": "+23.360s",
           "qualy_gap_ms": 23360,
           "net_vs_q": 4,
-          "name": "Gael Duchene",
+          "name": "Gael Duchene Esp",
           "car_model": 30,
           "points": 96,
           "laps": 8,
@@ -13117,7 +13087,7 @@
         },
         {
           "pos": 9,
-          "name": "Gael Duchene",
+          "name": "Gael Duchene Esp",
           "car_class": "GT3",
           "car_model": 30,
           "s1": "2:56.925",
@@ -13553,7 +13523,7 @@
       "id": "race_3",
       "name": "Round 4: Brands Hatch",
       "date": "2026-05-01 19:39",
-      "timestamp": 1777657172.0,
+      "timestamp": 1777664372.0,
       "results": [
         {
           "car_class": "GT3",
@@ -15938,7 +15908,7 @@
       "id": "race_4",
       "name": "Round 5: Donington",
       "date": "2026-05-01 20:34",
-      "timestamp": 1777660496.0,
+      "timestamp": 1777667696.0,
       "results": [
         {
           "car_class": "GT3",
@@ -17635,7 +17605,7 @@
       "id": "race_5",
       "name": "Round 6: Snetterton",
       "date": "2026-05-01 21:33",
-      "timestamp": 1777663987.0,
+      "timestamp": 1777671187.0,
       "results": [
         {
           "car_class": "GT3",
@@ -19503,7 +19473,7 @@
       "id": "race_6",
       "name": "Round 7: Nurburgring 24H",
       "date": "2026-05-08 21:02",
-      "timestamp": 1778266929.0,
+      "timestamp": 1778274129.0,
       "results": [
         {
           "car_class": "GT3",
@@ -20734,7 +20704,7 @@
           "qualy_gap": "-",
           "qualy_gap_ms": null,
           "net_vs_q": "-",
-          "name": "Gael Duchene",
+          "name": "Gael Duchene Esp",
           "car_model": 30,
           "points": 0,
           "laps": 2,
@@ -21773,7 +21743,7 @@
         },
         {
           "pos": "-",
-          "name": "Gael Duchene",
+          "name": "Gael Duchene Esp",
           "car_class": "GT3",
           "car_model": 30,
           "s1": "2:56.600",
@@ -22101,7 +22071,7 @@
       "id": "race_7",
       "name": "Round 8: Kyalami",
       "date": "2026-05-19 09:12",
-      "timestamp": 1779174720.0,
+      "timestamp": 1779181920.0,
       "results": [
         {
           "car_class": "GT3",
@@ -24965,7 +24935,7 @@
       "id": "race_8",
       "name": "Round 9: Mount Panorama",
       "date": "2026-05-19 09:12",
-      "timestamp": 1779174726.0,
+      "timestamp": 1779181926.0,
       "results": [
         {
           "car_class": "GT3",
@@ -26842,7 +26812,7 @@
       "id": "race_9",
       "name": "Round 10: Suzuka",
       "date": "2026-05-19 09:12",
-      "timestamp": 1779174731.0,
+      "timestamp": 1779181931.0,
       "results": [
         {
           "car_class": "GT3",
@@ -28738,7 +28708,7 @@
       "id": "race_10",
       "name": "Round 11: Red Bull Ring",
       "date": "2026-05-19 09:12",
-      "timestamp": 1779174737.0,
+      "timestamp": 1779181937.0,
       "results": [
         {
           "car_class": "GT3",
@@ -31347,7 +31317,7 @@
       "id": "race_11",
       "name": "Round 12: Nurburgring 24H",
       "date": "2026-05-22 20:59",
-      "timestamp": 1779476374.0,
+      "timestamp": 1779483574.0,
       "results": [
         {
           "car_class": "GT3",
@@ -34105,7 +34075,7 @@
       "id": "race_12",
       "name": "Round 13: Spa",
       "date": "2026-06-02 09:14",
-      "timestamp": 1780384466.0,
+      "timestamp": 1780391666.0,
       "results": [
         {
           "car_class": "GT2",
@@ -35535,7 +35505,7 @@
       "id": "race_13",
       "name": "Round 14: Hungaroring",
       "date": "2026-06-02 09:14",
-      "timestamp": 1780384466.0,
+      "timestamp": 1780391666.0,
       "results": [
         {
           "car_class": "GT2",
@@ -36786,7 +36756,7 @@
       "id": "race_14",
       "name": "Round 15: Barcelona",
       "date": "2026-06-02 09:14",
-      "timestamp": 1780384466.0,
+      "timestamp": 1780391666.0,
       "results": [
         {
           "car_class": "GT2",
@@ -37992,7 +37962,7 @@
       "id": "race_15",
       "name": "Round 16: Monza",
       "date": "2026-06-02 09:14",
-      "timestamp": 1780384466.0,
+      "timestamp": 1780391666.0,
       "results": [
         {
           "car_class": "GT2",
@@ -39046,7 +39016,7 @@
       "id": "race_16",
       "name": "Round 17: Watkins Glen",
       "date": "2026-06-09 19:39",
-      "timestamp": 1781026774.0,
+      "timestamp": 1781033974.0,
       "results": [
         {
           "car_class": "GT3",
@@ -40137,7 +40107,7 @@
       "id": "race_17",
       "name": "Round 18: Laguna Seca",
       "date": "2026-06-09 19:39",
-      "timestamp": 1781026774.0,
+      "timestamp": 1781033974.0,
       "results": [
         {
           "car_class": "GT3",
@@ -42614,7 +42584,7 @@
       "id": "race_18",
       "name": "Round 19: Cota",
       "date": "2026-06-09 19:39",
-      "timestamp": 1781026774.0,
+      "timestamp": 1781033974.0,
       "results": [
         {
           "car_class": "GT3",
@@ -43626,7 +43596,7 @@
       "id": "race_19",
       "name": "Round 20: Indianapolis",
       "date": "2026-06-09 19:39",
-      "timestamp": 1781026774.0,
+      "timestamp": 1781033974.0,
       "results": [
         {
           "car_class": "GT3",
@@ -44343,7 +44313,7 @@
       "id": "race_20",
       "name": "Round 21: Nurburgring 24H",
       "date": "2026-06-24 14:40",
-      "timestamp": 1782304807.0,
+      "timestamp": 1782312007.0,
       "results": [
         {
           "car_class": "Cup",
@@ -44859,7 +44829,7 @@
       "id": "race_21",
       "name": "Round 22: Nurburgring 24H",
       "date": "2026-06-24 14:40",
-      "timestamp": 1782304807.0,
+      "timestamp": 1782312007.0,
       "results": [
         {
           "car_class": "GT4",
